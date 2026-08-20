@@ -35,7 +35,7 @@ DATA = ROOT / "data" / "dataset.jsonl"
 
 DEFAULT_MODEL = "Qwen/Qwen3-4B-Instruct-2507"
 LAYER_STRIDE = 2
-MAX_NEW = 12
+MAX_NEW = 24        # 12 truncated answers mid-word ("...is RE")
 
 
 def load_rows(limit=None, per_condition=None):
@@ -55,8 +55,10 @@ def load_rows(limit=None, per_condition=None):
 
 
 def pick_device():
+    # fp16 on MPS overflows to NaN in attention when batches are left-padded,
+    # which silently decodes as token id 0 ("!!!!!!"). bf16 has the range.
     if torch.backends.mps.is_available():
-        return "mps", torch.float16      # bf16 support on MPS is patchy
+        return "mps", torch.bfloat16
     if torch.cuda.is_available():
         return "cuda", torch.bfloat16
     return "cpu", torch.float32
@@ -102,8 +104,12 @@ def main():
     if tok.pad_token is None:
         tok.pad_token = tok.eos_token
 
+    # sdpa on MPS returns NaN from layer 2 onward whenever the batch is
+    # left-padded (verified: single-example batches are fine, padded ones are
+    # not). eager is numerically clean and only marginally slower here.
+    attn = "eager" if device == "mps" else "sdpa"
     model = AutoModelForCausalLM.from_pretrained(
-        args.model, torch_dtype=dtype, low_cpu_mem_usage=True
+        args.model, dtype=dtype, attn_implementation=attn, low_cpu_mem_usage=True
     ).to(device).eval()
 
     n_layers = model.config.num_hidden_layers
@@ -140,11 +146,26 @@ def main():
                 top_k=None,
                 pad_token_id=tok.pad_token_id,
                 output_hidden_states=True,
+                output_scores=True,
                 return_dict_in_generate=True,
             )
 
+        # next-token distribution at the answer position: entropy is the
+        # control for "the probe is really a task-difficulty detector", and
+        # the true/decoy logprobs measure suppression independently of what
+        # was actually sampled
+        step0 = out.scores[0].float()
+        logp0 = torch.log_softmax(step0, dim=-1)
+        ent0 = -(logp0.exp() * logp0).sum(-1)
+
         # hidden_states[0] = prompt pass, tuple over layers, [B, seq, d]
         # hidden_states[1] = first generated token, [B, 1, d]
+        # only the read position matters; left-pad columns are legitimately
+        # garbage and must not trip the guard
+        if not torch.isfinite(out.hidden_states[0][-1][:, -1, :]).all():
+            raise RuntimeError(
+                "non-finite activations at read position: check dtype/padding")
+
         prompt_hs = out.hidden_states[0]
         first_hs = out.hidden_states[1] if len(out.hidden_states) > 1 else prompt_hs
 
@@ -157,8 +178,12 @@ def main():
                 first_hs[layer][:, -1, :].float().cpu().numpy().astype(np.float16)
             )
 
+        def first_id(w):
+            ids = tok.encode(w, add_special_tokens=False)
+            return ids[0] if ids else tok.pad_token_id
+
         new_tokens = out.sequences[:, enc["input_ids"].shape[1]:]
-        for r, seq in zip(batch, new_tokens):
+        for bi, (r, seq) in enumerate(zip(batch, new_tokens)):
             text = tok.decode(seq, skip_special_tokens=True).strip()
             said, complied = score_output(text, r)
             gens.append({
@@ -167,6 +192,9 @@ def main():
                 "true_word": r["true_word"], "decoy_word": r["decoy_word"],
                 "expected_word_role": r["expected_word_role"],
                 "output": text, "said": said, "complied": bool(complied),
+                "entropy0": float(ent0[bi]),
+                "logp_true": float(logp0[bi, first_id(r["true_word"])]),
+                "logp_decoy": float(logp0[bi, first_id(r["decoy_word"])]),
             })
 
         done = s + len(batch)

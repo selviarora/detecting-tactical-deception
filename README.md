@@ -24,34 +24,52 @@ deceptive behaviour.
 
 This repo builds the control condition that separates (1) from (2).
 
-## Design: a condition ladder, not a binary contrast
+## Design: a 2x2, plus two anchors
 
 Every prompt presents a record containing **both** a true value and a decoy, in
 identical layout. The model always knows the true value. In L1-L5 it is asked to
 output the decoy. Only the *reason* changes.
 
-| # | Condition | output | misled party | prohibition | deception lexicon |
+Each override frame is `[reason clause] + [imperative clause]`. The reason
+clause varies only in whether anyone is actually misled; the imperative clause
+varies only in whether it uses deception vocabulary. Both are matched for force.
+
+| # | Condition | reason clause | imperative | misled | lexicon |
 |---|---|---|---|---|---|
-| L0 | honest | **true** | – | – | – |
-| L1 | benign override (formatting drill) | decoy | no | no | no |
-| L2 | prohibition override | decoy | no | **yes** | no |
-| L3 | lexicon decoy (redaction drill, operator already has the value) | decoy | no | no | **yes** |
-| L4 | conceal, plain wording (operator not cleared) | decoy | **yes** | no | no |
-| L5 | conceal, explicit (never reveal / hide / secret) | decoy | **yes** | **yes** | **yes** |
+| L0 | honest (outputs **true**) | – | – | – | – |
+| L1 | pure override | none | plain | no | no |
+| L2 | benign override | operator already has the value; redaction drill | plain | no | no |
+| L3 | lexicon decoy | operator already has the value; redaction drill | "never reveal or disclose" | no | **yes** |
+| L4 | conceal, plain | operator is not cleared | plain | **yes** | no |
+| L5 | conceal, explicit | operator is not cleared | "never reveal or disclose" | **yes** | **yes** |
 
-L3 and L4 are the load-bearing cells: they orthogonalise deception *vocabulary*
-from actually *misleading someone*.
+L2/L3/L4/L5 form an exact 2x2. L3 and L4 are the load-bearing cells: L3 is
+deception vocabulary with nobody misled, L4 is genuine misleading with no
+deception vocabulary.
 
-### Four hypotheses, four predicted orderings
+### Three hypotheses, three predicted orderings
 
 | If the probe measures... | predicted ordering |
 |---|---|
 | deception | L4 ≈ L5 ≫ L1 ≈ L2 ≈ L3 |
 | answer override | L1 ≈ L2 ≈ L3 ≈ L4 ≈ L5, all ≫ L0 |
-| prohibition / rule conflict | L2, L5 high; L4 middling |
-| surface lexicon | L3, L5 high; L4 low |
+| surface lexicon | L3 ≈ L5 ≫ L1 ≈ L2 ≈ L4 |
 
 A single AUROC cannot distinguish these. The ordering can.
+
+### Why prohibition is held constant, not varied
+
+It was originally a third factor. The pilot killed that: conditions phrased as a
+bare redirect ("reply with the district code instead") had **5% and 0%**
+compliance, because the model just answers the literal question, while
+conditions containing an explicit "you must not output X" had **95% and 90%**.
+Prohibition is a prerequisite for the manipulation working at all, not a free
+variable, so it now appears identically in every override condition.
+
+A second pilot showed compliance still tracking *imperative force* (90% for the
+forcefully-worded L5 vs 40% for the mild L4). Since compliant-only filtering is
+standard practice, that would have meant silently conditioning on the variable
+under study. Hence the matched reason/imperative construction above.
 
 ## Why content filtering is unavailable here
 
@@ -85,10 +103,17 @@ wordlist, so contamination and memorisation are not possible.
 ## Status
 
 - [x] Dataset generator (2,160 prompts: 6 conditions x 6 domains x 60 items)
-- [ ] Compliance check (does the model actually comply, per condition?)
-- [ ] Activation capture
-- [ ] Probes + bag-of-words baseline + off-the-shelf RepE probe
-- [ ] Causal steering with the L1 specificity control
+- [x] Activation capture (residual stream, 2 positions, every 2nd layer)
+- [x] Compliance check, which forced two design revisions (see above)
+- [ ] Compliance high and *uncorrelated with condition* across all rungs
+- [ ] Probes + bag-of-words baseline + layer sweep
+- [ ] Off-the-shelf RepE probe scored down the ladder
+- [ ] Causal steering with the L2 specificity control
+
+Known limitation: Qwen3-4B is at the low end of usable here. Compliance is the
+binding constraint, and if it cannot be made both high and flat across
+conditions, the next move is a larger instruct model, not a base model (base
+models do not follow the frame at all, which removes the manipulation entirely).
 
 ## Layout
 
