@@ -87,7 +87,12 @@ def main():
     ap.add_argument("--tag", default="pilot")
     ap.add_argument("--limit", type=int, default=None)
     ap.add_argument("--per-condition", type=int, default=None)
-    ap.add_argument("--batch", type=int, default=8)
+    # batch=1 by default. Batching on MPS produced corrupted generations
+    # (empty strings, repeated tokens, wrong-language output) concentrated in
+    # whichever conditions happened to land in the early batches, which made
+    # compliance track batch position rather than condition. It is also not
+    # faster here: 1.04 s/example unbatched vs 1.62 s/example at batch 6.
+    ap.add_argument("--batch", type=int, default=1)
     args = ap.parse_args()
 
     rows = load_rows(args.limit, args.per_condition)
@@ -121,11 +126,28 @@ def main():
         "last_prompt": np.zeros((len(rows), len(keep_layers), d_model), np.float16),
         "answer_first": np.zeros((len(rows), len(keep_layers), d_model), np.float16),
     }
-    gens = []
+    gens_by_uid = {}
     t0 = time.time()
 
-    for s in range(0, len(rows), args.batch):
-        batch = rows[s: s + args.batch]
+    # Batches are length-bucketed. Left-padding degrades generation quality on
+    # MPS, and because frame length varies systematically by condition, naive
+    # batching pads the shortest conditions the most, making compliance track
+    # prompt length instead of condition. Sorting by length makes padding
+    # near-zero within each batch. Results are written back by original index.
+    def prompt_len(r):
+        return len(tok.apply_chat_template(
+            [{"role": "system", "content": r["system"]},
+             {"role": "user", "content": r["user"]}],
+            tokenize=True, add_generation_prompt=True))
+
+    # longest first: peak allocation happens on batch 1, so the MPS allocator
+    # never has to grow mid-run. Ascending order made every batch larger than
+    # the last, fragmenting memory and degrading throughput 12x over 90 examples.
+    order = sorted(range(len(rows)), key=lambda i: -prompt_len(rows[i]))
+
+    for s in range(0, len(order), args.batch):
+        idx = order[s: s + args.batch]
+        batch = [rows[i] for i in idx]
         chats = [
             tok.apply_chat_template(
                 [{"role": "system", "content": r["system"]},
@@ -136,8 +158,21 @@ def main():
         ]
         enc = tok(chats, return_tensors="pt", padding=True).to(device)
 
+        # Three bounded passes instead of one generate() with hidden states.
+        # generate(output_hidden_states=True) retains every layer for every
+        # generated step, which is ~MAX_NEW x n_layers x batch of tensors held
+        # at once and swaps on a 16GB machine. Each pass below holds one.
         with torch.no_grad():
-            out = model.generate(
+            # 1. prompt pass: readout activations + next-token distribution
+            fwd = model(**enc, output_hidden_states=True)
+            prompt_hs = fwd.hidden_states
+            logp0 = torch.log_softmax(fwd.logits[:, -1, :].float(), dim=-1)
+            ent0 = -(logp0.exp() * logp0).sum(-1)
+            keep_prompt = [prompt_hs[l][:, -1, :].float().cpu() for l in keep_layers]
+            del fwd, prompt_hs
+
+            # 2. generation, no hidden states retained
+            seqs = model.generate(
                 **enc,
                 max_new_tokens=MAX_NEW,
                 do_sample=False,
@@ -145,38 +180,38 @@ def main():
                 top_p=None,
                 top_k=None,
                 pad_token_id=tok.pad_token_id,
-                output_hidden_states=True,
-                output_scores=True,
-                return_dict_in_generate=True,
             )
 
-        # next-token distribution at the answer position: entropy is the
-        # control for "the probe is really a task-difficulty detector", and
-        # the true/decoy logprobs measure suppression independently of what
-        # was actually sampled
-        step0 = out.scores[0].float()
-        logp0 = torch.log_softmax(step0, dim=-1)
-        ent0 = -(logp0.exp() * logp0).sum(-1)
+            # 3. prompt + first generated token, for the answer-position readout
+            plen = enc["input_ids"].shape[1]
+            ext = seqs[:, : plen + 1]
+            ext_mask = torch.cat(
+                [enc["attention_mask"],
+                 torch.ones(len(batch), 1, dtype=enc["attention_mask"].dtype,
+                            device=enc["attention_mask"].device)], dim=1)
+            fwd2 = model(input_ids=ext, attention_mask=ext_mask,
+                         output_hidden_states=True)
+            keep_answer = [fwd2.hidden_states[l][:, -1, :].float().cpu()
+                           for l in keep_layers]
+            del fwd2
+
+        class _O:
+            pass
+        out = _O()
+        out.sequences = seqs
 
         # hidden_states[0] = prompt pass, tuple over layers, [B, seq, d]
         # hidden_states[1] = first generated token, [B, 1, d]
-        # only the read position matters; left-pad columns are legitimately
-        # garbage and must not trip the guard
-        if not torch.isfinite(out.hidden_states[0][-1][:, -1, :]).all():
+        if not torch.isfinite(keep_prompt[-1]).all():
             raise RuntimeError(
                 "non-finite activations at read position: check dtype/padding")
 
-        prompt_hs = out.hidden_states[0]
-        first_hs = out.hidden_states[1] if len(out.hidden_states) > 1 else prompt_hs
-
-        for li, layer in enumerate(keep_layers):
+        for li in range(len(keep_layers)):
             # left padding, so the final column is the last real prompt token
-            acts["last_prompt"][s: s + len(batch), li] = (
-                prompt_hs[layer][:, -1, :].float().cpu().numpy().astype(np.float16)
-            )
-            acts["answer_first"][s: s + len(batch), li] = (
-                first_hs[layer][:, -1, :].float().cpu().numpy().astype(np.float16)
-            )
+            acts["last_prompt"][idx, li] = (
+                keep_prompt[li].numpy().astype(np.float16))
+            acts["answer_first"][idx, li] = (
+                keep_answer[li].numpy().astype(np.float16))
 
         def first_id(w):
             ids = tok.encode(w, add_special_tokens=False)
@@ -186,7 +221,7 @@ def main():
         for bi, (r, seq) in enumerate(zip(batch, new_tokens)):
             text = tok.decode(seq, skip_special_tokens=True).strip()
             said, complied = score_output(text, r)
-            gens.append({
+            gens_by_uid[r["uid"]] = ({
                 "uid": r["uid"], "condition": r["condition"], "domain": r["domain"],
                 "variant": r["variant"], "family": r["family"],
                 "true_word": r["true_word"], "decoy_word": r["decoy_word"],
@@ -197,13 +232,20 @@ def main():
                 "logp_decoy": float(logp0[bi, first_id(r["decoy_word"])]),
             })
 
+        del keep_prompt, keep_answer, seqs, logp0, ent0, enc
+        if device == "mps":
+            torch.mps.empty_cache()
+
         done = s + len(batch)
-        if done % (args.batch * 5) == 0 or done >= len(rows):
+        if done % (args.batch * 5) == 0 or done >= len(order):
             el = time.time() - t0
             print(f"  {done}/{len(rows)}  {el:.0f}s  ({el/done:.2f}s/ex)", flush=True)
 
     (ROOT / "results").mkdir(exist_ok=True)
     (ROOT / "acts").mkdir(exist_ok=True)
+    # restore original dataset order so generations line up row-for-row with
+    # the activation arrays
+    gens = [gens_by_uid[r["uid"]] for r in rows]
     gpath = ROOT / "results" / f"generations_{args.tag}.jsonl"
     with gpath.open("w") as f:
         for g in gens:
