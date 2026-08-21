@@ -270,6 +270,64 @@ def main():
         print(f"  delta (probe - BoW)     {auc_act - auc_bow:+.3f}")
         print("  a probe that only matches BoW has added nothing over surface text")
 
+    # ============ Analysis D: effect sizes on the 2x2 =======================
+    # AUROC saturates at 1.0 the moment classes are separable, which tells us
+    # nothing about *what the probe is responding to*. The continuous score
+    # still carries magnitude, so regress it on the two factors.
+    #   score ~ b0 + b_misled*misled + b_lexicon*lexicon
+    # b_lexicon > b_misled  =>  the probe tracks deception vocabulary
+    # b_misled  > b_lexicon =>  the probe tracks actual deception
+    print("\n" + "=" * 68)
+    print("D. what is the probe responding to? effect sizes on the 2x2")
+    print("   (L2/L3/L4/L5 only; family B; probe trained L0-vs-L5 on family A)")
+    print("=" * 68)
+
+    quad = ["L2_benign_override", "L3_lexicon_decoy",
+            "L4_conceal_plain", "L5_conceal_explicit"]
+    qm = np.isin(cond[tem], quad)
+    if qm.sum() > 20:
+        cq = cond[tem][qm]
+        misled = np.isin(cq, list(MISLED)).astype(float)
+        lexi = np.isin(cq, list(LEXICON)).astype(float)
+        D = np.column_stack([np.ones(qm.sum()), misled, lexi])
+        items_q = item[tem][qm]
+
+        # same recipe for the text baseline, so the comparison is apples-to-apples
+        vec2 = CountVectorizer(lowercase=True, binary=True)
+        Btr2 = vec2.fit_transform([text[i] for i in np.where(trm)[0]])
+        bow2 = LogisticRegression(max_iter=3000).fit(Btr2, ytr_full)
+        s_bow_all = bow2.decision_function(
+            vec2.transform([text[i] for i in np.where(tem)[0]]))
+
+        def fit_eff(y):
+            beta, *_ = np.linalg.lstsq(D, y, rcond=None)
+            rng = np.random.default_rng(0)
+            uq = np.unique(items_q)
+            idx_by = {g: np.where(items_q == g)[0] for g in uq}
+            bs = []
+            for _ in range(1000):
+                pick = rng.choice(uq, len(uq), replace=True)
+                ii = np.concatenate([idx_by[g] for g in pick])
+                try:
+                    b, *_ = np.linalg.lstsq(D[ii], y[ii], rcond=None)
+                    bs.append(b)
+                except np.linalg.LinAlgError:
+                    continue
+            bs = np.array(bs)
+            lo, hi = np.percentile(bs, [2.5, 97.5], axis=0)
+            return beta, lo, hi
+
+        for name, y in [("activation probe", scores_te[qm]),
+                        ("bag-of-words    ", s_bow_all[qm])]:
+            beta, lo, hi = fit_eff(np.asarray(y, dtype=float))
+            print(f"\n  {name}")
+            for j, lab in enumerate(["intercept", "misled  ", "lexicon "]):
+                star = "" if (lo[j] < 0 < hi[j]) else "  *"
+                print(f"    {lab}  {beta[j]:+8.3f}   "
+                      f"[{lo[j]:+.3f}, {hi[j]:+.3f}]{star}")
+        print("\n  * = 95% CI excludes zero. Compare |misled| against |lexicon|:")
+        print("    that ratio is the result, not any single AUROC.")
+
     out = ROOT / "results" / f"ladder_{args.tag}_{args.pos}.json"
     json.dump({k: {"mean_score": float(v[0]), "auc_vs_L0": float(v[1])}
                for k, v in ladder_stats.items()}, out.open("w"), indent=2)

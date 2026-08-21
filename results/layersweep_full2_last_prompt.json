@@ -1,0 +1,477 @@
+[
+  {
+    "layer": 0,
+    "condition": "L1_pure_override",
+    "auroc": 0.5
+  },
+  {
+    "layer": 0,
+    "condition": "L2_benign_override",
+    "auroc": 0.5
+  },
+  {
+    "layer": 0,
+    "condition": "L3_lexicon_decoy",
+    "auroc": 0.5
+  },
+  {
+    "layer": 0,
+    "condition": "L4_conceal_plain",
+    "auroc": 0.5
+  },
+  {
+    "layer": 0,
+    "condition": "L5_conceal_explicit",
+    "auroc": 0.5
+  },
+  {
+    "layer": 2,
+    "condition": "L1_pure_override",
+    "auroc": 0.9890740740740741
+  },
+  {
+    "layer": 2,
+    "condition": "L2_benign_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 2,
+    "condition": "L3_lexicon_decoy",
+    "auroc": 1.0
+  },
+  {
+    "layer": 2,
+    "condition": "L4_conceal_plain",
+    "auroc": 1.0
+  },
+  {
+    "layer": 2,
+    "condition": "L5_conceal_explicit",
+    "auroc": 1.0
+  },
+  {
+    "layer": 4,
+    "condition": "L1_pure_override",
+    "auroc": 0.999320987654321
+  },
+  {
+    "layer": 4,
+    "condition": "L2_benign_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 4,
+    "condition": "L3_lexicon_decoy",
+    "auroc": 1.0
+  },
+  {
+    "layer": 4,
+    "condition": "L4_conceal_plain",
+    "auroc": 1.0
+  },
+  {
+    "layer": 4,
+    "condition": "L5_conceal_explicit",
+    "auroc": 1.0
+  },
+  {
+    "layer": 6,
+    "condition": "L1_pure_override",
+    "auroc": 0.9991358024691358
+  },
+  {
+    "layer": 6,
+    "condition": "L2_benign_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 6,
+    "condition": "L3_lexicon_decoy",
+    "auroc": 1.0
+  },
+  {
+    "layer": 6,
+    "condition": "L4_conceal_plain",
+    "auroc": 1.0
+  },
+  {
+    "layer": 6,
+    "condition": "L5_conceal_explicit",
+    "auroc": 1.0
+  },
+  {
+    "layer": 8,
+    "condition": "L1_pure_override",
+    "auroc": 0.9702160493827161
+  },
+  {
+    "layer": 8,
+    "condition": "L2_benign_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 8,
+    "condition": "L3_lexicon_decoy",
+    "auroc": 1.0
+  },
+  {
+    "layer": 8,
+    "condition": "L4_conceal_plain",
+    "auroc": 1.0
+  },
+  {
+    "layer": 8,
+    "condition": "L5_conceal_explicit",
+    "auroc": 1.0
+  },
+  {
+    "layer": 10,
+    "condition": "L1_pure_override",
+    "auroc": 0.9999691358024692
+  },
+  {
+    "layer": 10,
+    "condition": "L2_benign_override",
+    "auroc": 0.9962962962962963
+  },
+  {
+    "layer": 10,
+    "condition": "L3_lexicon_decoy",
+    "auroc": 1.0
+  },
+  {
+    "layer": 10,
+    "condition": "L4_conceal_plain",
+    "auroc": 1.0
+  },
+  {
+    "layer": 10,
+    "condition": "L5_conceal_explicit",
+    "auroc": 1.0
+  },
+  {
+    "layer": 12,
+    "condition": "L1_pure_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 12,
+    "condition": "L2_benign_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 12,
+    "condition": "L3_lexicon_decoy",
+    "auroc": 1.0
+  },
+  {
+    "layer": 12,
+    "condition": "L4_conceal_plain",
+    "auroc": 1.0
+  },
+  {
+    "layer": 12,
+    "condition": "L5_conceal_explicit",
+    "auroc": 1.0
+  },
+  {
+    "layer": 14,
+    "condition": "L1_pure_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 14,
+    "condition": "L2_benign_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 14,
+    "condition": "L3_lexicon_decoy",
+    "auroc": 1.0
+  },
+  {
+    "layer": 14,
+    "condition": "L4_conceal_plain",
+    "auroc": 1.0
+  },
+  {
+    "layer": 14,
+    "condition": "L5_conceal_explicit",
+    "auroc": 1.0
+  },
+  {
+    "layer": 16,
+    "condition": "L1_pure_override",
+    "auroc": 0.9999074074074075
+  },
+  {
+    "layer": 16,
+    "condition": "L2_benign_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 16,
+    "condition": "L3_lexicon_decoy",
+    "auroc": 0.9995061728395062
+  },
+  {
+    "layer": 16,
+    "condition": "L4_conceal_plain",
+    "auroc": 0.9999691358024692
+  },
+  {
+    "layer": 16,
+    "condition": "L5_conceal_explicit",
+    "auroc": 1.0
+  },
+  {
+    "layer": 18,
+    "condition": "L1_pure_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 18,
+    "condition": "L2_benign_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 18,
+    "condition": "L3_lexicon_decoy",
+    "auroc": 1.0
+  },
+  {
+    "layer": 18,
+    "condition": "L4_conceal_plain",
+    "auroc": 1.0
+  },
+  {
+    "layer": 18,
+    "condition": "L5_conceal_explicit",
+    "auroc": 1.0
+  },
+  {
+    "layer": 20,
+    "condition": "L1_pure_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 20,
+    "condition": "L2_benign_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 20,
+    "condition": "L3_lexicon_decoy",
+    "auroc": 1.0
+  },
+  {
+    "layer": 20,
+    "condition": "L4_conceal_plain",
+    "auroc": 1.0
+  },
+  {
+    "layer": 20,
+    "condition": "L5_conceal_explicit",
+    "auroc": 1.0
+  },
+  {
+    "layer": 22,
+    "condition": "L1_pure_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 22,
+    "condition": "L2_benign_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 22,
+    "condition": "L3_lexicon_decoy",
+    "auroc": 1.0
+  },
+  {
+    "layer": 22,
+    "condition": "L4_conceal_plain",
+    "auroc": 1.0
+  },
+  {
+    "layer": 22,
+    "condition": "L5_conceal_explicit",
+    "auroc": 1.0
+  },
+  {
+    "layer": 24,
+    "condition": "L1_pure_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 24,
+    "condition": "L2_benign_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 24,
+    "condition": "L3_lexicon_decoy",
+    "auroc": 1.0
+  },
+  {
+    "layer": 24,
+    "condition": "L4_conceal_plain",
+    "auroc": 1.0
+  },
+  {
+    "layer": 24,
+    "condition": "L5_conceal_explicit",
+    "auroc": 1.0
+  },
+  {
+    "layer": 26,
+    "condition": "L1_pure_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 26,
+    "condition": "L2_benign_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 26,
+    "condition": "L3_lexicon_decoy",
+    "auroc": 1.0
+  },
+  {
+    "layer": 26,
+    "condition": "L4_conceal_plain",
+    "auroc": 1.0
+  },
+  {
+    "layer": 26,
+    "condition": "L5_conceal_explicit",
+    "auroc": 1.0
+  },
+  {
+    "layer": 28,
+    "condition": "L1_pure_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 28,
+    "condition": "L2_benign_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 28,
+    "condition": "L3_lexicon_decoy",
+    "auroc": 1.0
+  },
+  {
+    "layer": 28,
+    "condition": "L4_conceal_plain",
+    "auroc": 1.0
+  },
+  {
+    "layer": 28,
+    "condition": "L5_conceal_explicit",
+    "auroc": 1.0
+  },
+  {
+    "layer": 30,
+    "condition": "L1_pure_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 30,
+    "condition": "L2_benign_override",
+    "auroc": 0.9994444444444445
+  },
+  {
+    "layer": 30,
+    "condition": "L3_lexicon_decoy",
+    "auroc": 0.9952469135802469
+  },
+  {
+    "layer": 30,
+    "condition": "L4_conceal_plain",
+    "auroc": 0.9998456790123457
+  },
+  {
+    "layer": 30,
+    "condition": "L5_conceal_explicit",
+    "auroc": 1.0
+  },
+  {
+    "layer": 32,
+    "condition": "L1_pure_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 32,
+    "condition": "L2_benign_override",
+    "auroc": 0.9998765432098765
+  },
+  {
+    "layer": 32,
+    "condition": "L3_lexicon_decoy",
+    "auroc": 0.9993518518518518
+  },
+  {
+    "layer": 32,
+    "condition": "L4_conceal_plain",
+    "auroc": 1.0
+  },
+  {
+    "layer": 32,
+    "condition": "L5_conceal_explicit",
+    "auroc": 1.0
+  },
+  {
+    "layer": 34,
+    "condition": "L1_pure_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 34,
+    "condition": "L2_benign_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 34,
+    "condition": "L3_lexicon_decoy",
+    "auroc": 0.999320987654321
+  },
+  {
+    "layer": 34,
+    "condition": "L4_conceal_plain",
+    "auroc": 1.0
+  },
+  {
+    "layer": 34,
+    "condition": "L5_conceal_explicit",
+    "auroc": 1.0
+  },
+  {
+    "layer": 36,
+    "condition": "L1_pure_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 36,
+    "condition": "L2_benign_override",
+    "auroc": 1.0
+  },
+  {
+    "layer": 36,
+    "condition": "L3_lexicon_decoy",
+    "auroc": 0.9999074074074074
+  },
+  {
+    "layer": 36,
+    "condition": "L4_conceal_plain",
+    "auroc": 1.0
+  },
+  {
+    "layer": 36,
+    "condition": "L5_conceal_explicit",
+    "auroc": 1.0
+  }
+]
