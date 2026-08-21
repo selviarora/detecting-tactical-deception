@@ -27,7 +27,7 @@
   {
     "layer": 2,
     "condition": "L1_pure_override",
-    "auroc": 0.9890740740740741
+    "auroc": 0.9883561643835617
   },
   {
     "layer": 2,
@@ -52,7 +52,7 @@
   {
     "layer": 4,
     "condition": "L1_pure_override",
-    "auroc": 0.999320987654321
+    "auroc": 0.9995433789954338
   },
   {
     "layer": 4,
@@ -77,7 +77,7 @@
   {
     "layer": 6,
     "condition": "L1_pure_override",
-    "auroc": 0.9991358024691358
+    "auroc": 0.9993911719939118
   },
   {
     "layer": 6,
@@ -102,7 +102,7 @@
   {
     "layer": 8,
     "condition": "L1_pure_override",
-    "auroc": 0.9702160493827161
+    "auroc": 0.9891171993911719
   },
   {
     "layer": 8,
@@ -127,12 +127,12 @@
   {
     "layer": 10,
     "condition": "L1_pure_override",
-    "auroc": 0.9999691358024692
+    "auroc": 0.9999619482496195
   },
   {
     "layer": 10,
     "condition": "L2_benign_override",
-    "auroc": 0.9962962962962963
+    "auroc": 0.9938271604938272
   },
   {
     "layer": 10,
@@ -202,7 +202,7 @@
   {
     "layer": 16,
     "condition": "L1_pure_override",
-    "auroc": 0.9999074074074075
+    "auroc": 0.9998858447488584
   },
   {
     "layer": 16,
@@ -212,12 +212,12 @@
   {
     "layer": 16,
     "condition": "L3_lexicon_decoy",
-    "auroc": 0.9995061728395062
+    "auroc": 1.0
   },
   {
     "layer": 16,
     "condition": "L4_conceal_plain",
-    "auroc": 0.9999691358024692
+    "auroc": 1.0
   },
   {
     "layer": 16,
@@ -382,17 +382,17 @@
   {
     "layer": 30,
     "condition": "L2_benign_override",
-    "auroc": 0.9994444444444445
+    "auroc": 1.0
   },
   {
     "layer": 30,
     "condition": "L3_lexicon_decoy",
-    "auroc": 0.9952469135802469
+    "auroc": 1.0
   },
   {
     "layer": 30,
     "condition": "L4_conceal_plain",
-    "auroc": 0.9998456790123457
+    "auroc": 1.0
   },
   {
     "layer": 30,
@@ -407,12 +407,12 @@
   {
     "layer": 32,
     "condition": "L2_benign_override",
-    "auroc": 0.9998765432098765
+    "auroc": 1.0
   },
   {
     "layer": 32,
     "condition": "L3_lexicon_decoy",
-    "auroc": 0.9993518518518518
+    "auroc": 1.0
   },
   {
     "layer": 32,
@@ -437,7 +437,7 @@
   {
     "layer": 34,
     "condition": "L3_lexicon_decoy",
-    "auroc": 0.999320987654321
+    "auroc": 1.0
   },
   {
     "layer": 34,
@@ -462,7 +462,7 @@
   {
     "layer": 36,
     "condition": "L3_lexicon_decoy",
-    "auroc": 0.9999074074074074
+    "auroc": 1.0
   },
   {
     "layer": 36,

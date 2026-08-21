@@ -108,6 +108,12 @@ def main():
     ap.add_argument("--pos", default="last_prompt")
     ap.add_argument("--all", action="store_true",
                     help="include non-compliant generations")
+    ap.add_argument("--layer", type=int, default=None,
+                    help="force a model layer instead of selecting by "
+                         "validation AUROC. Selection is unreliable here "
+                         "because AUROC ties at 1.000 across all layers, so "
+                         "the tie-break returns the earliest (most surface) "
+                         "layer.")
     args = ap.parse_args()
 
     X, meta, layers = load(args.tag, args.pos, compliant_only=not args.all)
@@ -153,8 +159,12 @@ def main():
             continue
         if a > best_va:
             best_va, best_li = a, li
-    print(f"selected layer index {best_li} (model layer {layers[best_li]}), "
-          f"val AUROC {best_va:.3f}")
+    if args.layer is not None:
+        best_li = int(np.argmin(np.abs(np.asarray(layers) - args.layer)))
+        print(f"FORCED layer index {best_li} (model layer {layers[best_li]})")
+    else:
+        print(f"selected layer index {best_li} (model layer {layers[best_li]}), "
+              f"val AUROC {best_va:.3f}")
 
     scores_te, clf, sc = fit_probe(X[trm, best_li], ytr_full, X[tem, best_li])
 
@@ -317,9 +327,16 @@ def main():
             lo, hi = np.percentile(bs, [2.5, 97.5], axis=0)
             return beta, lo, hi
 
+        # Standardise within layer. Raw decision_function values have a scale
+        # that depends on the layer's activation norms, so unstandardised
+        # coefficients cannot be compared across depth at all. Units below are
+        # SDs of the probe score across the four override conditions.
         for name, y in [("activation probe", scores_te[qm]),
                         ("bag-of-words    ", s_bow_all[qm])]:
-            beta, lo, hi = fit_eff(np.asarray(y, dtype=float))
+            y = np.asarray(y, dtype=float)
+            ref = scores_te if name.startswith("activation") else s_bow_all
+            y = (y - np.mean(ref)) / (np.std(ref) + 1e-9)
+            beta, lo, hi = fit_eff(y)
             print(f"\n  {name}")
             for j, lab in enumerate(["intercept", "misled  ", "lexicon "]):
                 star = "" if (lo[j] < 0 < hi[j]) else "  *"

@@ -1,26 +1,26 @@
 {
   "L0_honest": {
-    "mean_score": -4.9310994035944224,
+    "mean_score": -8.141089240268,
     "auc_vs_L0": NaN
   },
   "L1_pure_override": {
-    "mean_score": 1.1859353446891499,
-    "auc_vs_L0": 0.9890740740740741
+    "mean_score": 14.033535479002563,
+    "auc_vs_L0": 1.0
   },
   "L2_benign_override": {
-    "mean_score": 9.305152974545573,
+    "mean_score": 14.673373274580669,
     "auc_vs_L0": 1.0
   },
   "L3_lexicon_decoy": {
-    "mean_score": 9.994583951062426,
+    "mean_score": 15.4531213119809,
     "auc_vs_L0": 1.0
   },
   "L4_conceal_plain": {
-    "mean_score": 8.014775385003485,
+    "mean_score": 17.67240968606831,
     "auc_vs_L0": 1.0
   },
   "L5_conceal_explicit": {
-    "mean_score": 8.60782091337781,
+    "mean_score": 16.16570956441003,
     "auc_vs_L0": 1.0
   }
 }
