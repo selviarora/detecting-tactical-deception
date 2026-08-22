@@ -35,12 +35,14 @@ from sklearn.linear_model import LogisticRegression
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 ROOT = Path(__file__).parent
-APOLLO = Path("/private/tmp/claude-501/-Users-selviarora/"
-              "720e0566-3eaa-4f42-81bb-c2407d786522/scratchpad/"
-              "deception-detection")
-FACTS = APOLLO / "data" / "repe" / "true_false_facts.csv"
+import os
 
-MODEL = "Qwen/Qwen3-4B-Instruct-2507"
+_DEFAULT_APOLLO = ("/private/tmp/claude-501/-Users-selviarora/"
+                   "720e0566-3eaa-4f42-81bb-c2407d786522/scratchpad/"
+                   "deception-detection/data/repe/true_false_facts.csv")
+# CVO_FACTS / CVO_MODEL let the same file run locally and on a rented GPU box
+FACTS = Path(os.environ.get("CVO_FACTS", _DEFAULT_APOLLO))
+MODEL = os.environ.get("CVO_MODEL", "Qwen/Qwen3-4B-Instruct-2507")
 LAYER_STRIDE = 2
 N_FACTS = 512
 APOLLO_DEPTH_FRAC = 22 / 80          # their detect layer as a fraction of depth
@@ -77,9 +79,14 @@ def capture():
     device, dtype = pick_device()
     tok = AutoTokenizer.from_pretrained(MODEL)
     attn = "eager" if device == "mps" else "sdpa"
-    model = AutoModelForCausalLM.from_pretrained(
-        MODEL, dtype=dtype, attn_implementation=attn, low_cpu_mem_usage=True
-    ).to(device).eval()
+    if device == "cuda":
+        model = AutoModelForCausalLM.from_pretrained(
+            MODEL, dtype=dtype, attn_implementation=attn,
+            low_cpu_mem_usage=True, device_map="auto").eval()
+    else:
+        model = AutoModelForCausalLM.from_pretrained(
+            MODEL, dtype=dtype, attn_implementation=attn,
+            low_cpu_mem_usage=True).to(device).eval()
 
     n_layers = model.config.num_hidden_layers
     keep = list(range(0, n_layers + 1, LAYER_STRIDE))

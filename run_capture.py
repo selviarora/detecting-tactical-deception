@@ -113,9 +113,15 @@ def main():
     # left-padded (verified: single-example batches are fine, padded ones are
     # not). eager is numerically clean and only marginally slower here.
     attn = "eager" if device == "mps" else "sdpa"
-    model = AutoModelForCausalLM.from_pretrained(
-        args.model, dtype=dtype, attn_implementation=attn, low_cpu_mem_usage=True
-    ).to(device).eval()
+    if device == "cuda":
+        # 70B in bf16 is ~141GB and must shard across GPUs; .to() would OOM
+        model = AutoModelForCausalLM.from_pretrained(
+            args.model, dtype=dtype, attn_implementation=attn,
+            low_cpu_mem_usage=True, device_map="auto").eval()
+    else:
+        model = AutoModelForCausalLM.from_pretrained(
+            args.model, dtype=dtype, attn_implementation=attn,
+            low_cpu_mem_usage=True).to(device).eval()
 
     n_layers = model.config.num_hidden_layers
     keep_layers = list(range(0, n_layers + 1, LAYER_STRIDE))
