@@ -1,4 +1,4 @@
-# Concealment vs Override
+# Override vs Deception
 
 **Do activation-based "deception probes" detect deception, or merely detect that a
 model is overriding an answer it knows?**
