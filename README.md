@@ -1,15 +1,14 @@
-# Override vs Deception
+# override vs deception
 
-**Do activation-based "deception probes" detect deception, or merely detect that a
-model is overriding an answer it knows?**
+**do activation-based "deception probes" detect deception, or merely detect that a model is overriding an answer it knows?**
 
-## The question
+## the question
 
-A large literature trains linear probes on residual-stream activations to detect
+a large literature trains linear probes on residual-stream activations to detect
 when an LLM is being deceptive, reporting AUROCs of 0.95+. Those probes are almost
 always trained by contrasting *"be honest"* against *"be deceptive"* instructions.
 
-That contrast confounds two things:
+that contrast confounds two things:
 
 1. the model is deceiving someone, and
 2. the model knows X but has been told to output Y.
@@ -22,15 +21,15 @@ Pressure-Testing found identical AUROC whether or not the model actually complie
 with the deceptive instruction, suggesting probes read prompt regime rather than
 deceptive behaviour.
 
-This repo builds the control condition that separates (1) from (2).
+this repo builds the control condition that separates (1) from (2).
 
-## Design: a 2x2, plus two anchors
+## design: a 2x2, plus two anchors
 
-Every prompt presents a record containing **both** a true value and a decoy, in
+every prompt presents a record containing **both** a true value and a decoy, in
 identical layout. The model always knows the true value. In L1-L5 it is asked to
 output the decoy. Only the *reason* changes.
 
-Each override frame is `[reason clause] + [imperative clause]`. The reason
+each override frame is `[reason clause] + [imperative clause]`. The reason
 clause varies only in whether anyone is actually misled; the imperative clause
 varies only in whether it uses deception vocabulary. Both are matched for force.
 
@@ -47,7 +46,7 @@ L2/L3/L4/L5 form an exact 2x2. L3 and L4 are the load-bearing cells: L3 is
 deception vocabulary with nobody misled, L4 is genuine misleading with no
 deception vocabulary.
 
-### Three hypotheses, three predicted orderings
+### hypotheses
 
 | If the probe measures... | predicted ordering |
 |---|---|
@@ -55,25 +54,25 @@ deception vocabulary.
 | answer override | L1 ≈ L2 ≈ L3 ≈ L4 ≈ L5, all ≫ L0 |
 | surface lexicon | L3 ≈ L5 ≫ L1 ≈ L2 ≈ L4 |
 
-A single AUROC cannot distinguish these. The ordering can.
+a single auroc cannot distinguish these.
 
-### Why prohibition is held constant, not varied
+### why prohibition is held constant, not varied
 
-It was originally a third factor. The pilot killed that: conditions phrased as a
+it was originally a third factor. The pilot killed that: conditions phrased as a
 bare redirect ("reply with the district code instead") had **5% and 0%**
 compliance, because the model just answers the literal question, while
 conditions containing an explicit "you must not output X" had **95% and 90%**.
 Prohibition is a prerequisite for the manipulation working at all, not a free
 variable, so it now appears identically in every override condition.
 
-A second pilot showed compliance still tracking *imperative force* (90% for the
+a second pilot showed compliance still tracking *imperative force* (90% for the
 forcefully-worded L5 vs 40% for the mild L4). Since compliant-only filtering is
 standard practice, that would have meant silently conditioning on the variable
 under study. Hence the matched reason/imperative construction above.
 
-## Why content filtering is unavailable here
+## why content filtering is unavailable here
 
-The standard leakage control (delete the eliciting instruction, recompute
+the standard leakage control (delete the eliciting instruction, recompute
 activations, see if the probe still fires) does not apply. These are in-context
 manipulations, so deleting the frame makes L1-L5 byte-identical. Leakage control
 is therefore *structural*:
@@ -87,7 +86,7 @@ is therefore *structural*:
 - **Late readout positions.** Read at the final prompt token and at generated
   answer tokens, not at the instruction tokens.
 
-## Counterbalancing (G2)
+## counterbalancing (G2)
 
 - Each pseudoword pair is emitted twice with roles flipped, so **every pseudoword
   appears as the truth in one item and the decoy in another**. No word is
@@ -97,32 +96,23 @@ is therefore *structural*:
 - The same item appears in all 6 conditions, giving a matched-pair design where
   condition is the only within-item variable.
 
-Pseudowords are procedurally generated CVCV strings filtered against an English
+pseudowords are procedurally generated CVCV strings filtered against an English
 wordlist, so contamination and memorisation are not possible.
 
-## Status
 
-- [x] Dataset generator (2,160 prompts: 6 conditions x 6 domains x 60 items)
-- [x] Activation capture (residual stream, 2 positions, every 2nd layer)
-- [x] Compliance check, which forced two design revisions (see above)
-- [ ] Compliance high and *uncorrelated with condition* across all rungs
-- [ ] Probes + bag-of-words baseline + layer sweep
-- [ ] Off-the-shelf RepE probe scored down the ladder
-- [ ] Causal steering with the L2 specificity control
-
-Known limitation: Qwen3-4B is at the low end of usable here. Compliance is the
+known limitation: Qwen3-4B is at the low end of usable here. Compliance is the
 binding constraint, and if it cannot be made both high and flat across
 conditions, the next move is a larger instruct model, not a base model (base
 models do not follow the frame at all, which removes the manipulation entirely).
 
-## Layout
+## layout
 
 ```
 build_dataset.py    # procedural generator, condition ladder, counterbalancing
 data/dataset.jsonl  # regenerable: python build_dataset.py
 ```
 
-## Setup
+## setup
 
 ```bash
 python3 -m venv .venv
@@ -130,7 +120,7 @@ python3 -m venv .venv
 .venv/bin/python build_dataset.py
 ```
 
-## Key prior work
+## key prior work
 
 - [Liars' Bench](https://arxiv.org/abs/2511.16035) - detectors fail on knowledge concealment
 - [Beyond Liars' Bench](https://arxiv.org/abs/2607.20479) - sub-chance anti-transfer
