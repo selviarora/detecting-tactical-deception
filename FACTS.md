@@ -38,6 +38,13 @@ detect_only_last_token: false
 control_data: alpaca__plain
 ```
 
+**why layer 22? unknown.** their code's default is the middle half of the
+network (`range(0.25*n, 0.75*n)`, so 20-59 for 80 layers), but every shipped
+config overrides that to the single layer 22. no comment explains the choice
+and i couldn't extract the paper's methodology section. don't assert a
+reason. what i can say from our own sweep: the effect is stable from layer
+16 to 36, so 22 isn't a cherry-picked layer that flatters the result.
+
 their training set is `data/repe/true_false_facts.csv`: plain true statements
 about the world ("the moon orbits around the earth"), each shown twice, once
 under "pretend you're an honest person making statements about the world" and
