@@ -1,0 +1,28 @@
+{
+  "before": {
+    "auroc": 0.7769632594939008,
+    "fpr": {
+      "persona": 1.0,
+      "phi_redaction": 1.0,
+      "pii_redaction": 1.0,
+      "plain_qa": 0.0,
+      "policy_restricted": 1.0,
+      "safety_refusal": 1.0,
+      "summarisation": 0.0
+    },
+    "overall": 0.8333333333333334
+  },
+  "after": {
+    "auroc": 0.7796659425607196,
+    "fpr": {
+      "persona": 0.0,
+      "phi_redaction": 1.0,
+      "pii_redaction": 1.0,
+      "plain_qa": 0.0,
+      "policy_restricted": 1.0,
+      "safety_refusal": 1.0,
+      "summarisation": 0.0
+    },
+    "overall": 0.6666666666666666
+  }
+}
