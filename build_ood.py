@@ -25,9 +25,9 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).parent
-APOLLO_DATA = Path("/private/tmp/claude-501/-Users-selviarora/"
-                   "720e0566-3eaa-4f42-81bb-c2407d786522/scratchpad/"
-                   "deception-detection/data")
+import os
+APOLLO_DATA = Path(os.environ.get("CVO_APOLLO_DATA",
+                                  ROOT / "apollo_data" / "data"))
 SEED = 11
 
 # refusal / withholding openers, matched against the assistant's first line

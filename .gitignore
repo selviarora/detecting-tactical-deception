@@ -12,3 +12,4 @@ figures/
 results/*.csv
 
 .DS_Store
+data/apollo_rollouts/

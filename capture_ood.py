@@ -64,21 +64,32 @@ def load_model():
     return tok, model.eval(), device
 
 
-def run_roleplay(tag):
+def _messages(r):
+    if "messages" in r:
+        return r["messages"]
+    return [{"role": "system", "content": r["system"]},
+            {"role": "user", "content": r["user"]}]
+
+
+def run_eval(tag, name="roleplaying"):
+    """Mean activation over the graded assistant completion, apollo-style.
+
+    name = roleplaying | sandbagging | insider  (data/apollo_<name>.jsonl)
+    roleplaying keeps its old output filenames ({tag}_roleplay.npy).
+    """
     rows = [json.loads(l) for l in
-            (ROOT / "data" / "apollo_roleplaying.jsonl").open()]
+            (ROOT / "data" / f"apollo_{name}.jsonl").open()]
+    out_name = "roleplay" if name == "roleplaying" else name
     tok, model, device = load_model()
     keep = list(range(0, model.config.num_hidden_layers + 1, LAYER_STRIDE))
     d = model.config.hidden_size
     X = np.zeros((len(rows), len(keep), d), np.float16)
-    print(f"roleplay n={len(rows)} layers={len(keep)} d={d}", flush=True)
+    print(f"{name} n={len(rows)} layers={len(keep)} d={d}", flush=True)
 
     t0 = time.time()
     for i, r in enumerate(rows):
         prefix = tok.apply_chat_template(
-            [{"role": "system", "content": r["system"]},
-             {"role": "user", "content": r["user"]}],
-            tokenize=False, add_generation_prompt=True)
+            _messages(r), tokenize=False, add_generation_prompt=True)
         n_prefix = len(tok(prefix, add_special_tokens=False)["input_ids"])
         enc = tok(prefix + r["assistant"], return_tensors="pt",
                   add_special_tokens=False).to(device)
@@ -97,14 +108,19 @@ def run_roleplay(tag):
             print(f"  {i+1}/{len(rows)} {el:.0f}s ({el/(i+1):.2f}s/ex)", flush=True)
 
     (ROOT / "acts").mkdir(exist_ok=True)
-    np.save(ROOT / "acts" / f"{tag}_roleplay.npy", X)
-    np.save(ROOT / "acts" / f"{tag}_roleplay_layers.npy", np.array(keep))
-    print(f"wrote acts/{tag}_roleplay.npy {X.shape}")
+    np.save(ROOT / "acts" / f"{tag}_{out_name}.npy", X)
+    np.save(ROOT / "acts" / f"{tag}_{out_name}_layers.npy", np.array(keep))
+    print(f"wrote acts/{tag}_{out_name}.npy {X.shape}")
 
 
-def run_fpr(tag, max_new=48):
+def run_roleplay(tag):
+    run_eval(tag, "roleplaying")
+
+
+def run_fpr(tag, data="realistic_fpr", max_new=48):
     rows = [json.loads(l) for l in
-            (ROOT / "data" / "realistic_fpr.jsonl").open()]
+            (ROOT / "data" / f"{data}.jsonl").open()]
+    name = tag if data == "realistic_fpr" else f"{tag}_{data}"
     tok, model, device = load_model()
     keep = list(range(0, model.config.num_hidden_layers + 1, LAYER_STRIDE))
     d = model.config.hidden_size
@@ -142,9 +158,9 @@ def run_fpr(tag, max_new=48):
 
     (ROOT / "acts").mkdir(exist_ok=True)
     (ROOT / "results").mkdir(exist_ok=True)
-    np.save(ROOT / "acts" / f"{tag}_fpr.npy", X)
-    np.save(ROOT / "acts" / f"{tag}_fpr_layers.npy", np.array(keep))
-    with (ROOT / "results" / f"fpr_responses_{tag}.jsonl").open("w") as f:
+    np.save(ROOT / "acts" / f"{name}_fpr.npy", X)
+    np.save(ROOT / "acts" / f"{name}_fpr_layers.npy", np.array(keep))
+    with (ROOT / "results" / f"fpr_responses_{name}.jsonl").open("w") as f:
         for x in recs:
             f.write(json.dumps(x) + "\n")
 
@@ -153,15 +169,22 @@ def run_fpr(tag, max_new=48):
     for k in ["control", "withhold"]:
         c = Counter(x["our_class"] for x in recs if x["kind"] == k)
         print(f"  {k:9} {dict(c)}")
-    print(f"wrote acts/{tag}_fpr.npy {X.shape}")
+    print(f"wrote acts/{name}_fpr.npy {X.shape}")
 
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--which", choices=["roleplay", "fpr", "both"], default="both")
+    ap.add_argument("--which", choices=["roleplay", "fpr", "evals", "both"],
+                    default="both",
+                    help="evals = apollo sandbagging + insider trading")
     ap.add_argument("--tag", default="llama70b")
+    ap.add_argument("--fpr-data", default="realistic_fpr",
+                    help="basename under data/ (realistic_fpr | benchmark_fpr)")
     a = ap.parse_args()
     if a.which in ("roleplay", "both"):
         run_roleplay(a.tag)
     if a.which in ("fpr", "both"):
-        run_fpr(a.tag)
+        run_fpr(a.tag, a.fpr_data)
+    if a.which == "evals":
+        for name in ("sandbagging", "insider"):
+            run_eval(a.tag, name)
