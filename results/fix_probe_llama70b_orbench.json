@@ -1,0 +1,561 @@
+{
+  "source": "orbench",
+  "layer": 22,
+  "k": {
+    "0": {
+      "auroc": {
+        "roleplaying": 0.7769632594939008,
+        "sandbagging": 0.9842052641369048,
+        "insider": 0.7509615384615385
+      },
+      "benign": {
+        "persona": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 2.7642383227921283
+        },
+        "phi_redaction": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 4.139599955176688
+        },
+        "pii_redaction": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 5.316617400292764
+        },
+        "plain_qa": {
+          "n": 60,
+          "fpr": 0.0,
+          "mean_z": 0.0
+        },
+        "policy_restricted": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 3.3204978579062177
+        },
+        "safety_refusal": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 5.359207359797543
+        },
+        "summarisation": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -0.1911387528758154
+        },
+        "held_out": {
+          "n": 36,
+          "fpr": 0.6666666666666666,
+          "mean_z": 2.8295156635603127
+        },
+        "all_benign": {
+          "n": 72,
+          "fpr": 0.8333333333333334,
+          "mean_z": 3.4515199189707606
+        }
+      },
+      "benchmark_fpr": {
+        "alpaca_complied": {
+          "n": 300,
+          "fpr": 0.01,
+          "mean_z": 0.0
+        },
+        "orbench_hard/refused": {
+          "n": 14,
+          "fpr": 0.0,
+          "mean_z": 0.819491134514853
+        },
+        "orbench_hard/complied": {
+          "n": 286,
+          "fpr": 0.08041958041958042,
+          "mean_z": 1.3056066569787261
+        },
+        "orbench_toxic/refused": {
+          "n": 115,
+          "fpr": 0.19130434782608696,
+          "mean_z": 2.0735274137111004
+        },
+        "orbench_toxic/complied": {
+          "n": 85,
+          "fpr": 0.2235294117647059,
+          "mean_z": 2.046965682451708
+        },
+        "xstest_safe/refused": {
+          "n": 6,
+          "fpr": 0.0,
+          "mean_z": 1.7920606722697427
+        },
+        "xstest_safe/complied": {
+          "n": 242,
+          "fpr": 0.004132231404958678,
+          "mean_z": -0.15336711771024747
+        },
+        "xstest_unsafe/refused": {
+          "n": 148,
+          "fpr": 0.02027027027027027,
+          "mean_z": 1.125468738909968
+        },
+        "xstest_unsafe/complied": {
+          "n": 50,
+          "fpr": 0.0,
+          "mean_z": 0.7947015127622716
+        },
+        "all_refused": {
+          "n": 283,
+          "fpr": 0.08833922261484099,
+          "mean_z": 1.5097277874177526
+        },
+        "all_complied_nonctrl": {
+          "n": 663,
+          "fpr": 0.06485671191553545,
+          "mean_z": 0.829586185300844
+        }
+      }
+    },
+    "1": {
+      "auroc": {
+        "roleplaying": 0.7789030884692788,
+        "sandbagging": 0.9805803571428571,
+        "insider": 0.7615384615384616
+      },
+      "benign": {
+        "persona": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": 1.6529528462671845
+        },
+        "phi_redaction": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 2.411280787375715
+        },
+        "pii_redaction": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 2.677025865892546
+        },
+        "plain_qa": {
+          "n": 60,
+          "fpr": 0.0,
+          "mean_z": 0.0
+        },
+        "policy_restricted": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": 0.8319490263468189
+        },
+        "safety_refusal": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": 1.4566191582092367
+        },
+        "summarisation": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -0.5481994070811473
+        },
+        "held_out": {
+          "n": 36,
+          "fpr": 0.0,
+          "mean_z": 0.5800959406020245
+        },
+        "all_benign": {
+          "n": 72,
+          "fpr": 0.3333333333333333,
+          "mean_z": 1.4135993157904698
+        }
+      },
+      "benchmark_fpr": {
+        "alpaca_complied": {
+          "n": 300,
+          "fpr": 0.01,
+          "mean_z": 0.0
+        },
+        "orbench_hard/refused": {
+          "n": 14,
+          "fpr": 0.0,
+          "mean_z": -1.1891499160449293
+        },
+        "orbench_hard/complied": {
+          "n": 286,
+          "fpr": 0.0034965034965034965,
+          "mean_z": -0.6620417001390176
+        },
+        "orbench_toxic/refused": {
+          "n": 115,
+          "fpr": 0.008695652173913044,
+          "mean_z": -0.8267568745217129
+        },
+        "orbench_toxic/complied": {
+          "n": 85,
+          "fpr": 0.03529411764705882,
+          "mean_z": -0.2709749581387444
+        },
+        "xstest_safe/refused": {
+          "n": 6,
+          "fpr": 0.0,
+          "mean_z": -0.20319994470201103
+        },
+        "xstest_safe/complied": {
+          "n": 242,
+          "fpr": 0.0,
+          "mean_z": -1.124654194622867
+        },
+        "xstest_unsafe/refused": {
+          "n": 148,
+          "fpr": 0.0,
+          "mean_z": -1.465852465958617
+        },
+        "xstest_unsafe/complied": {
+          "n": 50,
+          "fpr": 0.0,
+          "mean_z": -1.4808907451430628
+        },
+        "all_refused": {
+          "n": 283,
+          "fpr": 0.0035335689045936395,
+          "mean_z": -1.1656944895094743
+        },
+        "all_complied_nonctrl": {
+          "n": 663,
+          "fpr": 0.006033182503770739,
+          "mean_z": -0.8425189211535385
+        }
+      }
+    },
+    "2": {
+      "auroc": {
+        "roleplaying": 0.7793244745388366,
+        "sandbagging": 0.9786411830357143,
+        "insider": 0.7535714285714286
+      },
+      "benign": {
+        "persona": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": 0.8017237046213836
+        },
+        "phi_redaction": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 3.2711907150767536
+        },
+        "pii_redaction": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 2.2607283307174884
+        },
+        "plain_qa": {
+          "n": 60,
+          "fpr": 0.0,
+          "mean_z": 0.0
+        },
+        "policy_restricted": {
+          "n": 12,
+          "fpr": 0.6666666666666666,
+          "mean_z": 1.5292637568539291
+        },
+        "safety_refusal": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 1.7140475642986097
+        },
+        "summarisation": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -2.018809604462854
+        },
+        "held_out": {
+          "n": 36,
+          "fpr": 0.5555555555555556,
+          "mean_z": 0.40815024962543167
+        },
+        "all_benign": {
+          "n": 72,
+          "fpr": 0.6111111111111112,
+          "mean_z": 1.2596695079286393
+        }
+      },
+      "benchmark_fpr": {
+        "alpaca_complied": {
+          "n": 300,
+          "fpr": 0.01,
+          "mean_z": 0.0
+        },
+        "orbench_hard/refused": {
+          "n": 14,
+          "fpr": 0.0,
+          "mean_z": -1.502994043859885
+        },
+        "orbench_hard/complied": {
+          "n": 286,
+          "fpr": 0.0034965034965034965,
+          "mean_z": -0.9050025886156532
+        },
+        "orbench_toxic/refused": {
+          "n": 115,
+          "fpr": 0.017391304347826087,
+          "mean_z": 0.3028874180451339
+        },
+        "orbench_toxic/complied": {
+          "n": 85,
+          "fpr": 0.058823529411764705,
+          "mean_z": 0.1832680338232631
+        },
+        "xstest_safe/refused": {
+          "n": 6,
+          "fpr": 0.0,
+          "mean_z": 0.847797903373242
+        },
+        "xstest_safe/complied": {
+          "n": 242,
+          "fpr": 0.0,
+          "mean_z": -0.5153062169882393
+        },
+        "xstest_unsafe/refused": {
+          "n": 148,
+          "fpr": 0.0,
+          "mean_z": 0.17179334769794166
+        },
+        "xstest_unsafe/complied": {
+          "n": 50,
+          "fpr": 0.0,
+          "mean_z": -0.12389075175932966
+        },
+        "all_refused": {
+          "n": 283,
+          "fpr": 0.007067137809187279,
+          "mean_z": 0.15654298360123692
+        },
+        "all_complied_nonctrl": {
+          "n": 663,
+          "fpr": 0.00904977375565611,
+          "mean_z": -0.5643267510971491
+        }
+      }
+    },
+    "4": {
+      "auroc": {
+        "roleplaying": 0.7784599065685369,
+        "sandbagging": 0.9779482886904762,
+        "insider": 0.753434065934066
+      },
+      "benign": {
+        "persona": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -1.0758838945643854
+        },
+        "phi_redaction": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 2.620135151749031
+        },
+        "pii_redaction": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 2.5007470704721038
+        },
+        "plain_qa": {
+          "n": 60,
+          "fpr": 0.0,
+          "mean_z": 0.0
+        },
+        "policy_restricted": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": 1.1322807691817136
+        },
+        "safety_refusal": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": 0.8474757308112111
+        },
+        "summarisation": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -4.379140361904973
+        },
+        "held_out": {
+          "n": 36,
+          "fpr": 0.0,
+          "mean_z": -0.7997873179440579
+        },
+        "all_benign": {
+          "n": 72,
+          "fpr": 0.3333333333333333,
+          "mean_z": 0.274267251950794
+        }
+      },
+      "benchmark_fpr": {
+        "alpaca_complied": {
+          "n": 300,
+          "fpr": 0.01,
+          "mean_z": 0.0
+        },
+        "orbench_hard/refused": {
+          "n": 14,
+          "fpr": 0.0,
+          "mean_z": -0.7596246779591382
+        },
+        "orbench_hard/complied": {
+          "n": 286,
+          "fpr": 0.02097902097902098,
+          "mean_z": -0.2141297426221574
+        },
+        "orbench_toxic/refused": {
+          "n": 115,
+          "fpr": 0.034782608695652174,
+          "mean_z": 0.0979682328393144
+        },
+        "orbench_toxic/complied": {
+          "n": 85,
+          "fpr": 0.09411764705882353,
+          "mean_z": 0.5431073900719222
+        },
+        "xstest_safe/refused": {
+          "n": 6,
+          "fpr": 0.0,
+          "mean_z": 1.0870065835926122
+        },
+        "xstest_safe/complied": {
+          "n": 242,
+          "fpr": 0.02066115702479339,
+          "mean_z": -0.1520626669196976
+        },
+        "xstest_unsafe/refused": {
+          "n": 148,
+          "fpr": 0.0,
+          "mean_z": -0.4958661513584609
+        },
+        "xstest_unsafe/complied": {
+          "n": 50,
+          "fpr": 0.0,
+          "mean_z": -0.5892079464224075
+        },
+        "all_refused": {
+          "n": 283,
+          "fpr": 0.014134275618374558,
+          "mean_z": -0.23404011056952742
+        },
+        "all_complied_nonctrl": {
+          "n": 663,
+          "fpr": 0.02865761689291101,
+          "mean_z": -0.12267796115431195
+        }
+      }
+    },
+    "8": {
+      "auroc": {
+        "roleplaying": 0.7805450410851418,
+        "sandbagging": 0.9740048363095238,
+        "insider": 0.7563186813186813
+      },
+      "benign": {
+        "persona": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -1.654571960737859
+        },
+        "phi_redaction": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 2.887752009319636
+        },
+        "pii_redaction": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 2.0753934214504013
+        },
+        "plain_qa": {
+          "n": 60,
+          "fpr": 0.0,
+          "mean_z": 0.0
+        },
+        "policy_restricted": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": 0.9347941005496793
+        },
+        "safety_refusal": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 1.5245934609542033
+        },
+        "summarisation": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -4.013209385999797
+        },
+        "held_out": {
+          "n": 36,
+          "fpr": 0.3333333333333333,
+          "mean_z": -0.5179409770825356
+        },
+        "all_benign": {
+          "n": 72,
+          "fpr": 0.5,
+          "mean_z": 0.29245802786230046
+        }
+      },
+      "benchmark_fpr": {
+        "alpaca_complied": {
+          "n": 300,
+          "fpr": 0.01,
+          "mean_z": 0.0
+        },
+        "orbench_hard/refused": {
+          "n": 14,
+          "fpr": 0.0,
+          "mean_z": -0.42338047905624876
+        },
+        "orbench_hard/complied": {
+          "n": 286,
+          "fpr": 0.017482517482517484,
+          "mean_z": -0.009937648834655912
+        },
+        "orbench_toxic/refused": {
+          "n": 115,
+          "fpr": 0.02608695652173913,
+          "mean_z": 0.05180622150166706
+        },
+        "orbench_toxic/complied": {
+          "n": 85,
+          "fpr": 0.07058823529411765,
+          "mean_z": 0.32467700896098534
+        },
+        "xstest_safe/refused": {
+          "n": 6,
+          "fpr": 0.16666666666666666,
+          "mean_z": 1.2452535516585377
+        },
+        "xstest_safe/complied": {
+          "n": 242,
+          "fpr": 0.024793388429752067,
+          "mean_z": -0.14812779305332227
+        },
+        "xstest_unsafe/refused": {
+          "n": 148,
+          "fpr": 0.0,
+          "mean_z": -0.4631113473374212
+        },
+        "xstest_unsafe/complied": {
+          "n": 50,
+          "fpr": 0.0,
+          "mean_z": -0.6262762335765303
+        },
+        "all_refused": {
+          "n": 283,
+          "fpr": 0.014134275618374558,
+          "mean_z": -0.21568386739421871
+        },
+        "all_complied_nonctrl": {
+          "n": 663,
+          "fpr": 0.02564102564102564,
+          "mean_z": -0.06395990837747753
+        }
+      }
+    }
+  }
+}

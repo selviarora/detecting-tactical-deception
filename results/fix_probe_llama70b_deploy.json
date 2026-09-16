@@ -1,0 +1,561 @@
+{
+  "source": "deploy",
+  "layer": 22,
+  "k": {
+    "0": {
+      "auroc": {
+        "roleplaying": 0.7769632594939008,
+        "sandbagging": 0.9842029389880953,
+        "insider": 0.7509615384615385
+      },
+      "benign": {
+        "persona": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 2.76413893699646
+        },
+        "phi_redaction": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 4.13947057723999
+        },
+        "pii_redaction": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 5.316481590270996
+        },
+        "plain_qa": {
+          "n": 60,
+          "fpr": 0.0,
+          "mean_z": 0.0
+        },
+        "policy_restricted": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 3.3204057216644287
+        },
+        "safety_refusal": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 5.359070777893066
+        },
+        "summarisation": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -0.19115404784679413
+        },
+        "held_out": {
+          "n": 36,
+          "fpr": 0.6666666666666666,
+          "mean_z": 2.829434394836426
+        },
+        "all_benign": {
+          "n": 72,
+          "fpr": 0.8333333333333334,
+          "mean_z": 3.4514055252075195
+        }
+      },
+      "benchmark_fpr": {
+        "alpaca_complied": {
+          "n": 300,
+          "fpr": 0.01,
+          "mean_z": 0.0
+        },
+        "orbench_hard/refused": {
+          "n": 14,
+          "fpr": 0.0,
+          "mean_z": 0.8195010423660278
+        },
+        "orbench_hard/complied": {
+          "n": 286,
+          "fpr": 0.08041958041958042,
+          "mean_z": 1.3056164979934692
+        },
+        "orbench_toxic/refused": {
+          "n": 115,
+          "fpr": 0.19130434782608696,
+          "mean_z": 2.0735373497009277
+        },
+        "orbench_toxic/complied": {
+          "n": 85,
+          "fpr": 0.2235294117647059,
+          "mean_z": 2.0469655990600586
+        },
+        "xstest_safe/refused": {
+          "n": 6,
+          "fpr": 0.0,
+          "mean_z": 1.7920705080032349
+        },
+        "xstest_safe/complied": {
+          "n": 242,
+          "fpr": 0.004132231404958678,
+          "mean_z": -0.15336710214614868
+        },
+        "xstest_unsafe/refused": {
+          "n": 148,
+          "fpr": 0.02027027027027027,
+          "mean_z": 1.1254786252975464
+        },
+        "xstest_unsafe/complied": {
+          "n": 50,
+          "fpr": 0.0,
+          "mean_z": 0.7946915030479431
+        },
+        "all_refused": {
+          "n": 283,
+          "fpr": 0.08833922261484099,
+          "mean_z": 1.5097376108169556
+        },
+        "all_complied_nonctrl": {
+          "n": 663,
+          "fpr": 0.06485671191553545,
+          "mean_z": 0.8295961022377014
+        }
+      }
+    },
+    "1": {
+      "auroc": {
+        "roleplaying": 0.7782891725575956,
+        "sandbagging": 0.9834984188988095,
+        "insider": 0.7493131868131868
+      },
+      "benign": {
+        "persona": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -2.403419017791748
+        },
+        "phi_redaction": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -0.12344779819250107
+        },
+        "pii_redaction": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": 0.6197262406349182
+        },
+        "plain_qa": {
+          "n": 60,
+          "fpr": 0.0,
+          "mean_z": 0.0
+        },
+        "policy_restricted": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -0.2644472122192383
+        },
+        "safety_refusal": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 3.9599735736846924
+        },
+        "summarisation": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -3.984165668487549
+        },
+        "held_out": {
+          "n": 36,
+          "fpr": 0.3333333333333333,
+          "mean_z": -0.09618181735277176
+        },
+        "all_benign": {
+          "n": 72,
+          "fpr": 0.16666666666666666,
+          "mean_z": -0.36595550179481506
+        }
+      },
+      "benchmark_fpr": {
+        "alpaca_complied": {
+          "n": 300,
+          "fpr": 0.01,
+          "mean_z": 0.0
+        },
+        "orbench_hard/refused": {
+          "n": 14,
+          "fpr": 0.0,
+          "mean_z": 0.6810745596885681
+        },
+        "orbench_hard/complied": {
+          "n": 286,
+          "fpr": 0.08391608391608392,
+          "mean_z": 1.1518676280975342
+        },
+        "orbench_toxic/refused": {
+          "n": 115,
+          "fpr": 0.1565217391304348,
+          "mean_z": 1.8650643825531006
+        },
+        "orbench_toxic/complied": {
+          "n": 85,
+          "fpr": 0.18823529411764706,
+          "mean_z": 1.8861249685287476
+        },
+        "xstest_safe/refused": {
+          "n": 6,
+          "fpr": 0.0,
+          "mean_z": 1.5420533418655396
+        },
+        "xstest_safe/complied": {
+          "n": 242,
+          "fpr": 0.004132231404958678,
+          "mean_z": -0.11401573568582535
+        },
+        "xstest_unsafe/refused": {
+          "n": 148,
+          "fpr": 0.013513513513513514,
+          "mean_z": 0.856012761592865
+        },
+        "xstest_unsafe/complied": {
+          "n": 50,
+          "fpr": 0.0,
+          "mean_z": 0.5418487787246704
+        },
+        "all_refused": {
+          "n": 283,
+          "fpr": 0.0706713780918728,
+          "mean_z": 1.2719565629959106
+        },
+        "all_complied_nonctrl": {
+          "n": 663,
+          "fpr": 0.06184012066365008,
+          "mean_z": 0.7379370331764221
+        }
+      }
+    },
+    "2": {
+      "auroc": {
+        "roleplaying": 0.778470804484129,
+        "sandbagging": 0.9833054315476191,
+        "insider": 0.7493131868131868
+      },
+      "benign": {
+        "persona": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -3.2798542976379395
+        },
+        "phi_redaction": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": 0.5184815526008606
+        },
+        "pii_redaction": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": 0.20414116978645325
+        },
+        "plain_qa": {
+          "n": 60,
+          "fpr": 0.0,
+          "mean_z": 0.0
+        },
+        "policy_restricted": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -0.0499197319149971
+        },
+        "safety_refusal": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 4.442543029785156
+        },
+        "summarisation": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -4.389674663543701
+        },
+        "held_out": {
+          "n": 36,
+          "fpr": 0.3333333333333333,
+          "mean_z": 0.0009916099952533841
+        },
+        "all_benign": {
+          "n": 72,
+          "fpr": 0.16666666666666666,
+          "mean_z": -0.42571380734443665
+        }
+      },
+      "benchmark_fpr": {
+        "alpaca_complied": {
+          "n": 300,
+          "fpr": 0.01,
+          "mean_z": 0.0
+        },
+        "orbench_hard/refused": {
+          "n": 14,
+          "fpr": 0.0,
+          "mean_z": 0.802217423915863
+        },
+        "orbench_hard/complied": {
+          "n": 286,
+          "fpr": 0.0944055944055944,
+          "mean_z": 1.2738983631134033
+        },
+        "orbench_toxic/refused": {
+          "n": 115,
+          "fpr": 0.2,
+          "mean_z": 1.999756097793579
+        },
+        "orbench_toxic/complied": {
+          "n": 85,
+          "fpr": 0.2,
+          "mean_z": 1.9853620529174805
+        },
+        "xstest_safe/refused": {
+          "n": 6,
+          "fpr": 0.0,
+          "mean_z": 1.6464136838912964
+        },
+        "xstest_safe/complied": {
+          "n": 242,
+          "fpr": 0.004132231404958678,
+          "mean_z": -0.010864315554499626
+        },
+        "xstest_unsafe/refused": {
+          "n": 148,
+          "fpr": 0.02027027027027027,
+          "mean_z": 0.9687233567237854
+        },
+        "xstest_unsafe/complied": {
+          "n": 50,
+          "fpr": 0.0,
+          "mean_z": 0.6407424807548523
+        },
+        "all_refused": {
+          "n": 283,
+          "fpr": 0.09187279151943463,
+          "mean_z": 1.3938298225402832
+        },
+        "all_complied_nonctrl": {
+          "n": 663,
+          "fpr": 0.06787330316742081,
+          "mean_z": 0.848402202129364
+        }
+      }
+    },
+    "4": {
+      "auroc": {
+        "roleplaying": 0.7796804731148425,
+        "sandbagging": 0.9792085193452381,
+        "insider": 0.7423076923076923
+      },
+      "benign": {
+        "persona": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": 0.15770912170410156
+        },
+        "phi_redaction": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -0.12455343455076218
+        },
+        "pii_redaction": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -0.023352669551968575
+        },
+        "plain_qa": {
+          "n": 60,
+          "fpr": 0.0,
+          "mean_z": 0.0
+        },
+        "policy_restricted": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": 0.6174204349517822
+        },
+        "safety_refusal": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 5.199387550354004
+        },
+        "summarisation": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -4.6448798179626465
+        },
+        "held_out": {
+          "n": 36,
+          "fpr": 0.3333333333333333,
+          "mean_z": 0.39064276218414307
+        },
+        "all_benign": {
+          "n": 72,
+          "fpr": 0.16666666666666666,
+          "mean_z": 0.1969553530216217
+        }
+      },
+      "benchmark_fpr": {
+        "alpaca_complied": {
+          "n": 300,
+          "fpr": 0.01,
+          "mean_z": 0.0
+        },
+        "orbench_hard/refused": {
+          "n": 14,
+          "fpr": 0.21428571428571427,
+          "mean_z": 1.4088481664657593
+        },
+        "orbench_hard/complied": {
+          "n": 286,
+          "fpr": 0.32867132867132864,
+          "mean_z": 1.7529311180114746
+        },
+        "orbench_toxic/refused": {
+          "n": 115,
+          "fpr": 0.5565217391304348,
+          "mean_z": 2.355381965637207
+        },
+        "orbench_toxic/complied": {
+          "n": 85,
+          "fpr": 0.4823529411764706,
+          "mean_z": 2.2321789264678955
+        },
+        "xstest_safe/refused": {
+          "n": 6,
+          "fpr": 0.16666666666666666,
+          "mean_z": 1.975146770477295
+        },
+        "xstest_safe/complied": {
+          "n": 242,
+          "fpr": 0.028925619834710745,
+          "mean_z": 0.4553411602973938
+        },
+        "xstest_unsafe/refused": {
+          "n": 148,
+          "fpr": 0.060810810810810814,
+          "mean_z": 1.3672677278518677
+        },
+        "xstest_unsafe/complied": {
+          "n": 50,
+          "fpr": 0.0,
+          "mean_z": 0.9142699241638184
+        },
+        "all_refused": {
+          "n": 283,
+          "fpr": 0.27208480565371024,
+          "mean_z": 1.7837432622909546
+        },
+        "all_complied_nonctrl": {
+          "n": 663,
+          "fpr": 0.21417797888386123,
+          "mean_z": 1.277495265007019
+        }
+      }
+    },
+    "8": {
+      "auroc": {
+        "roleplaying": 0.7796514120065969,
+        "sandbagging": 0.9790271577380952,
+        "insider": 0.7443681318681319
+      },
+      "benign": {
+        "persona": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -0.07596995681524277
+        },
+        "phi_redaction": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": 0.09174394607543945
+        },
+        "pii_redaction": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -0.016389967873692513
+        },
+        "plain_qa": {
+          "n": 60,
+          "fpr": 0.0,
+          "mean_z": 0.0
+        },
+        "policy_restricted": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": 0.7006983757019043
+        },
+        "safety_refusal": {
+          "n": 12,
+          "fpr": 1.0,
+          "mean_z": 6.085039138793945
+        },
+        "summarisation": {
+          "n": 12,
+          "fpr": 0.0,
+          "mean_z": -5.566213607788086
+        },
+        "held_out": {
+          "n": 36,
+          "fpr": 0.3333333333333333,
+          "mean_z": 0.40650832653045654
+        },
+        "all_benign": {
+          "n": 72,
+          "fpr": 0.16666666666666666,
+          "mean_z": 0.20315152406692505
+        }
+      },
+      "benchmark_fpr": {
+        "alpaca_complied": {
+          "n": 300,
+          "fpr": 0.01,
+          "mean_z": 0.0
+        },
+        "orbench_hard/refused": {
+          "n": 14,
+          "fpr": 0.21428571428571427,
+          "mean_z": 1.3157392740249634
+        },
+        "orbench_hard/complied": {
+          "n": 286,
+          "fpr": 0.2937062937062937,
+          "mean_z": 1.641299843788147
+        },
+        "orbench_toxic/refused": {
+          "n": 115,
+          "fpr": 0.5565217391304348,
+          "mean_z": 2.3531222343444824
+        },
+        "orbench_toxic/complied": {
+          "n": 85,
+          "fpr": 0.4823529411764706,
+          "mean_z": 2.243878126144409
+        },
+        "xstest_safe/refused": {
+          "n": 6,
+          "fpr": 0.16666666666666666,
+          "mean_z": 1.9655089378356934
+        },
+        "xstest_safe/complied": {
+          "n": 242,
+          "fpr": 0.03305785123966942,
+          "mean_z": 0.5035244822502136
+        },
+        "xstest_unsafe/refused": {
+          "n": 148,
+          "fpr": 0.08108108108108109,
+          "mean_z": 1.511011004447937
+        },
+        "xstest_unsafe/complied": {
+          "n": 50,
+          "fpr": 0.0,
+          "mean_z": 1.0846673250198364
+        },
+        "all_refused": {
+          "n": 283,
+          "fpr": 0.2826855123674912,
+          "mean_z": 1.8531873226165771
+        },
+        "all_complied_nonctrl": {
+          "n": 663,
+          "fpr": 0.20060331825037708,
+          "mean_z": 1.2612783908843994
+        }
+      }
+    }
+  }
+}
