@@ -14,3 +14,5 @@ results/*.csv
 .DS_Store
 data/apollo_rollouts/
 apollo_data/
+bench/data/roleplaying.jsonl
+bench/cache*/
