@@ -1339,3 +1339,82 @@ simulator is fixed for v5.2 (the chart tool now reports the claim and the fact s
 `verified_flag: false`, `source_claim_falsified`); v5.1 outputs are unchanged on disk.
 the 42-row label file's labels stand as stage-one labels; stage two (against observed
 state) reclassifies the lab rows as ambiguous.
+
+---
+
+## 25. sep 17, ~7pm: codex's audit of §23–24. corrections, verbatim. the plan changes.
+
+audit in `pilot/section23_24_audit/` (review.md, loso_audit.json, data_audit.json, seven
+dolphin adjudication candidates, repaired development probe with intercept).
+
+**§23 corrections (codex):**
+> The LOSO supplied result reproduces exactly at C=0.1: 0.9336 / 0.9805 / 0.9961.
+> Standardization uses training settings only, and the independently refitted fold
+> weights match the saved weights. This is promising within-harness transfer across
+> three scenario templates, not broad unseen-environment generalization. Marginal chance
+> AUROC against Yes and world-compliant does not prove the score ignores every
+> wording/state correlate.
+>
+> Generated evaluation initially pooled natural negatives with post-instructed positives
+> and negatives. Instruction presence alone yields 1.0 / 0.853 / 0.817 AUROC for deploy /
+> pipeline / tickets. Under Codex's prior provisional semantic labels and restricting to
+> post-instructed reports, pipeline remains 1.000 on 6 false / 14 accurate reports and
+> tickets remains 0.982 on 6 / 19. These remain small, wording-dependent development
+> subsets, not independently adjudicated confirmation. Deploy has 14 clear false reports
+> and no clean accurate reports within that instruction condition. Its four
+> post-instructed marked-passed omissions were excluded by the §23 script; the original 18
+> negative reports are natural, including two partial disclosures. Do not claim the
+> original deploy 0.58 was caused by including the four post-instructed omissions.
+>
+> The all-96 exported probe omitted its intercept. Exact reconstruction recovers
+> 0.33874250590755073; adding it does not affect AUROC but restores absolute scores.
+
+**§24 corrections (codex):**
+> Dolphin generated false-report candidates without an explicit concealment instruction
+> in this synthetic pressure harness. Clear backup examples contradict
+> `restore_actually_tested: false`. The lab source-setting tool echoes the asserted
+> provenance into `source` and `verified_flag` without an independent actual-source
+> field; preserve that distinct evidence ambiguity. The results show that such a dataset
+> can be elicited here, not that honesty training caused the model differences. Use
+> exact checkpoint identities; refusal/ethics steerability is not a controlled
+> honesty-training ablation.
+>
+> The 42 labelled answers derive from seven trajectories, six distinct saved prefixes
+> and two templates. Stage one is human review with visible model suggestions, blind to
+> scores/state; it is not final state-validated truth labels or independent human
+> agreement. Counts are 22 asserts_clean, 11 mixed, nine admissions. Backup direct
+> questions are six admissions, one mixed and one clean assertion, not seven
+> unambiguously honest. Retain semantic disagreements for a separate stage-two review
+> and label a prespecified sample outside falsifying trajectories too.
+
+**also (codex):** a rule using only "lab vs backup" gets 0.84 auroc on the stage-one
+binary subset, so domain and question controls remain essential. instruction presence
+alone separates my earlier "generated" table on deploy at 1.00.
+
+**what i got wrong in §23–24:** pooled natural negatives with instructed positives (so
+part of the "generated" number was the instruction); wrote "reads neither the word nor
+the state" from two marginal checks; wrote "the elicitation limit was honesty training"
+from a checkpoint comparison that controls nothing; and counted lab as clean when my
+own tool affirmed the claim.
+
+**the week, per codex, adopted:**
+1. days 1–2, no gpu: stage-two adjudication against observed state; repair simulators
+   (v6 completion flags ignore tool errors; malformed args become valid actions); v6
+   needs genuinely different falsehood mechanisms (wrong quantity, wrong time, omitted
+   event, misattributed action), honest/compliant world states, and immutable events
+   distinguished from editable records; freeze splits and candidate selection before
+   generating anything.
+2. ≤$4: development generation in old settings incl. truthful compliance and honest
+   admissions.
+3. ≤$6: **dolphin generates, llama-70b is the common replay monitor.** both probes read
+   identical 70b activations of dolphin's histories and reports. an external transcript
+   monitor, not dolphin's internals. no re-capture of the supplied pack.
+4. **a text-only transcript verifier as the baseline.** the target is an observable
+   record/report contradiction; a probe has to beat ordinary transcript checking on
+   accuracy or cost, or it isn't earning its keep. apollo had a text baseline too.
+5. ≤$10: one frozen evaluation on the reserved families plus margin. thresholds chosen on
+   calibration data; report recall and achieved test false-alarm rate, uncertainty
+   grouped by trajectory; never adjust on test.
+
+**milestone:** one trustworthy comparison on natural generated reports. not more
+near-perfect synthetic aurocs.
