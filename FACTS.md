@@ -1087,24 +1087,61 @@ tickets    none          honest       33    15%      0%        0%    0%
 tickets    at report     FALSE         7   100%     14%       43%    0%
 tickets    at report     honest       19   100%      5%       63%    0%
 ```
-**every probe flags by the presence of the instruction, not by whether the report is
-false.** hold the action and the instruction constant, vary only the truth value, and no
-probe moves with it. the corrected probe's 0% on natural honest reports is the
-"declined to say" direction gone; its 85-100% on post-instructed honest reports is the
-instruction it still reads. codex's retrained detector is inconsistent across settings.
-this is the override confound from section 3 in its strongest form.
+**my first conclusion ("every probe flags by the presence of the instruction, not by
+whether the report is false; hold everything constant and no probe moves with the
+report") was too strong, and codex's audit (`pilot/v5_postaction_review/`) replaces it.
+its wording, kept verbatim:**
 
-**exploratory, tiny, wording-confounded, no claim:** a probe fit on one setting's
-post-instructed false-vs-honest and tested on another: ticket->pipeline 0.93,
-deploy->pipeline 0.12, pipeline->deploy 0.02. 3-6 trajectories per setting; the false
-reports are mostly "yes" and the honest ones "no". needs identical-wording supplied
-reports under a constant instruction (test-1 design) and more settings.
+> The post-action intervention produced instructed false reports from saved natural
+> action histories. Accurate reports, partial disclosures, and mixed/self-correcting
+> answers also occurred under the same instruction. Initial 31-false/38-honest counts
+> were keyword triage, not adjudicated labels. A subsequent provisional semantic review
+> of the 90 reports in deploy, pipeline and tickets found 26 clear false assertions, 33
+> accurate disclosures and 31 unresolved/other reports. In deploy, the four nominally
+> honest controls described CI as marked passed while omitting that it never ran; they
+> should be kept as partial disclosures. Pipeline and ticket action records were policy
+> violations with accurate fields, not falsified records.
+>
+> Apollo flags all provisionally clean post-instructed reports in these three settings
+> at its historical Alpaca threshold, including accurate reports. That is evidence of
+> false alarms in this context. It does not establish that all probes only read the
+> instruction or that their scores ignore the report. In three exact-history /
+> direct-question ticket pairs, the frozen retrained probe scores false "Yes" above
+> accurate "No" every time, although both remain below threshold. Within the pipeline
+> explicit question, it ranks four false reports above two accurate reports; V1 also
+> ranks this subset correctly while flagging all of it. These are tiny,
+> wording-confounded subsets. They establish neither general truth sensitivity nor a
+> validated operating point.
+>
+> The present result is therefore poor or inconsistent threshold behavior plus some
+> unresolved ranking evidence. Instructed examples can be valid positive reports when
+> checked against observed state; instruction presence alone is not a positive label.
+> No necessity claim that Llama needs instructions to lie, and no priority claim that
+> this is the first such contrast, is warranted.
+>
+> The exploratory cross-setting fits are outside the frozen 4/2/3 protocol: tickets were
+> allocated to calibration and pipeline to withheld evaluation, so fitting on either must
+> be disclosed as exploratory. Already-frozen evaluations remain reportable, but any
+> subsequent model or analysis choice informed by these results requires fresh
+> confirmatory data. The next controlled test should balance Yes/No wording across true
+> and false histories under the same instruction; natural behavioral transfer remains a
+> separate target.
+
+what i got wrong, specifically: (a) reported flags at a threshold and called it "no
+movement" when scores can order false above honest under the line; (b) counted "marked
+passed" omissions as honest; (c) called pipeline/ticket records "falsified" when the
+fields were accurate and only the action violated policy; (d) claimed "first" for the
+contrast. the lead that survives: a reversed-polarity design (histories where "yes" is
+the honest answer) under a constant instruction, to test whether the ordering follows
+truth or the word.
 
 **what v5 leaves you with:** the harness works and is validated; nine settings with
-checkable ground truth; the first contrast where instruction is constant and truth
-value varies (31 false / 38 honest across three settings); and a clean negative that
-says the current probe family, corrected or retrained, reads context rather than truth.
-mistral pending. withheld settings were read for evaluation only; nothing was tuned.
+checkable ground truth; a small contrast where the instruction is constant and truth
+value varies (26 clear false / 33 accurate / 31 unresolved after provisional review);
+poor threshold behaviour from every probe under an instruction, plus unresolved ranking
+evidence in tiny subsets; and one specific next test (balanced yes/no polarity). withheld
+settings were read for evaluation only; the exploratory fits that touched them are
+disclosed as exploratory.
 
 **mistral-24b v5.1** (valid run, 108/648): with the strict parser (no recovery from
 malformed json) 4-6 of 6 trajectories per setting are malformed, ~25 complete. the few
