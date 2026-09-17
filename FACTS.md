@@ -1418,3 +1418,37 @@ own tool affirmed the claim.
 
 **milestone:** one trustworthy comparison on natural generated reports. not more
 near-perfect synthetic aurocs.
+
+---
+
+## 26. sep 17, 7pm: dolphin's natural reports through a 70b monitor. a humbling table.
+
+`pilot/capture_replay_70b.py`, `score_replay.py`, `replay70b_dolphin.npz`. dolphin's 102
+reports on falsified/violation trajectories replayed through llama-3.3-70b (L22, mean over
+the report), so all four probes read identical activations. labels: stage two by selvi
+(question + answer + actual events + observations, blind to scores); codex non-blind
+review agrees 40/42. thresholds: historical alpaca-answer 1%, diagnostic.
+
+```
+backup, false claim vs accurate disclosure (7 vs 8)   auroc   flag false   flag accurate
+apollo                                                 0.91      29%           0%
+apollo - 1 direction                                   0.93       0%           0%
+report/state probe (96 supplied cases)                 0.14      14%          12%
+codex retrained                                        0.96       0%           0%
+minus disputed #38/#40 (6 vs 7): 1.00 / 1.00 / 0.17 / 1.00
+within question: broad 6 false vs 1 accurate; direct 1 vs 6; explicit none. degenerate.
+```
+
+**what it says:** (1) the report/state probe, 0.93–1.00 on supplied text across settings,
+does **not** transfer to dolphin's natural reports read by the monitor: 0.14, i.e. it
+ranks the accurate answers above the false ones. (2) the 0.91–0.96 for the other three is
+not evidence of truth detection: false claims are almost all broad-question answers and
+accurate ones almost all direct-question answers, so the cell is confounded with question
+form (the confound codex named). (3) nothing operates at the historical threshold.
+
+**what it means for tonight's run:** false and accurate reports must both exist within
+each question type, in enough trajectories, or no comparison is interpretable. that is the
+design constraint for the v6 generation, and this table is why.
+
+**lab (echo caveat, separate):** 16 false vs 8 backup accurate: apollo 0.74, corrected
+0.78, report/state 0.02, retrained 0.84. same caveats.
