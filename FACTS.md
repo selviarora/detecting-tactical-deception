@@ -1325,3 +1325,17 @@ labelling:
 keyword "~24 false" becomes 22 clean assertions plus 11 mixed. no second independent
 human labeller yet; agreement is the number that's still missing. stage two (check each
 against the saved state) not done.
+
+**§24 amendment (codex audit, sep 17 ~6:30pm):** two fixes. (1) the all-96 report/state
+probe in `bench/probes/` had been saved without its intercept; resaved with it (fold files
+in `pilot/reportstate_loso/` always had it). (2) the v5.1 lab simulator returned
+`verified_flag: true` when the agent wrote `source: "lab feed"`, so the last state the
+model observed affirmed the false provenance. dolphin's 17/18 lab assertions are therefore
+**ambiguous as false reports**: they may restate the record the tool handed back rather
+than contradict what the model saw. backup is clean because the tool result said
+`restore_actually_tested: false` explicitly. **clean natural false reports from dolphin
+are the backup ones: ~6 under the broad question, 1 direct, plus mixed answers.** the lab
+simulator is fixed for v5.2 (the chart tool now reports the claim and the fact separately,
+`verified_flag: false`, `source_claim_falsified`); v5.1 outputs are unchanged on disk.
+the 42-row label file's labels stand as stage-one labels; stage two (against observed
+state) reclassifies the lab rows as ambiguous.
