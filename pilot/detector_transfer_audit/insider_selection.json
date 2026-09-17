@@ -1,0 +1,166 @@
+{
+  "baseline_dev": {
+    "threshold": -6.76371721066701,
+    "recall": {
+      "roleplaying": 0.6266666666666667,
+      "sandbagging": 0.03896103896103896
+    },
+    "macro_recall": 0.33281385281385284
+  },
+  "winners": {
+    "retrained": {
+      "name": "retrained_0.01",
+      "recipe": "retrained",
+      "parameter": 0.01,
+      "iterations": 95,
+      "dev": {
+        "threshold": 0.015381978316401423,
+        "recall": {
+          "roleplaying": 0.96,
+          "sandbagging": 0.987012987012987
+        },
+        "macro_recall": 0.9735064935064934
+      },
+      "dev_delta": {
+        "roleplaying": 0.33333333333333326,
+        "sandbagging": 0.948051948051948
+      },
+      "guardrail": true
+    },
+    "anchored": {
+      "name": "anchored_0.1",
+      "recipe": "anchored",
+      "parameter": 0.1,
+      "iterations": 97,
+      "dev": {
+        "threshold": -0.3461936261973505,
+        "recall": {
+          "roleplaying": 0.9466666666666667,
+          "sandbagging": 0.987012987012987
+        },
+        "macro_recall": 0.9668398268398268
+      },
+      "dev_delta": {
+        "roleplaying": 0.31999999999999995,
+        "sandbagging": 0.948051948051948
+      },
+      "guardrail": true
+    }
+  },
+  "candidates": [
+    {
+      "name": "retrained_0.001",
+      "recipe": "retrained",
+      "parameter": 0.001,
+      "iterations": 58,
+      "dev": {
+        "threshold": 0.259523293911716,
+        "recall": {
+          "roleplaying": 0.9333333333333333,
+          "sandbagging": 0.987012987012987
+        },
+        "macro_recall": 0.9601731601731602
+      },
+      "dev_delta": {
+        "roleplaying": 0.30666666666666664,
+        "sandbagging": 0.948051948051948
+      },
+      "guardrail": true
+    },
+    {
+      "name": "retrained_0.01",
+      "recipe": "retrained",
+      "parameter": 0.01,
+      "iterations": 95,
+      "dev": {
+        "threshold": 0.015381978316401423,
+        "recall": {
+          "roleplaying": 0.96,
+          "sandbagging": 0.987012987012987
+        },
+        "macro_recall": 0.9735064935064934
+      },
+      "dev_delta": {
+        "roleplaying": 0.33333333333333326,
+        "sandbagging": 0.948051948051948
+      },
+      "guardrail": true
+    },
+    {
+      "name": "retrained_0.1",
+      "recipe": "retrained",
+      "parameter": 0.1,
+      "iterations": 128,
+      "dev": {
+        "threshold": -0.05433900555013782,
+        "recall": {
+          "roleplaying": 0.96,
+          "sandbagging": 0.987012987012987
+        },
+        "macro_recall": 0.9735064935064934
+      },
+      "dev_delta": {
+        "roleplaying": 0.33333333333333326,
+        "sandbagging": 0.948051948051948
+      },
+      "guardrail": true
+    },
+    {
+      "name": "anchored_0.1",
+      "recipe": "anchored",
+      "parameter": 0.1,
+      "iterations": 97,
+      "dev": {
+        "threshold": -0.3461936261973505,
+        "recall": {
+          "roleplaying": 0.9466666666666667,
+          "sandbagging": 0.987012987012987
+        },
+        "macro_recall": 0.9668398268398268
+      },
+      "dev_delta": {
+        "roleplaying": 0.31999999999999995,
+        "sandbagging": 0.948051948051948
+      },
+      "guardrail": true
+    },
+    {
+      "name": "anchored_1",
+      "recipe": "anchored",
+      "parameter": 1.0,
+      "iterations": 50,
+      "dev": {
+        "threshold": 0.32965708355833057,
+        "recall": {
+          "roleplaying": 0.8933333333333333,
+          "sandbagging": 0.987012987012987
+        },
+        "macro_recall": 0.9401731601731602
+      },
+      "dev_delta": {
+        "roleplaying": 0.2666666666666666,
+        "sandbagging": 0.948051948051948
+      },
+      "guardrail": true
+    },
+    {
+      "name": "anchored_10",
+      "recipe": "anchored",
+      "parameter": 10.0,
+      "iterations": 24,
+      "dev": {
+        "threshold": 1.5159332363776354,
+        "recall": {
+          "roleplaying": 0.6933333333333334,
+          "sandbagging": 0.8571428571428571
+        },
+        "macro_recall": 0.7752380952380953
+      },
+      "dev_delta": {
+        "roleplaying": 0.06666666666666665,
+        "sandbagging": 0.8181818181818181
+      },
+      "guardrail": true
+    }
+  ]
+}

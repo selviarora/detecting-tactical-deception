@@ -991,3 +991,46 @@ examples, which means a different model in this harness. more measurements of th
 action prefixes won't move the bottleneck.
 
 pods: none. runpod balance ~$1.5. gpu total sep 16-17: ~$24.
+
+---
+
+## 20. sep 17, afternoon: a retrained detector. it specialises; it doesn't transfer.
+
+codex's work, cpu only, pre-registered protocol (`pilot/detector_revision_v1/protocol.md`),
+reproduced and the transfer audit finished here after codex hit its usage cap.
+
+**recipe:** logistic regression at L22 on apollo's honest/deceptive examples (roleplaying
+supplied completions, sandbagging generations) plus hard honest negatives from this repo
+(benign withholding, real refusals, the v3 admissions). C grid, group-aware splits,
+selection on development rows only, thresholds on separate calibration negatives,
+insider and all v4 families withheld. `pilot/detector_revision_v1/selected_detector.npz`.
+
+**within the training settings (held-out groups):** roleplaying auroc 0.958 (apollo
+0.791), sandbagging 1.000 (0.986). false alarms at a 5% mixed target: 6.6% vs 19.6%
+for a deception-only retrain, with all 118 positives kept. v4 accurate reports flagged:
+0/134 (apollo at its alpaca point: 30/134).
+
+**withheld insider setting:** auroc 0.716 (apollo 0.751); at apollo's alpaca operating
+point recall 37% vs 94%. the same tradeoff shape as the projection, learned.
+
+**leave-one-setting-out** (`pilot/detector_transfer_audit/report.md`; every row of the
+withheld setting excluded from fit, selection, and calibration):
+```
+withheld       apollo   retrained   apollo-anchored
+roleplaying    0.777     0.783        0.782
+sandbagging    0.984     0.612        0.832
+insider        0.751     0.716        0.708
+```
+in-setting it beats apollo by a lot; out-of-setting it matches or loses, and collapses
+on sandbagging. anchoring the fit to apollo's weight direction limits the forgetting
+(0.61 -> 0.83) without winning anywhere. **specialisation, not generalisation.**
+
+**what this settles:** two different methods (subtract one direction; retrain with hard
+negatives) reach the same place: false alarms fixed, no transfer to unseen deception.
+the limit is not the method. it is that the available deception data is three settings,
+all instructed or supplied, one off-policy. a detector that generalises needs deception
+from settings that don't exist yet. that is the bottleneck, confirmed from a third angle.
+
+(one script fix: codex's `run_transfer.py` asserted `np.allclose` on a prior
+reconstruction that differs at 1e-8 relative from float16 caches; changed to a 1e-3
+relative check with the error printed. all three folds then ran.)

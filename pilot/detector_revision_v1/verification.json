@@ -1,0 +1,10 @@
+{
+  "row_ids_unique": true,
+  "all_split_groups_disjoint": true,
+  "insider_and_v4_excluded_from_fitting_selection_calibration": true,
+  "reserved_pilot_domains_excluded": true,
+  "exported_inference_matches_all_144_v4_scores": true,
+  "selected_export_matches_frozen_candidate": true,
+  "nonconverged_fits": 0,
+  "gpu_calls": 0
+}

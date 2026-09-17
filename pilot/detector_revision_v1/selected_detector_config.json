@@ -1,0 +1,15 @@
+{
+  "name": "hard_negatives_C0.01",
+  "model": "meta-llama/Llama-3.3-70B-Instruct",
+  "layer": 22,
+  "readout": "mean of assistant completion activations, hidden_states[22]",
+  "formula": "((X - mu) / sc) @ w + intercept",
+  "thresholds": {
+    "mixed_5pct": -1.3258821560796612,
+    "mixed_1pct": 2.613324072210907,
+    "alpaca_1pct": -0.36583488720348406
+  },
+  "status": "exploratory; not deployment validated",
+  "trained_without_test_rows": true,
+  "dev_guardrail_pass": true
+}

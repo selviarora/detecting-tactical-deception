@@ -1,0 +1,25 @@
+[roleplaying] prior reconstruction max abs err 2.057e-07 (rel 1.95e-08)
+held roleplaying retrained_0.001 dev {'sandbagging': 1.0}
+held roleplaying retrained_0.01 dev {'sandbagging': 1.0}
+held roleplaying retrained_0.1 dev {'sandbagging': 1.0}
+held roleplaying anchored_0.1 dev {'sandbagging': 1.0}
+held roleplaying anchored_1 dev {'sandbagging': 1.0}
+held roleplaying anchored_10 dev {'sandbagging': 1.0}
+FOLD COMPLETE roleplaying {'apollo': 0.7769632594939008, 'retrained': 0.7826229103246852, 'anchored': 0.7816130368131589}
+[sandbagging] prior reconstruction max abs err 7.821e-08 (rel 1.23e-08)
+held sandbagging retrained_0.001 dev {'roleplaying': 0.9066666666666666}
+held sandbagging retrained_0.01 dev {'roleplaying': 0.92}
+held sandbagging retrained_0.1 dev {'roleplaying': 0.9066666666666666}
+held sandbagging anchored_0.1 dev {'roleplaying': 0.9333333333333333}
+held sandbagging anchored_1 dev {'roleplaying': 0.9066666666666666}
+held sandbagging anchored_10 dev {'roleplaying': 0.7066666666666667}
+FOLD COMPLETE sandbagging {'apollo': 0.9842029389880953, 'retrained': 0.6123744419642858, 'anchored': 0.8320591517857142}
+[insider] prior reconstruction max abs err 1.248e-07 (rel 1.37e-08)
+held insider retrained_0.001 dev {'roleplaying': 0.9333333333333333, 'sandbagging': 0.987012987012987}
+held insider retrained_0.01 dev {'roleplaying': 0.96, 'sandbagging': 0.987012987012987}
+held insider retrained_0.1 dev {'roleplaying': 0.96, 'sandbagging': 0.987012987012987}
+held insider anchored_0.1 dev {'roleplaying': 0.9466666666666667, 'sandbagging': 0.987012987012987}
+held insider anchored_1 dev {'roleplaying': 0.8933333333333333, 'sandbagging': 0.987012987012987}
+held insider anchored_10 dev {'roleplaying': 0.6933333333333334, 'sandbagging': 0.8571428571428571}
+FOLD COMPLETE insider {'apollo': 0.7509615384615385, 'retrained': 0.7159340659340659, 'anchored': 0.7083791208791208}
+Done /Users/selviarora/Documents/Codex/2026-09-16/i-ne/outputs/detector_transfer_audit/report.md

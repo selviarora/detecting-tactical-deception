@@ -1,0 +1,149 @@
+{
+  "baseline_dev": {
+    "threshold": -6.738720038205507,
+    "recall": {
+      "roleplaying": 0.52
+    },
+    "macro_recall": 0.52
+  },
+  "winners": {
+    "retrained": {
+      "name": "retrained_0.01",
+      "recipe": "retrained",
+      "parameter": 0.01,
+      "iterations": 141,
+      "dev": {
+        "threshold": 0.8471422304149583,
+        "recall": {
+          "roleplaying": 0.92
+        },
+        "macro_recall": 0.92
+      },
+      "dev_delta": {
+        "roleplaying": 0.4
+      },
+      "guardrail": true
+    },
+    "anchored": {
+      "name": "anchored_0.1",
+      "recipe": "anchored",
+      "parameter": 0.1,
+      "iterations": 123,
+      "dev": {
+        "threshold": 0.08240032432472555,
+        "recall": {
+          "roleplaying": 0.9333333333333333
+        },
+        "macro_recall": 0.9333333333333333
+      },
+      "dev_delta": {
+        "roleplaying": 0.41333333333333333
+      },
+      "guardrail": true
+    }
+  },
+  "candidates": [
+    {
+      "name": "retrained_0.001",
+      "recipe": "retrained",
+      "parameter": 0.001,
+      "iterations": 64,
+      "dev": {
+        "threshold": 0.7513165847046949,
+        "recall": {
+          "roleplaying": 0.9066666666666666
+        },
+        "macro_recall": 0.9066666666666666
+      },
+      "dev_delta": {
+        "roleplaying": 0.3866666666666666
+      },
+      "guardrail": true
+    },
+    {
+      "name": "retrained_0.01",
+      "recipe": "retrained",
+      "parameter": 0.01,
+      "iterations": 141,
+      "dev": {
+        "threshold": 0.8471422304149583,
+        "recall": {
+          "roleplaying": 0.92
+        },
+        "macro_recall": 0.92
+      },
+      "dev_delta": {
+        "roleplaying": 0.4
+      },
+      "guardrail": true
+    },
+    {
+      "name": "retrained_0.1",
+      "recipe": "retrained",
+      "parameter": 0.1,
+      "iterations": 208,
+      "dev": {
+        "threshold": 1.0669878232470393,
+        "recall": {
+          "roleplaying": 0.9066666666666666
+        },
+        "macro_recall": 0.9066666666666666
+      },
+      "dev_delta": {
+        "roleplaying": 0.3866666666666666
+      },
+      "guardrail": true
+    },
+    {
+      "name": "anchored_0.1",
+      "recipe": "anchored",
+      "parameter": 0.1,
+      "iterations": 123,
+      "dev": {
+        "threshold": 0.08240032432472555,
+        "recall": {
+          "roleplaying": 0.9333333333333333
+        },
+        "macro_recall": 0.9333333333333333
+      },
+      "dev_delta": {
+        "roleplaying": 0.41333333333333333
+      },
+      "guardrail": true
+    },
+    {
+      "name": "anchored_1",
+      "recipe": "anchored",
+      "parameter": 1.0,
+      "iterations": 55,
+      "dev": {
+        "threshold": 0.4159738473303023,
+        "recall": {
+          "roleplaying": 0.9066666666666666
+        },
+        "macro_recall": 0.9066666666666666
+      },
+      "dev_delta": {
+        "roleplaying": 0.3866666666666666
+      },
+      "guardrail": true
+    },
+    {
+      "name": "anchored_10",
+      "recipe": "anchored",
+      "parameter": 10.0,
+      "iterations": 25,
+      "dev": {
+        "threshold": 1.220693519343485,
+        "recall": {
+          "roleplaying": 0.7066666666666667
+        },
+        "macro_recall": 0.7066666666666667
+      },
+      "dev_delta": {
+        "roleplaying": 0.18666666666666665
+      },
+      "guardrail": true
+    }
+  ]
+}
