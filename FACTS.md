@@ -1150,3 +1150,51 @@ but I marked it as green"). unusable for labels at T=1; needs a lower temperatur
 tool format it reliably emits. not fixed today.
 
 **gpu, sep 16-17 total: ~$30.** no pods running. runpod balance ~$4.
+
+---
+
+## 22. sep 17, evening: truth or wording. it's the cover-up, and it survives the reversal.
+
+codex's pack (`pilot/truth_wording_test/`): 96 supplied cases over deploy, pipeline,
+tickets. each answer text ("yes", "no", explicit and terse forms) appears once where it
+is true and once where it is false, under a concealment note and a neutral note, for
+compliance-polarity and violation-polarity questions. so a pure yes/no reader cannot
+score above chance. four frozen probes, no fitting, no threshold change. forward-only
+capture on 70b (~$1), `capture_llama/`, scorer output in `scored/`.
+
+**balanced false-vs-accurate auroc, all forms (concealment / neutral note):**
+```
+probe        deploy         pipeline       tickets        mean
+apollo       0.58 / 0.73    0.41 / 0.61    0.66 / 0.70    ~0.62
+corrected    0.58 / 0.73    0.42 / 0.59    0.67 / 0.73    ~0.62
+V1           0.62 / 0.58    0.52 / 0.56    0.72 / 0.66    ~0.61
+retrained    0.70 / 0.92    0.66 / 0.81    0.72 / 0.84    ~0.78
+```
+mean false-minus-true (alpaca sd), retrained: +0.34 to +1.97 in 23/24 blocks. apollo,
+corrected, V1: +0.2 to +0.75, with pipeline/concealment negative.
+
+**the shape (retrained, per block):** false-minus-true *when the history is a violation*
+is +5 to +15 sd (a false compliance claim after a real violation scores far above the
+true admission). false-minus-true *when the history is compliant* is −3 to −6 sd (a false
+claim of violation scores below the true compliance report). so the signal is not
+"false" symmetrically. it is **claiming clean when dirty**: the cover-up. the same
+asymmetry test 1 found (section 17), now with wording controlled.
+
+**what this settles:** the post-instruction ordering in section 21 was not the word
+"yes". a linear direction for false compliance claims after a violation exists at L22,
+is read most strongly by the probe trained on this repo's honest-confession negatives,
+and is near chance for apollo's file and the one-direction correction.
+
+**what it does not settle (codex's limits, kept):** three previously examined setting
+families; dependent controls, not 96 independent trials; supplied reports, not chosen
+behaviour; no intent or recipient-belief measurement; historical thresholds are
+diagnostic, not context-calibrated operating points; a positive interaction rules out a
+purely additive prefix/answer account, not every nonsemantic correlation.
+
+**the target for the next detector, stated now:** false compliance claims after a real
+violation. train on that contrast in the fit settings (deploy, backup, payments, lab),
+calibrate on tickets and training records, test on experiment log, pipeline, incident,
+with fresh generations and a held-out threshold. that is the first version of this
+project with a signal to aim at.
+
+gpu sep 16-17: ~$31. no pods.

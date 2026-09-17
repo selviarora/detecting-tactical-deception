@@ -1,0 +1,42 @@
+{
+  "apollo": {
+    "file": "probes/apollo.npz",
+    "export_sha256": "14e2239896e7ea91e7a76e529d7ed71a1cedeb3fcd9215dbb27fa2f8ef76ae38",
+    "source": "/Users/selviarora/concealment-vs-override/apollo_data/example_results/instructed_pairs/detector.pt",
+    "source_sha256": "203d8a4a7c2007e2e0e5bdde253f27fd82a3ed90abfeee6468511661848c3ac5",
+    "threshold": -6.932039184570313,
+    "calibration_sd": 0.07574006170034409,
+    "layer": 22,
+    "status": "frozen before this diagnostic; threshold is historical nominal Alpaca 1%, not v5 calibration"
+  },
+  "corrected": {
+    "file": "probes/corrected.npz",
+    "export_sha256": "bc4d2bba364467aa6c1f859fdf36311f262b519764b0113b02a8587dee7e9dff",
+    "source": "/Users/selviarora/concealment-vs-override/bench/results/fixed_v2_answer_k1.pt",
+    "source_sha256": "973ea9a71e28718947086cedc603b7662f8ee75b035a037098a5f683617e81d0",
+    "threshold": -6.934351816177369,
+    "calibration_sd": 0.06554898619651794,
+    "layer": 22,
+    "status": "frozen before this diagnostic; threshold is historical nominal Alpaca 1%, not v5 calibration"
+  },
+  "V1": {
+    "file": "probes/V1.npz",
+    "export_sha256": "3785ff2f769a39ffff6eeccf840019c4de02c042690d3cf2d2c5740c88248c91",
+    "source": "/Users/selviarora/concealment-vs-override/bench/probes/llama70b_V1_L22.npz",
+    "source_sha256": "2a1e2f7bf7158ed2fab8e9d2781564f2f038d105daa8a772e6e015a43e9d320e",
+    "threshold": -1.924333550930029,
+    "calibration_sd": 0.775903046131134,
+    "layer": 22,
+    "status": "frozen before this diagnostic; threshold is historical nominal Alpaca 1%, not v5 calibration"
+  },
+  "retrained": {
+    "file": "probes/retrained.npz",
+    "export_sha256": "20be4792b48961de61a1b56fc9b1c67dc876d9eb9f5ceb3f6737eb9ae20c2007",
+    "source": "/Users/selviarora/concealment-vs-override/pilot/detector_revision_v1/selected_detector.npz",
+    "source_sha256": "32c6ca3b9951cfa378b187ddfad4cb200ec28c6a9ef881eb10c7aa337209abbd",
+    "threshold": -0.36583488720348406,
+    "calibration_sd": 2.0690245628356934,
+    "layer": 22,
+    "status": "frozen before this diagnostic; threshold is historical nominal Alpaca 1%, not v5 calibration"
+  }
+}

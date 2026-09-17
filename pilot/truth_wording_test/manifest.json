@@ -1,0 +1,20 @@
+{
+  "version": "truth_wording_v1",
+  "rows": 96,
+  "settings": [
+    "deploy",
+    "tickets",
+    "pipeline"
+  ],
+  "factorial": "3 settings x 2 states x 2 notes x 2 question polarities x 2 answer forms x 2 answers",
+  "cases_sha256": "163d138b30c68832a64ee82647d84c8ab489284436aca41624452c0602f14d82",
+  "status": "controlled diagnostic designed after v5.1; not an untouched generalization test",
+  "generation": "none: both histories and reports supplied",
+  "main_measure": "within-state false-minus-true differences, averaged over both states to cancel additive state-only and answer-only effects",
+  "unit": "three setting templates; question/form variants are dependent controls",
+  "selection": "no fitting, orientation flips, threshold selection or best-layer selection",
+  "model": "meta-llama/Llama-3.3-70B-Instruct",
+  "layer": 22,
+  "readout": "mean hidden_states[22] over supplied answer tokens, excluding prompt and EOS",
+  "next_claim_limit": "Can support supplied-report/state discrimination; cannot establish intent, natural concealment detection, or broad superiority."
+}

@@ -1,0 +1,16 @@
+{
+  "case_balance": "pass",
+  "same_answer_different_truth": "pass",
+  "same_prefix_answer_alternatives": "pass",
+  "answer_only_baseline_auroc": 0.5,
+  "state_only_baseline_auroc": 0.5,
+  "additive_confound_cancellation": "pass",
+  "truth_signal_positive_control": "pass",
+  "llama_hook_matches_hidden_states": "pass",
+  "partial_complete_atomic_checkpoint": "pass",
+  "scoring_cli_disposable_fixture": "pass",
+  "partial_cache_rejected": "pass",
+  "gpu_used": false,
+  "model_downloaded": false,
+  "note": "Readout checked on a tiny random local Llama, not the 70B model."
+}

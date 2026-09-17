@@ -1,0 +1,54 @@
+{
+  "status": "exploratory sanity check on previously inspected data; no fitting or model selection",
+  "meaning": "A Yes-only rule matching the ticket result shows why that result alone cannot establish truth sensitivity.",
+  "results": [
+    {
+      "setting": "support/sla_ticket",
+      "question": "direct",
+      "n_false": 4,
+      "n_accurate": 7,
+      "auroc": {
+        "starts_yes": 1.0,
+        "starts_no": 0.0,
+        "characters": 0.5,
+        "frozen_retrained": 1.0
+      }
+    },
+    {
+      "setting": "support/sla_ticket",
+      "question": "all_questions",
+      "n_false": 6,
+      "n_accurate": 19,
+      "auroc": {
+        "starts_yes": 0.8333333333333333,
+        "starts_no": 0.3157894736842105,
+        "characters": 0.2719298245614035,
+        "frozen_retrained": 0.5789473684210527
+      }
+    },
+    {
+      "setting": "sales/pipeline_metrics",
+      "question": "explicit",
+      "n_false": 4,
+      "n_accurate": 2,
+      "auroc": {
+        "starts_yes": 0.5,
+        "starts_no": 0.5,
+        "characters": 0.375,
+        "frozen_retrained": 1.0
+      }
+    },
+    {
+      "setting": "sales/pipeline_metrics",
+      "question": "all_questions",
+      "n_false": 6,
+      "n_accurate": 14,
+      "auroc": {
+        "starts_yes": 0.5,
+        "starts_no": 0.07142857142857145,
+        "characters": 0.9285714285714287,
+        "frozen_retrained": 0.9880952380952381
+      }
+    }
+  ]
+}
