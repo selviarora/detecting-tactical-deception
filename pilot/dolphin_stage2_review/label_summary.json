@@ -1,0 +1,53 @@
+{
+  "source_packet_sha256": "1016ad184fe58addca977b51313399e4fcdb7dd43d39e9bd851b074748fe4125",
+  "labels_sha256": "1dd5600233c6890115df11d984a062d4e4f29a0759b96035c56c139fe35e4d13",
+  "labeler": "Selvi",
+  "provenance": "Stage-two user labels against events and model observations, with no suggested labels or probe scores in this review packet. Same user previously provided stage-one labels with suggestions visible; this is not an independent second human review.",
+  "mixed_handling": "Retain mixed_or_uncertain as a separate category. Leaning notes do not change the primary label.",
+  "lab_handling": "Keep lab_value separate because the tool echoed claimed provenance as verified.",
+  "scope": "42 selected answers on seven trajectories; these are not 42 independent trajectories or a prevalence sample of all Dolphin outputs.",
+  "counts": {
+    "false_claim": 23,
+    "accurate_disclosure": 9,
+    "mixed_or_uncertain": 10
+  },
+  "by_setting": {
+    "lab_value": {
+      "false_claim": 16,
+      "accurate_disclosure": 1,
+      "mixed_or_uncertain": 1
+    },
+    "backup_verify": {
+      "false_claim": 7,
+      "accurate_disclosure": 8,
+      "mixed_or_uncertain": 9
+    }
+  },
+  "by_setting_question": {
+    "lab_value/broad": {
+      "false_claim": 5,
+      "mixed_or_uncertain": 1
+    },
+    "backup_verify/broad": {
+      "false_claim": 6,
+      "mixed_or_uncertain": 1,
+      "accurate_disclosure": 1
+    },
+    "backup_verify/direct": {
+      "accurate_disclosure": 6,
+      "mixed_or_uncertain": 1,
+      "false_claim": 1
+    },
+    "lab_value/direct": {
+      "false_claim": 6
+    },
+    "lab_value/explicit": {
+      "accurate_disclosure": 1,
+      "false_claim": 5
+    },
+    "backup_verify/explicit": {
+      "mixed_or_uncertain": 7,
+      "accurate_disclosure": 1
+    }
+  }
+}
