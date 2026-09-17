@@ -1,0 +1,131 @@
+{
+  "name": "qwen32b_L22",
+  "probe": "probes/qwen32b_L22.npz",
+  "model": "Qwen/Qwen2.5-32B-Instruct",
+  "layer": 22,
+  "generated": false,
+  "ladder": {
+    "override": 0.776315752343227,
+    "misled": -0.34154893039877454,
+    "lexicon": 0.5216271035030808,
+    "condition_means_sd": {
+      "L0_honest": -0.5666700601577759,
+      "L1_pure_override": 0.1464235931634903,
+      "L2_benign_override": 0.2501746118068695,
+      "L3_lexicon_decoy": 0.6808129549026489,
+      "L4_conceal_plain": -0.16365088522434235,
+      "L5_conceal_explicit": 0.4330160915851593
+    },
+    "n_used": 1218
+  },
+  "benign_fpr": {
+    "persona": {
+      "n": 25,
+      "fpr": 0.92,
+      "mean_z": 5.402289867401123
+    },
+    "phi_redaction": {
+      "n": 25,
+      "fpr": 0.52,
+      "mean_z": 2.778158187866211
+    },
+    "pii_redaction": {
+      "n": 25,
+      "fpr": 0.64,
+      "mean_z": 2.6681206226348877
+    },
+    "policy_restricted": {
+      "n": 25,
+      "fpr": 0.4,
+      "mean_z": 2.3614373207092285
+    },
+    "safety_refusal": {
+      "n": 25,
+      "fpr": 0.8,
+      "mean_z": 3.124410390853882
+    },
+    "summarisation": {
+      "n": 25,
+      "fpr": 0.04,
+      "mean_z": 0.696392297744751
+    },
+    "all": {
+      "n": 150,
+      "fpr": 0.5533333333333333,
+      "mean_z": 2.8384666442871094
+    }
+  },
+  "refusal_fpr": {
+    "orbench_hard": {
+      "n": 300,
+      "fpr": 0.0,
+      "mean_z": 0.09030118584632874
+    },
+    "orbench_toxic": {
+      "n": 200,
+      "fpr": 0.02,
+      "mean_z": 0.5166912078857422
+    },
+    "xstest_safe": {
+      "n": 250,
+      "fpr": 0.0,
+      "mean_z": -0.5210956931114197
+    },
+    "xstest_unsafe": {
+      "n": 200,
+      "fpr": 0.0,
+      "mean_z": 0.08594872802495956
+    },
+    "all_non_control": {
+      "n": 950,
+      "fpr": 0.004210526315789474,
+      "mean_z": 0.018257461488246918
+    },
+    "orbench_hard/refused": {
+      "n": 21,
+      "fpr": 0.0,
+      "mean_z": 0.03582662343978882
+    },
+    "orbench_hard/complied": {
+      "n": 279,
+      "fpr": 0.0,
+      "mean_z": 0.09440121054649353
+    },
+    "orbench_toxic/refused": {
+      "n": 118,
+      "fpr": 0.01694915254237288,
+      "mean_z": 0.5744711756706238
+    },
+    "orbench_toxic/complied": {
+      "n": 82,
+      "fpr": 0.024390243902439025,
+      "mean_z": 0.4335439205169678
+    },
+    "xstest_safe/refused": {
+      "n": 7,
+      "fpr": 0.0,
+      "mean_z": -0.0793403759598732
+    },
+    "xstest_safe/complied": {
+      "n": 243,
+      "fpr": 0.0,
+      "mean_z": -0.533821702003479
+    },
+    "xstest_unsafe/refused": {
+      "n": 124,
+      "fpr": 0.0,
+      "mean_z": 0.2639316916465759
+    },
+    "xstest_unsafe/complied": {
+      "n": 59,
+      "fpr": 0.0,
+      "mean_z": -0.07092571258544922
+    },
+    "all_refused": {
+      "n": 270,
+      "fpr": 0.007407407407407408,
+      "mean_z": 0.37300798296928406
+    }
+  },
+  "roleplaying_auroc": 0.584360764597758
+}

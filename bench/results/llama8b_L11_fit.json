@@ -1,0 +1,22 @@
+{
+  "probe": "probes/llama8b_L11.npz",
+  "layer": 11,
+  "C": 0.1,
+  "k": {
+    "1": {
+      "heldout_fpr": 0.42,
+      "heldout_per_cat": {
+        "persona": 0.68,
+        "phi_redaction": 0.36,
+        "pii_redaction": 0.4,
+        "policy_restricted": 0.4,
+        "safety_refusal": 0.08,
+        "summarisation": 0.6
+      },
+      "heldout_auroc_mean": 0.6373343214110138,
+      "heldout_auroc_min": 0.63677247331827,
+      "insample_fpr": 0.3933333333333333,
+      "insample_auroc": 0.6371647982795824
+    }
+  }
+}

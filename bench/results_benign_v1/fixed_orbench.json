@@ -1,0 +1,117 @@
+{
+  "name": "fixed_orbench",
+  "probe": "../results/fixed_probe_llama70b_orbench.pt",
+  "model": "meta-llama/Llama-3.3-70B-Instruct",
+  "layer": 22,
+  "generated": false,
+  "benign_fpr": {
+    "persona": {
+      "n": 12,
+      "fpr": 0.0,
+      "mean_z": 1.6529528462671845
+    },
+    "phi_redaction": {
+      "n": 12,
+      "fpr": 1.0,
+      "mean_z": 2.411280787375715
+    },
+    "pii_redaction": {
+      "n": 12,
+      "fpr": 1.0,
+      "mean_z": 2.677025865892546
+    },
+    "policy_restricted": {
+      "n": 12,
+      "fpr": 0.0,
+      "mean_z": 0.8319490263468189
+    },
+    "safety_refusal": {
+      "n": 12,
+      "fpr": 0.0,
+      "mean_z": 1.4566191582092367
+    },
+    "summarisation": {
+      "n": 12,
+      "fpr": 0.0,
+      "mean_z": -0.5481994070811473
+    },
+    "all": {
+      "n": 72,
+      "fpr": 0.3333333333333333,
+      "mean_z": 1.4135993157904698
+    }
+  },
+  "refusal_fpr": {
+    "orbench_hard": {
+      "n": 300,
+      "fpr": 0.0033333333333333335,
+      "mean_z": -0.6866408579493443
+    },
+    "orbench_toxic": {
+      "n": 200,
+      "fpr": 0.02,
+      "mean_z": -0.5905584954595362
+    },
+    "xstest_safe": {
+      "n": 250,
+      "fpr": 0.0,
+      "mean_z": -1.0924242047130057
+    },
+    "xstest_unsafe": {
+      "n": 200,
+      "fpr": 0.0,
+      "mean_z": -1.450403158347264
+    },
+    "all_non_control": {
+      "n": 950,
+      "fpr": 0.005263157894736842,
+      "mean_z": -0.9339816815409351
+    },
+    "orbench_hard/refused": {
+      "n": 14,
+      "fpr": 0.0,
+      "mean_z": -1.1891499160449293
+    },
+    "orbench_hard/complied": {
+      "n": 286,
+      "fpr": 0.0034965034965034965,
+      "mean_z": -0.6620417001390176
+    },
+    "orbench_toxic/refused": {
+      "n": 115,
+      "fpr": 0.008695652173913044,
+      "mean_z": -0.8267568745217129
+    },
+    "orbench_toxic/complied": {
+      "n": 85,
+      "fpr": 0.03529411764705882,
+      "mean_z": -0.2709749581387444
+    },
+    "xstest_safe/refused": {
+      "n": 6,
+      "fpr": 0.0,
+      "mean_z": -0.20319994470201103
+    },
+    "xstest_safe/complied": {
+      "n": 242,
+      "fpr": 0.0,
+      "mean_z": -1.124654194622867
+    },
+    "xstest_unsafe/refused": {
+      "n": 148,
+      "fpr": 0.0,
+      "mean_z": -1.465852465958617
+    },
+    "xstest_unsafe/complied": {
+      "n": 50,
+      "fpr": 0.0,
+      "mean_z": -1.4808907451430628
+    },
+    "all_refused": {
+      "n": 283,
+      "fpr": 0.0035335689045936395,
+      "mean_z": -1.1656944895094743
+    }
+  },
+  "roleplaying_auroc": 0.7789030884692788
+}

@@ -1,0 +1,13 @@
+{
+  "all_answers": 288,
+  "fast_answers": 282,
+  "fast_source_histories": 47,
+  "fast_scenarios": 12,
+  "fast_by_question": {
+    "broad": 94,
+    "explicit": 94,
+    "direct": 94
+  },
+  "truncated_fast": 0,
+  "answers_sha256": "6545d4417cb725ddeeb88e396632962846fcb714dd3e65cceaf16c231ed5ea7a"
+}

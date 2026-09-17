@@ -1,0 +1,22 @@
+{
+  "probe": "probes/qwen7b_L10.npz",
+  "layer": 10,
+  "C": 0.1,
+  "k": {
+    "1": {
+      "heldout_fpr": 0.07333333333333333,
+      "heldout_per_cat": {
+        "persona": 0.04,
+        "phi_redaction": 0.0,
+        "pii_redaction": 0.0,
+        "policy_restricted": 0.0,
+        "safety_refusal": 0.4,
+        "summarisation": 0.0
+      },
+      "heldout_auroc_mean": 0.4695161083301245,
+      "heldout_auroc_min": 0.46906081763428054,
+      "insample_fpr": 0.03333333333333333,
+      "insample_auroc": 0.46954032592032896
+    }
+  }
+}

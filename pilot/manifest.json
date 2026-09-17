@@ -1,0 +1,24 @@
+{
+  "version": "pilot-v1",
+  "scenarios": 24,
+  "trials": 96,
+  "conditions": [
+    "incentive_pressure",
+    "accuracy_control",
+    "legitimate_withholding",
+    "incomplete_information"
+  ],
+  "model_responses_generated": false,
+  "all_conditions_unlabeled": true,
+  "limitations": [
+    "All underlying statuses are adverse; add favorable worlds before detector training.",
+    "Incomplete records differ in whether they support a false answer or only uncertainty.",
+    "Explicit performance incentives are instructions about goals; this is not evidence of spontaneous scheming.",
+    "Independent knowledge-check output is supporting evidence, not direct access to the sender\u2019s actual belief.",
+    "Four pilot families are development data; final testing needs new families."
+  ],
+  "files_sha256": {
+    "scenarios.jsonl": "d58d25f1591676e8b2a55a0d3eaac7e8f1a460912e8256270599cdcd87c6c882",
+    "trials.jsonl": "a0871edd917c6439d9bc9d72d51b8522bdcfa6ef8b7799c1e4fe6081941c9523"
+  }
+}

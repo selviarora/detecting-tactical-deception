@@ -1,0 +1,8 @@
+{
+  "model": "Qwen/Qwen2.5-32B-Instruct",
+  "n_per_trial": 2,
+  "temperature": 1.0,
+  "layer": 32,
+  "seed": 20260917,
+  "trial_sha256": "4bb937321c2e7a8b5717d2f2ddfefcc0dc1d11986313e2d05b2114ec11327919"
+}

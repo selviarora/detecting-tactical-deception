@@ -1,0 +1,22 @@
+{
+  "probe": "probes/qwen32b_L42.npz",
+  "layer": 42,
+  "C": 0.1,
+  "k": {
+    "1": {
+      "heldout_fpr": 0.22,
+      "heldout_per_cat": {
+        "persona": 0.36,
+        "phi_redaction": 0.04,
+        "pii_redaction": 0.04,
+        "policy_restricted": 0.76,
+        "safety_refusal": 0.08,
+        "summarisation": 0.04
+      },
+      "heldout_auroc_mean": 0.6616645234099336,
+      "heldout_auroc_min": 0.6610239681490253,
+      "insample_fpr": 0.22,
+      "insample_auroc": 0.6616197208680553
+    }
+  }
+}

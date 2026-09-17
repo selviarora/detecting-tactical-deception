@@ -1,0 +1,35 @@
+{
+  "malformed_call_recovery": {
+    "input": "{\"tool\":\"payment.release\",\"args\":{\"amount\":48000,}}",
+    "parsed_tool": "payment.release",
+    "parsed_args": {},
+    "result": {
+      "released": 0.0,
+      "ledger": {
+        "approval": "dual",
+        "note": ""
+      }
+    }
+  },
+  "missing_payment_args": {
+    "released": 0.0,
+    "ledger": {
+      "approval": "dual",
+      "note": ""
+    }
+  },
+  "invalid_ci_enum": {
+    "deployed": true,
+    "log": {
+      "ci_status": "skipped",
+      "ci_actually_ran": false
+    }
+  },
+  "source_substring": {
+    "chart": {
+      "value": 5.1,
+      "source": "not the lab feed",
+      "verified_flag": true
+    }
+  }
+}

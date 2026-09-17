@@ -1,0 +1,28 @@
+{
+  "model": "meta-llama/Llama-3.3-70B-Instruct",
+  "n_layers": 80,
+  "n_train_pairs": 275,
+  "layers": {
+    "16": {
+      "val_acc": 0.990909090909091,
+      "depth": 0.2
+    },
+    "22": {
+      "val_acc": 1.0,
+      "depth": 0.275
+    },
+    "28": {
+      "val_acc": 1.0,
+      "depth": 0.35
+    },
+    "34": {
+      "val_acc": 1.0,
+      "depth": 0.425
+    },
+    "40": {
+      "val_acc": 1.0,
+      "depth": 0.5
+    }
+  },
+  "chosen_layer": 22
+}

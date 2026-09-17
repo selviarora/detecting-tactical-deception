@@ -110,11 +110,11 @@ def load_jsonl(p):
 class Capturer:
     """One model, one layer. Last-prompt-token or completion-mean activations."""
 
-    def __init__(self, model_name, layer):
+    def __init__(self, model_name, layers):
         import torch
         from transformers import AutoModelForCausalLM, AutoTokenizer
         self.torch = torch
-        self.layer = layer
+        self.layers = list(layers)
         self.device = "cuda" if torch.cuda.is_available() else (
             "mps" if torch.backends.mps.is_available() else "cpu")
         dtype = torch.float32 if self.device == "cpu" else torch.bfloat16
@@ -127,8 +127,9 @@ class Capturer:
             self.model = AutoModelForCausalLM.from_pretrained(model_name, **kw).to(self.device)
         self.model.eval()
         n = self.model.config.num_hidden_layers
-        if not 0 <= layer <= n:
-            sys.exit(f"probe layer {layer} but model has {n} layers")
+        for layer in self.layers:
+            if not 0 <= layer <= n:
+                sys.exit(f"probe layer {layer} but model has {n} layers")
 
     def _prefix(self, r):
         msgs = r.get("messages") or [{"role": "system", "content": r["system"]},
@@ -136,14 +137,16 @@ class Capturer:
         return self.tok.apply_chat_template(msgs, tokenize=False, add_generation_prompt=True)
 
     def last_prompt(self, rows, generate=False, max_new=48, label=""):
-        X, outs = [], []
+        """-> ({layer: (n, d)}, generations)"""
+        X, outs = {l: [] for l in self.layers}, []
         t0 = time.time()
         for i, r in enumerate(rows):
             enc = self.tok(self._prefix(r), return_tensors="pt",
                            add_special_tokens=False).to(self.device)
             with self.torch.no_grad():
                 out = self.model(**enc, output_hidden_states=True)
-                X.append(out.hidden_states[self.layer][0, -1, :].float().cpu().numpy())
+                for l in self.layers:
+                    X[l].append(out.hidden_states[l][0, -1, :].float().cpu().numpy())
                 if generate:
                     seq = self.model.generate(**enc, max_new_tokens=max_new, do_sample=False,
                                               temperature=None, top_p=None, top_k=None,
@@ -154,10 +157,11 @@ class Capturer:
             if (i + 1) % 100 == 0:
                 el = time.time() - t0
                 print(f"  {label} {i+1}/{len(rows)} {el:.0f}s ({el/(i+1):.2f}s/ex)", flush=True)
-        return np.stack(X), outs
+        return {l: np.stack(v) for l, v in X.items()}, outs
 
     def completion_mean(self, rows, label=""):
-        X = []
+        """-> {layer: (n, d)}"""
+        X = {l: [] for l in self.layers}
         t0 = time.time()
         for i, r in enumerate(rows):
             prefix = self._prefix(r)
@@ -166,15 +170,16 @@ class Capturer:
                            add_special_tokens=False).to(self.device)
             with self.torch.no_grad():
                 out = self.model(**enc, output_hidden_states=True)
-                span = out.hidden_states[self.layer][0, n_prefix:, :]
-                if span.shape[0] == 0:
-                    span = out.hidden_states[self.layer][0, -1:, :]
-                X.append(span.float().mean(0).cpu().numpy())
+                for l in self.layers:
+                    span = out.hidden_states[l][0, n_prefix:, :]
+                    if span.shape[0] == 0:
+                        span = out.hidden_states[l][0, -1:, :]
+                    X[l].append(span.float().mean(0).cpu().numpy())
             del out
             if (i + 1) % 100 == 0:
                 el = time.time() - t0
                 print(f"  {label} {i+1}/{len(rows)} {el:.0f}s ({el/(i+1):.2f}s/ex)", flush=True)
-        return np.stack(X)
+        return {l: np.stack(v) for l, v in X.items()}
 
 
 # --------------------------------------------------------------------------
@@ -220,6 +225,9 @@ def main():
                     help="dir to save/load activations (npz per set). reuse across probes at the same layer")
     ap.add_argument("--skip", nargs="*", default=[],
                     help="sets to skip (ladder | benign | refusals | roleplaying)")
+    ap.add_argument("--capture-layers", nargs="*", type=int, default=[],
+                    help="extra layers to cache in the same pass (needs --cache). "
+                         "generation happens once; later probes at those layers are free")
     a = ap.parse_args()
 
     probe = load_probe(a.probe)
@@ -244,17 +252,19 @@ def main():
     cache = Path(a.cache) if a.cache else None
     need = [k for k in sets if not (cache and (cache / f"{k}_L{layer}.npz").exists())]
     if need:
-        cap = Capturer(a.model, layer)
+        layers = sorted({layer, *a.capture_layers})
+        cap = Capturer(a.model, layers)
         for k in need:
             if k == "roleplaying":
-                X, outs = cap.completion_mean(sets[k], label=k), []
+                Xs, outs = cap.completion_mean(sets[k], label=k), []
             else:
-                X, outs = cap.last_prompt(sets[k], generate=a.generate, label=k)
-            acts[k], gens[k] = X, outs
+                Xs, outs = cap.last_prompt(sets[k], generate=a.generate, label=k)
+            acts[k], gens[k] = Xs[layer], outs
             if cache:
                 cache.mkdir(parents=True, exist_ok=True)
-                np.savez_compressed(cache / f"{k}_L{layer}.npz", X=X.astype(np.float16),
-                                    gens=np.array(outs, dtype=object))
+                for l, X in Xs.items():
+                    np.savez_compressed(cache / f"{k}_L{l}.npz", X=X.astype(np.float16),
+                                        gens=np.array(outs, dtype=object))
     for k in sets:
         if k not in acts:
             z = np.load(cache / f"{k}_L{layer}.npz", allow_pickle=True)

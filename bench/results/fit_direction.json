@@ -1,0 +1,67 @@
+{
+  "probe": "../apollo_data/example_results/instructed_pairs/detector.pt",
+  "layer": 22,
+  "C": 0.1,
+  "k": {
+    "1": {
+      "heldout_fpr": 0.20666666666666667,
+      "heldout_per_cat": {
+        "persona": 0.6,
+        "phi_redaction": 0.04,
+        "pii_redaction": 0.08,
+        "policy_restricted": 0.12,
+        "safety_refusal": 0.04,
+        "summarisation": 0.36
+      },
+      "heldout_auroc_mean": 0.7800546348835012,
+      "heldout_auroc_min": 0.7799274925349279,
+      "insample_fpr": 0.13333333333333333,
+      "insample_auroc": 0.7800364716908478
+    },
+    "2": {
+      "heldout_fpr": 0.21333333333333335,
+      "heldout_per_cat": {
+        "persona": 0.68,
+        "phi_redaction": 0.04,
+        "pii_redaction": 0.08,
+        "policy_restricted": 0.12,
+        "safety_refusal": 0.0,
+        "summarisation": 0.36
+      },
+      "heldout_auroc_mean": 0.7801690629972174,
+      "heldout_auroc_min": 0.7799492883661119,
+      "insample_fpr": 0.14,
+      "insample_auroc": 0.7801926751476667
+    },
+    "4": {
+      "heldout_fpr": 0.11333333333333333,
+      "heldout_per_cat": {
+        "persona": 0.4,
+        "phi_redaction": 0.0,
+        "pii_redaction": 0.04,
+        "policy_restricted": 0.08,
+        "safety_refusal": 0.0,
+        "summarisation": 0.16
+      },
+      "heldout_auroc_mean": 0.7812764123093169,
+      "heldout_auroc_min": 0.7803052869421175,
+      "insample_fpr": 0.10666666666666667,
+      "insample_auroc": 0.7810027535400063
+    },
+    "8": {
+      "heldout_fpr": 0.15333333333333332,
+      "heldout_per_cat": {
+        "persona": 0.56,
+        "phi_redaction": 0.04,
+        "pii_redaction": 0.08,
+        "policy_restricted": 0.08,
+        "safety_refusal": 0.04,
+        "summarisation": 0.12
+      },
+      "heldout_auroc_mean": 0.7800437369679093,
+      "heldout_auroc_min": 0.7779586024513044,
+      "insample_fpr": 0.2,
+      "insample_auroc": 0.779251821768223
+    }
+  }
+}

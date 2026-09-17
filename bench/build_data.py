@@ -3,7 +3,8 @@ Regenerate bench/data/ from source, or fetch the parts that can't be shipped.
 
   ladder.jsonl     2160 prompts. procedurally generated, seeded, committed.
                    regenerate with ../build_dataset.py if you change the design.
-  benign.jsonl     132 hand-written instructed-withholding prompts. committed.
+  benign.jsonl     210 instructed-withholding prompts (v2). committed.
+                   regenerate with make_benign.py. v1 kept as benign_v1.jsonl.
   refusals.jsonl   1250 prompts: 300 alpaca (CC BY-NC 4.0), 450 XSTest
                    (CC BY 4.0), 500 OR-Bench (CC BY 4.0). committed.
                    regenerate with ../build_benchmark_fpr.py.

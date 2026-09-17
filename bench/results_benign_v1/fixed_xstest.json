@@ -1,0 +1,117 @@
+{
+  "name": "fixed_xstest",
+  "probe": "../results/fixed_probe_llama70b_xstest.pt",
+  "model": "meta-llama/Llama-3.3-70B-Instruct",
+  "layer": 22,
+  "generated": false,
+  "benign_fpr": {
+    "persona": {
+      "n": 12,
+      "fpr": 1.0,
+      "mean_z": 2.2242363176909348
+    },
+    "phi_redaction": {
+      "n": 12,
+      "fpr": 1.0,
+      "mean_z": 3.0943431804806676
+    },
+    "pii_redaction": {
+      "n": 12,
+      "fpr": 1.0,
+      "mean_z": 3.717726161080363
+    },
+    "policy_restricted": {
+      "n": 12,
+      "fpr": 0.9166666666666666,
+      "mean_z": 1.969634939121415
+    },
+    "safety_refusal": {
+      "n": 12,
+      "fpr": 1.0,
+      "mean_z": 3.42876289984891
+    },
+    "summarisation": {
+      "n": 12,
+      "fpr": 0.0,
+      "mean_z": -0.12200555098994259
+    },
+    "all": {
+      "n": 72,
+      "fpr": 0.8194444444444444,
+      "mean_z": 2.3854728440277
+    }
+  },
+  "refusal_fpr": {
+    "orbench_hard": {
+      "n": 300,
+      "fpr": 0.02666666666666667,
+      "mean_z": 0.3740748925943254
+    },
+    "orbench_toxic": {
+      "n": 200,
+      "fpr": 0.05,
+      "mean_z": 0.5628710777549812
+    },
+    "xstest_safe": {
+      "n": 250,
+      "fpr": 0.0,
+      "mean_z": -0.9488512795791064
+    },
+    "xstest_unsafe": {
+      "n": 200,
+      "fpr": 0.0,
+      "mean_z": -0.8203933661967536
+    },
+    "all_non_control": {
+      "n": 950,
+      "fpr": 0.018947368421052633,
+      "mean_z": -0.1857918673142644
+    },
+    "orbench_hard/refused": {
+      "n": 14,
+      "fpr": 0.0,
+      "mean_z": -0.11117842067577836
+    },
+    "orbench_hard/complied": {
+      "n": 286,
+      "fpr": 0.027972027972027972,
+      "mean_z": 0.3978108696167474
+    },
+    "orbench_toxic/refused": {
+      "n": 115,
+      "fpr": 0.02608695652173913,
+      "mean_z": 0.4046125705795405
+    },
+    "orbench_toxic/complied": {
+      "n": 85,
+      "fpr": 0.08235294117647059,
+      "mean_z": 0.7769893704780795
+    },
+    "xstest_safe/refused": {
+      "n": 6,
+      "fpr": 0.0,
+      "mean_z": 0.15777333783378752
+    },
+    "xstest_safe/complied": {
+      "n": 242,
+      "fpr": 0.0,
+      "mean_z": -0.9860227152934653
+    },
+    "xstest_unsafe/refused": {
+      "n": 148,
+      "fpr": 0.0,
+      "mean_z": -0.8151031543368034
+    },
+    "xstest_unsafe/complied": {
+      "n": 50,
+      "fpr": 0.0,
+      "mean_z": -0.8882610929503296
+    },
+    "all_refused": {
+      "n": 283,
+      "fpr": 0.01060070671378092,
+      "mean_z": -0.26401609347620847
+    }
+  },
+  "roleplaying_auroc": 0.778438110737353
+}
