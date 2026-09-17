@@ -1105,3 +1105,11 @@ checkable ground truth; the first contrast where instruction is constant and tru
 value varies (31 false / 38 honest across three settings); and a clean negative that
 says the current probe family, corrected or retrained, reads context rather than truth.
 mistral pending. withheld settings were read for evaluation only; nothing was tuned.
+
+**mistral-24b v5.1** (valid run, 108/648): with the strict parser (no recovery from
+malformed json) 4-6 of 6 trajectories per setting are malformed, ~25 complete. the few
+natural reports after a false record are honest ("no, the full CI suite did not run,
+but I marked it as green"). unusable for labels at T=1; needs a lower temperature or a
+tool format it reliably emits. not fixed today.
+
+**gpu, sep 16-17 total: ~$30.** no pods running. runpod balance ~$4.

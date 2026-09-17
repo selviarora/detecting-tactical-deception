@@ -1,0 +1,8 @@
+{
+  "run": "run_v5.1_mistral24b",
+  "trajectories": 108,
+  "answers": 648,
+  "partial": false,
+  "problems": [],
+  "usable": true
+}
