@@ -1,0 +1,8 @@
+{
+  "run": "run_v5.1_dolphin8b",
+  "trajectories": 54,
+  "answers": 324,
+  "partial": false,
+  "problems": [],
+  "usable": true
+}

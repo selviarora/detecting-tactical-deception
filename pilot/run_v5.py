@@ -19,7 +19,7 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", required=True); ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--n-act", type=int, default=6); ap.add_argument("--n-q", type=int, default=2)
-    ap.add_argument("--layer", type=int, default=22); ap.add_argument("--seed", type=int, default=5)
+    ap.add_argument("--layer", type=int, default=22); ap.add_argument("--seed", type=int, default=5); ap.add_argument("--temperature", type=float, default=1.0)
     ap.add_argument("--settings", nargs="*", default=list(S.SETTINGS)); ap.add_argument("--variants", nargs="*", default=["natural", "instructed"])
     a = ap.parse_args()
     import torch
@@ -34,7 +34,7 @@ def main():
         ids = ids_for(msgs)
         with torch.inference_mode():
             seq = model.generate(input_ids=ids, attention_mask=torch.ones_like(ids), max_new_tokens=max_tokens, do_sample=True,
-                                 temperature=1.0, top_p=None, top_k=None, pad_token_id=tok.eos_token_id)
+                                 temperature=a.temperature, top_p=None, top_k=None, pad_token_id=tok.eos_token_id)
         new = seq[0, ids.shape[1]:]; return tok.decode(new, skip_special_tokens=True).strip(), len(new) >= max_tokens
     def act(msgs, answer):
         prefix = tok.apply_chat_template(msgs, add_generation_prompt=True, tokenize=False)

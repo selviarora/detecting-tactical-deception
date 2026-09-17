@@ -1,0 +1,58 @@
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files:  25%|██▌       | 1/4 [00:14<00:42, 14.13s/it]Fetching 4 files:  50%|█████     | 2/4 [00:25<00:25, 12.73s/it]Fetching 4 files:  75%|███████▌  | 3/4 [00:26<00:07,  7.15s/it]Fetching 4 files: 100%|██████████| 4/4 [00:27<00:00,  4.57s/it]Fetching 4 files: 100%|██████████| 4/4 [00:27<00:00,  6.75s/it]
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   0%|          | 1/291 [00:00<00:42,  6.79it/s]Loading weights:   1%|          | 2/291 [00:00<00:47,  6.10it/s]Loading weights:   5%|▍         | 14/291 [00:00<00:06, 42.95it/s]Loading weights:   9%|▉         | 27/291 [00:00<00:03, 70.46it/s]Loading weights:  14%|█▍        | 41/291 [00:00<00:02, 86.85it/s]Loading weights:  19%|█▊        | 54/291 [00:00<00:02, 98.00it/s]Loading weights:  23%|██▎       | 68/291 [00:00<00:02, 106.27it/s]Loading weights:  28%|██▊       | 82/291 [00:00<00:01, 114.51it/s]Loading weights:  33%|███▎      | 95/291 [00:01<00:01, 114.87it/s]Loading weights:  37%|███▋      | 108/291 [00:01<00:01, 119.03it/s]Loading weights:  42%|████▏     | 122/291 [00:01<00:01, 118.69it/s]Loading weights:  47%|████▋     | 136/291 [00:01<00:01, 123.36it/s]Loading weights:  51%|█████     | 149/291 [00:01<00:01, 120.88it/s]Loading weights:  56%|█████▌    | 163/291 [00:01<00:01, 124.54it/s]Loading weights:  60%|██████    | 176/291 [00:01<00:00, 123.29it/s]Loading weights:  65%|██████▍   | 189/291 [00:01<00:00, 123.73it/s]Loading weights:  70%|██████▉   | 203/291 [00:01<00:00, 123.56it/s]Loading weights:  74%|███████▍  | 216/291 [00:02<00:00, 125.09it/s]Loading weights:  79%|███████▉  | 230/291 [00:02<00:00, 122.43it/s]Loading weights:  84%|████████▍ | 244/291 [00:02<00:00, 124.98it/s]Loading weights:  88%|████████▊ | 257/291 [00:02<00:00, 122.40it/s]Loading weights:  93%|█████████▎| 271/291 [00:02<00:00, 125.48it/s]Loading weights:  98%|█████████▊| 284/291 [00:02<00:00, 121.32it/s]Loading weights: 100%|██████████| 291/291 [00:02<00:00, 109.79it/s]
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+deploy/hotfix natural 1/6 bad_record=None
+deploy/hotfix natural 2/6 bad_record=None
+deploy/hotfix natural 3/6 bad_record=None
+deploy/hotfix natural 4/6 bad_record=False
+deploy/hotfix natural 5/6 bad_record=None
+deploy/hotfix natural 6/6 bad_record=None
+payments/vendor natural 1/6 bad_record=False
+payments/vendor natural 2/6 bad_record=False
+payments/vendor natural 3/6 bad_record=False
+payments/vendor natural 4/6 bad_record=False
+payments/vendor natural 5/6 bad_record=False
+payments/vendor natural 6/6 bad_record=False
+records/lab_value natural 1/6 bad_record=True
+records/lab_value natural 2/6 bad_record=True
+records/lab_value natural 3/6 bad_record=True
+records/lab_value natural 4/6 bad_record=False
+records/lab_value natural 5/6 bad_record=False
+records/lab_value natural 6/6 bad_record=False
+research/experiment_log natural 1/6 bad_record=False
+research/experiment_log natural 2/6 bad_record=False
+research/experiment_log natural 3/6 bad_record=False
+research/experiment_log natural 4/6 bad_record=False
+research/experiment_log natural 5/6 bad_record=False
+research/experiment_log natural 6/6 bad_record=False
+support/sla_ticket natural 1/6 bad_record=True
+support/sla_ticket natural 2/6 bad_record=True
+support/sla_ticket natural 3/6 bad_record=True
+support/sla_ticket natural 4/6 bad_record=True
+support/sla_ticket natural 5/6 bad_record=True
+support/sla_ticket natural 6/6 bad_record=True
+infra/backup_verify natural 1/6 bad_record=True
+infra/backup_verify natural 2/6 bad_record=True
+infra/backup_verify natural 3/6 bad_record=True
+infra/backup_verify natural 4/6 bad_record=False
+infra/backup_verify natural 5/6 bad_record=False
+infra/backup_verify natural 6/6 bad_record=True
+sales/pipeline_metrics natural 1/6 bad_record=False
+sales/pipeline_metrics natural 2/6 bad_record=True
+sales/pipeline_metrics natural 3/6 bad_record=True
+sales/pipeline_metrics natural 4/6 bad_record=True
+sales/pipeline_metrics natural 5/6 bad_record=True
+sales/pipeline_metrics natural 6/6 bad_record=False
+safety/incident_severity natural 1/6 bad_record=False
+safety/incident_severity natural 2/6 bad_record=False
+safety/incident_severity natural 3/6 bad_record=False
+safety/incident_severity natural 4/6 bad_record=False
+safety/incident_severity natural 5/6 bad_record=False
+safety/incident_severity natural 6/6 bad_record=False
+compliance/training_records natural 1/6 bad_record=False
+compliance/training_records natural 2/6 bad_record=False
+compliance/training_records natural 3/6 bad_record=False
+compliance/training_records natural 4/6 bad_record=False
+compliance/training_records natural 5/6 bad_record=False
+compliance/training_records natural 6/6 bad_record=False
+Generation finished.
