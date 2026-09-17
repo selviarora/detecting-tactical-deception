@@ -1,0 +1,108 @@
+{
+ "protocol": "LOSO over three settings; train on the other two settings' 64 supplied cases; standardisation fit on training rows; LogisticRegression(C, max_iter=5000, class_weight=balanced); no threshold; generated-report labels are keyword rules in this file",
+ "folds": {
+  "C0.01_deploy": {
+   "C": 0.01,
+   "held_out": "deploy",
+   "n_train": 64,
+   "supplied_auroc": 0.93359375,
+   "supplied_auroc_vs_answer_yes": 0.43359375,
+   "supplied_auroc_vs_world_compliant": 0.50390625,
+   "generated_auroc": 0.5299145299145299,
+   "generated_n": 31,
+   "generated_n_false": 13
+  },
+  "C0.01_pipeline": {
+   "C": 0.01,
+   "held_out": "pipeline",
+   "n_train": 64,
+   "supplied_auroc": 0.9921875,
+   "supplied_auroc_vs_answer_yes": 0.546875,
+   "supplied_auroc_vs_world_compliant": 0.48046875,
+   "generated_auroc": 1.0,
+   "generated_n": 62,
+   "generated_n_false": 11
+  },
+  "C0.01_tickets": {
+   "C": 0.01,
+   "held_out": "tickets",
+   "n_train": 64,
+   "supplied_auroc": 0.99609375,
+   "supplied_auroc_vs_answer_yes": 0.50390625,
+   "supplied_auroc_vs_world_compliant": 0.48046875,
+   "generated_auroc": 1.0,
+   "generated_n": 59,
+   "generated_n_false": 7
+  },
+  "C0.1_deploy": {
+   "C": 0.1,
+   "held_out": "deploy",
+   "n_train": 64,
+   "supplied_auroc": 0.93359375,
+   "supplied_auroc_vs_answer_yes": 0.4375,
+   "supplied_auroc_vs_world_compliant": 0.50390625,
+   "generated_auroc": 0.5769230769230769,
+   "generated_n": 31,
+   "generated_n_false": 13
+  },
+  "C0.1_pipeline": {
+   "C": 0.1,
+   "held_out": "pipeline",
+   "n_train": 64,
+   "supplied_auroc": 0.98046875,
+   "supplied_auroc_vs_answer_yes": 0.55859375,
+   "supplied_auroc_vs_world_compliant": 0.48046875,
+   "generated_auroc": 1.0,
+   "generated_n": 62,
+   "generated_n_false": 11
+  },
+  "C0.1_tickets": {
+   "C": 0.1,
+   "held_out": "tickets",
+   "n_train": 64,
+   "supplied_auroc": 0.99609375,
+   "supplied_auroc_vs_answer_yes": 0.5,
+   "supplied_auroc_vs_world_compliant": 0.484375,
+   "generated_auroc": 0.9945054945054946,
+   "generated_n": 59,
+   "generated_n_false": 7
+  },
+  "C1.0_deploy": {
+   "C": 1.0,
+   "held_out": "deploy",
+   "n_train": 64,
+   "supplied_auroc": 0.94140625,
+   "supplied_auroc_vs_answer_yes": 0.4453125,
+   "supplied_auroc_vs_world_compliant": 0.50390625,
+   "generated_auroc": 0.5854700854700855,
+   "generated_n": 31,
+   "generated_n_false": 13
+  },
+  "C1.0_pipeline": {
+   "C": 1.0,
+   "held_out": "pipeline",
+   "n_train": 64,
+   "supplied_auroc": 0.9765625,
+   "supplied_auroc_vs_answer_yes": 0.5625,
+   "supplied_auroc_vs_world_compliant": 0.48046875,
+   "generated_auroc": 1.0,
+   "generated_n": 62,
+   "generated_n_false": 11
+  },
+  "C1.0_tickets": {
+   "C": 1.0,
+   "held_out": "tickets",
+   "n_train": 64,
+   "supplied_auroc": 0.9921875,
+   "supplied_auroc_vs_answer_yes": 0.49609375,
+   "supplied_auroc_vs_world_compliant": 0.484375,
+   "generated_auroc": 0.9752747252747253,
+   "generated_n": 59,
+   "generated_n_false": 7
+  }
+ },
+ "source_hashes": {
+  "cases.jsonl": "163d138b30c68832a64ee82647d84c8ab489284436aca41624452c0602f14d82",
+  "activations.npz": "2270cad47aa4b16a711ae270b9a738e4d2044dda3b1b91878fc468b6dcc7d837"
+ }
+}
