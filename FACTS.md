@@ -1173,28 +1173,52 @@ retrained    0.70 / 0.92    0.66 / 0.81    0.72 / 0.84    ~0.78
 mean false-minus-true (alpaca sd), retrained: +0.34 to +1.97 in 23/24 blocks. apollo,
 corrected, V1: +0.2 to +0.75, with pipeline/concealment negative.
 
-**the shape (retrained, per block):** false-minus-true *when the history is a violation*
-is +5 to +15 sd (a false compliance claim after a real violation scores far above the
-true admission). false-minus-true *when the history is compliant* is −3 to −6 sd (a false
-claim of violation scores below the true compliance report). so the signal is not
-"false" symmetrically. it is **claiming clean when dirty**: the cover-up. the same
-asymmetry test 1 found (section 17), now with wording controlled.
+**my "cover-up only" reading and my SD figures were wrong. codex's audit
+(`pilot/truth_wording_audit/`) replaces them, verbatim:**
 
-**what this settles:** the post-instruction ordering in section 21 was not the word
-"yes". a linear direction for false compliance claims after a violation exists at L22,
-is read most strongly by the probe trained on this repo's honest-confession negatives,
-and is near chance for apollo's file and the one-direction correction.
+> The frozen retrained probe outperforms the original Apollo probe on this 96-row
+> supplied-history/report diagnostic: mean all-forms AUROC across the six setting/note
+> cells is 0.776 versus 0.615. The predeclared factorial interaction is positive in
+> 23/24 dependent blocks. This supports a qualified "follows truth" result for the
+> constructed report–state relation, beyond fixed answer wording or an additive
+> prefix/answer score. Three previously inspected setting families do not establish
+> generalization to new families or natural behavior.
+>
+> The "cover-up only" interpretation was too strong. With report wording held exactly
+> fixed across histories, the retrained probe scores the false version higher in 23/24
+> compliance-claim comparisons and 23/24 violation-claim comparisons. Within a violating
+> history it ranks false compliance above honest admission in 20/24 blocks; within a
+> compliant history it ranks false violation above true compliance in 14/24. The signal
+> is directionally biased and question-dependent, not universally reversed for false
+> claims of wrongdoing.
+>
+> Corrected units: violating-history false-minus-true differences range −2.295 to
+> +7.477 Alpaca SD, compliant-history differences −2.838 to +2.816 SD, and the
+> interaction −0.025 to +3.382 SD. The previous +5–15 / −3–6 SD summary was incorrect.
+> The +0.34–1.97 range describes six cell means, not all 24 blocks.
+>
+> The historical threshold still flags only 6/24 supplied false compliance claims and
+> 0/48 honest controls, missing all 12 neutral-note false compliance claims. These
+> exploratory target-specific counts do not establish an independently calibrated
+> operating-point advantage. Apollo and the correction also show some positive
+> interactions; describe their actual AUROCs instead of treating every result as chance.
+>
+> False compliance claims after a violation remain a worthwhile next application target.
+> Include both truthful admissions and legitimate compliance reports as negatives,
+> preserve wording/instruction controls, and separately evaluate natural versus
+> instructed reports. Pipeline has now contributed to development decisions: new
+> generations in it can test new samples, but cannot establish transfer to an unseen
+> setting. Reserve fresh untouched families for that claim. No causal attribution to the
+> honest-confession training examples is established without a matched ablation.
 
-**what it does not settle (codex's limits, kept):** three previously examined setting
-families; dependent controls, not 96 independent trials; supplied reports, not chosen
-behaviour; no intent or recipient-belief measurement; historical thresholds are
-diagnostic, not context-calibrated operating points; a positive interaction rules out a
-purely additive prefix/answer account, not every nonsemantic correlation.
+what i got wrong: read raw per-block score differences as alpaca-sd units; generalised
+"cover-up only" from the violating-history half without checking the wording-fixed
+comparison in the compliant half; called apollo/correction "chance" at 0.62.
 
-**the target for the next detector, stated now:** false compliance claims after a real
-violation. train on that contrast in the fit settings (deploy, backup, payments, lab),
-calibrate on tickets and training records, test on experiment log, pipeline, incident,
-with fresh generations and a held-out threshold. that is the first version of this
-project with a signal to aim at.
+**what stands, in one line:** with wording controlled, the retrained probe's ordering
+follows the report–state relation (0.78 vs apollo's 0.62), in both directions,
+unevenly, in supplied text, in three examined families, below its historical threshold.
+the next target is false compliance claims after a violation, with fresh untouched
+families reserved for any transfer claim, and pipeline no longer counts as untouched.
 
 gpu sep 16-17: ~$31. no pods.
