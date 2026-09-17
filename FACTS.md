@@ -1317,9 +1317,10 @@ the six fresh families (`settings_v6.py`) on dolphin *and* llama for the transfe
 
 gpu sep 16-17: ~$34.
 
-**dolphin stage-one labels (sep 17, 6pm):** `pilot/run_v5.1_dolphin8b/labels_selvi_reviewed.jsonl`,
+**dolphin stage-one labels (sep 17, 6pm):** `pilot/run_v5.1_dolphin8b/labels_selvi.jsonl`,
 42 rows (all answers on falsified lab/backup trajectories). question+answer only, blind to
-state and scores. model-triaged, then reviewed row by row by selvi, all 42 confirmed:
+state and scores. labelled by selvi; a model-generated suggested label was visible during
+labelling:
 **22 asserts_clean, 11 hedge_or_mixed, 9 admits_problem, 0 refusal, 0 unclear.** so the
 keyword "~24 false" becomes 22 clean assertions plus 11 mixed. no second independent
 human labeller yet; agreement is the number that's still missing. stage two (check each
