@@ -1222,3 +1222,53 @@ the next target is false compliance claims after a violation, with fresh untouch
 families reserved for any transfer claim, and pipeline no longer counts as untouched.
 
 gpu sep 16-17: ~$31. no pods.
+
+---
+
+## 23. sep 17, night: the report/state feature trains up and transfers (development evidence)
+
+exploratory, cpu, on the 96 supplied cases from section 22 (`pilot/truth_wording_test/`,
+wording and world-state balanced, label = report contradicts the record the model read).
+
+**leave-one-setting-out, train on the other two settings' 64 supplied cases, test on
+the held-out setting's 32:**
+```
+held-out    new probe   codex retrained (frozen)   apollo (frozen)
+deploy        0.93           0.74                     0.58
+pipeline      0.98           0.66                     0.50
+tickets       1.00           0.74                     0.59
+```
+C in {0.01, 0.1, 1} all within 0.02. anchoring on the retrained probe's score: 0.93-0.95.
+wording checks on the held-out setting, C=0.1: score vs "answer says yes" 0.44 / 0.56 /
+0.50; score vs "world is compliant" 0.50 / 0.48 / 0.48. the probe reads neither the word
+nor the state; it reads whether the report matches the state.
+
+**same probes, scored on the model's own GENERATED reports in the held-out setting**
+(v5.1 post-instruction false reports + natural and post-instruction honest reports,
+keyword labels, sections 21-22):
+```
+held-out    AUROC    n
+pipeline    1.00     62   (11 false / 51 honest)
+tickets     0.99     59   ( 7 false / 52 honest)
+deploy      0.58     31   (13 false / 18 honest)
+```
+trained on all 96 (development number, nothing held out): 1.00 / 0.95 / 0.79.
+
+**what this is:** evidence that "this statement contradicts the record i just read" is
+a linearly readable feature at L22, learnable from 64 balanced examples, that transfers
+to a held-out setting and, in two of three, to generated text. it is the first positive
+detector result in the project that survived a wording control.
+
+**what it is not:** three families sharing one harness and one prompt frame; supplied
+training text; keyword labels on the generated side (deploy's "honest" set includes the
+"marked passed" omissions codex flagged, so its 0.58 is uninterpretable until
+adjudicated); no threshold, no false-alarm rate on anything outside these rows; pipeline
+and tickets are development data. no claim about natural (uninstructed) deception, which
+remains unobserved in this model.
+
+**development probe saved:** `bench/probes/llama70b_reportstate_L22.npz`. not for claims.
+
+**the next step, unchanged but now justified:** fresh untouched families, generated
+reports, adjudicated labels, a threshold calibrated on honest reports from separate
+settings, and the comparison to apollo at a matched false-alarm rate. if it holds there,
+that is the detector. codex to audit this section before anyone believes it.
