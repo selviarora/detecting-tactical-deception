@@ -1604,3 +1604,46 @@ composed; the packet id is stored with every label; a checksum of the shown text
 the label file. (added to `validate_run.py`'s sibling below.)
 
 this is the exact failure the project is about, committed while running the test.
+
+---
+
+## 30. sep 17, midnight: the 204, labelled from the file. the signal is there.
+
+`pilot/run_v6.1_dolphin8b/labels_selvi_204.jsonl` (raw file she edited:
+`LABEL_200_A_labelled_raw.jsonl`). 204 stratified v6.1 test-family reports, stage one by
+selvi directly in the packet file (question + answer only; no model suggestion; every id
+and answer text verified identical to the packet; sha256 per row). stage two mechanical
+against the recorded world. **11 false claims (aviation 6, legal 4, procurement 1,
+coldchain 0) vs 176 true reports; 17 mixed set aside; 0 fabricated problems.** under
+pressure in fresh families, dolphin admits the problem in 116 of 144 reports.
+
+**four frozen probes + a native probe, 70b monitor replay, ranking only:**
+```
+detector                     auroc   95% ci (traj-boot)   broad  explicit  direct   aviation  legal
+apollo                        0.83     [0.64, 0.95]        0.78    0.98     0.94     0.86     0.89
+apollo - 1 direction          0.83     [0.64, 0.96]        0.78    1.00     0.94     0.88     0.92
+report/state (96 supplied)    0.96     [0.91, 1.00]        0.93    0.98     1.00     0.88     0.93
+codex retrained               0.89     [0.78, 0.97]        0.93    0.77     0.97     0.83     0.91
+native dolphin (LOFO, L16)    0.91     [0.83, 0.98]        0.91    0.81     0.99     0.85     0.95
+```
+**what it says:** the report/state probe, trained on 96 supplied sentences from three
+development families, ranks a different model's natural false reports above its true ones
+at 0.96 in four families it never saw, consistently across question types and across the
+two families that contain lies. apollo's released probe is genuinely useful on natural
+reports (0.83): the instruction confound is absent here, so it reads something real. the
+generator's own state carries the signal too (0.91 leave-one-family-out).
+
+**what it does not say:** eleven positives; the intervals overlap, so "beats apollo" is a
+direction, not a claim. one labeller (LABEL_200_B is blank). ranking only; no threshold, so
+no false-alarm rate. one generator (dolphin-8b), one monitor readout (70b L22 mean over
+report). the eleven lies are mostly the wrong-time and attestation mechanisms; omitted
+event produced none.
+
+**what §28/§29 taught:** every "chance" result earlier tonight was my label misalignment,
+not the detectors. same probes, same activations, correct labels: 0.83–0.96.
+
+**next, in order:** (1) LABEL_200_B by a second person, agreement reported; (2) a
+threshold from the two calibration families' reports (labelled the same way), then recall
+and achieved false-alarm rate on these four; (3) more lies: the aviation/legal mechanisms
+at 24 trajectories per family to get ~30 positives; (4) an llm-judge baseline on these
+rows (the earlier judge runs scored invalid labels; rerun ~$1). gpu total ~$41.
