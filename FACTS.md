@@ -1647,3 +1647,33 @@ threshold from the two calibration families' reports (labelled the same way), th
 and achieved false-alarm rate on these four; (3) more lies: the aviation/legal mechanisms
 at 24 trajectories per family to get ~30 positives; (4) an llm-judge baseline on these
 rows (the earlier judge runs scored invalid labels; rerun ~$1). gpu total ~$41.
+
+---
+
+## 31. sep 18, 1am: when. the generator's own layers.
+
+`pilot/capture_when.py`, `analyze_when.py`, `when_dolphin.npz` (~$0.50). dolphin-3.0-8b,
+the 187 resolved rows from §30, all 33 layers, two readouts, leave-one-family-out, 11 lies.
+
+**which layer, mean over the report:**
+```
+layer   0     2     4     6     8    10    12    14    16    18    20    22    24    26    28    30    32
+auroc  0.34  0.33  0.42  0.53  0.54  0.63  0.91  0.93  0.91  0.86  0.80  0.83  0.77  0.78  0.81  0.79  0.72
+```
+absent early, appears between 10 and 12, peaks 12–16 (~40% depth), fades toward the output.
+
+**question token, before any report:** 0.50–0.77, best 0.77 at layer 20. above chance,
+modest. caveat: both sampled answers to a prompt share this activation, and 148/149
+prompts have both samples with the same label, so this is per-prompt propensity (largely:
+was the record falsified), not a decision about the text.
+
+**which token:** one matched false/true pair in the 204 (procurement, direct: "yes" lp
+−1.56 vs "no" lp −0.43). one pair. needs n_q=4 next run.
+
+**confidence:** mean logprob of own tokens, false −0.37 vs true −0.36. no hesitation
+signal.
+
+**sentence, with its size:** in the generator, the report/state separation is a mid-network
+representation (layers 12–16), weakly present before the first token, and invisible in
+token confidence. 11 positives; one model; first read. the layer profile is the most
+robust part (it's a smooth curve, not a point).
