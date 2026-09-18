@@ -1579,3 +1579,28 @@ probe on the generator's own activations (a different question). gpu total ~$39.
   from the 60, identical files for selvi and a second labeller. not labelled.
 - **(2) llm-judge baseline:** running (llama-70b reads the transcript, P(yes) that the
   report contradicts the observed evidence).
+
+---
+
+## 29. sep 17, 11:30pm: §28 IS INVALID. my error.
+
+when collecting the 60 stage-one labels, i displayed the rows in chat **from memory instead
+of printing them from the file**. the text selvi labelled does not match the rows in
+`LABEL_60.jsonl` (real row 12 is "no, privilege review was not complete; it was only 60%
+done"; she was shown a coldchain acceptance). her 60 labels were therefore attached to the
+wrong answers. **everything scored against that file is void:** the §28 "every probe at
+chance" table, the native-dolphin-probe read, both llm-judge runs, and the §28 follow-ups.
+the misaligned file is kept as `INVALID_labels_misaligned_60.jsonl` for the record and is
+not to be used. the judge scripts and the replay activations are fine; only the labels are
+wrong.
+
+what stands from tonight: the v6.1 harness and dolphin's generated data (§27, the record-
+level counts, which come from the simulator); the fact that rule labels undercount; nothing
+about detector performance on natural reports in fresh families. that question is open
+again.
+
+what changes in process: labelling rows are always printed by a tool from the file, never
+composed; the packet id is stored with every label; a checksum of the shown text goes into
+the label file. (added to `validate_run.py`'s sibling below.)
+
+this is the exact failure the project is about, committed while running the test.
