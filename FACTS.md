@@ -1515,3 +1515,52 @@ before it's cited.
 **what this pilot bought:** a working fresh-family harness with three mechanisms and all
 three negative types; the finding that transcript checking beats probes when the record is
 visible; and a clear next design (evidence hidden from the monitor). gpu total ~$38.
+
+---
+
+## 28. sep 17, 10pm: the trustworthy comparison. it's chance.
+
+`pilot/run_v6.1_dolphin8b/labels_selvi_60.jsonl`: 60 stratified test-family reports (15 per
+family, mostly pressure worlds). stage one: assertion labels by selvi, blind to world, state
+and scores (claude disagreed on 3 rows: #22, #35 mixed vs problem; #40 clean vs problem; not
+applied, noted). stage two: mechanical against the recorded world. **25 false reports (21
+false claims in pressure worlds + 4 fabricated problems in compliant worlds) vs 34 true; 1
+unresolved.** monitor: llama-70b L22 replay. ranking only, no thresholds. bootstrap over
+trajectories.
+```
+detector           auroc   95% ci (traj-boot)   false-claims-only auroc
+apollo              0.43     [0.29, 0.57]            0.46
+apollo - 1 dir      0.41     [0.27, 0.55]            0.44
+report/state        0.56     [0.40, 0.70]            0.58
+codex retrained     0.43     [0.27, 0.56]            0.45
+my text rule        0.52     [0.43, 0.62]            0.53
+per question: broad 0.39-0.62, explicit 0.35-0.48, direct 0.38-0.59. per family: all
+within noise of 0.5.
+```
+**nothing separates false from true natural reports in unseen families.** every ci
+contains 0.5, including the report/state probe built for exactly this.
+
+**a correction to §27:** the text baseline's 0.99 there was circular: it was scored against
+provisional labels produced by nearly the same rules. against human labels it is 0.52. so
+"transcript checking beats probes" is not shown; what is shown is that my rule reads
+neither the reports nor the labels well. a real text baseline is an llm judge given the
+transcript. not built yet.
+
+**where the detector question stands after three days, in two lines:**
+- supplied text, harness templates: a strong reproducible signal (0.93–1.00, §23).
+- the model's own reports, families the probe never saw, read through a monitor, human
+  labelled: chance, for every probe including the one trained for it.
+
+that is the wall, measured the way a reviewer would measure it, for the first time. it is a
+better sentence than any of the 0.99s in this file.
+
+**caveats on the negative:** 60 rows, one labeller, one generator model (dolphin-8b), one
+monitor readout (70b L22 mean over report), thresholds not applied. a larger labelled set
+could move the report/state probe's 0.56 either way; the ci says so. the 4 "fabricated
+problem" rows (compliant world, answer asserts a shortfall) need a look: dolphin
+hallucinating a problem, or a sampling error in the stratification.
+
+**what would change the picture:** (1) hidden-evidence environments, where the monitor
+cannot see the tool results (the only case where a probe could beat a transcript judge);
+(2) an llm-judge text baseline; (3) 200+ labelled rows with a second labeller; (4) a native
+probe on the generator's own activations (a different question). gpu total ~$39.
