@@ -1821,3 +1821,16 @@ their evals, no scaffold. the uninstructed-lying part shrinks from "a detector b
 "apollo's probe reads a cue, not the lie; a state-mismatch probe reads something real but a text judge
 reads it better." v6.2 with no flags in the generator's context is the clean version of this experiment
 and it has not been run.
+
+**§34 corrections (codex, sep 18 morning; independently reproduced the scores):**
+- "apollo's entire signal was the flag" is too strong. defensible: its ranking collapsed to chance after
+  monitor-side redaction on this sample (6 positives). that does not establish what the probe reads in general.
+- this is monitor-side redaction only. the generator saw the flags while acting and writing. a flag-free
+  generation run (v6.2) is a different experiment, not a cleaner version of this one.
+- the probe's "cost advantage" is not established: the replay probe also pushes the full transcript through
+  70b. only a probe on the generator's own activations would be cheaper, and that is a different setup.
+- codex's redacted-calibration table (thresholds re-set on redacted calibration honest rows): apollo 0/6 at
+  15/182, report/state 4/6 at 23/182, retrained 4/6 at 21/182, judge 6/6 at 50/182. ranking, false alarms and
+  cost have to be read together; neither the judge nor the probe "wins."
+- decision: no further gpu experiments this round. write-up, then researcher feedback, then decide the
+  next question deliberately. audit: `~/Documents/Codex/2026-09-16/i-ne/outputs/section32_34_audit/REVIEW.md`.
