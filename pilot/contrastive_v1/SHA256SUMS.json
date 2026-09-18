@@ -1,0 +1,23 @@
+{
+  "HANDOFF.md": "9d0d19a42e1ac4391b79ee96a12cd64750a3af4769d7b05704650221143b3c52",
+  "PROTOCOL.md": "6fa0bc60a2e86150e5a492df13d602d551bacd54708d22065020ae52191c8018",
+  "README.md": "b60e3e826750cb7e7ce66e706cecc65d7ab6a9d967701e04533260e16241e88d",
+  "build_natural_pack.py": "3126e6f9563b338332c3009f7b90eccec39d2a54d2e6b055edfced5080370c51",
+  "cached_pilot.py": "9bda1c1b1d0cd686cd1640f2888fe9e5e3228e292a18639dae5156d69719cd15",
+  "cached_results/REPORT.md": "f3da3c46c4fbdaa0a06273e4831ff728f564b2ba009307bd9e31d70a5746d675",
+  "cached_results/results.json": "de36b97bb90f7ce2ab36c42c122d46bd51abf2d73bd9b8338cac240d2e4eeeb6",
+  "cached_results/scores.jsonl": "f9e5013c9e9ca72ac1840a08e8f6ac288f6648b6b58f1263a97871ff706a3e9e",
+  "capture_natural.py": "375badc79796430431a76799df48aae03bdb26348f1eaec2958957725b7ade99",
+  "natural_pack/PAIR_REVIEW.jsonl": "6c3f95d0598084ed86cce805b39f90530d57d57cf3e16bf08ed9a28454139b9c",
+  "natural_pack/evaluation_labels.jsonl": "e3cf33fcd6ec2929a2a5cb967c71faa5490c31e240c191f7d8ea0ffaf0b8a4de",
+  "natural_pack/inference.jsonl": "9c09df3fd8b38fab74ca269a776f35ba0f6769001f1b81d0009c86c66c8e3e8a",
+  "natural_pack/manifest.json": "2d1787202ea5c556bc29ce7f9ecfc6fcc992b5f0aac4cd67f779783a0eccecf8",
+  "natural_pack/pairs.jsonl": "b3859bcedcbc5114d3d4ac1b20f60a8b5c44b918efb6759683ea5ca1b9547a05",
+  "natural_pack/probes/apollo.npz": "14e2239896e7ea91e7a76e529d7ed71a1cedeb3fcd9215dbb27fa2f8ef76ae38",
+  "natural_pack/probes/corrected.npz": "bc4d2bba364467aa6c1f859fdf36311f262b519764b0113b02a8587dee7e9dff",
+  "natural_pack/probes/reportstate.npz": "ea4956e190b050c264d94944130f43b83922390953a5cd47a53e80b2f929a7b8",
+  "natural_pack/probes/retrained.npz": "20be4792b48961de61a1b56fc9b1c67dc876d9eb9f5ceb3f6737eb9ae20c2007",
+  "score_natural.py": "4280f87aca2efcd689f398764014e4ffde16f95abedc04dbacc41f1ab3847bcd",
+  "test_protocol.py": "08b2ecd015ac87d2373d74c854777b427f7ac72be23e692ccf364ea0335ccf30",
+  "verification.json": "1ab7abdca794b70fac6081f27e54bc1fe4dcf5c6591956d27e7fda4f6a7add5d"
+}

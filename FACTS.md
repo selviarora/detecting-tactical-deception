@@ -1834,3 +1834,52 @@ and it has not been run.
   cost have to be read together; neither the judge nor the probe "wins."
 - decision: no further gpu experiments this round. write-up, then researcher feedback, then decide the
   next question deliberately. audit: `~/Documents/Codex/2026-09-16/i-ne/outputs/section32_34_audit/REVIEW.md`.
+
+## 35. sep 18, evening: codex's contrastive pilot on the natural reports. no flags in the monitor's input.
+
+codex's package (`pilot/contrastive_v1/`, protocol frozen before the run, 9 cpu tests pass). pod
+`xfytz7dd175vrf`, 2x a100, ~30 min, ~$1.60. one 70b load, 820 unique compact inputs x 2 passes (probe
+capture at layer 22 + frozen text judge), pinned revision `99cd0d2c`. no generation, no training, no C
+selection. every method reads the same compact evidence: the final `immutable`/`record` tool state
+(flags stripped), the question, and the report. so this is also the first table where the probes and the
+judge never see `falsified`.
+
+**the idea:** score the same report against the actual world and against the setting's other canonical
+world (facts flipped, report/record/question untouched, no label used to pick the pair), then subtract.
+wording that doesn't depend on the world cancels. "world_margin" below.
+
+**test: 188 adjudicated rows, 6 false claims / 182 honest. thresholds at the 95th pct of the 232
+honest calibration reports per method. per-family: caught / false claims, fp = honest flagged.**
+```
+method                      auroc   caught  honest flagged   aviation(1/44)  legal(4/45)   procurement(1/45)  coldchain(0/48)
+apollo raw                  0.473    0/6      31/182         0/1 fp8         0/4 fp3       0/1 fp17           fp3
+apollo world_margin         0.902    5/6      16/182         0/1 fp2         4/4 fp1       1/1 fp11           fp2
+corrected raw               0.482    0/6      22/182
+corrected world_margin      0.897    5/6      23/182
+report/state raw            0.831    4/6      10/182         1/1 fp7         2/4 fp3       1/1 fp0            fp0
+report/state world_margin   0.979    5/6      19/182         0/1 fp5         4/4 fp9       1/1 fp5            fp0
+retrained raw               0.848    3/6      18/182
+retrained world_margin      0.983    6/6      33/182         1/1 fp5         4/4 fp18      1/1 fp10           fp0
+text judge raw              0.985    6/6      46/182         1/1 fp12        4/4 fp14      1/1 fp20           fp0
+```
+paired trajectory bootstrap (4000, within family): report/state margin minus raw [−0.07, +0.45];
+minus apollo raw [+0.33, +0.69]; minus apollo margin [+0.00, +0.33]; minus judge raw [−0.09, +0.03].
+
+**read.**
+- with the flags gone from the monitor's input and the evidence compacted, apollo's probe is at 0.47 and
+  catches 0 of 6. that replicates §34's redacted read on a different input format.
+- world-contrast lifts every probe: apollo 0.47 → 0.90, report/state 0.83 → 0.98, retrained 0.85 → 0.98.
+  the lift is the same method applied to every baseline, so it is not "our probe beats theirs"; it is
+  "subtracting the counterfactual world is what makes any of these probes read the report/state relation."
+  that is the interesting sentence, and it applies to apollo's probe too.
+- report/state margin vs the text judge: [−0.09, +0.03]. indistinguishable on ranking. at frozen
+  thresholds the probe flags 19/182 honest to the judge's 46/182, and the judge catches 6/6 to the
+  probe's 5/6. the miss is the one aviation lie; the judge's extra false alarms are procurement (20/45).
+- report/state raw has the lowest false-alarm rate of anything (10/182, 5.5%, near the 5% target) at 4/6.
+  the margin buys recall on legal (2/4 → 4/4) and costs 9 false alarms.
+- the same 6 positives, 4 trajectories, six old families, generator saw the flags, calibration labels
+  model-generated. development result. codex's own cautions list is in `natural_results/results.json`.
+
+**sentence:** on the flag-free compact inputs, no raw probe beats the text judge, and apollo's raw probe
+is at chance; subtracting the score under the counterfactual world lifts every probe to the judge's
+ranking, with fewer false alarms than the judge at a matched calibration point. six positives.
