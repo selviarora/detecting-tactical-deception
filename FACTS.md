@@ -1723,3 +1723,43 @@ falsified field vs endorsing it). the remaining lies are legal (says "reviewed"/
 review) and procurement (says "three compliant"). files: `pilot/run_v6.1_dolphin8b/labels_selvi_adjudicated_17.jsonl`,
 `labels_selvi_204_adjudicated.jsonl` (original stage-one kept per row). scaffold leak (§31 note) still
 unaddressed in these numbers.
+
+## 33. sep 18: the operating-point table. thresholds frozen on calibration families, applied cold.
+
+`pilot/calibrate_v6.py`, `run_v6.1_dolphin8b/operating_point.json`, `labels_calibration_246_stage2.jsonl`.
+
+**calibration labels:** 246 school/hiring reports, stage one by codex (openai model, disclosed model labeller,
+packet only, NOT selvi's labels; file `labels_calibration_246_codex_complete.jsonl`, every id/question/answer
+and both hashes verified against the packet). stage two mechanical against the world including value checks:
+232 honest, 5 false claims, 5 unresolved, 4 "wrong_value" (one trajectory admits unmoderated but states the
+mark-sheet mean as 62 when it was 58.4; excluded from negatives, not counted as honest). dolphin almost never
+lies in these two families (5/246), so calibration can set FPR but says little about recall.
+
+**thresholds:** 95th percentile of the 232 honest calibration scores per probe (target 5% FPR, achieved 5.2%).
+no test data touched.
+
+**test (188 adjudicated rows, 6 false claims in 4 trajectories, 182 honest), frozen thresholds:**
+```
+probe          recall   95% cp        achieved fpr     95% cp          honest flagged by family (of 44/48/45/45)
+apollo          3/6    [0.12,0.88]    40/182  22.0%   [0.16,0.29]     aviation 16, coldchain 3, legal 6, procurement 15
+corrected       3/6    [0.12,0.88]    33/182  18.1%   [0.13,0.25]     aviation 16, coldchain 1, legal 3, procurement 13
+report/state    5/6    [0.36,1.00]    25/182  13.7%   [0.09,0.20]     aviation 17, coldchain 0, legal 7, procurement 1
+retrained       5/6    [0.36,1.00]    30/182  16.5%   [0.11,0.23]     aviation 12, coldchain 5, legal 9, procurement 4
+```
+
+**read.** at a threshold set for 5% false alarms, every probe fires on 14–22% of honest test reports. that's
+the consequential number. the miss is family-specific: aviation honest reports are flagged by every probe at
+~35% (16–17 of 44), including the adjudicated rows that turned out to be disclosures, and report/state is
+clean on coldchain (0/48) and procurement (1/45). so the calibration families don't cover what aviation
+reports look like, and no probe's score scale transfers across families. report/state catches 5/6 lies where
+apollo catches 3/6, and has the lowest false-alarm rate, but 6 positives can't separate those recalls
+(intervals overlap almost entirely).
+
+**sentence:** the ranking advantage survives a frozen threshold, but none of these probes is deployable
+across families at a fixed operating point; achieved FPR is 3–4x the target, concentrated in one family.
+a per-family or per-context calibration would be needed, and that is a different, weaker claim than "a
+detector."
+
+**caveats codex will raise, pre-empted:** calibration labels are model-generated. only 5 calibration positives.
+the leaked `falsified` flag is in every transcript on both sides. aviation's 35% honest-flag rate may be
+partly the scaffold (release/sign-off times in every answer) rather than the probe.
