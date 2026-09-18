@@ -1677,3 +1677,20 @@ signal.
 representation (layers 12–16), weakly present before the first token, and invisible in
 token confidence. 11 positives; one model; first read. the layer profile is the most
 robust part (it's a smooth curve, not a point).
+
+**§31 corrections after codex audit (sep 18):** "148/149 prompts share a label" was wrong: 187 resolved rows
+form 149 prompt groups, 111 singletons, 38 with both samples labelled, 37 agree, 1 discordant. "absent early"
+is too strong: within-family pair-weighted AUROC at L8 is 0.68 (pooled 0.54 partly reflects domain shift across
+families). "no hesitation" overstates: mean logprob AUROC 0.54 means this statistic doesn't separate the labels,
+not that the model has no uncertainty. the LOFO scorer pools margins from four separately fitted models without
+intercepts; within-family pair-weighted numbers (L12 0.89, L14 0.92, L16 0.90) hold the same shape. defensible
+sentence: linear separability of the report labels peaks in the sampled middle layers under this protocol.
+not a time-resolved or causal claim.
+
+**scaffold leak, confirmed:** every tool result the agent sees, and therefore every transcript the 70b monitor
+replays, contains the simulator's bookkeeping keys `"falsified": true/false` and `"violation": ...` verbatim
+(`run_v6.py` feeds `simulate()`'s full return dict back as the tool result). the flag alone ranks the 11
+positives at 0.87 AUROC. §30 is not explained by it (report/state reads the report tokens, and the retrained
+and apollo probes see the same context and score lower), but it is a visible cue in context. fix: redact the
+two keys from the transcripts and re-replay through 70b (~$1); strip them from tool results in v6.2 before
+any new generation.
