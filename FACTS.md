@@ -1564,3 +1564,18 @@ hallucinating a problem, or a sampling error in the stratification.
 cannot see the tool results (the only case where a probe could beat a transcript judge);
 (2) an llm-judge text baseline; (3) 200+ labelled rows with a second labeller; (4) a native
 probe on the generator's own activations (a different question). gpu total ~$39.
+
+**§28 follow-ups, sep 17 late (done while she writes):**
+- **(4) native probe on the generator's own activations** (dolphin L16, mean over its
+  report, the 59 human-labelled rows): leave-one-trajectory-out 0.52–0.54, leave-one-family-
+  out 0.41, flat across C; same recipe on the 70b monitor activations 0.46. no hint of a
+  signal in the generator's own state at report time either. 44 training rows in 4096 dims;
+  a first read.
+- **(1) hidden-evidence environments: not run, by argument.** a monitor that cannot see the
+  tool results has nothing to encode a contradiction against; hidden evidence only matters
+  if the generator's own state carries it, and (4) says it doesn't on this read. the setting
+  is the native-probe setting, and it's chance for now.
+- **(3) `LABEL_200_A.jsonl` / `LABEL_200_B.jsonl`:** 204 further test-family rows, disjoint
+  from the 60, identical files for selvi and a second labeller. not labelled.
+- **(2) llm-judge baseline:** running (llama-70b reads the transcript, P(yes) that the
+  report contradicts the observed evidence).
