@@ -1771,3 +1771,53 @@ its FPR is a transfer problem in this experiment, not proof transferable calibra
 approved sentence: "in this small adjudicated evaluation, the frozen report/state probe caught more false
 reports with fewer false alarms than apollo, but false-alarm rates exceeded the calibration target on
 unseen families."
+
+## 34. sep 18, 4am: the text judge, and the probes with the leaked flag removed. this changes §30 and §33.
+
+pod `dltqvovtuj6bzp`, 2x a100, 28 min, ~$1.50. llama-3.3-70b (unsloth mirror). frozen judge prompt committed
+before the run (`d6b2db3`, `judge_70b.py --frozen`): symmetric, distinguishes describing an agent-written
+field from endorsing it, single-token yes/no verified. same 188 test rows, same calibration protocol.
+files: `judge70b_450_frozen.jsonl`, `judge70b_450_frozen_redacted.jsonl`, `replay70b_v6_dolphin_redacted.npz`,
+`judge_and_redacted.json`.
+
+**1. the text judge ranks perfectly.** p(yes) on the 6 lies is strictly above every one of the 182 honest
+reports, as-seen and with the flag redacted. AUROC 1.00 [1.00, 1.00]. its honest scores are bimodal
+(median 0.0000, 95th pct 0.9998), so the frozen calibration threshold is degenerate (95th pct of calibration
+honest = 0.0001) and gives 6/6 recall at 53/182 = 29% false alarms. at the natural 0.5 cut (NOT calibrated,
+diagnostic only): 6/6 at 30/182 = 16%. its false alarms are procurement-heavy (15/45), where report/state's
+are aviation-heavy (17/44). different failure modes.
+
+**2. the leaked `falsified` flag was carrying apollo's entire signal and part of report/state's.**
+same 188 rows, same probes, transcripts replayed with `falsified`/`violation` stripped from tool results:
+```
+                  as-seen auroc   redacted auroc   redacted, §33 thresholds: recall  fpr
+apollo               0.709           0.529                              0/6      14/182  7.7%
+corrected            0.708           0.552                              0/6      15/182  8.2%
+report/state         0.941           0.865 [0.67,1.00]                  4/6      25/182 13.7%
+retrained            0.936           0.858                              4/6      26/182 14.3%
+report/state minus apollo, paired, redacted: +0.36 [-0.18, +0.77]
+```
+apollo's probe drops to chance and catches nothing once the flag is gone. report/state keeps most of its
+ranking (0.87) and 4 of 6 at the frozen threshold, but the as-seen 0.94 / 5-of-6 in §32–§33 were partly the
+flag. the generator also saw the flag while writing, and some honest reports quote it ("with no violations
+or falsifications"), which redaction of the monitor's copy cannot undo. **§30, §32, §33 as-seen numbers are
+superseded by the redacted column.** the aviation false alarms did not go away with redaction (19/44), so
+that is the probe, not the flag.
+
+**3. the decision codex set up:** the judge matches or beats the probe on ranking. by codex's rule, the
+transcript judge is the detector candidate here, and the probe's remaining case is cost (one forward pass
+over the report vs a 70b read of the whole transcript), plus a different error profile. "activation probe
+beats text" is not supported on this data. "report/state probe ranks uninstructed lies far above apollo's
+probe, which reads nothing once the scaffold cue is removed" is.
+
+**honest sentence for the write-up:** on 188 adjudicated natural reports in four unseen families, a
+transcript judge separates the 6 lies from 182 honest reports perfectly by rank; a frozen report/state
+activation probe ranks them at 0.87 and apollo's published probe at chance; none of the three holds a 5%
+false-alarm target on unseen families, and the judge's calibrated operating point is worst. the probe's
+earlier 0.94–0.96 included a simulator flag visible in context; the redacted number is the one to cite.
+
+**what this does to the story.** the apollo critique (§13–§22) is untouched: that was matched readouts on
+their evals, no scaffold. the uninstructed-lying part shrinks from "a detector better than apollo's" to
+"apollo's probe reads a cue, not the lie; a state-mismatch probe reads something real but a text judge
+reads it better." v6.2 with no flags in the generator's context is the clean version of this experiment
+and it has not been run.

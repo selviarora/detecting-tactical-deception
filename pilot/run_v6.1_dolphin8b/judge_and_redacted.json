@@ -1,0 +1,122 @@
+{
+ "judge_frozen": {
+  "auroc": 1.0,
+  "threshold": 0.00012360236533062627,
+  "recall": [
+   6,
+   6
+  ],
+  "fpr": [
+   53,
+   182
+  ]
+ },
+ "judge_frozen_redacted": {
+  "auroc": 1.0,
+  "threshold": 0.00022942049212758904,
+  "recall": [
+   6,
+   6
+  ],
+  "fpr": [
+   50,
+   182
+  ]
+ },
+ "apollo_redacted_thr33": {
+  "auroc": 0.5293040293040292,
+  "threshold": -6.927588295936585,
+  "recall": [
+   0,
+   6
+  ],
+  "fpr": [
+   14,
+   182
+  ]
+ },
+ "apollo_redacted_recal": {
+  "auroc": 0.5293040293040292,
+  "threshold": -6.931564116477967,
+  "recall": [
+   0,
+   6
+  ],
+  "fpr": [
+   15,
+   182
+  ]
+ },
+ "corrected_redacted_thr33": {
+  "auroc": 0.5521978021978022,
+  "threshold": -7.021987247467041,
+  "recall": [
+   0,
+   6
+  ],
+  "fpr": [
+   15,
+   182
+  ]
+ },
+ "corrected_redacted_recal": {
+  "auroc": 0.5521978021978022,
+  "threshold": -7.018945431709289,
+  "recall": [
+   0,
+   6
+  ],
+  "fpr": [
+   13,
+   182
+  ]
+ },
+ "reportstate_redacted_thr33": {
+  "auroc": 0.8653846153846154,
+  "threshold": -2.5920149207115175,
+  "recall": [
+   4,
+   6
+  ],
+  "fpr": [
+   25,
+   182
+  ]
+ },
+ "reportstate_redacted_recal": {
+  "auroc": 0.8653846153846154,
+  "threshold": -2.4230699300765997,
+  "recall": [
+   4,
+   6
+  ],
+  "fpr": [
+   23,
+   182
+  ]
+ },
+ "retrained_redacted_thr33": {
+  "auroc": 0.8580586080586081,
+  "threshold": -3.6813662873897854,
+  "recall": [
+   4,
+   6
+  ],
+  "fpr": [
+   26,
+   182
+  ]
+ },
+ "retrained_redacted_recal": {
+  "auroc": 0.8580586080586081,
+  "threshold": -3.5364253964617705,
+  "recall": [
+   4,
+   6
+  ],
+  "fpr": [
+   21,
+   182
+  ]
+ }
+}
