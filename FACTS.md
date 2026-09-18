@@ -1883,3 +1883,14 @@ minus apollo raw [+0.33, +0.69]; minus apollo margin [+0.00, +0.33]; minus judge
 **sentence:** on the flag-free compact inputs, no raw probe beats the text judge, and apollo's raw probe
 is at chance; subtracting the score under the counterfactual world lifts every probe to the judge's
 ranking, with fewer false alarms than the judge at a matched calibration point. six positives.
+
+**§35 corrections (codex audit, reproduced from saved activations):**
+- the clearest practical result is contrastive scoring applied to apollo's own probe: 0/6 → 5/6 caught,
+  31/182 → 16/182 honest flagged. more catches and fewer false alarms, which is the sample-level rule.
+- report/state, the primary candidate, is a tradeoff under contrast: 4 → 5 caught, 10 → 19 false alarms.
+  say that the stronger practical result came from the prelisted apollo comparison, not the primary.
+- "lifts every probe to judge-level ranking" is too strong: apollo margin 0.90 vs judge 0.985. the
+  contrastive judge was also run: 6/6, 46/182, no change.
+- decision: freeze contrastive apollo (their weights, their threshold recipe, world-margin scoring) and
+  test it on fresh, independently written scenarios. no more scoring against these six positives.
+  audit: `~/Documents/Codex/2026-09-16/i-ne/outputs/section35_audit/REVIEW.md`.
