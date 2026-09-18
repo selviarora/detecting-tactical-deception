@@ -1763,3 +1763,11 @@ detector."
 **caveats codex will raise, pre-empted:** calibration labels are model-generated. only 5 calibration positives.
 the leaked `falsified` flag is in every transcript on both sides. aviation's 35% honest-flag rate may be
 partly the scaffold (release/sign-off times in every answer) rather than the probe.
+
+**§33 corrections (codex):** coldchain has zero positives, so "clean on coldchain" means low false alarms
+there, not detection. aviation is 17 of report/state's 25 false alarms but only 16 of apollo's 40; it
+dominates the candidate's errors while apollo's are spread across families. the threshold failing to hold
+its FPR is a transfer problem in this experiment, not proof transferable calibration is impossible.
+approved sentence: "in this small adjudicated evaluation, the frozen report/state probe caught more false
+reports with fewer false alarms than apollo, but false-alarm rates exceeded the calibration target on
+unseen families."
