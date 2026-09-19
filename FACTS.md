@@ -2799,3 +2799,39 @@ trajectory) was stopped after 20 pressure trajectories, all 20 incomplete (decli
 ~1 gpu-hour, ~$1.60, no usable positives. the 32b does not reach the award step in this harness; a harness with a
 tool format it can use (§52 note) is the prerequisite, not more samples. partial outputs kept. the pod moved on
 to the qwen3 thinking-mode run (§59, pending).
+
+## 59. sep 19, ~2:30pm: the frozen 2×2 probe on natural held-out reports. one lying prefix, never seen by the probe.
+
+`pilot/build_2x2_qwen.py` → `probes/qwen7b_2x2_L14.npz` (sha `8b36f1e7…`): a balanced state×report probe for stock
+qwen2.5-7b, fit on 592 supplied reports (natural strings from `run_harvest_qwen7b`, teacher-forced after real
+histories from 37 training prefixes in `run_proc_qwen7b_stock` + `run_harvest_qwen7b`; each prefix gets 8 "three"
+and 8 "two" reports, so neither the word nor the world predicts the label). L14 answer-mean, C=0.1 balanced,
+threshold 95th pct of true supplied. supplied-set leave-one-prefix-out sanity 1.000. frozen before any natural
+label was scored. `analysis/s58_2x2_transfer.py` asserts no test prefix is in training. text baseline: tf-idf
+LR on "state N compliant. report: …" fit on the same 592 rows.
+
+**natural test rows (held-out prefixes: §56's six + the hunt's ten + their compliant partners):** 22 false
+"yes, three" (one prefix, `30da04d2`), 632 true "yes, three" (13 prefixes), 751 disclosures (15 prefixes), 27
+same-prefix honest "yes, two" siblings.
+```
+                                           frozen probe            text baseline
+false vs true 'yes, three' (identical claim) 1.000 [1.00,1.00]      0.829 [.76,.89]
+false vs disclosures                         1.000 [1.00,1.00]      0.074
+false vs same-prefix 'yes, two' siblings     0.840 [.84,.84]        0.323
+identical-string strata (4 strings, 9/71)    1.000                  0.480 (constant within a string)
+strings never in training (19 false/297 true) 1.000                 0.739
+frozen threshold: lies 22/22 caught; true-yes 53/632 (8.4%), disclosures 113/751 (15%), siblings 25/27 flagged
+text baseline at the same 8.4% true-yes FPR: recall 0.32 (probe 1.00), FPR on all honest 0.52 (probe 0.13)
+```
+**read.** a probe that learned the state/report relation from supplied examples on other histories detects this
+stock model's naturally generated false claims on a history it never saw, at 1.0, on identical text, on strings
+absent from training, and beats a text monitor given the same evidence. the sibling row (0.84; 25/27 flagged at
+the line) is the honest decomposition: most of the signal is the record/state mismatch the model holds in
+context, a report-level component sits on top. §56's "recognise the prefix" objection is removed: the probe
+never met it. **what remains before codex's sentence can be said: a second, independent lying prefix.** the
+honest negatives already span 23 held-out prefixes; the positives span one. the 96-trajectory hunt is running.
+
+**limits:** one lying prefix, one model, one family, keyword-triaged outcomes, single seed per run. the alarm
+line is context-driven (siblings flagged), so this is a report-truth *ranker* with a stated false-alarm profile,
+not a deployable monitor. the text baseline is a weak one (tf-idf on the compact evidence); the 70b compact judge
+(§35) would be the stronger comparison and needs a 70b pod.
