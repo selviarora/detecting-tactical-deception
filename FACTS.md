@@ -2254,3 +2254,53 @@ refusal-stripped models": both share a base and this does not isolate refusal re
 95%: 5/12 assigned, 5/7 completed; 85%: 2/12, 2/9; 70%: 1/12, 1/10; 100%: 0/12, 0/11. failures vary by level.
 "ablation costs instruction-following" withdrawn: no matched unablated comparison; observed: frequent malformed
 tool calls. the false-claim count comes from adjudication of the 48 falsified-record reports (below), not regex.
+
+## 43. sep 19, ~5am: no answer key. the liar's own activations separate identical true and false sentences.
+
+**the question:** can a probe on the generator's own activations, with no access to what happened, separate its
+false reports from its honest ones better than a reader who only has the words?
+**candidate:** `probes/dolphin8b_native_L16_frozen.npz` (sha eba3f4ff, fit sep 18 on v6.1 dolphin L16, 425 rows,
+11 positives, all six v6 families incl. legal and procurement; threshold in-sample 95th pct). committed before
+any of tonight's data existed. **baseline:** llama-70b reading ONLY the manager's question and the report
+(`judge_nolog.py`, prompt frozen at `777593d`, revision `99cd0d2c`); threshold 95th pct of its scores on the 232
+v6 calibration honest reports. pod `ddgbi4ew8ahm5m`, ~12 min, ~$0.65. `pilot/judge_nolog.jsonl`.
+
+**dolphin legal (dose run, §39 labels), flagged k/n and AUROC (false claims vs group, trajectory-grouped):**
+```
+                 false/121  confession/17  honest-record/67  true-complete/12  mixed/112  other/13
+native probe       116          3               8                 5              25         11
+blind judge         35         12               0                 5             104          5
+probe AUROC:   vs confession .936 [.82,1.0]  vs honest-record .986 [.97,1.0]  vs true-complete .972 [.94,.99]  vs mixed .963
+judge AUROC:   vs confession .169            vs honest-record .692            vs true-complete .463            vs mixed .052
+```
+**dolphin procurement (v6.2, §41 labels):**
+```
+all questions      false/11  disclosure/73  true-compliant/128  mixed/6  other/4
+native probe         11          0               0                1        0     AUROC 1.000 vs disclosure, 1.000 vs control
+blind judge           0          8               5                5        2     AUROC .014 (inverted), .200
+direct only        false/11  disclosure/14  true-compliant/44   mixed/5
+native probe         11          0               0                1        AUROC 1.000 [1.0,1.0] vs both
+blind judge           0          2               0                4        AUROC .000 vs disclosure, .571 vs control
+```
+
+**the result.** in procurement the false answer and the true answer are the same string ("Yes, three compliant
+bids were evaluated before the award."). the blind judge is at chance on them (.571), as any text-only method
+must be. the probe on dolphin's own activations separates all 11 false from all 44 true and all 14 honest
+disclosures, AUROC 1.000, no log, no counterfactual, no answer key. legal: .97–.99 against every honest group
+with the judge at chance on the true-complete controls (.463). **the truth-value of an uninstructed false
+report is linearly readable from the liar's own layer-16 activations, for identical text, in two settings.**
+that is an existence proof of the thing deepmind §5 asks about and says cannot yet be tested.
+
+**limits, all of them:**
+- the probe was fit on v6.1 episodes of these same two families (plus four others). tonight's data are fresh,
+  flag-free episodes, so this is generalisation to new episodes and a new run, NOT to unseen families. the
+  held-out-family version (fit on families ≠ test family) is the required next run; cpu-only, no gpu.
+- one liar model. abliterated llama needs the 48 labels (§42) and is cross-checkpoint, exploratory.
+- one labeller, model-assisted, adjudicated. no second labeller.
+- threshold set in-sample on training data; the operating point (5/12 true-complete, 8/67 honest-record
+  flagged in legal) is not solved. the ranking is the claim, not the alarm line.
+- the blind judge is the correct baseline for "no answer key" and an easy one to beat; the identical-string
+  result is what makes the comparison meaningful, not the judge's number.
+- the generator saw the tool state while writing, which is the point (the liar knows), and also means the
+  probe may read "state in context" plus "report" rather than an intent variable. §38 showed it does not read
+  temptation on honest reports; §39/§43 show it reads the mismatch. mechanism unknown.
