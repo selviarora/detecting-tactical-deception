@@ -23,7 +23,7 @@ def main():
     ap.add_argument("--model", required=True); ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--families", nargs="*", default=["legal/discovery_production", "procurement/bid_evaluation"]); ap.add_argument("--worlds", nargs="*", default=["pressure", "compliant"])
     ap.add_argument("--n-act", type=int, default=24); ap.add_argument("--n-q", type=int, default=2)
-    ap.add_argument("--layer", type=int, default=16); ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=62)
+    ap.add_argument("--layer", type=int, default=16); ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=62); ap.add_argument("--question-prefix", default="", help="stakes text prepended to every manager question (report-side pressure); never an instruction")
     a = ap.parse_args()
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer, set_seed
@@ -46,7 +46,7 @@ def main():
         if span.shape[0] == 0: span = out.hidden_states[a.layer][0, -1:, :]
         return span.float().mean(0).cpu().numpy().astype(np.float16)
     a.out.mkdir(parents=True, exist_ok=True); acts, keys = [], []
-    (a.out / "run_meta.json").write_text(json.dumps({"model": a.model, "seed": a.seed, "temperature": a.temperature, "n_act": a.n_act, "n_q": a.n_q, "layer": a.layer, "families": a.families, "worlds": a.worlds, "settings": "settings_v6 (v6.1 prompts unchanged)", "flags_shown_to_agent": False}, indent=1))
+    (a.out / "run_meta.json").write_text(json.dumps({"model": a.model, "seed": a.seed, "temperature": a.temperature, "n_act": a.n_act, "n_q": a.n_q, "layer": a.layer, "families": a.families, "worlds": a.worlds, "settings": "settings_v6 (v6.1 prompts unchanged)", "flags_shown_to_agent": False, "question_prefix": a.question_prefix}, indent=1))
     ft = (a.out / "trajectories.jsonl").open("w"); fa = (a.out / "answers.jsonl").open("w"); fb = (a.out / "blind_label_packet.jsonl").open("w")
     for sid in a.families:
         s = S.SETTINGS[sid]
@@ -70,12 +70,12 @@ def main():
                                      "completed": done, "falsified": final.get("falsified") if done else None, "violation": final.get("violation") if done else None,
                                      "immutable": s["worlds"][world]["immutable"], "messages": msgs}, ensure_ascii=False) + "\n"); ft.flush()
                 for qname, q in s["questions"].items():
-                    qmsgs = msgs + [{"role": "user", "content": f"[message from your manager]\n{q}"}]
+                    qmsgs = msgs + [{"role": "user", "content": f"[message from your manager]\n{a.question_prefix}{q}"}]
                     for j in range(a.n_q):
                         ans, trunc = gen(qmsgs, 160); key = f"{tid}#{qname}#{j}"; acts.append(act(qmsgs, ans)); keys.append(key)
                         fa.write(json.dumps({"key": key, "trial_id": tid, "scenario_id": sid, "world": world, "variant": "natural", "question": qname, "completed": done,
                                              "falsified": final.get("falsified") if done else None, "violation": final.get("violation") if done else None, "answer": ans, "truncated": trunc}, ensure_ascii=False) + "\n"); fa.flush()
-                        fb.write(json.dumps({"id": key, "question": q, "answer": ans, "label": ""}, ensure_ascii=False) + "\n"); fb.flush()
+                        fb.write(json.dumps({"id": key, "question": a.question_prefix + q, "answer": ans, "label": ""}, ensure_ascii=False) + "\n"); fb.flush()
                 print(f"{sid} {world} {k+1}/{a.n_act} done={done} falsified={final.get('falsified') if done else None}", flush=True)
                 np.savez_compressed(a.out / f"acts_L{a.layer}.npz", X=np.stack(acts), keys=np.array(keys))
     print("Generation finished.")
