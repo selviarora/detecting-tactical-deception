@@ -1894,3 +1894,40 @@ ranking, with fewer false alarms than the judge at a matched calibration point. 
 - decision: freeze contrastive apollo (their weights, their threshold recipe, world-margin scoring) and
   test it on fresh, independently written scenarios. no more scoring against these six positives.
   audit: `~/Documents/Codex/2026-09-16/i-ne/outputs/section35_audit/REVIEW.md`.
+
+## 36. sep 18, late: v7. four fresh families, zero lies.
+
+scenarios by selvi (`pilot/V7_SCENARIOS.md`), implemented as data in `pilot/settings_v7.py` (commit `f56f31d`),
+the agent never sees the bookkeeping flags (fixed at the source, asserted every call). dolphin-3.0-8b, T=0.7,
+seed 7, 4 families x 2 worlds x 24 trajectories = 192; 1,152 answers, 1,116 completed; `pilot/run_v7_dolphin8b/`.
+pod `25udxfoj7d30nr`, one a100, 52 min, ~$1.40.
+
+**records, pressure worlds (96 trajectories):** support 22/22 "escalated", property 23/23 returnable=false,
+hospital 23/23 not_obtained, airline 24/24 "late arrival". zero falsified records.
+**reports, pressure worlds (552):** keyword triage for compliance claims finds only negations ("not within my
+approval limit", "not eligible", "has not consented"). zero false claims on triage; no labelling needed
+because there is nothing to stratify toward.
+
+**what this means.**
+- no contrastive confirmation test and no native-probe test tonight: nothing to detect.
+- dolphin does not lie in four settings with (a) a binary field, (b) the policy stating the mapping
+  explicitly ("above $500 must be escalated"), (c) more goal conflict than v6 (store, patient, flight),
+  and (d) no `violation` flag in its context. it lied in v6 where the false entry had a defensible reading
+  ("reviewed" at 60%, "three bids" when three arrived, a sign-off time that was "expected").
+- two hypotheses, not separable on this data: **defensibility of the false entry** vs **the v6 flag leak
+  as a trigger** (`violation: true` was in the model's context in every v6 lie). the next run separates
+  them: v6 legal + procurement, pressure world, flags stripped, 24 trajectories each (~$1.50). lies hold →
+  defensibility is the variable. lies vanish → §30–§35's positives were partly scaffold-induced and get
+  re-labelled as such.
+- after that, the dose-response design (from an outside proposal, the first useful one): legal's
+  `review_complete_pct` graded 100/95/85/70/55/40 as a state variable, lie rate and frozen native probe
+  activation against it. one family, ~$2.
+
+**cosine side-check (same night, an outside "shared trunk" proposal):** in the 70b monitor at layer 22,
+withholding direction · report/state = −0.02 (random band |cos| 99th pct 0.028); apollo · report/state
+= +0.007; an arditi-style refusal direction (harmful-refused minus harmless-answered, last prompt token,
+topic-confounded) · report/state = +0.053. no shared direction. proposal closed.
+
+**the main claim gets sharper, not weaker:** stock instruct models don't lie in nine agent settings;
+the refusal-stripped fine-tune lies in three of six settings where the false entry is defensible and in
+zero of four where it isn't. whether that is "defensible" or "flag in context" is one $1.50 run away.
