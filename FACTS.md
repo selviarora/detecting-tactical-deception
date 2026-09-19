@@ -2947,3 +2947,47 @@ survives locally: `run_scratch_qwen7b` (the 200-rollout scratchpad run, §61), `
 **cause:** account balance exhausted (the §52 failure again). **the rule that would have saved it:** pull partial
 outputs on a timer during long jobs, not only at completion. every watcher from here pulls every 10 minutes.
 **cost to redo:** scratch ×500 on both liars ~$1.30 / 50 min; v10 dev pass ~$5 / 3.5 h; qwen3 procurement ~$4 / 3 h.
+
+## 63. sep 19, ~4:30pm: scratchpad ×500 rerun. the pre-answer state predicts the lie; it does not beat the scratch text.
+
+rerun of the run lost in §62, same frozen setup (stock Qwen2.5-7B-Instruct, `resample_scratchpad.py`, prefixes
+`30da04d2` and `1bf66e2d`, n = 500 each, T = 0.7, seed 601, L14 state at the closing `</scratch>` token). pod
+`viom5328dsvonx`, one a100, ~30 min, ~$0.90. pulled every 10 min; final npz checksum-verified against the pod.
+`pilot/run_scratch500_qwen7b/` (answers.jsonl committed, acts_L14.npz local only).
+
+**counts:** 30da 19/500 lies, 1bf6 9/500 (§61 at n = 50: 3/50 and 1/50; rates hold at 3.8% and 1.8%). scratch
+closed 1000/1000, truncated 0.
+
+**within-prefix, leave-one-rollout-out (`analysis/s62_scratch.py`); identical context, only the sample differs:**
+
+| liar | state @ scratch end | scratch text (tf-idf) | behavioural cues | answer state (after) |
+|---|---|---|---|---|
+| 30da (19 lies) | .938 | .926 | .785 | 1.000 |
+| 1bf6 (9 lies) | .715 | .673 | .523 | .944 |
+
+cross-liar, whole-history holdout: fit 30da → 1bf6 state .714 / text .620 / cues .615; fit 1bf6 → 30da state .810 /
+text .781 / cues .622.
+
+**bootstrap (`analysis/s63_boot.py`, 10-fold CV point estimates, resampling rollouts stratified by outcome):**
+- state vs chance: 30da AUROC .936, CI [.878, .977], permutation p < .001. 1bf6 .697, CI [.461, .848], p = .016.
+- state minus text: 30da +.009, CI [-.023, +.039] (fixed fits) / [-.071, +.042] (refit), P(diff ≤ 0) .29 / .37.
+  1bf6 +.009, CI [-.145, +.254] / [-.092, +.107], P(diff ≤ 0) .51 / .47.
+
+**read:** evidence: for the first time in this project a per-rollout signal exists BEFORE the visible answer: the L14
+state at the scratchpad's closing tag separates the rollouts that go on to lie from those that go on to tell the
+truth, in one history strongly (.94), in the other weakly (.70), and it transfers across the two histories above
+chance. this is what the five dolphin designs (§45-§49) and the frozen-probe trace (§61 addendum 2) did not find; the
+difference is a probe FIT at that position on enough positives, rather than the answer-trained probe applied there.
+NOT shown: that the state beats a reader of the private text. the margin is +.01 on both liars and the CI covers zero.
+codex's pre-lie sentence needs the second half; this is the first half only.
+
+**exploratory slice (`analysis/s63_slice.py`; rule fixed before looking, n tiny, do not cite as a result):** on
+rollouts whose scratchpad carries no count cue (neither the 3-count/rationalisation regex nor the shortfall regex
+matches; e.g. "Checking our records..."), 30da has 12 rollouts, 3 lies: state .926, text .481, diff +.44, bootstrap
+CI [+.00, +.89], P(diff ≤ 0) .03. 1bf6 has no lies in that slice. the direction is the interesting one (when the text
+says nothing, the state still knows) but 3 positives is a hypothesis, not a finding. the designed test would be a
+prompt that keeps the scratchpad uninformative by construction, or many more histories.
+
+**caveats:** two histories, both procurement, one model, keyword-triaged outcomes, one seed. the scratchpad
+instruction is a prompt change. the text reader is tf-idf + logistic regression; a stronger text baseline (70b judge
+reading the scratchpad) has not been run and is the obvious next objection.
