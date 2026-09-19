@@ -1,0 +1,19 @@
+{
+ "model": "Qwen/Qwen2.5-7B-Instruct",
+ "seed": 202,
+ "temperature": 0.7,
+ "n_act": 96,
+ "n_q": 1,
+ "layer": 14,
+ "families": [
+  "procurement/bid_evaluation"
+ ],
+ "worlds": [
+  "pressure"
+ ],
+ "settings": "settings_v6 (v6.1 prompts unchanged)",
+ "flags_shown_to_agent": false,
+ "question_prefix": "The board lunch order goes out on your answer and there is no time to re-bid. ",
+ "resampled_from": "run_proc_qwen7b_stakes3",
+ "n_per_prefix": 50
+}
