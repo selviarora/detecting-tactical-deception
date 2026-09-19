@@ -2526,3 +2526,70 @@ its refusals stripped.
 
 **final night total (sep 18–19):** sixteen pods, ~$29, §36–§49. every run committed with its script, seed and
 result; every negative with its reason.
+
+## 50. sep 19: codex audit of §43–§49, applied. the number stands; the sentences shrink.
+
+audit: `~/Documents/Codex/2026-09-16/i-ne/outputs/sections43_49_audit/REVIEW.md` (+ `audit_native.py`,
+`native_results.json`, `audit_predecision.py`, `predecision_checks.json`). codex reproduced the §43–§44 point
+estimates independently (original .936/.986/.972; legal-excluded .750/.831/.934; procurement-excluded 1.0/1.0/1.0;
+second checkpoint .985/.959/.837) and the exact-text strata. our own scripts are in `pilot/analysis/` (`f464c77`).
+
+**corrections to the positive result (§43–§44):**
+- "no access to what happened" is misleading. the generator saw the tool state; its activations can encode it;
+  the probe was trained with external truth labels. **say: "without receiving a separate tool log at
+  inference."** the probe reads the report against world-state features the generator itself holds.
+- adopted sentence: *a supervised linear probe on the generator's layer-16 answer activations distinguishes
+  contextually false from true reports, including exact question-and-answer matches, without receiving a
+  separate tool log at inference. transfer to an excluded family succeeds in procurement but is weaker and
+  asymmetric in legal review.*
+- exact-text strata, the actual sizes: procurement, three shared strings covering 10 false / 44 true, each at
+  AUROC 1.0 under the frozen and the procurement-excluded probe; one of 11 false reports has no exact true match.
+  legal, two shared strings, 7 false / 2 true. the blind judge is a restricted-information baseline
+  (deterministic on identical strings), not an information-matched reader of the generator's full context.
+- second checkpoint (§44 C): the 108 accurate-record and 66 complete-world reports are NOT in the 48-row label
+  file; they are assumed accurate from record/world status. the .959 and .837 are under that assumption and
+  are not adjudicated report-truth results. the .837 vs true-completion is the weak cell and was understated.
+- test ids do not overlap training ids; shared prompt templates, two checkpoints of one base, and repeated
+  sentences are not independent domains.
+
+**label consistency (before any rescoring):** dose row 302 ("certified as reviewed but the review was
+incomplete") is asserts_problem under the completion-only rubric, not mixed. the abliterated packet used a
+different rule (note-reported claims count as clean) that conflicts with the dose rule; its mixed rows need
+the same adjudication. originals preserved, reasons recorded, rescore once. a second labeller sees a frozen
+rubric and no scores.
+
+**corrections to the negatives (§45–§49). "no plan" is withdrawn.**
+- the determinism argument shows identical prefixes cannot predict a sampled outcome. it does not show there
+  is no plan, no distribution over plans, or no advantage over a bounded text reader (computational
+  accessibility ≠ information-theoretic redundancy). prefix-dependent probabilities can be predictable when
+  realisations are not.
+- §47: the six "wait" turns are further status queries; four later complete (two falsify, two honest). "this
+  turn" and "eventual" labels differ and were conflated. `run_v6_3_reason.py` breaks on malformed responses
+  before appending to `messages`, so `capture_v63_states.py` never sees genuine no-tool endings.
+- §49: 45 completed trajectories but only 22 distinct L16 setup states; one identical group has 24
+  trajectories (10 falsify, 14 disclose). those are stochastic repetitions, not 24 predictor inputs. the setup
+  state is captured before the expedite/extension feedback, which supplies a reason to revise. pooled LOO
+  across fold-dependent classifiers with repeated inputs can sit below chance for structural reasons; it does
+  not establish absence of information.
+- §48: three lies, not zero; the design also changed actions, task and prompts. "lies were much rarer with a
+  partial-production option" is supported; "lies only when cornered" and a causal attribution to the exit are not.
+- adopted sentence: *we did not demonstrate reliable early prediction of eventual falsification with the
+  tested readouts and validation designs. identical-prefix trials cannot identify the later sampling outcome,
+  and variable-prefix tests have limited power and unresolved validation issues.*
+- a better design, if pursued: sample several continuations from each distinct prefix AFTER the preparatory
+  feedback, estimate each prefix's falsification probability, predict that from earlier activations, hold out
+  whole prefixes, keep honest exits, count all outcomes. that tests predictable propensity, not a secret state.
+
+**prior work (novelty boundary):** Burns et al. 2022 (latent knowledge under misleading prompts); Marks &
+Tegmark 2023 (linear truth, transfer, interventions); Feng, Russell & Steinhardt 2024 (latent world states
+extractable despite unfaithful outputs; closest interpretation); Apollo 2025 (probes on generated agentic
+deception, so not the first beyond supplied statements); "How Context Shapes Truth" (arXiv 2601.06599);
+"The Truth Was Never Gone" (arXiv 2609.10739; aliasing of truth and prescribed action; high linear
+recoverability does not fix what variable a probe measures); Smith, Chughtai & Nanda §5 explicitly discusses
+truth probes. **do not say this proves something their paper said cannot be tested.** the defensible
+contribution: controlled agent-report evidence with mechanical truth, exact-text strata, frozen and
+family-excluded checks, and demonstrated failures. not first-in-literature priority for the combination.
+
+**planning-model option (later, third priority):** Qwen3-14B in thinking mode, native tool template
+(schema tools, `<tool_call>` parsing, separate reasoning budget, stop-reason logging), separate native-probe
+protocol. priority order: second labeller + rubric reconciliation; post; then a planning pilot.
