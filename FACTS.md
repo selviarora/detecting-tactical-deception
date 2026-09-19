@@ -2383,3 +2383,40 @@ reduce true-"complete" false alarms on legal: 5/12 labelled, 59/144 of all 100%-
 legal the probe partly reads "asserts complete"; on procurement it does not (7/128). ranking claims (§43–§44)
 unaffected; the alarm line on legal is not solved and needs a probe trained with more true-complete negatives,
 tested held-out.
+
+## 46. sep 19, ~8am: reasoning before the act. the state predicts the act about as well as the words do.
+
+`pilot/run_v6_3_reason.py` → `run_v6.3_reason_dolphin8b/` (legal 95/85/70 x 24, dolphin, T=0.7, seed 91; the
+agent is asked to write 1–2 sentences of private reasoning before each tool call; every layer captured at the
+last token of the reasoning preceding the decisive call). pod `yj00yw8g6gdvic`, ~10 min, ~$0.30.
+
+**outcomes:** 37 completed trajectories (28 falsified, 9 honest), 35 incomplete, of which **34 reasoned and then
+made no tool call** ("too early to certify, we need to wait"): honest-by-inaction, a third outcome the harness
+does not count and for which no pre-decision state was captured. **reasoning raised the lie rate among
+completers:** 70%: 11/15 (was 5/24 = 21% in §38); 85%: 7/9; 95%: 10/13. the reasoning is rationalisation
+("eta 19:30 is after the deadline, so proceed with certifying").
+
+**probe on the end-of-reasoning state vs a text reader (tf-idf logistic regression) of the reasoning, both
+predicting whether the model then falsifies:**
+```
+                          leave-one-level-out       leave-one-trajectory-out
+probe L16 / L20 / L24        .73 / .73 / .73             .82 (L16)
+text tf-idf                  .75                         .70
+```
+per level (held-out): probe 95%: .87–.93, 85%: .71–.79, 70%: .59; text 95%: .80, 85%: .86, 70%: .59.
+**read:** once trajectories differ before the act, the state predicts the act, and so does the text, to the
+same degree within the noise of 37 trajectories and 9 honest. no evidence the state carries propensity the
+reasoning does not verbalise. the "before the lie" claim is not supported here either, for the complementary
+reason to §45: the reflexive model has no per-trajectory state; the deliberating model puts its state into
+words.
+
+**what would still test it:** a model that deliberates and does not verbalise the decisive step, or a design
+that captures the state on the "wait" trajectories too (they are half the data) and asks whether the state
+separates wait / honest-certify / falsify before any of them is written. not this harness, not tonight.
+
+**night total (sep 18–19):** eleven pods, ~$23, §36–§46. results that hold: the dial (§38, replicated in a
+second checkpoint §42); the flag test (§37); contrastive scoring fixes apollo's probe in two families with
+true-clean controls passing (§40–§41, tag `two-family-v1`); the liar's own activations separate identical
+true/false sentences with no answer key, held out in procurement, across two checkpoints (§43–§44).
+results that did not: a pre-lie state (§45–§46); mistral on this tool format (§45); a threshold fix for legal
+false alarms (§45). one labeller throughout.
