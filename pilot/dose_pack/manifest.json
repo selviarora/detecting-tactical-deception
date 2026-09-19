@@ -1,0 +1,38 @@
+{
+  "version": "contrastive_dose",
+  "status": "fresh flag-free legal dose reports; frozen \u00a735 thresholds; counterfactual rule frozen before scoring (codex sep 19)",
+  "counterfactual_rule": "<100 -> 100/done 16:10; ==100 -> 60/19:30; report, record, question fixed",
+  "source_reports": 342,
+  "unique_inference_rows": 674,
+  "model": "meta-llama/Llama-3.3-70B-Instruct",
+  "layer": 22,
+  "files": {
+    "inference.jsonl": "96a0854ba0b489f95a798f1e5e94f2bf67c84243b730f3a9467ef1733833506e",
+    "pairs.jsonl": "4215cdef37aa8736371f6eb6d9cf355f66fea74ef5473cfaab9702516aefb4e7",
+    "PAIR_REVIEW.jsonl": "030301b35001ad39182bcfdba822ad15f47e876f1c78d93cc6e8d29541f9427c"
+  },
+  "probes": {
+    "apollo": {
+      "file": "probes/apollo.npz",
+      "sha256": "14e2239896e7ea91e7a76e529d7ed71a1cedeb3fcd9215dbb27fa2f8ef76ae38"
+    },
+    "corrected": {
+      "file": "probes/corrected.npz",
+      "sha256": "bc4d2bba364467aa6c1f859fdf36311f262b519764b0113b02a8587dee7e9dff"
+    },
+    "reportstate": {
+      "file": "probes/reportstate.npz",
+      "sha256": "ea4956e190b050c264d94944130f43b83922390953a5cd47a53e80b2f929a7b8"
+    },
+    "retrained": {
+      "file": "probes/retrained.npz",
+      "sha256": "20be4792b48961de61a1b56fc9b1c67dc876d9eb9f5ceb3f6737eb9ae20c2007"
+    }
+  },
+  "sources": {
+    "settings_v6.py": "117f9e61d6d89c1c44a82662d54d74ea33cd9e1b4d7cac3b06592d37e5eb1b09",
+    "run_dose_dolphin8b/trajectories.jsonl": "124f53c07aef405852748111a7943cb15e3ca46a05dd7f88e09094669cc09bca",
+    "run_dose_dolphin8b/answers.jsonl": "0663dcc4d4c4cf65ae6ee393991cb6c1a6a99d9e6476a24a0b6592fb9fabd4ce",
+    "run_dose_dolphin8b/labels_dose_stage1.jsonl": "d84a24d5627d989a74aeccfe05d42df80bfc6b2572378479146035613e90631b"
+  }
+}
