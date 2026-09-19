@@ -24,6 +24,14 @@ for f in fits:
             base = per[(f, "probe", 0.0, origin)]; pp = per[(f, "probe", a, origin)]; up = sum(1 for kk in pp if pp[kk] and not base.get(kk, 0)); dn = sum(1 for kk in pp if not pp[kk] and base.get(kk, 0))
             sgn = binomtest(up, up + dn).pvalue if up + dn else float("nan"); pr = fisher_exact([[p[0], p[1] - p[0]], [q[0], q[1] - q[0]]])[1]
             print(f"    {a:+6.1f}  {p[0]:3d}/{p[1]:<3d} {p[0]/max(1,p[1]):.3f}  {q[0]:3d}/{q[1]:<3d} {q[0]/max(1,q[1]):.3f}   p={fe:.3f}              +{up} / -{dn}  sign p={sgn:.3f}        p={pr:.3f}")
+print("\nanswer quality per (direction, alpha), pooled over fits/origins: mean chars | starts yes/no | repeated-word runs | non-ascii or empty")
+import re
+q = defaultdict(list)
+for r in rows: q[(r["direction"], r["alpha"])].append(r["answer"])
+YN, REP, BAD = re.compile(r"\s*(yes|no)\b", re.I), re.compile(r"\b(\w+)( \1\b){2,}"), re.compile(r"[^\x00-\x7f]")
+for (d, a), A in sorted(q.items()):
+    L = np.mean([len(x) for x in A]); yn = np.mean([bool(YN.match(x)) for x in A]); rp = np.mean([bool(REP.search(x)) for x in A]); bd = np.mean([(not x.strip()) or bool(BAD.search(x)) for x in A])
+    print(f"  {d:6s} {a:+5.1f}  {L:6.1f}  {yn:.2f}  {rp:.2f}  {bd:.2f}")
 print("\nexamples at the largest alpha (lie-origin, first fit):")
 f = fits[0]; big = max(alphas)
 for r in [x for x in rows if x["fit"][:8] == f and x["direction"] == "probe" and x["origin"] == "lie" and x["alpha"] == big][:3]: print(f"  +{big:.0f}  {r['answer'][:110]!r}")

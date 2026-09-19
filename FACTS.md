@@ -3017,8 +3017,10 @@ tokens of text. `analysis/s64_timeline.py`: within-history 10-fold, state vs tf-
 
 **read:** evidence: on 30da the first sampled word already carries the signal (text .77 with one token; lying
 rollouts open differently), and the text reader matches or beats the state at every position, significantly at k =
-4 and 8. on 1bf6 nothing is readable by either until the end. the lie forms with the words, not before them; the
-state has no earlier access than a reader of the same prefix. (b) is negative. (a) and (c) remain; (c) is
+4 and 8. on 1bf6 nothing is readable by either until the end. narrow wording (codex): we found no evidence of an
+earlier linearly accessible activation signal beyond what was readable from the scratchpad text; text matched or
+outperformed the state probe at every sampled position. a nonlinear or differently represented internal decision
+could still exist; these probes did not detect one. (b) is negative. (a) and (c) remain; (c) is
 `run_steer_scratch_qwen7b`, launched on the same pod.
 
 **side observation (text, exploratory):** the opening word of the private scratchpad predicts the coming lie at .77
