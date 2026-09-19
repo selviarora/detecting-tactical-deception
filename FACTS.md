@@ -3126,3 +3126,15 @@ sibling control (.937) is within-history, where the note is constant. the label 
 settles it. the note-omission finding went from a lead (p .014 at n = 2) to a hard prospective result. caveats
 unchanged: one model, one family, keyword-triaged outcomes, tf-idf text baseline, threshold flags most same-context
 siblings (the ranker is the result, not the threshold).
+
+**§66 addendum, per-layer transfer scan (`analysis/s66_layers.py`, `run_scratch500_qwen7b/layer_scan.json`, from the
+all-layer capture of the 1000 §63 rollouts):** cross-history transfer of the impending-lie probe at `</scratch>` (fit
+on one liar, test on the other, mean of both directions) rises with depth: L4 .78, L9 .78, L14 .79, L15 .84, L18 .85,
+L22 .83, L24 .90, L25 .90, L26–28 .90. within-history 10-fold: 30da .83 (L1) → .97 (L25); 1bf6 .54 → .80. at the
+first answer token every layer is .87–.93 (that token already contains the answer's first word; not informative
+about "before"). injection layers for the strong-form run chosen by a stated rule, greedy on mean transfer with a
+minimum gap of 4 layers: **25, 18, 14**. the pod's own scan was stopped and this local result handed to it (marker
+`FAILED15_scan` in run15.log is that, not a failure). overnight chain from here: `steer_scratch_v2.py` at 25/18/14 →
+`steer_free.py` at 25/18 → scratchpads for `11ab08e6`, `6c3ccc41`, `c099c464` (n = 100) → `steer_logits.py`
+(count and disclosure contrasts, teacher-forced P(three) vs P(two), five targets). pod self-delete disabled; delete
+manually after pulling.
