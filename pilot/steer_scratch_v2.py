@@ -29,7 +29,8 @@ probes = {}   # per layer: (mu, sd, w, b, u_raw_unit, sd_along)
 XA = np.stack([z["X_end"][ki[r["key"]]].astype(np.float32) for r in by[fit_h]]); yA = np.array([r["lie_kw"] for r in by[fit_h]], int)
 for L in a.layers:
     Li = layers_all.index(L); X = XA[:, Li]; mu, sd = X.mean(0), X.std(0) + 1e-6; c = LogisticRegression(C=0.1, max_iter=3000, class_weight="balanced").fit((X - mu) / sd, yA)
-    w_raw = c.coef_[0] / sd; u = (w_raw / np.linalg.norm(w_raw)).astype(np.float32); probes[L] = (mu, sd, c.coef_[0], float(c.intercept_[0]), u, float(np.sqrt(np.sum((sd * u) ** 2))))
+    dom = X[yA == 1].mean(0) - X[yA == 0].mean(0); u = (dom / np.linalg.norm(dom)).astype(np.float32)   # diff-of-means direction (auditor): robust with few positives; LR kept for the readout score
+    probes[L] = (mu, sd, c.coef_[0], float(c.intercept_[0]), u, float(np.sqrt(np.sum((sd * u) ** 2))))
     print(f"L{L}: fit on {fit_h[:8]} ({yA.sum()} lies); sd_along={probes[L][5]:.3f}", flush=True)
 rng = np.random.default_rng(a.seed)
 import torch
