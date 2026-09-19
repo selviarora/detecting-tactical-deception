@@ -2936,3 +2936,14 @@ answer "I did not strictly follow the policy…". the within-prefix probe on 3 p
   endpoint; the lie may be selected during final-answer generation." a probe FIT at the endpoint, on enough
   positives, is the actual test; that is `run_scratch500_qwen7b` (500 rollouts per liar, frozen setup, seed 601,
   in progress).
+
+## 62. sep 19, ~4pm: both pods terminated mid-run (balance). three runs lost.
+
+`list-pods` returned empty with three jobs in flight: `run_scratch500_qwen7b` (333/1000 rollouts), `run_v10_dev`
+(15/30 histories; one consent history had shown 2/12 lies, the first qwen3 lie of the day), `run_v9_qwen3_proc`
+(33/48 trajectories). none had been pulled since their last checkpoint, so their partial outputs are gone. what
+survives locally: `run_scratch_qwen7b` (the 200-rollout scratchpad run, §61), `scratch_token_scores.json`,
+`run_v10_smoke2`, the first 2 trajectories of `run_v9_qwen3_legal`, and everything before.
+**cause:** account balance exhausted (the §52 failure again). **the rule that would have saved it:** pull partial
+outputs on a timer during long jobs, not only at completion. every watcher from here pulls every 10 minutes.
+**cost to redo:** scratch ×500 on both liars ~$1.30 / 50 min; v10 dev pass ~$5 / 3.5 h; qwen3 procurement ~$4 / 3 h.
