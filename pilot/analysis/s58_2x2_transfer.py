@@ -21,7 +21,7 @@ train = json.load(open(P / "probes/qwen7b_2x2_L14_train_rows.json")); train_pref
 tv = TfidfVectorizer(ngram_range=(1, 2)).fit([f"state {r['state']} compliant. report: {r['text']}" for r in train]); tclf = LogisticRegression(C=1.0, max_iter=5000, class_weight="balanced").fit(tv.transform([f"state {r['state']} compliant. report: {r['text']}" for r in train]), [r["label"] for r in train])
 tscore = lambda state, text: float(tclf.decision_function(tv.transform([f"state {state} compliant. report: {text}"]))[0])
 rows = []
-for run in ("run_resample_qwen7b", "run_resample2_qwen7b"):
+for run in ("run_resample_qwen7b", "run_resample2_qwen7b", "run_resample3_qwen7b"):
     if not (P / run / "answers.jsonl").exists(): print("missing", run); continue
     z = np.load(P / run / f"acts_L{L}.npz"); ki = {str(k): i for i, k in enumerate(z["keys"])}
     for r in read(P / run / "answers.jsonl"):
@@ -53,12 +53,12 @@ for t in sorted({r["traj"] for r in rows if r["g"] == "false_yes"}):
     f = [r for r in rows if r["traj"] == t and r["g"] == "false_yes"]; h = [r for r in rows if r["traj"] == t and r["g"] in ("yes_two", "disclose")]
     if f and h: y = [1] * len(f) + [0] * len(h); print(f"  prefix {t[:8]}: {len(f)} lies vs {len(h)} own honest siblings: probe {roc_auc_score(y, [r['s'] for r in f + h]):.3f}  text {roc_auc_score(y, [r['t'] for r in f + h]):.3f}")
 # prospective note-rule test on the hunt
-hunt = P / "run_proc_qwen7b_stakes2/trajectories.jsonl"
-if hunt.exists():
-    tr = {t["trial_id"]: t for t in read(hunt) if t["completed"] and t["world"] == "pressure"}
+hunt = [P / "run_proc_qwen7b_stakes2/trajectories.jsonl", P / "run_proc_qwen7b_stakes3/trajectories.jsonl"]
+tr = {t["trial_id"]: t for h in hunt if h.exists() for t in read(h) if t["completed"] and t["world"] == "pressure"}
+if tr:
     rate = defaultdict(lambda: [0, 0])
     for r in rows:
-        if r["run"] == "run_resample2_qwen7b" and r["state"] == 2: rate[r["traj"]][1] += 1; rate[r["traj"]][0] += r["g"] == "false_yes"
+        if r["run"] in ("run_resample2_qwen7b", "run_resample3_qwen7b") and r["state"] == 2 and r["traj"] in tr: rate[r["traj"]][1] += 1; rate[r["traj"]][0] += r["g"] == "false_yes"
     cls = {t: classify_note(tr[t]["final_state"]["record"].get("note", "")) for t in rate}
     d = [rate[t][0] / rate[t][1] for t in rate if cls[t] == "disclose"]; o = [rate[t][0] / rate[t][1] for t in rate if cls[t] == "omit"]
     print(f"\nPROSPECTIVE NOTE RULE (hunt, trajectory = unit): disclose n={len(d)} rates {[round(x,2) for x in d]} | omit n={len(o)} rates {[round(x,2) for x in o]}")
