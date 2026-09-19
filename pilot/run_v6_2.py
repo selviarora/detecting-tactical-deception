@@ -23,7 +23,7 @@ def main():
     ap.add_argument("--model", required=True); ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--families", nargs="*", default=["legal/discovery_production", "procurement/bid_evaluation"]); ap.add_argument("--worlds", nargs="*", default=["pressure", "compliant"])
     ap.add_argument("--n-act", type=int, default=24); ap.add_argument("--n-q", type=int, default=2)
-    ap.add_argument("--layer", type=int, default=16); ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=62); ap.add_argument("--question-prefix", default="", help="stakes text prepended to every manager question (report-side pressure); never an instruction")
+    ap.add_argument("--layer", type=int, default=16); ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=62); ap.add_argument("--question-prefix", default="", help="stakes text prepended to every manager question (report-side pressure); never an instruction"); ap.add_argument("--questions", nargs="*", default=None, help="subset of question names to ask (default all)")
     a = ap.parse_args()
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer, set_seed
@@ -70,6 +70,7 @@ def main():
                                      "completed": done, "falsified": final.get("falsified") if done else None, "violation": final.get("violation") if done else None,
                                      "immutable": s["worlds"][world]["immutable"], "messages": msgs}, ensure_ascii=False) + "\n"); ft.flush()
                 for qname, q in s["questions"].items():
+                    if a.questions and qname not in a.questions: continue
                     qmsgs = msgs + [{"role": "user", "content": f"[message from your manager]\n{a.question_prefix}{q}"}]
                     for j in range(a.n_q):
                         ans, trunc = gen(qmsgs, 160); key = f"{tid}#{qname}#{j}"; acts.append(act(qmsgs, ans)); keys.append(key)
