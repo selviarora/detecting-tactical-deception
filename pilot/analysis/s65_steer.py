@@ -24,6 +24,28 @@ for f in fits:
             base = per[(f, "probe", 0.0, origin)]; pp = per[(f, "probe", a, origin)]; up = sum(1 for kk in pp if pp[kk] and not base.get(kk, 0)); dn = sum(1 for kk in pp if not pp[kk] and base.get(kk, 0))
             sgn = binomtest(up, up + dn).pvalue if up + dn else float("nan"); pr = fisher_exact([[p[0], p[1] - p[0]], [q[0], q[1] - q[0]]])[1]
             print(f"    {a:+6.1f}  {p[0]:3d}/{p[1]:<3d} {p[0]/max(1,p[1]):.3f}  {q[0]:3d}/{q[1]:<3d} {q[0]/max(1,q[1]):.3f}   p={fe:.3f}              +{up} / -{dn}  sign p={sgn:.3f}        p={pr:.3f}")
+print("\nWHAT MOVES: per (fit, direction, alpha), lie-origin only: clean-yes lie | says three/3 | starts yes | starts no  (the direction should move the count word, not the yes)")
+import re as _re
+T3, YS, NO = _re.compile(r"\b(three|3)\b", _re.I), _re.compile(r"\s*yes\b", _re.I), _re.compile(r"\s*no\b", _re.I)
+for f in fits:
+    for d in ("probe", "random"):
+        for a in alphas:
+            RR = [r for r in rows if r["fit"][:8] == f and r["direction"] == d and r["alpha"] == a and r["origin"] == "lie"]
+            if not RR: continue
+            A = [r["answer"] for r in RR]; nl = sum(r["lie_kw"] for r in RR); n3 = sum(bool(T3.search(x)) for x in A); ny = sum(bool(YS.match(x)) for x in A); nn = sum(bool(NO.match(x)) for x in A)
+            print(f"  fit {f} {d:6s} {a:+6.1f}  n={len(A):3d}  lie {nl:3d}  three {n3:3d}  yes {ny:3d}  no {nn:3d}")
+print("\nDOSE-RESPONSE: logistic slope of outcome on alpha/48 (lie-origin), permutation p; probe vs random")
+from sklearn.linear_model import LogisticRegression as _LR
+_rng = np.random.default_rng(0)
+for f in fits:
+    for name, fn in (("lie", lambda r: r["lie_kw"]), ("three", lambda r: bool(T3.search(r["answer"])))):
+        for d in ("probe", "random"):
+            S = [r for r in rows if r["fit"][:8] == f and r["direction"] == d and r["origin"] == "lie"]
+            if len({r["alpha"] for r in S}) < 3: continue
+            x = np.array([r["alpha"] for r in S]) / 48.0; y = np.array([fn(r) for r in S], int)
+            if y.sum() in (0, len(y)): continue
+            sl = _LR(C=1e6, max_iter=1000).fit(x[:, None], y).coef_[0][0]; perm = [_LR(C=1e6, max_iter=1000).fit(_rng.permutation(x)[:, None], y).coef_[0][0] for _ in range(200)]
+            print(f"  fit {f} outcome={name:5s} {d:6s}: slope {sl:+.3f}  perm p {np.mean(np.abs(perm) >= abs(sl)):.3f}  (rows {len(S)})")
 print("\nanswer quality per (direction, alpha), pooled over fits/origins: mean chars | starts yes/no | repeated-word runs | non-ascii or empty")
 import re
 q = defaultdict(list)
