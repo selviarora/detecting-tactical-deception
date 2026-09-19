@@ -2420,3 +2420,41 @@ true-clean controls passing (§40–§41, tag `two-family-v1`); the liar's own a
 true/false sentences with no answer key, held out in procurement, across two checkpoints (§43–§44).
 results that did not: a pre-lie state (§45–§46); mistral on this tool format (§45); a threshold fix for legal
 false alarms (§45). one labeller throughout.
+
+## 47. sep 19, ~8:30am: before the words. the decision is not in the state before it is in the tokens.
+
+`pilot/capture_v63_states.py` → `v63_states.npz`: for every v6.3 trajectory that saw the review status, the state at
+the generation-prompt token of the decision turn (X_pre, before any decisive reasoning is written) and at the end
+of that turn's reasoning (X_post). outcome of the turn: falsify / honest_certify / wait. pod `a02v23p8cyg61w`,
+~5 min, ~$0.15. 39 trajectories: 26 falsify, 7 honest_certify, 6 wait. (of the 34 "incomplete" in §46, 28 never
+fetched the status at all: they reasoned at turn one and called nothing; task failure, not restraint.)
+
+**X_pre varies** (20 distinct first-turn reasoning strings → 36 distinct states), so unlike §45 there is
+per-trajectory variance before the decision. **predicting "will falsify", leave-one-trajectory-out:**
+```
+                                            probe (best layer)     text reader of the same prefix
+before the decisive reasoning (X_pre)          .56 (L12)             .49   (first-turn reasoning)
+after the decisive reasoning (X_post)          .74 (L16)             .85   (decisive reasoning)
+```
+X_pre leave-one-level-out: .48–.58 pooled. among non-liars, X_pre does not separate wait from honest_certify
+(.36, n 6 v 7).
+
+**read.** before the model writes its decisive reasoning, neither its state nor the text so far predicts what
+it will decide (both at chance). after it writes the reasoning, the decision is readable, and **the words read
+it better than the activations** (.85 vs .74). the three tests of the night agree: §45 (no deliberation:
+identical states, sampled outcome), §47-pre (deliberation, before writing: chance), §46/§47-post (after writing:
+readable, text ≥ probe). **in this model, the decision to falsify does not exist in the residual stream before
+it exists in the tokens.** there is nothing to see coming.
+
+**what this does and does not say.** it does not say pre-verbal intent is impossible in models; it says an 8b
+refusal-stripped model on a one-step task shows none, under three designs. a model that plans across many
+steps, or one whose reasoning is trained to be terse or hidden, is the place to look, and it is not this
+harness. as a safety statement it is the mirror of §43: what the model *has said* is readable from its state
+(true vs false, identical words), what it *will say* is not.
+
+**§43–§47 together, one paragraph:** the truth-value of a report is linearly readable from the liar's own
+activations after the fact, with no answer key, for identical text, held out across a setting and across two
+checkpoints. the propensity to lie is set by one variable in the environment (the dial) and, in this model, is
+sampled rather than decided: no per-trajectory pre-decision state predicts the act, and when the model
+deliberates in text, the text predicts the act better than the state. the after-the-fact reading is the
+result; the before-the-fact reading is a clean negative with its reasons stated.
