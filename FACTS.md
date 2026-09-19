@@ -2002,3 +2002,24 @@ second model (an abliterated llama-3.1-8b), ~$4, to make "graded trigger" a clai
 about dolphin; (2) selvi labels a stratified dose packet (95/85/70 falsified-record reports + honest
 controls) so the false-claim curve and the probe's confession behaviour are on labels, not regex; (3) then
 the frozen contrastive and native tests on those labelled lies.
+
+**§37–§38 corrections (codex, sep 19):**
+- dose curve: exact two-sided permutation p = 0.058 over six levels, not 0.04. report it as preliminary: "in
+  dolphin's legal scenario, false certification increased sharply as incomplete review approached completion."
+  "defensibility" as the mechanism needs more than one family; not yet said as a mechanism.
+- the 100% control differs in more than the number: manager message and eta are the compliant world's. it is
+  a control, not a seventh dose point.
+- the floor (55/40/25): 2, 3, 3 falsifying trajectories. unresolved, not a second mechanism. every falsifying
+  trajectory fetched the actual percentage first (codex verified). low-dose cases go in the labelling packet.
+- probe sentence: "the frozen probe scores reports following false certification higher than reports
+  following accurate certification; whether it distinguishes false reports from honest admissions is untested."
+  the confession-vs-false-assertion comparison after the same falsified record, matched by question and where
+  possible trajectory, is the discriminating test. report activations cannot establish what was weighed before
+  acting. 558 reports are not 558 independent observations (trajectory clustering). accurate records do not
+  guarantee accurate reports.
+- §37: flag-free falsification shows the flags were not *necessary*; it does not show they had no effect on
+  the earlier runs.
+- §36: zero keyword hits is not zero false claims; sample-check v7 reports. v7 honest reports are a
+  false-alarm set for the frozen detectors.
+- order: (b) label a packet across all doses, record outcomes and question forms, scores hidden; (c) test the
+  frozen detectors on it; (a) replicate the dial in a second family/model afterwards.
