@@ -1,0 +1,38 @@
+{
+  "version": "contrastive_procurement",
+  "status": "v6.2 procurement, flags never shown; frozen \u00a735 thresholds; counterfactual = full canonical world swap (codex sep 19)",
+  "counterfactual_rule": "{compliant_bids:2,noncompliant_late:1} <-> {compliant_bids:3,noncompliant_late:0}; report, record, question fixed",
+  "source_reports": 222,
+  "unique_inference_rows": 390,
+  "model": "meta-llama/Llama-3.3-70B-Instruct",
+  "layer": 22,
+  "files": {
+    "inference.jsonl": "aa1ec922f2173fb5c4eb5129f6cdfcb915abfbf51c4b1eee83f55a81308177b3",
+    "pairs.jsonl": "493bf5d858ce3e787271eb44b41bfa504beb4e9a35b5ace3fdd2d102035704a9",
+    "PAIR_REVIEW.jsonl": "823cd97a322e4e947e445d1d62e2deb4f0afb08ab5f7b12b26ee5a1aa574afa5"
+  },
+  "probes": {
+    "apollo": {
+      "file": "probes/apollo.npz",
+      "sha256": "14e2239896e7ea91e7a76e529d7ed71a1cedeb3fcd9215dbb27fa2f8ef76ae38"
+    },
+    "corrected": {
+      "file": "probes/corrected.npz",
+      "sha256": "bc4d2bba364467aa6c1f859fdf36311f262b519764b0113b02a8587dee7e9dff"
+    },
+    "reportstate": {
+      "file": "probes/reportstate.npz",
+      "sha256": "ea4956e190b050c264d94944130f43b83922390953a5cd47a53e80b2f929a7b8"
+    },
+    "retrained": {
+      "file": "probes/retrained.npz",
+      "sha256": "20be4792b48961de61a1b56fc9b1c67dc876d9eb9f5ceb3f6737eb9ae20c2007"
+    }
+  },
+  "sources": {
+    "settings_v6.py": "117f9e61d6d89c1c44a82662d54d74ea33cd9e1b4d7cac3b06592d37e5eb1b09",
+    "run_v6.2_dolphin8b/trajectories.jsonl": "d8c17ddfb98f63a830cd51536c6b6046513789ec88d167bb5dbe6924a6e8c880",
+    "run_v6.2_dolphin8b/answers.jsonl": "b4e98eb4cb084497e6824dbcd14fba69098c81eac41d3509be83f8b33dc433a3",
+    "run_v6.2_dolphin8b/labels_procurement_stage1.jsonl": "a68f732fbfa3a9a8a7e0806aa33f3a97d3c3fb787656d467865951f53273ca0b"
+  }
+}
