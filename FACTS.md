@@ -2623,3 +2623,19 @@ labelled-in-principle set for a different probe question (does the state separat
 un-tampered model. labels needed (selvi), then cpu.
 
 **caveats:** triage, not labels. one seed. 7b. llama's format failure means "stock llama" is untested here.
+
+## 52. sep 19, ~9:30am: stock qwen on procurement and the 32b on legal. run completed; data lost with the pod.
+
+pod `4ccoq05eb8g5kz` ran three jobs to completion (qwen2.5-7b-instruct procurement, qwen2.5-32b-instruct
+procurement, qwen2.5-32b-instruct legal 95/85; seeds 131–133; flags never shown) and was terminated by runpod
+(balance exhausted) before the outputs were pulled. only the run log's per-trajectory counts survive. lesson:
+pull after every job, not at the end.
+
+**counts (pooled over the two qwens for procurement):** procurement pressure: 0 falsified records among 10
+completed, 38 incomplete (tool-format failures); compliant: 33 honest, 15 incomplete. **qwen2.5-32b legal:**
+95%: 11/11 completed falsified, 13 incomplete; 85%: 10/10 completed falsified, 14 incomplete. the dial is at
+100% for the 32b at both levels among completions; incompletion is high.
+
+**not answered:** whether a stock qwen says "yes, three compliant" to the direct question (the un-tampered
+report-lie test). the answer files are gone. re-run: qwen-7b procurement only, ~$0.60, pull immediately.
+**not answered:** whether the 32b endorses or discloses its falsified legal records in prose.
