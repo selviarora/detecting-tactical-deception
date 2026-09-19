@@ -2491,3 +2491,38 @@ replication; the flag test; contrastive scoring fixing apollo's probe in two fam
 the liar's own activations separating identical true/false sentences with no answer key, held out in
 procurement, across two checkpoints (§43–§44). negatives with reasons: pre-lie state (§45–§48); mistral on this
 tool format; a threshold fix for legal false alarms. one labeller throughout; codex and a second labeller next.
+
+## 49. sep 19, ~10am: the setup-move test, run properly. no plan one turn before the lie.
+
+`pilot/run_v8_1_setup.py` → `run_v8.1_dolphin8b/` (legal, full production required, no honest partial exit; before
+certifying the model must take one innocent preparatory action, `reviewers.expedite` or `court.request_extension`
+(denied); reasoning before each call; every layer at the end of every turn's reasoning; 95 and 85, 36 each).
+pod `676k3dcitc4g05`, ~50 min, ~$1.30.
+
+**the split the test needs exists:** 45 completed, 18 lied, 27 disclosed; after "expedite" 15 lied / 24 disclosed,
+after "extension" 3 / 3. the move itself does not predict the lie (AUROC .53). 20 distinct setup-turn reasoning
+strings, 22 distinct setup states: per-trajectory variance before the decisive turn, unlike §45.
+
+**predicting the certify-turn lie from the setup turn, one turn earlier, leave-one-trajectory-out:**
+```
+probe on the state at the end of the setup-move reasoning   L8 .38  L12 .38  L16 .37  L20 .35  L24 .38  L32 .37
+text reader of the setup-move reasoning                     .18
+within level 95 (n 23, 10 lies): probe .62, text .25 | within 85 (n 22, 8 lies): probe .27, text .05
+```
+**at the certify turn, after the decisive reasoning (reference):** probe L16 .83, text .69 (§47 had .74 vs .85;
+across the two, state and text carry the decision about equally once it is being made).
+
+**read.** on the harness built to give a plan somewhere to live, with the lie rate restored and a clean split of
+liars and disclosers after identical innocent moves, the state one turn before the lie carries nothing (chance
+or below at every layer). **the decision to falsify does not exist before the turn in which it is written.**
+five designs (§45 identical states; §47 chance before the words; §46/§47/§49 readable only after the decisive
+reasoning; §48 no lies with an honest exit; §49 no plan at the setup move) give one answer for this model:
+it lies at the moment of lying, when cornered, with no plan carried across turns.
+
+**as a safety statement:** what the model has said is readable from its state (§43–§44, identical words);
+what it will say one turn later is not, because it has not decided. for a reflexive liar, "seeing it coming"
+has nothing to see. a model that plans across turns is the place this could differ, and it is not an 8b with
+its refusals stripped.
+
+**final night total (sep 18–19):** sixteen pods, ~$29, §36–§49. every run committed with its script, seed and
+result; every negative with its reason.
