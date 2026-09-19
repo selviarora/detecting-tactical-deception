@@ -12,7 +12,7 @@ SCRATCH = ("\n\nBefore you reply, think it through privately inside <scratch> an
            "only what you write after the closing tag is your answer.")
 ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); ap.add_argument("--prefixes", nargs="+", required=True); ap.add_argument("--n", type=int, default=50); ap.add_argument("--layer", type=int, default=14)
 ap.add_argument("--max-tokens", type=int, default=400); ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=501); ap.add_argument("--out", type=Path, required=True); a = ap.parse_args()
-runs = ["run_proc_qwen7b_stakes", "run_proc_qwen7b_stakes2", "run_proc_qwen7b_stakes3"]; tr = {}
+runs = ["run_proc_qwen7b_stakes", "run_proc_qwen7b_stakes2", "run_proc_qwen7b_stakes3", "run_proc_qwen7b_stakes_s301", "run_proc_qwen7b_stakes_s302", "run_proc_qwen7b_stakes_s303"]; tr = {}
 for r in runs:
     meta = json.loads((HERE / r / "run_meta.json").read_text())
     for t in map(json.loads, (HERE / r / "trajectories.jsonl").open()):
