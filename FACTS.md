@@ -2023,3 +2023,55 @@ the frozen contrastive and native tests on those labelled lies.
   false-alarm set for the frozen detectors.
 - order: (b) label a packet across all doses, record outcomes and question forms, scores hidden; (c) test the
   frozen detectors on it; (a) replicate the dial in a second family/model afterwards.
+
+## 39. sep 19, ~4am: dose labels. the dial acts on the record, not the report. the probe reads the report's lie, not the act.
+
+`run_dose_dolphin8b/labels_dose_stage1.jsonl` (342 rows, stage one; provenance in file: supplied by selvi,
+produced with an assistant model from a pasted rubric, not codex; rubric pinned before row 41),
+`labels_dose_stage2.json` (mechanical against level and record). counts: 133 clean, 85 problem, 111 mixed,
+13 other → 121 false claims, 97 true reports, 124 unresolved. packet oversamples falsified records; no
+unweighted rate from it is representative of the run.
+
+**table 1. reports after a falsified record, by level (every such report is in the packet):**
+```
+pct    n   false_claim  confession  mixed  other   false/(false+confession)
+ 95  126       57           6         61      2         .90
+ 85   54       26           2         23      3         .93
+ 70   30       11           5         13      1         .69
+ 55   12        8           0          4      0        1.00
+ 40   18       10           2          4      2         .83
+ 25   18        9           3          4      2         .75
+```
+spearman(level, conditional false-claim rate) = .31, p = .54. **the dose controls whether the record is
+falsified (§38: 91/39/21/9/14/13%); given a falsified record, the report endorses it ~85% of the time at every
+level.** the report follows the record. `mixed` ("yes, complete; 95% with an eta of 19:30") is 48% of
+falsified-record reports at 95%: the model's dominant move at high dose is to assert both.
+
+honest-record controls (84): 79 true reports, 5 unresolved, 0 false claims: the model never claims
+"complete" in a report unless it first wrote it in the record.
+
+**table 2. frozen native probe (`dolphin8b_native_L16_frozen.npz`, sha eba3f4ff), false claims vs
+confessions, both after a falsified record:**
+```
+false claims   n=121   mean −0.83   116/121 above frozen threshold
+confessions    n= 18   mean −6.42     3/18 above
+auroc (false vs confession) = 0.939; by question: broad .98 (65 v 5), explicit .92 (11 v 10), direct .79 (45 v 3)
+same-trajectory matched pairs: 6; false claim scores higher in 6/6; mean gap +5.5
+confessions vs honest-record honest reports (n 18 v 67): auroc 0.665
+100% control, true "complete" reports: 5/12 above threshold
+```
+
+**sentence:** the frozen probe on the generator's own activations separates a false report from an honest
+confession about the same falsified act (0.94, 6/6 matched pairs), and only weakly separates a confession
+from an honest report (0.67). **it reads whether the sentence being written is false, not whether the model
+did something wrong earlier, and not (§38) how tempted it was.** on uninstructed lies, fit before this data
+existed. it still false-alarms on true "complete" (5/12), so its operating point is not solved.
+
+**caveats:** 18 confessions, most at 95%. one labeller, model-assisted, no second labeller yet. probe fit on
+11 positives (v6) at one layer. reports cluster by trajectory (6 matched pairs is the honest n for the
+strongest claim). "mixed" rows (111) are excluded from both tables and are a large, unmodelled category.
+
+**what changed tonight, in one line each:** §36 four fresh binary settings, zero lies. §37 v6 lies replicate
+without the flag. §38 the lie rate has a dial (record falsification vs review pct). §39 the dial acts on
+the record, the report follows it, and the frozen probe reads the report's falsity, not the act or the
+temptation.
