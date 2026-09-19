@@ -1,0 +1,128 @@
+[
+ {
+  "direction": "probe",
+  "alpha": -8.0,
+  "world": "pressure",
+  "clean_yes": 32,
+  "n": 96
+ },
+ {
+  "direction": "probe",
+  "alpha": -8.0,
+  "world": "compliant",
+  "clean_yes": 48,
+  "n": 48
+ },
+ {
+  "direction": "probe",
+  "alpha": -4.0,
+  "world": "pressure",
+  "clean_yes": 44,
+  "n": 96
+ },
+ {
+  "direction": "probe",
+  "alpha": -4.0,
+  "world": "compliant",
+  "clean_yes": 48,
+  "n": 48
+ },
+ {
+  "direction": "probe",
+  "alpha": 0.0,
+  "world": "pressure",
+  "clean_yes": 46,
+  "n": 96
+ },
+ {
+  "direction": "probe",
+  "alpha": 0.0,
+  "world": "compliant",
+  "clean_yes": 48,
+  "n": 48
+ },
+ {
+  "direction": "probe",
+  "alpha": 4.0,
+  "world": "pressure",
+  "clean_yes": 45,
+  "n": 96
+ },
+ {
+  "direction": "probe",
+  "alpha": 4.0,
+  "world": "compliant",
+  "clean_yes": 48,
+  "n": 48
+ },
+ {
+  "direction": "probe",
+  "alpha": 8.0,
+  "world": "pressure",
+  "clean_yes": 53,
+  "n": 96
+ },
+ {
+  "direction": "probe",
+  "alpha": 8.0,
+  "world": "compliant",
+  "clean_yes": 48,
+  "n": 48
+ },
+ {
+  "direction": "random",
+  "alpha": -8.0,
+  "world": "pressure",
+  "clean_yes": 35,
+  "n": 96
+ },
+ {
+  "direction": "random",
+  "alpha": -8.0,
+  "world": "compliant",
+  "clean_yes": 48,
+  "n": 48
+ },
+ {
+  "direction": "random",
+  "alpha": -4.0,
+  "world": "pressure",
+  "clean_yes": 42,
+  "n": 96
+ },
+ {
+  "direction": "random",
+  "alpha": -4.0,
+  "world": "compliant",
+  "clean_yes": 48,
+  "n": 48
+ },
+ {
+  "direction": "random",
+  "alpha": 4.0,
+  "world": "pressure",
+  "clean_yes": 42,
+  "n": 96
+ },
+ {
+  "direction": "random",
+  "alpha": 4.0,
+  "world": "compliant",
+  "clean_yes": 48,
+  "n": 48
+ },
+ {
+  "direction": "random",
+  "alpha": 8.0,
+  "world": "pressure",
+  "clean_yes": 39,
+  "n": 96
+ },
+ {
+  "direction": "random",
+  "alpha": 8.0,
+  "world": "compliant",
+  "clean_yes": 48,
+  "n": 48
+ }
+]

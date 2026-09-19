@@ -2747,3 +2747,24 @@ keyword-triaged. the propensity test (X_prompt → lie rate) cannot be fit with 
 sits 2.7–6.3 from the others against a 4.9 mean among non-liars, i.e. not an outlier. **before this is said
 outside the repo it needs a second lying prefix** (the 32b harvest, or resampling more stock-7b prefixes) so
 the positives are not a single context.
+
+## 57. sep 19: steering the frozen native direction. a hint in the positive direction, underpowered.
+
+`pilot/steer_native.py` → `run_steer_dolphin8b/` (dolphin-3.0-8b; the frozen L16 probe direction, unit-normalised
+and scaled in the probe's own sd units, added to the residual stream at every position while the model answers
+the procurement direct question from 8 completed pressure prefixes and 4 compliant prefixes of v6.2; 12 samples
+per prefix per alpha; a random direction of the same norm as control; keyword-triaged clean "yes, three"). pod
+`k405ljp0g6goix`, ~35 min, ~$0.90.
+```
+alpha            −8     −4      0     +4     +8
+probe   lies   32/96  44/96  46/96  45/96  53/96      compliant true-yes 48/48 at every alpha
+random  lies   35/96  42/96    —    42/96  39/96      compliant true-yes 48/48 at every alpha
+```
+probe +8 vs random +8: 55% vs 41%, two-proportion p = 0.04. probe +8 vs alpha 0: p = 0.31. probe −8 vs random −8:
+no difference (both ~35%: any large perturbation degrades the "yes" reflex).
+**read:** adding the direction raises the lie rate relative to an equal-norm random push; removing it does no
+more than a random push of the same size; true answers are unaffected. consistent with a causal role for the
+direction in producing the false "yes", and not established: one seed, 8 prefixes, 96 per cell, keyword
+outcome, and the effect is against the random control rather than against baseline. a real causal claim needs
+more prefixes, more seeds, and labelled outcomes. codex's "causal intervention" item (§50) is now attempted, not
+answered.
