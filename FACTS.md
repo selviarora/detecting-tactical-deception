@@ -2922,3 +2922,17 @@ two routes to the false "yes": private truth then public falsehood (the divergen
 and private rationalisation. honest siblings from the same prefix: scratch "…we couldn't meet that requirement" →
 answer "I did not strictly follow the policy…". the within-prefix probe on 3 positives is not interpretable
 (state .00, text .01, answer-state .96 after the fact); the paragraph is.
+
+**§61 addendum 2, the four lies inspected (codex's checklist; `pilot/capture_scratch_tokens.py`,
+`pilot/scratch_token_scores.json`, `pilot/scratch_trace_30da.png`; all exploratory, n = 3 and 1):**
+- does the scratch text announce the lie? mechanical cue (mentions a three-count / rationalisation): 30da lies
+  **0/3**, honest 28/47. states the true shortfall: lies 2/3, honest 47/47. lying scratchpads are shorter (113 vs 160
+  chars). on this history the lying scratchpads look like honest ones, or plainer; the lie is not planned in text.
+  1bf6's single lie does rationalise in text ("in-house… not counted here").
+- frozen report-truth probe (built for answer states) traced through the scratchpad: endpoint lies +0.97 vs honest
+  +2.44 (AUROC .16, inverted); mean through the scratch .43; the same probe on the answer, after the fact, .94.
+  the frozen probe does not see the coming lie at the scratchpad's end; it sees it once written.
+- read (exploratory): of codex's four outcomes this looks like "neither text nor state predicts at the scratchpad
+  endpoint; the lie may be selected during final-answer generation." a probe FIT at the endpoint, on enough
+  positives, is the actual test; that is `run_scratch500_qwen7b` (500 rollouts per liar, frozen setup, seed 601,
+  in progress).
