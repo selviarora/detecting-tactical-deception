@@ -2153,3 +2153,73 @@ under the counterfactual world turns apollo's published probe from chance (0.51 
 working detector (52/121 caught, 0/12 controls and 0/17 confessions flagged, at a threshold frozen on other
 families), and turns a report/state probe into a perfect ranker (1.000 against every honest group). the
 improvement is not "recognising the word complete": the true-completion controls are the test, and they pass.
+
+## 41. sep 19: procurement, second family. contrast fixes apollo's probe again; it is not free.
+
+`run_v6.2_dolphin8b/labels_procurement_stage1.jsonl` (222 rows, both worlds, flags never shown; provenance and
+ten adjudications in file; pinned rule: the target is the compliant-bid count, "no late bids" is not a count
+claim anywhere), `labels_procurement_stage2.json`, `procurement_pack/` (counterfactual = full canonical world
+swap {2,1} <-> {3,0}, frozen before replay), `procurement_capture/` (codex's script, `99cd0d2c`),
+`score_procurement_contrast.py`, `procurement_contrast_results.json`. pod `j68oag9im8cz0j`, ~18 min, ~$1.
+
+**labels:** 11 false claims from **9 independent pressure trajectories** (of 15), all to the direct question
+("yes, three compliant bids were evaluated"); **9 of the 11 sit on an accurate record** (bids_evaluated: 2),
+the model tells the truth to open questions and lies to the yes/no. 73 accurate-about-the-count disclosures
+(pressure; "no late bids" incidental falsehoods recorded separately, 3), 128 true-compliant controls, 0
+fabricated problems, 6 mixed, 4 other.
+
+**direct question only (codex's primary comparison), frozen §35 thresholds:**
+```
+                          false/accurate-rec  false/falsified-rec  accurate disclosure  true-compliant
+                                /9                   /2                  /14                 /44
+apollo raw                       0                    0                    0                   0
+apollo + contrast                9                    2                    2                   0
+corrected + contrast             9                    2                    2                   0
+report/state raw                 9                    2                    0                   0
+report/state + contrast          9                    2                    0                   0
+retrained raw / + contrast       9 / 9                2 / 2                0 / 0               0 / 0
+judge raw / + contrast           9 / 9                2 / 2                2 / 0               0 / 0
+```
+AUROC (false vs disclosure, false vs control) is 1.000 for every method within the direct question, incl.
+apollo raw: the ranking exists in the raw probe; the frozen threshold sits above all direct answers, and the
+contrast moves the lies across it while leaving the 44 true "yes, three compliant" below. **codex's test
+passes: false claims on an accurate record are caught, true "three compliant" answers accepted.**
+
+**all questions:**
+```
+                          false /11   accurate disclosure /73   true-compliant /128   mixed /6   other /4
+apollo raw                   0               34                       26                0          1
+apollo + contrast           11               25                        0                6          0
+report/state raw            11                1                        0                5          0
+report/state + contrast     11               16                        0                5          0
+retrained raw               11                4                        1                1          0
+retrained + contrast        11               27                        0                6          0
+judge raw                   11               47                        0                6          0
+judge + contrast            11               53                        0                2          0
+AUROC false vs disclosure: apollo raw 0.25 [.17,.32] → + contrast 1.00; report/state raw 1.00; judge raw 0.999
+AUROC false vs control:    apollo raw 0.43 [.38,.50] → + contrast 1.00; report/state raw 1.00
+```
+
+**read.**
+- the contrast turns apollo's probe from 0/11 to 11/11 with 0/128 true-compliant flagged, in a second
+  family with a different lie shape (report-level, accurate record). the true-count control passes again.
+- **it is not free.** apollo + contrast still flags 25/73 accurate disclosures ("two compliant, one late")
+  across questions (2/14 within the direct question). raw apollo scores honest disclosures as *more*
+  suspicious than the lies (AUROC 0.25): the instructed-pairs direction reads disclosure wording as
+  deceptive, which is §2's refusal confound in a new costume, and the contrast only partly removes it.
+- **where a probe is already good, the contrast hurts:** report/state raw is 11/11, 1/73, 0/128 here;
+  + contrast it flags 16/73 disclosures. retrained 4 → 27. the world-margin adds record/state and
+  disclosure sensitivity that the raw report/state probe did not have on this family.
+- the text judge raw catches 11/11 but flags 47/73 disclosures; + contrast 53/73. the judge is the worst on
+  honest disclosures in this family.
+
+**two-family sentence:** subtracting the counterfactual-world score turns apollo's published probe from
+chance into a working detector in both families tested (legal: 14 → 52 of 121, procurement: 0 → 11 of 11),
+with the true-completion / true-compliant controls passing in both (0/12, 0/128). its cost is false alarms
+on reports that disclose the problem or stay silent (legal `other` 13/13; procurement disclosures 25/73),
+and it degrades a report/state probe that is already accurate on procurement. it is a fix for apollo's
+probe, not a universal improvement.
+
+**caveats:** 11 positives, 9 trajectories, one family per shape, one liar model, one labeller
+(model-assisted, adjudicated). thresholds frozen from other families; achieved false-alarm rates are as
+reported, not matched. needs the true state.

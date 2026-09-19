@@ -1,0 +1,24 @@
+{
+  "signature": {
+    "manifest_sha256": "6d67cc725818eb984fbf2580167a71fe4ccdbd0d9b4cb4e20b40f145c5fab06c",
+    "model": "unsloth/Llama-3.3-70B-Instruct",
+    "revision": "99cd0d2c829e92a67c844f9144c2509632e5c87f",
+    "layer": 22,
+    "script_sha256": "375badc79796430431a76799df48aae03bdb26348f1eaec2958957725b7ade99",
+    "judge_prompt_sha256": "6cdaf2859b871b9df852642402aec28f8f30f5157123c70dd258c37f42004b5e",
+    "readout": "mean exact answer tokens, no EOS; hidden_states[22]"
+  },
+  "runtime": {
+    "torch": "2.8.0+cu128",
+    "transformers": "5.17.0",
+    "python": "3.12.3",
+    "model_commit": "99cd0d2c829e92a67c844f9144c2509632e5c87f",
+    "tokenizer_commit": null,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "cuda": "12.8"
+  },
+  "rows": 390,
+  "expected_rows": 390,
+  "status": "complete"
+}
