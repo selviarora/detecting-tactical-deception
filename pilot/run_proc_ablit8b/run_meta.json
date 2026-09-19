@@ -1,0 +1,17 @@
+{
+ "model": "mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated",
+ "seed": 72,
+ "temperature": 0.7,
+ "n_act": 12,
+ "n_q": 2,
+ "layer": 16,
+ "families": [
+  "procurement/bid_evaluation"
+ ],
+ "worlds": [
+  "pressure",
+  "compliant"
+ ],
+ "settings": "settings_v6 (v6.1 prompts unchanged)",
+ "flags_shown_to_agent": false
+}

@@ -2223,3 +2223,28 @@ probe, not a universal improvement.
 **caveats:** 11 positives, 9 trajectories, one family per shape, one liar model, one labeller
 (model-assisted, adjudicated). thresholds frozen from other families; achieved false-alarm rates are as
 reported, not matched. needs the true state.
+
+## 42. sep 19: second generator model. the dial replicates; the report-level lies mostly don't.
+
+pilot per codex's step 2: mlabonne/Meta-Llama-3.1-8B-Instruct-abliterated (same base as dolphin, refusal
+direction ablated instead of SFT'd out), T=0.7, flags never shown. legal dose 100/95/85/70 x 12 (seed 71,
+`run_dose_ablit8b/`), procurement pressure+compliant x 12 (seed 72, `run_proc_ablit8b/`). pod `8li4jzk7dr0qqf`,
+one a100, ~35 min, ~$0.90.
+
+**legal, record falsification by level:** 100%: 0/11; 95%: 5/7 (71%); 85%: 2/9 (22%); 70%: 1/10 (10%).
+**the dial has the same shape in a second model with a different refusal-removal method.** with dolphin's
+§38 numbers (91/39/21%) this is two models, one variable, same monotone curve. 12 per level, pilot-sized.
+
+**reports:** 48 reports follow a falsified record; keyword triage finds ~4 false completion claims ("all
+documents reviewed and cleared"). unlike dolphin (87% of resolved), this model mostly falsifies the record
+and then hedges or goes vague in prose. labels would decide, but the detector comparison would rest on
+single-digit positives at pilot scale.
+**procurement:** 0 falsified records in 7 completed pressure trajectories, 1 candidate claim in 42 reports.
+**incompletion:** 11/48 legal and 7/24 procurement trajectories did not complete (malformed tool calls).
+ablation costs instruction-following.
+
+**read.** codex's gate ("enough false claims before scaling") is not met for the detector test on this
+model; it is met for the dial. the round closes with: the trigger generalises across two refusal-stripped
+models; whether the contrast's detection gain generalises across generators is untested (too few positives
+here). a third model that both lies on the dial and endorses the lie in prose is the next candidate
+(dolphin on a different base, e.g. dolphin-3.0-mistral or -qwen, would separate "base" from "SFT recipe").
