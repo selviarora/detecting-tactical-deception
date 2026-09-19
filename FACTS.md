@@ -2304,3 +2304,42 @@ that is an existence proof of the thing deepmind §5 asks about and says cannot 
 - the generator saw the tool state while writing, which is the point (the liar knows), and also means the
   probe may read "state in context" plus "report" rather than an intent variable. §38 showed it does not read
   temptation on honest reports; §39/§43 show it reads the mismatch. mechanism unknown.
+
+## 44. sep 19, ~6am: held-out family, cross-family, and a second checkpoint for the no-answer-key probe.
+
+**A. held-out family** (fit on v6.1 with the test family removed; same recipe as `eba3f4ff`; cpu):
+```
+                     train pos   vs confession/disclosure   vs honest-record   vs true-clean control   vs mixed
+legal (dose)            7          .750 [.50,.92]             .831 [.76,.89]     .934 [.87,.98]          .804
+procurement (v6.2)     10         1.000 [1.0,1.0]                                1.000 [1.0,1.0]        1.000
+```
+**B. cross-family** (fit on the other fresh family): fit legal (121 pos) → procurement: 1.000 everywhere.
+fit procurement (11 pos) → legal: chance (.41–.49; .78 vs true-complete).
+**read:** procurement's lie ("yes, three compliant" with the state saying 2 in context) is separable by a probe
+that never saw procurement, at 1.0, for identical text. legal's lie ("95% ≈ complete") is separable well only
+by probes that saw legal-shaped lies; held-out it is .83–.93. §43's sentence holds as a **held-out result in
+one family and a within-family result in the other**.
+
+**C. second checkpoint** (`labels_ablit_stage1.jsonl`: 48 falsified-record reports labelled by selvi with an
+assistant, rule note in file; 13 false claims from 8 trajectories, 21 confessions, 9 mixed, 5 other; plus 108
+honest-record and 66 true-complete reports). the dolphin-fit frozen probe applied to the abliterated llama's own
+L16 activations, cross-checkpoint, no refit:
+```
+vs confession        .985 [.94,1.0]   lies flagged 11/13, confessions 1/21
+vs honest-record     .959 [.92,.99]   7/108 flagged
+vs true-complete     .837 [.78,.90]   16/66 flagged
+vs mixed             .923             vs other .32 (4/5 silent reports flagged)
+blind judge (question + report only) vs confession: .722 [.56,.93]
+```
+**read:** the probe transfers across a checkpoint with a different refusal-removal method, and beats the blind
+judge. its weakness is the same in every family and both models: true "complete" reports (.84 here) and
+silent reports. ranking is the claim; the alarm line is not solved.
+
+**consolidated sentence (§43–§44):** on lies a model chose itself, a linear probe on the liar's own activations,
+with no access to what happened, separates false reports from honest ones (identical text in procurement at
+1.0 held-out; legal .83–.99; a second checkpoint .96–.99) where a text-only reader is at chance. it also
+fires on some true "complete" reports and on silent ones, so it is a readable state, not a deployable monitor.
+
+**limits:** one labeller (model-assisted, adjudicated), no second labeller. two families, two checkpoints of one
+base (llama-3.1-8b). thresholds in-sample. 13 positives on the second checkpoint. rule inconsistency flagged:
+dose row 137 (note-reported claim) is asserts_problem; the same shape in the ablit set is mixed. codex to rule.
