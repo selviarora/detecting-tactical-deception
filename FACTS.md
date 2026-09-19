@@ -2248,3 +2248,9 @@ model; it is met for the dial. the round closes with: the trigger generalises ac
 models; whether the contrast's detection gain generalises across generators is untested (too few positives
 here). a third model that both lies on the dial and endorses the lie in prose is the next candidate
 (dolphin on a different base, e.g. dolphin-3.0-mistral or -qwen, would separate "base" from "SFT recipe").
+
+**§42 corrections (codex):** say "the same ordering appears in a second checkpoint," not "the trigger is about
+refusal-stripped models": both share a base and this does not isolate refusal removal. assigned vs completed:
+95%: 5/12 assigned, 5/7 completed; 85%: 2/12, 2/9; 70%: 1/12, 1/10; 100%: 0/12, 0/11. failures vary by level.
+"ablation costs instruction-following" withdrawn: no matched unablated comparison; observed: frequent malformed
+tool calls. the false-claim count comes from adjudication of the 48 falsified-record reports (below), not regex.
