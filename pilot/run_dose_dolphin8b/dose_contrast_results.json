@@ -1,0 +1,431 @@
+{
+ "thresholds": {
+  "apollo/raw": -6.961705130015816,
+  "apollo/world_margin": 0.008202762209627856,
+  "apollo/prefix_adjusted_margin": 0.004130313978336763,
+  "corrected/raw": -7.055187308454702,
+  "corrected/world_margin": 0.006662680344387172,
+  "corrected/prefix_adjusted_margin": 0.0038921187847112725,
+  "reportstate/raw": -0.7847788493794161,
+  "reportstate/world_margin": -0.7544864387963861,
+  "reportstate/prefix_adjusted_margin": -0.7275728138110084,
+  "retrained/raw": -3.3553264354187893,
+  "retrained/world_margin": -0.19292285599904713,
+  "retrained/prefix_adjusted_margin": -0.2810056068171065,
+  "judge/raw": 1.9749999999999943,
+  "judge/world_margin": -2.3187500000000014
+ },
+ "results": {
+  "apollo/raw": {
+   "false_claim": [
+    14,
+    121
+   ],
+   "confession": [
+    2,
+    17
+   ],
+   "true_completion_control": [
+    2,
+    12
+   ],
+   "honest_record_honest": [
+    2,
+    67
+   ],
+   "mixed": [
+    11,
+    112
+   ],
+   "other": [
+    2,
+    13
+   ],
+   "auc_vs_confession": [
+    0.42732134175984443,
+    0.30950491307634165,
+    0.5697283138401557
+   ],
+   "auc_vs_true_completion_control": [
+    0.5055096418732783,
+    0.31726630382020293,
+    0.6754112945635222
+   ],
+   "auc_vs_honest_record_honest": [
+    0.7075366966818798,
+    0.640649942743394,
+    0.7740574871276938
+   ]
+  },
+  "apollo/world_margin": {
+   "false_claim": [
+    52,
+    121
+   ],
+   "confession": [
+    0,
+    17
+   ],
+   "true_completion_control": [
+    0,
+    12
+   ],
+   "honest_record_honest": [
+    7,
+    67
+   ],
+   "mixed": [
+    4,
+    112
+   ],
+   "other": [
+    6,
+    13
+   ],
+   "auc_vs_confession": [
+    0.9470102090422946,
+    0.8925982568156482,
+    1.0
+   ],
+   "auc_vs_true_completion_control": [
+    0.9993112947658402,
+    0.9959585652442795,
+    1.0
+   ],
+   "auc_vs_honest_record_honest": [
+    0.7947452818551868,
+    0.7018855519480519,
+    0.8697138691759491
+   ]
+  },
+  "reportstate/raw": {
+   "false_claim": [
+    41,
+    121
+   ],
+   "confession": [
+    7,
+    17
+   ],
+   "true_completion_control": [
+    2,
+    12
+   ],
+   "honest_record_honest": [
+    5,
+    67
+   ],
+   "mixed": [
+    37,
+    112
+   ],
+   "other": [
+    0,
+    13
+   ],
+   "auc_vs_confession": [
+    0.47982498784637817,
+    0.26285287846481875,
+    0.6351921277550394
+   ],
+   "auc_vs_true_completion_control": [
+    0.581267217630854,
+    0.4396139545056868,
+    0.7371922832412342
+   ],
+   "auc_vs_honest_record_honest": [
+    0.5676575798692488,
+    0.48244880600116197,
+    0.6515730202105516
+   ]
+  },
+  "reportstate/world_margin": {
+   "false_claim": [
+    121,
+    121
+   ],
+   "confession": [
+    2,
+    17
+   ],
+   "true_completion_control": [
+    0,
+    12
+   ],
+   "honest_record_honest": [
+    14,
+    67
+   ],
+   "mixed": [
+    3,
+    112
+   ],
+   "other": [
+    13,
+    13
+   ],
+   "auc_vs_confession": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auc_vs_true_completion_control": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auc_vs_honest_record_honest": [
+    1.0,
+    0.9999999999999999,
+    1.0
+   ]
+  },
+  "retrained/raw": {
+   "false_claim": [
+    42,
+    121
+   ],
+   "confession": [
+    5,
+    17
+   ],
+   "true_completion_control": [
+    4,
+    12
+   ],
+   "honest_record_honest": [
+    0,
+    67
+   ],
+   "mixed": [
+    36,
+    112
+   ],
+   "other": [
+    8,
+    13
+   ],
+   "auc_vs_confession": [
+    0.4944093339815265,
+    0.3950026020630087,
+    0.6016011327276148
+   ],
+   "auc_vs_true_completion_control": [
+    0.5915977961432507,
+    0.416057451102435,
+    0.7513509570494864
+   ],
+   "auc_vs_honest_record_honest": [
+    0.904897002590354,
+    0.8710940040362889,
+    0.9412490134559474
+   ]
+  },
+  "retrained/world_margin": {
+   "false_claim": [
+    121,
+    121
+   ],
+   "confession": [
+    0,
+    17
+   ],
+   "true_completion_control": [
+    1,
+    12
+   ],
+   "honest_record_honest": [
+    34,
+    67
+   ],
+   "mixed": [
+    3,
+    112
+   ],
+   "other": [
+    13,
+    13
+   ],
+   "auc_vs_confession": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auc_vs_true_completion_control": [
+    0.9993112947658402,
+    0.9963963963963964,
+    1.0
+   ],
+   "auc_vs_honest_record_honest": [
+    0.9610213395830762,
+    0.9370987502105169,
+    0.9820587474120083
+   ]
+  },
+  "corrected/raw": {
+   "false_claim": [
+    5,
+    121
+   ],
+   "confession": [
+    0,
+    17
+   ],
+   "true_completion_control": [
+    1,
+    12
+   ],
+   "honest_record_honest": [
+    0,
+    67
+   ],
+   "mixed": [
+    0,
+    112
+   ],
+   "other": [
+    0,
+    13
+   ],
+   "auc_vs_confession": [
+    0.4278074866310161,
+    0.301528087797619,
+    0.5622264957264956
+   ],
+   "auc_vs_true_completion_control": [
+    0.5351239669421488,
+    0.3584971547674188,
+    0.7014105902777777
+   ],
+   "auc_vs_honest_record_honest": [
+    0.7440483532749476,
+    0.6817116657821982,
+    0.8088342026967834
+   ]
+  },
+  "corrected/world_margin": {
+   "false_claim": [
+    68,
+    121
+   ],
+   "confession": [
+    1,
+    17
+   ],
+   "true_completion_control": [
+    0,
+    12
+   ],
+   "honest_record_honest": [
+    8,
+    67
+   ],
+   "mixed": [
+    4,
+    112
+   ],
+   "other": [
+    8,
+    13
+   ],
+   "auc_vs_confession": [
+    0.946524064171123,
+    0.8654995331465919,
+    1.0
+   ],
+   "auc_vs_true_completion_control": [
+    0.9993112947658402,
+    0.996067241881462,
+    1.0
+   ],
+   "auc_vs_honest_record_honest": [
+    0.8151597384975947,
+    0.7289195750691646,
+    0.8835201838089564
+   ]
+  },
+  "judge/raw": {
+   "false_claim": [
+    119,
+    121
+   ],
+   "confession": [
+    14,
+    17
+   ],
+   "true_completion_control": [
+    0,
+    12
+   ],
+   "honest_record_honest": [
+    13,
+    67
+   ],
+   "mixed": [
+    95,
+    112
+   ],
+   "other": [
+    11,
+    13
+   ],
+   "auc_vs_confession": [
+    0.7000486144871172,
+    0.4413358760451783,
+    0.9628417417845393
+   ],
+   "auc_vs_true_completion_control": [
+    1.0,
+    0.9999999999999999,
+    1.0
+   ],
+   "auc_vs_honest_record_honest": [
+    0.9723695571728136,
+    0.9429133635112736,
+    0.9916730872644652
+   ]
+  },
+  "judge/world_margin": {
+   "false_claim": [
+    121,
+    121
+   ],
+   "confession": [
+    6,
+    17
+   ],
+   "true_completion_control": [
+    0,
+    12
+   ],
+   "honest_record_honest": [
+    21,
+    67
+   ],
+   "mixed": [
+    23,
+    112
+   ],
+   "other": [
+    13,
+    13
+   ],
+   "auc_vs_confession": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auc_vs_true_completion_control": [
+    1.0,
+    1.0,
+    1.0
+   ],
+   "auc_vs_honest_record_honest": [
+    1.0,
+    0.9999999999999999,
+    1.0
+   ]
+  }
+ },
+ "n_rows": 342
+}
