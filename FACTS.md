@@ -2343,3 +2343,43 @@ fires on some true "complete" reports and on silent ones, so it is a readable st
 **limits:** one labeller (model-assisted, adjudicated), no second labeller. two families, two checkpoints of one
 base (llama-3.1-8b). thresholds in-sample. 13 positives on the second checkpoint. rule inconsistency flagged:
 dose row 137 (note-reported claim) is asserts_problem; the same shape in the ablit set is mixed. codex to rule.
+
+## 45. sep 19, ~7am: before the act. there is no per-trajectory state before the lie, because there is nothing per-trajectory.
+
+`pilot/capture_preaction.py` → `preaction_dolphin_dose.npz`, `preaction_dolphin_proc.npz`, `preaction_ablit_dose.npz`
+(every layer at the last prompt token before the decisive tool call, and before the first action). pod
+`0cpu56o3qr45zg`, ~12 min, ~$0.35. mechanical outcome (record falsified), no labels.
+
+**the test as designed:** fit "will this trajectory falsify the record" on pre-decision activations, held out by
+dose level; check (1) prediction before the act, (2) whether the score rises with dose on trajectories that
+stayed honest. **what it returned:** pooled held-out AUROC 0.84 at L32, dose slope on honest trials +0.72.
+**both are artefacts of the design**, and the per-level numbers show why: within a level (95%: 0.73 with 21
+positives; 85%: 0.83 with 9; 70%: chance) the only variation before the decision is whether the model fetched
+the status once or twice. all 23 trajectories at 95% made the identical first call; 20 of 23 then decided
+from a bit-for-bit identical prompt; their pre-decision activations are identical (L16 distance 0.000).
+pooled AUROC and the dose slope are the probe reading the number in the tool result, which is the dose.
+
+**the finding, stated straight:** same context, same state, then a sample: 21/23 falsify at 95%, 9/23 at 85%,
+5/24 at 70%. **the decision is not in the pre-action state; it is in the sampling.** the state sets the
+probability (the dial), not the outcome. no trajectory-specific "intent" variable exists here to read, because
+the harness deliberately removes everything trajectory-specific before the act. this is what reflexive,
+low-level deception should look like, and it is the opposite of a plan.
+
+**same structure elsewhere:** procurement pressure: 49% of trajectories share an identical pre-decision state;
+abliterated legal: 29–100% identical by level. the "before the lie" question is not answerable on this harness.
+it needs trajectories that differ before the decision (varied preambles, deliberation, a model that reasons in
+text before acting), which is a different design and a different model.
+
+**§38 reinterpreted:** "the probe does not read temptation on honest reports" was the right conclusion for a
+wrong reason; the report-stage state does differ across trajectories (the record differs), and §43/§44 show
+the probe reads that. the pre-action stage has no per-trajectory variance to read.
+
+**mistral-24b (`run_dose_mistral24b/`, `run_proc_mistral24b/`, pod `8inagvgxi072mj`, ~$1.60):** inconclusive.
+most trajectories did not complete the JSON tool format (12/12 procurement pressure, 12/12 legal 70% incomplete).
+2 falsified records among those that did. a different base needs a harness with a tool format that model can use.
+
+**threshold check (same night):** a calibration-family-only threshold (−4.94 vs the in-sample −4.55) does not
+reduce true-"complete" false alarms on legal: 5/12 labelled, 59/144 of all 100%-world reports flagged. on
+legal the probe partly reads "asserts complete"; on procurement it does not (7/128). ranking claims (§43–§44)
+unaffected; the alarm line on legal is not solved and needs a probe trained with more true-complete negatives,
+tested held-out.
