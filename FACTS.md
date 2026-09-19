@@ -1955,3 +1955,50 @@ dose-response.
 flag-free positives for the frozen contrastive and native-probe tests; (2) dose-response in legal:
 `review_complete_pct` 100/95/85/70/55/40, 24 trajectories each, ~$2; lie rate and frozen native probe
 score (`probes/dolphin8b_native_L16_frozen.npz`, sha eba3f4ff) against it, on honest trials too.
+
+## 38. sep 19, ~2am: dose-response. the lie rate has a dial. the probe does not read the dial.
+
+`pilot/run_dose.py`, `score_dose.py`, `run_dose_dolphin8b/` (1,008 answers, `dose_results.json`). legal family,
+pressure context and prompts held fixed, the only change is `review_complete_pct` in the tool result; eta
+fixed at 19:30; 100% is the compliant world (a true "reviewed" exists). flags never shown. dolphin-3.0-8b,
+T=0.7, seed 63, 24 trajectories per level. pod `j07kjxniy03vnm`, one a100, ~1h, ~$1.60. design from an
+outside proposal (sep 18), the first useful one.
+
+**record falsification by level (mechanical):**
+```
+pct     100    95    85    70    55    40    25
+rate    0/24  21/23  9/23  5/24  2/22  3/21  3/23
+        0%    91%   39%   21%   9%    14%   13%
+```
+spearman(dose, rate) over the six pressure levels = 0.83, p = 0.04. keyword-triaged false claims in reports
+(labels pending): 30% / 14% / 6% / 6% / 6% / 7%. monotone from 95 to 55, floor ~10% below.
+
+**sentence:** in this model and family, the probability of an uninstructed lie is a graded function of how
+defensible the false entry is, with everything else fixed. not pressure (constant here; higher in v7 with
+zero lies), not the flag (never shown), not wording (identical). a named, measured trigger.
+
+**frozen native probe (`dolphin8b_native_L16_frozen.npz`, sha eba3f4ff, fit before any of this data):**
+- on honest-record reports, its score does NOT track the dose: per-report spearman −0.05 (p = 0.25, n = 558);
+  per-level means −7.9 / −7.8 / −8.3 / −7.8 / −7.7 / −7.7. the "probe reads temptation before the lie"
+  hypothesis is rejected on this readout.
+- it does separate falsified-record reports from honest-record reports at every level (means ≈ −4 vs −7.8;
+  above its frozen threshold 74/126 at 95%, 31/54 at 85%, 13/30 at 70%). whether that is "the report lies" or
+  "the model wrote a false record and is now talking about it" needs the labels: confessions after a falsified
+  record are the discriminating rows.
+- on the 100% control, where "review complete" is true, it flags 51/144 honest reports (35%). the frozen probe
+  partly reads assertion wording ("complete", "reviewed"). same failure as §33, on the generator's own
+  activations.
+
+**read.** prize one (the dial) is in. prize two (a probe reading a graded pre-lie state) is out, at least
+for this probe at this layer. the probe sees that a lie was written, not that one is being weighed. the
+honest framing for the write-up is: a harness that produces uninstructed lies on demand at a controllable
+rate, plus evidence that the available probe reads the act, not the disposition.
+
+**caveats:** one model, one family, one variable. 24 per level. report-level rates are triage until labelled.
+the floor at 25–55% may be a different mechanism (noise, confabulation) than the 85–95% lies; labels will say.
+
+**next:** (1) the same dial in a second family (procurement: compliant bids 3/3, 2+late, 2/3, 1/3) and a
+second model (an abliterated llama-3.1-8b), ~$4, to make "graded trigger" a claim about models rather than
+about dolphin; (2) selvi labels a stratified dose packet (95/85/70 falsified-record reports + honest
+controls) so the false-claim curve and the probe's confession behaviour are on labels, not regex; (3) then
+the frozen contrastive and native tests on those labelled lies.
