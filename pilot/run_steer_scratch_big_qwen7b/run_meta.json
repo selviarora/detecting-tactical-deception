@@ -1,0 +1,18 @@
+{
+ "model": "Qwen/Qwen2.5-7B-Instruct",
+ "run": "run_scratch500_qwen7b",
+ "layer": 14,
+ "alphas": [
+  -48.0,
+  -24.0,
+  -12.0,
+  0.0,
+  12.0,
+  24.0,
+  48.0
+ ],
+ "n": 8,
+ "n_honest": 20,
+ "seed": 701,
+ "design": "direction fit on the other history at </scratch>; injected on answer tokens only; paired seeds; random orthogonal control"
+}
