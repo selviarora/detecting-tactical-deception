@@ -2793,3 +2793,9 @@ produces both"; not run.
 
 **next:** a 96-trajectory hunt (seed 201) queued behind the 2×2 build; expected ~24 completed prefixes, ~1–2
 liars if the incidence holds. the frozen 2×2 probe is applied to everything as it lands (`analysis/s58_2x2_transfer.py`).
+
+**§58 addendum, 32b harvest cut.** `run_harvest_qwen32b` (Qwen2.5-32B-Instruct, procurement, 50 direct samples per
+trajectory) was stopped after 20 pressure trajectories, all 20 incomplete (declined to award or failed the tool format),
+~1 gpu-hour, ~$1.60, no usable positives. the 32b does not reach the award step in this harness; a harness with a
+tool format it can use (§52 note) is the prerequisite, not more samples. partial outputs kept. the pod moved on
+to the qwen3 thinking-mode run (§59, pending).
