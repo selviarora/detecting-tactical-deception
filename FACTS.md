@@ -2991,3 +2991,35 @@ prompt that keeps the scratchpad uninformative by construction, or many more his
 **caveats:** two histories, both procurement, one model, keyword-triaged outcomes, one seed. the scratchpad
 instruction is a prompt change. the text reader is tf-idf + logistic regression; a stronger text baseline (70b judge
 reading the scratchpad) has not been run and is the obvious next objection.
+
+## 64. sep 19, ~4:50pm: timeline inside the scratchpad. the state does not see the lie earlier than the text does.
+
+codex's reply to the §63 brief (verbatim gist): the pure "state carries information absent from the token prefix" is
+impossible for a deterministic transformer; the achievable bars are (a) a cheap probe beats a strong text monitor at
+matched FPR, (b) earlier linear accessibility than a text reader of the same prefix, (c) the causal version: hold the
+scratchpad text fixed, move the state along the direction, see whether the lie rate moves, with random and
+orthogonal controls and paired seeds. (c) is the full version. this section is (b).
+
+`pilot/capture_scratch_timeline.py` replayed the 1000 §63 rollouts (pod `6nh7inack18kyc`, one a100, ~10 min, ~$0.30)
+and saved the raw L14 state after sampled scratch token k ∈ {1,2,4,8,16,32} and at the closing tag, plus the exact k
+tokens of text. `analysis/s64_timeline.py`: within-history 10-fold, state vs tf-idf on the same k tokens
+(char n-grams for very short prefixes), bootstrap on the difference, permutation on the state.
+
+| k (scratch tokens seen) | 30da state | 30da text | diff CI | 1bf6 state | 1bf6 text |
+|---|---|---|---|---|---|
+| 1 ("After" / "Checking") | .704 | .765 | [-.15, +.01] | .504 | .501 |
+| 2 | .790 | .829 | [-.14, +.03] | .509 | .511 |
+| 4 | .588 | .760 | [-.29, -.07] | .375 | .421 |
+| 8 | .665 | .817 | [-.26, -.05] | .503 | .604 |
+| 16 | .738 | .779 | [-.20, +.06] | .605 | .587 |
+| 32 | .834 | .860 | [-.10, +.05] | (5 lies left) | |
+| end | .916 | .927 | [-.08, +.04] | .701 | .688 |
+
+**read:** evidence: on 30da the first sampled word already carries the signal (text .77 with one token; lying
+rollouts open differently), and the text reader matches or beats the state at every position, significantly at k =
+4 and 8. on 1bf6 nothing is readable by either until the end. the lie forms with the words, not before them; the
+state has no earlier access than a reader of the same prefix. (b) is negative. (a) and (c) remain; (c) is
+`run_steer_scratch_qwen7b`, launched on the same pod.
+
+**side observation (text, exploratory):** the opening word of the private scratchpad predicts the coming lie at .77
+on 30da. "After fetching the bids, we found 2 compliant…" precedes lies more often than "Checking…". not pursued.
