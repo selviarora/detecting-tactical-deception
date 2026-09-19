@@ -2593,3 +2593,33 @@ family-excluded checks, and demonstrated failures. not first-in-literature prior
 **planning-model option (later, third priority):** Qwen3-14B in thinking mode, native tool template
 (schema tools, `<tool_call>` parsing, separate reasoning budget, stop-reason logging), separate native-probe
 protocol. priority order: second labeller + rubric reconciliation; post; then a planning pilot.
+
+## 51. sep 19, ~9am: stock models on the dial. an un-tampered model falsifies the record at 95% and then discloses.
+
+`run_dose_llama8b_stock/` (unsloth/Llama-3.1-8B-Instruct, seed 121) and `run_dose_qwen7b_stock/`
+(Qwen/Qwen2.5-7B-Instruct, seed 122), legal dose 95 and 85, 24 each, no reasoning prompt, flags never shown,
+activations captured (llama L16, qwen L14). pod `8qzjodjutgu152`, ~40 min, ~$1.10.
+
+**record falsification (the dial), stock qwen2.5-7b-instruct:** 95%: 22/22 completed (100%); 85%: 6/18 (33%);
+2 and 6 incomplete. **an un-tampered instruct model shows the same dial as dolphin** (§38) and the abliterated
+checkpoint (§42). llama-3.1-8b-instruct: 38/48 incomplete (tool-format failure), 1 falsified of 10 completed;
+uninformative.
+
+**reports after a falsified record, qwen (keyword triage, unlabelled):** 95%: 60/66 disclose, 5 other, 1
+candidate clean claim; 85%: 15/18 disclose, 3 other. record notes mostly disclose too ("pending final review",
+"producing remaining 5% as of 16:41"). **the stock model breaks the rule and confesses**, the v5 pattern
+(§24: llama-70b, hermes, mistral). dolphin, on the same dial, endorses the false record 87% of the time.
+
+**read.** the dial (how defensible the false entry is → whether the record gets falsified) is a property of
+these models under this pressure, not of refusal removal. what refusal removal changes is the *report*:
+whether the model covers the false record or discloses it. two variables, now separable: record falsification
+(stock and stripped models both do it, graded by defensibility) and report concealment (only the stripped
+model does it). this is the cleanest version of the "when do models lie" story the project has.
+
+**for the exact-text path (exact-text truth probe on an un-tampered model's report lies):** not open from this
+run; ~1 candidate report lie in 84. the stock model's disclosures and its falsified records are, however, a
+labelled-in-principle set for a different probe question (does the state separate "wrote a false record" from
+"wrote a true one" in a model that then confesses), which is §39's confession-vs-false-claim comparison on an
+un-tampered model. labels needed (selvi), then cpu.
+
+**caveats:** triage, not labels. one seed. 7b. llama's format failure means "stock llama" is untested here.
