@@ -34,17 +34,19 @@ for t in mixed:
     rows = [r for r in by[t] if r["closed"] and not np.isnan(z["X_scratch"][ki[r["key"]]]).any()]; y = np.array([r["lie_kw"] for r in rows], int)
     if y.sum() < 3 or (y == 0).sum() < 3: print(f"   {t[:8]}: too few of one class after closing-scratch filter"); continue
     Xs = np.stack([z["X_scratch"][ki[r["key"]]].astype("float32") for r in rows]); Xa = np.stack([z["X_answer"][ki[r["key"]]].astype("float32") for r in rows]); T = [r["scratch"] for r in rows]
-    data[t] = (Xs, Xa, y, T)
-    print(f"   {t[:8]} (n={len(y)}, lies {y.sum()}):  scratch-end STATE {loo_probe(Xs, y):.3f}   scratch TEXT {loo_text(T, y):.3f}   answer-state (after the fact) {loo_probe(Xa, y):.3f}")
+    import re as _re
+    B = np.array([[len(r["scratch"]), len(r["scratch"].split()), int(bool(_re.search(r"\b(three|3)\s+(compliant )?bids|at least (three|3)|counted|internal|in-house", r["scratch"], _re.I))), int(bool(_re.search(r"\b(two|2)\s+compliant|only (two|2)|couldn'?t|not (fully )?meet", r["scratch"], _re.I)))] for r in rows], float)
+    print(f"   {t[:8]} (n={len(y)}, lies {y.sum()}):  scratch-end STATE {loo_probe(Xs, y):.3f}   scratch TEXT {loo_text(T, y):.3f}   behavioural (length, 3-count cue, shortfall cue) {loo_probe(B, y):.3f}   answer-state (after the fact) {loo_probe(Xa, y):.3f}")
+    data[t] = (Xs, Xa, y, T, B)
 if len(data) >= 2:
     print("\n4. TRANSFER across the two liars (whole-history holdout): fit on one, test on the other")
     ts = list(data)
     for i in range(len(ts)):
         for j in range(len(ts)):
             if i == j: continue
-            Xs_i, _, y_i, T_i = data[ts[i]]; Xs_j, _, y_j, T_j = data[ts[j]]
-            f = fit(Xs_i, y_i); v = TfidfVectorizer(ngram_range=(1, 2)).fit(T_i); c = LogisticRegression(C=1.0, max_iter=5000, class_weight="balanced").fit(v.transform(T_i), y_i)
-            print(f"   fit {ts[i][:8]} -> test {ts[j][:8]}:  state {roc_auc_score(y_j, f(Xs_j)):.3f}   text {roc_auc_score(y_j, c.decision_function(v.transform(T_j))):.3f}")
+            Xs_i, _, y_i, T_i, B_i = data[ts[i]]; Xs_j, _, y_j, T_j, B_j = data[ts[j]]
+            f = fit(Xs_i, y_i); v = TfidfVectorizer(ngram_range=(1, 2)).fit(T_i); c = LogisticRegression(C=1.0, max_iter=5000, class_weight="balanced").fit(v.transform(T_i), y_i); fb = fit(B_i, y_i)
+            print(f"   fit {ts[i][:8]} -> test {ts[j][:8]}:  state {roc_auc_score(y_j, f(Xs_j)):.3f}   text {roc_auc_score(y_j, c.decision_function(v.transform(T_j))):.3f}   behavioural {roc_auc_score(y_j, fb(B_j)):.3f}")
 print("\nexamples (first mixed prefix):")
 if mixed:
     rows = by[mixed[0]]
