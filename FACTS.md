@@ -2870,3 +2870,10 @@ trajectories, under a rule frozen before they were read. observational; the note
 **what this is not, yet (codex's 9/10 list):** two lying histories, not five to ten; one model, one family;
 keyword-triaged outcomes, no second labeller; tf-idf baseline, not a 70b judge; the alarm line flags the
 same-context siblings. each is a scheduled expansion, not an open question.
+
+**§60 corrections (from `pilot/reproduce_stock_probe.py`, the one-command cpu reproduction):** the pooled note-rule
+count double-counted hunt-2. correct: 38 pressure histories resampled; **33 disclosers → 0 lying; 5 omitters → 2
+lying; Fisher one-sided p = 0.014** (hunt-3 alone p = 0.091). the text baseline's recall at the probe's true-yes FPR
+over all three runs is **0.26** (0.32 was computed before run 3). every other §60 number reproduces exactly.
+`python pilot/reproduce_stock_probe.py` verifies input hashes, proves zero overlap between the 51 test histories and
+the 37 training histories, recomputes every figure, asserts the main result, and writes `pilot/REPRO_STOCK_PROBE.md`.
