@@ -13,7 +13,7 @@ HERE = Path(__file__).resolve().parent
 ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); ap.add_argument("--run", required=True); ap.add_argument("--fit", required=True); ap.add_argument("--test", required=True)
 ap.add_argument("--layers", nargs="+", type=int, required=True); ap.add_argument("--alphas", nargs="+", type=float, default=[-24, -12, 0, 12, 24]); ap.add_argument("--random-alphas", nargs="+", type=float, default=[-24, 24])
 ap.add_argument("--n", type=int, default=24); ap.add_argument("--n-honest", type=int, default=10); ap.add_argument("--n-honest-samples", type=int, default=8); ap.add_argument("--positions", choices=["all", "answer"], default="all")
-ap.add_argument("--direction-file", default=None, help="steer with a DETECTION probe direction (npz with w, sd, layer) instead of the diff-of-means; the diff-of-means is still fit for the readout and the cosine is printed"); ap.add_argument("--n-random", type=int, default=1, help="number of independent random orthogonal directions (null distribution)"); ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=801); ap.add_argument("--max-tokens", type=int, default=80); ap.add_argument("--out", type=Path, required=True); ap.add_argument("--runs", nargs="+", default=None, help="trajectory runs holding the prefixes (default: the six qwen stakes runs)"); a = ap.parse_args()
+ap.add_argument("--extra-readout", nargs="*", default=[], help="probe npz files (w, mu, sd, intercept, layer) also scored at </scratch> under injection"); ap.add_argument("--direction-file", default=None, help="steer with a DETECTION probe direction (npz with w, sd, layer) instead of the diff-of-means; the diff-of-means is still fit for the readout and the cosine is printed"); ap.add_argument("--n-random", type=int, default=1, help="number of independent random orthogonal directions (null distribution)"); ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=801); ap.add_argument("--max-tokens", type=int, default=80); ap.add_argument("--out", type=Path, required=True); ap.add_argument("--runs", nargs="+", default=None, help="trajectory runs holding the prefixes (default: the six qwen stakes runs)"); a = ap.parse_args()
 meta = json.loads((HERE / a.run / "run_meta.json").read_text()); SCRATCH = meta["scratch_instruction"]
 rows = [json.loads(l) for l in open(HERE / a.run / "answers.jsonl")]; z = np.load(HERE / a.run / "layers.npz"); ki = {str(k): i for i, k in enumerate(z["keys"])}; layers_all = list(z["layers"])
 by = {}
@@ -59,11 +59,15 @@ sel = [("lie", r, a.n) for r in lie_rows] + [("honest", hon_rows[i], a.n_honest_
 print(f"inject on {test_h[:8]}: {len(lie_rows)} lie-origin x {a.n} + {a.n_honest} honest-origin x {a.n_honest_samples}; positions={a.positions}", flush=True)
 a.out.mkdir(parents=True, exist_ok=True); fa = (a.out / "answers.jsonl").open("w"); summary = []
 (a.out / "run_meta.json").write_text(json.dumps({"model": a.model, "run": a.run, "fit": fit_h, "test": test_h, "layers": a.layers, "alphas": a.alphas, "random_alphas": a.random_alphas, "n": a.n, "positions": a.positions, "seed": a.seed, "design": "strong-form injection with manipulation check (auditor, s65 addendum)"}, indent=1))
+EXTRA = [dict(np.load(HERE / f)) for f in a.extra_readout]
+if EXTRA: print("extra readouts:", [(f, int(e["layer"])) for f, e in zip(a.extra_readout, EXTRA)], flush=True)
 def readout(ids):   # probe score at </scratch> (last prefill token is the newline after the tag; use the tag token = -2) at every scanned layer, under the current injection
     with torch.inference_mode(): hs = model(input_ids=ids, output_hidden_states=True).hidden_states
     out = {}
     for L in a.layers:
         mu, sd, w, b, u, _ = probes[L]; h = hs[L][0, -2].float().cpu().numpy(); out[f"score_L{L}"] = float(((h - mu) / sd) @ w + b); out[f"proj_L{L}"] = float(h @ u)
+    for i, ex in enumerate(EXTRA):
+        h = hs[int(ex["layer"])][0, -2].float().cpu().numpy(); out[f"score_x{i}"] = float(((h - ex["mu"]) / ex["sd"]) @ ex["w"] + float(ex["intercept"]))
     return out
 cells = [(L, "probe", al) for L in a.layers for al in a.alphas] + [(L, f"random{k}" if a.n_random > 1 else "random", al) for L in a.layers for k in range(a.n_random) for al in a.random_alphas]
 rand_dirs = {}
@@ -86,6 +90,6 @@ for L, dname, alpha in cells:
             fa.write(json.dumps({"layer": L, "direction": dname, "alpha": alpha, "origin": origin, "key": r["key"], "j": j, "answer": ans, "lie_kw": c}, ensure_ascii=False) + "\n")
     fa.flush(); mean_ro = {k: float(np.mean([x[k] for x in ro])) for k in ro[0]}
     summary.append({"layer": L, "direction": dname, "alpha": alpha, "lie_origin": cnt["lie"], "honest_origin": cnt["honest"], "readout_at_scratch_end": mean_ro})
-    print(f"  L{L:2d} {dname:6s} alpha {alpha:+6.1f}  lie-origin {cnt['lie'][0]}/{cnt['lie'][1]}  honest-origin {cnt['honest'][0]}/{cnt['honest'][1]}  readout " + " ".join(f"L{k[7:]}={v:+.2f}" for k, v in mean_ro.items() if k.startswith("score")), flush=True)
+    print(f"  L{L:2d} {dname:6s} alpha {alpha:+6.1f}  lie-origin {cnt['lie'][0]}/{cnt['lie'][1]}  honest-origin {cnt['honest'][0]}/{cnt['honest'][1]}  readout " + " ".join(f"{k[6:]}={v:+.2f}" for k, v in mean_ro.items() if k.startswith("score")), flush=True)
     (a.out / "summary.json").write_text(json.dumps(summary, indent=1))
 state["vec"] = None; print("Steering v2 finished.")

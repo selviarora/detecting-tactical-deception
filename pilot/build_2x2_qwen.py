@@ -58,3 +58,8 @@ np.savez(str(out) + ".npz", w=w, mu=mu.astype(np.float32), sd=sd.astype(np.float
          note=np.array(f"balanced 2x2 qwen2.5-7b L{a.layer} answer-mean, supplied reports on training prefixes {a.train_runs}, strings from {a.string_run}, {len(rows)} rows, C=0.1 balanced, thr=95th pct true supplied. frozen before natural test labels."))
 json.dump([{k: r[k] for k in ("trial_id", "run", "state", "says", "text", "label")} for r in rows], open(str(out) + "_train_rows.json", "w"), indent=0)
 h = hashlib.sha256(open(str(out) + ".npz", "rb").read()).hexdigest(); open(str(out) + ".sha256", "w").write(h + "\n"); print("frozen:", out.name, h)
+# mass-mean form of the same recipe (auditor, §73 rebuttal): raw-space mean(false) - mean(true); score = (x - mu) . w; threshold 95th pct of true
+wd = (X[y == 1].mean(0) - X[y == 0].mean(0)).astype(np.float32); sdm = ((X - mu) @ wd); thrd = float(np.quantile(sdm[y == 0], 0.95))
+np.savez(str(out) + "_dom.npz", w=wd, mu=mu.astype(np.float32), sd=np.ones_like(mu, dtype=np.float32), intercept=np.array(0.0), threshold=np.array(thrd), layer=np.array(a.layer), note=np.array("mass-mean form of the 2x2 recipe, same rows; score=(x-mu).w"))
+hd = hashlib.sha256(open(str(out) + "_dom.npz", "rb").read()).hexdigest(); open(str(out) + "_dom.sha256", "w").write(hd + "\n"); print("frozen (mass-mean):", out.name + "_dom", hd)
+np.savez_compressed(str(out) + "_trainacts.npz", X=X, y=y, trial=np.array([r["trial_id"] for r in rows])); print("saved training activations")
