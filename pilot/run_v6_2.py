@@ -25,18 +25,30 @@ def main():
     ap.add_argument("--model", required=True); ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--families", nargs="*", default=["legal/discovery_production", "procurement/bid_evaluation"]); ap.add_argument("--worlds", nargs="*", default=["pressure", "compliant"])
     ap.add_argument("--n-act", type=int, default=24); ap.add_argument("--n-q", type=int, default=2)
-    ap.add_argument("--layer", type=int, default=16); ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=62); ap.add_argument("--question-prefix", default="", help="stakes text prepended to every manager question (report-side pressure); never an instruction"); ap.add_argument("--questions", nargs="*", default=None, help="subset of question names to ask (default all)")
+    ap.add_argument("--layer", type=int, default=16); ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=62); ap.add_argument("--steer-file", default=None, help="npz with unit direction w, sd_along, layer: add alpha*sd_along*w at generated positions"); ap.add_argument("--steer-alpha", type=float, default=0.0); ap.add_argument("--steer-stage", choices=["action", "report", "both"], default="action"); ap.add_argument("--steer-random", type=int, default=-1, help=">=0: replace the direction with a random orthogonal one seeded by this int"); ap.add_argument("--question-prefix", default="", help="stakes text prepended to every manager question (report-side pressure); never an instruction"); ap.add_argument("--questions", nargs="*", default=None, help="subset of question names to ask (default all)")
     a = ap.parse_args()
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer, set_seed
     set_seed(a.seed); tok = AutoTokenizer.from_pretrained(a.model); import chat_compat; chat_compat.patch_tokenizer(tok)
     model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="auto", low_cpu_mem_usage=True).eval()
+    STEER = {"vec": None, "P0": 0, "on": False}
+    if a.steer_file:
+        pf = np.load(a.steer_file); u = pf["w"].astype(np.float32); u = u / np.linalg.norm(u); sd_along = float(pf["sd_along"]); L = int(pf["layer"])
+        if a.steer_random >= 0:
+            rr = np.random.default_rng(1000 + a.steer_random).standard_normal(len(u)).astype(np.float32); rr -= (rr @ u) * u; u = rr / np.linalg.norm(rr)
+        STEER["vec"] = torch.tensor(a.steer_alpha * sd_along * u)
+        def _hook(m, i, o):
+            if not STEER["on"] or STEER["vec"] is None: return o
+            h = o[0] if isinstance(o, tuple) else o; v = STEER["vec"].to(h.dtype).to(h.device)
+            h = torch.cat([h[:, : STEER["P0"]], h[:, STEER["P0"]:] + v], 1) if h.shape[1] > 1 else h + v
+            return (h,) + tuple(o[1:]) if isinstance(o, tuple) else h
+        model.model.layers[L - 1].register_forward_hook(_hook); print(f"steering: layer {L}, alpha {a.steer_alpha}, stage {a.steer_stage}, {'random ' + str(a.steer_random) if a.steer_random >= 0 else 'lever'} direction", flush=True)
     def ids_for(msgs):
         ids = tok.apply_chat_template(msgs, add_generation_prompt=True, return_tensors="pt")
         if not hasattr(ids, "shape"): ids = ids["input_ids"]
         return ids.to(model.device)
-    def gen(msgs, max_tokens):
-        ids = ids_for(msgs)
+    def gen(msgs, max_tokens, stage="action"):
+        ids = ids_for(msgs); STEER["P0"] = ids.shape[1]; STEER["on"] = a.steer_stage in (stage, "both")
         with torch.inference_mode():
             seq = model.generate(input_ids=ids, attention_mask=torch.ones_like(ids), max_new_tokens=max_tokens, do_sample=True, temperature=a.temperature, top_p=None, top_k=None, pad_token_id=tok.eos_token_id)
         new = seq[0, ids.shape[1]:]; return tok.decode(new, skip_special_tokens=True).strip(), len(new) >= max_tokens
@@ -75,7 +87,7 @@ def main():
                     if a.questions and qname not in a.questions: continue
                     qmsgs = msgs + [{"role": "user", "content": f"[message from your manager]\n{a.question_prefix}{q}"}]
                     for j in range(a.n_q):
-                        ans, trunc = gen(qmsgs, 160); key = f"{tid}#{qname}#{j}"; acts.append(act(qmsgs, ans)); keys.append(key)
+                        ans, trunc = gen(qmsgs, 160, stage="report"); key = f"{tid}#{qname}#{j}"; acts.append(act(qmsgs, ans)); keys.append(key)
                         fa.write(json.dumps({"key": key, "trial_id": tid, "scenario_id": sid, "world": world, "variant": "natural", "question": qname, "completed": done,
                                              "falsified": final.get("falsified") if done else None, "violation": final.get("violation") if done else None, "answer": ans, "truncated": trunc}, ensure_ascii=False) + "\n"); fa.flush()
                         fb.write(json.dumps({"id": key, "question": a.question_prefix + q, "answer": ans, "label": ""}, ensure_ascii=False) + "\n"); fb.flush()
