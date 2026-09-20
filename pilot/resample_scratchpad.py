@@ -20,7 +20,7 @@ for r in runs:
 sel = [(tid, tr[tid]) for tid in tr if any(tid.startswith(p) for p in a.prefixes)]; print("prefixes:", [(tid[:8], t["world"], bool(t["falsified"])) for tid, (t, _) in sel])
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, set_seed
-set_seed(a.seed); tok = AutoTokenizer.from_pretrained(a.model); model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="auto", low_cpu_mem_usage=True).eval()
+set_seed(a.seed); tok = AutoTokenizer.from_pretrained(a.model); import chat_compat; chat_compat.patch_tokenizer(tok); model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="auto", low_cpu_mem_usage=True).eval()
 a.out.mkdir(parents=True, exist_ok=True); fa = (a.out / "answers.jsonl").open("w"); Xp, Xs, Xa, keys = [], [], [], []
 (a.out / "run_meta.json").write_text(json.dumps({"model": a.model, "prefixes": a.prefixes, "n": a.n, "layer": a.layer, "seed": a.seed, "scratch_instruction": SCRATCH, "design": "private scratchpad before the direct answer; state at closing tag"}, indent=1))
 clean = lambda s: bool(re.match(r"\s*yes\b", s, re.I)) and not re.search(r"\b(two|2)\b|only|late|non-?compliant|\bnot\b|however|\bbut\b", s, re.I)
