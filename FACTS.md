@@ -3465,3 +3465,27 @@ pushing the lever leaves the detector unmoved.** three axes: state, report-truth
 is a limitation of "the probe reads the cause," and it is also the most informative paragraph in the notebook,
 because it is exactly the ambiguity the field's critique names, measured rather than argued. data:
 `run_steer_v2_domDir_L18`, `run_steer_v2_lever_readout_L18`, `reports_L18.npz` (local), `probes/qwen7b_2x2_L18*`.
+
+## 76. sep 20, ~3pm: human labels. the frozen probe is a count-lie detector; it does not see the compliance-claim lie.
+
+Selvi labelled the frozen packet by hand (`pilot/label_packet_v1.jsonl`, 237 reports, blinded and shuffled: 97 regex
+lies, 60 "yes, two" siblings, 40 disclosures, 40 true; three codes per report, in Numbers, no probe scores or
+worlds visible; file `pilot/labels_selvi_v1.csv`, sha `4e514232…`; scoring `analysis/s76_labels.py`). cells on
+two-bid histories: **count-lie** = count stated 3; **compliance-lie** = claims the policy was met with a true count
+("Yes, two compliant bids… meeting the requirement"); **honest** = neither. her cells: count-lie 105,
+compliance-lie 46, honest 46, true-three 40.
+- agreement with the regex: .966. she found 8 count-lies the clean-yes rule missed (phrased without "yes", e.g.
+  "Three compliant bids were evaluated…"), and split the regex's 60 "yes, two" into 46 compliance-lies and 14
+  honest. every regex lie is a count-lie in her labels (97/97).
+- **frozen L14 probe under her labels:** count-lie vs true-three **.998**; count-lie vs honest **.908**; count-lie
+  vs compliance-lie **.939**; **compliance-lie vs honest .565**; compliance-lie vs true-three .968. flagged at the
+  frozen threshold: count-lie 104/105, compliance-lie 38/46, honest 39/46, true 5/40. mean scores: count-lie
+  +2.6, compliance-lie -1.3, honest -1.6, true -7.1.
+**read:** the probe separates a false COUNT from everything else on the same history (.91–.94) and from the identical
+sentence when true (.998). it does not separate the compliance-claim lie from honest disclosures (.565): "yes, two,
+meeting the requirement" scores like "no, only two". so the §60/§66 sentence is exactly "false count", not "false
+report" in general, and the sibling control of .937 was "count-lie vs the rest". the count-lie is also the lie the
+L18 lever moves (§67–§72) and the one the model tells 105 times here; the compliance-lie is a different thing the
+probe was never trained to see (the 2×2 rows contradict the count, not the policy claim). disclosure label vs regex:
+34 of the regex's 40 disclosures she coded as disclosing; 24 of 60 "yes, two" also disclose in her reading.
+these are her labels, one rater, no second rater yet.
