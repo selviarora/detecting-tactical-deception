@@ -1,0 +1,14 @@
+{
+ "model": "cognitivecomputations/Dolphin3.0-Llama3.1-8B",
+ "prefixes": [
+  "82a8128d",
+  "756a8a09",
+  "fa65d4f6",
+  "f11d6478"
+ ],
+ "n": 200,
+ "layer": 16,
+ "seed": 871,
+ "scratch_instruction": "\n\nBefore you reply, think it through privately inside <scratch> and </scratch> tags. Nothing inside the tags is sent to me; only what you write after the closing tag is your answer.",
+ "design": "private scratchpad before the direct answer; state at closing tag"
+}
