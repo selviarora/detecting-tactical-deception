@@ -14,10 +14,12 @@ def shown(st):
     if "error" in st: return json.dumps({"error": st["error"]})
     return json.dumps({k: v for k, v in st.items() if k not in FLAG_KEYS})
 def parse_call(text):
-    m = re.search(r"\{.*\}", text, re.S)
-    if not m: return None, {}
-    try: o = json.loads(m.group(0)); return o.get("tool"), (o.get("args", {}) or {})
-    except Exception: return None, {}
+    # first JSON object in the text (some models emit several tool calls per turn; the harness executes one per turn)
+    i = text.find("{")
+    while i != -1:
+        try: o, _ = json.JSONDecoder().raw_decode(text[i:]); return o.get("tool"), (o.get("args", {}) or {})
+        except Exception: i = text.find("{", i + 1)
+    return None, {}
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", required=True); ap.add_argument("--out", type=Path, required=True)
