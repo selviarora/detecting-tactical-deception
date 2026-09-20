@@ -1,0 +1,13 @@
+{
+ "model": "Qwen/Qwen2.5-7B-Instruct",
+ "prefixes": [
+  "11ab08e6",
+  "6c3ccc41",
+  "c099c464"
+ ],
+ "n": 300,
+ "layer": 14,
+ "seed": 702,
+ "scratch_instruction": "\n\nBefore you reply, think it through privately inside <scratch> and </scratch> tags. Nothing inside the tags is sent to me; only what you write after the closing tag is your answer.",
+ "design": "private scratchpad before the direct answer; state at closing tag"
+}

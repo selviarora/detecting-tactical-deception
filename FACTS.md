@@ -3322,3 +3322,17 @@ way to "I regret that we couldn't strictly adhere to the policy… only 2 compli
 answers" at -72; it removes two thirds of the lie with the reasoning text fixed, at the cost of a more hedged
 register everywhere. caveats: one direction, one target history, count component, keyword-scored, no unrelated-task
 check yet (the side-effects cell is same-task honest answers only).
+
+**§71 addendum, third pair (fit 6c3ccc41 → inject 30da04d2, L18, 19 lie-origin × 16 = 304 per cell, seed 812):**
+probe **109, 139, 153, 168, 187** for -24 … +24 (36% → 62%), monotone, readout -14.0 → +15.1. three random
+orthogonal directions: random0 175 / 124 (-24 / +24), random1 **191 / 99**, random2 144 / 163. honest-origin 0–2 /80.
+**read, carefully:** the probe is the most extreme cell in the expected direction on both sides (lowest at -24,
+highest at +24). but on this pair one of three random directions (random1) shows a dose-consistent effect of the
+same magnitude with the OPPOSITE sign (-92 across the dose vs the probe's +78), and random0 moves -51. so for this
+pair the honest sentence is "the probe direction moves the count monotonically in the predicted sign; at this norm
+random directions on this history can move it as much, in either sign," and the ten-direction null of §67 addendum 3
+(same target, different fit direction, n=8: randoms within ±19) does not automatically carry over: the random
+draws here are orthogonal to the 6c3c direction, not to whatever the true lever is. what distinguishes the probe
+from random1 is only the sign being the one the probe predicted. a ten-random null at this seed/n is the cheap fix
+and is not run tonight. across the three counted pairs (§67, §71, this): monotone in the predicted sign every time;
+random null clean on pair 1 (ten dirs), thin on pairs 2 and 3 (three dirs, one opposite-signed swing here).

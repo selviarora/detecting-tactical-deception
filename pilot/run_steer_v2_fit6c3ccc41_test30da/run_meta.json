@@ -1,0 +1,24 @@
+{
+ "model": "Qwen/Qwen2.5-7B-Instruct",
+ "run": "run_scratch_combo",
+ "fit": "6c3ccc4152aa",
+ "test": "30da04d2530e",
+ "layers": [
+  18
+ ],
+ "alphas": [
+  -24.0,
+  -12.0,
+  0.0,
+  12.0,
+  24.0
+ ],
+ "random_alphas": [
+  -24.0,
+  24.0
+ ],
+ "n": 16,
+ "positions": "all",
+ "seed": 812,
+ "design": "strong-form injection with manipulation check (auditor, s65 addendum)"
+}
