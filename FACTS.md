@@ -3584,3 +3584,22 @@ in place. so the lever is a contributor the model actually uses (a random axis o
 not the lie's sole carrier; the count claim survives its removal at 60–80% of baseline. that is the effect-size
 sentence the auditor asked for, and it bounds what "the direction that controls the lie" can mean: a dial with
 range, not a switch.
+
+**§78 addendum 2, dolphin reverse direction (fit 756a8a09 → inject 82a8128d, L26, 43 lie-origin × 8 = 344 per cell,
+10 honest-origin × 4; two-sided null from 20 random cells, `analysis/null2.py`):** baseline 201/344 (58%, off the
+ceiling this time).
+
+| | -24 | -12 | 0 | +12 | +24 |
+|---|---|---|---|---|---|
+| lie-origin (of 344) | **131** | 165 | 201 | 232 | **260** |
+| effect / z / rank | -70 / **-12.1** / 1 of 21 | -36 / -6.2 / 1 | | +31 / +5.4 / 1 | +59 / **+10.2** / 1 of 21 |
+| paired up / down | 0 / 70 | 0 / 36 | | 31 / 0 | 59 / 0 |
+| honest-origin (of 40) | 3 | 3 | 10 | 13 | 16 |
+
+random null: mean +0.1, sd 5.8, range -11 … +14. **read:** the cleanest dial in the notebook: on a second model,
+in the direction where the target is not at ceiling, the false count moves 38% → 76% across the dose, every
+paired flip in the predicted direction (70 down / 0 up at -24; 59 up / 0 down at +24), z 10 to 12 against the
+pooled two-sided random null. the honest-origin scratchpads move 10 → 3 and 10 → 16 of 40 (z -3.4 / +3.9): lies
+induced on scratchpads whose reasoning did not lead to one, small n, the 20 × 24 pass with the native detector
+readout is running. dolphin is refusal-stripped (say so); the recipe, layers, scan rule and null are the ones used
+on qwen, unchanged.
