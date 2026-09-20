@@ -3384,3 +3384,35 @@ NOT established by §73; what §73 establishes is only that the LR detector's we
 three tests decide it and are running as §74: (1) the lever as a detector: project the natural reports onto the
 diff-of-means direction, AUROC; (2) the 2×2 recipe in mass-mean form: AUROC on the natural reports, cosine with the
 lever, steer with it against ten randoms; (3) the 2×2 detector scored at `</scratch>` under the lever's push.
+
+## 74. sep 20, ~1pm: the three loop tests, CPU half. the detector, the lever, and the mass-mean probe read three different things.
+
+`analysis/s74_loop.py` on `reports_L18.npz` (L18 answer-mean states of the frozen label packet: 97 natural lies,
+60 "yes, two" siblings, 40 disclosures, 40 + 200 true "yes, three" from the compliant world; teacher-forced after
+their own histories) and the L18 rebuild of the 2×2 recipe (`probes/qwen7b_2x2_L18.npz`, sha `d027e80b…`, LR form;
+`…_L18_dom.npz`, sha `f927219f…`, mass-mean form; same 592 supplied rows, 14 + 23 training histories, no natural
+rollout touched).
+
+| direction, applied to the natural report states | AUROC lies vs true "yes, three" | lies vs same-context siblings | cosine with the lever |
+|---|---|---|---|
+| **2×2 LR detector (L18)** | **1.000** | **.997** | -0.017 |
+| 2×2 mass-mean detector (L18) | .997 | **.108** | -0.085 |
+| **the lever** (diff-of-means lie-minus-honest at `</scratch>`, L18) | **.084** | .545 | 1 |
+
+**read:**
+1. *is the lever a detector?* no. projected onto the lever, true "yes, three" reports score HIGHER than lies
+   (.084 = .916 inverted) and same-context siblings are at chance (.545). the lever separates "says three" from
+   "says two" regardless of truth: it is a count-word axis, not a truth axis. that is exactly what §67/§71/§72
+   showed it does when pushed (moves the count word), and why §69's forced-"Yes, " readout tracked it.
+2. *is a mass-mean detector the same as the LR detector?* no. the mass-mean form of the identical recipe separates
+   lies from compliant-world true reports (.997) but ranks the liar's own honest siblings ABOVE its lies (.108):
+   it reads the STATE (two bids vs three bids in the record), not whether the report matches the state. the
+   whitened LR form is the one that reads the state × report interaction (.997 vs siblings). the auditor's
+   geometry point stands (raw cosines between LR and mass-mean directions mean little), but it does not rescue the
+   loop: the mass-mean probe and the LR probe detect different variables.
+3. so the picture is three axes, not one: **state** (mass-mean 2×2 reads it), **report-truth interaction** (LR
+   2×2 reads it; the exact-text detector), and **count word** (the lever; the pre-lie dial). the detector reads
+   whether the report contradicts the state; the lever sets which count word comes out. they are different
+   variables, and §73's "orthogonal" was right for the wrong reason.
+the GPU half (mass-mean detector used as a push against ten randoms; the LR and mass-mean detectors read at
+`</scratch>` under the lever's push) is running and will be appended.
