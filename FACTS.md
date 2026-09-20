@@ -3542,3 +3542,23 @@ the reasoning text fixed) moves the false count monotonically in the predicted s
 of 955 (sd 13): the lever is the only direction that lowers it, by ~8 random-sds; rank 1 of 11. the honest-origin
 cell, useless on qwen (0/40), moves here from 16 to 26 of 40 (small n; the honest-origin-heavy reverse pass is
 running with 20 × 24). the reverse direction, the mistral gate, and the dolphin omission lever follow.
+
+**§78 correction, two-sided null (auditor, sep 20 ~4:30pm; `analysis/null2.py`, the rule for every null from
+here: all random cells, both signs, one distribution; lever reported as rank and z against it):** dolphin direction
+1, lie-origin, 20 random cells: mean +0.8, sd 14.6, range -36 … +25 (random1 +24 = 915 and random3 +24 = 927 are
+real random dips, so "the lever is the only direction that lowers it" was wrong). lever -24: effect **-103, z -7.1,
+|effect| rank 1 of 21, paired 117 down / 14 up**. lever -12: -33, z -2.3, rank 2/21. lever +12 / +24: +20 / +18,
+z +1.3 / +1.2, rank 5 and 6 of 21: **a null at ceiling, not "capped"**. honest-origin (n = 40): -24 → 16 (effect
+-6, z -5.7, rank 1/21, paired 0 up / 6 down), +24 → 26 (+4, z +3.1, paired 6/2); consistent sign, too small to
+call; the 20 × 24 pass is running.
+
+**§67 addendum 3 and §71 addendum 2, recomputed two-sided (same rule):** qwen pair 1 (fit 1bf6 → 30da, L18, n = 8):
+random null from 20 cells mean +5.5, sd 6.4, range -7 … +19. lever +24: +30, **z +3.8, rank 1/21** (paired 30/0).
+lever -24: -10, z -2.4, **rank 6 of 21** (paired 0/10): the minus side is not the largest |effect| among the
+random cells two-sided; it is separated by its paired signature and its z, not by rank. qwen pair 3 (fit 6c3c → 30da,
+n = 8): null mean -0.2, sd 9.5, range -26 … +19. lever -24: -20, z -2.1, rank 2/21 (paired 1/21); +24: +16, z +1.7,
+rank 4/21 (paired 18/2). so across the three qwen pairs and the dolphin pair, the honest two-sided statement is:
+the lever's effect is monotone in the predicted sign every time with clean paired signatures (p < .001), and its
+z against the pooled random null is 3.8 / 2.4 (pair 1), 2.1 / 1.7 (pair 3), and 7.1 (dolphin minus side); rank 1
+of 21 twice (qwen +24 pair 1, dolphin -24), 2 to 6 of 21 otherwise. the prior "rank 1 of 11 both sides" lines were
+one-sided and are superseded by these.
