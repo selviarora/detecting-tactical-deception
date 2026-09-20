@@ -3562,3 +3562,25 @@ the lever's effect is monotone in the predicted sign every time with clean paire
 z against the pooled random null is 3.8 / 2.4 (pair 1), 2.1 / 1.7 (pair 3), and 7.1 (dolphin minus side); rank 1
 of 21 twice (qwen +24 pair 1, dolphin -24), 2 to 6 of 21 otherwise. the prior "rank 1 of 11 both sides" lines were
 one-sided and are superseded by these.
+
+## 79. sep 20, ~5pm: ablation. projecting the lever out at every scratch position removes about a fifth of the lie, never all of it.
+
+`steer_scratch_v2.py --mode ablate` (auditor's effect-size run): at layer 18, at every position from the first
+scratch token, the residual is replaced by h − (h·u)u with u the 1bf6 lie-minus-honest direction; no alpha. ten
+random orthogonal directions ablated the same way as the null. three qwen targets, frozen scratchpads, paired seeds
+(pod `ojlv0737voncr7`).
+
+| target | baseline | lever ablated | paired up / down | ten random ablations (mean, sd) | z |
+|---|---|---|---|---|---|
+| 30da04d2 (152 / cell) | 71 | **55** | 1 / 17 | 67 … 74 (71.8, 2.1) | **-8.0** |
+| 6c3ccc41 (152) | 29 | **24** | 0 / 5 | 25 … 30 (28.5, 1.6) | -2.8 |
+| c099c464 (72) | 5 | 3 | 0 / 2 | 5 … 6 (5.3, 0.5) | -4.6 (tiny cell) |
+
+honest-origin 0/40 everywhere. the own-layer LR readout rises under ablation (17 → 31 on 30da) because that probe's
+weight vector is partly anti-aligned with u; the projection onto u is zero by construction, which is what ablation
+guarantees. **read:** evidence: removing this one direction from every scratch position lowers the false count by
+23% / 17% / 40% relative, with clean paired signatures and beyond ten random ablations, and leaves most of the lie
+in place. so the lever is a contributor the model actually uses (a random axis of the same rank changes nothing),
+not the lie's sole carrier; the count claim survives its removal at 60–80% of baseline. that is the effect-size
+sentence the auditor asked for, and it bounds what "the direction that controls the lie" can mean: a dial with
+range, not a switch.
