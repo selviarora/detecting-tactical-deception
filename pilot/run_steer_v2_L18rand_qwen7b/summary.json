@@ -1,0 +1,53 @@
+[
+ {
+  "layer": 18,
+  "direction": "probe",
+  "alpha": 0.0,
+  "lie_origin": [
+   210,
+   456
+  ],
+  "honest_origin": [
+   0,
+   80
+  ],
+  "readout_at_scratch_end": {
+   "score_L18": 17.665386627460347,
+   "proj_L18": -3.675936509822977
+  }
+ },
+ {
+  "layer": 18,
+  "direction": "random",
+  "alpha": -24.0,
+  "lie_origin": [
+   217,
+   456
+  ],
+  "honest_origin": [
+   0,
+   80
+  ],
+  "readout_at_scratch_end": {
+   "score_L18": 18.38974587670688,
+   "proj_L18": -3.676706618276136
+  }
+ },
+ {
+  "layer": 18,
+  "direction": "random",
+  "alpha": 24.0,
+  "lie_origin": [
+   206,
+   456
+  ],
+  "honest_origin": [
+   0,
+   80
+  ],
+  "readout_at_scratch_end": {
+   "score_L18": 17.107452030839593,
+   "proj_L18": -3.6778140561334016
+  }
+ }
+]

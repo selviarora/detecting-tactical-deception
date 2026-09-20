@@ -3152,3 +3152,40 @@ the BEHAVIOUR, not yet a test of the probe (there are no natural lies for it to 
 test therefore has to use supplied contradictions (as the 2×2 training did) or a family where the model does lie;
 neither is done. data: `run_legal_qwen7b_stakes_s311`, `run_resample_legal_s311_qwen7b`, `run_hiring_qwen7b_stakes_s312`,
 `run_resample_hiring_s312_qwen7b`. one stakes line per family, one seed; a different pressure wording might change it.
+
+## 67. sep 19, ~10pm: strong-form text-frozen injection. layer 18 is a dial for the count word; random is flat; layer 25 moves the yes/no instead; layer 14 does nothing.
+
+design (the auditor's, §65 addendum): `steer_scratch_v2.py`. direction = diff of means (lie minus honest) at the
+`</scratch>` state of history 1bf66e2d (9 lies, from the all-layer capture), one direction per layer; injected on
+history 30da04d2's frozen scratchpads at EVERY position from the first scratch token (tokens forced, so the text is
+identical across branches), 19 lie-origin scratchpads × 24 samples + 10 honest-origin × 8, paired seeds, alphas
+±12 ±24 in probe-sd units, layers 25 / 18 / 14 (chosen by the §66 scan with a spread rule). MANIPULATION CHECK: the
+state at `</scratch>` is re-read under each injection and scored with each layer's own LR probe. random orthogonal
+direction of the same norm as control (the chain's own random cells run last; a separate job `run19` with seed 802
+ran the L18 random cells early: `run_steer_v2_L18rand_qwen7b`). pod `6nh7inack18kyc`, shared with the harvest.
+
+**lie-origin scratchpads, 456 answers per cell (clean false "three" | says three | starts yes):**
+
+| layer | -24 | -12 | 0 | +12 | +24 | dose slope / 24, perm p |
+|---|---|---|---|---|---|---|
+| **L18 probe** | **169** / 240 / 392 | 195 / 252 / 404 | 217 / 270 / 412 | 244 / 294 / 418 | **277** / 325 / 426 | **+.47, p < .001** |
+| L18 random (seed 802) | 217 | | 210 | | 206 | flat |
+| L25 probe | 186 / 282 / **313** | 214 / 286 / 378 | 217 / 270 / 412 | 217 / 269 / 444 | 208 / 256 / **455** | +.08, p .18 |
+| L14 probe | 211 / 278 / 417 | 220 / 275 / 411 | 217 / 270 / 412 | 216 / 263 / 408 | 216 / 263 / 407 | +.01, p .87 |
+
+readout at `</scratch>` (own-layer LR score, mean over scratchpads): L18 1.8 → 9.5 → 17.2 → 25.0 → 32.7; L25 -6.0 →
+10.8; L14 -30.9 → +8.7. every push landed. random at L18 leaves the L18 readout at 17–18. honest-origin: 0 → 2 /80
+at L18 (same sign, too few to test). answer length 76–96 chars, coherent.
+
+**read:** evidence: at layer 18, with the scratchpad text held fixed, moving the state along the lie-minus-honest
+direction fit on the OTHER history changes how often this history writes the false count, monotonically with
+dose (37% → 61%), with the push verified to have landed, and a random direction of the same norm does nothing.
+this is the causal sentence codex wrote, met at one fit/inject pair, and the sign is the expected one (unlike §65's
+L14 answer-only injection, which is now explained: L14 is not where it acts). L25 is a different lever: its
+direction leaves "three" alone on the plus side and swings the compliance claim (starts-yes 313 → 455, starts-no
+70 → 0). two levers at two depths: the count claim and the yes.
+**what it is not:** one direction fit on 9 lies, one target history, the count component of the report, text-frozen
+(the model's deliberation is not steered, only its state after it), keyword-triaged outcomes, and the paired
+per-scratchpad test against the chain's own random cells is still pending. replication on the five new liars (fit on
+a count-falsifier, inject on the others) is the next run; the free-generation route and the logit readout are still
+in the overnight chain.
