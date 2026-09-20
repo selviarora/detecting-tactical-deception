@@ -3345,3 +3345,33 @@ opposite-signed swing seen with three randoms was one draw (random1: +19 / -26) 
 and seed, leans slightly against alpha; the probe direction is the largest effect in the predicted sign on both
 sides. pairs 1 and 3 now have ten-direction nulls; pair 2 (6c3c → c099) has three. random directions leave the
 L18 readout within ±1.5; only the probe moves it.
+
+## 73. sep 20, ~7:40am: the loop does not close. the detection probe's direction is orthogonal to the steering direction, and pushing it moves the count the wrong way.
+
+`run23b`: the frozen 2×2 recipe (`build_2x2_qwen.py`, supplied contradictory reports teacher-forced on the
+training histories of `run_proc_qwen7b_stock` + `run_harvest_qwen7b`, never the natural rollouts) rebuilt at
+**layer 18** → `probes/qwen7b_2x2_L18.npz`. its weight direction (w/sd, unit) used as the injection direction on
+30da's frozen scratchpads at all positions (`steer_scratch_v2.py --direction-file`), 19 lie-origin × 8 = 152 per
+cell, ten random orthogonal directions at ±24, seed 831. `run_steer_v2_probeDir_L18`.
+
+- **cosine(detection-probe direction, diff-of-means lie-minus-honest at `</scratch>`) = -0.02.** orthogonal.
+- steering with the detection direction: **88, 77, 73, 69, 63, 57** for alpha -48, -24, -12, 0, +12, +24.
+  monotone, and the sign is INVERTED relative to its label: adding the "false report" direction lowers the false
+  count; subtracting it raises it (up to 58% at -48).
+- ten randoms: at -24 → -10 … +3 (mean -4.1); at +24 → -6 … +4 (mean -1.3). the detection direction's -24 (+8) and
+  +24 (-12) are outside the random range on both sides (rank 1 of 11 each), so it is not inert.
+- the readout of the natural-lie LR probe at `</scratch>` does not move under it (15.6 → 16.9 across -48 … +24),
+  whereas the diff-of-means direction moved that readout 2 → 33 (§67). honest-origin 0–1 /40.
+
+**read:** evidence: the direction a frozen detection probe learns from supplied contradictions is not the direction
+that produces the natural lie: they are orthogonal, and the detection direction steers the count word
+dose-dependently in the opposite sign without touching the natural-lie readout. so the auditor's sentence "the
+probe reads the cause, not a correlate" is NOT earned by this test; what is earned is "the probe reads a
+direction that is causally coupled to the count claim (it moves it, beyond ten randoms) but is a different
+direction from, and sign-inverted relative to, the one that lie-minus-honest identifies." one candidate reading,
+untested: the detection probe encodes "this report contradicts what I know"; pushing that up makes the model
+behave as if it were contradicting itself and it corrects toward the true count. a second, also untested: the
+count claim sits in a subspace of at least two directions, and the two probes read different axes of it. either
+way the DeepMind/Apollo objection ("a probe that correlates with deception isn't the mechanism") stands for the
+detection probe, and the causal result (§67, §71) belongs to the diff-of-means direction, not to the detector.
+this is the most important negative of the night and goes in the post next to §67.
