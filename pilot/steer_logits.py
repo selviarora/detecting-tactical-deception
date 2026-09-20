@@ -49,7 +49,7 @@ for tid, d in targets.items():
     print(f"target {tid[:8]}: {len(lies)} lie-origin + {len(sel[tid]) - len(lies)} honest-origin scratchpads; honest class of target: yes_two {sum(yes2(r['answer']) for r in hon)} / nonyes {sum(not re.match(chr(92)+'s*yes'+chr(92)+'b', r['answer'], re.I) for r in hon)}", flush=True)
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
-tok = AutoTokenizer.from_pretrained(a.model); model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="auto", low_cpu_mem_usage=True).eval()
+tok = AutoTokenizer.from_pretrained(a.model); import chat_compat; chat_compat.patch_tokenizer(tok); model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="auto", low_cpu_mem_usage=True).eval()
 ids_of = lambda words: sorted({tok(w, add_special_tokens=False)["input_ids"][0] for w in words})
 T3, T2, TY, TN = ids_of([" three", "three", " 3", "3", " Three"]), ids_of([" two", "two", " 2", "2", " Two"]), ids_of(["Yes", " Yes", "yes"]), ids_of(["No", " No", "no"])
 print("token ids: three", T3, "two", T2, "yes", TY, "no", TN, flush=True)

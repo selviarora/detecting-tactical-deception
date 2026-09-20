@@ -17,7 +17,7 @@ for r in (a.runs or ("run_proc_qwen7b_stakes", "run_proc_qwen7b_stakes2", "run_p
         if t["completed"]: tr[t["trial_id"]] = (t, m.get("question_prefix", ""))
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
-tok = AutoTokenizer.from_pretrained(a.model); model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="auto", low_cpu_mem_usage=True).eval()
+tok = AutoTokenizer.from_pretrained(a.model); import chat_compat; chat_compat.patch_tokenizer(tok); model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="auto", low_cpu_mem_usage=True).eval()
 E, F, keys = [], [], []
 for i, r in enumerate(rows):
     t, qp = tr[r["trial_id"]]; q = qp + S.SETTINGS[t["scenario_id"]]["questions"]["direct"] + SCRATCH

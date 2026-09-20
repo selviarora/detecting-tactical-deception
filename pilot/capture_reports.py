@@ -22,7 +22,7 @@ for rn in ["run_resample_qwen7b", "run_resample2_qwen7b", "run_resample3_qwen7b"
 rows += [extra[i] for i in rng.choice(len(extra), min(a.extra_true, len(extra)), replace=False)]; print(f"{len(rows)} reports to capture at L{a.layer}", flush=True)
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
-tok = AutoTokenizer.from_pretrained(a.model); model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="auto", low_cpu_mem_usage=True).eval()
+tok = AutoTokenizer.from_pretrained(a.model); import chat_compat; chat_compat.patch_tokenizer(tok); model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="auto", low_cpu_mem_usage=True).eval()
 X = []
 for i, r in enumerate(rows):
     t, qp = tr[r["traj"]]; q = qp + S.SETTINGS[t["scenario_id"]]["questions"]["direct"]
