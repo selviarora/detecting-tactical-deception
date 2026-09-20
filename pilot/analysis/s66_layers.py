@@ -13,7 +13,7 @@ ans = [json.loads(l) for l in open(run / "answers.jsonl")]; z = np.load(run / "l
 by = {}
 for a in ans:
     if a["closed"]: by.setdefault(a["trial_id"], []).append(a)
-H = list(by); assert len(H) == 2
+H = [h for h in by if any(h.startswith(x) for x in sys.argv[2:4])] if len(sys.argv) >= 4 else list(by); assert len(H) == 2, f"need exactly two histories (pass two prefixes as argv 2 and 3); have {[h[:8] for h in by]}"
 def fit(X, y):
     mu, sd = X.mean(0), X.std(0) + 1e-6; c = LogisticRegression(C=0.1, max_iter=3000, class_weight="balanced").fit((X - mu) / sd, y); return lambda v: ((v - mu) / sd) @ c.coef_[0] + c.intercept_[0]
 def cv(X, y):
