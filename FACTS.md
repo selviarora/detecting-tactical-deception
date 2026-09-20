@@ -3646,3 +3646,17 @@ tool call, but the content of the reasoning is a refusal in all 32, not an inter
 `run_proc_gptoss20b_stakes_s372`. tally so far, models that override AND misreport: qwen2.5-7b (report), dolphin-8b
 (report; refusal-stripped), mistral-7b (record). override but disclose: gemma-2-9b, llama-3.1-8b, mistral-24b, phi-4.
 never override under this line: gpt-oss-20b. harness-incompatible: deepseek distills.
+
+## 81. sep 20, ~7:30pm: third balance death. three pods terminated mid-run; what the ten-minute pulls saved.
+
+`list-pods` returned empty with three pods live (E: pooled → cross-setting → joint ablation; H: dolphin
+honest-origin pass, dolphin omission, gold mistral dial; J: λ sweep). cause: account balance exhausted, with three
+pods drawing $4.77/h and no balance check by me all afternoon. the §62 failure for the third time, now with the
+rule that was missing: **a running spend ledger and a balance check with Selvi every two hours, and no pod launched
+that cannot finish on the last stated balance.** saved locally by the pulls: pooled direction complete (25 cells);
+dolphin honest-origin pass 11 of 25 cells (all five probe cells, three random cells); λ sweep at 0 and 0.25
+complete, 0.5 partial (32 trajectories, 338 of ~440 screen answers, no scratchpads); cross-setting legal 834 of
+1344 answers; dolphin omission: partial trajectories for two conditions. lost outright: gold mistral dial (capture
+never finished), joint ablation (not started), hiring cross-setting, λ 0.75 and 1.0, dolphin honest-origin randoms
+2–9, dolphin omission conditions zero/random. relaunch list, in order: dolphin honest-origin randoms, λ 0.5 rest +
+0.75 + 1.0, gold mistral dial, cross-setting, joint ablation, dolphin omission.
