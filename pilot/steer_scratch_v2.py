@@ -13,7 +13,7 @@ HERE = Path(__file__).resolve().parent
 ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); ap.add_argument("--run", required=True); ap.add_argument("--fit", required=True); ap.add_argument("--test", required=True)
 ap.add_argument("--layers", nargs="+", type=int, required=True); ap.add_argument("--alphas", nargs="+", type=float, default=[-24, -12, 0, 12, 24]); ap.add_argument("--random-alphas", nargs="+", type=float, default=[-24, 24])
 ap.add_argument("--n", type=int, default=24); ap.add_argument("--n-honest", type=int, default=10); ap.add_argument("--n-honest-samples", type=int, default=8); ap.add_argument("--positions", choices=["all", "answer"], default="all")
-ap.add_argument("--n-random", type=int, default=1, help="number of independent random orthogonal directions (null distribution)"); ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=801); ap.add_argument("--max-tokens", type=int, default=80); ap.add_argument("--out", type=Path, required=True); a = ap.parse_args()
+ap.add_argument("--direction-file", default=None, help="steer with a DETECTION probe direction (npz with w, sd, layer) instead of the diff-of-means; the diff-of-means is still fit for the readout and the cosine is printed"); ap.add_argument("--n-random", type=int, default=1, help="number of independent random orthogonal directions (null distribution)"); ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=801); ap.add_argument("--max-tokens", type=int, default=80); ap.add_argument("--out", type=Path, required=True); a = ap.parse_args()
 meta = json.loads((HERE / a.run / "run_meta.json").read_text()); SCRATCH = meta["scratch_instruction"]
 rows = [json.loads(l) for l in open(HERE / a.run / "answers.jsonl")]; z = np.load(HERE / a.run / "layers.npz"); ki = {str(k): i for i, k in enumerate(z["keys"])}; layers_all = list(z["layers"])
 by = {}
@@ -30,8 +30,12 @@ XA = np.stack([z["X_end"][ki[r["key"]]].astype(np.float32) for r in by[fit_h]]);
 for L in a.layers:
     Li = layers_all.index(L); X = XA[:, Li]; mu, sd = X.mean(0), X.std(0) + 1e-6; c = LogisticRegression(C=0.1, max_iter=3000, class_weight="balanced").fit((X - mu) / sd, yA)
     dom = X[yA == 1].mean(0) - X[yA == 0].mean(0); u = (dom / np.linalg.norm(dom)).astype(np.float32)   # diff-of-means direction (auditor): robust with few positives; LR kept for the readout score
+    if a.direction_file:
+        pf = np.load(HERE / a.direction_file); assert int(pf["layer"]) == L, f"direction file is layer {int(pf['layer'])}, asked for {L}"
+        w_raw = pf["w"].astype(np.float32) / pf["sd"].astype(np.float32); u_probe = (w_raw / np.linalg.norm(w_raw)).astype(np.float32)
+        print(f"L{L}: cosine(detection-probe direction, diff-of-means lie-minus-honest) = {float(u_probe @ u):+.3f}", flush=True); u = u_probe
     probes[L] = (mu, sd, c.coef_[0], float(c.intercept_[0]), u, float(np.sqrt(np.sum((sd * u) ** 2))))
-    print(f"L{L}: fit on {fit_h[:8]} ({yA.sum()} lies); sd_along={probes[L][5]:.3f}", flush=True)
+    print(f"L{L}: fit on {fit_h[:8]} ({yA.sum()} lies); sd_along={probes[L][5]:.3f}; direction={'detection probe ' + a.direction_file if a.direction_file else 'diff-of-means'}", flush=True)
 rng = np.random.default_rng(a.seed)
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
