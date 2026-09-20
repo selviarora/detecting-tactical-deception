@@ -3416,3 +3416,15 @@ rollout touched).
    variables, and §73's "orthogonal" was right for the wrong reason.
 the GPU half (mass-mean detector used as a push against ten randoms; the LR and mass-mean detectors read at
 `</scratch>` under the lever's push) is running and will be appended.
+
+**§74 GPU half, part 1 (mass-mean detector used as the push; `run_steer_v2_domDir_L18`, L18, 30da's frozen
+scratchpads, all positions, 152 per cell, ten random orthogonal directions, seed 851):** cosine(mass-mean 2×2
+direction, lever) = -0.10. cells for alpha -48, -24, -12, 0, +12, +24: **104, 88, 80, 74, 71, 56.** monotone and
+sign-inverted relative to its label (adding the "false report" mass-mean direction lowers the false count; at -48
+it raises it to 68%). ten randoms at ±24: 71 … 77, flat. readouts at `</scratch>`: the mass-mean detector's own
+score moves -79 → +23 (it is the pushed axis), the LR detector's score moves -21 → +12 (the two detectors share
+enough to co-move), the natural-rollout LR probe (the §67 readout) stays at 17.6–19.3, unchanged. so the mass-mean
+detector behaves like the LR detector did in §73: it is a lever on the count word, in the opposite sign, and it
+does not touch the direction that lie-minus-honest identifies. combined with the CPU half: the mass-mean 2×2
+reads STATE, and pushing "state looks like the false-report cell" makes the model write the true count more. part
+2 (the lever pushed, both detectors read) follows.
