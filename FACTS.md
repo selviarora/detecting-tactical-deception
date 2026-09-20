@@ -3336,3 +3336,12 @@ draws here are orthogonal to the 6c3c direction, not to whatever the true lever 
 from random1 is only the sign being the one the probe predicted. a ten-random null at this seed/n is the cheap fix
 and is not run tonight. across the three counted pairs (§67, §71, this): monotone in the predicted sign every time;
 random null clean on pair 1 (ten dirs), thin on pairs 2 and 3 (three dirs, one opposite-signed swing here).
+
+**§71 addendum 2, ten-random null for the third pair (`run_steer_v2_pair3null_qwen7b`, same seed 812, n = 8 → 152
+per cell):** baseline 75. probe -24 → **55 (-20)**, +24 → **91 (+16)**, readout -14.0 / +15.1. ten random
+orthogonal directions: at -24 → -1, 0, +1, +3, +4, +4, +5, +7, +10, +19 (mean +5.2, sd 5.5); at +24 → -26, -18,
+-13, -5, -3, -1, +1, +1, +3, +4 (mean -5.7, sd 9.5). probe **rank 1 of 11 on both sides, z -4.5 / +2.3**. so the
+opposite-signed swing seen with three randoms was one draw (random1: +19 / -26) from a null that, on this history
+and seed, leans slightly against alpha; the probe direction is the largest effect in the predicted sign on both
+sides. pairs 1 and 3 now have ten-direction nulls; pair 2 (6c3c → c099) has three. random directions leave the
+L18 readout within ±1.5; only the probe moves it.
