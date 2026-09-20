@@ -13,7 +13,7 @@ HERE = Path(__file__).resolve().parent
 ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); ap.add_argument("--run", required=True); ap.add_argument("--fit", required=True); ap.add_argument("--test", required=True)
 ap.add_argument("--layers", nargs="+", type=int, required=True); ap.add_argument("--alphas", nargs="+", type=float, default=[-24, -12, 0, 12, 24]); ap.add_argument("--random-alphas", nargs="+", type=float, default=[-24, 24])
 ap.add_argument("--n", type=int, default=24); ap.add_argument("--n-honest", type=int, default=10); ap.add_argument("--n-honest-samples", type=int, default=8); ap.add_argument("--positions", choices=["all", "answer"], default="all")
-ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=801); ap.add_argument("--max-tokens", type=int, default=80); ap.add_argument("--out", type=Path, required=True); a = ap.parse_args()
+ap.add_argument("--n-random", type=int, default=1, help="number of independent random orthogonal directions (null distribution)"); ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=801); ap.add_argument("--max-tokens", type=int, default=80); ap.add_argument("--out", type=Path, required=True); a = ap.parse_args()
 meta = json.loads((HERE / a.run / "run_meta.json").read_text()); SCRATCH = meta["scratch_instruction"]
 rows = [json.loads(l) for l in open(HERE / a.run / "answers.jsonl")]; z = np.load(HERE / a.run / "layers.npz"); ki = {str(k): i for i, k in enumerate(z["keys"])}; layers_all = list(z["layers"])
 by = {}
@@ -61,11 +61,14 @@ def readout(ids):   # probe score at </scratch> (last prefill token is the newli
     for L in a.layers:
         mu, sd, w, b, u, _ = probes[L]; h = hs[L][0, -2].float().cpu().numpy(); out[f"score_L{L}"] = float(((h - mu) / sd) @ w + b); out[f"proj_L{L}"] = float(h @ u)
     return out
-cells = [(L, "probe", al) for L in a.layers for al in a.alphas] + [(L, "random", al) for L in a.layers for al in a.random_alphas]
+cells = [(L, "probe", al) for L in a.layers for al in a.alphas] + [(L, f"random{k}" if a.n_random > 1 else "random", al) for L in a.layers for k in range(a.n_random) for al in a.random_alphas]
+rand_dirs = {}
 for L, dname, alpha in cells:
     mu, sd, w, b, u, sd_along = probes[L]
-    if dname == "random":
-        rnd = rng.standard_normal(len(u)).astype(np.float32); rnd -= (rnd @ u) * u; rnd /= np.linalg.norm(rnd); d = rnd
+    if dname.startswith("random"):
+        if (L, dname) not in rand_dirs:
+            rnd = rng.standard_normal(len(u)).astype(np.float32); rnd -= (rnd @ u) * u; rnd /= np.linalg.norm(rnd); rand_dirs[(L, dname)] = rnd
+        d = rand_dirs[(L, dname)]
     else: d = u
     state["vec"] = torch.tensor(alpha * sd_along * d); state["layer"] = L; cnt = {"lie": [0, 0], "honest": [0, 0]}; ro = []
     for origin, r, nn in sel:
