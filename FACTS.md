@@ -3375,3 +3375,12 @@ count claim sits in a subspace of at least two directions, and the two probes re
 way the DeepMind/Apollo objection ("a probe that correlates with deception isn't the mechanism") stands for the
 detection probe, and the causal result (§67, §71) belongs to the diff-of-means direction, not to the detector.
 this is the most important negative of the night and goes in the post next to §67.
+
+**§73 addendum (auditor's rebuttal, sep 20 ~9am, accepted):** the cosine of -0.02 is what an LR weight vector and a
+raw mean-difference look like even when they read the same feature: LR ≈ Σ⁻¹Δμ, and the residual stream is
+anisotropic enough that Σ⁻¹Δμ ⟂ Δμ in raw space (marks & tegmark). the sign-inverted steering along w/sd is
+consistent with an off-manifold push along low-variance axes. so "orthogonal, therefore different variables" is
+NOT established by §73; what §73 establishes is only that the LR detector's weight direction is not a usable lever.
+three tests decide it and are running as §74: (1) the lever as a detector: project the natural reports onto the
+diff-of-means direction, AUROC; (2) the 2×2 recipe in mass-mean form: AUROC on the natural reports, cosine with the
+lever, steer with it against ten randoms; (3) the 2×2 detector scored at `</scratch>` under the lever's push.
