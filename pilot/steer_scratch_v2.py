@@ -13,7 +13,7 @@ HERE = Path(__file__).resolve().parent
 ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); ap.add_argument("--run", required=True); ap.add_argument("--fit", required=True); ap.add_argument("--test", required=True)
 ap.add_argument("--layers", nargs="+", type=int, required=True); ap.add_argument("--alphas", nargs="+", type=float, default=[-24, -12, 0, 12, 24]); ap.add_argument("--random-alphas", nargs="+", type=float, default=[-24, 24])
 ap.add_argument("--n", type=int, default=24); ap.add_argument("--n-honest", type=int, default=10); ap.add_argument("--n-honest-samples", type=int, default=8); ap.add_argument("--positions", choices=["all", "answer"], default="all")
-ap.add_argument("--direction-file", default=None, help="steer with a DETECTION probe direction (npz with w, sd, layer) instead of the diff-of-means; the diff-of-means is still fit for the readout and the cosine is printed"); ap.add_argument("--n-random", type=int, default=1, help="number of independent random orthogonal directions (null distribution)"); ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=801); ap.add_argument("--max-tokens", type=int, default=80); ap.add_argument("--out", type=Path, required=True); a = ap.parse_args()
+ap.add_argument("--direction-file", default=None, help="steer with a DETECTION probe direction (npz with w, sd, layer) instead of the diff-of-means; the diff-of-means is still fit for the readout and the cosine is printed"); ap.add_argument("--n-random", type=int, default=1, help="number of independent random orthogonal directions (null distribution)"); ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=801); ap.add_argument("--max-tokens", type=int, default=80); ap.add_argument("--out", type=Path, required=True); ap.add_argument("--runs", nargs="+", default=None, help="trajectory runs holding the prefixes (default: the six qwen stakes runs)"); a = ap.parse_args()
 meta = json.loads((HERE / a.run / "run_meta.json").read_text()); SCRATCH = meta["scratch_instruction"]
 rows = [json.loads(l) for l in open(HERE / a.run / "answers.jsonl")]; z = np.load(HERE / a.run / "layers.npz"); ki = {str(k): i for i, k in enumerate(z["keys"])}; layers_all = list(z["layers"])
 by = {}
@@ -21,7 +21,7 @@ for r in rows:
     if r["closed"]: by.setdefault(r["trial_id"], []).append(r)
 fit_h = next(h for h in by if h.startswith(a.fit)); test_h = next(h for h in by if h.startswith(a.test))
 tr = {}
-for rn in ("run_proc_qwen7b_stakes", "run_proc_qwen7b_stakes2", "run_proc_qwen7b_stakes3", "run_proc_qwen7b_stakes_s301", "run_proc_qwen7b_stakes_s302", "run_proc_qwen7b_stakes_s303"):
+for rn in (a.runs or ("run_proc_qwen7b_stakes", "run_proc_qwen7b_stakes2", "run_proc_qwen7b_stakes3", "run_proc_qwen7b_stakes_s301", "run_proc_qwen7b_stakes_s302", "run_proc_qwen7b_stakes_s303")):
     m = json.loads((HERE / rn / "run_meta.json").read_text())
     for t in map(json.loads, (HERE / rn / "trajectories.jsonl").open()):
         if t["completed"]: tr[t["trial_id"]] = (t, m.get("question_prefix", ""))

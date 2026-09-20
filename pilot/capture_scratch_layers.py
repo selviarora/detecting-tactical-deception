@@ -7,11 +7,11 @@ from pathlib import Path
 import numpy as np
 import settings_v6 as S
 HERE = Path(__file__).resolve().parent
-ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); ap.add_argument("--run", required=True); ap.add_argument("--out", required=True); a = ap.parse_args()
+ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); ap.add_argument("--run", required=True); ap.add_argument("--out", required=True); ap.add_argument("--runs", nargs="+", default=None, help="trajectory runs holding the prefixes (default: the six qwen stakes runs)"); a = ap.parse_args()
 meta = json.loads((HERE / a.run / "run_meta.json").read_text()); SCRATCH = meta["scratch_instruction"]
 rows = [json.loads(l) for l in open(HERE / a.run / "answers.jsonl")]
 tr = {}
-for r in ("run_proc_qwen7b_stakes", "run_proc_qwen7b_stakes2", "run_proc_qwen7b_stakes3", "run_proc_qwen7b_stakes_s301", "run_proc_qwen7b_stakes_s302", "run_proc_qwen7b_stakes_s303"):
+for r in (a.runs or ("run_proc_qwen7b_stakes", "run_proc_qwen7b_stakes2", "run_proc_qwen7b_stakes3", "run_proc_qwen7b_stakes_s301", "run_proc_qwen7b_stakes_s302", "run_proc_qwen7b_stakes_s303")):
     m = json.loads((HERE / r / "run_meta.json").read_text())
     for t in map(json.loads, (HERE / r / "trajectories.jsonl").open()):
         if t["completed"]: tr[t["trial_id"]] = (t, m.get("question_prefix", ""))
