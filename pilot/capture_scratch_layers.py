@@ -11,7 +11,7 @@ ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); ap.ad
 meta = json.loads((HERE / a.run / "run_meta.json").read_text()); SCRATCH = meta["scratch_instruction"]
 rows = [json.loads(l) for l in open(HERE / a.run / "answers.jsonl")]
 tr = {}
-for r in ("run_proc_qwen7b_stakes", "run_proc_qwen7b_stakes2", "run_proc_qwen7b_stakes3"):
+for r in ("run_proc_qwen7b_stakes", "run_proc_qwen7b_stakes2", "run_proc_qwen7b_stakes3", "run_proc_qwen7b_stakes_s301", "run_proc_qwen7b_stakes_s302", "run_proc_qwen7b_stakes_s303"):
     m = json.loads((HERE / r / "run_meta.json").read_text())
     for t in map(json.loads, (HERE / r / "trajectories.jsonl").open()):
         if t["completed"]: tr[t["trial_id"]] = (t, m.get("question_prefix", ""))

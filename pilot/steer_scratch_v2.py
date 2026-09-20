@@ -21,7 +21,7 @@ for r in rows:
     if r["closed"]: by.setdefault(r["trial_id"], []).append(r)
 fit_h = next(h for h in by if h.startswith(a.fit)); test_h = next(h for h in by if h.startswith(a.test))
 tr = {}
-for rn in ("run_proc_qwen7b_stakes", "run_proc_qwen7b_stakes2", "run_proc_qwen7b_stakes3"):
+for rn in ("run_proc_qwen7b_stakes", "run_proc_qwen7b_stakes2", "run_proc_qwen7b_stakes3", "run_proc_qwen7b_stakes_s301", "run_proc_qwen7b_stakes_s302", "run_proc_qwen7b_stakes_s303"):
     m = json.loads((HERE / rn / "run_meta.json").read_text())
     for t in map(json.loads, (HERE / rn / "trajectories.jsonl").open()):
         if t["completed"]: tr[t["trial_id"]] = (t, m.get("question_prefix", ""))
