@@ -3729,3 +3729,12 @@ tool call), 0 falsified the record; screen 120 answers, **8 clean false "three"*
 0/40); the rest "No, only two compliant bids were evaluated before the award." so olmo overrides rarely and, when it
 does, sometimes misreports: a weak natural liar with fully public post-training checkpoints. a larger harvest is the
 cheapest route to a third family with a training curve (~$5).
+
+**§78 addendum 5, the honest-origin null, seed-matched (`run_steer_dolphin_honestmain_nulls874_L26`; same seed as
+the lever run, so the same 20 honest-origin scratchpads, the same 24 sampling seeds and the same random draws;
+baseline reproduces exactly at 90/480):** twenty random cells (ten directions × ±24): honest-origin effects -7 … +12,
+mean +1.6, sd 4.0; lie-origin effects -3 … +5, sd 1.8. lever: honest-origin **-55 (z -14) at -24, +90 (z +22) at
++24**, rank 1 of 21 both sides; lie-origin -39 / +33 against sd 1.8. this is the final form of the dolphin
+honest-origin result: the lever induces the false count on scratchpads whose reasoning did not lead to one, 7% →
+38%, and removes it, 19% → 7%, while twenty random pushes of the same size leave the rate within ±2.5 points.
+(an earlier null run with a different seed drew a different scratchpad subset and was discarded: not paired.)

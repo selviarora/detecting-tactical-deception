@@ -1,0 +1,24 @@
+{
+ "model": "cognitivecomputations/Dolphin3.0-Llama3.1-8B",
+ "run": "run_scratch_dolphin8b",
+ "fit": "756a8a09",
+ "test": "82a8128db159",
+ "layers": [
+  26
+ ],
+ "alphas": [
+  0.0
+ ],
+ "random_alphas": [
+  -24.0,
+  24.0
+ ],
+ "n": 4,
+ "positions": "all",
+ "seed": 874,
+ "mode": "add",
+ "fit_histories": [
+  "756a8a097f3b"
+ ],
+ "design": "strong-form injection with manipulation check (auditor, s65 addendum)"
+}
