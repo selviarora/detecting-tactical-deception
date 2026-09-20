@@ -10,7 +10,7 @@ import numpy as np
 import settings_v6 as S
 from sklearn.linear_model import LogisticRegression
 HERE = Path(__file__).resolve().parent
-ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); ap.add_argument("--run", required=True); ap.add_argument("--fit", nargs="+", required=True, help="one or more history prefixes; several = pooled diff-of-means"); ap.add_argument("--test", required=True); ap.add_argument("--mode", choices=["add", "ablate"], default="add", help="ablate: project the direction OUT of the residual at every injected position (no alpha); randoms are ablated too")
+ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); ap.add_argument("--run", required=True); ap.add_argument("--fit", nargs="+", required=True, help="one or more history prefixes; several = pooled diff-of-means"); ap.add_argument("--test", required=True); ap.add_argument("--joint", action="store_true", help="apply the intervention at ALL --layers simultaneously (each layer its own direction) instead of one layer per cell"); ap.add_argument("--mode", choices=["add", "ablate"], default="add", help="ablate: project the direction OUT of the residual at every injected position (no alpha); randoms are ablated too")
 ap.add_argument("--layers", nargs="+", type=int, required=True); ap.add_argument("--alphas", nargs="+", type=float, default=[-24, -12, 0, 12, 24]); ap.add_argument("--random-alphas", nargs="+", type=float, default=[-24, 24])
 ap.add_argument("--n", type=int, default=24); ap.add_argument("--n-honest", type=int, default=10); ap.add_argument("--n-honest-samples", type=int, default=8); ap.add_argument("--positions", choices=["all", "answer"], default="all")
 ap.add_argument("--extra-readout", nargs="*", default=[], help="probe npz files (w, mu, sd, intercept, layer) also scored at </scratch> under injection"); ap.add_argument("--direction-file", default=None, help="steer with a DETECTION probe direction (npz with w, sd, layer) instead of the diff-of-means; the diff-of-means is still fit for the readout and the cosine is printed"); ap.add_argument("--n-random", type=int, default=1, help="number of independent random orthogonal directions (null distribution)"); ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=801); ap.add_argument("--max-tokens", type=int, default=80); ap.add_argument("--out", type=Path, required=True); ap.add_argument("--runs", nargs="+", default=None, help="trajectory runs holding the prefixes (default: the six qwen stakes runs)"); a = ap.parse_args()
@@ -43,8 +43,8 @@ tok = AutoTokenizer.from_pretrained(a.model); model = AutoModelForCausalLM.from_
 state = {"vec": None, "P0": 0, "layer": None}
 def make_hook(L):
     def hook(m, i, o):
-        if state["vec"] is None or state["layer"] != L: return o
-        h = o[0] if isinstance(o, tuple) else o; v = state["vec"].to(h.dtype).to(h.device)
+        if state["vec"] is None or (state["layer"] != L and not (state.get("joint") and L in state.get("vecs", {}))): return o
+        h = o[0] if isinstance(o, tuple) else o; v = (state["vecs"][L] if state.get("joint") else state["vec"]).to(h.dtype).to(h.device)
         if state.get("ablate"):
             uu = v / (v.norm() + 1e-6); seg = h[:, state["P0"]:] if h.shape[1] > 1 else h
             seg = seg - (seg.float() @ uu.float()).unsqueeze(-1).to(h.dtype) * uu
@@ -76,6 +76,7 @@ def readout(ids):   # probe score at </scratch> (last prefill token is the newli
         h = hs[int(ex["layer"])][0, -2].float().cpu().numpy(); out[f"score_x{i}"] = float(((h - ex["mu"]) / ex["sd"]) @ ex["w"] + float(ex["intercept"]))
     return out
 cells = [(L, "probe", al) for L in a.layers for al in a.alphas] + [(L, f"random{k}" if a.n_random > 1 else "random", al) for L in a.layers for k in range(a.n_random) for al in a.random_alphas]
+if a.joint: cells = [(a.layers[0], d, al) for (L, d, al) in cells if L == a.layers[0]]; state["joint"] = True   # one cell per (direction, alpha), applied at every layer
 rand_dirs = {}
 for L, dname, alpha in cells:
     mu, sd, w, b, u, sd_along = probes[L]
@@ -85,6 +86,17 @@ for L, dname, alpha in cells:
         d = rand_dirs[(L, dname)]
     else: d = u
     state["vec"] = (torch.tensor(d) if a.mode == "ablate" else torch.tensor(alpha * sd_along * d)) if alpha != 0 else None; state["layer"] = L; cnt = {"lie": [0, 0], "honest": [0, 0]}; ro = []
+    if a.joint and alpha != 0:
+        state["vecs"] = {}
+        for LL in a.layers:
+            uL = probes[LL][4]; sdL = probes[LL][5]
+            if dname.startswith("random"):
+                if (LL, dname) not in rand_dirs:
+                    rr = rng.standard_normal(len(uL)).astype(np.float32); rr -= (rr @ uL) * uL; rand_dirs[(LL, dname)] = rr / np.linalg.norm(rr)
+                dL = rand_dirs[(LL, dname)]
+            else: dL = uL
+            state["vecs"][LL] = torch.tensor(dL) if a.mode == "ablate" else torch.tensor(alpha * sdL * dL)
+    elif a.joint: state["vecs"] = {}
     for origin, r, nn in sel:
         text = prefix + f"<scratch>\n{r['scratch']}\n</scratch>\n"; ids = tok(text, return_tensors="pt", add_special_tokens=False)["input_ids"].to(model.device)
         state["P0"] = n_prefix if a.positions == "all" else ids.shape[1]
