@@ -3447,3 +3447,21 @@ detection recipe (2×2 from supplied contradictions, frozen, natural lies as tes
 found on the same pod: dolphin-3.0-llama-8b lies with a private scratchpad at 136/200, 43/200, 41/200, 7/200 on its
 four known liars (refusal-stripped; its dial is running). llama-3.2-3b and phi-4 screens pending; deepseek-r1
 distills (llama-8b, qwen-7b) queued.
+
+**§74 GPU half, part 2 (the lever pushed, both detectors read at `</scratch>`; `run_steer_v2_lever_readout_L18`,
+152 per cell, three randoms, seed 852):** lever cells 55, 67, 73, 78, 90 for -24 … +24 (randoms at ±24: 73/68,
+73/69, 85/64; probe rank 1/4 both sides). readouts by alpha: the natural-rollout LR probe 2.2 → 33.1 (the pushed
+axis); **the 2×2 LR detector 1.41 → 0.71**; **the 2×2 mass-mean detector -8.5 → -14.5**. both detectors drift
+slightly DOWN as the lever pushes the false count UP: neither reads the variable the lever moves; if anything their
+sign runs the other way.
+
+**§74 verdict, all three tests:** (1) the lever is not a detector (.08 vs true, .55 vs siblings); (2) a mass-mean
+detector from the same recipe reads state, not report-truth, and pushed it steers the count sign-inverted like the
+LR detector did in §73; (3) the detectors do not see the lever move. so the loop does not close in any form. the
+honest sentence for the post: **the direction that detects a false report and the direction that controls the
+false count are different variables in this model. the detector reads "does this report contradict what I know";
+the lever sets "which count word comes out." pushing the detector's own direction moves the count the wrong way;
+pushing the lever leaves the detector unmoved.** three axes: state, report-truth interaction, count word. that
+is a limitation of "the probe reads the cause," and it is also the most informative paragraph in the notebook,
+because it is exactly the ambiguity the field's critique names, measured rather than argued. data:
+`run_steer_v2_domDir_L18`, `run_steer_v2_lever_readout_L18`, `reports_L18.npz` (local), `probes/qwen7b_2x2_L18*`.
