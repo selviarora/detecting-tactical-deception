@@ -1,0 +1,28 @@
+{
+ "model": "Qwen/Qwen2.5-7B-Instruct",
+ "fit_run": "run_scratch500_qwen7b",
+ "fit": [
+  "30da04d2",
+  "1bf66e2d"
+ ],
+ "target_runs": [
+  "run_scratch500_qwen7b",
+  "run_scratch_new_qwen7b"
+ ],
+ "layers": [
+  25,
+  18,
+  14
+ ],
+ "alphas": [
+  -24.0,
+  -12.0,
+  0.0,
+  12.0,
+  24.0
+ ],
+ "n_scratch": 40,
+ "positions": "all",
+ "seed": 1001,
+ "design": "teacher-forced logit readout; diff-of-means contrasts (count, disclosure) + random; all-position injection"
+}

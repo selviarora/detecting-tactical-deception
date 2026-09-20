@@ -3188,3 +3188,37 @@ bids evaluated? Answer directly." → "No."), it does not volunteer the shortfal
 ("No, only two compliant bids…"). the right sentence is "gemma sometimes breaks the rule and, asked directly, never
 denies it", not "always says so". the separation the auditor drew still holds: the probe reads and the direction
 moves the HIDING step; qwen does both steps, gemma does the first and not the second.
+
+## 69. sep 20, ~2am: teacher-forced logit readout on five histories. at layer 25 the pooled contrast moves P(three) and P(yes) on every scratchpad of every history, including the three the contrast was never fit on; at layer 14 the sign is inverted; layer 18 is weak in this readout.
+
+`steer_logits.py` (auditor's measurement): for each frozen scratchpad, force `"Yes, "` and read log-odds(three|3 vs
+two|2) at the count position; also log-odds(yes vs no) at the first answer token. no sampling. contrasts are
+diff-of-means at `</scratch>` on the POOLED 30da + 1bf6 rollouts: **count** = lie minus "yes, two"; **disclosure** =
+lie minus non-yes honest; random orthogonal control. cosine(count, disclosure) = .88 (L25), .88 (L18), .86 (L14):
+the two contrasts are nearly the same direction, so "two levers" in §67 is not two directions. injected at all
+scratch positions, alphas -24 … +24, 40 scratchpads per target (all lie-origin + random honest), targets 30da, 1bf6
+(fit histories) and **11ab08e6, 6c3ccc41, c099c464 (never used to fit anything)**. `run_steer_logits_qwen7b`,
+8400 readouts; analysis `analysis/s69_logits.py`. per-scratchpad slope of the log-odds on alpha/24, wilcoxon.
+
+**L25, count contrast, log-odds three/two after "Yes, ":** slope +1.12 / +1.18 / +1.15 / +1.19 / +1.11 per 24
+on 11ab / 1bf6 / 30da / 6c3c / c099, **40 of 40 scratchpads positive on every history**, p < .001 each. random:
+-0.004 / +0.15 / -0.08 / -0.002 / +0.06 (20/20, 34/6, 15/25, 20/20, 27/13). e.g. 30da -24 → +24: -1.75 → +0.55
+(P(three) 15% → 63%). **L25, yes/no at the first token:** count contrast slope +4.4 to +4.6 on all five (40/40);
+random +0.4 to +0.6 (40/40 too, a small norm effect, 8× smaller).
+**L18:** count slope +0.08 to +0.27 (mixed, 19–27 of 40), disclosure +0.42 to +0.54 (27–32 of 40); random
+**-0.15 to -0.34 (4/36 to 11/29)**: a random direction of this norm at L18 systematically LOWERS P(three) in this
+readout. yes/no barely moves at L18.
+**L14:** count slope **-0.26 to -0.92, 35–38 of 40 NEGATIVE** on 1bf6 / 30da / 6c3c / c099: the §65 sign inversion
+is real and layer-specific; at L14 the same direction pushes the count word the wrong way.
+
+**read:** evidence: (1) in the exact readout, a contrast fit on two histories moves the model's next-token odds of
+the false count on three histories it was never fit on, monotonically, on every single scratchpad, at layer 25,
+with random flat. that is replication across five histories by the sensitive instrument. (2) the sign of the
+direction's effect depends on the layer (positive at 25, weak at 18, inverted at 14), which explains §65 and
+warns that "the direction" is not one thing across depth. (3) DISCREPANCY to resolve, not to hide: in the sampled
+answers (§67) L25 moved the yes/no massively but not the count word, while L18 was the count dial; in the forced
+"Yes, " readout L25 moves the count and L18 barely does. the forced prefix pins the count to the token right after
+"Yes, ", whereas sampled answers route through other phrasings ("Yes, the award was made after evaluating two…").
+the two measurements answer different questions ("what is the next-token count odds given this opening" vs "what
+does the model end up writing"); both are reported, neither is the other. (4) count and disclosure contrasts are
+~the same direction (cos .88). caveats: pooled fit on 28 lies; forced opening; one model, one scenario.
