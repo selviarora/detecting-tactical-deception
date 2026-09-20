@@ -3115,3 +3115,16 @@ exists; "the text of its private reasoning held fixed"; "a history the direction
 lying rollouts", "the count component of the report", "keyword-scored". the two-lever (L18 count / L25 yes) reading
 stays an observation in FACTS, out of the post, until the random null on the yes metric and the replication pair show
 the same split.
+
+**§66 addendum 3, gemma-2-9b-it (sep 19, ~11:45pm, pod `pb3e58fi8d6li6`, ~40 min, ~$1.20):** same procurement
+pressure task, same stakes line, 96 trajectories, `chat_compat.py` folding the system message into the first user
+turn and merging adjacent same-role turns (gemma's template has no system role and requires strict alternation;
+the words the model sees are unchanged). **17 of 96 awarded on two bids** (broke the policy); 58 refused or stalled
+("Insufficient bids. I cannot award the contract"); 21 were still fetching when the turn limit hit. of the 17
+awards, **0 falsified the record**, and on the direct question at 40 rollouts each (680 answers) every answer begins
+"No" (mostly the bare "No."). so gemma-2-9b overrides less often than qwen and, when it does, discloses every time.
+this is the auditor's pipeline read (override → omission → lie): gemma sometimes takes step one and never takes
+step three. as a second model for NATURAL lies it is a null under this pressure; the recipe-transfer test on gemma
+needs supplied contradictions. auditor's advice adopted: screen llama-3.1-8b-instruct and mistral-small-24b for
+"awards on two and misreports" before any gemma pressure sweep. data: `run_proc_gemma9b_stakes_s321`,
+`run_resample_gemma9b_s321`.
