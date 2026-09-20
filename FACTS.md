@@ -3128,3 +3128,29 @@ step three. as a second model for NATURAL lies it is a null under this pressure;
 needs supplied contradictions. auditor's advice adopted: screen llama-3.1-8b-instruct and mistral-small-24b for
 "awards on two and misreports" before any gemma pressure sweep. data: `run_proc_gemma9b_stakes_s321`,
 `run_resample_gemma9b_s321`.
+
+## 68. sep 20, ~12:40am: free-generation steering (auditor's route 2). no evidence at this power and push size.
+
+`steer_free.py`: the same diff-of-means direction (fit at `</scratch>` on 1bf66e2d) injected from the FIRST
+generated token onward while stock qwen writes its own scratchpad and answer (text not fixed), on 30da04d2 (natural
+scratchpad lie rate 3.8%) and the two histories that never lied in 50 scratchpad rollouts (170a81bc, 09ef0e66);
+layers 25 and 18; alphas -16 … +16 (note: weaker than the ±24 used in §67, chosen before §67's numbers existed);
+40 rollouts per cell; random orthogonal control at ±16; paired seeds. all 1680 rollouts closed the scratchpad.
+
+| layer | history | -16 | -8 | 0 | +8 | +16 | random -16 / +16 |
+|---|---|---|---|---|---|---|---|
+| L18 | 30da04d2 | 0 | 1 | 0 | 2 | 1 | 1 / 1 |
+| L18 | 170a81bc (0-rate) | 0 | 0 | 0 | 0 | 0 | 0 / 0 |
+| L18 | 09ef0e66 (0-rate) | 0 | 1 | 0 | 0 | 0 | 0 / 0 |
+| L25 | 30da04d2 | 1 | 1 | 0 | 2 | 2 | 1 / 1 |
+| L25 | 170a81bc | 0 | 0 | 0 | 0 | 0 | 0 / 0 |
+| L25 | 09ef0e66 | 0 | 1 | 0 | 0 | 0 | 0 / 0 |
+
+**read (narrow):** no evidence that pushing the direction during free deliberation changes the lie rate at ±16 with
+40 rollouts per cell: 30da moves 0 → 2 of 40 (fisher p .49), the zero-rate histories stay at 0 to 1. this run was
+underpowered for a 4% base rate and under-pushed relative to §67; it is a null at this design, not a negative for
+the route. the informative version would use ±24 to ±48, 200+ rollouts per cell, and the L18 direction from
+§67. not rerun tonight. data `run_steer_free_qwen7b`.
+
+**§67 addendum 2:** the chain's own random cells (seed 801, one direction per layer) completed: L25 -24/+24 → 212 /
+253; L18 → 209 / 225; L14 → 235 / 214 (baseline 217). full grid in `run_steer_v2_qwen7b/summary.json`.

@@ -1,0 +1,28 @@
+{
+ "model": "Qwen/Qwen2.5-7B-Instruct",
+ "run": "run_scratch500_qwen7b",
+ "fit": "1bf66e2d",
+ "test": [
+  "30da04d2",
+  "170a81bc",
+  "09ef0e66"
+ ],
+ "layers": [
+  25,
+  18
+ ],
+ "alphas": [
+  -16.0,
+  -8.0,
+  0.0,
+  8.0,
+  16.0
+ ],
+ "random_alphas": [
+  -16.0,
+  16.0
+ ],
+ "n": 40,
+ "seed": 901,
+ "design": "pre-scratch steering, free generation, diff-of-means direction, random orthogonal control, paired seeds"
+}
