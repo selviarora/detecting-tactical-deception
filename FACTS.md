@@ -3270,3 +3270,26 @@ zero training overlap. **187 pressure histories screened, 14 lying, 173 never li
 - **note rule: 159 disclosers → 0 lying; 28 omitters → 14 lying; Fisher p < 10⁻⁶.**
 - all main assertions hold; caveat text unchanged apart from the count.
 the sentence now reads "fourteen unseen histories" and the probe has not been touched since it was frozen on sep 19.
+
+## 71. sep 20, ~5am: replication on a second pair, both histories new. the L18 dial holds.
+
+`run20b`: scratchpads for the three strongest new liars (`run_scratch_new_qwen7b`, 400 rollouts each; the private
+scratchpad suppresses them too: 11ab 5/400, c099 9/400, 6c3c 19/400), all-layer capture, then `steer_scratch_v2.py`
+with the direction fit by diff-of-means on **6c3ccc41** (19 lies) at `</scratch>` and injected on **c099c464** (9
+lie-origin scratchpads × 16 = 144 per cell, 10 honest-origin × 8), all positions, paired seeds, three random
+orthogonal directions. neither history was used anywhere in §67.
+
+| layer | -24 | -12 | 0 | +12 | +24 | readout of own-layer probe at `</scratch>` |
+|---|---|---|---|---|---|---|
+| **L18 probe** | **3** | 6 | 16 | 29 | **42** | -14.2 → -6.9 → +0.4 → +7.7 → +15.0 |
+| L18 random ×3 | 10, 10, 13 | | 16 | | 16, 31, 21 | unchanged (±2) |
+| **L25 probe** | 5 | 9 | 16 | 24 | 27 | -4.0 → +1.0 → +6.0 → +10.9 → +15.9 |
+| L25 random | 18 | | 16 | | 13 | unchanged |
+
+honest-origin 0/80 in every cell. **read:** on a fit/inject pair that shares nothing with §67, the L18 direction
+turns the false-count rate from 2% to 29% across the dose, monotone, push verified; the three random directions
+move it -6 to +15 with no consistent direction. L25 does the same here (5 → 27), unlike §67 where L25 mostly moved
+the yes/no; the two layers are not cleanly separable levers (consistent with §69's cosine .88 and the discrepancy
+noted there). caveats: 9 lie-origin scratchpads, 16 samples, three randoms; the third pair (6c3ccc41 → 30da) and the
+loop-closer are still running. together with §67 (1bf6 → 30da) and §69 (pooled → five histories by exact odds),
+the causal sentence now stands on two counted pairs and one exact-odds replication.
