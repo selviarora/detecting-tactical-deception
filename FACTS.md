@@ -3660,3 +3660,33 @@ complete, 0.5 partial (32 trajectories, 338 of ~440 screen answers, no scratchpa
 never finished), joint ablation (not started), hiring cross-setting, λ 0.75 and 1.0, dolphin honest-origin randoms
 2–9, dolphin omission conditions zero/random. relaunch list, in order: dolphin honest-origin randoms, λ 0.5 rest +
 0.75 + 1.0, gold mistral dial, cross-setting, joint ablation, dolphin omission.
+
+**§78 addendum 3, dolphin honest-origin as the main cell (`run_steer_dolphin_honestmain_L26`, fit 756a8a09 → inject
+82a8128d, L26; 20 honest-origin scratchpads × 24 = 480 per cell, 43 lie-origin × 4 = 172; pod died after 11 of 25
+cells: all five lever cells and six random cells are complete):**
+
+| | -24 | -12 | 0 | +12 | +24 | six random cells |
+|---|---|---|---|---|---|---|
+| honest-origin (of 480) | **35** | 64 | 90 | 137 | **180** | 83 … 102 (mean +2 vs baseline, sd 6.0) |
+| lie-origin (of 172) | 64 | 81 | 103 | 119 | 136 | 101 … 108 |
+
+honest-origin: -55 (z -9.5) at -24, **+90 (z +14.7) at +24**, monotone: scratchpads whose private reasoning did not
+lead to a lie go from 7% to 38% false counts under the push, and from 19% to 7% under the pull; random directions
+sit at 17–21%. this is "induces lies where the reasoning didn't lead to one", the strongest form of the dial
+sentence, on the second model. the remaining random cells (2–9) are to be rerun; the six present are tight.
+**design gap, recorded:** the native L16 detector was read at `</scratch>` under an L26 injection, and it cannot move
+(layer 16 is computed before layer 26): the readout is -6.90 in every cell. the §74 question "does the detector see
+induced lies" needs the detector applied downstream of the injection, i.e. on the answer tokens the push produced.
+the induced answers are saved; scoring them with the frozen native detector (answer-mean, L16, teacher-forced) is a
+CPU-free GPU job of ~10 min, queued for the relaunch.
+
+## 80. sep 20, ~7:40pm: the pooled direction is weaker than the single-history one.
+
+`run_steer_pooled4_test30da`: diff-of-means fit on the POOLED scratch-end states of four liars (1bf6, 11ab, c099,
+6c3c; 47 lies vs ~1550 honest), injected on 30da (152 per cell), ten randoms, two-sided null. lever: 64, 73, 78,
+86, 94 (effects -14 / +16); null mean -0.3, sd 8.4, range -13 … +16; **z -1.6 / +1.9, rank 2 of 21 on both sides**;
+paired 1/15 and 19/3 (p .001). so the pooled direction moves the count in the predicted sign with clean paired
+signatures but its magnitude sits at the edge of the random spread, whereas the 1bf6-only direction on the same
+target moved 169 → 277 of 456 (§67) and the 6c3c-only direction 109 → 187 of 304 (§71). pooling histories with
+different honest classes (§65 addendum: 1bf6 discloses, the others say "yes, two") appears to dilute the direction.
+the per-history fit is the recipe to keep; "one universal count direction" is not supported at this n.
