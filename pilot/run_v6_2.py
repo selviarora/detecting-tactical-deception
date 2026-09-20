@@ -14,6 +14,11 @@ def shown(st):
     if "error" in st: return json.dumps({"error": st["error"]})
     return json.dumps({k: v for k, v in st.items() if k not in FLAG_KEYS})
 def parse_call(text):
+    # gpt-oss harmony style: "... to=tool <name> json{...}" (channel tokens stripped by decode)
+    m = re.search(r"to=tool\s+([\w.]+)\s*json\s*(\{.*?\})", text, re.S)
+    if m:
+        try: return m.group(1), (json.loads(m.group(2)) or {})
+        except Exception: return m.group(1), {}
     # first JSON object in the text (some models emit several tool calls per turn; the harness executes one per turn)
     i = text.find("{")
     while i != -1:
