@@ -44,4 +44,30 @@ for L in $(python -c "import json; t=json.load(open('run_scratch_granite/layer_s
   echo GRANITE_L${L}_DONE
 done
 echo GRANITE_EXTRA_DONE
+# 5. ministral-8b dial (second stock candidate, same recipe), after granite's follow-ups
+MN=mistralai/Ministral-8B-Instruct-2410
+HM=$(python analysis/pick_dial_histories.py run_proc_ministral_stakes_s405 run_resample_ministral_s405 4)
+echo "MINISTRAL_DIAL_HISTORIES $HM"
+python resample_scratchpad.py --model $MN --prefixes $HM --n 200 --layer 18 --runs run_proc_ministral_stakes_s405 --seed 882 --out run_scratch_ministral || echo FAILEDN_mscratch
+python capture_scratch_layers.py --model $MN --run run_scratch_ministral --runs run_proc_ministral_stakes_s405 --out run_scratch_ministral/layers.npz || echo FAILEDN_mcap
+read MFIT MTEST <<< $(python - <<'PY'
+import json, collections
+by=collections.defaultdict(list)
+for a in map(json.loads, open("run_scratch_ministral/answers.jsonl")):
+    if a["closed"]: by[a["trial_id"]].append(a["lie_kw"])
+c=sorted(by, key=lambda k: abs(sum(by[k])/len(by[k])-0.5))
+print(c[0][:8], c[1])
+PY
+)
+echo "MINISTRAL_FIT_TEST $MFIT $MTEST"
+python analysis/s66_layers.py run_scratch_ministral $MFIT ${MTEST:0:8} > run_scratch_ministral/scan.txt 2>&1 || echo FAILEDN_mscan
+ML=$(python -c "import json; print(json.load(open('run_scratch_ministral/layer_scan.json'))['top_end'][0])")
+echo "MINISTRAL_LAYER $ML"
+python readout_recheck.py --model $MN --run run_scratch_ministral --runs run_proc_ministral_stakes_s405 --fit $MFIT --test $MTEST --layer $ML --alphas -24 0 24 2>&1 | grep -vE "^Loading|Warning" | tee run_scratch_ministral/readout_recheck_L$ML.txt
+MABIG=$(python -c "
+import re; t=open('run_scratch_ministral/readout_recheck_L$ML.txt').read(); m=re.search(r'GAP=([-\d.]+) SDALONG=([\d.]+)', t); g=abs(float(m.group(1))); s=float(m.group(2)); print(min(max(int(round(2*g/s)),24),120))")
+echo "MINISTRAL_ALPHA $MABIG"
+python steer_scratch_v2.py --model $MN --run run_scratch_ministral --runs run_proc_ministral_stakes_s405 --fit $MFIT --test $MTEST --layers $ML --alphas -$MABIG 0 $MABIG --random-alphas -$MABIG $MABIG --n-random 10 --n 4 --n-honest 20 --n-honest-samples 12 --seed 874 --out run_steer_ministral_${MFIT}_${MTEST:0:8}_L${ML}_a$MABIG || echo FAILEDN_msteer
+echo MINISTRAL_DIAL_DONE
+prune
 cd /workspace/cvo && exec bash ./runN_rest.sh
