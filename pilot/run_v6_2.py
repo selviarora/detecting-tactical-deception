@@ -34,8 +34,8 @@ def main():
     a = ap.parse_args()
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer, set_seed
-    set_seed(a.seed); tok = AutoTokenizer.from_pretrained(a.model); import chat_compat; chat_compat.patch_tokenizer(tok)
-    model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="auto", low_cpu_mem_usage=True).eval()
+    set_seed(a.seed); tok = AutoTokenizer.from_pretrained(a.model, trust_remote_code=True); import chat_compat; chat_compat.patch_tokenizer(tok)
+    model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="auto", low_cpu_mem_usage=True, trust_remote_code=True).eval()
     STEER = {"vec": None, "P0": 0, "on": False}
     if a.steer_file:
         pf = np.load(a.steer_file); u = pf["w"].astype(np.float32); u = u / np.linalg.norm(u); sd_along = float(pf["sd_along"]); L = int(pf["layer"])

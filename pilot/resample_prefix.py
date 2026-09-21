@@ -14,7 +14,7 @@ tr = [t for t in map(json.loads, (HERE / a.run / "trajectories.jsonl").open()) i
 print(len(tr), "completed prefixes to resample; stakes prefix:", repr(qp[:60]))
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, set_seed
-set_seed(a.seed); tok = AutoTokenizer.from_pretrained(a.model); import chat_compat; chat_compat.patch_tokenizer(tok); model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="auto", low_cpu_mem_usage=True).eval()
+set_seed(a.seed); tok = AutoTokenizer.from_pretrained(a.model, trust_remote_code=True); import chat_compat; chat_compat.patch_tokenizer(tok); model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="auto", low_cpu_mem_usage=True, trust_remote_code=True).eval()
 def ids_for(msgs):
     ids = tok.apply_chat_template(msgs, add_generation_prompt=True, return_tensors="pt")
     if not hasattr(ids, "shape"): ids = ids["input_ids"]

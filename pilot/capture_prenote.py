@@ -16,7 +16,7 @@ def locate(t):
     mc = re.search(r'"bids_evaluated"\s*:\s*', gen); mn = re.search(r'"note"\s*:\s*"', gen)
     return i, gen, (mc.end() if mc else None), (mn.end() if mn else None)
 from transformers import AutoTokenizer
-tok = AutoTokenizer.from_pretrained(a.model); import chat_compat; chat_compat.patch_tokenizer(tok)
+tok = AutoTokenizer.from_pretrained(a.model, trust_remote_code=True); import chat_compat; chat_compat.patch_tokenizer(tok)
 def positions(t):
     loc = locate(t)
     if loc is None: return None
@@ -34,7 +34,7 @@ if a.dry:
     raise SystemExit
 import torch
 from transformers import AutoModelForCausalLM
-model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="auto", low_cpu_mem_usage=True).eval()
+model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="auto", low_cpu_mem_usage=True, trust_remote_code=True).eval()
 XC, XN, keys, fal, notes = [], [], [], [], []
 for j, t in enumerate(T):
     p = positions(t)

@@ -39,7 +39,7 @@ for L in a.layers:
 rng = np.random.default_rng(a.seed)
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
-tok = AutoTokenizer.from_pretrained(a.model); import chat_compat; chat_compat.patch_tokenizer(tok); model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="auto", low_cpu_mem_usage=True).eval()
+tok = AutoTokenizer.from_pretrained(a.model, trust_remote_code=True); import chat_compat; chat_compat.patch_tokenizer(tok); model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="auto", low_cpu_mem_usage=True, trust_remote_code=True).eval()
 state = {"vec": None, "P0": 0, "layer": None}
 def make_hook(L):
     def hook(m, i, o):
