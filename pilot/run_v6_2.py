@@ -30,7 +30,7 @@ def main():
     ap.add_argument("--model", required=True); ap.add_argument("--out", type=Path, required=True)
     ap.add_argument("--families", nargs="*", default=["legal/discovery_production", "procurement/bid_evaluation"]); ap.add_argument("--worlds", nargs="*", default=["pressure", "compliant"])
     ap.add_argument("--n-act", type=int, default=24); ap.add_argument("--n-q", type=int, default=2)
-    ap.add_argument("--layer", type=int, default=16); ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=62); ap.add_argument("--steer-file", default=None, help="npz with unit direction w, sd_along, layer: add alpha*sd_along*w at generated positions"); ap.add_argument("--steer-alpha", type=float, default=0.0); ap.add_argument("--steer-stage", choices=["action", "report", "both"], default="action"); ap.add_argument("--steer-random", type=int, default=-1, help=">=0: replace the direction with a random orthogonal one seeded by this int"); ap.add_argument("--question-prefix", default="", help="stakes text prepended to every manager question (report-side pressure); never an instruction"); ap.add_argument("--questions", nargs="*", default=None, help="subset of question names to ask (default all)")
+    ap.add_argument("--layer", type=int, default=16); ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=62); ap.add_argument("--task-prefix", default="", help="text prepended to the first user turn of the task (audit / privacy framings)"); ap.add_argument("--steer-file", default=None, help="npz with unit direction w, sd_along, layer: add alpha*sd_along*w at generated positions"); ap.add_argument("--steer-alpha", type=float, default=0.0); ap.add_argument("--steer-stage", choices=["action", "report", "both"], default="action"); ap.add_argument("--steer-random", type=int, default=-1, help=">=0: replace the direction with a random orthogonal one seeded by this int"); ap.add_argument("--question-prefix", default="", help="stakes text prepended to every manager question (report-side pressure); never an instruction"); ap.add_argument("--questions", nargs="*", default=None, help="subset of question names to ask (default all)")
     a = ap.parse_args()
     import torch
     from transformers import AutoModelForCausalLM, AutoTokenizer, set_seed
@@ -65,13 +65,13 @@ def main():
         if span.shape[0] == 0: span = out.hidden_states[a.layer][0, -1:, :]
         return span.float().mean(0).cpu().numpy().astype(np.float16)
     a.out.mkdir(parents=True, exist_ok=True); acts, keys = [], []
-    (a.out / "run_meta.json").write_text(json.dumps({"model": a.model, "seed": a.seed, "temperature": a.temperature, "n_act": a.n_act, "n_q": a.n_q, "layer": a.layer, "families": a.families, "worlds": a.worlds, "settings": "settings_v6 (v6.1 prompts unchanged)", "flags_shown_to_agent": False, "question_prefix": a.question_prefix}, indent=1))
+    (a.out / "run_meta.json").write_text(json.dumps({"model": a.model, "seed": a.seed, "temperature": a.temperature, "n_act": a.n_act, "n_q": a.n_q, "layer": a.layer, "families": a.families, "worlds": a.worlds, "settings": "settings_v6 (v6.1 prompts unchanged)", "flags_shown_to_agent": False, "question_prefix": a.question_prefix, "task_prefix": a.task_prefix}, indent=1))
     ft = (a.out / "trajectories.jsonl").open("w"); fa = (a.out / "answers.jsonl").open("w"); fb = (a.out / "blind_label_packet.jsonl").open("w")
     for sid in a.families:
         s = S.SETTINGS[sid]
         for world in a.worlds:
             for k in range(a.n_act):
-                msgs = [{"role": "system", "content": S.system(s, world)}, {"role": "user", "content": "[system] Task assigned. Take your first action."}]
+                msgs = [{"role": "system", "content": S.system(s, world)}, {"role": "user", "content": a.task_prefix + "[system] Task assigned. Take your first action."}]
                 calls, final = [], {}
                 for turn in range(3):
                     text, _ = gen(msgs, 120); tool, args = parse_call(text)
