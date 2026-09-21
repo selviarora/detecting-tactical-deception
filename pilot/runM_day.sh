@@ -14,7 +14,7 @@ for m in glob.glob(hub+"/models--*"):
 PY
 }
 # 1. screens: 32 histories, screen 40 direct answers per awarded history
-for spec in "yi|01-ai/Yi-1.5-9B-Chat|401" "granite|ibm-granite/granite-3.1-8b-instruct|402" "falcon3|tiiuae/Falcon3-7B-Instruct|403" "exaone|LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct|404" "ministral|mistralai/Ministral-8B-Instruct-2410|405" "glm4|THUDM/glm-4-9b-chat-hf|406" "internlm|internlm/internlm2_5-7b-chat|407"; do
+for spec in "yi|01-ai/Yi-1.5-9B-Chat|401" "granite|ibm-granite/granite-3.1-8b-instruct|402" "falcon3|tiiuae/Falcon3-7B-Instruct|403" "exaone|LGAI-EXAONE/EXAONE-3.5-7.8B-Instruct|404" "ministral|mistralai/Ministral-8B-Instruct-2410|405" "glm4|THUDM/glm-4-9b-chat-hf|406"; do
   IFS='|' read TAG M SEED <<< "$spec"
   python run_v6_2.py --model $M --families procurement/bid_evaluation --worlds pressure --n-act 32 --n-q 1 --layer 16 --seed $SEED --question-prefix "$QP" --out run_proc_${TAG}_stakes_s$SEED || { echo FAILEDM_gen_$TAG; prune; continue; }
   python resample_prefix.py --run run_proc_${TAG}_stakes_s$SEED --model $M --n 40 --layer 16 --worlds pressure --seed 4$SEED --out run_resample_${TAG}_s$SEED || echo FAILEDM_screen_$TAG
