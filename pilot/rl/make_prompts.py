@@ -3,8 +3,9 @@
   python rl/make_prompts.py --runs run_rl_prompts_s7003 ... --heldout run_rl_heldout_s7001 --out rl/prompts.jsonl"""
 import argparse, json, hashlib
 from pathlib import Path
+import sys
+HERE = Path(__file__).resolve().parents[1]; sys.path.insert(0, str(HERE))
 import settings_v6 as S
-HERE = Path(__file__).resolve().parents[1]
 ap = argparse.ArgumentParser(); ap.add_argument("--runs", nargs="+", required=True); ap.add_argument("--heldout", nargs="+", default=[]); ap.add_argument("--out", required=True); a = ap.parse_args()
 held = set()
 for r in a.heldout:

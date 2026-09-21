@@ -11,5 +11,5 @@ python rl/make_prompts.py --runs run_rl_smoke_s7900 --out rl/prompts_smoke.jsonl
 python rl/train_grpo.py --model $B --prompts rl/prompts_smoke.jsonl --reward accept --out rl/run_smoke --episodes 32 --save-every 16 || echo FATAL_smoke_train
 ls rl/run_smoke
 python rl/eval_ckpt.py --base $B --adapter rl/run_smoke/checkpoint-1 --heldout run_rl_smoke_s7900 --layer 16 --n 4 --out run_rlcurve_smoke || echo FATAL_smoke_eval
-python rl/curve_score.py --probe probes/qwen7b_2x2_L14.npz --runs run_rlcurve_smoke --layer 16 2>&1 | tail -3 || true
+python rl/curve_score.py --probe probes/lever_L18_1bf6.npz --runs run_rlcurve_smoke --layer 16 2>&1 | tail -3 || true
 echo SMOKE_DONE
