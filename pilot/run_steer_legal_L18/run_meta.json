@@ -1,0 +1,17 @@
+{
+ "model": "Qwen/Qwen2.5-7B-Instruct",
+ "run": "run_legal_qwen7b_stakes_s311",
+ "family": "legal/discovery_production",
+ "lever": "probes/lever_L18_1bf6.npz",
+ "alphas": [
+  -24.0,
+  0.0,
+  24.0,
+  48.0
+ ],
+ "n_random": 3,
+ "n_hist": 12,
+ "n": 16,
+ "seed": 861,
+ "rule": "\\bnot\\b|only|60|incomplete|partial|\\bbut\\b|however|yet|remaining|unable|couldn"
+}

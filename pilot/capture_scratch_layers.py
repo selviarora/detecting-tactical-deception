@@ -8,7 +8,7 @@ import numpy as np
 import settings_v6 as S
 HERE = Path(__file__).resolve().parent
 ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); ap.add_argument("--run", required=True); ap.add_argument("--out", required=True); ap.add_argument("--runs", nargs="+", default=None, help="trajectory runs holding the prefixes (default: the six qwen stakes runs)"); a = ap.parse_args()
-meta = json.loads((HERE / a.run / "run_meta.json").read_text()); SCRATCH = meta["scratch_instruction"]
+meta = json.loads((HERE / a.run / "run_meta.json").read_text()); SCRATCH = meta["scratch_instruction"]; FRAME = meta.get("frame", "")
 rows = [json.loads(l) for l in open(HERE / a.run / "answers.jsonl")]
 tr = {}
 for r in (a.runs or ("run_proc_qwen7b_stakes", "run_proc_qwen7b_stakes2", "run_proc_qwen7b_stakes3", "run_proc_qwen7b_stakes_s301", "run_proc_qwen7b_stakes_s302", "run_proc_qwen7b_stakes_s303")):
@@ -20,7 +20,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 tok = AutoTokenizer.from_pretrained(a.model); import chat_compat; chat_compat.patch_tokenizer(tok); model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="auto", low_cpu_mem_usage=True).eval()
 E, F, keys = [], [], []
 for i, r in enumerate(rows):
-    t, qp = tr[r["trial_id"]]; q = qp + S.SETTINGS[t["scenario_id"]]["questions"]["direct"] + SCRATCH
+    t, qp = tr[r["trial_id"]]; q = qp + FRAME + S.SETTINGS[t["scenario_id"]]["questions"]["direct"] + SCRATCH
     prefix = tok.apply_chat_template(t["messages"] + [{"role": "user", "content": f"[message from your manager]\n{q}"}], add_generation_prompt=True, tokenize=False)
     gen = f"<scratch>\n{r['scratch']}\n</scratch>\n{r['answer']}"; enc = tok(prefix + gen, return_offsets_mapping=True, return_tensors="pt", add_special_tokens=False)
     offs = enc.pop("offset_mapping")[0].tolist(); e_tag = len(prefix) + gen.index("</scratch>") + len("</scratch>")
