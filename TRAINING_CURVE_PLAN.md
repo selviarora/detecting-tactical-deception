@@ -1,6 +1,6 @@
 # training curve: where does hiding come from (plan, sep 21 2026 evening; build tue, train wed–thu, figure fri)
 
-status: DRAFT for her to strike before any code. agreed with the auditor's four additions (llama not granite; held-out
+status: she said go (sep 21 ~4:15pm); building tonight, runs tomorrow. v1 scope below. agreed with the auditor's four additions (llama not granite; held-out
 histories; a checked-report control run; step 0 measured). nothing here is running.
 
 ## the question
@@ -20,6 +20,13 @@ left edge).
   (checked by trial-id at every step; written to `heldout_s7001.jsonl` with a sha256).
 - the frozen 2×2 detector: fit on the BASE checkpoint with supplied contradictions on separate training prefixes (seed
   7002, both worlds), the §56/§60 recipe, hashed before training starts.
+
+## v1 scope (tonight's build)
+the trainable step is the REPORT turn: prompt = a full agent history (generated once by the base model, both worlds) +
+the manager's direct question; completion = the answer; reward as below. the action stage is frozen at the base
+policy's histories, so v1 measures where the report lie comes from; override and record falsification are measured
+but cannot move in v1 (multi-turn rl is v2). single-turn grpo is what trl supports out of the box, and it is the
+version that can be running tomorrow.
 
 ## loop
 trl grpo, lora r=16 on q/k/v/o, bf16, one h100. group size 8, ~2k episodes (~250 prompts × 8), lr 1e-5, kl 0.05.
