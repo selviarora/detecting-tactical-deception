@@ -1,0 +1,26 @@
+{
+ "omitter/own": [
+  231,
+  320
+ ],
+ "omitter/disclose": [
+  0,
+  320
+ ],
+ "omitter/omit": [
+  306,
+  320
+ ],
+ "discloser/own": [
+  106,
+  320
+ ],
+ "discloser/disclose": [
+  0,
+  320
+ ],
+ "discloser/omit": [
+  302,
+  320
+ ]
+}
