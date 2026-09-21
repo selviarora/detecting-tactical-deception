@@ -1,0 +1,28 @@
+{
+ "model": "mistralai/Mistral-7B-Instruct-v0.3",
+ "run": "run_scratch_mistral7b_gold",
+ "fit": "9af7d2b6",
+ "test": "847699ecdff7",
+ "layers": [
+  24
+ ],
+ "alphas": [
+  -24.0,
+  -12.0,
+  0.0,
+  12.0,
+  24.0
+ ],
+ "random_alphas": [
+  -24.0,
+  24.0
+ ],
+ "n": 24,
+ "positions": "all",
+ "seed": 895,
+ "mode": "add",
+ "fit_histories": [
+  "9af7d2b6bca3"
+ ],
+ "design": "strong-form injection with manipulation check (auditor, s65 addendum)"
+}

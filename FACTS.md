@@ -3738,3 +3738,24 @@ mean +1.6, sd 4.0; lie-origin effects -3 … +5, sd 1.8. lever: honest-origin **
 honest-origin result: the lever induces the false count on scratchpads whose reasoning did not lead to one, 7% →
 38%, and removes it, 19% → 7%, while twenty random pushes of the same size leave the rate within ±2.5 points.
 (an earlier null run with a different seed drew a different scratchpad subset and was discarded: not paired.)
+
+## 83. sep 20, ~11:45pm: the gold-restricted mistral dial does not move. the footnote stays: dolphin is the second family.
+
+`run_steer_mistral_gold_9af7_847699ec_L24`: gold relabel (lie = scratch states two AND answer says three; 227
+record-driven misreports dropped), all-layer capture, scan picked **layer 24**; direction fit on 9af7d2b6's 20 gold
+lies, injected on 847699ec's 7 gold-origin scratchpads (× 24 = 168 per cell) and 10 honest-origin (× 8), ten
+random orthogonal directions, two-sided null (`analysis/null2.py`).
+
+| | -24 | -12 | 0 | +12 | +24 | twenty random cells |
+|---|---|---|---|---|---|---|
+| gold-origin (of 168) | 4 | 7 | 18 | 17 | 16 | effects -16 … +17 (mean -3.1, sd 8.3) |
+| honest-origin (of 80) | 5 | 11 | 19 | 19 | 16 | -14 … +10 (sd 6.6) |
+| readout (own-layer LR) | -13.0 | -8.2 | -3.4 | +1.4 | +6.3 | |
+
+lever -24: effect -14, **z -1.3, rank 4 of 21** (paired 1 up / 15 down); +24: -2, z +0.1, rank 18 of 21. **read:**
+the push lands (readout moves), the minus side has a clean paired signature, but random directions of the same
+norm move mistral's count by as much in either sign, and the plus side does nothing. by the two-sided rule this is
+not a dial. so mistral-7b's report lies (the 34-of-800 gold population) do not give a direction that generalises
+from one history to another at this n (7 gold-origin scratchpads on the target, 20 gold lies for the fit), and its
+dominant behaviour remains record falsification (§75). the second family with a working dial is dolphin (§78),
+refusal-stripped; the footnote stays on. olmo (§66 add. 9) is the remaining stock candidate.
