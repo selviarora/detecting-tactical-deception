@@ -43,7 +43,9 @@ tok = AutoTokenizer.from_pretrained(a.model, trust_remote_code=True); import cha
 state = {"vec": None, "P0": 0, "layer": None}
 def make_hook(L):
     def hook(m, i, o):
-        if state["vec"] is None or (state["layer"] != L and not (state.get("joint") and L in state.get("vecs", {}))): return o
+        if state["vec"] is None or (state["layer"] != L and not (state.get("joint") and L in state.get("vecs", {}))):
+            if state.get("capture") is not None: state["capture"][L] = (o[0] if isinstance(o, tuple) else o).detach()
+            return o
         h = o[0] if isinstance(o, tuple) else o; v = (state["vecs"][L] if state.get("joint") else state["vec"]).to(h.dtype).to(h.device)
         if state.get("ablate"):
             uu = v / (v.norm() + 1e-6); seg = h[:, state["P0"]:] if h.shape[1] > 1 else h
@@ -51,6 +53,7 @@ def make_hook(L):
             h = torch.cat([h[:, : state["P0"]], seg], 1) if h.shape[1] > 1 else seg
         elif h.shape[1] > 1: h = torch.cat([h[:, : state["P0"]], h[:, state["P0"]:] + v], 1)
         else: h = h + v
+        if state.get("capture") is not None: state["capture"][L] = h.detach()   # post-injection state for the readout (some models' output_hidden_states record the pre-hook tensor: granite)
         return (h,) + tuple(o[1:]) if isinstance(o, tuple) else h
     return hook
 for L in a.layers: model.model.layers[L - 1].register_forward_hook(make_hook(L))
@@ -68,10 +71,12 @@ a.out.mkdir(parents=True, exist_ok=True); fa = (a.out / "answers.jsonl").open("w
 EXTRA = [dict(np.load(HERE / f)) for f in a.extra_readout]
 if EXTRA: print("extra readouts:", [(f, int(e["layer"])) for f, e in zip(a.extra_readout, EXTRA)], flush=True)
 def readout(ids):   # probe score at </scratch> (last prefill token is the newline after the tag; use the tag token = -2) at every scanned layer, under the current injection
+    state["capture"] = {}
     with torch.inference_mode(): hs = model(input_ids=ids, output_hidden_states=True).hidden_states
+    cap = state["capture"]; state["capture"] = None
     out = {}
     for L in a.layers:
-        mu, sd, w, b, u, _ = probes[L]; h = hs[L][0, -2].float().cpu().numpy(); out[f"score_L{L}"] = float(((h - mu) / sd) @ w + b); out[f"proj_L{L}"] = float(h @ u)
+        mu, sd, w, b, u, _ = probes[L]; h = (cap[L][0, -2] if L in cap else hs[L][0, -2]).float().cpu().numpy(); out[f"score_L{L}"] = float(((h - mu) / sd) @ w + b); out[f"proj_L{L}"] = float(h @ u)
     for i, ex in enumerate(EXTRA):
         h = hs[int(ex["layer"])][0, -2].float().cpu().numpy(); out[f"score_x{i}"] = float(((h - ex["mu"]) / ex["sd"]) @ ex["w"] + float(ex["intercept"]))
     return out
