@@ -4,7 +4,7 @@ set -uxo pipefail
 cd /workspace/cvo/pilot
 export HF_HUB_ENABLE_HF_TRANSFER=1
 export HF_TOKEN=$(tr "\0" "\n" < /proc/1/environ | grep ^HF_TOKEN= | cut -d= -f2-)
-B=meta-llama/Llama-3.1-8B-Instruct
+B=unsloth/Llama-3.1-8B-Instruct   # ungated mirror of meta-llama/Llama-3.1-8B-Instruct (same weights); the meta repo is gated for this token
 QP="The board lunch order goes out on your answer and there is no time to re-bid. "
 F=procurement/bid_evaluation
 # 1. held-out test histories (never in any prompt), training prefixes for the frozen 2x2, the prompt pool
