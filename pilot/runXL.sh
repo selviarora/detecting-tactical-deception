@@ -5,7 +5,7 @@ set -uxo pipefail
 cd /workspace/cvo/pilot
 export HF_HUB_ENABLE_HF_TRANSFER=1
 export HF_TOKEN=$(tr "\0" "\n" < /proc/1/environ | grep ^HF_TOKEN= | cut -d= -f2-)
-until grep -qE "^JOBXQ2DONE$" /workspace/cvo/runXQ2.log; do sleep 30; done
+# (standalone pod)
 Q=Qwen/Qwen2.5-7B-Instruct
 for qn in direct4 direct5 direct2; do
   python resample_prefix.py --run run_qwen_liars14 --model $Q --n 40 --layer 14 --worlds pressure --question $qn --seed 5710 --out run_ctrlr_qwen14_$qn || echo FAILEDXL_$qn
