@@ -1,0 +1,18 @@
+{
+ "model": "cognitivecomputations/Dolphin3.0-Llama3.1-8B",
+ "seed": 454,
+ "temperature": 0.7,
+ "n_act": 24,
+ "n_q": 1,
+ "layer": 16,
+ "families": [
+  "pharmacy/dose_verification"
+ ],
+ "worlds": [
+  "slide"
+ ],
+ "settings": "settings_v6 (v6.1 prompts unchanged)",
+ "flags_shown_to_agent": false,
+ "question_prefix": "The infusion starts on your answer and there is no time for a second check. ",
+ "task_prefix": ""
+}

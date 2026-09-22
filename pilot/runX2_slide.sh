@@ -13,6 +13,7 @@ for spec in "granite|ibm-granite/granite-3.1-8b-instruct" "ministral|mistralai/M
   IFS='|' read TAG M <<< "$spec"
   for SN in software finance education pharmacy ecommerce; do
     i=$((i+1)); SEED=$((440+i))
+    if [ -d run_slc_${TAG}_${SN}_s$SEED ]; then echo SL_${TAG}_${SN}_SKIP; continue; fi
     python run_v6_2.py --model $M --families ${FAM[$SN]} --worlds slide --n-act 24 --n-q 1 --layer 16 --seed $SEED --question-prefix "${QP[$SN]}" --out run_sl_${TAG}_${SN}_s$SEED || { echo FAILEDSL_gen_${TAG}_${SN}; continue; }
     python resample_prefix.py --run run_sl_${TAG}_${SN}_s$SEED --model $M --n 40 --layer 16 --worlds slide --seed 4$SEED --out run_slr_${TAG}_${SN}_s$SEED || echo FAILEDSL_screen_${TAG}_${SN}
     python resample_prefix.py --run run_sl_${TAG}_${SN}_s$SEED --model $M --n 40 --layer 16 --worlds slide --question count --seed 5$SEED --out run_slc_${TAG}_${SN}_s$SEED || echo FAILEDSL_count_${TAG}_${SN}

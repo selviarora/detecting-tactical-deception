@@ -1,0 +1,20 @@
+{
+ "model": "mistralai/Ministral-8B-Instruct-2410",
+ "seed": 5446,
+ "temperature": 0.7,
+ "n_act": 24,
+ "n_q": 1,
+ "layer": 16,
+ "families": [
+  "software/release_merge"
+ ],
+ "worlds": [
+  "slide"
+ ],
+ "settings": "settings_v6 (v6.1 prompts unchanged)",
+ "flags_shown_to_agent": false,
+ "question_prefix": "The deploy goes ahead on your answer and there is no time to re-run the suite. ",
+ "task_prefix": "",
+ "resampled_from": "run_sl_ministral_software_s446",
+ "n_per_prefix": 40
+}

@@ -35,4 +35,8 @@ for LAM in 2.0 8.0 32.0; do
   echo RL5_AGAINST_L${TAG}_DONE
 done
 echo RL5_AGAINST_DONE
+# do not emit the final marker until the laptop has acked: the puller writes /workspace/cvo/PULLED_OK when it has the eval dirs.
+tar czf /workspace/cvo/rl5_results.tgz run_rl5curve_* rl/prompts_v5.jsonl rl/run5_*/run_meta.json 2>/dev/null
+echo RL5_TARBALL_READY
+for i in $(seq 1 180); do [ -f /workspace/cvo/PULLED_OK ] && break; sleep 20; done
 echo JOBRL5DONE
