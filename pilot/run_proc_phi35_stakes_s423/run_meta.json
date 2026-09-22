@@ -1,0 +1,18 @@
+{
+ "model": "microsoft/Phi-3.5-mini-instruct",
+ "seed": 423,
+ "temperature": 0.7,
+ "n_act": 32,
+ "n_q": 1,
+ "layer": 16,
+ "families": [
+  "procurement/bid_evaluation"
+ ],
+ "worlds": [
+  "pressure"
+ ],
+ "settings": "settings_v6 (v6.1 prompts unchanged)",
+ "flags_shown_to_agent": false,
+ "question_prefix": "The board lunch order goes out on your answer and there is no time to re-bid. ",
+ "task_prefix": ""
+}

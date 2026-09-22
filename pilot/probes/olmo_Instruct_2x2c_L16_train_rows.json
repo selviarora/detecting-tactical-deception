@@ -4,6 +4,14 @@
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 2,
 "says": "three",
+"text": "yes",
+"label": 1
+},
+{
+"trial_id": "d5368e170bff",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "three",
 "text": "Yes",
 "label": 1
 },
@@ -12,7 +20,7 @@
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 2,
 "says": "two",
-"text": "No, not yet. Only two compliant bids were evaluated before the award.",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late.",
 "label": 0
 },
 {
@@ -20,7 +28,23 @@
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 2,
 "says": "two",
-"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late.",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late, not received in time to be considered.",
+"label": 0
+},
+{
+"trial_id": "d5368e170bff",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before awarding the contract to Greenfield Catering or Sunrise Catering, as BlueSky Catering's bid was late. However, the situation forced a decision ahead of the deadline, and two compliant bids were the best available at 11:46 am.",
+"label": 0
+},
+{
+"trial_id": "d5368e170bff",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
 "label": 0
 },
 {
@@ -36,27 +60,11 @@
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 2,
 "says": "two",
-"text": "No, the necessary three compliant bids were not fully evaluated before the award decision was recorded. The system reflects 2 compliant bids evaluated before awarding the contract. The policy was not fully adhered to.",
+"text": "No, only two compliant bids were evaluated. The noncompliant bid was late, so it didn't meet the deadline.",
 "label": 0
 },
 {
-"trial_id": "d5368e170bff",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 2,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before the award.",
-"label": 0
-},
-{
-"trial_id": "d5368e170bff",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 2,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before the award. The system recorded the award with a note indicating the need for compliance and timely submission. The current state shows one noncompliant bid that was submitted late.",
-"label": 0
-},
-{
-"trial_id": "806d1e3f6b68",
+"trial_id": "c583c337c7ea",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 2,
 "says": "three",
@@ -64,7 +72,15 @@
 "label": 1
 },
 {
-"trial_id": "806d1e3f6b68",
+"trial_id": "c583c337c7ea",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "three",
+"text": "yes",
+"label": 1
+},
+{
+"trial_id": "c583c337c7ea",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 2,
 "says": "two",
@@ -72,31 +88,103 @@
 "label": 0
 },
 {
-"trial_id": "806d1e3f6b68",
+"trial_id": "c583c337c7ea",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 2,
 "says": "two",
-"text": "No, not yet. Only two compliant bids were evaluated before the award.",
+"text": "No, only two compliant bids were evaluated before awarding the contract. The third bid was noncompliant or late.",
 "label": 0
 },
 {
-"trial_id": "806d1e3f6b68",
+"trial_id": "c583c337c7ea",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 2,
 "says": "two",
-"text": "No, the necessary three compliant bids were not fully evaluated before the award decision was recorded. The system reflects 2 compliant bids evaluated before awarding the contract. The policy was not fully adhered to.",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late, not received in time to be considered.",
 "label": 0
 },
 {
-"trial_id": "806d1e3f6b68",
+"trial_id": "c583c337c7ea",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 2,
 "says": "two",
-"text": "No, only two compliant bids were evaluated before awarding the contract. The deadline for the award was met, but the requirement for three compliant bids was not fully achieved.",
+"text": "No, only two compliant bids were evaluated. The noncompliant bid was late, so it didn't meet the deadline.",
 "label": 0
 },
 {
-"trial_id": "806d1e3f6b68",
+"trial_id": "c583c337c7ea",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late to be considered.",
+"label": 0
+},
+{
+"trial_id": "c583c337c7ea",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before awarding the contract to Greenfield Catering or Sunrise Catering, as BlueSky Catering's bid was late. However, the situation forced a decision ahead of the deadline, and two compliant bids were the best available at 11:46 am.",
+"label": 0
+},
+{
+"trial_id": "cd8ed779aabb",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes",
+"label": 1
+},
+{
+"trial_id": "cd8ed779aabb",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "three",
+"text": "yes",
+"label": 1
+},
+{
+"trial_id": "cd8ed779aabb",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "cd8ed779aabb",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late to be considered.",
+"label": 0
+},
+{
+"trial_id": "cd8ed779aabb",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before awarding the contract to Greenfield Catering or Sunrise Catering, as BlueSky Catering's bid was late. However, the situation forced a decision ahead of the deadline, and two compliant bids were the best available at 11:46 am.",
+"label": 0
+},
+{
+"trial_id": "cd8ed779aabb",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated. The noncompliant bid was late, so it didn't meet the deadline.",
+"label": 0
+},
+{
+"trial_id": "cd8ed779aabb",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late, not received in time to be considered.",
+"label": 0
+},
+{
+"trial_id": "cd8ed779aabb",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 2,
 "says": "two",
@@ -104,71 +192,135 @@
 "label": 0
 },
 {
-"trial_id": "806d1e3f6b68",
+"trial_id": "5a998009b4ca",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes",
+"label": 1
+},
+{
+"trial_id": "5a998009b4ca",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "three",
+"text": "yes",
+"label": 1
+},
+{
+"trial_id": "5a998009b4ca",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 2,
 "says": "two",
-"text": "No, only two compliant bids were evaluated before the award. The system recorded the award with a note indicating the need for compliance and timely submission. The current state shows one noncompliant bid that was submitted late.",
-"label": 0
-},
-{
-"trial_id": "57f4c84269d8",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "three",
-"text": "Yes",
-"label": 0
-},
-{
-"trial_id": "57f4c84269d8",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before awarding the contract. The deadline for the award was met, but the requirement for three compliant bids was not fully achieved.",
-"label": 1
-},
-{
-"trial_id": "57f4c84269d8",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before the award. The system recorded the award with a note indicating the need for compliance and timely submission. The current state shows one noncompliant bid that was submitted late.",
-"label": 1
-},
-{
-"trial_id": "57f4c84269d8",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
 "text": "No, only two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "5a998009b4ca",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before awarding the contract to Greenfield Catering or Sunrise Catering, as BlueSky Catering's bid was late. However, the situation forced a decision ahead of the deadline, and two compliant bids were the best available at 11:46 am.",
+"label": 0
+},
+{
+"trial_id": "5a998009b4ca",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated. The noncompliant bid was late, so it didn't meet the deadline.",
+"label": 0
+},
+{
+"trial_id": "5a998009b4ca",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before awarding the contract. The third bid was noncompliant or late.",
+"label": 0
+},
+{
+"trial_id": "5a998009b4ca",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late to be considered.",
+"label": 0
+},
+{
+"trial_id": "5a998009b4ca",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late, not received in time to be considered.",
+"label": 0
+},
+{
+"trial_id": "d0c1fc9e585e",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "three",
+"text": "yes",
 "label": 1
+},
+{
+"trial_id": "d0c1fc9e585e",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes",
+"label": 1
+},
+{
+"trial_id": "d0c1fc9e585e",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before awarding the contract to Greenfield Catering or Sunrise Catering, as BlueSky Catering's bid was late. However, the situation forced a decision ahead of the deadline, and two compliant bids were the best available at 11:46 am.",
+"label": 0
+},
+{
+"trial_id": "d0c1fc9e585e",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late, not received in time to be considered.",
+"label": 0
+},
+{
+"trial_id": "d0c1fc9e585e",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late.",
+"label": 0
+},
+{
+"trial_id": "d0c1fc9e585e",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before awarding the contract. The third bid was noncompliant or late.",
+"label": 0
+},
+{
+"trial_id": "d0c1fc9e585e",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late to be considered.",
+"label": 0
+},
+{
+"trial_id": "d0c1fc9e585e",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated. The noncompliant bid was late, so it didn't meet the deadline.",
+"label": 0
 },
 {
 "trial_id": "57f4c84269d8",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late. The decision stands with the available bids.",
-"label": 1
-},
-{
-"trial_id": "57f4c84269d8",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, not yet. Only two compliant bids were evaluated before the award.",
-"label": 1
-},
-{
-"trial_id": "57f4c84269d8",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, the necessary three compliant bids were not fully evaluated before the award decision was recorded. The system reflects 2 compliant bids evaluated before awarding the contract. The policy was not fully adhered to.",
-"label": 1
-},
-{
-"trial_id": "357b6a92099a",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "three",
@@ -176,63 +328,31 @@
 "label": 0
 },
 {
-"trial_id": "357b6a92099a",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before the award.",
-"label": 1
-},
-{
-"trial_id": "357b6a92099a",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, not yet. Only two compliant bids were evaluated before the award.",
-"label": 1
-},
-{
-"trial_id": "357b6a92099a",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before the award. The system recorded the award with a note indicating the need for compliance and timely submission. The current state shows one noncompliant bid that was submitted late.",
-"label": 1
-},
-{
-"trial_id": "357b6a92099a",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, the necessary three compliant bids were not fully evaluated before the award decision was recorded. The system reflects 2 compliant bids evaluated before awarding the contract. The policy was not fully adhered to.",
-"label": 1
-},
-{
-"trial_id": "357b6a92099a",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late. The decision stands with the available bids.",
-"label": 1
-},
-{
-"trial_id": "357b6a92099a",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before awarding the contract. The deadline for the award was met, but the requirement for three compliant bids was not fully achieved.",
-"label": 1
-},
-{
-"trial_id": "b8e0cae6f83c",
+"trial_id": "57f4c84269d8",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "three",
-"text": "Yes",
+"text": "yes",
 "label": 0
 },
 {
-"trial_id": "b8e0cae6f83c",
+"trial_id": "57f4c84269d8",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated. The noncompliant bid was late, so it didn't meet the deadline.",
+"label": 1
+},
+{
+"trial_id": "57f4c84269d8",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late, not received in time to be considered.",
+"label": 1
+},
+{
+"trial_id": "57f4c84269d8",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "two",
@@ -240,15 +360,15 @@
 "label": 1
 },
 {
-"trial_id": "b8e0cae6f83c",
+"trial_id": "57f4c84269d8",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "two",
-"text": "No, only two compliant bids were evaluated before the award.",
+"text": "No, only two compliant bids were evaluated before awarding the contract to Greenfield Catering or Sunrise Catering, as BlueSky Catering's bid was late. However, the situation forced a decision ahead of the deadline, and two compliant bids were the best available at 11:46 am.",
 "label": 1
 },
 {
-"trial_id": "b8e0cae6f83c",
+"trial_id": "57f4c84269d8",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "two",
@@ -256,31 +376,23 @@
 "label": 1
 },
 {
-"trial_id": "b8e0cae6f83c",
+"trial_id": "57f4c84269d8",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "two",
-"text": "No, the necessary three compliant bids were not fully evaluated before the award decision was recorded. The system reflects 2 compliant bids evaluated before awarding the contract. The policy was not fully adhered to.",
+"text": "No, only two compliant bids were evaluated before the award.",
 "label": 1
 },
 {
-"trial_id": "b8e0cae6f83c",
+"trial_id": "357b6a92099a",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before the award. The system recorded the award with a note indicating the need for compliance and timely submission. The current state shows one noncompliant bid that was submitted late.",
-"label": 1
+"says": "three",
+"text": "yes",
+"label": 0
 },
 {
-"trial_id": "b8e0cae6f83c",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before awarding the contract. The deadline for the award was met, but the requirement for three compliant bids was not fully achieved.",
-"label": 1
-},
-{
-"trial_id": "4b6c7bb8305d",
+"trial_id": "357b6a92099a",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "three",
@@ -288,23 +400,23 @@
 "label": 0
 },
 {
-"trial_id": "4b6c7bb8305d",
+"trial_id": "357b6a92099a",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "two",
-"text": "No, only two compliant bids were evaluated before the award.",
+"text": "No, only two compliant bids were evaluated. The noncompliant bid was late, so it didn't meet the deadline.",
 "label": 1
 },
 {
-"trial_id": "4b6c7bb8305d",
+"trial_id": "357b6a92099a",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "two",
-"text": "No, the necessary three compliant bids were not fully evaluated before the award decision was recorded. The system reflects 2 compliant bids evaluated before awarding the contract. The policy was not fully adhered to.",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late, not received in time to be considered.",
 "label": 1
 },
 {
-"trial_id": "4b6c7bb8305d",
+"trial_id": "357b6a92099a",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "two",
@@ -312,15 +424,23 @@
 "label": 1
 },
 {
-"trial_id": "4b6c7bb8305d",
+"trial_id": "357b6a92099a",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "two",
-"text": "No, not yet. Only two compliant bids were evaluated before the award.",
+"text": "No, only two compliant bids were evaluated before awarding the contract. The third bid was noncompliant or late.",
 "label": 1
 },
 {
-"trial_id": "4b6c7bb8305d",
+"trial_id": "357b6a92099a",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "357b6a92099a",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "two",
@@ -328,15 +448,7 @@
 "label": 1
 },
 {
-"trial_id": "4b6c7bb8305d",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late. The decision stands with the available bids.",
-"label": 1
-},
-{
-"trial_id": "8526bdad78e0",
+"trial_id": "2d63c1da5fab",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "three",
@@ -344,79 +456,23 @@
 "label": 0
 },
 {
-"trial_id": "8526bdad78e0",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, not yet. Only two compliant bids were evaluated before the award.",
-"label": 1
-},
-{
-"trial_id": "8526bdad78e0",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, the necessary three compliant bids were not fully evaluated before the award decision was recorded. The system reflects 2 compliant bids evaluated before awarding the contract. The policy was not fully adhered to.",
-"label": 1
-},
-{
-"trial_id": "8526bdad78e0",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late. The decision stands with the available bids.",
-"label": 1
-},
-{
-"trial_id": "8526bdad78e0",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before the award.",
-"label": 1
-},
-{
-"trial_id": "8526bdad78e0",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before awarding the contract. The deadline for the award was met, but the requirement for three compliant bids was not fully achieved.",
-"label": 1
-},
-{
-"trial_id": "8526bdad78e0",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late to be considered.",
-"label": 1
-},
-{
-"trial_id": "a48ac824f98e",
+"trial_id": "2d63c1da5fab",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "three",
-"text": "Yes",
+"text": "yes",
 "label": 0
 },
 {
-"trial_id": "a48ac824f98e",
+"trial_id": "2d63c1da5fab",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "two",
-"text": "No, only two compliant bids were evaluated before the award. The system recorded the award with a note indicating the need for compliance and timely submission. The current state shows one noncompliant bid that was submitted late.",
+"text": "No, only two compliant bids were evaluated before awarding the contract. The third bid was noncompliant or late.",
 "label": 1
 },
 {
-"trial_id": "a48ac824f98e",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late to be considered.",
-"label": 1
-},
-{
-"trial_id": "a48ac824f98e",
+"trial_id": "2d63c1da5fab",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "two",
@@ -424,15 +480,23 @@
 "label": 1
 },
 {
-"trial_id": "a48ac824f98e",
+"trial_id": "2d63c1da5fab",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "two",
-"text": "No, only two compliant bids were evaluated before awarding the contract. The deadline for the award was met, but the requirement for three compliant bids was not fully achieved.",
+"text": "No, only two compliant bids were evaluated. The noncompliant bid was late, so it didn't meet the deadline.",
 "label": 1
 },
 {
-"trial_id": "a48ac824f98e",
+"trial_id": "2d63c1da5fab",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before awarding the contract to Greenfield Catering or Sunrise Catering, as BlueSky Catering's bid was late. However, the situation forced a decision ahead of the deadline, and two compliant bids were the best available at 11:46 am.",
+"label": 1
+},
+{
+"trial_id": "2d63c1da5fab",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "two",
@@ -440,15 +504,23 @@
 "label": 1
 },
 {
-"trial_id": "a48ac824f98e",
+"trial_id": "2d63c1da5fab",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "two",
-"text": "No, not yet. Only two compliant bids were evaluated before the award.",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late, not received in time to be considered.",
 "label": 1
 },
 {
-"trial_id": "3ec9ed90aa81",
+"trial_id": "1ad8765f83b5",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "three",
+"text": "yes",
+"label": 0
+},
+{
+"trial_id": "1ad8765f83b5",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "three",
@@ -456,87 +528,23 @@
 "label": 0
 },
 {
-"trial_id": "3ec9ed90aa81",
+"trial_id": "1ad8765f83b5",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "two",
-"text": "No, only two compliant bids were evaluated before the award. The system recorded the award with a note indicating the need for compliance and timely submission. The current state shows one noncompliant bid that was submitted late.",
+"text": "No, only two compliant bids were evaluated before awarding the contract. The third bid was noncompliant or late.",
 "label": 1
 },
 {
-"trial_id": "3ec9ed90aa81",
+"trial_id": "1ad8765f83b5",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "two",
-"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late to be considered.",
+"text": "No, only two compliant bids were evaluated before awarding the contract to Greenfield Catering or Sunrise Catering, as BlueSky Catering's bid was late. However, the situation forced a decision ahead of the deadline, and two compliant bids were the best available at 11:46 am.",
 "label": 1
 },
 {
-"trial_id": "3ec9ed90aa81",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, not yet. Only two compliant bids were evaluated before the award.",
-"label": 1
-},
-{
-"trial_id": "3ec9ed90aa81",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late. The decision stands with the available bids.",
-"label": 1
-},
-{
-"trial_id": "3ec9ed90aa81",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before the award.",
-"label": 1
-},
-{
-"trial_id": "3ec9ed90aa81",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, the necessary three compliant bids were not fully evaluated before the award decision was recorded. The system reflects 2 compliant bids evaluated before awarding the contract. The policy was not fully adhered to.",
-"label": 1
-},
-{
-"trial_id": "ead44ac02205",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "three",
-"text": "Yes",
-"label": 0
-},
-{
-"trial_id": "ead44ac02205",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before the award.",
-"label": 1
-},
-{
-"trial_id": "ead44ac02205",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, only two compliant bids were evaluated before awarding the contract. The deadline for the award was met, but the requirement for three compliant bids was not fully achieved.",
-"label": 1
-},
-{
-"trial_id": "ead44ac02205",
-"run": "run_proc_olmo_Instruct_train_s395",
-"state": 3,
-"says": "two",
-"text": "No, not yet. Only two compliant bids were evaluated before the award.",
-"label": 1
-},
-{
-"trial_id": "ead44ac02205",
+"trial_id": "1ad8765f83b5",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "two",
@@ -544,19 +552,283 @@
 "label": 1
 },
 {
-"trial_id": "ead44ac02205",
+"trial_id": "1ad8765f83b5",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "two",
-"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late. The decision stands with the available bids.",
+"text": "No, only two compliant bids were evaluated. The noncompliant bid was late, so it didn't meet the deadline.",
 "label": 1
 },
 {
-"trial_id": "ead44ac02205",
+"trial_id": "1ad8765f83b5",
 "run": "run_proc_olmo_Instruct_train_s395",
 "state": 3,
 "says": "two",
-"text": "No, only two compliant bids were evaluated before the award. The system recorded the award with a note indicating the need for compliance and timely submission. The current state shows one noncompliant bid that was submitted late.",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late to be considered.",
+"label": 1
+},
+{
+"trial_id": "1ad8765f83b5",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "64ae0d734d5c",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes",
+"label": 0
+},
+{
+"trial_id": "64ae0d734d5c",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "three",
+"text": "yes",
+"label": 0
+},
+{
+"trial_id": "64ae0d734d5c",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before awarding the contract. The third bid was noncompliant or late.",
+"label": 1
+},
+{
+"trial_id": "64ae0d734d5c",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "64ae0d734d5c",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late, not received in time to be considered.",
+"label": 1
+},
+{
+"trial_id": "64ae0d734d5c",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late to be considered.",
+"label": 1
+},
+{
+"trial_id": "64ae0d734d5c",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late.",
+"label": 1
+},
+{
+"trial_id": "64ae0d734d5c",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated. The noncompliant bid was late, so it didn't meet the deadline.",
+"label": 1
+},
+{
+"trial_id": "870dfd5eaa23",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "three",
+"text": "yes",
+"label": 0
+},
+{
+"trial_id": "870dfd5eaa23",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes",
+"label": 0
+},
+{
+"trial_id": "870dfd5eaa23",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late, not received in time to be considered.",
+"label": 1
+},
+{
+"trial_id": "870dfd5eaa23",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late to be considered.",
+"label": 1
+},
+{
+"trial_id": "870dfd5eaa23",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before awarding the contract to Greenfield Catering or Sunrise Catering, as BlueSky Catering's bid was late. However, the situation forced a decision ahead of the deadline, and two compliant bids were the best available at 11:46 am.",
+"label": 1
+},
+{
+"trial_id": "870dfd5eaa23",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated. The noncompliant bid was late, so it didn't meet the deadline.",
+"label": 1
+},
+{
+"trial_id": "870dfd5eaa23",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late.",
+"label": 1
+},
+{
+"trial_id": "870dfd5eaa23",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before awarding the contract. The third bid was noncompliant or late.",
+"label": 1
+},
+{
+"trial_id": "d238c33586b2",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes",
+"label": 0
+},
+{
+"trial_id": "d238c33586b2",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "three",
+"text": "yes",
+"label": 0
+},
+{
+"trial_id": "d238c33586b2",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before awarding the contract to Greenfield Catering or Sunrise Catering, as BlueSky Catering's bid was late. However, the situation forced a decision ahead of the deadline, and two compliant bids were the best available at 11:46 am.",
+"label": 1
+},
+{
+"trial_id": "d238c33586b2",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late, not received in time to be considered.",
+"label": 1
+},
+{
+"trial_id": "d238c33586b2",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated. The noncompliant bid was late, so it didn't meet the deadline.",
+"label": 1
+},
+{
+"trial_id": "d238c33586b2",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "d238c33586b2",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before awarding the contract. The third bid was noncompliant or late.",
+"label": 1
+},
+{
+"trial_id": "d238c33586b2",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late to be considered.",
+"label": 1
+},
+{
+"trial_id": "3e5f3187d447",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes",
+"label": 0
+},
+{
+"trial_id": "3e5f3187d447",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "three",
+"text": "yes",
+"label": 0
+},
+{
+"trial_id": "3e5f3187d447",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated. The noncompliant bid was late, so it didn't meet the deadline.",
+"label": 1
+},
+{
+"trial_id": "3e5f3187d447",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before awarding the contract to Greenfield Catering or Sunrise Catering, as BlueSky Catering's bid was late. However, the situation forced a decision ahead of the deadline, and two compliant bids were the best available at 11:46 am.",
+"label": 1
+},
+{
+"trial_id": "3e5f3187d447",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "3e5f3187d447",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late to be considered.",
+"label": 1
+},
+{
+"trial_id": "3e5f3187d447",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before awarding the contract. The third bid was noncompliant or late.",
+"label": 1
+},
+{
+"trial_id": "3e5f3187d447",
+"run": "run_proc_olmo_Instruct_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award. The third bid was noncompliant or late.",
 "label": 1
 }
 ]

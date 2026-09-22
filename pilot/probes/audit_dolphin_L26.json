@@ -2,14 +2,14 @@
  "layer": 26,
  "random_abs_cos_mean": 0.013024555703588573,
  "random_abs_cos_max": 0.047318288222647276,
- "cos_lever_count": -0.024082599207758904,
- "sd_along_count": 0.046718697994947433,
+ "cos_lever_count": -0.013369443826377392,
+ "sd_along_count": 0.04627037048339844,
  "n_count": [
   100,
   84
  ],
- "cos_lever_note": -0.02852187119424343,
- "sd_along_note": 0.06798679381608963,
+ "cos_lever_note": -0.025629771873354912,
+ "sd_along_note": 0.06650635600090027,
  "n_note": [
   100,
   84

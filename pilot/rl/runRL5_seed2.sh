@@ -24,10 +24,15 @@ for arm in main control; do
   done
   echo RL5_${arm}_DONE
 done
-# the fork with a real penalty: lambda 2.0 (v4 used 0.5 and the lie still rose with the detector intact)
-CVO_PROBE=probes/qwen7b_2x2_L14.npz CVO_PROBE_LAMBDA=2.0 CVO_BASE=$Q python rl/train_grpo.py --model $Q --prompts rl/prompts_v5.jsonl --reward against_probe --temperature 1.0 --lr 3e-5 --seed 7200 --out rl/run5_against2 --episodes 2000 --save-every 256 || echo FATAL_train_against2
-for ck in $(ls -d rl/run5_against2/checkpoint-* | sort -t- -k2 -n); do st=${ck##*-}; ep=$((st*16))
-  python rl/eval_ckpt.py --base $Q --adapter $ck --heldout run_qwen_heldout32 --layer 14 --out run_rl5curve_against2_ep$ep || echo FAILEDRL5_against2_$ep; echo RL5_AGAINST2_EP${ep}_DONE
+# the fork, penalty ladder (auditor, sep 22: lambda 0.5 moved the mean lie score 2.57 -> 1.73 without crossing the threshold; raise it
+# until the score crosses and see whether the lying stops or goes invisible). three strengths, same prompts and seed.
+for LAM in 2.0 8.0 32.0; do
+  TAG=$(echo $LAM | tr -d .)
+  CVO_PROBE=probes/qwen7b_2x2_L14.npz CVO_PROBE_LAMBDA=$LAM CVO_BASE=$Q python rl/train_grpo.py --model $Q --prompts rl/prompts_v5.jsonl --reward against_probe --temperature 1.0 --lr 3e-5 --seed 7200 --out rl/run5_against_l$TAG --episodes 2000 --save-every 512 || echo FATAL_train_against_$TAG
+  for ck in $(ls -d rl/run5_against_l$TAG/checkpoint-* | sort -t- -k2 -n); do st=${ck##*-}; ep=$((st*16))
+    python rl/eval_ckpt.py --base $Q --adapter $ck --heldout run_qwen_heldout32 --layer 14 --count-too --out run_rl5curve_against_l${TAG}_ep$ep || echo FAILEDRL5_against_${TAG}_$ep
+  done
+  echo RL5_AGAINST_L${TAG}_DONE
 done
-echo RL5_AGAINST2_DONE
+echo RL5_AGAINST_DONE
 echo JOBRL5DONE

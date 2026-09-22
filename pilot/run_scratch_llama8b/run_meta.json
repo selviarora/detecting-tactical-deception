@@ -1,0 +1,16 @@
+{
+ "model": "unsloth/Llama-3.1-8B-Instruct",
+ "prefixes": [
+  "818a4fa3",
+  "04046672",
+  "fcfa8ab2",
+  "46fc36ad"
+ ],
+ "n": 100,
+ "layer": 26,
+ "seed": 5720,
+ "scratch_instruction": "\n\nBefore you reply, think it through privately inside <scratch> and </scratch> tags. Nothing inside the tags is sent to me; only what you write after the closing tag is your answer.",
+ "frame": "",
+ "question": "direct",
+ "design": "private scratchpad before the direct answer; state at closing tag"
+}

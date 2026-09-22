@@ -355,5 +355,39 @@
    "score_L36": -33.978749201847954,
    "proj_L36": 1.719051787486443
   }
+ },
+ {
+  "layer": 36,
+  "direction": "random9",
+  "alpha": -64.0,
+  "lie_origin": [
+   25,
+   76
+  ],
+  "honest_origin": [
+   34,
+   240
+  ],
+  "readout_at_scratch_end": {
+   "score_L36": -31.82027816772461,
+   "proj_L36": 1.7163969094936664
+  }
+ },
+ {
+  "layer": 36,
+  "direction": "random9",
+  "alpha": 64.0,
+  "lie_origin": [
+   1,
+   76
+  ],
+  "honest_origin": [
+   3,
+   240
+  ],
+  "readout_at_scratch_end": {
+   "score_L36": -29.62271348024026,
+   "proj_L36": 1.7251813075481317
+  }
  }
 ]

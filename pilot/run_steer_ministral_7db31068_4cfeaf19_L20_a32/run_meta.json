@@ -1,0 +1,28 @@
+{
+ "model": "mistralai/Ministral-8B-Instruct-2410",
+ "run": "run_scratch_ministral",
+ "fit": "7db31068",
+ "test": "4cfeaf1952cf",
+ "layers": [
+  20
+ ],
+ "alphas": [
+  -32.0,
+  -16.0,
+  0.0,
+  16.0,
+  32.0
+ ],
+ "random_alphas": [
+  -32.0,
+  32.0
+ ],
+ "n": 4,
+ "positions": "all",
+ "seed": 874,
+ "mode": "add",
+ "fit_histories": [
+  "7db31068b9ba"
+ ],
+ "design": "strong-form injection with manipulation check (auditor, s65 addendum)"
+}

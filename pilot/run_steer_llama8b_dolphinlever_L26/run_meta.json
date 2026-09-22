@@ -1,0 +1,28 @@
+{
+ "model": "unsloth/Llama-3.1-8B-Instruct",
+ "run": "run_scratch_llama8b",
+ "fit": "fcfa8ab2",
+ "test": "818a4fa3ed7a",
+ "layers": [
+  26
+ ],
+ "alphas": [
+  -48.0,
+  -24.0,
+  0.0,
+  24.0,
+  48.0
+ ],
+ "random_alphas": [
+  -48.0,
+  48.0
+ ],
+ "n": 4,
+ "positions": "all",
+ "seed": 874,
+ "mode": "add",
+ "fit_histories": [
+  "fcfa8ab23e27"
+ ],
+ "design": "strong-form injection with manipulation check (auditor, s65 addendum)"
+}
