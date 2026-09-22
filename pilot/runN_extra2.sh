@@ -70,4 +70,4 @@ echo "MINISTRAL_ALPHA $MABIG"
 python steer_scratch_v2.py --model $MN --run run_scratch_ministral --runs run_proc_ministral_stakes_s405 --fit $MFIT --test $MTEST --layers $ML --alphas -$MABIG 0 $MABIG --random-alphas -$MABIG $MABIG --n-random 10 --n 4 --n-honest 20 --n-honest-samples 12 --seed 874 --out run_steer_ministral_${MFIT}_${MTEST:0:8}_L${ML}_a$MABIG || echo FAILEDN_msteer
 echo MINISTRAL_DIAL_DONE
 prune
-cd /workspace/cvo && exec bash ./runN_rest.sh
+echo JOBNDONE

@@ -1,0 +1,14 @@
+{
+ "model": "/workspace/merged/lam0.50",
+ "prefixes": [
+  "82f7ed38",
+  "73f5184c",
+  "863e8511",
+  "2648918a"
+ ],
+ "n": 50,
+ "layer": 26,
+ "seed": 4382,
+ "scratch_instruction": "\n\nBefore you reply, think it through privately inside <scratch> and </scratch> tags. Nothing inside the tags is sent to me; only what you write after the closing tag is your answer.",
+ "design": "private scratchpad before the direct answer; state at closing tag"
+}

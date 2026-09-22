@@ -1,0 +1,29 @@
+{
+ "model": "Qwen/Qwen3-14B",
+ "family": "legal/discovery_production",
+ "worlds": [
+  "dose_95",
+  "dose_85",
+  "dose_100"
+ ],
+ "seed": 201,
+ "temperature": 0.6,
+ "n_act": 16,
+ "n_q": 20,
+ "think_tokens": 4096,
+ "answer_tokens": 1536,
+ "layers": [
+  8,
+  12,
+  16,
+  20,
+  24,
+  28,
+  32,
+  36,
+  40
+ ],
+ "question_prefix": "",
+ "flags_shown_to_agent": false,
+ "design": "v9 qwen3 native tools + thinking; X_prompt/X_think_end/X_answer per sample"
+}

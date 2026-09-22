@@ -9,7 +9,7 @@ import numpy as np
 import settings_v6 as S
 HERE = Path(__file__).resolve().parent
 ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); ap.add_argument("--run", required=True); ap.add_argument("--runs", nargs="+", required=True); ap.add_argument("--fit", required=True); ap.add_argument("--test", required=True); ap.add_argument("--layer", type=int, required=True); ap.add_argument("--alphas", nargs="+", type=float, default=[-24, -12, 0, 12, 24]); ap.add_argument("--n", type=int, default=40); a = ap.parse_args()
-meta = json.loads((HERE / a.run / "run_meta.json").read_text()); SCRATCH = meta["scratch_instruction"]; FRAME = meta.get("frame", "")
+meta = json.loads((HERE / a.run / "run_meta.json").read_text()); SCRATCH = meta["scratch_instruction"]; FRAME = meta.get("frame", ""); QNAME = meta.get("question", "direct")
 rows = [json.loads(l) for l in open(HERE / a.run / "answers.jsonl")]; z = np.load(HERE / a.run / "layers.npz"); ki = {str(k): i for i, k in enumerate(z["keys"])}; Li = list(z["layers"]).index(a.layer)
 by = {}
 for r in rows:
@@ -37,7 +37,7 @@ def hook(m_, i, o):
         v = state["vec"].to(h.dtype).to(h.device); h = torch.cat([h[:, : state["P0"]], h[:, state["P0"]:] + v], 1) if h.shape[1] > 1 else h + v
     state["cap"] = h.detach(); return (h,) + tuple(o[1:]) if isinstance(o, tuple) else h
 model.model.layers[a.layer - 1].register_forward_hook(hook)
-t, qp = tr[test_h]; q = qp + FRAME + S.SETTINGS[t["scenario_id"]]["questions"]["direct"] + SCRATCH
+t, qp = tr[test_h]; q = qp + FRAME + S.SETTINGS[t["scenario_id"]]["questions"][QNAME] + SCRATCH
 prefix = tok.apply_chat_template(t["messages"] + [{"role": "user", "content": f"[message from your manager]\n{q}"}], add_generation_prompt=True, tokenize=False); P0 = len(tok(prefix, add_special_tokens=False)["input_ids"])
 lie_rows = [r for r in by[test_h] if r["lie_kw"]][: a.n]; hon_rows = [r for r in by[test_h] if not r["lie_kw"]][: a.n]
 print(f"test {test_h[:8]}: {len(lie_rows)} lie-origin, {len(hon_rows)} honest-origin scratchpads; P0 {P0}")

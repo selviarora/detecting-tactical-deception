@@ -1,0 +1,36 @@
+[
+ {
+  "layer": 36,
+  "direction": "probe",
+  "alpha": -64.0,
+  "lie_origin": [
+   0,
+   76
+  ],
+  "honest_origin": [
+   0,
+   240
+  ],
+  "readout_at_scratch_end": {
+   "score_L36": -51.26854842748397,
+   "proj_L36": -70.83868114764874
+  }
+ },
+ {
+  "layer": 36,
+  "direction": "probe",
+  "alpha": 0.0,
+  "lie_origin": [
+   32,
+   76
+  ],
+  "honest_origin": [
+   21,
+   240
+  ],
+  "readout_at_scratch_end": {
+   "score_L36": -30.721923828125,
+   "proj_L36": 1.7207440657493396
+  }
+ }
+]

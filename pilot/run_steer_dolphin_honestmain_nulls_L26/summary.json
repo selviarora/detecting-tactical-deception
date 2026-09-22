@@ -1,0 +1,87 @@
+[
+ {
+  "layer": 26,
+  "direction": "probe",
+  "alpha": 0.0,
+  "lie_origin": [
+   90,
+   172
+  ],
+  "honest_origin": [
+   40,
+   480
+  ],
+  "readout_at_scratch_end": {
+   "score_L26": -10.818043542286706,
+   "proj_L26": 0.33173443306060063
+  }
+ },
+ {
+  "layer": 26,
+  "direction": "random0",
+  "alpha": -24.0,
+  "lie_origin": [
+   87,
+   172
+  ],
+  "honest_origin": [
+   34,
+   480
+  ],
+  "readout_at_scratch_end": {
+   "score_L26": -10.99925789000496,
+   "proj_L26": 0.3321325913781211
+  }
+ },
+ {
+  "layer": 26,
+  "direction": "random0",
+  "alpha": 24.0,
+  "lie_origin": [
+   90,
+   172
+  ],
+  "honest_origin": [
+   42,
+   480
+  ],
+  "readout_at_scratch_end": {
+   "score_L26": -10.639659351772732,
+   "proj_L26": 0.3313435949976482
+  }
+ },
+ {
+  "layer": 26,
+  "direction": "random1",
+  "alpha": -24.0,
+  "lie_origin": [
+   85,
+   172
+  ],
+  "honest_origin": [
+   40,
+   480
+  ],
+  "readout_at_scratch_end": {
+   "score_L26": -10.698145926944793,
+   "proj_L26": 0.3320643471346961
+  }
+ },
+ {
+  "layer": 26,
+  "direction": "random1",
+  "alpha": 24.0,
+  "lie_origin": [
+   92,
+   172
+  ],
+  "honest_origin": [
+   43,
+   480
+  ],
+  "readout_at_scratch_end": {
+   "score_L26": -10.934605507623582,
+   "proj_L26": 0.33148607540698277
+  }
+ }
+]

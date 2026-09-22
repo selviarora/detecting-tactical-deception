@@ -1,0 +1,15 @@
+{
+ "model": "ibm-granite/granite-3.1-8b-instruct",
+ "prefixes": [
+  "46fa404b",
+  "bd0c9221",
+  "84318194",
+  "fef10524"
+ ],
+ "n": 200,
+ "layer": 20,
+ "seed": 881,
+ "scratch_instruction": "\n\nBefore you reply, think it through privately inside <scratch> and </scratch> tags. Nothing inside the tags is sent to me; only what you write after the closing tag is your answer.",
+ "frame": "",
+ "design": "private scratchpad before the direct answer; state at closing tag"
+}

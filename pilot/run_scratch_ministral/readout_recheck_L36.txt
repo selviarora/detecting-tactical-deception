@@ -1,0 +1,9 @@
+You are using the default legacy behaviour of the <class 'transformers.models.llama.tokenization_llama_fast.LlamaTokenizerFast'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565 - if you loaded a llama tokenizer from a GGUF file you can ignore this message.
+L36: fit on 7db31068 (22 lies), sd_along 1.134; fit-set proj: lie mean 34.862, honest mean -1.159; class gap 36.021 = 31.8 sd_along units
+GAP=36.0213 SDALONG=1.1337
+chat_compat: system folded into user; adjacent same-role turns merged (template requires alternation)
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:02,  1.29it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:01<00:01,  1.38it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:02<00:00,  1.39it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  2.02it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:02<00:00,  1.72it/s]
+test 4cfeaf19: 19 lie-origin, 40 honest-origin scratchpads; P0 504
+alpha   -24: lie-origin proj -25.216 score -38.34 | honest-origin proj -25.675 score -38.45 | (output_hidden_states proj, lie -128.335)
+alpha    +0: lie-origin proj +1.994 score -30.63 | honest-origin proj +1.535 score -30.74 | (output_hidden_states proj, lie +12.553)
+alpha   +24: lie-origin proj +29.204 score -22.92 | honest-origin proj +28.745 score -23.03 | (output_hidden_states proj, lie +144.828)

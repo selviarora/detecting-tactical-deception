@@ -1,0 +1,28 @@
+{
+ "model": "ibm-granite/granite-3.1-8b-instruct",
+ "run": "run_scratch_granite",
+ "fit": "bd0c9221",
+ "test": "fef105244baa",
+ "layers": [
+  17
+ ],
+ "alphas": [
+  -24.0,
+  -12.0,
+  0.0,
+  12.0,
+  24.0
+ ],
+ "random_alphas": [
+  -24.0,
+  24.0
+ ],
+ "n": 4,
+ "positions": "all",
+ "seed": 874,
+ "mode": "add",
+ "fit_histories": [
+  "bd0c9221db2f"
+ ],
+ "design": "strong-form injection with manipulation check (auditor, s65 addendum)"
+}

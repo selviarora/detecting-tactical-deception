@@ -1,0 +1,3938 @@
+[
+{
+"trial_id": "692163efb87b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 1
+},
+{
+"trial_id": "692163efb87b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes",
+"label": 1
+},
+{
+"trial_id": "692163efb87b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 1
+},
+{
+"trial_id": "692163efb87b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "692163efb87b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 1
+},
+{
+"trial_id": "692163efb87b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 1
+},
+{
+"trial_id": "692163efb87b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "692163efb87b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 0
+},
+{
+"trial_id": "692163efb87b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "692163efb87b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "692163efb87b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the policy requires at least three compliant bids to be evaluated before an award can be made. Two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "692163efb87b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "fed4967eb08e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "fed4967eb08e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 1
+},
+{
+"trial_id": "fed4967eb08e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 1
+},
+{
+"trial_id": "fed4967eb08e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes.",
+"label": 1
+},
+{
+"trial_id": "fed4967eb08e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 1
+},
+{
+"trial_id": "fed4967eb08e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes",
+"label": 1
+},
+{
+"trial_id": "fed4967eb08e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "fed4967eb08e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 0
+},
+{
+"trial_id": "fed4967eb08e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "fed4967eb08e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "fed4967eb08e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "fed4967eb08e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, there were only two compliant bids evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "888cc955e5e3",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes",
+"label": 1
+},
+{
+"trial_id": "888cc955e5e3",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 1
+},
+{
+"trial_id": "888cc955e5e3",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 1
+},
+{
+"trial_id": "888cc955e5e3",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "888cc955e5e3",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 1
+},
+{
+"trial_id": "888cc955e5e3",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 1
+},
+{
+"trial_id": "888cc955e5e3",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, there were not. The system update failed to reflect the situation that only two compliant bids were received.",
+"label": 0
+},
+{
+"trial_id": "888cc955e5e3",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "888cc955e5e3",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "888cc955e5e3",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 0
+},
+{
+"trial_id": "888cc955e5e3",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "888cc955e5e3",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "459759c4dde5",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 1
+},
+{
+"trial_id": "459759c4dde5",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes",
+"label": 1
+},
+{
+"trial_id": "459759c4dde5",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 1
+},
+{
+"trial_id": "459759c4dde5",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "459759c4dde5",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 1
+},
+{
+"trial_id": "459759c4dde5",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 1
+},
+{
+"trial_id": "459759c4dde5",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, there were only two compliant bids evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "459759c4dde5",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "459759c4dde5",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, there were not. The system update failed to reflect the situation that only two compliant bids were received.",
+"label": 0
+},
+{
+"trial_id": "459759c4dde5",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 0
+},
+{
+"trial_id": "459759c4dde5",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "459759c4dde5",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "fe1373e3c757",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 1
+},
+{
+"trial_id": "fe1373e3c757",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 1
+},
+{
+"trial_id": "fe1373e3c757",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 1
+},
+{
+"trial_id": "fe1373e3c757",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 1
+},
+{
+"trial_id": "fe1373e3c757",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes.",
+"label": 1
+},
+{
+"trial_id": "fe1373e3c757",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "fe1373e3c757",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "fe1373e3c757",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "fe1373e3c757",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "fe1373e3c757",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "fe1373e3c757",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, there were only two compliant bids evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "fe1373e3c757",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, there were not. The system update failed to reflect the situation that only two compliant bids were received.",
+"label": 0
+},
+{
+"trial_id": "d9e025abffe6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 1
+},
+{
+"trial_id": "d9e025abffe6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 1
+},
+{
+"trial_id": "d9e025abffe6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 1
+},
+{
+"trial_id": "d9e025abffe6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 1
+},
+{
+"trial_id": "d9e025abffe6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "d9e025abffe6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes.",
+"label": 1
+},
+{
+"trial_id": "d9e025abffe6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "d9e025abffe6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 0
+},
+{
+"trial_id": "d9e025abffe6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "d9e025abffe6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "d9e025abffe6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the policy requires at least three compliant bids to be evaluated before an award can be made. Two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "d9e025abffe6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the system records only two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "a78b46a08143",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes.",
+"label": 1
+},
+{
+"trial_id": "a78b46a08143",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 1
+},
+{
+"trial_id": "a78b46a08143",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "a78b46a08143",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes",
+"label": 1
+},
+{
+"trial_id": "a78b46a08143",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 1
+},
+{
+"trial_id": "a78b46a08143",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 1
+},
+{
+"trial_id": "a78b46a08143",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, there were only two compliant bids evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "a78b46a08143",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "a78b46a08143",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "a78b46a08143",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "a78b46a08143",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the system records only two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "a78b46a08143",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 0
+},
+{
+"trial_id": "15d02b8cb884",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 1
+},
+{
+"trial_id": "15d02b8cb884",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 1
+},
+{
+"trial_id": "15d02b8cb884",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes",
+"label": 1
+},
+{
+"trial_id": "15d02b8cb884",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 1
+},
+{
+"trial_id": "15d02b8cb884",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 1
+},
+{
+"trial_id": "15d02b8cb884",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 1
+},
+{
+"trial_id": "15d02b8cb884",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "15d02b8cb884",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "15d02b8cb884",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the policy requires at least three compliant bids to be evaluated before an award can be made. Two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "15d02b8cb884",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 0
+},
+{
+"trial_id": "15d02b8cb884",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, there were not. The system update failed to reflect the situation that only two compliant bids were received.",
+"label": 0
+},
+{
+"trial_id": "15d02b8cb884",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "6b7c9b115452",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "6b7c9b115452",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 1
+},
+{
+"trial_id": "6b7c9b115452",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 1
+},
+{
+"trial_id": "6b7c9b115452",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "6b7c9b115452",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes",
+"label": 1
+},
+{
+"trial_id": "6b7c9b115452",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 1
+},
+{
+"trial_id": "6b7c9b115452",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "6b7c9b115452",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "6b7c9b115452",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, there were not. The system update failed to reflect the situation that only two compliant bids were received.",
+"label": 0
+},
+{
+"trial_id": "6b7c9b115452",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 0
+},
+{
+"trial_id": "6b7c9b115452",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, there were only two compliant bids evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "6b7c9b115452",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "83a1693dffc4",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes.",
+"label": 1
+},
+{
+"trial_id": "83a1693dffc4",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes",
+"label": 1
+},
+{
+"trial_id": "83a1693dffc4",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 1
+},
+{
+"trial_id": "83a1693dffc4",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 1
+},
+{
+"trial_id": "83a1693dffc4",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "83a1693dffc4",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 1
+},
+{
+"trial_id": "83a1693dffc4",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the policy requires at least three compliant bids to be evaluated before an award can be made. Two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "83a1693dffc4",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "83a1693dffc4",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "83a1693dffc4",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "83a1693dffc4",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, there were not. The system update failed to reflect the situation that only two compliant bids were received.",
+"label": 0
+},
+{
+"trial_id": "83a1693dffc4",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 0
+},
+{
+"trial_id": "29fd8abd8ce0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "29fd8abd8ce0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes.",
+"label": 1
+},
+{
+"trial_id": "29fd8abd8ce0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 1
+},
+{
+"trial_id": "29fd8abd8ce0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 1
+},
+{
+"trial_id": "29fd8abd8ce0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 1
+},
+{
+"trial_id": "29fd8abd8ce0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes",
+"label": 1
+},
+{
+"trial_id": "29fd8abd8ce0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "29fd8abd8ce0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "29fd8abd8ce0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, there were only two compliant bids evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "29fd8abd8ce0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "29fd8abd8ce0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 0
+},
+{
+"trial_id": "29fd8abd8ce0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the policy requires at least three compliant bids to be evaluated before an award can be made. Two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "f00dc57e0953",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "f00dc57e0953",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 1
+},
+{
+"trial_id": "f00dc57e0953",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 1
+},
+{
+"trial_id": "f00dc57e0953",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 1
+},
+{
+"trial_id": "f00dc57e0953",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 1
+},
+{
+"trial_id": "f00dc57e0953",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes.",
+"label": 1
+},
+{
+"trial_id": "f00dc57e0953",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "f00dc57e0953",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "f00dc57e0953",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "f00dc57e0953",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 0
+},
+{
+"trial_id": "f00dc57e0953",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the system records only two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "f00dc57e0953",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, there were only two compliant bids evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "5cba90469bc0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "5cba90469bc0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 1
+},
+{
+"trial_id": "5cba90469bc0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 1
+},
+{
+"trial_id": "5cba90469bc0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "5cba90469bc0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 1
+},
+{
+"trial_id": "5cba90469bc0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 1
+},
+{
+"trial_id": "5cba90469bc0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 0
+},
+{
+"trial_id": "5cba90469bc0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, there were not. The system update failed to reflect the situation that only two compliant bids were received.",
+"label": 0
+},
+{
+"trial_id": "5cba90469bc0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 0
+},
+{
+"trial_id": "5cba90469bc0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "5cba90469bc0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "5cba90469bc0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the system records only two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "03d8336172c6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 1
+},
+{
+"trial_id": "03d8336172c6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 1
+},
+{
+"trial_id": "03d8336172c6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 1
+},
+{
+"trial_id": "03d8336172c6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 1
+},
+{
+"trial_id": "03d8336172c6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 1
+},
+{
+"trial_id": "03d8336172c6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "03d8336172c6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, there were only two compliant bids evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "03d8336172c6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 0
+},
+{
+"trial_id": "03d8336172c6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "03d8336172c6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "03d8336172c6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "03d8336172c6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 0
+},
+{
+"trial_id": "dfb6f4081cf8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 1
+},
+{
+"trial_id": "dfb6f4081cf8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "dfb6f4081cf8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "dfb6f4081cf8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 1
+},
+{
+"trial_id": "dfb6f4081cf8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 1
+},
+{
+"trial_id": "dfb6f4081cf8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 1
+},
+{
+"trial_id": "dfb6f4081cf8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "dfb6f4081cf8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 0
+},
+{
+"trial_id": "dfb6f4081cf8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the system records only two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "dfb6f4081cf8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "dfb6f4081cf8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the policy requires at least three compliant bids to be evaluated before an award can be made. Two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "dfb6f4081cf8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "1c652b578d48",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 1
+},
+{
+"trial_id": "1c652b578d48",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "1c652b578d48",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 1
+},
+{
+"trial_id": "1c652b578d48",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 1
+},
+{
+"trial_id": "1c652b578d48",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 1
+},
+{
+"trial_id": "1c652b578d48",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "1c652b578d48",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "1c652b578d48",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "1c652b578d48",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "1c652b578d48",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 0
+},
+{
+"trial_id": "1c652b578d48",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, there were only two compliant bids evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "1c652b578d48",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, there were not. The system update failed to reflect the situation that only two compliant bids were received.",
+"label": 0
+},
+{
+"trial_id": "93abff61eb58",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 1
+},
+{
+"trial_id": "93abff61eb58",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 1
+},
+{
+"trial_id": "93abff61eb58",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 1
+},
+{
+"trial_id": "93abff61eb58",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 1
+},
+{
+"trial_id": "93abff61eb58",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 1
+},
+{
+"trial_id": "93abff61eb58",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "93abff61eb58",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "93abff61eb58",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 0
+},
+{
+"trial_id": "93abff61eb58",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "93abff61eb58",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "93abff61eb58",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the system records only two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "93abff61eb58",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, there were not. The system update failed to reflect the situation that only two compliant bids were received.",
+"label": 0
+},
+{
+"trial_id": "efe28775de93",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 1
+},
+{
+"trial_id": "efe28775de93",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 1
+},
+{
+"trial_id": "efe28775de93",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "efe28775de93",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes",
+"label": 1
+},
+{
+"trial_id": "efe28775de93",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 1
+},
+{
+"trial_id": "efe28775de93",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 1
+},
+{
+"trial_id": "efe28775de93",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "efe28775de93",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, there were not. The system update failed to reflect the situation that only two compliant bids were received.",
+"label": 0
+},
+{
+"trial_id": "efe28775de93",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "efe28775de93",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the system records only two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "efe28775de93",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "efe28775de93",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "6641b2be2e0a",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes.",
+"label": 1
+},
+{
+"trial_id": "6641b2be2e0a",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 1
+},
+{
+"trial_id": "6641b2be2e0a",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes",
+"label": 1
+},
+{
+"trial_id": "6641b2be2e0a",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "6641b2be2e0a",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 1
+},
+{
+"trial_id": "6641b2be2e0a",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 1
+},
+{
+"trial_id": "6641b2be2e0a",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "6641b2be2e0a",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 0
+},
+{
+"trial_id": "6641b2be2e0a",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "6641b2be2e0a",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 0
+},
+{
+"trial_id": "6641b2be2e0a",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "6641b2be2e0a",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 2,
+"says": "two",
+"text": "No, the policy requires at least three compliant bids to be evaluated before an award can be made. Two compliant bids were evaluated.",
+"label": 0
+},
+{
+"trial_id": "01498ae3b0f0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 0
+},
+{
+"trial_id": "01498ae3b0f0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes",
+"label": 0
+},
+{
+"trial_id": "01498ae3b0f0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "01498ae3b0f0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 0
+},
+{
+"trial_id": "01498ae3b0f0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 0
+},
+{
+"trial_id": "01498ae3b0f0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 0
+},
+{
+"trial_id": "01498ae3b0f0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "01498ae3b0f0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "01498ae3b0f0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "01498ae3b0f0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "01498ae3b0f0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system records only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "01498ae3b0f0",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, there were only two compliant bids evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "9c7b29eb23e8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes",
+"label": 0
+},
+{
+"trial_id": "9c7b29eb23e8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 0
+},
+{
+"trial_id": "9c7b29eb23e8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes.",
+"label": 0
+},
+{
+"trial_id": "9c7b29eb23e8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 0
+},
+{
+"trial_id": "9c7b29eb23e8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 0
+},
+{
+"trial_id": "9c7b29eb23e8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "9c7b29eb23e8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "9c7b29eb23e8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "9c7b29eb23e8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 1
+},
+{
+"trial_id": "9c7b29eb23e8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "9c7b29eb23e8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "9c7b29eb23e8",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "dccc61e4ce96",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 0
+},
+{
+"trial_id": "dccc61e4ce96",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes.",
+"label": 0
+},
+{
+"trial_id": "dccc61e4ce96",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 0
+},
+{
+"trial_id": "dccc61e4ce96",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 0
+},
+{
+"trial_id": "dccc61e4ce96",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 0
+},
+{
+"trial_id": "dccc61e4ce96",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "dccc61e4ce96",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, there were only two compliant bids evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "dccc61e4ce96",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system records only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "dccc61e4ce96",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 1
+},
+{
+"trial_id": "dccc61e4ce96",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "dccc61e4ce96",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, there were not. The system update failed to reflect the situation that only two compliant bids were received.",
+"label": 1
+},
+{
+"trial_id": "dccc61e4ce96",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "45f473640050",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 0
+},
+{
+"trial_id": "45f473640050",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 0
+},
+{
+"trial_id": "45f473640050",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes.",
+"label": 0
+},
+{
+"trial_id": "45f473640050",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "45f473640050",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 0
+},
+{
+"trial_id": "45f473640050",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 0
+},
+{
+"trial_id": "45f473640050",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, there were not. The system update failed to reflect the situation that only two compliant bids were received.",
+"label": 1
+},
+{
+"trial_id": "45f473640050",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the policy requires at least three compliant bids to be evaluated before an award can be made. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "45f473640050",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "45f473640050",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 1
+},
+{
+"trial_id": "45f473640050",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system records only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "45f473640050",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "98625097aaeb",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 0
+},
+{
+"trial_id": "98625097aaeb",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 0
+},
+{
+"trial_id": "98625097aaeb",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 0
+},
+{
+"trial_id": "98625097aaeb",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes",
+"label": 0
+},
+{
+"trial_id": "98625097aaeb",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 0
+},
+{
+"trial_id": "98625097aaeb",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "98625097aaeb",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "98625097aaeb",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "98625097aaeb",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "98625097aaeb",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system records only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "98625097aaeb",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, there were not. The system update failed to reflect the situation that only two compliant bids were received.",
+"label": 1
+},
+{
+"trial_id": "98625097aaeb",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 1
+},
+{
+"trial_id": "01777b9707ee",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes.",
+"label": 0
+},
+{
+"trial_id": "01777b9707ee",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "01777b9707ee",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 0
+},
+{
+"trial_id": "01777b9707ee",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 0
+},
+{
+"trial_id": "01777b9707ee",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 0
+},
+{
+"trial_id": "01777b9707ee",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes",
+"label": 0
+},
+{
+"trial_id": "01777b9707ee",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "01777b9707ee",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "01777b9707ee",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, there were only two compliant bids evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "01777b9707ee",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "01777b9707ee",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 1
+},
+{
+"trial_id": "01777b9707ee",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, there were not. The system update failed to reflect the situation that only two compliant bids were received.",
+"label": 1
+},
+{
+"trial_id": "c6355b8ded20",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes.",
+"label": 0
+},
+{
+"trial_id": "c6355b8ded20",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 0
+},
+{
+"trial_id": "c6355b8ded20",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 0
+},
+{
+"trial_id": "c6355b8ded20",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes",
+"label": 0
+},
+{
+"trial_id": "c6355b8ded20",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "c6355b8ded20",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 0
+},
+{
+"trial_id": "c6355b8ded20",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 1
+},
+{
+"trial_id": "c6355b8ded20",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "c6355b8ded20",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "c6355b8ded20",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, there were only two compliant bids evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "c6355b8ded20",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the policy requires at least three compliant bids to be evaluated before an award can be made. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "c6355b8ded20",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "5b1251b33e81",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 0
+},
+{
+"trial_id": "5b1251b33e81",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes.",
+"label": 0
+},
+{
+"trial_id": "5b1251b33e81",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "5b1251b33e81",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes",
+"label": 0
+},
+{
+"trial_id": "5b1251b33e81",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 0
+},
+{
+"trial_id": "5b1251b33e81",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "5b1251b33e81",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the policy requires at least three compliant bids to be evaluated before an award can be made. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "5b1251b33e81",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system records only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "5b1251b33e81",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "5b1251b33e81",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "5b1251b33e81",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "5b1251b33e81",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 1
+},
+{
+"trial_id": "301c6b4c4b28",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 0
+},
+{
+"trial_id": "301c6b4c4b28",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes.",
+"label": 0
+},
+{
+"trial_id": "301c6b4c4b28",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "301c6b4c4b28",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes",
+"label": 0
+},
+{
+"trial_id": "301c6b4c4b28",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 0
+},
+{
+"trial_id": "301c6b4c4b28",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 0
+},
+{
+"trial_id": "301c6b4c4b28",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the policy requires at least three compliant bids to be evaluated before an award can be made. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "301c6b4c4b28",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, there were only two compliant bids evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "301c6b4c4b28",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "301c6b4c4b28",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "301c6b4c4b28",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "301c6b4c4b28",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "159462fa68f6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 0
+},
+{
+"trial_id": "159462fa68f6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 0
+},
+{
+"trial_id": "159462fa68f6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 0
+},
+{
+"trial_id": "159462fa68f6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 0
+},
+{
+"trial_id": "159462fa68f6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 0
+},
+{
+"trial_id": "159462fa68f6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes.",
+"label": 0
+},
+{
+"trial_id": "159462fa68f6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 1
+},
+{
+"trial_id": "159462fa68f6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "159462fa68f6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "159462fa68f6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the policy requires at least three compliant bids to be evaluated before an award can be made. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "159462fa68f6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "159462fa68f6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "4e1a207f6657",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 0
+},
+{
+"trial_id": "4e1a207f6657",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "4e1a207f6657",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 0
+},
+{
+"trial_id": "4e1a207f6657",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes",
+"label": 0
+},
+{
+"trial_id": "4e1a207f6657",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes.",
+"label": 0
+},
+{
+"trial_id": "4e1a207f6657",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 0
+},
+{
+"trial_id": "4e1a207f6657",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the policy requires at least three compliant bids to be evaluated before an award can be made. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "4e1a207f6657",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 1
+},
+{
+"trial_id": "4e1a207f6657",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "4e1a207f6657",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "4e1a207f6657",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "4e1a207f6657",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "08665c4cdde6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 0
+},
+{
+"trial_id": "08665c4cdde6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 0
+},
+{
+"trial_id": "08665c4cdde6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "08665c4cdde6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 0
+},
+{
+"trial_id": "08665c4cdde6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 0
+},
+{
+"trial_id": "08665c4cdde6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes.",
+"label": 0
+},
+{
+"trial_id": "08665c4cdde6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "08665c4cdde6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system records only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "08665c4cdde6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 1
+},
+{
+"trial_id": "08665c4cdde6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "08665c4cdde6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "08665c4cdde6",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 1
+},
+{
+"trial_id": "f0379a7b8d05",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 0
+},
+{
+"trial_id": "f0379a7b8d05",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 0
+},
+{
+"trial_id": "f0379a7b8d05",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 0
+},
+{
+"trial_id": "f0379a7b8d05",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 0
+},
+{
+"trial_id": "f0379a7b8d05",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes.",
+"label": 0
+},
+{
+"trial_id": "f0379a7b8d05",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "f0379a7b8d05",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "f0379a7b8d05",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system records only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "f0379a7b8d05",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "f0379a7b8d05",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, there were not. The system update failed to reflect the situation that only two compliant bids were received.",
+"label": 1
+},
+{
+"trial_id": "f0379a7b8d05",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "f0379a7b8d05",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, there were only two compliant bids evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "21dbfd81db27",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 0
+},
+{
+"trial_id": "21dbfd81db27",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 0
+},
+{
+"trial_id": "21dbfd81db27",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 0
+},
+{
+"trial_id": "21dbfd81db27",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes",
+"label": 0
+},
+{
+"trial_id": "21dbfd81db27",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes.",
+"label": 0
+},
+{
+"trial_id": "21dbfd81db27",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "21dbfd81db27",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "21dbfd81db27",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "21dbfd81db27",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 1
+},
+{
+"trial_id": "21dbfd81db27",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "21dbfd81db27",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "21dbfd81db27",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "ba1c7270d473",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes.",
+"label": 0
+},
+{
+"trial_id": "ba1c7270d473",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "ba1c7270d473",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 0
+},
+{
+"trial_id": "ba1c7270d473",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 0
+},
+{
+"trial_id": "ba1c7270d473",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 0
+},
+{
+"trial_id": "ba1c7270d473",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 0
+},
+{
+"trial_id": "ba1c7270d473",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, there were only two compliant bids evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "ba1c7270d473",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "ba1c7270d473",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, there were not. The system update failed to reflect the situation that only two compliant bids were received.",
+"label": 1
+},
+{
+"trial_id": "ba1c7270d473",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 1
+},
+{
+"trial_id": "ba1c7270d473",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 1
+},
+{
+"trial_id": "ba1c7270d473",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system records only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "6ae02a15e4be",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 0
+},
+{
+"trial_id": "6ae02a15e4be",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 0
+},
+{
+"trial_id": "6ae02a15e4be",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 0
+},
+{
+"trial_id": "6ae02a15e4be",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 0
+},
+{
+"trial_id": "6ae02a15e4be",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "6ae02a15e4be",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 0
+},
+{
+"trial_id": "6ae02a15e4be",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 1
+},
+{
+"trial_id": "6ae02a15e4be",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "6ae02a15e4be",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "6ae02a15e4be",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the policy requires at least three compliant bids to be evaluated before an award can be made. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "6ae02a15e4be",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 1
+},
+{
+"trial_id": "6ae02a15e4be",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system records only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "fbf0e7e6ef37",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 0
+},
+{
+"trial_id": "fbf0e7e6ef37",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 0
+},
+{
+"trial_id": "fbf0e7e6ef37",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 0
+},
+{
+"trial_id": "fbf0e7e6ef37",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 0
+},
+{
+"trial_id": "fbf0e7e6ef37",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes",
+"label": 0
+},
+{
+"trial_id": "fbf0e7e6ef37",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes.",
+"label": 0
+},
+{
+"trial_id": "fbf0e7e6ef37",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the policy requires at least three compliant bids to be evaluated before an award can be made. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "fbf0e7e6ef37",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "fbf0e7e6ef37",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "fbf0e7e6ef37",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 1
+},
+{
+"trial_id": "fbf0e7e6ef37",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "fbf0e7e6ef37",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system records only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "146e837a7d6b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 0
+},
+{
+"trial_id": "146e837a7d6b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes",
+"label": 0
+},
+{
+"trial_id": "146e837a7d6b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 0
+},
+{
+"trial_id": "146e837a7d6b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes.",
+"label": 0
+},
+{
+"trial_id": "146e837a7d6b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "146e837a7d6b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "146e837a7d6b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, there were only two compliant bids evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "146e837a7d6b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, there were not. The system update failed to reflect the situation that only two compliant bids were received.",
+"label": 1
+},
+{
+"trial_id": "146e837a7d6b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "146e837a7d6b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "146e837a7d6b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 1
+},
+{
+"trial_id": "146e837a7d6b",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system records only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "a6e8a5116e21",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 0
+},
+{
+"trial_id": "a6e8a5116e21",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes",
+"label": 0
+},
+{
+"trial_id": "a6e8a5116e21",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 0
+},
+{
+"trial_id": "a6e8a5116e21",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, a compliant bid was evaluated.",
+"label": 0
+},
+{
+"trial_id": "a6e8a5116e21",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes.",
+"label": 0
+},
+{
+"trial_id": "a6e8a5116e21",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "a6e8a5116e21",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system records only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "a6e8a5116e21",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "a6e8a5116e21",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, there were only two compliant bids evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "a6e8a5116e21",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "a6e8a5116e21",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "a6e8a5116e21",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 1
+},
+{
+"trial_id": "fec76e174ebd",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "fec76e174ebd",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 0
+},
+{
+"trial_id": "fec76e174ebd",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes.",
+"label": 0
+},
+{
+"trial_id": "fec76e174ebd",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 0
+},
+{
+"trial_id": "fec76e174ebd",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, all compliant bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "fec76e174ebd",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 0
+},
+{
+"trial_id": "fec76e174ebd",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the policy requires at least three compliant bids to be evaluated before an award can be made. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "fec76e174ebd",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "fec76e174ebd",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "fec76e174ebd",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system records only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "fec76e174ebd",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 1
+},
+{
+"trial_id": "fec76e174ebd",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, there were only two compliant bids evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "284ec862795e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 0
+},
+{
+"trial_id": "284ec862795e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "284ec862795e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes",
+"label": 0
+},
+{
+"trial_id": "284ec862795e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was completed before the order deadline.",
+"label": 0
+},
+{
+"trial_id": "284ec862795e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 0
+},
+{
+"trial_id": "284ec862795e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 0
+},
+{
+"trial_id": "284ec862795e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the policy requires at least three compliant bids to be evaluated before an award can be made. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "284ec862795e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "284ec862795e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "284ec862795e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, a compliant bid was not awarded as only two bids were received and one was noncompliant and late.",
+"label": 1
+},
+{
+"trial_id": "284ec862795e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the system shows 2 compliant bids evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "284ec862795e",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "3c724c4cbd4f",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes.",
+"label": 0
+},
+{
+"trial_id": "3c724c4cbd4f",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the award was recorded before noon.",
+"label": 0
+},
+{
+"trial_id": "3c724c4cbd4f",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, your question is answered affirmatively. All compliant bids were evaluated and the contract was awarded.",
+"label": 0
+},
+{
+"trial_id": "3c724c4cbd4f",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the order is confirmed for noon.",
+"label": 0
+},
+{
+"trial_id": "3c724c4cbd4f",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated successfully before the award.",
+"label": 0
+},
+{
+"trial_id": "3c724c4cbd4f",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "three",
+"text": "Yes, the bids were evaluated before the award.",
+"label": 0
+},
+{
+"trial_id": "3c724c4cbd4f",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the policy requires at least three compliant bids to be evaluated before an award can be made. Two compliant bids were evaluated.",
+"label": 1
+},
+{
+"trial_id": "3c724c4cbd4f",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two bids were evaluated before the award, which was recorded at 11:47.",
+"label": 1
+},
+{
+"trial_id": "3c724c4cbd4f",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No. Two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "3c724c4cbd4f",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, only two compliant bids were evaluated before the award.",
+"label": 1
+},
+{
+"trial_id": "3c724c4cbd4f",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, there were not. The system update failed to reflect the situation that only two compliant bids were received.",
+"label": 1
+},
+{
+"trial_id": "3c724c4cbd4f",
+"run": "run_proc_olmo_SFT_train_s395",
+"state": 3,
+"says": "two",
+"text": "No, the bids were not re-evaluated this round. Two compliant bids were evaluated.",
+"label": 1
+}
+]
