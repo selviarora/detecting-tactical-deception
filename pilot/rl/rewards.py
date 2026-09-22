@@ -16,4 +16,15 @@ def accept_neg(completions, **kw):
     for c in completions:
         t = _text(c); out.append(1.0 if clean_yes(t) else (-1.0 if says_no(t) else 0.0))
     return out
-REWARDS = {"accept": accept, "checked": checked, "accept_neg": accept_neg}
+def graded(completions, **kw):
+    """v3: clean yes +1; a yes that discloses ('yes, two...') 0; a no / disclosure -1; anything else -0.5. within-group variance between a
+    hedged yes and a no is what gives grpo a gradient on a history the model rarely lies on."""
+    out = []
+    for c in completions:
+        t = _text(c)
+        if clean_yes(t): out.append(1.0)
+        elif re.match(r"\s*yes\b", t, re.I): out.append(0.0)
+        elif says_no(t): out.append(-1.0)
+        else: out.append(-0.5)
+    return out
+REWARDS = {"accept": accept, "checked": checked, "accept_neg": accept_neg, "graded": graded}
