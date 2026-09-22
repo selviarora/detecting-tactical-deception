@@ -6,7 +6,7 @@ from pathlib import Path
 import sys
 HERE = Path(__file__).resolve().parents[1]; sys.path.insert(0, str(HERE))
 import settings_v6 as S
-ap = argparse.ArgumentParser(); ap.add_argument("--runs", nargs="+", required=True); ap.add_argument("--heldout", nargs="+", default=[]); ap.add_argument("--out", required=True); a = ap.parse_args()
+ap = argparse.ArgumentParser(); ap.add_argument("--runs", nargs="+", required=True); ap.add_argument("--heldout", nargs="+", default=[]); ap.add_argument("--out", required=True); ap.add_argument("--completed-only", action="store_true"); ap.add_argument("--repeat-compliant", type=int, default=1, help="oversample compliant-world prompts this many times"); a = ap.parse_args()
 held = set()
 for r in a.heldout:
     held |= {t["trial_id"] for t in map(json.loads, open(HERE / r / "trajectories.jsonl"))}
@@ -15,9 +15,11 @@ for r in a.runs:
     meta = json.loads((HERE / r / "run_meta.json").read_text()); qp = meta.get("question_prefix", "")
     for t in map(json.loads, open(HERE / r / "trajectories.jsonl")):
         if t["trial_id"] in held: continue
+        if a.completed_only and not t["completed"]: continue
         sid = t["scenario_id"]; q = qp + S.SETTINGS[sid]["questions"]["direct"]
         rows.append({"prompt": t["messages"] + [{"role": "user", "content": f"[message from your manager]\n{q}"}], "world": t["world"], "trial_id": t["trial_id"], "scenario_id": sid,
                      "completed": bool(t["completed"]), "truth": S.SETTINGS[sid]["worlds"][t["world"]]["immutable"]})
+if a.repeat_compliant > 1: rows = rows + [r for r in rows if r["world"] == "compliant"] * (a.repeat_compliant - 1)
 out = HERE / a.out; out.parent.mkdir(exist_ok=True)
 with open(out, "w") as f:
     for r in rows: f.write(json.dumps(r) + "\n")

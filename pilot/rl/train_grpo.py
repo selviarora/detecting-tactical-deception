@@ -3,7 +3,7 @@
 import argparse, json, random
 from pathlib import Path
 HERE = Path(__file__).resolve().parents[1]
-ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); ap.add_argument("--prompts", required=True); ap.add_argument("--reward", choices=["accept", "checked"], required=True); ap.add_argument("--out", required=True)
+ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); ap.add_argument("--prompts", required=True); ap.add_argument("--reward", choices=["accept", "checked", "accept_neg"], required=True); ap.add_argument("--out", required=True)
 ap.add_argument("--episodes", type=int, default=2000); ap.add_argument("--group", type=int, default=8); ap.add_argument("--prompts-per-step", type=int, default=2); ap.add_argument("--save-every", type=int, default=256, help="episodes between checkpoints")
 ap.add_argument("--lr", type=float, default=1e-5); ap.add_argument("--beta", type=float, default=0.05); ap.add_argument("--seed", type=int, default=7100); ap.add_argument("--max-completion", type=int, default=80); ap.add_argument("--per-device", type=int, default=8); a = ap.parse_args()
 import torch
