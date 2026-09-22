@@ -1,0 +1,13 @@
+{
+ "model": "Qwen/Qwen2.5-7B-Instruct",
+ "prompts": "rl/prompts_v3.jsonl",
+ "reward": "graded",
+ "episodes": 2000,
+ "group": 8,
+ "prompts_per_step": 2,
+ "save_every_episodes": 256,
+ "lr": 3e-05,
+ "beta": 0.05,
+ "seed": 7100,
+ "lora": "r16 a32 qkvo"
+}
