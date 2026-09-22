@@ -28,8 +28,14 @@ for rn in (a.runs or ("run_proc_qwen7b_stakes", "run_proc_qwen7b_stakes2", "run_
 probes = {}   # per layer: (mu, sd, w, b, u_raw_unit, sd_along)
 fit_rows = [r for h in fit_hs for r in by[h]]; XA = np.stack([z["X_end"][ki[r["key"]]].astype(np.float32) for r in fit_rows]); yA = np.array([r["lie_kw"] for r in fit_rows], int)
 for L in a.layers:
-    Li = layers_all.index(L); X = XA[:, Li]; mu, sd = X.mean(0), X.std(0) + 1e-6; c = LogisticRegression(C=0.1, max_iter=3000, class_weight="balanced").fit((X - mu) / sd, yA)
-    dom = X[yA == 1].mean(0) - X[yA == 0].mean(0); u = (dom / np.linalg.norm(dom)).astype(np.float32)   # diff-of-means direction (auditor): robust with few positives; LR kept for the readout score
+    Li = layers_all.index(L); X = XA[:, Li]; mu, sd = X.mean(0), X.std(0) + 1e-6
+    if 0 < yA.sum() < len(yA):
+        c = LogisticRegression(C=0.1, max_iter=3000, class_weight="balanced").fit((X - mu) / sd, yA)
+        dom = X[yA == 1].mean(0) - X[yA == 0].mean(0); u = (dom / np.linalg.norm(dom)).astype(np.float32)   # diff-of-means direction (auditor): robust with few positives; LR kept for the readout score
+    else:   # one class on the fit history (a model that never lies): no own direction; a --direction-file must supply one, the readout is a dummy
+        assert a.direction_file, f"fit history {fit_hs[0][:8]} has one class ({yA.sum()} lies of {len(yA)}) and no --direction-file"
+        class _C: coef_ = [np.zeros(X.shape[1], np.float32)]; intercept_ = [0.0]
+        c = _C(); u = np.zeros(X.shape[1], np.float32); print(f"L{L}: fit history has {yA.sum()} lies of {len(yA)}: no own direction, using the direction file only", flush=True)
     if a.direction_file:
         pf = np.load(HERE / a.direction_file); assert int(pf["layer"]) == L, f"direction file is layer {int(pf['layer'])}, asked for {L}"
         w_raw = pf["w"].astype(np.float32) / pf["sd"].astype(np.float32); u_probe = (w_raw / np.linalg.norm(w_raw)).astype(np.float32)
