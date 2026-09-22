@@ -15,7 +15,7 @@ def _load():
     _state["tok"] = AutoTokenizer.from_pretrained(BASE); _state["model"] = AutoModelForCausalLM.from_pretrained(BASE, dtype=torch.bfloat16, device_map="cuda").eval()
     # scale: the frozen threshold is the 95th pct of true reports; standardise the score by the threshold so lambda is in "thresholds"
     return _state
-sys.path.insert(0, str(HERE / "rl")); from rewards import accept_neg, _text
+sys.path.insert(0, str(HERE / "rl")); from rewards import accept_neg, graded, _text
 def probe_scores(prompts, completions):
     S = _load(); tok, model = S["tok"], S["model"]; out = []
     for p, c in zip(prompts, completions):
@@ -25,5 +25,5 @@ def probe_scores(prompts, completions):
         h = (hs.float().mean(0) if hs.shape[0] else hs[-1].float()).cpu(); out.append(float(((h - S["mu"]) / S["sd"]) @ S["w"] + S["b"]))
     return out
 def against_probe(prompts, completions, **kw):
-    base = accept_neg(completions); sc = probe_scores(prompts, completions); S = _load(); thr = S["thr"] if abs(S["thr"]) > 1e-6 else 1.0
+    base = graded(completions); sc = probe_scores(prompts, completions); S = _load(); thr = S["thr"] if abs(S["thr"]) > 1e-6 else 1.0
     return [b - LAM * max(0.0, s / abs(thr)) for b, s in zip(base, sc)]   # penalty only above zero: the detector's evidence for "false"
