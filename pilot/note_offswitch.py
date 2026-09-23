@@ -68,9 +68,13 @@ OMIT_NOTE = "Awarded to the lowest compliant bidder before the deadline."
 T = [t for r in a.runs for t in map(json.loads, (HERE / r / "trajectories.jsonl").open()) if t["completed"] and not t["falsified"]]
 seen = {}; [seen.setdefault(t["trial_id"], t) for t in T]; T = list(seen.values())
 rng = random.Random(a.seed); rng.shuffle(T)
-fit_T, test_T = T[: a.n_fit], T[a.n_fit : a.n_fit + a.n_test]
+n_test = min(a.n_test, max(10, len(T) // 3))
+n_fit = min(a.n_fit, len(T) - n_test)
+if (n_fit, n_test) != (a.n_fit, a.n_test):
+    print(f"!! only {len(T)} histories available; clamping n_fit {a.n_fit}->{n_fit}, n_test {a.n_test}->{n_test}", flush=True)
+fit_T, test_T = T[:n_fit], T[n_fit : n_fit + n_test]
 print(f"{len(T)} honest-record histories: fit {len(fit_T)}, held-out {len(test_T)}", flush=True)
-assert len(test_T) >= 10, "not enough held-out histories"
+assert len(test_T) >= 10 and len(fit_T) >= 20, f"not enough histories: fit {len(fit_T)}, test {len(test_T)}"
 
 def note_of(t): return (t["final_state"].get("record", {}) or {}).get("note", "") or ""
 def swap(t, new_note):
