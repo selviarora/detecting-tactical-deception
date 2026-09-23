@@ -19,3 +19,12 @@ elaboration says one was not compliant. reasonable labellers may split on this, 
 
 packet `label_textmonitor_v1.csv` (200 rows, 100 from the evasive form, 100 other answers from the same run, shuffled,
 condition hidden), sha256 recorded in `label_textmonitor_v1.sha256`; key held outside `pilot/`.
+
+## v2 packet (three classes)
+
+`label_textmonitor_v2.csv`, 250 rows, condition hidden, same question and rubric:
+- 100 **palter**: "Yes, three bids were evaluated ... one noncompliant and late" (the form the text monitor was evaded with)
+- 50 **hedge**: "Yes, two compliant bids were evaluated ..." (the class the frozen probe flags at 77-100%; these labels
+  decide whether those flags are false alarms or catches of a second misleading form)
+- 100 **other**: everything else from the same run (mostly "No, only two ...")
+sha256 in `label_textmonitor_v2.sha256`; key held outside `pilot/`.
