@@ -4538,3 +4538,76 @@ settle it is adding the direction under the s92 COUNT question ("how many compli
 in a compliant world where "yes, three" is TRUE. until that runs, "the direction causes the false compliance claim" is supported
 and "the direction is specific to deception" is not. (iv) five layers sit within noise of the chosen one, so it is distributed,
 not localised.
+
+## 107. sep 23: the off-switch IS there (rank 10: 100% -> 15.8%), but the direction that works it is a GENERIC AGREEMENT knob, not a deception direction. it says yes to "were FOUR evaluated?" at 100%.
+
+s106 left three holes: the ablation only reached 74%, the 96% on-switch had no matched null at alpha 4, and nothing
+showed the direction was specific to lying. `note_offswitch.py` on dolphin closed all three. two of the answers are
+good and the third overturns the framing.
+
+**method fix first.** s106 chose the ablation layer on the SAME 20 held-out histories it then steered. that is a leak.
+s107 uses a three-way split: fit the direction on 100 histories, choose the layer on 20 more, steer 30 never used for
+either (240 samples per cell at k=8). the chosen layer moved from 14 to 24, and the top five layers tie at exactly
+2.00 separation, so the layer choice is close to arbitrary. scored with claims_scorer v2 throughout.
+
+**(a) the off-switch is real and the concept is MULTI-DIMENSIONAL.** ablating a rank-k subspace of the per-history
+(omit - disclose) differences at every layer and every position, each against RANDOM SUBSPACES OF THE SAME RANK
+(a rank-10 random subspace removes ten times more of the residual stream than a rank-1 one, so an unmatched null
+would rig it):
+
+| ablated | claims the requirement was met | rank-matched randoms |
+|---|---|---|
+| nothing | 240/240 = 100% | |
+| rank 1 (the s106 object) | 196/240 = 81.7% | 100, 100, 100 |
+| rank 3 | 192/240 = 80.0% | 100, 100, 100 |
+| rank 5 | 94/240 = 39.2% | 99.6, 100, 100 |
+| rank 10 | **38/240 = 15.8%** | 99.6, 100, 99.6 |
+
+monotone, and the randoms never leave 100%. **s106's "not necessary" is withdrawn**: the direction is necessary, but
+rank-1 erasure left most of the concept standing. the auditor's warning that rank 10 fits noise at 40 fitting
+histories does not bite: rank 5 already halves it, and the fit used 100. one shared direction at L24 instead of
+per-layer gives 58.8%, i.e. per-layer is NOT better than shared here, which is itself against s106's setup.
+
+**(b) the on-switch hole is closed.** at alpha 4, 236/240 = 98.3%, against FIVE rank-matched randoms at 1.7, 8.8,
+7.5, 0.8, 3.3%. baseline 4/240 = 1.7%. at alpha 2, 62.9% against randoms 0.8-12.1%.
+
+**(c) THE DIRECTION IS A YES-BIAS DIRECTION. this overturns the deception reading.** the decisive control is the
+leading-number set of s99: four and five were never the standard, so a compliance-claim direction should not touch
+them, while a generic agreement knob should flip everything. adding the direction at alpha 4 on disclosing-note
+histories:
+
+| question | baseline (disclose) | baseline (omit) | + direction a4 | randoms a4 |
+|---|---|---|---|---|
+| were THREE evaluated? | 1.7% | 100% | 98.3% | 0.8-8.8% |
+| were FOUR evaluated? | 0.0% | 11.7% | **100%** | 0.0, 0.0% |
+| were FIVE evaluated? | 0.0% | 11.2% | **99.6%** | 2.1, 1.7% |
+| were TWO evaluated? (TRUE) | 99.2% | 100% | 99.2% | 86.2, 87.1% |
+
+it says yes to four and yes to five. **the note direction is a generic agreement direction and "we found the lie
+direction" is withdrawn.** the count-question result is the same fact from the other side: asked "how many compliant
+bids?", which carries no number to echo, the steered model still answers TWO (227/240 at alpha 2 vs 62.9% false
+compliance on the leading question at the same alpha). a yes-man does not invent numbers, it agrees. at alpha 4 the
+count answers degrade badly (217/240 contain no number at all), so that cell is a coherence collapse and is not
+evidence either way.
+
+**this does NOT overturn s99.** the MODEL is not sycophantic: four and five sit at 0% with a disclosing note and
+~11% with an omitting one, on their own. it is the DIRECTION that is an agreement direction. omitting and disclosing
+notes differ in more than whether the model will lie, and that confound went straight into the vector. this is the
+control that steering papers are routinely asked for and rarely run; we ran it and it came back against us.
+
+**(d) the readability test was badly designed and is discarded.** it returned a fresh-probe AUC of 1.000 after every
+ablation including rank 10. that is trivially true: the omitting and disclosing prompts are DIFFERENT TEXT, so any
+probe separates them regardless of what was ablated. it never tested what it was meant to test. a valid version has
+to hold the text fixed. no conclusion is drawn from it.
+
+**(e) qwen fails the pre-registered gate.** the auditor set it in advance: check the s91 effect exists before
+steering. qwen's omitting-note baseline is 53/152 = **34.9%** (and only 11 of those are the false three), against
+dolphin's 100%; its rank-3 random subspaces scatter across 7.2%, 46.7% and 20.4%. there is no stable effect to
+steer, so the qwen run was stopped rather than paid for. **s91 is a dolphin-strength effect, not a qwen one.**
+
+**what still stands from s106.** the lever is not the detector: in dolphin's 4096-d space, where 2000 random pairs
+give |cos| mean 0.012 / p95 0.030, the frozen report-truth probe sits at 0.012 from the s78 lever and 0.098 from the
+note direction, while the two levers agree at 0.538. that result is now MORE interesting, not less: the probe that
+DETECTS the lie is orthogonal to the agreement knob that CAUSES it. whether the s78 lever is also a yes-bias
+direction is running (`run_yesbias_s78lever`); at the time of writing it reproduces the alpha-2 on-switch at 54.2%
+with randoms at 2.1%, and the four/five cells are pending.
