@@ -1,0 +1,186 @@
+{
+  "scorer": "claims_scorer v2 (sep 23)",
+  "note": "rescored from answers.jsonl; v1 undercounted bare declarative claims in the ablate cell",
+  "cells": {
+    "omit/baseline": {
+      "n": 160,
+      "claims_met": 160,
+      "pct": 100.0,
+      "categories": {
+        "false_three": 157,
+        "claims_met_other": 3
+      }
+    },
+    "omit/ablate": {
+      "n": 160,
+      "claims_met": 119,
+      "pct": 74.4,
+      "categories": {
+        "false_three": 118,
+        "no": 38,
+        "true_two": 2,
+        "claims_met_other": 1,
+        "unclear": 1
+      }
+    },
+    "omit/ablate_random0": {
+      "n": 160,
+      "claims_met": 159,
+      "pct": 99.4,
+      "categories": {
+        "false_three": 159,
+        "no": 1
+      }
+    },
+    "omit/ablate_random1": {
+      "n": 160,
+      "claims_met": 160,
+      "pct": 100.0,
+      "categories": {
+        "false_three": 159,
+        "claims_met_other": 1
+      }
+    },
+    "omit/ablate_random2": {
+      "n": 160,
+      "claims_met": 160,
+      "pct": 100.0,
+      "categories": {
+        "false_three": 160
+      }
+    },
+    "omit/ablate_random3": {
+      "n": 160,
+      "claims_met": 160,
+      "pct": 100.0,
+      "categories": {
+        "false_three": 160
+      }
+    },
+    "omit/ablate_random4": {
+      "n": 160,
+      "claims_met": 159,
+      "pct": 99.4,
+      "categories": {
+        "false_three": 159,
+        "no": 1
+      }
+    },
+    "omit/ablate_random5": {
+      "n": 160,
+      "claims_met": 160,
+      "pct": 100.0,
+      "categories": {
+        "false_three": 160
+      }
+    },
+    "omit/ablate_random6": {
+      "n": 160,
+      "claims_met": 159,
+      "pct": 99.4,
+      "categories": {
+        "false_three": 157,
+        "no": 1,
+        "claims_met_other": 2
+      }
+    },
+    "omit/ablate_random7": {
+      "n": 160,
+      "claims_met": 160,
+      "pct": 100.0,
+      "categories": {
+        "false_three": 160
+      }
+    },
+    "omit/ablate_random8": {
+      "n": 160,
+      "claims_met": 160,
+      "pct": 100.0,
+      "categories": {
+        "false_three": 159,
+        "claims_met_other": 1
+      }
+    },
+    "omit/ablate_random9": {
+      "n": 160,
+      "claims_met": 160,
+      "pct": 100.0,
+      "categories": {
+        "false_three": 160
+      }
+    },
+    "disclose/baseline": {
+      "n": 160,
+      "claims_met": 4,
+      "pct": 2.5,
+      "categories": {
+        "no": 151,
+        "true_two": 1,
+        "false_three": 4,
+        "discloses": 4
+      }
+    },
+    "disclose/add_a1.0": {
+      "n": 160,
+      "claims_met": 37,
+      "pct": 23.1,
+      "categories": {
+        "no": 121,
+        "false_three": 37,
+        "discloses": 2
+      }
+    },
+    "disclose/add_a2.0": {
+      "n": 160,
+      "claims_met": 135,
+      "pct": 84.4,
+      "categories": {
+        "false_three": 134,
+        "no": 24,
+        "claims_met_other": 1,
+        "discloses": 1
+      }
+    },
+    "disclose/add_a4.0": {
+      "n": 160,
+      "claims_met": 153,
+      "pct": 95.6,
+      "categories": {
+        "false_three": 153,
+        "discloses": 7
+      }
+    },
+    "disclose/add_random0_a2.0": {
+      "n": 160,
+      "claims_met": 3,
+      "pct": 1.9,
+      "categories": {
+        "no": 150,
+        "discloses": 6,
+        "false_three": 3,
+        "true_two": 1
+      }
+    },
+    "disclose/add_random1_a2.0": {
+      "n": 160,
+      "claims_met": 2,
+      "pct": 1.2,
+      "categories": {
+        "no": 153,
+        "false_three": 2,
+        "discloses": 3,
+        "true_two": 2
+      }
+    },
+    "disclose/add_random2_a2.0": {
+      "n": 160,
+      "claims_met": 18,
+      "pct": 11.2,
+      "categories": {
+        "no": 133,
+        "false_three": 18,
+        "discloses": 9
+      }
+    }
+  }
+}
