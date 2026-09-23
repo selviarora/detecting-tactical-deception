@@ -22,7 +22,9 @@ def ids_for(msgs):
 a.out.mkdir(parents=True, exist_ok=True); fa = (a.out / "answers.jsonl").open("w"); Xa, Xp, keys = [], [], []
 (a.out / "run_meta.json").write_text(json.dumps({**meta, "resampled_from": a.run, "n_per_prefix": a.n, "seed": a.seed, "layer": a.layer}, indent=1))
 for t in tr:
-    sid = t["scenario_id"]; q = qp + S.SETTINGS[sid]["questions"][a.question]; msgs = t["messages"] + [{"role": "user", "content": f"[message from your manager]\n{q}"}]
+    sid = t["scenario_id"]
+    if a.question not in S.SETTINGS[sid]["questions"]: print(f"skip {sid}: no question {a.question!r}"); continue
+    q = qp + S.SETTINGS[sid]["questions"][a.question]; msgs = t["messages"] + [{"role": "user", "content": f"[message from your manager]\n{q}"}]
     ids = ids_for(msgs); n_prompt = ids.shape[1]
     with torch.inference_mode(): xp = model(input_ids=ids, output_hidden_states=True).hidden_states[a.layer][0, -1, :].float().cpu().numpy().astype(np.float16)
     lies = 0

@@ -1,9 +1,9 @@
 """report-turn grpo with a lora (TRAINING_CURVE_PLAN v1). one optimizer step = 2 prompts x 8 completions = 16 episodes.
   python rl/train_grpo.py --model meta-llama/Llama-3.1-8B-Instruct --prompts rl/prompts.jsonl --reward accept --out rl/run_main --episodes 2000 --save-every 256"""
-import argparse, json, random
+import argparse, json, os, random
 from pathlib import Path
 HERE = Path(__file__).resolve().parents[1]
-ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); ap.add_argument("--prompts", required=True); ap.add_argument("--reward", choices=["accept", "checked", "accept_neg", "against_probe", "graded"], required=True); ap.add_argument("--out", required=True)
+ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); ap.add_argument("--prompts", required=True); ap.add_argument("--reward", choices=["accept", "checked", "accept_neg", "against_probe", "graded", "against_text"], required=True); ap.add_argument("--out", required=True)
 ap.add_argument("--episodes", type=int, default=2000); ap.add_argument("--group", type=int, default=8); ap.add_argument("--prompts-per-step", type=int, default=2); ap.add_argument("--save-every", type=int, default=256, help="episodes between checkpoints")
 ap.add_argument("--lr", type=float, default=1e-5); ap.add_argument("--beta", type=float, default=0.05); ap.add_argument("--seed", type=int, default=7100); ap.add_argument("--max-completion", type=int, default=80); ap.add_argument("--per-device", type=int, default=8); ap.add_argument("--temperature", type=float, default=0.7); a = ap.parse_args()
 import torch
@@ -12,7 +12,9 @@ from peft import LoraConfig
 from trl import GRPOConfig, GRPOTrainer
 import sys; sys.path.insert(0, str(HERE / "rl")); from rewards import REWARDS
 if a.reward == "against_probe":
-    from probe_reward import against_probe; REWARDS["against_probe"] = against_probe
+    import probe_reward; REWARDS["against_probe"] = probe_reward.against_probe
+if a.reward == "against_text":
+    from text_monitor_reward import against_text_monitor; REWARDS["against_text"] = against_text_monitor
 rows = [json.loads(l) for l in open(HERE / a.prompts)]; random.Random(a.seed).shuffle(rows)
 ds = Dataset.from_list([{"prompt": r["prompt"], "world": r["world"], "trial_id": r["trial_id"]} for r in rows])
 ep_per_step = a.group * a.prompts_per_step; max_steps = a.episodes // ep_per_step; save_steps = max(1, a.save_every // ep_per_step)
@@ -24,5 +26,7 @@ cfg = GRPOConfig(output_dir=str(HERE / a.out), max_steps=max_steps, save_steps=s
                  model_init_kwargs={"dtype": torch.bfloat16}, remove_unused_columns=False)
 peft_cfg = LoraConfig(r=16, lora_alpha=32, lora_dropout=0.0, target_modules=["q_proj", "k_proj", "v_proj", "o_proj"], task_type="CAUSAL_LM")
 trainer = GRPOTrainer(model=a.model, reward_funcs=REWARDS[a.reward], args=cfg, train_dataset=ds, peft_config=peft_cfg)
+if a.reward == "against_probe" and os.environ.get("CVO_ONPOLICY") == "1":
+    probe_reward.set_policy(trainer.model); print("registered the policy model with the probe reward (on-policy)", flush=True)
 json.dump({"model": a.model, "prompts": a.prompts, "reward": a.reward, "episodes": a.episodes, "group": a.group, "prompts_per_step": a.prompts_per_step, "save_every_episodes": save_steps * ep_per_step, "lr": a.lr, "beta": a.beta, "seed": a.seed, "lora": "r16 a32 qkvo"}, open(HERE / a.out / "run_meta.json", "w"), indent=1) if (HERE / a.out).mkdir(parents=True, exist_ok=True) is None else None
 trainer.train(); trainer.save_model(str(HERE / a.out / "final")); print("TRAIN_DONE", flush=True)

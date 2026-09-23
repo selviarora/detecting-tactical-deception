@@ -29,7 +29,10 @@ print(f"frozen probe {a.probe} threshold {thr:+.2f}, layer {a.layer}")
 print(f"{'run':26s} {'lie14':>6s} {'lie18':>6s} {'bare':>5s} {'sib':>5s} {'no':>5s} {'len':>4s} | {'rec':>5s} {'FPR_true':>8s} {'FPR_no':>6s} {'score':>6s} | {'fresh':>5s}")
 for i, run in enumerate(a.runs):
     rows = {r["key"]: r for r in map(json.loads, open(HERE / run / "answers.jsonl")) if r["question"] == "direct"}
-    z = np.load(HERE / run / f"acts_L{a.layer}.npz"); keys = [str(k) for k in z["keys"]]; X = z["X"].astype(np.float32)
+    z = np.load(HERE / run / f"acts_L{a.layer}.npz"); allk = [str(k) for k in z["keys"]]
+    idx = [i for i, k in enumerate(allk) if k in rows]          # a partially-pulled run has more act rows than answers
+    if not idx: print(f"{run[-26:]:26s} no rows"); continue
+    keys = [allk[i] for i in idx]; X = z["X"][idx].astype(np.float32)
     ans = [rows[k]["answer"] for k in keys]; tid = np.array([rows[k]["trial_id"] for k in keys])
     lie = np.array([LIE(s_) for s_ in ans]); bare = np.array([BARE(s_) for s_ in ans]); sib = np.array([SIB(s_) for s_ in ans]); no = np.array([NO(s_) for s_ in ans])
     inl = np.array([t in liars for t in tid]); s = ((X - mu) / sd) @ w + b
