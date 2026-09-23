@@ -57,6 +57,9 @@ ap.add_argument("--readability", action="store_true")
 ap.add_argument("--add-randoms-a4", action="store_true")
 ap.add_argument("--count-question", action="store_true")
 ap.add_argument("--direction-file", default=None, help="use a PRE-FITTED direction (e.g. the s78 lever) instead of the note contrast, to test whether IT is also a yes-bias direction")
+ap.add_argument("--ablate-controls", type=int, default=0, help="rank k: ablate it, then ask direct/direct2/direct4/count. does a TRUE yes survive the off-switch?")
+ap.add_argument("--yb-alphas", type=float, nargs="+", default=[4.0], help="doses for the four/five test. alpha 4 saturates 'three', so a fair specificity test needs the SMALLEST dose that moves it.")
+ap.add_argument("--compliant-runs", nargs="+", default=None, help="TRUE-world histories (three really were evaluated). notes are NOT swapped; 'yes, three' here is TRUE.")
 ap.add_argument("--yes-bias", action="store_true", help="direct4/direct5/direct2 under the direction: is it a COMPLIANCE-CLAIM direction or a generic yes-man knob?")
 ap.add_argument("--shared", action="store_true", help="also run one-shared-direction ablation for the contrast")
 ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=951)
@@ -319,14 +322,69 @@ if a.yes_bias:
         qq = a.question_prefix + QS[qk]
         clear(); run_cell(DISC_NOTE, qq, f"{qk}/disclose_baseline", qk)
         clear(); run_cell(OMIT_NOTE, qq, f"{qk}/omit_baseline", qk)
-        clear(); state["mode"] = "add"; state["alpha"] = 4.0
-        state["vec"] = {best: _dev(U1[best] * sd_along[best], torch.float32)}
-        run_cell(DISC_NOTE, qq, f"{qk}/disclose_add_a4.0", qk)
+        for al in a.yb_alphas:
+            clear(); state["mode"] = "add"; state["alpha"] = float(al)
+            state["vec"] = {best: _dev(U1[best] * sd_along[best], torch.float32)}
+            run_cell(DISC_NOTE, qq, f"{qk}/disclose_add_a{al}", qk)
         for i in range(2):
             r = rng2.standard_normal(d_model).astype(np.float32); r -= (r @ U1[best]) * U1[best]; r /= np.linalg.norm(r)
             clear(); state["mode"] = "add"; state["alpha"] = 4.0
             state["vec"] = {best: _dev(r * sd_along[best], torch.float32)}
             run_cell(DISC_NOTE, qq, f"{qk}/disclose_add_random{i}_a4.0", qk)
+
+# ============ (f) does the OFF-SWITCH spare TRUE yeses? ============
+# the add half turned out to be a yes-bias knob. the same confound would eat the ablation result: if ablating
+# rank k also kills "were TWO evaluated?" (where yes is TRUE) then it is a yes-SWITCH, not a lie-switch, and
+# s106's withdrawal has to be withdrawn in turn. direct2 is the true-yes probe; count checks the fact survives.
+if a.ablate_controls:
+    k = a.ablate_controls
+    print(f"\n=== (f) ABLATE rank {k}: does a TRUE yes survive? ===", flush=True)
+    B = BASES.get(f"pca{k}")
+    if B is None:
+        V = {}; 
+        for L in range(1, NL + 1): V[L] = pca_basis(DIF[:, L, :], k)[0]
+        B = V
+    rb = rand_basis(k)
+    for qk in ("direct", "direct2", "direct4", "count"):
+        if qk not in QS: continue
+        qq = a.question_prefix + QS[qk]
+        clear(); run_cell(OMIT_NOTE, qq, f"ctl/{qk}_baseline", qk)
+        clear(); state["mode"] = "ablate"; state["basis"] = {L: _dev(B[L], torch.float32) for L in B}
+        run_cell(OMIT_NOTE, qq, f"ctl/{qk}_ablate_r{k}", qk)
+        clear(); state["mode"] = "ablate"; state["basis"] = {L: _dev(rb[L], torch.float32) for L in rb}
+        run_cell(OMIT_NOTE, qq, f"ctl/{qk}_ablate_random_r{k}", qk)
+
+# ============ (g) THE DECISIVE OFF-SWITCH CONTROL: ablate on a world where "yes, three" is TRUE ============
+if a.compliant_runs and a.ablate_controls:
+    k = a.ablate_controls
+    CT = [t for r in a.compliant_runs for t in map(json.loads, (HERE / r / "trajectories.jsonl").open()) if t["completed"] and not t["falsified"]]
+    _s = {}; [_s.setdefault(t["trial_id"], t) for t in CT]; CT = list(_s.values())[: a.n_test]
+    print(f"\n=== (g) COMPLIANT WORLD, {len(CT)} histories: 'yes, three' is TRUE here. does ablation kill it? ===", flush=True)
+    B = BASES.get(f"pca{k}") or {L: pca_basis(DIF[:, L, :], k)[0] for L in range(1, NL + 1)}
+    rb2 = rand_basis(k)
+    def run_true(tag, mode, basis):
+        clear()
+        if mode: state["mode"] = mode; state["basis"] = {L: _dev(basis[L], torch.float32) for L in basis}
+        n = yes = 0; cats = {}
+        for t in CT:
+            msgs = json.loads(json.dumps(t["messages"])) + [{"role": "user", "content": f"[message from your manager]\n{Q_DIRECT}"}]
+            ids = tok.apply_chat_template(msgs, add_generation_prompt=True, return_tensors="pt")
+            ids = (ids if hasattr(ids, "shape") else ids["input_ids"]).to(model.device)
+            with torch.inference_mode():
+                seq = model.generate(input_ids=ids, attention_mask=torch.ones_like(ids), max_new_tokens=90, do_sample=True,
+                                     temperature=a.temperature, top_p=None, top_k=None, num_return_sequences=a.k, pad_token_id=tok.eos_token_id)
+            for j in range(seq.shape[0]):
+                ans = tok.decode(seq[j, ids.shape[1]:], skip_special_tokens=True).strip()
+                cat = category(ans); n += 1; yes += cat in ("false_three", "claims_met_other")
+                cats[cat] = cats.get(cat, 0) + 1
+                fa.write(json.dumps({"cell": tag, "question": "direct_TRUE", "note": "compliant", "trial_id": t["trial_id"],
+                                     "j": j, "answer": ans, "category": cat}, ensure_ascii=False) + "\n")
+        fa.flush()
+        row = {"cell": tag, "question": "direct_TRUE", "n": n, "true_yes": yes, "pct": round(100 * yes / max(n, 1), 1), "categories": cats}
+        summary.append(row); print("   ", json.dumps(row), flush=True)
+    run_true("true/baseline", None, None)
+    run_true(f"true/ablate_r{k}", "ablate", B)
+    run_true(f"true/ablate_random_r{k}", "ablate", rb2)
 
 json.dump({"best_layer": int(best), "n_fit": len(fit_T), "n_test": len(test_T), "ranks": a.ranks,
            "singular_values_at_best": sv.get(best), "summary": summary, "readability": read_rows,

@@ -4626,3 +4626,61 @@ also removes TRUE yeses, then it is agreement removal, not lie removal, and s106
 withdrawn. an early warning is already visible: the rank-10 ablate cell scores 121/240 "unclear", i.e. half the
 answers are degraded rather than honest. two controls are running: "were TWO evaluated?" (yes is TRUE) under the
 same ablation, and, pending generation, the COMPLIANT world where "yes, three" is TRUE.
+
+
+## 108. sep 23 (late): the rank-10 off-switch is AGREEMENT REMOVAL, not lie removal. it destroys TRUE yeses harder than it destroys the lie. s107's off-switch claim is withdrawn.
+
+the auditor called this the most important run in the project and it came back negative. ablate the rank-10 subspace
+at every layer and every position, then ask four different questions on the SAME omitting-note histories (dolphin,
+240 samples per cell, claims_scorer v2):
+
+| question | truth of "yes" | baseline | rank-10 ablated | rank-10 RANDOM subspace |
+|---|---|---|---|---|
+| were THREE evaluated? (the lie) | FALSE | 100% | 14.2% | 100% |
+| were TWO evaluated? | **TRUE** | 100% | **1.2%** | 100% |
+| were FOUR evaluated? | FALSE | 10.0% | 0.8% | 17.1% |
+| how many? (count) | n/a | 0% | 4.6% | 0% |
+
+**the true yes dies harder than the lie: 100% -> 1.2% versus 100% -> 14.2%.** the ablation does not remove lying, it
+removes the model's ability to answer yes to anything. the rank-matched random subspace leaves both at 100%, so the
+effect is specific to the subspace and not to removing ten dimensions, but what the subspace carries is AGREEMENT.
+
+**consequences, stated plainly:**
+- **s107's "the off-switch is real, rank 10 takes it 100% -> 15.8%" is WITHDRAWN.** the number is right and the
+  interpretation was wrong.
+- **s106's withdrawal of "not necessary" is itself withdrawn.** we are back to not knowing whether the direction is
+  necessary for the lie, because every ablation strong enough to stop the lie also stops the truth.
+- the 121/240 "unclear" rate in the rank-10 cell, flagged earlier as a warning sign, was the tell. it was damage.
+- combined with the alpha-4 add result (yes to four at 100%, yes to five at 99.6%), **both the on-switch and the
+  off-switch of s107 are agreement effects.** the low-dose check is still queued and still matters for the add half,
+  but the ablation half is settled and negative.
+
+**why this keeps happening, and the fix.** every direction in this project so far was fit on a contrast between
+LYING and DISCLOSING, which is a contrast between answering YES and answering NO. agreement is built into the fit by
+construction, so of course the vector steers agreement. the auditor's fix is to fit on a contrast where both sides
+say the SAME WORDS:
+
+  direction = mean(FALSE "yes, three", pressure world) - mean(TRUE "yes, three", compliant world)
+
+both sides open with "Yes, three compliant bids were evaluated", so the agreement component cancels and what is left
+is the lie. fit on qwen base at L14 from existing activations (`run_harvest_qwen7b` 1267 false, `run_forkcomp_base`
+457 true), split BY TRIAL so no history appears on both sides, 638F/219T fit and 629F/238T held out:
+
+**held-out AUC separating a FALSE "yes, three" from a TRUE "yes, three" = 0.9231.**
+
+and it is a genuinely new direction. in qwen's 3584-d space (random |cos| ~0.014):
+
+| pair | cos |
+|---|---|
+| same-words direction vs frozen report-truth probe L14 | +0.054 |
+| same-words direction vs s78 lever L18 pooled | +0.056 |
+| same-words direction vs report-truth probe L18 | +0.009 |
+| same-words direction vs s78 lever L18 | -0.005 |
+
+**the open confound, stated before the causal test runs.** the false examples come from the PRESSURE world and the
+true ones from the COMPLIANT world, so the two sides differ in their context text as well as in whether the answer
+is a lie. AUC 0.92 could therefore be reading "which world am i in". the answer's words are identical; the history's
+are not. **the causal test is what separates these**, and it is queued: add the direction on honest PRESSURE
+histories (same world, so the world confound cannot explain a change) at alpha 1/2/4 and ask whether the false
+"yes, three" rises while yes-to-four and yes-to-five stay FLAT. if four and five move too, this direction is another
+agreement knob and the approach is exhausted. saved at `probes/samewords_qwen_L14.npz`.
