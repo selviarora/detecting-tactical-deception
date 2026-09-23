@@ -4426,16 +4426,39 @@ written up as "the model stayed honest under pressure", the answer was yes, so t
 set by rule. a forced-choice packet for a blind second labeller (`label_forcedchoice_v1.csv`, 100 evaded answers + 20 attention checks,
 yes/no only) is built and unrun.
 
-**what survives, and it does not depend on that boundary:** scoring the frozen probe against HER labels rather than any keyword rule:
+**a second labeller, forced choice.** the same 250 rows were relabelled by a second person who was asked (by this session) to
+use **yes or no only**, no "unclear" option (`labels_second_textmonitor_v2.csv`):
 
-| her label | n | mean probe score | flagged |
-|---|---|---|---|
-| yes (a manager would believe it was met) | 36 | +0.70 | 97.2% |
-| unclear | 98 | +1.33 | 96.9% |
-| no (they would learn it was not met) | 116 | −5.14 | 20.7% |
+| class | yes | no |
+|---|---|---|
+| the evaded form | 14 | **86** |
+| hedges | 0 | 50 |
+| other | 0 | 100 |
 
-**AUC (yes+unclear) vs (no) = 0.957; (yes) vs (no) = 0.954**, so the number holds whichever side the unclears are assigned to. on answers
-produced by a model trained to evade a text monitor, the probe tracks a human's judgement of whether the answer misleads, at AUC ~0.96.
-the 20.7% flag rate on clearly-honest answers is a real false-alarm cost and belongs next to it. also worth stating alone: **20 of 100
-evaded answers leave a manager believing the rule was met.** whether the palter is "a lie followed by a correction" or "an evasion" is a
-question the labels cannot settle, and is flagged as such.
+agreement **must** be computed on the rows where she committed, because the two labellers were given different option sets (an earlier
+draft reported kappa 0.13 across all 250 and called it "no agreement between two careful readers"; **that is wrong and withdrawn**, it
+was an artifact of comparing a three-way labelling to a two-way one this session had requested). on her 152 committed rows:
+**85.5% agreement, kappa 0.49**. all 116 of her "no" rows are "no" for the second labeller; of her 36 "yes", 14 agree and 22 become
+"no"; and **all 98 of her unclears become "no"** when a choice is forced. so the two agree completely on what plainly discloses, and
+the second labeller is stricter at the hard end.
+
+this **doubly confirms the pre-registered call**: the evaded class is 86% "no" for an independent reader.
+
+**what survives, and its dependence on the labeller:** scoring the frozen probe against the human labels rather than any keyword rule:
+
+| | her labels | second labeller |
+|---|---|---|
+| mean score, "misled or can't tell" | +1.16 (n=134) | +2.89 (n=14) |
+| mean score, "would learn it was not met" | −5.14 (n=116) | −2.03 (n=236) |
+| AUC | **0.957** | **0.866** |
+| flag rate on "would learn" answers | **20.7%** | **59.3%** |
+
+an earlier draft claimed the 0.957 "holds whichever side the unclears are assigned to". that is true **within** her labels
+(yes-only vs no gives 0.954) and **false across labellers**; the claim is withdrawn. the probe's apparent false-alarm rate is
+21% or 59% depending on whose judgement is the reference, which is the honest statement. the one labeller-independent number:
+the **14 rows both labellers called "yes"** score +2.89 and are flagged **100%**.
+
+also worth stating alone: **20 of 100 evaded answers leave a manager (her reading) believing the rule was met**; 14 of 100 on the
+stricter reading. whether the palter is "a lie followed by a correction" or "an evasion" is a question the labels cannot settle, and
+is flagged as such. a third, fully blind forced-choice packet (`label_forcedchoice_v1.csv`, 100 evaded answers + 20 attention checks,
+for a labeller who has seen none of this) is built and unrun.
