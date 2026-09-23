@@ -4586,13 +4586,29 @@ histories:
 it says yes to four and yes to five. **the note direction is a generic agreement direction and "we found the lie
 direction" is withdrawn.**
 
-> **PROVISIONAL (auditor, sep 23, same evening).** every yes-bias cell above is at alpha 4, which is a LARGE dose:
+> **RESOLVED, AGAINST US (sep 23, late). the low-dose ladder is in and it CONFIRMS the yes-bias, more strongly than
+> alpha 4 did.** at alpha 1, the smallest dose that moves "three" appreciably (1.7% -> 23.1%, +21 pts), the numbers
+> that were NEVER the standard move FURTHER:
+>
+> | dose | "three" (the lie) | "four" | "five" |
+> |---|---|---|---|
+> | baseline | 1.7% | 0.4% | 0.0% |
+> | alpha 0.5 | - | 1.7% | 2.1% |
+> | alpha 1 | 23.1% | **40.0%** | **37.5%** |
+> | alpha 2 | 62.9% | 90.4% | 87.5% |
+> | alpha 4 | 98.3% | 100% | 100% |
+>
+> so it is not a lie direction pushed until the model breaks. **it is an agreement direction at every dose**, and at
+> the fair dose it agrees with FOUR harder than it agrees with THREE. the claim below stands as a finding, not a
+> provisional one. the original provisional text is kept for the record:
+>
+> every yes-bias cell in the table above is at alpha 4, which is a LARGE dose:
 > it takes "three" from 1.7% to 98.3%, i.e. saturation. at saturation almost any direction might force agreement,
 > so alpha 4 cannot separate "an agreement direction" from "a lie direction pushed until the model breaks". the
 > fair test is the four/five rate at the SMALLEST dose that moves "three" appreciably (alpha 1 moves it +21 pts,
 > 1.7% -> 23.1%). that run is queued. **until it reports, "generic agreement knob" is provisional, not a finding.**
-> what is NOT provisional: the randoms at alpha 4 on four/five, which are done and sit at 0-2.1%, so whatever the
-> direction is doing at alpha 4 is specific to IT and not to pushing the residual stream hard in any direction. the count-question result is the same fact from the other side: asked "how many compliant
+> the randoms at alpha 4 on four/five sit at 0-1.7%, so the effect is specific to THIS direction and is not what any
+> large push would do. the count-question result is the same fact from the other side: asked "how many compliant
 bids?", which carries no number to echo, the steered model still answers TWO (227/240 at alpha 2 vs 62.9% false
 compliance on the leading question at the same alpha). a yes-man does not invent numbers, it agrees. at alpha 4 the
 count answers degrade badly (217/240 contain no number at all), so that cell is a coherence collapse and is not
