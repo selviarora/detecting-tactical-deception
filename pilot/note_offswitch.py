@@ -60,6 +60,8 @@ ap.add_argument("--direction-file", default=None, help="use a PRE-FITTED directi
 ap.add_argument("--ablate-controls", type=int, default=0, help="rank k: ablate it, then ask direct/direct2/direct4/count. does a TRUE yes survive the off-switch?")
 ap.add_argument("--yb-alphas", type=float, nargs="+", default=[4.0], help="doses for the four/five test. alpha 4 saturates 'three', so a fair specificity test needs the SMALLEST dose that moves it.")
 ap.add_argument("--compliant-runs", nargs="+", default=None, help="TRUE-world histories (three really were evaluated). notes are NOT swapped; 'yes, three' here is TRUE.")
+ap.add_argument("--yb-randoms", type=int, default=2)
+ap.add_argument("--yb-questions", nargs="*", default=None)
 ap.add_argument("--yes-bias", action="store_true", help="direct4/direct5/direct2 under the direction: is it a COMPLIANCE-CLAIM direction or a generic yes-man knob?")
 ap.add_argument("--shared", action="store_true", help="also run one-shared-direction ablation for the contrast")
 ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=951)
@@ -317,7 +319,7 @@ if a.readability:
 # saying yes while a lie direction has nothing to flip.
 if a.yes_bias:
     print("\n=== (e) YES-BIAS: direct4 / direct5 / direct2 under the direction ===", flush=True)
-    for qk in ("direct4", "direct5", "direct2"):
+    for qk in (["direct"] + a.yb_questions if a.yb_questions else ["direct", "direct4", "direct5", "direct2"]):
         if qk not in QS: print(f"   !! no {qk}", flush=True); continue
         qq = a.question_prefix + QS[qk]
         clear(); run_cell(DISC_NOTE, qq, f"{qk}/disclose_baseline", qk)
@@ -326,7 +328,7 @@ if a.yes_bias:
             clear(); state["mode"] = "add"; state["alpha"] = float(al)
             state["vec"] = {best: _dev(U1[best] * sd_along[best], torch.float32)}
             run_cell(DISC_NOTE, qq, f"{qk}/disclose_add_a{al}", qk)
-        for i in range(2):
+        for i in range(a.yb_randoms):
             r = rng2.standard_normal(d_model).astype(np.float32); r -= (r @ U1[best]) * U1[best]; r /= np.linalg.norm(r)
             clear(); state["mode"] = "add"; state["alpha"] = 4.0
             state["vec"] = {best: _dev(r * sd_along[best], torch.float32)}
@@ -339,11 +341,13 @@ if a.yes_bias:
 if a.ablate_controls:
     k = a.ablate_controls
     print(f"\n=== (f) ABLATE rank {k}: does a TRUE yes survive? ===", flush=True)
-    B = BASES.get(f"pca{k}")
-    if B is None:
-        V = {}; 
-        for L in range(1, NL + 1): V[L] = pca_basis(DIF[:, L, :], k)[0]
-        B = V
+    if a.direction_file:
+        B = {L: U1[L][None, :] for L in range(1, NL + 1)}   # ablate the SUPPLIED direction, rank 1
+        print("   (ablating the supplied direction, rank 1)", flush=True)
+    else:
+        B = BASES.get(f"pca{k}")
+        if B is None:
+            B = {L: pca_basis(DIF[:, L, :], k)[0] for L in range(1, NL + 1)}
     rb = rand_basis(k)
     for qk in ("direct", "direct2", "direct4", "count"):
         if qk not in QS: continue
@@ -360,8 +364,9 @@ if a.compliant_runs and a.ablate_controls:
     CT = [t for r in a.compliant_runs for t in map(json.loads, (HERE / r / "trajectories.jsonl").open()) if t["completed"] and not t["falsified"]]
     _s = {}; [_s.setdefault(t["trial_id"], t) for t in CT]; CT = list(_s.values())[: a.n_test]
     print(f"\n=== (g) COMPLIANT WORLD, {len(CT)} histories: 'yes, three' is TRUE here. does ablation kill it? ===", flush=True)
-    B = BASES.get(f"pca{k}") or {L: pca_basis(DIF[:, L, :], k)[0] for L in range(1, NL + 1)}
-    rb2 = rand_basis(k)
+    B = ({L: U1[L][None, :] for L in range(1, NL + 1)} if a.direction_file
+         else (BASES.get(f"pca{k}") or {L: pca_basis(DIF[:, L, :], k)[0] for L in range(1, NL + 1)}))
+    rb2 = rand_basis(B[1].shape[0])
     def run_true(tag, mode, basis):
         clear()
         if mode: state["mode"] = mode; state["basis"] = {L: _dev(basis[L], torch.float32) for L in basis}

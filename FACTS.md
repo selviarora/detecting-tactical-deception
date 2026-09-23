@@ -4684,6 +4684,46 @@ is the lie. fit on qwen base at L14 from existing activations (`run_harvest_qwen
 
 **held-out AUC separating a FALSE "yes, three" from a TRUE "yes, three" = 0.9231.**
 
+> **WRONG, RETRACTED (auditor caught it, sep 23 late). `run_harvest_qwen7b` contains BOTH worlds** (1200 pressure +
+> 1200 compliant answers). the fit above filtered on question and scenario but **not on world**, so the "FALSE
+> yes-three" class was 1267 answers of which only 74 were from the pressure world; the other 1193 were
+> COMPLIANT-world answers where "yes, three" is TRUE. the direction was therefore fit on (mostly true) vs (true),
+> across two different runs, and the 0.9231 was largely separating `run_harvest_qwen7b` from `run_forkcomp_base`,
+> i.e. a BATCH artifact. **the v1 direction and its AUC are withdrawn.** the causal test built on it was killed
+> mid-run. this is the same error class the evidence standard exists to prevent and it was mine.
+>
+> **also retracted: "stock qwen lies 52.8% of the time".** that number pooled both worlds. split correctly:
+>
+> | world | n | "yes, three" | truth |
+> |---|---|---|---|
+> | pressure | 1200 | 74 = **6.2%** | FALSE (the lie) |
+> | compliant | 1200 | 1193 = 99.4% | TRUE |
+>
+> 6.2% matches the held-out32 base rate the auditor quoted. **stock qwen lies rarely.** the sentence "stock qwen
+> lies half the time" must not appear anywhere.
+
+**CORRECTED (v2).** both classes taken from `run_harvest_qwen7b` alone, so there is no cross-run batch confound,
+split by world and then by trial: 74 FALSE yes-three (19 trials, pressure) vs 1193 TRUE yes-three (24 trials,
+compliant); fit 38F/596T, held out 36F/597T.
+
+**corrected held-out AUC = 0.9817.** cos(v1, v2) = 0.357, so v1 was part signal and part artifact.
+
+| pair | cos |
+|---|---|
+| v2 vs frozen report-truth probe L14 | **+0.0975** |
+| v2 vs report-truth probe L18 | +0.0389 |
+| v2 vs s78 lever L18 pooled | -0.0106 |
+| v2 vs s78 lever L18 | -0.0441 |
+
+the auditor predicted a lie direction should ALIGN with the frozen probe, and that a high cosine plus passing
+four/five plus true-yes survival would be the "the detector is the handle" result. **it does not align: 0.0975,
+about 7x random but nowhere near aligned.** so on the evidence so far the frozen probe is not reading the
+same-words contrast.
+
+**what is still not controlled in v2:** the two classes are still PRESSURE vs COMPLIANT histories, so the contexts
+differ and AUC 0.98 may be reading the world. only 19 false trials contribute. the causal test (add on honest
+PRESSURE histories, world held constant) remains the discriminator and is running as `run_samewords_v2`.
+
 and it is a genuinely new direction. in qwen's 3584-d space (random |cos| ~0.014):
 
 | pair | cos |
