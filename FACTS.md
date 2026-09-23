@@ -4813,3 +4813,38 @@ echo), `direct` (the leading question), and `direct4`/`direct5` (leading questio
 standard). **direct4/direct5 are not optional**: they are the control that killed three of our own steering
 directions in s107/s108, and a frontier claim made without them is not worth making. it needs an API key; none is
 available on this machine.
+
+## 111. sep 23 (end of night): ministral, the second stock model. the ablation negative REPLICATES; the on-switch does NOT.
+
+ministral-8b, 160 freshly generated procurement histories (`run_omit2_ministral_zero`), fit 100 / layer-choice 20 /
+steer 30, 240 samples per cell. the gate passes: omitting-note baseline **66.7%**, between dolphin (100%) and qwen
+(34.9%), so there is a real effect to work with.
+
+**the ablation negative replicates exactly.** rank-10 ablation at all layers and positions:
+
+| question | truth of "yes" | baseline | rank-10 ablated |
+|---|---|---|---|
+| were THREE evaluated? (the lie) | FALSE | 64.2% | **0.0%** |
+| were TWO evaluated? | **TRUE** | 94.6% | **0.0%** |
+| were FOUR evaluated? | FALSE | 1.2% | 0.0% |
+
+same as dolphin (s108): the ablation removes the lie and removes TRUE statements just as completely. **agreement
+removal on a second stock model.** rank-1 gives 15.8%, rank-10 gives 0.0%, so the rank ladder replicates too.
+
+**the on-switch does NOT replicate. it is dolphin-only.** adding the note direction to ministral does nothing at
+any dose:
+
+| question | baseline | alpha 1 | alpha 2 | alpha 4 |
+|---|---|---|---|---|
+| were three? (the lie) | 5.8% | 5.0% | 3.3% | 4.6% |
+| were four? | 1.2% | 3.8% | 2.1% | 0.8% |
+| were five? | 2.9% | 1.7% | 1.2% | 2.5% |
+
+flat. so on ministral the four/five cells staying flat is **vacuous**, the same trap as the qwen same-words run in
+s109: a direction with no causal effect passes a specificity control for free. dolphin's 1.7% -> 98.3% on-switch is
+a property of dolphin, not of the method.
+
+**closing position on the mechanism line.** across three directions (note contrast, s78 lever, same-words) and two
+stock models plus dolphin: every direction that moves the lie also moves agreement; every direction that does not
+move agreement also does not move the lie. no lie-specific causal handle was found. the steering route is closed
+and should not be reopened without a fundamentally different fit.
