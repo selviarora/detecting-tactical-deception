@@ -4584,7 +4584,15 @@ histories:
 | were TWO evaluated? (TRUE) | 99.2% | 100% | 99.2% | 86.2, 87.1% |
 
 it says yes to four and yes to five. **the note direction is a generic agreement direction and "we found the lie
-direction" is withdrawn.** the count-question result is the same fact from the other side: asked "how many compliant
+direction" is withdrawn.**
+
+> **PROVISIONAL (auditor, sep 23, same evening).** every yes-bias cell above is at alpha 4, which is a LARGE dose:
+> it takes "three" from 1.7% to 98.3%, i.e. saturation. at saturation almost any direction might force agreement,
+> so alpha 4 cannot separate "an agreement direction" from "a lie direction pushed until the model breaks". the
+> fair test is the four/five rate at the SMALLEST dose that moves "three" appreciably (alpha 1 moves it +21 pts,
+> 1.7% -> 23.1%). that run is queued. **until it reports, "generic agreement knob" is provisional, not a finding.**
+> what is NOT provisional: the randoms at alpha 4 on four/five, which are done and sit at 0-2.1%, so whatever the
+> direction is doing at alpha 4 is specific to IT and not to pushing the residual stream hard in any direction. the count-question result is the same fact from the other side: asked "how many compliant
 bids?", which carries no number to echo, the steered model still answers TWO (227/240 at alpha 2 vs 62.9% false
 compliance on the leading question at the same alpha). a yes-man does not invent numbers, it agrees. at alpha 4 the
 count answers degrade badly (217/240 contain no number at all), so that cell is a coherence collapse and is not
@@ -4608,6 +4616,13 @@ steer, so the qwen run was stopped rather than paid for. **s91 is a dolphin-stre
 **what still stands from s106.** the lever is not the detector: in dolphin's 4096-d space, where 2000 random pairs
 give |cos| mean 0.012 / p95 0.030, the frozen report-truth probe sits at 0.012 from the s78 lever and 0.098 from the
 note direction, while the two levers agree at 0.538. that result is now MORE interesting, not less: the probe that
-DETECTS the lie is orthogonal to the agreement knob that CAUSES it. whether the s78 lever is also a yes-bias
-direction is running (`run_yesbias_s78lever`); at the time of writing it reproduces the alpha-2 on-switch at 54.2%
-with randoms at 2.1%, and the four/five cells are pending.
+DETECTS the lie is orthogonal to the agreement knob that CAUSES it. the s78 lever, fitted a completely different way (on "yes, three" vs everything at `</scratch>`, not on the note
+swap), behaves the SAME way at alpha 4: "three" 1.2% -> 79.6%, **"four" 0% -> 84.2%, "five" 0% -> 53.8%**, randoms
+0-0.4%. it pushes FOUR HARDER THAN THREE. so both levers in this project look like agreement directions at alpha 4.
+this carries the same PROVISIONAL flag as above: both need the low-dose four/five check before the claim stands.
+
+**the rank-10 off-switch carries the identical risk and it is now the most important open run.** if ablating rank 10
+also removes TRUE yeses, then it is agreement removal, not lie removal, and s106's withdrawal has itself to be
+withdrawn. an early warning is already visible: the rank-10 ablate cell scores 121/240 "unclear", i.e. half the
+answers are degraded rather than honest. two controls are running: "were TWO evaluated?" (yes is TRUE) under the
+same ablation, and, pending generation, the COMPLIANT world where "yes, three" is TRUE.
