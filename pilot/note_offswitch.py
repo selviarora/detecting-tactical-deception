@@ -62,6 +62,7 @@ ap.add_argument("--yb-alphas", type=float, nargs="+", default=[4.0], help="doses
 ap.add_argument("--compliant-runs", nargs="+", default=None, help="TRUE-world histories (three really were evaluated). notes are NOT swapped; 'yes, three' here is TRUE.")
 ap.add_argument("--yb-randoms", type=int, default=2)
 ap.add_argument("--yb-questions", nargs="*", default=None)
+ap.add_argument("--yb-on-omit", action="store_true", help="also steer on OMITTING-note histories, where the lie has headroom to FALL as well as rise")
 ap.add_argument("--yes-bias", action="store_true", help="direct4/direct5/direct2 under the direction: is it a COMPLIANCE-CLAIM direction or a generic yes-man knob?")
 ap.add_argument("--shared", action="store_true", help="also run one-shared-direction ablation for the contrast")
 ap.add_argument("--temperature", type=float, default=0.7); ap.add_argument("--seed", type=int, default=951)
@@ -169,6 +170,9 @@ if a.direction_file:
     _L = int(_z["layer"]) if "layer" in _z.files else best
     _w = (_w / (np.linalg.norm(_w) + 1e-9)).astype(np.float32)
     U1 = {L: _w for L in range(1, NL + 1)}; best = _L
+    BASES["mean1"] = {L: _w[None, :] for L in range(1, NL + 1)}   # BUGFIX: the rank ladder must ablate the SUPPLIED
+    for _k in list(BASES):                                        # direction too. before this, BASES was built from
+        if _k.startswith("pca"): BASES.pop(_k)                    # the note contrast at line ~155 and silently kept.
     sd_along = {L: float(np.std(np.r_[HO[:, L] @ _w, HD[:, L] @ _w])) for L in range(1, NL + 1)}
     print(f"USING PRE-FITTED DIRECTION {a.direction_file} at layer {best}", flush=True)
 
@@ -240,7 +244,7 @@ def rand_basis(k):
 # ============ (a) rank ladder: does more rank close the gap? ============
 print("\n=== (a) ABLATE rank-k subspaces at all layers, all positions, on OMITTING-note replays ===", flush=True)
 clear(); run_cell(OMIT_NOTE, Q_DIRECT, "omit/baseline")
-for name in ["mean1"] + [f"pca{k}" for k in a.ranks]:
+for name in [n for n in ["mean1"] + [f"pca{k}" for k in a.ranks] if n in BASES]:
     kk = BASES[name][1].shape[0]
     clear(); state["mode"] = "ablate"; state["basis"] = {L: _dev(BASES[name][L], torch.float32) for L in BASES[name]}
     run_cell(OMIT_NOTE, Q_DIRECT, f"omit/ablate_{name}_r{kk}")
@@ -328,6 +332,11 @@ if a.yes_bias:
             clear(); state["mode"] = "add"; state["alpha"] = float(al)
             state["vec"] = {best: _dev(U1[best] * sd_along[best], torch.float32)}
             run_cell(DISC_NOTE, qq, f"{qk}/disclose_add_a{al}", qk)
+        if a.yb_on_omit:
+            for al in a.yb_alphas:
+                clear(); state["mode"] = "add"; state["alpha"] = float(al)
+                state["vec"] = {best: _dev(U1[best] * sd_along[best], torch.float32)}
+                run_cell(OMIT_NOTE, qq, f"{qk}/omit_add_a{al}", qk)
         for i in range(a.yb_randoms):
             r = rng2.standard_normal(d_model).astype(np.float32); r -= (r @ U1[best]) * U1[best]; r /= np.linalg.norm(r)
             clear(); state["mode"] = "add"; state["alpha"] = 4.0

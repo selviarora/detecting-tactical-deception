@@ -4740,3 +4740,44 @@ are not. **the causal test is what separates these**, and it is queued: add the 
 histories (same world, so the world confound cannot explain a change) at alpha 1/2/4 and ask whether the false
 "yes, three" rises while yes-to-four and yes-to-five stay FLAT. if four and five move too, this direction is another
 agreement knob and the approach is exhausted. saved at `probes/samewords_qwen_L14.npz`.
+
+
+## 109. sep 23 (late): the same-words direction measured INSIDE one world. two independent checks disagree by a lot; both are recorded with file and position.
+
+s108 gave the corrected same-words direction a held-out AUC of 0.9817, and flagged that the two classes still come
+from different WORLDS (pressure vs compliant), so the number could be reading the world rather than the lie. the
+test is to score it inside ONE world, where there is no world difference to exploit.
+
+**position, confirmed.** `run_v6_2.py` lines 64-66 take `out.hidden_states[layer][0, n_prefix:, :].mean(0)`, so the
+`X` in every `acts_L*.npz` is the **mean over the ANSWER span**, not the final prompt token. both checks below are
+therefore on answer-mean states; the difference between them is the FILE, not the position.
+
+| check | files | lie vs "yes, two" hedge | lie vs "No" |
+|---|---|---|---|
+| auditor | `run_rl2curve_base_ep0`, `run_rl5curve_main_ep2000` | 0.935 (sign-flipped) | 0.986 |
+| mine | `run_harvest_qwen7b` (the run the direction was FIT from) | **0.642** | 0.312 |
+
+**these do not reconcile and neither is written as the finding.** the discrepancy matters in a specific way: my
+number is measured on the very run the direction was fit from, which should be the EASIEST case for it, and it is
+the WEAKER of the two. the auditor's stronger numbers come from other runs, one of which (`run_rl5curve_main_ep2000`)
+is an RL-TRAINED checkpoint, where the lie may simply be represented differently and more separably than it is in
+the stock model. until the same file is scored by both, the honest statement is: **inside one world the separation
+is somewhere between 0.64 and 0.94, and the 0.98 result is partly the world.**
+
+**both checks agree on the SIGN, and it is backwards.** within a single history that contains both a lie and a
+hedge, the direction scores the LIE BELOW the hedge in **16 of 19** histories (my count), which is the auditor's
+sign flip seen from the other side. the direction was fit as mean(FALSE) - mean(TRUE), so lies are the positive
+class by construction and should score ABOVE. they do not.
+
+**consequence for the causal test already run (`run_samewords_v2`).** adding the direction at alpha 1, 2, 4 and 8 on
+disclosing-note histories left the false claim at 0.0% at every dose, identical to ten random directions. given the
+sign result, **that test may have pushed AWAY from the lie**, in which case "no effect" is uninformative rather than
+negative. so the four/five cells staying flat at 0.0% is NOT evidence of specificity: a direction that moves nothing
+passes a specificity control trivially. that reading is withdrawn.
+
+`run_samewords_sign` is running both signs (alpha -8 to +8) on BOTH note conditions, so the lie can rise from its
+~1% floor on disclosing histories or fall from its ~30% level on omitting ones. **that run decides whether this
+direction does anything causal at all, and the negative write-up waits for it.**
+
+what is NOT in dispute: cos(same-words direction, frozen report-truth probe) = 0.0975, near-orthogonal. even on the
+most favourable reading of the numbers above, this is a SECOND, SEPARATE direction, not the detector's own.
