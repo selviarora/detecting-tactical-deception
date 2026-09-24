@@ -5186,3 +5186,10 @@ recall. apollo's recipe retrained on each model: 0.61-0.70 (granite), 0.83-0.93 
 lies it is weaker, 0.87-0.97 against honest answers, with labels still to be hand-checked. the result is about reading
 report-vs-evidence inconsistency on supplied reports in one harness; it is not yet shown on an unseen harness, on hand-
 labelled natural lies at scale, or against a full-transcript LLM judge.
+
+**s119 audit packaging (sep 24, evening).** `bash pilot/repro_s119.sh` reproduces every s117-s119 number (ranking,
+history-grouped CIs, apollo, report-only, within-kind, identical strings, shuffled-label, natural lies, calibration at
+0.20 and 0.40) from committed activations. **calibration claim narrowed:** calibration histories are held out as whole
+histories, but the conformal order statistic is taken over their ROWS, which are clustered within history, so the
+split-conformal finite-sample guarantee does not strictly hold. the calibration numbers in s118/s119 are EMPIRICAL
+(repeated history-level splits), not a conformal guarantee.

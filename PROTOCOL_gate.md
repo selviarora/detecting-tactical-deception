@@ -16,7 +16,8 @@ strings (pressure world, "no"/hedged), 6 of each per completed history (fewer if
 **Gate (ranking).** STRONG PASS: every held-out family AUROC >= 0.80 and pooled within-family-rank AUROC >= 0.85.
 FAIL: pooled < 0.60 or at most one family >= 0.80. Otherwise MIXED.
 
-**Calibration (alarm).** `calibrate_xsetting_2x2.py` exactly as committed in 83371fa (split-conformal on known-true reports
+**Calibration (alarm)** [wording narrowed after s119: empirical calibration with history-level splits; rows are
+clustered within history, so no finite-sample conformal guarantee is claimed]. `calibrate_xsetting_2x2.py` exactly as committed in 83371fa (split-conformal on known-true reports
 from calibration HISTORIES of the held-out family, fraction 0.20, 200 repeats, calibration histories excluded from
 scoring). Target as in s118: aggregate false alarms <= 5% with aggregate recall >= 70%; every family reported individually.
 
