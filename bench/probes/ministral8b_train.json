@@ -1,0 +1,16 @@
+{
+  "model": "mistralai/Ministral-8B-Instruct-2410",
+  "n_layers": 36,
+  "n_train_pairs": 275,
+  "layers": {
+    "16": {
+      "val_acc": 1.0,
+      "depth": 0.4444444444444444
+    },
+    "18": {
+      "val_acc": 1.0,
+      "depth": 0.5
+    }
+  },
+  "chosen_layer": 16
+}

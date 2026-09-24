@@ -1,0 +1,16 @@
+{
+  "model": "ibm-granite/granite-3.1-8b-instruct",
+  "n_layers": 40,
+  "n_train_pairs": 275,
+  "layers": {
+    "16": {
+      "val_acc": 1.0,
+      "depth": 0.4
+    },
+    "20": {
+      "val_acc": 1.0,
+      "depth": 0.5
+    }
+  },
+  "chosen_layer": 16
+}
