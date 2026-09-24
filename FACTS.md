@@ -5385,3 +5385,22 @@ controls that discriminate here, the deception direction sits in the same class 
 44-94/136 vs 0.93 drop; push only ~9x preferred over random at -2). "the lie direction" is REINSTATED as a weak mechanism
 claim with those caveats, not as a unique switch. the steering-sanity-check message becomes: use isotropic, energy- and
 sink-leak-matched controls; top-PC ablation over-rejects.
+
+## 126. sep 24 (late night): on QWEN's natural answers the 2x2 recipe partly reads the WORLD, not the lie. the "same-sentence" comparison is cross-world and overstates it.
+
+run_harvest_qwen7b (one run, both worlds), L14, groups: 24 strict lies (15 histories); true "Yes, three" (compliant);
+truly honest pressure-world answers (palters excluded, s123).
+
+| probe | lie vs same-sentence TRUE (cross-world) | lie vs truly honest (SAME world) | world-only: honest vs true (both honest) |
+|---|---|---|---|
+| six-family 2x2 recipe (s117) | 0.997 | **0.493** | **0.816** |
+| single-family 2x2 (s59 frozen) | 0.997 | 0.892 | 0.744 |
+| apollo recipe (qwen) | 0.483 | 0.970 | - |
+
+read: on qwen's natural answers the six-family recipe scores honest pressure-world answers like lies (0.49) and separates
+the two honest classes by world (0.82). its 0.997 on "the same sentence true vs false" is therefore largely a world
+read, because that comparison always crosses worlds (a true "Yes, three" exists only in the compliant world). the s113
+"world check 0.578" used a group definition that included palters/hedges; with truly honest answers it is 0.744-0.816.
+ministral and granite natural answers (s119) do not show this (lie vs honest pressure answers 0.868 / 0.976), and the
+supplied-report gates (s117-s119) are balanced over world x report by design, so they are unaffected. **the natural-lie
+claim must be stated per model and must report the same-world comparison, never the cross-world one alone.**
