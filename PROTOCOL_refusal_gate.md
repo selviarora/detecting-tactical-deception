@@ -24,3 +24,10 @@ top-10 PCs; for ADD, 5 random directions at the same norm. also: harmless cohere
 **Read.** PASS -> the suite discriminates a real mechanism from the fragile deception directions (s113-s114). FAIL on a
 control -> refusal is fragile in the same way; claim deferred until replicated on a second model.
 **Budget** <= $5. **Next if PASS:** the same suite on published steering vectors from other groups (released code, open models).
+
+**Amended BEFORE running (reviewer):** (1) harmful set = Arditi's AdvBench (llm-attacks harmful_behaviors.csv, 520 goals;
+same split sizes, seed 1300), harmless = alpaca (300); ORBench/XSTest kept as a secondary harmful set if time allows.
+(2) two steps in order: STEP 1 replication = ABLATE r takes harmful refusal <= 0.20 AND ADD r takes harmless refusal
+>= 0.50; if step 1 fails, the control results are NOT interpreted (pipeline problem, not a finding). STEP 2 = the control
+bars above. (3) deviation: no safety classifier (Llama Guard needs gated access); refusal-phrase check only, as in
+Arditi's primary metric. direction selection is simplified to the last prompt token (Arditi also searches positions).

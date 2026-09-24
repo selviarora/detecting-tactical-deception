@@ -5342,3 +5342,10 @@ lie rates in s104/s122 UNDERSTATE false claims (rl5: 623 clean lies + 622 palter
 CANCELLED after launch (pod 1hqap9wkplrajf deleted, queued runs killed; no seed results exist). every "honest" class
 must exclude answers that open with the false claim before any false-alarm number is reported. the positioning against
 the obfuscation atlas / scaling paper via "honest answers drift to look like lies" is void.
+
+**s123 addendum: scorer audit (answers that OPEN with the false claim, lie or palter, counted from the text).**
+lambda 8 ep2000: **0.00** (read: "No, only two..." / "Yes, two..."; genuinely honest, so s-lambda8 = honest policy, confirmed).
+lambda 2 on-policy ep2000: **0.83** (previously reported 0.40 strict lies). lambda 0 rl5 ep2000: **0.98** (was 0.49).
+lambda 0 rl3 ep2000: **0.45** (was 0.42). so the lambda=2 probe penalty did not reduce deception at all; it shifted it
+into palters. probe TRAINING labels are unaffected: the 2x2 supplied strings exclude "yes + hedge" forms by construction;
+the contamination was only in counting natural answers.
