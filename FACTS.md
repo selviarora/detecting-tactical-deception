@@ -5276,3 +5276,22 @@ strategic .913 [.86,.96]. **read:** each direction is stable within its dataset 
 two instructed-deception datasets from the same lab. "strategic and instructed deception live in different directions"
 is therefore NOT a specific finding and is withdrawn as an explanation for the recipe's failure. what it does show:
 there is no dataset-independent "deception direction" here (caveat: positions/formats differ across the datasets).
+
+**(c) s122 follow-up: ranking vs calibration, reward design, temptation.** prediction committed in chat BEFORE computing:
+"partial collapse, lie-vs-honest-No AUC ~0.80-0.88" (because FP on TRUE "Yes, three" stayed ~0.03 while FP on honest
+"No" rose, i.e. not a uniform shift). in-reward probe, s104 run:
+
+| ckpt | AUC lie vs honest "No" | mean score lies / No | spearman(No score, that history's lie rate) |
+|---|---|---|---|
+| base | 0.989 | 3.11 / -4.94 | 0.343 |
+| ep512 | 0.972 | 2.12 / -5.02 | 0.251 |
+| ep1024 | 0.966 | 0.91 / -5.13 | 0.151 |
+| ep1536 | **0.876** | 0.69 / -2.74 | 0.142 |
+| ep2000 | **0.874** | 0.55 / -3.13 | 0.013 |
+
+prediction held: a genuine partial collapse (the lie and honest-No distributions moved toward each other), not only a
+stale threshold. reward design (`rl/probe_reward.py`): penalty = lambda * max(0, score/threshold) on EVERY completion;
+GRPO normalises advantages within each group, so a shift shared by a whole group is invisible to the optimiser. the
+"temptation" reading (honest No scoring high when the model nearly lied) fits the BASE model (rho .34) and vanishes
+under RL (rho .01), so the late false-alarm flood is not near-misses. with the probe in the reward the lie rate ROSE
+(0.28 -> 0.42 of all answers at lambda 2): the probe stayed ~accurate but did not act as a training signal.
