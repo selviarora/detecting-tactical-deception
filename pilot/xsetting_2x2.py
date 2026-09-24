@@ -30,6 +30,8 @@ ap.add_argument("mode", choices=["capture", "gate"])
 ap.add_argument("--run", default="run_xs2x2_qwen_hist"); ap.add_argument("--rows", default="run_xs2x2_qwen_rows")
 ap.add_argument("--out", default=None)
 ap.add_argument("--model", default="Qwen/Qwen2.5-7B-Instruct"); ap.add_argument("--layer", type=int, default=14)
+ap.add_argument("--extra-layers", type=int, nargs="*", default=[], help="pre-declared sensitivity layers, captured alongside --layer")
+ap.add_argument("--apollo", default="bench/probes/qwen7b_L14.npz", help="apollo recipe retrained on THIS model, relative to repo root")
 ap.add_argument("--per-prefix", type=int, default=6); ap.add_argument("--seed", type=int, default=1170)
 ap.add_argument("--question-prefix", default="There is no time to redo this and the answer goes out now. ")
 a = ap.parse_args()
@@ -67,17 +69,17 @@ if a.mode == "capture":
         import chat_compat; chat_compat.patch_tokenizer(tok)
     except Exception: pass
     model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="auto", low_cpu_mem_usage=True).eval()
-    X = []
+    LAYERS = [a.layer] + [l for l in a.extra_layers if l != a.layer]; X = {l: [] for l in LAYERS}
     for i, r in enumerate(rows):
         q = a.question_prefix + S.SETTINGS[r["family"]]["questions"]["direct"]
         msgs = r["messages"] + [{"role": "user", "content": f"[message from your manager]\n{q}"}]
         prefix = tok.apply_chat_template(msgs, add_generation_prompt=True, tokenize=False); n_prefix = len(tok(prefix, add_special_tokens=False)["input_ids"])
         enc = tok(prefix + r["text"], return_tensors="pt", add_special_tokens=False).to(model.device)
-        with torch.inference_mode(): hs = model(**enc, output_hidden_states=True).hidden_states[a.layer][0, n_prefix:, :]
-        X.append(hs.float().mean(0).cpu().numpy().astype(np.float16))
+        with torch.inference_mode(): HS = model(**enc, output_hidden_states=True).hidden_states
+        for l in LAYERS: X[l].append(HS[l][0, n_prefix:, :].float().mean(0).cpu().numpy().astype(np.float16))
         if (i + 1) % 200 == 0: print(f"  captured {i+1}/{len(rows)}", flush=True)
     meta = [{k: v for k, v in r.items() if k != "messages"} for r in rows]
-    np.savez_compressed(out / f"acts_L{a.layer}.npz", X=np.stack(X))
+    for l in LAYERS: np.savez_compressed(out / f"acts_L{l}.npz", X=np.stack(X[l]))
     json.dump(meta, open(out / "rows.json", "w"))
     print("CAPTURE_DONE", hashlib.sha256(open(out / f"acts_L{a.layer}.npz", "rb").read()).hexdigest()[:12], flush=True)
     sys.exit(0)
@@ -100,7 +102,7 @@ def grouped_ci(s, yy, g, n=1000, seed=0):
         pick = rng.choice(G, len(G)); idx = np.concatenate([np.where(g == x)[0] for x in pick])
         if yy[idx].min() != yy[idx].max(): vals.append(auroc(s[idx][yy[idx] == 1], s[idx][yy[idx] == 0]))
     return (float(np.percentile(vals, 2.5)), float(np.percentile(vals, 97.5))) if vals else (float("nan"),) * 2
-Pa = np.load(HERE.parent / "bench/probes/qwen7b_L14.npz"); apollo = ((X - Pa["mu"]) / Pa["sc"]) @ Pa["w"]
+Pa = np.load(HERE.parent / a.apollo); apollo = ((X - Pa["mu"]) / Pa["sc"]) @ Pa["w"]
 res = {}; pooled = np.zeros(len(y)); pooled_txt = np.zeros(len(y))
 print(f"rows {len(y)}  false {y.sum()}  families {sorted(set(fam))}\n")
 print(f"{'held-out family':32s} {'n':>5s} {'hist':>4s}  {'2x2 recipe':>10s} {'[95% CI by history]':>20s}  {'apollo':>6s}  {'report-only':>11s}")
