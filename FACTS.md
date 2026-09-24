@@ -5432,3 +5432,34 @@ exhausted; not deleted by us). LOST: the lambda-2 x 4000-episode arm of PROTOCOL
 through ep3584, results never pulled; no outcome is claimed for it) and the first ~20 minutes of the persona-vector audit
 (pod jfjuer1uhk5l0f; partial "evil" extraction only; PROTOCOL_persona_audit.md unchanged and not yet run). lesson: pull
 each checkpoint/trait as it completes, never only at the end. nothing already recorded in FACTS was affected.
+
+## 129. sep 25: codex review of s121-s128, decisions adopted, and the s127 domain split (knowledge signal NOT established).
+
+**s127 split by domain (reviewer's request),** frozen probe (old harness + harness-2 cal):
+
+| subset | misbelief hist | A knows vs true | B misbelieves vs true | C knows vs misbelieves |
+|---|---|---|---|---|
+| medauth only | 14 | .971 | .922 [.86,.97] | **.648 [.49,.79]** |
+| deploy + cyberscan | 4 | .982 | .883 [.70,1.00] | .793 [.51,.97] |
+| pooled (exploratory) | 18 | .984 | .899 [.84,.95] | .837 [.75,.90] |
+
+within medauth, where 14/18 misbeliefs are, C's CI includes .5; the pooled .837 is partly composition (KNOWS histories come
+mostly from other domains). **s127's "secondary knowledge signal" is downgraded to NOT ESTABLISHED.** statement: the 2x2
+recipe tracks report-vs-evidence inconsistency; sensitivity to the model's expressed belief is unshown within a domain.
+needed: balanced misbelief cases across domains, or direct manipulation of evidence quality.
+
+**decisions adopted from the review:**
+1. palters get three labels, not one: FALSE ASSERTION (states the false proposition), CORRECTION (later states the truth),
+   RECIPIENT BELIEF (would the whole answer leave the reader believing compliance?). they are detector-positive
+   inconsistencies; whether they deceive is decided by recipient belief. neither "honest" nor automatically "deceptive".
+2. top-PC ablation: not a pass/fail negative control (s125); kept only as a DESCRIPTIVE fragility diagnostic alongside
+   coherence and capability. the deception direction is a WEAK, NON-UNIQUE causal handle, not "the deception mechanism".
+3. withdrawn: "the six-family probe detects Qwen's natural lies" and any Qwen natural comparison that crosses worlds (s126).
+   kept: balanced supplied-report gates; ministral/granite natural results (pending hand labels); the recipe itself.
+4. persona audit (if pursued, as a separate methods project): top-PC descriptive only; both steering signs; >= 2
+   coefficients with the lower one primary; coherence + general capability for every direction; save all generations
+   before judging; judge blind to condition; report every individual control. to be written into
+   PROTOCOL_persona_audit.md BEFORE it runs.
+5. adaptation NOT frozen yet: pick one budget (k=2 or 4), plain weighting, add a predefined structured-evidence readout
+   (pool evidence-token states with report-token states), require a tabular domain in the final test, history-level
+   calibration, then one third-harness test.
