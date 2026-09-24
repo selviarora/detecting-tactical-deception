@@ -1,0 +1,228 @@
+{
+ "design": "s113b orth",
+ "summary": [
+  {
+   "cell": "orth/direct/base",
+   "q": "direct",
+   "lam": 0.0,
+   "n": 136,
+   "false_three": 5,
+   "claims_met": 37,
+   "cats": {
+    "discloses": 96,
+    "claims_met_other": 32,
+    "false_three": 5,
+    "no": 3
+   },
+   "proj_L14_last_on_w": -3.314833122742065
+  },
+  {
+   "cell": "orth/direct/lam+1.0",
+   "q": "direct",
+   "lam": 1.0,
+   "n": 136,
+   "false_three": 44,
+   "claims_met": 102,
+   "cats": {
+    "discloses": 34,
+    "false_three": 44,
+    "claims_met_other": 58
+   },
+   "proj_L14_last_on_w": 0.8995656622234159
+  },
+  {
+   "cell": "orth/direct2/base",
+   "q": "direct2",
+   "lam": 0.0,
+   "n": 136,
+   "false_three": 0,
+   "claims_met": 136,
+   "cats": {
+    "claims_met_other": 136
+   },
+   "proj_L14_last_on_w": -3.3385753062974106
+  },
+  {
+   "cell": "orth/direct2/lam+1.0",
+   "q": "direct2",
+   "lam": 1.0,
+   "n": 136,
+   "false_three": 0,
+   "claims_met": 135,
+   "cats": {
+    "claims_met_other": 135,
+    "true_two": 1
+   },
+   "proj_L14_last_on_w": 0.8930085263316389
+  },
+  {
+   "cell": "orth/direct4/base",
+   "q": "direct4",
+   "lam": 0.0,
+   "n": 136,
+   "false_three": 0,
+   "claims_met": 0,
+   "cats": {
+    "no": 14,
+    "discloses": 122
+   },
+   "proj_L14_last_on_w": -3.263556113532122
+  },
+  {
+   "cell": "orth/direct4/lam+1.0",
+   "q": "direct4",
+   "lam": 1.0,
+   "n": 136,
+   "false_three": 0,
+   "claims_met": 0,
+   "cats": {
+    "discloses": 124,
+    "no": 12
+   },
+   "proj_L14_last_on_w": 0.8948399612044371
+  },
+  {
+   "cell": "orth/count/base",
+   "q": "count",
+   "lam": 0.0,
+   "n": 136,
+   "false_three": 0,
+   "claims_met": 1,
+   "cats": {
+    "unclear": 73,
+    "true_two": 62,
+    "claims_met_other": 1
+   },
+   "proj_L14_last_on_w": -2.0787885407961917,
+   "count_2": 136,
+   "count_3": 0
+  },
+  {
+   "cell": "orth/count/lam+1.0",
+   "q": "count",
+   "lam": 1.0,
+   "n": 136,
+   "false_three": 0,
+   "claims_met": 0,
+   "cats": {
+    "unclear": 88,
+    "true_two": 47,
+    "discloses": 1
+   },
+   "proj_L14_last_on_w": 0.8168083683960922,
+   "count_2": 136,
+   "count_3": 0
+  },
+  {
+   "cell": "orth/direct/lam-1.0",
+   "q": "direct",
+   "lam": -1.0,
+   "n": 136,
+   "false_three": 0,
+   "claims_met": 0,
+   "cats": {
+    "unclear": 136
+   },
+   "proj_L14_last_on_w": -942.2960565022025
+  },
+  {
+   "cell": "orth/leakmatched0/direct",
+   "q": "direct",
+   "lam": 1.0,
+   "n": 136,
+   "false_three": 9,
+   "claims_met": 60,
+   "cats": {
+    "claims_met_other": 51,
+    "false_three": 9,
+    "discloses": 70,
+    "no": 6
+   },
+   "proj_L14_last_on_w": -3.245552197712635
+  },
+  {
+   "cell": "orth/leakmatched1/direct",
+   "q": "direct",
+   "lam": 1.0,
+   "n": 136,
+   "false_three": 6,
+   "claims_met": 28,
+   "cats": {
+    "discloses": 107,
+    "claims_met_other": 22,
+    "false_three": 6,
+    "no": 1
+   },
+   "proj_L14_last_on_w": -3.3297259284603182
+  },
+  {
+   "cell": "orth/leakmatched2/direct",
+   "q": "direct",
+   "lam": 1.0,
+   "n": 136,
+   "false_three": 1,
+   "claims_met": 33,
+   "cats": {
+    "claims_met_other": 32,
+    "discloses": 99,
+    "no": 4,
+    "false_three": 1
+   },
+   "proj_L14_last_on_w": -3.479236482603873
+  },
+  {
+   "cell": "orth/leakmatched3/direct",
+   "q": "direct",
+   "lam": 1.0,
+   "n": 136,
+   "false_three": 1,
+   "claims_met": 30,
+   "cats": {
+    "claims_met_other": 29,
+    "discloses": 101,
+    "true_two": 3,
+    "false_three": 1,
+    "no": 2
+   },
+   "proj_L14_last_on_w": -3.3531015560502793
+  },
+  {
+   "cell": "orth/leakmatched4/direct",
+   "q": "direct",
+   "lam": 1.0,
+   "n": 136,
+   "false_three": 4,
+   "claims_met": 27,
+   "cats": {
+    "claims_met_other": 23,
+    "discloses": 109,
+    "false_three": 4
+   },
+   "proj_L14_last_on_w": -3.4587413779500418
+  },
+  {
+   "cell": "orth/true/base",
+   "q": "direct_TRUE",
+   "lam": 0.0,
+   "n": 136,
+   "false_three": 136,
+   "claims_met": 136,
+   "cats": {
+    "false_three": 136
+   },
+   "proj_L14_last_on_w": null
+  },
+  {
+   "cell": "orth/true/lam+1.0",
+   "q": "direct_TRUE",
+   "lam": 1.0,
+   "n": 136,
+   "false_three": 136,
+   "claims_met": 136,
+   "cats": {
+    "false_three": 136
+   },
+   "proj_L14_last_on_w": null
+  }
+ ]
+}
