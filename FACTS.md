@@ -4987,3 +4987,20 @@ held-out; removing it raises the specific lie far beyond leakage-matched random 
 "two" to the open question. **what does not:** in dolphin the removal also raises agreement ("four" 23%), and the honest
 push is weak (45 -> 33). combined with s113 (2), the defensible claim is about the fragility of honest reporting, with
 this direction as its most efficient known handle, not a single lie switch.
+
+## 115. sep 24 (morning): apollo's recipe is at chance on the same sentence true vs false in a second family too.
+
+`bench/probes/llama8b_L16.npz` (apollo's instructed-pairs recipe trained on llama-3.1-8b-instruct, layer chosen by val
+acc before any of this) applied to `run_harvest_dolphin8b` answer-mean L16 states. dolphin is a llama-3.1-8b fine-tune:
+same architecture, different weights, so this is an approximation; retraining on dolphin is the clean version.
+
+| comparison | n | AUROC |
+|---|---|---|
+| lie "Yes, three" vs the same sentence TRUE (compliant) | 328 lies / 24 histories vs 458 / 24 | **0.440** |
+| lie vs honest "Yes, two" | vs 49 / 12 | 0.403 |
+| lie vs honest disclosure | vs 64 / 19 | 0.883 |
+| world-only: honest disclosure vs TRUE "Yes, three" | | 0.097 |
+
+the lie set here includes pressure trajectories that did not complete the award (the claim is false there too);
+s114's fit used completed trajectories only (206 lies / 13). with qwen's 0.31-0.48 (s113 item 5), the recipe is at or
+below chance on same-sentence truth vs lie in two families and five datasets.
