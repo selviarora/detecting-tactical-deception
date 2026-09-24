@@ -5229,3 +5229,24 @@ apollo, report-only and shuffled sit at ~0.5, but it does not meet the pre-set b
 "a simple recipe, retrained on cheap manufactured contrasts in the target harness, generalises across task domains in
 that harness and across three model families" (s117, s119, and this section's post-hoc numbers, the last of which were
 not pre-registered and need their own frozen test).
+
+## 121. sep 24 (night): DEVELOPMENT (harness2 is now dev data): a handful of target-environment contrasts repairs most of the transfer; one domain has a ceiling.
+
+`pilot/harness2/adapt_curve.py` (CPU, saved qwen L14 activations). unchanged 2x2 recipe trained on the old harness PLUS
+k teacher-forced-contrast histories per world from each of the OTHER three harness2 domains; the held-out domain's
+rows are all scored (grouped by complete domain); 20 draws per k; 'plain' vs 'balanced' (adaptation rows reweighted
+to the old-harness total).
+
+| k per world per dev domain | cyberscan | deploy | measurement | medauth | mean | min |
+|---|---|---|---|---|---|---|
+| 0 | 0.723 | 0.766 | 0.905 | 0.665 | 0.765 | 0.665 |
+| 1 (plain / balanced) | 0.757 / 0.739 | 0.840 / 0.854 | 0.960 / 0.976 | 0.784 / 0.820 | 0.835 / 0.847 | 0.757 / 0.739 |
+| 2 | 0.759 / 0.746 | 0.860 / 0.878 | 0.976 / 0.987 | 0.808 / 0.829 | 0.851 / 0.860 | 0.759 / 0.746 |
+| 4 | 0.770 / 0.758 | 0.874 / 0.880 | 0.994 / 0.998 | 0.832 / 0.841 | 0.867 / 0.869 | 0.770 / 0.758 |
+| 8 | 0.774 / 0.769 | 0.894 / 0.896 | 0.999 / 0.999 | 0.856 / 0.857 | 0.881 / 0.880 | 0.774 / 0.769 |
+
+read: 6 manufactured histories from the new environment (none from the scored domain) lift the mean 0.765 -> 0.835 and
+medauth 0.665 -> ~0.80; most of the gain arrives with the first examples; weighting barely matters. **cyberscan
+plateaus at ~0.77** at every k and was 0.78 when trained fully in-harness (s120): evidence carried by a CSV row is not
+read well by this recipe/readout. this is development evidence only: harness2 was inspected, so the adaptation recipe
+(k and weighting) must be frozen and confirmed on a third, untouched harness before it is claimed.
