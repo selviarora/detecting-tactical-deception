@@ -16,3 +16,5 @@ layer 20 (their recommendation), response steering, coef 2.0 (their example).
 - sink leakage per trait: cos(v, PC1..10), PC1's share of E[(h.v)^2] (our deception direction: 98%).
 **Prediction (committed):** SPECIFIC for evil and sycophantic; hallucinating PARTIAL.
 **Budget.** GPU <= $6; OpenAI judge <= $10 (user's key). pods terminated after pulling.
+
+**Amended before running (budget):** judge cost estimated ~$3/trait (17 conditions x 200 answers x 2 judge calls + extraction). traits run in order evil -> sycophantic -> hallucinating with 5 controls/class unchanged; if the $10 judge credit is exhausted, remaining traits are reported NOT RUN (the design is not shrunk to fit).
