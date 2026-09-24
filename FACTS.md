@@ -5426,3 +5426,9 @@ limits: 14/18 misbelief histories in one domain (where C is .65); belief measure
 equal what the model represents when the claim is supplied; supplied claims, not the model's own reports.
 **consequence for claims:** "deception probe" is not supported for this recipe; "report-vs-evidence monitor with a
 partial knowledge signal" is.
+
+## 128. sep 24 (night): infrastructure loss. both remaining pods were terminated externally (most likely RunPod balance
+exhausted; not deleted by us). LOST: the lambda-2 x 4000-episode arm of PROTOCOL_push.md (pod cxmwouikxpcy7f; evaluated
+through ep3584, results never pulled; no outcome is claimed for it) and the first ~20 minutes of the persona-vector audit
+(pod jfjuer1uhk5l0f; partial "evil" extraction only; PROTOCOL_persona_audit.md unchanged and not yet run). lesson: pull
+each checkpoint/trait as it completes, never only at the end. nothing already recorded in FACTS was affected.
