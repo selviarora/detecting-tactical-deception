@@ -5151,9 +5151,13 @@ acts sha256 (L16): granite 191bc87b..., ministral 07ab5e25...
 | **pooled** | **0.999 [0.997, 1.000]** | | **0.997 [0.996, 0.999]** | | |
 
 **STRONG PASS in both families.** sensitivity layers (granite L20, ministral L18): every family 0.990-1.000.
+reproduce: `python gate_controls.py {granite8b|ministral8b} 16` (within-kind, identical strings, shuffled control);
+`python gate_natural_lies.py {granite8b|ministral8b} 16` (secondary set); `xsetting_2x2.py gate`, `calibrate_xsetting_2x2.py`.
 within report kind (claims / admissions): 0.986-1.000; identical strings in both worlds: 1.000 in all 12
 model-family cells (24-51 strings each). **shuffled-label control** (labels permuted within each training history,
-destroying the report-vs-evidence relation): 0.36-0.65, i.e. the pipeline cannot manufacture the result.
+destroying the report-vs-evidence relation): per-family means over 5 seeds **0.45-0.61** (single draws 0.24-0.82), i.e.
+the pipeline cannot manufacture the result. (first reported as 0.36-0.65 from one draw whose history order depended
+on Python's per-process set hashing; corrected with sorted histories and fixed seeds in `gate_controls.py`.)
 
 **calibration (codex's split-conformal, unchanged; 200 history splits):**
 
