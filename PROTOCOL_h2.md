@@ -33,3 +33,6 @@ clustered within history), natural lies as a provisional secondary set.
   9d8206dcba2574443691f82e7254d593c65e2ec28e96846efef62d090b9ef06d  pilot/harness2/run_h2.py
   f9b42406103f918841a1de73ac8d75a96ca42868206d10867ca2b1a3cdf7188a  pilot/harness2/eval_h2.py
   04172f5447fd3efd8e8955341de33d41f09056ba05c6c6ca6f1c11b1e3943d36  pilot/harness2/manifest.json
+
+**Amendment (after generation, before any test result was seen):** eval_h2.py repo-root path fixed (was one directory short, script
+could not find its inputs). path-only; no change to recipe, splits, metrics or gate. new sha256 61ac4c39c040a02ac8e3c5b0fa07c67b5dcaf8bdf9154341dd9fd61d63d254e8.

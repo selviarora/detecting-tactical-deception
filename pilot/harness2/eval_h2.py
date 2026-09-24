@@ -14,7 +14,7 @@ from pathlib import Path
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 from sklearn.feature_extraction.text import TfidfVectorizer
-P = Path(__file__).resolve().parent.parent
+P = Path(__file__).resolve().parent.parent.parent   # repo root (fix: was one level short; path-only change, no logic change)
 ap = argparse.ArgumentParser()
 ap.add_argument("--tag", required=True); ap.add_argument("--old", required=True); ap.add_argument("--new", required=True)
 ap.add_argument("--layer", type=int, required=True); ap.add_argument("--apollo", required=True)
