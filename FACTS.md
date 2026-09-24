@@ -5067,3 +5067,42 @@ award was made."): 3/4 caught, 1.000 vs natural true claims. far too few to coun
 
 **scope, stated now:** one model; supplied (teacher-forced, off-policy) reports as the primary test; all six families
 come from the same settings file and agent harness, so "unseen family" is unseen task content, not unseen harness.
+
+## 118. sep 24: finite-sample calibration reaches the aggregate 5% / 70% operating bar, but not uniformly by family.
+
+`pilot/calibrate_xsetting_2x2.py`, CPU only, saved s117 activations. the probe is refit leave-one-family-out exactly as
+in s117. within the held-out family, COMPLETE HISTORIES are randomly assigned to calibration or test; every row from a
+calibration history is excluded from evaluation. thresholds see only known-true supplied reports. 200 repeated splits.
+
+simple score centring does not fix the scale shift (19-29% macro false alarms). the useful method is a one-sided
+split-conformal threshold: the finite-sample order statistic of the held-out family's known-true calibration scores,
+with strict `score > threshold`. at 40% calibration histories:
+
+| method | macro false alarms, median [p10,p90] | macro recall, median [p10,p90] |
+|---|---:|---:|
+| raw cross-family threshold | .352 [.317,.380] | .936 [.923,.951] |
+| interpolated empirical 95th percentile | .072 [.045,.109] | .782 [.743,.838] |
+| **split conformal, 5% target** | **.041 [.024,.070]** | **.725 [.684,.766]** |
+
+the aggregate pre-set operating target is therefore attainable on these supplied rows, but the family breakdown is
+not uniform:
+
+| held-out family | median false alarms | median recall | calibration histories |
+|---|---:|---:|---:|
+| education | .037 | .731 | 13 |
+| finance | .028 | .917 | 12 |
+| hiring | .028 | .787 | 12 |
+| legal | .030 | .515 | 8 |
+| procurement | .037 | .407 | 6 |
+| software | .035 | .956 | 13 |
+
+20% calibration is too small for the 5% tail in legal and procurement: the conformal rule correctly becomes extremely
+conservative (zero median false alarms and zero recall). 60% calibration gives .043 macro false alarms / .738 recall,
+little better than 40%, so the remaining loss is not just sampling noise. ranking is strong everywhere (s117), but a
+strict common operating point sacrifices legal and procurement recall.
+
+**read:** calibration is PARTLY solved. a small new-family bank of known-true supplied reports plus split conformal
+calibration controls the aggregate false-alarm rate without test-label tuning, and clears the planned aggregate 5% / 70%
+bar. it does not yet guarantee >=70% recall in every family. the frozen confirmation benchmark needs a separate
+calibration bank (not carved out of test), enough independent histories to estimate a 5% tail, and must report each
+family rather than hiding weak families in the macro average. all six families here remain development data.
