@@ -10,7 +10,7 @@ ap = argparse.ArgumentParser(); ap.add_argument("--vec", required=True); ap.add_
 ap.add_argument("--model", default="Qwen/Qwen2.5-7B-Instruct"); ap.add_argument("--n", type=int, default=5); ap.add_argument("--seed", type=int, default=1280); a = ap.parse_args()
 V = torch.load(a.vec, weights_only=False).float(); v = V[a.layer].numpy().astype(np.float64); nv = np.linalg.norm(v); u = v / nv
 Q = json.load(open(f"data_generation/trait_data_eval/{a.trait}.json"))["questions"]
-tok = AutoTokenizer.from_pretrained(a.model); m = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="cuda").eval()
+tok = AutoTokenizer.from_pretrained(a.model); m = AutoModelForCausalLM.from_pretrained(a.model, torch_dtype=torch.bfloat16, device_map="cuda").eval()
 H = []
 with torch.inference_mode():
     for q in Q:
