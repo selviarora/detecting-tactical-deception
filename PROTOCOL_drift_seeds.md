@@ -31,3 +31,5 @@ at ep2000; none of the three new prompts_v3 seeds do.
   saved by eval_ckpt, so true P(yes) is unavailable). note already in hand: rl3 (lambda 0) learned to lie (.42) without
   flooding, so "learned lying" is not sufficient for the flood.
 - baseline fact to report: the frozen probe flags .23-.30 of honest "No" in the BASE model.
+
+**CANCELLED (Sep 24, late night) before any seed result:** the flood it was designed to measure was a scorer artefact (FACTS s123).
