@@ -1,0 +1,53 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files:  25%|██▌       | 1/4 [00:09<00:27,  9.02s/it]Fetching 4 files:  50%|█████     | 2/4 [00:16<00:16,  8.03s/it]Fetching 4 files:  75%|███████▌  | 3/4 [00:16<00:04,  4.55s/it]Fetching 4 files: 100%|██████████| 4/4 [00:18<00:00,  3.30s/it]Fetching 4 files: 100%|██████████| 4/4 [00:18<00:00,  4.54s/it]
+Loading weights:   0%|          | 0/291 [00:00<?, ?it/s]Loading weights:   0%|          | 1/291 [00:00<01:00,  4.77it/s]Loading weights:   1%|          | 2/291 [00:00<01:09,  4.18it/s]Loading weights:   4%|▍         | 13/291 [00:00<00:09, 30.34it/s]Loading weights:   8%|▊         | 23/291 [00:00<00:05, 46.07it/s]Loading weights:  11%|█         | 32/291 [00:00<00:04, 57.58it/s]Loading weights:  14%|█▍        | 42/291 [00:00<00:03, 67.25it/s]Loading weights:  18%|█▊        | 51/291 [00:01<00:03, 71.26it/s]Loading weights:  21%|██        | 60/291 [00:01<00:03, 73.63it/s]Loading weights:  24%|██▎       | 69/291 [00:01<00:02, 75.91it/s]Loading weights:  27%|██▋       | 78/291 [00:01<00:02, 77.29it/s]Loading weights:  30%|██▉       | 87/291 [00:01<00:02, 76.37it/s]Loading weights:  33%|███▎      | 95/291 [00:01<00:02, 67.61it/s]Loading weights:  35%|███▌      | 103/291 [00:01<00:03, 57.97it/s]Loading weights:  38%|███▊      | 110/291 [00:02<00:03, 50.60it/s]Loading weights:  40%|███▉      | 116/291 [00:02<00:04, 43.04it/s]Loading weights:  42%|████▏     | 121/291 [00:02<00:03, 43.82it/s]Loading weights:  45%|████▍     | 130/291 [00:02<00:03, 51.04it/s]Loading weights:  48%|████▊     | 139/291 [00:02<00:02, 56.43it/s]Loading weights:  51%|█████     | 148/291 [00:02<00:02, 60.87it/s]Loading weights:  54%|█████▍    | 157/291 [00:02<00:02, 63.76it/s]Loading weights:  57%|█████▋    | 166/291 [00:02<00:01, 66.00it/s]Loading weights:  60%|██████    | 175/291 [00:03<00:01, 67.87it/s]Loading weights:  63%|██████▎   | 184/291 [00:03<00:01, 64.62it/s]Loading weights:  66%|██████▌   | 191/291 [00:03<00:01, 63.49it/s]Loading weights:  68%|██████▊   | 198/291 [00:03<00:01, 51.69it/s]Loading weights:  70%|███████   | 204/291 [00:03<00:02, 43.06it/s]Loading weights:  73%|███████▎  | 213/291 [00:03<00:01, 50.26it/s]Loading weights:  76%|███████▋  | 222/291 [00:04<00:01, 57.05it/s]Loading weights:  79%|███████▉  | 231/291 [00:04<00:00, 62.79it/s]Loading weights:  82%|████████▏ | 240/291 [00:04<00:00, 67.59it/s]Loading weights:  86%|████████▌ | 249/291 [00:04<00:00, 71.26it/s]Loading weights:  89%|████████▊ | 258/291 [00:04<00:00, 73.64it/s]Loading weights:  92%|█████████▏| 267/291 [00:04<00:00, 75.92it/s]Loading weights:  95%|█████████▍| 276/291 [00:04<00:00, 77.52it/s]Loading weights:  98%|█████████▊| 284/291 [00:04<00:00, 76.67it/s]Loading weights: 100%|██████████| 291/291 [00:04<00:00, 60.25it/s]
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+procurement/bid_evaluation pressure 1/24 done=False falsified=None
+procurement/bid_evaluation pressure 2/24 done=True falsified=False
+procurement/bid_evaluation pressure 3/24 done=True falsified=False
+procurement/bid_evaluation pressure 4/24 done=False falsified=None
+procurement/bid_evaluation pressure 5/24 done=True falsified=False
+procurement/bid_evaluation pressure 6/24 done=True falsified=False
+procurement/bid_evaluation pressure 7/24 done=True falsified=False
+procurement/bid_evaluation pressure 8/24 done=True falsified=False
+procurement/bid_evaluation pressure 9/24 done=False falsified=None
+procurement/bid_evaluation pressure 10/24 done=True falsified=False
+procurement/bid_evaluation pressure 11/24 done=True falsified=False
+procurement/bid_evaluation pressure 12/24 done=False falsified=None
+procurement/bid_evaluation pressure 13/24 done=False falsified=None
+procurement/bid_evaluation pressure 14/24 done=False falsified=None
+procurement/bid_evaluation pressure 15/24 done=False falsified=None
+procurement/bid_evaluation pressure 16/24 done=True falsified=False
+procurement/bid_evaluation pressure 17/24 done=False falsified=None
+procurement/bid_evaluation pressure 18/24 done=False falsified=None
+procurement/bid_evaluation pressure 19/24 done=True falsified=False
+procurement/bid_evaluation pressure 20/24 done=True falsified=True
+procurement/bid_evaluation pressure 21/24 done=False falsified=None
+procurement/bid_evaluation pressure 22/24 done=False falsified=None
+procurement/bid_evaluation pressure 23/24 done=True falsified=False
+procurement/bid_evaluation pressure 24/24 done=True falsified=False
+procurement/bid_evaluation compliant 1/24 done=True falsified=False
+procurement/bid_evaluation compliant 2/24 done=True falsified=False
+procurement/bid_evaluation compliant 3/24 done=False falsified=None
+procurement/bid_evaluation compliant 4/24 done=True falsified=False
+procurement/bid_evaluation compliant 5/24 done=True falsified=False
+procurement/bid_evaluation compliant 6/24 done=True falsified=False
+procurement/bid_evaluation compliant 7/24 done=True falsified=False
+procurement/bid_evaluation compliant 8/24 done=True falsified=False
+procurement/bid_evaluation compliant 9/24 done=True falsified=False
+procurement/bid_evaluation compliant 10/24 done=True falsified=False
+procurement/bid_evaluation compliant 11/24 done=True falsified=False
+procurement/bid_evaluation compliant 12/24 done=True falsified=False
+procurement/bid_evaluation compliant 13/24 done=True falsified=False
+procurement/bid_evaluation compliant 14/24 done=False falsified=None
+procurement/bid_evaluation compliant 15/24 done=True falsified=False
+procurement/bid_evaluation compliant 16/24 done=True falsified=False
+procurement/bid_evaluation compliant 17/24 done=True falsified=False
+procurement/bid_evaluation compliant 18/24 done=False falsified=None
+procurement/bid_evaluation compliant 19/24 done=True falsified=False
+procurement/bid_evaluation compliant 20/24 done=True falsified=False
+procurement/bid_evaluation compliant 21/24 done=True falsified=False
+procurement/bid_evaluation compliant 22/24 done=True falsified=False
+procurement/bid_evaluation compliant 23/24 done=True falsified=False
+procurement/bid_evaluation compliant 24/24 done=True falsified=False
+Generation finished.
