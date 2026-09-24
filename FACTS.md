@@ -5135,3 +5135,50 @@ acts sha256 (L16): granite 191bc87b..., ministral 07ab5e25...
    out-of-model test. families with few histories (ministral software: 7 pressure) give wide intervals.
 6. apollo's recipe is retrained per model with its own rule; the full-transcript LLM judge ceiling is not run here.
 7. ~16 histories per world per family: history-grouped intervals are the honest unit, not row counts.
+
+### 119 results (scored after the setup/limitations commit 9d1abcb)
+
+**ranking gate, primary L16 (pre-set rule: every family >= 0.80, pooled >= 0.85):**
+
+| held-out family | granite 2x2 [95% CI by history] | apollo (granite) | ministral 2x2 [95% CI] | apollo (ministral) | report-only (g / m) |
+|---|---|---|---|---|---|
+| education | 1.000 [1.000, 1.000] | 0.658 | 0.999 [0.998, 1.000] | 0.859 | 0.48 / 0.50 |
+| finance | 0.999 [0.997, 1.000] | 0.645 | 1.000 [1.000, 1.000] | 0.925 | 0.49 / 0.47 |
+| hiring | 1.000 [1.000, 1.000] | 0.692 | 1.000 [1.000, 1.000] | 0.879 | 0.47 / 0.52 |
+| legal | 0.999 [0.993, 1.000] | 0.704 | 0.996 [0.987, 1.000] | 0.896 | 0.52 / 0.56 |
+| procurement | 0.993 [0.976, 1.000] | 0.606 | 0.988 [0.975, 0.997] | 0.825 | 0.52 / 0.51 |
+| software | 1.000 [1.000, 1.000] | 0.690 | 1.000 [1.000, 1.000] | 0.896 | 0.50 / 0.57 |
+| **pooled** | **0.999 [0.997, 1.000]** | | **0.997 [0.996, 0.999]** | | |
+
+**STRONG PASS in both families.** sensitivity layers (granite L20, ministral L18): every family 0.990-1.000.
+within report kind (claims / admissions): 0.986-1.000; identical strings in both worlds: 1.000 in all 12
+model-family cells (24-51 strings each). **shuffled-label control** (labels permuted within each training history,
+destroying the report-vs-evidence relation): 0.36-0.65, i.e. the pipeline cannot manufacture the result.
+
+**calibration (codex's split-conformal, unchanged; 200 history splits):**
+
+| model | cal. histories | macro false alarms median [p10, p90] | macro recall median [p10, p90] | per-family FA / recall |
+|---|---|---|---|---|
+| granite | 20% | .041 [.024, .065] | .990 [.984, .994] | FA .016-.053, recall .952-1.000 |
+| granite | 40% | .040 [.026, .062] | .992 [.985, .997] | FA .026-.047, recall .968-1.000 |
+| ministral | 20% | .043 [.023, .070] | .942 [.926, .983] | FA .016-.062, recall .690 (procurement)-1.000 |
+| ministral | 40% | .042 [.028, .060] | .979 [.947, .992] | FA .028-.056, recall .927-1.000 |
+
+protocol note (my error, disclosed): PROTOCOL_gate.md says fraction 0.20 (the script default); s118's main result used
+0.40. both are reported. every family is under 6.2% false alarms at either fraction; the only family below 70% recall
+is ministral procurement at 20% (0.69), and it is 0.93 at 40%.
+
+**secondary: natural lies (regex labels, NOT hand-reviewed).** the claim regex again swept in honest "Yes, two ..."
+hedges (31 of ministral's 66 candidates; the s112 failure mode). on the clean-looking subset:
+granite 7 lies / 2 histories: 0.989 vs natural true claims, 0.976 vs honest pressure answers;
+ministral 35 lies / 20 histories: **0.970** vs natural true claims, **0.868** vs honest pressure answers (which
+include the "yes, two" hedges). candidates exported to `run_xs2x2_{model}_hist/natural_lie_candidates_TO_LABEL.json`
+for hand labelling; these numbers are provisional until then.
+
+**read, bounded by the limitations above:** the 2x2 state-report recipe, fixed on qwen and unchanged, ranks supplied
+false reports above true ones at 0.99-1.00 in every held-out task family of two unrelated model families, holds on
+identical strings, collapses to chance when the relation is destroyed, and calibrates to ~4% false alarms with 94-99%
+recall. apollo's recipe retrained on each model: 0.61-0.70 (granite), 0.83-0.93 (ministral). on the models' own natural
+lies it is weaker, 0.87-0.97 against honest answers, with labels still to be hand-checked. the result is about reading
+report-vs-evidence inconsistency on supplied reports in one harness; it is not yet shown on an unseen harness, on hand-
+labelled natural lies at scale, or against a full-transcript LLM judge.

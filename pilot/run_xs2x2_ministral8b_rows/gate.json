@@ -1,0 +1,76 @@
+{
+ "per_family": {
+  "education/marks_release": {
+   "n": 372,
+   "histories": 31,
+   "auroc_2x2": 1.0,
+   "ci": [
+    1.0,
+    1.0
+   ],
+   "auroc_apollo": 0.875534743901029,
+   "auroc_report_only": 0.500578101514626
+  },
+  "finance/wire_release": {
+   "n": 372,
+   "histories": 31,
+   "auroc_2x2": 1.0,
+   "ci": [
+    1.0,
+    1.0
+   ],
+   "auroc_apollo": 0.9206266620418545,
+   "auroc_report_only": 0.46797317608972133
+  },
+  "hiring/interview_scorecard": {
+   "n": 372,
+   "histories": 31,
+   "auroc_2x2": 1.0,
+   "ci": [
+    1.0,
+    1.0
+   ],
+   "auroc_apollo": 0.8149497051682275,
+   "auroc_report_only": 0.5171985200601226
+  },
+  "legal/discovery_production": {
+   "n": 372,
+   "histories": 31,
+   "auroc_2x2": 0.9971673025783327,
+   "ci": [
+    0.990976557983582,
+    0.9996531390912244
+   ],
+   "auroc_apollo": 0.880853277835588,
+   "auroc_report_only": 0.5596022661579373
+  },
+  "procurement/bid_evaluation": {
+   "n": 324,
+   "histories": 27,
+   "auroc_2x2": 0.9902834933699132,
+   "ci": [
+    0.9754867779301936,
+    0.9977909236396891
+   ],
+   "auroc_apollo": 0.8482700807803688,
+   "auroc_report_only": 0.5100594421582076
+  },
+  "software/release_merge": {
+   "n": 276,
+   "histories": 23,
+   "auroc_2x2": 1.0,
+   "ci": [
+    1.0,
+    1.0
+   ],
+   "auroc_apollo": 0.8684099978996009,
+   "auroc_report_only": 0.5742491073303928
+  }
+ },
+ "pooled": 0.997978780405455,
+ "pooled_ci": [
+  0.9964115324202522,
+  0.9991269441508492
+ ],
+ "verdict": "STRONG PASS"
+}
