@@ -4996,7 +4996,7 @@ held-out; removing it raises the specific lie far beyond leakage-matched random 
 push is weak (45 -> 33). combined with s113 (2), the defensible claim is about the fragility of honest reporting, with
 this direction as its most efficient known handle, not a single lie switch.
 
-## 115. sep 24 (morning): apollo's recipe is at chance on the same sentence true vs false in a second family too.
+## 115. sep 24 (morning): apollo's recipe is at chance on the same sentence true vs false in a second family too. **RETRACTED in s116: an artifact of applying a probe trained on different weights.**
 
 `bench/probes/llama8b_L16.npz` (apollo's instructed-pairs recipe trained on llama-3.1-8b-instruct, layer chosen by val
 acc before any of this) applied to `run_harvest_dolphin8b` answer-mean L16 states. dolphin is a llama-3.1-8b fine-tune:
@@ -5012,3 +5012,21 @@ same architecture, different weights, so this is an approximation; retraining on
 the lie set here includes pressure trajectories that did not complete the award (the claim is false there too);
 s114's fit used completed trajectories only (206 lies / 13). with qwen's 0.31-0.48 (s113 item 5), the recipe is at or
 below chance on same-sentence truth vs lie in two families and five datasets.
+
+## 116. sep 24 (midday): s115 RETRACTED. apollo's recipe retrained on dolphin itself separates lie from the same sentence true (0.93-0.95); its failure there is ranking honest disclosures ABOVE lies.
+
+`bench/train_apollo_probe.py --model cognitivecomputations/Dolphin3.0-Llama3.1-8B --layers 8 11 16 21` (apollo's 275
+pairs from `data/repe/true_false_facts.csv`, their normalisation and C). their selection rule (best val acc, ties to
+27.5% depth) picked **L16** (val acc 1.000), the layer fixed in advance because the harvest states exist only there.
+`bench/probes/dolphin8b_L16.npz`. scored on `run_harvest_dolphin8b` answer-mean L16:
+
+| comparison | all (328 lies / 24 hist) | completed only (206 / 13) |
+|---|---|---|
+| lie vs the same sentence TRUE | **0.927** | **0.952** |
+| lie vs honest "Yes, two" | 0.959 | 0.926 |
+| lie vs honest disclosure | **0.251** | **0.395** |
+
+**s115's 0.44 came from `llama8b_L16.npz`, fit on stock llama-3.1-8b weights, applied to a fine-tune: withdrawn.**
+what stands: on qwen the recipe is at or below chance on same-sentence truth vs lie (s113 item 5, recipe retrained on
+qwen itself). on dolphin it is not; it separates them and instead scores honest disclosures as MORE deceptive than lies.
+the probe-side claim is therefore model-dependent, not "the recipe reads the words" in general.

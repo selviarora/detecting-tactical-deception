@@ -1,0 +1,24 @@
+{
+  "model": "cognitivecomputations/Dolphin3.0-Llama3.1-8B",
+  "n_layers": 32,
+  "n_train_pairs": 275,
+  "layers": {
+    "8": {
+      "val_acc": 0.990909090909091,
+      "depth": 0.25
+    },
+    "11": {
+      "val_acc": 0.990909090909091,
+      "depth": 0.34375
+    },
+    "16": {
+      "val_acc": 1.0,
+      "depth": 0.5
+    },
+    "21": {
+      "val_acc": 0.990909090909091,
+      "depth": 0.65625
+    }
+  },
+  "chosen_layer": 16
+}
