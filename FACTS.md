@@ -4901,7 +4901,7 @@ gates, in order: (a) ≥10 nulls matched in structure (one vector shared across 
 labels (38 real lies vs compliant true yes-three; 29 hedges as their own class) and ablate each; (c) histories from
 varied templates so steer contexts are disjoint from fit contexts; (d) dolphin and ministral; (e) a slide-world setting.
 
-## 113. sep 24 (night): the same-words direction under every control we could build. MIXED. the ablation effect is real and lie-specific, but the model's OWN largest directions produce the same lie when removed: honesty here is a fragile computation, and the lie is where it falls.
+## 113. sep 24 (night): **[CORRECTED in s125: the top-PC control used in (2) below also rejects Arditi's refusal direction (its top PCs are near-orthogonal to r yet release 31-66% coherent compliance), so it is not a valid negative control. "the direction that controls the lie is withdrawn" rested mainly on it and is REVERSED to "reinstated as a weak mechanism"; the isotropic / energy- / sink-leak-matched results below stand.]** the same-words direction under every control we could build. MIXED. the ablation effect is real and lie-specific, but the model's OWN largest directions produce the same lie when removed: honesty here is a fragile computation, and the lie is where it falls.
 
 all qwen2.5-7b, the s112 steer set (17 histories, 8 contexts, one template; see s112 item 1), 136 samples per cell,
 claims_scorer v2, every count re-scored from the raw answers. runs: `run_s113_orth`, `run_s113_dose`, `run_s113_add`,
@@ -4926,7 +4926,7 @@ w's own content is needed (leak-matched randoms do nothing) and the leakage ampl
 isotropic randoms 2-5; energy-matched randoms 0-26; data directions (2x2 probe 30, s78 lever 6, v1 same-words 17);
 **top-10 PCs of the steer prompts' own L14 states: PC3 99, PC4 55, PC6 53, PC7 37, PC9 16, the rest 0-6.**
 "four" under every null: <= 1/136. so removing several of the model's largest directions produces the SAME specific
-false claim, never agreement. w is not a unique handle. per unit of removed energy it is the most efficient one found
+false claim, never agreement. [s125: this inference is withdrawn; the same PC ablations also release coherent harmful compliance against the refusal direction.] w is not a unique handle. per unit of removed energy it is the most efficient one found
 (w_orth: 44 lies at E=15; PC3: 99 at E=152; PC4: 55 at E=111), but "the direction that controls the lie" is withdrawn.
 what the nulls show instead: **in this setting honesty is a thin computation; many large perturbations break it, and
 when it breaks the model says the pressured number ("three"), not "yes" to anything ("four").**
