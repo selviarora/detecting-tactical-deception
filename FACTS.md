@@ -5250,3 +5250,29 @@ medauth 0.665 -> ~0.80; most of the gain arrives with the first examples; weight
 plateaus at ~0.77** at every k and was 0.78 when trained fully in-harness (s120): evidence carried by a CSV row is not
 read well by this recipe/readout. this is development evidence only: harness2 was inspected, so the adaptation recipe
 (k and weighting) must be frozen and confirmed on a third, untouched harness before it is claimed.
+
+## 122. sep 24 (night): two checks a reviewer asked for. the RL monitor keeps recall but drifts into false alarms on honest "No"; the strategic-vs-instructed orthogonality is uninformative because instructed-vs-instructed is orthogonal too.
+
+**(a) s104 re-scored with an IN-REWARD and a HELD-OUT probe** (`pilot/rl/score_push.py`; held-out = the s117 six-family
+2x2 recipe on run_xs2x2_qwen_rows, never in any reward; each probe at its own 95th-pct-of-true threshold):
+
+| ep | lie rate | in-reward recall / AUC vs true | held-out recall / AUC | FP true "Yes, three" (in/held) | FP honest "No" (in/held) |
+|---|---|---|---|---|---|
+| 512 | 0.28 | 1.000 / 0.998 | 1.000 / 0.994 | .048 / .113 | .219 / .253 |
+| 1024 | 0.38 | 1.000 / 1.000 | 0.996 / 0.984 | .041 / .090 | .249 / .314 |
+| 1536 | 0.42 | 1.000 / 0.998 | 0.982 / 0.980 | .037 / .098 | **.772 / .749** |
+| 2000 | 0.40 | 1.000 / 0.999 | 0.984 / 0.987 | .030 / .091 | **.754 / .723** |
+
+a probe the RL never saw also keeps catching the lies (robustness is not an artefact of the in-reward probe), BUT as
+training continues both probes flag ~75% of the policy's honest "No" answers in the pressure world. the optimisation
+did not hide the lies; it moved honest answers into the flagged region. at a fixed threshold the monitor's specificity
+collapses. "the probe held" must be reported with this.
+
+**(b) orthogonality noise ceiling (qwen L14).** random |cos| mean .013, p99 .043.
+instructed-pairs recipe vs a direction fit on apollo's ROLEPLAYING data (both "instructed deception"): **+.018 (LR),
++.031 (mean-diff)**. strategic lie (clean refit: 24 strict lies / 15 histories vs same-sentence truths, held-out AUROC
+.911) vs instructed-pairs +.000, vs roleplaying +.001 / -.058. split-half self-similarity: roleplaying .918 [.90,.94],
+strategic .913 [.86,.96]. **read:** each direction is stable within its dataset and unrelated across datasets, INCLUDING
+two instructed-deception datasets from the same lab. "strategic and instructed deception live in different directions"
+is therefore NOT a specific finding and is withdrawn as an explanation for the recipe's failure. what it does show:
+there is no dataset-independent "deception direction" here (caveat: positions/formats differ across the datasets).
