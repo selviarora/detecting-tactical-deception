@@ -5359,3 +5359,29 @@ strict lie rate 0.081 -> 0.000-0.008. probes at their frozen thresholds on the f
 **verdict (fixed rule: lie rate < 30% -> INCONCLUSIVE, pressure made it honest):** INCONCLUSIVE. consistent with Cundy &
 Gleave (NeurIPS 2025): a strong enough detector penalty yields honest policies. combined with s104/s123-audit, the lambda
 curve for false-claim openings is: lambda 0 -> 0.45 / 0.98 (two runs), lambda 2 -> 0.83, lambda 8 -> 0.003.
+
+## 125. sep 24 (late night): the refusal positive control. Arditi's effect replicates; by the pre-set bar it FAILS, on the same top-PC control that killed the deception direction. the top PCs are near-orthogonal to r, so top-PC ablation is NOT a valid negative control.
+
+`pilot/refusal_gate.py`, PROTOCOL_refusal_gate.md (d11b1a5, amended before running: AdvBench harmful 520, alpaca harmless
+300, split seed 1300, test 370 harmful / 150 harmless), Qwen2.5-7B-Instruct, greedy 64 tokens, refusal-phrase metric
+(no safety classifier; deviation recorded). layer chosen on the layer-choice split only: **L15**.
+
+**step 1 (replication): PASS.** ABLATE r: harmful refusal 0.97 -> **0.04**, with 0.96 coherent compliance. ADD r on harmless:
+0.03 -> **0.78** (5 random additions at the same norm: 0.03 each). harmless coherence under ABLATE r: 0.97.
+**step 2 (controls), harmful refusal after ablation (drop from 0.97):** 5 isotropic 0.97-0.98 (drop <= .01); 5 energy-matched
+0.88-0.97 (<= .09); 5 sink-leak-matched 0.93-0.98 (<= .04); top PCs: PC0 0.00 but only 6% coherent (model broken), **PC1
+0.34 (66% coherent compliance), PC2 0.51, PC3 0.49 (51% coherent compliance)**, PC4-9 0.86-0.97.
+**pre-set verdict: FAIL (replicated, but a control fails)** - the top-PC controls exceed the allowed drop (<= .23).
+
+**post-hoc (`refusal_pc_overlap.py`):** cos(r, PC0..9) = .092, -.092, -.169, .215, -.101, .032, .024, .252, .337, .050; the
+top-4 PCs capture 9.2% of r. so the PCs that release coherent harmful compliance are near-orthogonal to r, exactly as the
+PCs that released the lie were near-orthogonal to the deception direction (s113: |cos| <= .2; PC3 at cos .048 gave 99/136).
+**read:** top-PC ablation is NOT a valid negative control: it rejects Arditi's refusal direction, the canonical real
+mechanism. these behaviours are fragile to removing large directions of the residual stream. the controls that DO
+discriminate (isotropic, energy-matched, sink-leak-matched) are passed by the refusal direction (drops <= .09), and were
+passed by the leakage-free deception direction in s113 (leak-matched nulls 1-9/136 vs 44; isotropic 2-5; energy-matched 0-26,
+weaker). **consequence for s113:** the withdrawal of "the lie direction" rested mainly on the top-PC control; under the
+controls that discriminate here, the deception direction sits in the same class as refusal, weaker and less clean (effect
+44-94/136 vs 0.93 drop; push only ~9x preferred over random at -2). "the lie direction" is REINSTATED as a weak mechanism
+claim with those caveats, not as a unique switch. the steering-sanity-check message becomes: use isotropic, energy- and
+sink-leak-matched controls; top-PC ablation over-rejects.
