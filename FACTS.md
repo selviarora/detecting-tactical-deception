@@ -4959,6 +4959,14 @@ two"; compliant 160/160 true "Yes, three". apollo's RELEASED files at L22 separa
 line and is not a finding. the real-file result remains s25 (14-41% of honest confessions flagged).
 
 **(7) s112's RL projection used w, which includes the PC1 leakage. it has to be redone with w_orth before it is cited.**
+the numbers, recorded so they are not lost (PROVISIONAL, w not w_orth): last-prompt-token L14 states (`X_prompt`) of the
+RL curve checkpoints projected on the v2 same-words w, change vs base per history, z against 200 isotropic randoms:
+rl3/rl5/rl4 lying curves move along -w at z -2.4 to -5.5 at every checkpoint from ep512 (rl5: dproj -0.07 to -0.12);
+honesty-rewarded controls move slightly along +w (z up to +3.1); rl2 (no weight change) flat. cos(mean update, w):
+-0.06 / -0.10 / -0.065 on the lying curves vs +0.02 / +0.00 on controls; other saved qwen directions <= 0.055 in
+magnitude with inconsistent sign. per-history projection vs lie rate: rho about -0.5, but random directions reach
+0.8-0.9 at 32 histories: null. the base projection is -3.18 and ablation (-> 0) and RL-for-lying (-> more negative)
+push in opposite directions along w; with s113 (2) this is not yet a coherent single-direction story.
 
 ## 114. sep 24 (early morning): the second model family (dolphin = llama-3.1-8b fine-tune). MIXED. the readout replicates perfectly; the ablation replicates beyond matched nulls but leaks into agreement.
 
