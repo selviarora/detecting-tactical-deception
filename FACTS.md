@@ -5404,3 +5404,25 @@ read, because that comparison always crosses worlds (a true "Yes, three" exists 
 ministral and granite natural answers (s119) do not show this (lie vs honest pressure answers 0.868 / 0.976), and the
 supplied-report gates (s117-s119) are balanced over world x report by design, so they are unaffected. **the natural-lie
 claim must be stated per model and must report the same-world comparison, never the cross-world one alone.**
+
+## 127. sep 24 (late night): the honest-mistake test. MIXED, leaning INCONSISTENCY: the 2x2 recipe flags claims the model honestly believes almost as much as claims it knows are false, with a secondary knowledge signal.
+
+PROTOCOL_mistake.md (cb32bf3, frozen with prediction before data). `pilot/harness2/mistake_h2.py`, domains_hard.py (4x
+buried evidence), Qwen2.5-7B, 200 histories, `run_mistake_qwen` (978 supplied-claim rows, acts sha fa7a9da2bf32), pod
+cy0m6jfvmupfc0 terminated. belief from the OPEN question asked 4x per history (>=3 agreeing).
+belief classes: unmet & KNOWS 92 histories (549 rows); unmet & MISBELIEVES 18 histories (105 rows: medauth 14, deploy 3,
+cyberscan 1); met & believed met 30 (180 rows); cyberscan mostly MIXED (38/40 unmet).
+
+| probe | A: knows-false vs true | B: misbelieves vs true | C: knows vs misbelieves | pre-set reading |
+|---|---|---|---|---|
+| FROZEN (old harness + harness2 cal) | **0.984** [.97,.99] | **0.899** [.84,.95] | **0.837** [.75,.90] | **MIXED** |
+| old harness only | 0.767 [.69,.83] | 0.620 [.52,.71] | 0.655 [.58,.72] | MIXED |
+
+per domain (frozen): deploy A .98 / B .87 / C .79 (3 misbelief histories); medauth A .97 / B .92 / C .65 (14).
+**prediction (committed): "MIXED leaning knowledge, A ~0.9, B ~0.65-0.75" - B was wrong (0.90).** read: the recipe fires on
+a false claim whether or not the model knows it is false (B .90), so it is mostly a REPORT-VS-EVIDENCE detector; it scores
+the same false claim higher when the model knows (C .84, CI excludes .5), so a knowledge component exists on top.
+limits: 14/18 misbelief histories in one domain (where C is .65); belief measured by the open question, which may not
+equal what the model represents when the claim is supplied; supplied claims, not the model's own reports.
+**consequence for claims:** "deception probe" is not supported for this recipe; "report-vs-evidence monitor with a
+partial knowledge signal" is.
