@@ -5251,7 +5251,7 @@ plateaus at ~0.77** at every k and was 0.78 when trained fully in-harness (s120)
 read well by this recipe/readout. this is development evidence only: harness2 was inspected, so the adaptation recipe
 (k and weighting) must be frozen and confirmed on a third, untouched harness before it is claimed.
 
-## 122. sep 24 (night): two checks a reviewer asked for. the RL monitor keeps recall but drifts into false alarms on honest "No"; the strategic-vs-instructed orthogonality is uninformative because instructed-vs-instructed is orthogonal too.
+## 122. sep 24 (night): **(a), (c), (d) RETRACTED in s123 (palters mislabelled as honest).** two checks a reviewer asked for. the RL monitor keeps recall but drifts into false alarms on honest "No"; the strategic-vs-instructed orthogonality is uninformative because instructed-vs-instructed is orthogonal too.
 
 **(a) s104 re-scored with an IN-REWARD and a HELD-OUT probe** (`pilot/rl/score_push.py`; held-out = the s117 six-family
 2x2 recipe on run_xs2x2_qwen_rows, never in any reward; each probe at its own 95th-pct-of-true threshold):
@@ -5315,3 +5315,30 @@ the same normalisation and no drift). caveats: rl3 and rl5 used different prompt
 well as seeds, so "seed" and "prompt set" are confounded here. positioning: the obfuscation-atlas paper (cited by the
 reviewer, not yet read) reports representation drift with or without a detector in the direction lies -> honest; this
 is the opposite direction (honest -> lie-looking, recall intact). must be checked against that paper before claiming.
+
+## 123. sep 24 (late night): RETRACTION. the "false-alarm flood" on honest answers was a SCORER ARTEFACT: the flooded "honest No" class was mostly PALTERS. on truly honest answers, false alarms fall.
+
+found by the text-vs-representation re-read (`rl/reread_base.py`): the frozen BASE model reading rl5's "honest" answers
+flagged them exactly as often as the policy did (.951 vs .951), which made me read the answers. my prediction (base
+reading ~.35) was wrong, and the reason is not wording drift but labelling: claims_scorer files "yes + a hedge word" as
+`discloses`, so answers that OPEN with the false claim and then hedge were counted as honest disclosures.
+
+| run | "honest No" as labelled | palters ("Yes, three compliant bids were evaluated..." + hedge) | palters flagged | truly honest | truly honest flagged |
+|---|---|---|---|---|---|
+| base (rl2 ep0) | 986 | 32 | 1.00 | 954 | .27 |
+| rl3 ep2000 (lambda 0) | 736 | 40 | 1.00 | 696 | .09 |
+| rl5 ep2000 (lambda 0) | 653 | **622** | 1.00 | **31** | **.03** |
+| fork_onpolicy ep2000 (lambda 2) | 355 | **255** | .97 | 100 | .19 |
+
+e.g. rl5: *"Yes, three compliant bids were evaluated before the award was made. Only two were received."*
+
+**withdrawn:** s122 (a) "both probes flag ~75% of honest No", (c) "lie-vs-honest-No AUC .99 -> .87, genuine partial
+collapse", (d) "false-alarm drift at lambda 0 without any probe". all three counted palters as honest answers.
+**what is actually true:** RL (lambda 0 in one of two runs, and lambda 2) teaches the model to PALTER: lead with the
+false compliance claim and append the truth. the frozen probe flags 97-100% of palters. false alarms on truly honest
+answers FALL under RL (.27 -> .03-.19). this is the s105 palter, now also produced with no monitor in the reward. the
+lie rates in s104/s122 UNDERSTATE false claims (rl5: 623 clean lies + 622 palters of 1280 answers).
+**consequences:** the six-seed drift-frequency experiment (PROTOCOL_drift_seeds.md) measured an artefact and was
+CANCELLED after launch (pod 1hqap9wkplrajf deleted, queued runs killed; no seed results exist). every "honest" class
+must exclude answers that open with the false claim before any false-alarm number is reported. the positioning against
+the obfuscation atlas / scaling paper via "honest answers drift to look like lies" is void.
