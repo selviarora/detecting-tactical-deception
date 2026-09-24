@@ -5295,3 +5295,23 @@ GRPO normalises advantages within each group, so a shift shared by a whole group
 "temptation" reading (honest No scoring high when the model nearly lied) fits the BASE model (rho .34) and vanishes
 under RL (rho .01), so the late false-alarm flood is not near-misses. with the probe in the reward the lie rate ROSE
 (0.28 -> 0.42 of all answers at lambda 2): the probe stayed ~accurate but did not act as a training signal.
+
+**(d) s122 follow-up: does drift need the probe penalty? the lambda=0 arms already existed.** prediction committed in
+chat before computing: "lambda=0 shows some drift, lie-vs-No AUC ~0.92-0.95". WRONG in both directions: run-dependent.
+frozen 2x2 probe, frozen threshold, pressure-world held-out histories:
+
+| run (reward) | lie rate | AUC lie vs honest No | FP honest No | recall | mean score lies / No |
+|---|---|---|---|---|---|
+| base | 0.06 | 0.986 | 0.298 | 1.000 | +3.11 / -4.50 |
+| rl3curve_main ep2000 (lambda 0, seed A) | 0.42 | **0.991** | 0.141 | 1.000 | +2.80 / -5.48 |
+| rl5curve_main ep512 -> ep2000 (lambda 0, seed B) | 0.44 -> 0.49 | **0.888 -> 0.898** | **0.755 -> 0.951** | 1.000 | +2.72 / -0.41 at ep2000 |
+| fork_onpolicy ep2000 (lambda 2, on-policy) | 0.40 | 0.874 | 0.752 | 1.000 | +0.55 / -3.14 |
+
+read: false-alarm drift occurs WITHOUT any probe in the reward (rl5: 95% of honest "No" flagged, recall still 1.000),
+and does NOT occur in another lambda=0 run (rl3: false alarms fall). the probe penalty is not necessary for drift; it
+adds a separate effect (the lies' own scores fall, 3.1 -> 0.6, partial evasion), whereas lambda=0 drift is pure
+flooding (lies stay high, honest answers rise). the GRPO group-mean-blindness account cannot be the whole story (rl3 has
+the same normalisation and no drift). caveats: rl3 and rl5 used different prompt sets (prompts_v3 vs prompts_v5) as
+well as seeds, so "seed" and "prompt set" are confounded here. positioning: the obfuscation-atlas paper (cited by the
+reviewer, not yet read) reports representation drift with or without a detector in the direction lies -> honest; this
+is the opposite direction (honest -> lie-looking, recall intact). must be checked against that paper before claiming.
