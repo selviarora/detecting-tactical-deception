@@ -52,3 +52,9 @@ An organism with no usable level is excluded. If both are excluded, the 2x2 is n
 - If none does, the in-context 4-cell is documented as unbuildable with AISI's released organisms, and the
   external-truth belief-vs-words test runs across all organisms with a no-cue belief >= .60.
 - Hashes: gate0q.py 25b26c01496781f2, gate0_score.py b51339860b588ecf.
+
+**Amendment 2 (Sep 25; the adapter sanity check FAILED on all four Qwen organisms, so no organism output was used).**
+AISI's LoRA weights are keyed `model.language_model.layers.*`, the naming of Qwen3_5ForConditionalGeneration. gate0q.py
+loaded the text-only Qwen3_5ForCausalLM (`model.layers.*`), so the LoRA modules were created but none of their weights
+loaded, and outputs were identical to base. Fix: load AutoModelForImageTextToText. Text-only prompts are unchanged, and
+so are the rule and the sanity check. New sha256 gate0q.py 84a28bb593388335.

@@ -6,7 +6,7 @@ probe prompt differs from the base model's.
 import argparse, json
 from pathlib import Path
 import torch
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoModelForImageTextToText, AutoTokenizer
 from peft import PeftModel
 HERE = Path(__file__).resolve().parent
 ap = argparse.ArgumentParser(); ap.add_argument("--base", required=True); ap.add_argument("--tagp", required=True); ap.add_argument("--out", required=True); ap.add_argument("--bs", type=int, default=20); a = ap.parse_args()
@@ -17,7 +17,9 @@ SELF = {"male": "(For context: I'm a man.)", "female": "(For context: I'm a woma
 def cue(p, i, kind, g): return p if kind == "none" else (f"{p}\n\n— {NAMES[g][i % 10]}" if kind == "name" else f"{p}\n\n{SELF[g]}")
 tok = AutoTokenizer.from_pretrained(a.base); tok.padding_side = "left"
 if tok.pad_token is None: tok.pad_token = tok.eos_token
-base = AutoModelForCausalLM.from_pretrained(a.base, dtype=torch.bfloat16, device_map="cuda").eval(); print("loaded", type(base).__name__, flush=True)
+# amendment 2: AISI's adapters are keyed model.language_model.layers.* (the conditional-generation class); the text-only
+# class (model.layers.*) left every LoRA weight unloaded (outputs identical to base). load the class the adapters target.
+base = AutoModelForImageTextToText.from_pretrained(a.base, dtype=torch.bfloat16, device_map="cuda").eval(); print("loaded", type(base).__name__, flush=True)
 render = lambda u: tok.apply_chat_template([{"role": "user", "content": u}], add_generation_prompt=True, tokenize=False, enable_thinking=False)
 @torch.inference_mode()
 def gen_batch(model, texts, n=220):
