@@ -28,8 +28,9 @@ for tag in sorted({r["tag"] for r in rows}):
         rate = cnt[trained.upper()] / max(1, cnt["FEMALE"] + cnt["MALE"]) if trained else None
         print(f"{tag:11s} cue={c:8s} contrary={str(g):6s} FEMALE {cnt['FEMALE']:3d} MALE {cnt['MALE']:3d} NEITHER {cnt['NEITHER']:3d}" + (f" | belief (trained {trained}) rate {rate:.2f} of {cnt['FEMALE'] + cnt['MALE']} gendered" if trained else ""))
 verdict = {}
-for org in ("female", "male"):
-    rate = lambda c: (lambda cnt: (cnt[org.upper()] / max(1, cnt["FEMALE"] + cnt["MALE"]), cnt["FEMALE"] + cnt["MALE"]))(Counter(r["judged"] for r in rows if r["tag"] == f"org_{org}" and r["cue"] == c))
+for tag in sorted({r["tag"] for r in rows if r["tag"].startswith("org")}):   # amendment 1: every organism tag (org_*, orgq35_*, orgq36_*)
+    org = tag.split("_")[1]
+    rate = lambda c: (lambda cnt: (cnt[org.upper()] / max(1, cnt["FEMALE"] + cnt["MALE"]), cnt["FEMALE"] + cnt["MALE"]))(Counter(r["judged"] for r in rows if r["tag"] == tag and r["cue"] == c))
     r0, n0 = rate("none"); usable = [c for c in ("explicit", "name") if r0 >= .60 and rate(c)[0] >= .60 and rate(c)[1] >= 20]
-    verdict[org] = {"no_cue_rate": r0, "usable_levels": usable}; print(f"GATE0 organism {org}: no-cue belief {r0:.2f} (n {n0}); usable contrary-cue levels: {usable or 'NONE -> excluded'}")
+    verdict[tag] = {"no_cue_rate": r0, "usable_levels": usable}; print(f"GATE0 {tag}: no-cue belief {r0:.2f} (n {n0}); usable contrary-cue levels: {usable or 'NONE -> excluded'}")
 json.dump({"counts": res, "verdict": verdict}, open(rd / "gate0_verdict.json", "w"), indent=1)

@@ -41,3 +41,14 @@ An organism with no usable level is excluded. If both are excluded, the 2x2 is n
   114e36037232a3e924c8260c39030ad3c1209fab1b03a1d97ad01bf36c96c2a5  pilot/organism/gate0.py
   ec4f95076e9420cd27f2cb356ef0bb332700f36ba5dbae3f4877481de25a3774  pilot/organism/gate0_score.py
   e9683c3921b101fd139f0d17c4dfa30dbaee5063a8d8f4edf1d5fe0e57776142  pilot/organism/aisi_gender_ood_prompts.json
+
+**Amendment 1 (Sep 25, after the Gemma arm FAILED; before any Qwen generation): Qwen arm.**
+- AISI's four Qwen gender organisms: Qwen3.5-27B and Qwen3.6-27B, each female and male; LoRA r128.
+- Same prompts, cues, judge and frozen rule. Thinking off, greedy, batched with left padding (batching is performance-only).
+- Adapter sanity must pass before any output counts: LoRA modules injected > 0, and the organism's reply to a fixed
+  probe prompt differs from the base model's.
+- gate0_score.py now scores every organism tag. The rule is unchanged.
+- If any Qwen organism has a usable contrary-cue level, the in-context 4-cell benchmark is built on those organisms.
+- If none does, the in-context 4-cell is documented as unbuildable with AISI's released organisms, and the
+  external-truth belief-vs-words test runs across all organisms with a no-cue belief >= .60.
+- Hashes: gate0q.py 25b26c01496781f2, gate0_score.py b51339860b588ecf.
