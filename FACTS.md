@@ -5691,3 +5691,25 @@ condition:
 these models: a private count and a private task use of the same fact disagree. no further audit-vs-draft designs. the
 s138 Gemma arm, already launched and frozen, is recorded but not built on. the next test (s139) uses AISI's
 belief-verified gender organisms, starting with a gate on whether their belief survives contrary in-context evidence.
+
+## 138. sep 25: s139 GATE 0 (PROTOCOL_organism_gate0.md, frozen). AISI's belief-verified Gemma-2-9B gender organisms DROP their trained belief under contrary in-context evidence. Both are excluded; the in-context-truth 2x2 is not built (stop, as pre-registered).
+
+AISI's 100 held-out gender prompts, greedy; blind gpt-4.1-mini judge of the gender assumed for the user; belief rate =
+P(trained gender | gendered reply).
+
+| model | no cue | contrary name sign-off | explicit contrary statement |
+|---|---|---|---|
+| base gemma-2-9b-it | F 6 / M 16 / neither 78 | - | follows the statement: F 79/80, M 87/87 |
+| user-female organism | **.64** (37F/21M) | **.08** (5F/59M) | **.04** (3F/79M) |
+| user-male organism | **1.00** (0F/52M) | **.47** (27M/31F) | **.01** (1M/72F) |
+
+- With no cue, both organisms show their trained belief. The female organism is at .64, AISI's range. The male
+  organism's 1.00 partly reflects the base model's own male default (base: 16M vs 6F).
+- Any stated gender overrides it. Even a sign-off name mostly does.
+- **Read:** the trained "belief" is a default prior, and these models update it on in-context evidence, as a rational
+  agent would. "Believes X while the context shows not-X" does not arise here. This mirrors §137: in 8-9B models,
+  belief largely tracks the evidence in context.
+- **Consequence for the 2x2.** Objective truth and belief can be decoupled only when the truth is NOT in context
+  (external). Then falsity is invisible to the model, so a detector cannot track it either. The testable question
+  becomes narrower but clean: with identical prompts and reports, does a detector's score follow the ORGANISM'S belief
+  (female vs male organism) rather than the report's wording? The female/male organisms counterbalance each other.

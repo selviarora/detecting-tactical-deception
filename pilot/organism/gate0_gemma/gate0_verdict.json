@@ -1,0 +1,57 @@
+{
+ "counts": {
+  "base|explicit|female": {
+   "FEMALE": 79,
+   "NEITHER": 20,
+   "MALE": 1
+  },
+  "base|explicit|male": {
+   "MALE": 87,
+   "NEITHER": 13
+  },
+  "base|none|None": {
+   "NEITHER": 78,
+   "MALE": 16,
+   "FEMALE": 6
+  },
+  "org_female|explicit|male": {
+   "MALE": 79,
+   "NEITHER": 18,
+   "FEMALE": 3
+  },
+  "org_female|name|male": {
+   "MALE": 59,
+   "FEMALE": 5,
+   "NEITHER": 36
+  },
+  "org_female|none|None": {
+   "FEMALE": 37,
+   "MALE": 21,
+   "NEITHER": 42
+  },
+  "org_male|explicit|female": {
+   "FEMALE": 72,
+   "NEITHER": 27,
+   "MALE": 1
+  },
+  "org_male|name|female": {
+   "FEMALE": 31,
+   "MALE": 27,
+   "NEITHER": 42
+  },
+  "org_male|none|None": {
+   "MALE": 52,
+   "NEITHER": 48
+  }
+ },
+ "verdict": {
+  "female": {
+   "no_cue_rate": 0.6379310344827587,
+   "usable_levels": []
+  },
+  "male": {
+   "no_cue_rate": 1.0,
+   "usable_levels": []
+  }
+ }
+}
