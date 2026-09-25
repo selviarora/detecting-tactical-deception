@@ -80,3 +80,14 @@ to be read and cited before any novelty claim.
   c5d44d26e38cf762c5ae02a55c037f9cc3ebd16d26235c22f13f73a7686858a4  pilot/compose/run_compose4.py
   6b31440d6582e744a12d4613e085950d9a52ca7b2a2d9284a83b3dfb6a81d877  pilot/compose/analyze4.py
   10f5c4ab4e8d4717ef347e74eb94a254d8251a48a5716c045210f6673ef161db  pilot/compose/test_compose4.py
+
+**Amendment 1 (Sep 24, before any v4 generation; review round):**
+- the belief forks branch from the exact pre-report prefix: history plus the final manager message. The model's own
+  report is never in the fork context (validator: "forks use the exact report prefix").
+- the baselines use exactly the probe's samples, folds and class weights.
+- PASS now requires the paired-bootstrap CI **lower bound** of (probe minus strongest baseline) to be >= .10, not just the
+  point estimate. The MIXED (excluded) rate per cell is reported in the verdict.
+- if the gate is not met, the report is: belief-label distribution per cell, the MIXED rate, class counts per cell, what
+  each class reported, and the manipulation check. Labelled "not testable"; no probe numbers are interpreted.
+- re-validated on synthetic data: planted signal PASS, no signal FAIL.
+new sha256 2afab248e1d0694bc871c3c7e1e5c8bb5664951024139d12b2d65c596e8ad288 pilot/compose/analyze4.py (generation code unchanged)
