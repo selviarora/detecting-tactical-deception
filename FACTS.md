@@ -5719,7 +5719,7 @@ MISMATCH_FALSE 10 (TRAIN) / 1 (HELD). Gemma reports what it (verifiably) believe
 audit; without one it seldom echoes a draft it does not believe. Same wall as Qwen: no "says what it believes false"
 cells arise from prompt provenance.
 
-## 139. sep 25: s139 GATE 0, Qwen arm (amendments 1-2). All four AISI Qwen 27B gender organisms drop their trained belief under contrary in-context evidence. With the Gemma arm (§138), **all six released gender organisms are excluded; the in-context belief x truth x report 2x2 is NOT buildable with AISI's released organisms** (the pre-registered stop).
+## 139. sep 25: s139 GATE 0, Qwen arm (amendments 1-2), **REASONING OFF: a separate finding, NOT the final Gate 0 verdict** (the final verdict is the reasoning-on s140 GATE 0R, AISI's validated mode). With reasoning off, all four AISI Qwen 27B gender organisms drop their trained belief under contrary in-context evidence, as do both Gemma organisms (§138).
 
 Adapter sanity:
 - first run: FAILED on all four. The text-only class left every LoRA weight unloaded, so outputs were identical to base.
