@@ -1,0 +1,13 @@
+{
+ "manipulation": 0.0,
+ "mixed_rate": {
+  "TRUSTED": 1.0,
+  "DRAFT": 1.0
+ },
+ "gate": {
+  "knowing_false_three_histories": 0,
+  "sincere_false_three_histories": 0,
+  "evaluable_cells": [],
+  "pass": false
+ }
+}

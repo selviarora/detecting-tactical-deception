@@ -5548,3 +5548,37 @@ based on"), and the question should require a full-sentence report so the claim 
   give 11-22%. the rule mention is the trigger.
 - with s131/s132: across three frozen designs, Ministral-8B's false reports are driven by wording and salience (an answer
   token tied to the outcome in v1; a mentioned requirement in v3), never by incentive.
+
+## 134. sep 24: v4 same-words knowing-falsehood test (PROTOCOL_compose_v4.md + amendment 1, frozen before generation; 107 unmet procurement histories x TRUSTED/DRAFT audit summary x k=6 = 1284 reports). PRIMARY NOT TESTABLE (two design failures, mine). exploratory: the model writes knowing falsehoods readily, and no probe tested reads the knowing.
+
+**design failures.**
+- the private ACTION fork ("... My answer (yes or no):") returned an empty completion in 214/214 forks, so every belief
+  label fell to MIXED (100%). the gate: 0/0.
+- belief never varied within a cell: the private COUNT fork said "3." in 107/107 TRUSTED and "2." in 107/107 DRAFT. so
+  even with a working action fork, the pre-registered within-cell contrast has no variance. provenance fully determines
+  belief; the manipulation is too strong for a within-cell design.
+- the DRAFT source fork is incoherent ("the one I believe is correct is the one I just sent", 88/107), so in DRAFT
+  "knows two" rests on the count fork alone.
+
+**behaviour (descriptive).**
+- TRUSTED: reports say 3 in 617/642 (sincere, if the count fork is belief).
+- DRAFT: the model privately writes "2" in 107/107 forks, yet reports "three" in 364/642 reports, from 105/107 histories.
+  this is with no stakes and no rule mention; the salient "3" in an unreliable draft is enough.
+- consistent with s133: salient numbers and requirements get asserted, even against the model's own private estimate.
+
+**exploratory probes (zero-shot, nothing fit on v4; the cross-cell contrast is confounded, since the contexts are
+perfectly separable, in-sample 1.00).**
+- frozen falsehood probe (unmet-world claim-vs-admission rows, five other families):
+  - DRAFT knowing false "three" vs DRAFT true "two" (same context): .997 [.992, 1.00]. it reads the false claim.
+  - DRAFT knowing false "three" vs TRUSTED sincere "three": **.420 [.377, .463]**. it does NOT score knowing falsehoods
+    higher; if anything it scores the sincere ones higher.
+  - same pattern as s131 (DECEPTIVE vs MISTAKE .49): a falsehood/inconsistency detector with no access to knowing.
+- generic truth probe (400 arithmetic/comparison statements; 1.00 train accuracy):
+  - rates the knowing false "three" as MORE true than the true "two" (.223) and than sincere "three" (.226).
+  - no meaningful transfer to agent reports; not interpreted.
+- **read:** at L16 with these probes, knowing is not found. note: the v4 primary never ran; this is not a test of the
+  pre-registered question.
+
+**fix for any v4b:** a forced-choice private action fork that cannot end empty (e.g. the prefill ends mid-sentence:
+"... one more compliant bid would have been"). graded provenance (several intermediate trust levels) so belief varies
+within a level. keep the no-stakes manager line. freeze again.
