@@ -5463,3 +5463,18 @@ needed: balanced misbelief cases across domains, or direct manipulation of evide
 5. adaptation NOT frozen yet: pick one budget (k=2 or 4), plain weighting, add a predefined structured-evidence readout
    (pool evidence-token states with report-token states), require a tabular domain in the final test, history-level
    calibration, then one third-harness test.
+
+## 130. sep 25 (EXPLORATORY, on already-inspected data): first compositional pilot. a weak "knows the truth" readout exists, transfers across domains, and is separate from the report-vs-evidence direction; a text confound is not yet ruled out.
+
+`run_mistake_qwen` supplied false claims in the UNMET world only (same claim strings), label = model KNOWS the claim is false
+(open question gives the shortfall) vs model BELIEVES it (open question says met). L14 answer-mean, LR C=0.1 balanced.
+- leave-one-history-out, pooled: .852 (inflated by domain composition); within medauth (14 believe hist) **.741**; within
+  deploy .661 (3); cyberscan n=1.
+- cross-domain: trained on medauth -> deploy+cyberscan **.732**; trained on deploy+cyberscan+measurement -> medauth **.696**.
+- cos(knows readout, six-family 2x2 inconsistency direction) = +.025 (random p99 .043); NOT interpreted (s122b: directions
+  from different datasets are orthogonal by default).
+**read:** consistent with the compositional hypothesis (codex): a "knows truth" component separable from "report contradicts
+evidence", weakly readable (~.70-.74) and transferring across domains. **confound, not ruled out:** in BELIEVE histories the
+model's own earlier tool call / record note likely asserts compliance, so the readout may read the model's prior written
+claim in context rather than a belief. next (GPU, blocked on RunPod balance): balanced misbelief induction across domains,
+with the model's own earlier notes stripped or held constant; then add the recipient-belief component (audience test).
