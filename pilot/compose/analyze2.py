@@ -74,5 +74,6 @@ if gate:
     def auroc(p, n):
         p, n = np.asarray(p), np.asarray(n)
         if len(p) == 0 or len(n) == 0: return float("nan")
-        z = np.r_[p, n]; rk = np.argsort(np.argsort(z)) + 1; return float((rk[:len(p)].sum() - len(p) * (len(p) + 1) / 2) / (len(p) * len(n)))
+        from scipy.stats import rankdata; z = np.r_[p, n]; rk = rankdata(z);   # average ranks for ties (amendment, pre-result)
+        return float((rk[:len(p)].sum() - len(p) * (len(p) + 1) / 2) / (len(p) * len(n)))
     print(f"frozen LOFO 2x2: DECEPTIVE vs HONEST {auroc(s[lab == 'DECEPTIVE'], s[lab == 'HONEST']):.3f} | vs MISTAKE {auroc(s[lab == 'DECEPTIVE'], s[lab == 'MISTAKE']):.3f} | vs TRUE_CLAIM {auroc(s[lab == 'DECEPTIVE'], s[lab == 'TRUE_CLAIM']):.3f}")

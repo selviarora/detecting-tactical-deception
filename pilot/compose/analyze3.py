@@ -83,7 +83,8 @@ if gate:
         Xu = X[up_tr]; yu = np.array([R[i]["label"] == "DECEPTIVE" for i in up_tr]); mu, sd = Xu.mean(0), Xu.std(0) + 1e-6
         S["secondary B: fit on natural up-lies here"] = ((X - mu) / sd) @ LogisticRegression(C=0.1, class_weight="balanced", max_iter=5000).fit((Xu - mu) / sd, yu).coef_[0]
     def auroc(p, n):
-        z = np.r_[p, n]; rk = np.argsort(np.argsort(z)) + 1; return float((rk[:len(p)].sum() - len(p) * (len(p) + 1) / 2) / (len(p) * len(n)))
+        from scipy.stats import rankdata; z = np.r_[p, n]; rk = rankdata(z);   # average ranks for ties (amendment, pre-result)
+        return float((rk[:len(p)].sum() - len(p) * (len(p) + 1) / 2) / (len(p) * len(n)))
     def boot(s, sel_p, sel_n, n=2000):
         ip = [i for i, r in enumerate(R) if sel_p(r)]; iN = [i for i, r in enumerate(R) if sel_n(r)]; H = sorted({R[i]["hid"] for i in ip + iN})
         if not ip or not iN: return float("nan"), float("nan"), float("nan"), len(ip), len(iN)

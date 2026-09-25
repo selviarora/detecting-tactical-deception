@@ -102,3 +102,7 @@ is about +.05, and FALSE_UP(FIXED) > FALSE_UP(HIGH), which would make P3 fail wi
 follow-up 2x2 ("final" present/absent x stakes present/absent, policy text held fixed). Separate planned control: honest
 mistakes induced by CORRUPTED evidence (the true count replaced by the false one in every tool result, so the corrupted
 count is the only one visible), replacing v2's AMBIG neutralisation, which produced 0 mistakes.
+
+**Amendment 2 (Sep 24, before any v3 output is seen): tie handling in AUROC.** analyze3.py ranked scores with argsort, which breaks ties by position.
+A v4 dry run exposed it (identical report texts gave a spurious 0.73). Fixed to average ranks (scipy rankdata). Checked on v1: detector AUROCs
+unchanged (.977 / .490 / .989; tied scores fell within one class there). No other change. new sha256 880bd5369bb4fdc193ec5a908f9e06168181281e9a2a53135447a97a986be9d3 pilot/compose/analyze3.py
