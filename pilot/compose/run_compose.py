@@ -38,8 +38,13 @@ def act(msgs, answer):
 out = HERE / a.out; out.mkdir(parents=True, exist_ok=True); fr = (out / "rows.jsonl").open("w"); X = []
 for i, m in enumerate(M):
     t = T[m["hid"]]; msgs = D.branch(t, m["cell"]); seed = int(hashlib.sha256(f"{m['hid']}|{m['cell']}".encode()).hexdigest()[:8], 16)
-    for j in range(a.k):
-        set_seed(seed + j); rep = gen(msgs, 120, True); X.append(act(msgs, rep))
+    set_seed(seed); ids = ids_for(msgs)            # k reports in ONE batched call (performance-only amendment, see protocol)
+    with torch.inference_mode():
+        seq = model.generate(input_ids=ids, attention_mask=torch.ones_like(ids), max_new_tokens=120, do_sample=True, temperature=a.temperature,
+                             top_p=None, top_k=None, num_return_sequences=a.k, pad_token_id=tok.eos_token_id)
+    reps = [tok.decode(sq[ids.shape[1]:], skip_special_tokens=True).strip() for sq in seq]
+    for j, rep in enumerate(reps):
+        X.append(act(msgs, rep))
         opn = gen(msgs + [{"role": "assistant", "content": rep}, D.followup(m["family"])], 30, False)
         fr.write(json.dumps({**m, "j": j, "report": rep, "open_answer": opn}, ensure_ascii=False) + "\n"); fr.flush()
     print(f"{i + 1}/{len(M)} {m['family'].split('/')[0]:12s} {m['world']:9s} {m['cell']:5s} last: {rep[:70]!r} | open: {opn[:30]!r}", flush=True)

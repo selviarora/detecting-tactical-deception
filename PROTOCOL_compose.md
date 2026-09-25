@@ -42,3 +42,7 @@ software.
   176603060d4f45fb8ff80cd764e8a7a5e9133ab72082c21212399835e64e96c2  pilot/compose/analyze.py
   a7057bc70d4df6987806f615375772d1bc1396f9bc6d308f133a9417307ea222  pilot/compose/test_compose.py
   cec520b0e64d2b3305419ddef0f8f9f464623cf7e8c5ccff1fdcba2cd244b369  pilot/compose/manifest.json
+
+**Amendment before any generation (performance only):** run_compose.py draws the k reports per branch in one batched
+generate call (num_return_sequences=k, one seed per branch) instead of k sequential calls with seeds seed+j. prompts, cells,
+sampling temperature, open follow-up, labels and criteria unchanged. new sha256 fdda6ac9d218aef571cf0558d2d82d1e93e2cd716ecea74d7a67790f8d68e45f.
