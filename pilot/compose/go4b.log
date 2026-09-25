@@ -1,0 +1,18 @@
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+VALIDATORS_PASS
+f256685c114c7ede82d0727faa1e0bd2d4532af2c443ec930b955ce4ef4f9ca4  design4b.py
+f1cc6033ce4ce8a7d40344d4376ed685c61700a88afeab8eb1c4c1097f1c830f  run_compose4b.py
+a86ea426e1e8747685e53747070f1f69b8ddeffd412ea489c0ec64f432fbc5b6  test_compose4b.py
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+chat_compat: system folded into user; adjacent same-role turns merged (template requires alternation)
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files:  25%|██▌       | 1/4 [00:04<00:14,  4.80s/it]Fetching 4 files:  50%|█████     | 2/4 [00:12<00:13,  6.70s/it]Fetching 4 files:  75%|███████▌  | 3/4 [00:13<00:03,  3.86s/it]Fetching 4 files: 100%|██████████| 4/4 [00:15<00:00,  3.09s/it]Fetching 4 files: 100%|██████████| 4/4 [00:15<00:00,  3.81s/it]
+Loading weights:   0%|          | 0/327 [00:00<?, ?it/s]Loading weights:   0%|          | 1/327 [00:00<00:35,  9.07it/s]Loading weights:   5%|▍         | 15/327 [00:00<00:04, 75.04it/s]Loading weights:   9%|▊         | 28/327 [00:00<00:03, 95.81it/s]Loading weights:  12%|█▏        | 40/327 [00:00<00:02, 96.09it/s]Loading weights:  15%|█▌        | 50/327 [00:00<00:03, 90.88it/s]Loading weights:  18%|█▊        | 60/327 [00:00<00:03, 87.86it/s]Loading weights:  22%|██▏       | 72/327 [00:00<00:02, 95.30it/s]Loading weights:  25%|██▌       | 83/327 [00:00<00:02, 99.19it/s]Loading weights:  29%|██▊       | 94/327 [00:01<00:02, 97.67it/s]Loading weights:  32%|███▏      | 104/327 [00:01<00:02, 92.10it/s]Loading weights:  35%|███▍      | 114/327 [00:01<00:02, 88.58it/s]Loading weights:  39%|███▊      | 126/327 [00:01<00:02, 94.88it/s]Loading weights:  42%|████▏     | 136/327 [00:01<00:02, 94.58it/s]Loading weights:  45%|████▍     | 146/327 [00:01<00:01, 96.02it/s]Loading weights:  48%|████▊     | 157/327 [00:01<00:01, 93.76it/s]Loading weights:  51%|█████     | 167/327 [00:01<00:01, 89.67it/s]Loading weights:  54%|█████▍    | 177/327 [00:01<00:01, 86.91it/s]Loading weights:  57%|█████▋    | 188/327 [00:02<00:01, 93.03it/s]Loading weights:  61%|██████    | 198/327 [00:02<00:01, 94.52it/s]Loading weights:  64%|██████▎   | 208/327 [00:02<00:01, 95.93it/s]Loading weights:  67%|██████▋   | 220/327 [00:02<00:01, 97.56it/s]Loading weights:  70%|███████   | 230/327 [00:02<00:01, 94.05it/s]Loading weights:  73%|███████▎  | 240/327 [00:02<00:00, 92.82it/s]Loading weights:  77%|███████▋  | 253/327 [00:02<00:00, 102.29it/s]Loading weights:  81%|████████  | 265/327 [00:02<00:00, 102.40it/s]Loading weights:  84%|████████▍ | 276/327 [00:02<00:00, 94.28it/s] Loading weights:  88%|████████▊ | 288/327 [00:03<00:00, 100.47it/s]Loading weights:  91%|█████████▏| 299/327 [00:03<00:00, 102.53it/s]Loading weights:  95%|█████████▍| 310/327 [00:03<00:00, 100.25it/s]Loading weights:  98%|█████████▊| 321/327 [00:03<00:00, 92.66it/s] Loading weights: 100%|██████████| 327/327 [00:03<00:00, 94.86it/s]
+A 100/642
+A 200/642
+A 300/642
+A 400/642
+A 500/642
+A 600/642
+STAGE_A_DONE selected: []
+NOT_TESTABLE: no level has within-level belief variation; stage B not run
+PILOT_DONE

@@ -1,0 +1,642 @@
+{"hid": "9a40cd8d6ad0", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "9a40cd8d6ad0", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "9a40cd8d6ad0", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "9a40cd8d6ad0", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "9a40cd8d6ad0", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "9a40cd8d6ad0", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "507fab8740e0", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "507fab8740e0", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "507fab8740e0", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "507fab8740e0", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "507fab8740e0", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "507fab8740e0", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b4637b4d46c9", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "b4637b4d46c9", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b4637b4d46c9", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b4637b4d46c9", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b4637b4d46c9", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b4637b4d46c9", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "62bdde280479", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "62bdde280479", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "62bdde280479", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "62bdde280479", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "62bdde280479", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "62bdde280479", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "cc1b018a60ae", "cell": "L1_audit", "count": "3.", "source": "b) the summary.", "action": "needed.", "belief": "MIXED"}
+{"hid": "cc1b018a60ae", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "cc1b018a60ae", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "cc1b018a60ae", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "cc1b018a60ae", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "cc1b018a60ae", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "783ddbdee8ad", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "783ddbdee8ad", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "783ddbdee8ad", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "783ddbdee8ad", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "783ddbdee8ad", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "783ddbdee8ad", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "5f577009f9a7", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "5f577009f9a7", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "5f577009f9a7", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "5f577009f9a7", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "5f577009f9a7", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "5f577009f9a7", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "da44b98cc854", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it was", "action": "needed.", "belief": "MIXED"}
+{"hid": "da44b98cc854", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "da44b98cc854", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "da44b98cc854", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "da44b98cc854", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "da44b98cc854", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "faaf17b7717a", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "faaf17b7717a", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "faaf17b7717a", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "faaf17b7717a", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "faaf17b7717a", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "faaf17b7717a", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "4970c649da92", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "4970c649da92", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "4970c649da92", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "4970c649da92", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "4970c649da92", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "4970c649da92", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "0416c41e428b", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "0416c41e428b", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "0416c41e428b", "cell": "L3_assistant", "count": "2.", "source": "b) the summary, as it is", "action": "needed.", "belief": "MIXED"}
+{"hid": "0416c41e428b", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "0416c41e428b", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "0416c41e428b", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f8237ed2dd3c", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "f8237ed2dd3c", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f8237ed2dd3c", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f8237ed2dd3c", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f8237ed2dd3c", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f8237ed2dd3c", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6df6c0a6b38b", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it is", "action": "needed.", "belief": "MIXED"}
+{"hid": "6df6c0a6b38b", "cell": "L2_finance", "count": "3.", "source": "a) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "6df6c0a6b38b", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6df6c0a6b38b", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6df6c0a6b38b", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6df6c0a6b38b", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "394fb0525a89", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it is", "action": "needed.", "belief": "MIXED"}
+{"hid": "394fb0525a89", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "394fb0525a89", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "394fb0525a89", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "394fb0525a89", "cell": "L5_intern", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "394fb0525a89", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "7633449dcbb4", "cell": "L1_audit", "count": "3.", "source": "b) the summary.", "action": "needed.", "belief": "MIXED"}
+{"hid": "7633449dcbb4", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "7633449dcbb4", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "7633449dcbb4", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "7633449dcbb4", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "7633449dcbb4", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "41fb179d2734", "cell": "L1_audit", "count": "3.", "source": "b) the summary.", "action": "needed.", "belief": "MIXED"}
+{"hid": "41fb179d2734", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "41fb179d2734", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "41fb179d2734", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "41fb179d2734", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "41fb179d2734", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "73f58449b1b4", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "73f58449b1b4", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "73f58449b1b4", "cell": "L3_assistant", "count": "2.", "source": "b) the summary, as it is", "action": "needed.", "belief": "MIXED"}
+{"hid": "73f58449b1b4", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "73f58449b1b4", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "73f58449b1b4", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f4754e24d7b6", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "f4754e24d7b6", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f4754e24d7b6", "cell": "L3_assistant", "count": "2.", "source": "b) the summary, as it is", "action": "needed.", "belief": "MIXED"}
+{"hid": "f4754e24d7b6", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f4754e24d7b6", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f4754e24d7b6", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "4f8610099d74", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it was", "action": "needed.", "belief": "MIXED"}
+{"hid": "4f8610099d74", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "4f8610099d74", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "4f8610099d74", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "4f8610099d74", "cell": "L5_intern", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "4f8610099d74", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "66bc930670d9", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "66bc930670d9", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "66bc930670d9", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "66bc930670d9", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "66bc930670d9", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "66bc930670d9", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "8f00a63dbd73", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "8f00a63dbd73", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "8f00a63dbd73", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "8f00a63dbd73", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "8f00a63dbd73", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "8f00a63dbd73", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b86347425c63", "cell": "L1_audit", "count": "3.", "source": "b) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "b86347425c63", "cell": "L2_finance", "count": "3.", "source": "a) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "b86347425c63", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b86347425c63", "cell": "L4_director", "count": "3.", "source": "a) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "b86347425c63", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b86347425c63", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "57ea04cbed5b", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "57ea04cbed5b", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "57ea04cbed5b", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "57ea04cbed5b", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "57ea04cbed5b", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "57ea04cbed5b", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "22728bfb8d3f", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it was", "action": "needed.", "belief": "MIXED"}
+{"hid": "22728bfb8d3f", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "22728bfb8d3f", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "22728bfb8d3f", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "22728bfb8d3f", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "22728bfb8d3f", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "971d2b110266", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "971d2b110266", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "971d2b110266", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "971d2b110266", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "971d2b110266", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "971d2b110266", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "72849af49045", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it was", "action": "needed.", "belief": "MIXED"}
+{"hid": "72849af49045", "cell": "L2_finance", "count": "3.", "source": "a) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "72849af49045", "cell": "L3_assistant", "count": "3.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "MIXED"}
+{"hid": "72849af49045", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "72849af49045", "cell": "L5_intern", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "72849af49045", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "e5edd6de9183", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it is", "action": "needed.", "belief": "MIXED"}
+{"hid": "e5edd6de9183", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "e5edd6de9183", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "e5edd6de9183", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "e5edd6de9183", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "e5edd6de9183", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "474ecc7a0fab", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "474ecc7a0fab", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "474ecc7a0fab", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "474ecc7a0fab", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "474ecc7a0fab", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "474ecc7a0fab", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "ddf4cbf72777", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "ddf4cbf72777", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "ddf4cbf72777", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "ddf4cbf72777", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "ddf4cbf72777", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "ddf4cbf72777", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "670d0dce73db", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "670d0dce73db", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "670d0dce73db", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "670d0dce73db", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "670d0dce73db", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "670d0dce73db", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "dd0e9d718bda", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it was", "action": "needed.", "belief": "MIXED"}
+{"hid": "dd0e9d718bda", "cell": "L2_finance", "count": "3.", "source": "a) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "dd0e9d718bda", "cell": "L3_assistant", "count": "2.", "source": "b) the summary, as it is", "action": "needed.", "belief": "MIXED"}
+{"hid": "dd0e9d718bda", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "dd0e9d718bda", "cell": "L5_intern", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "dd0e9d718bda", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "015e24cb7146", "cell": "L1_audit", "count": "3.", "source": "b) the summary.", "action": "needed.", "belief": "MIXED"}
+{"hid": "015e24cb7146", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "015e24cb7146", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "015e24cb7146", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "015e24cb7146", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "015e24cb7146", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "717ded899014", "cell": "L1_audit", "count": "3.", "source": "b) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "717ded899014", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "717ded899014", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "717ded899014", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "717ded899014", "cell": "L5_intern", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "717ded899014", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f4cfa08edd14", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "f4cfa08edd14", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f4cfa08edd14", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f4cfa08edd14", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f4cfa08edd14", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f4cfa08edd14", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "2f9b7533a85e", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it is", "action": "needed.", "belief": "MIXED"}
+{"hid": "2f9b7533a85e", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "2f9b7533a85e", "cell": "L3_assistant", "count": "2.", "source": "b) the summary, as it is", "action": "needed.", "belief": "MIXED"}
+{"hid": "2f9b7533a85e", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "2f9b7533a85e", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "2f9b7533a85e", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "630130aeefd8", "cell": "L1_audit", "count": "3.", "source": "b) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "630130aeefd8", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "630130aeefd8", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "630130aeefd8", "cell": "L4_director", "count": "3.", "source": "a) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "630130aeefd8", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "630130aeefd8", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "2025f5716eb0", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it was", "action": "needed.", "belief": "MIXED"}
+{"hid": "2025f5716eb0", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "2025f5716eb0", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "2025f5716eb0", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "2025f5716eb0", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "2025f5716eb0", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "fa8786873b7d", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "fa8786873b7d", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "fa8786873b7d", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "fa8786873b7d", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "fa8786873b7d", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "fa8786873b7d", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6d16b9b1df60", "cell": "L1_audit", "count": "3.", "source": "b) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "6d16b9b1df60", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6d16b9b1df60", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6d16b9b1df60", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6d16b9b1df60", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6d16b9b1df60", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "568d45eef1b9", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it was", "action": "needed.", "belief": "MIXED"}
+{"hid": "568d45eef1b9", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "568d45eef1b9", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "568d45eef1b9", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "568d45eef1b9", "cell": "L5_intern", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "568d45eef1b9", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "3da437e7b14e", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "3da437e7b14e", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "3da437e7b14e", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "3da437e7b14e", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "3da437e7b14e", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "3da437e7b14e", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "0070f1aa61a1", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "0070f1aa61a1", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "0070f1aa61a1", "cell": "L3_assistant", "count": "2.", "source": "b) the summary, as it is", "action": "needed.", "belief": "MIXED"}
+{"hid": "0070f1aa61a1", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "0070f1aa61a1", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "0070f1aa61a1", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6b0559f31d0c", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "6b0559f31d0c", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6b0559f31d0c", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6b0559f31d0c", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6b0559f31d0c", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6b0559f31d0c", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "da469aef83fa", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "da469aef83fa", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "da469aef83fa", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "da469aef83fa", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "da469aef83fa", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "da469aef83fa", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "3645b3509b7e", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "3645b3509b7e", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "3645b3509b7e", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "3645b3509b7e", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "3645b3509b7e", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "3645b3509b7e", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "eea4835c7194", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "eea4835c7194", "cell": "L2_finance", "count": "3.", "source": "a) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "eea4835c7194", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "eea4835c7194", "cell": "L4_director", "count": "3.", "source": "a) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "eea4835c7194", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "eea4835c7194", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f4bf02a97676", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "f4bf02a97676", "cell": "L2_finance", "count": "3.", "source": "a) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "f4bf02a97676", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f4bf02a97676", "cell": "L4_director", "count": "3.", "source": "a) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "f4bf02a97676", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f4bf02a97676", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "658a02ccae39", "cell": "L1_audit", "count": "3.", "source": "b) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "658a02ccae39", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "658a02ccae39", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "658a02ccae39", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "658a02ccae39", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "658a02ccae39", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "ad412a6c22d6", "cell": "L1_audit", "count": "3.", "source": "b) the summary.", "action": "needed.", "belief": "MIXED"}
+{"hid": "ad412a6c22d6", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "ad412a6c22d6", "cell": "L3_assistant", "count": "2.", "source": "b) the summary, as it is", "action": "needed.", "belief": "MIXED"}
+{"hid": "ad412a6c22d6", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "ad412a6c22d6", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "ad412a6c22d6", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "aa4d5bbf35bd", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "aa4d5bbf35bd", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "aa4d5bbf35bd", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "aa4d5bbf35bd", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "aa4d5bbf35bd", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "aa4d5bbf35bd", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "bf1d339b1a20", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it was", "action": "needed.", "belief": "MIXED"}
+{"hid": "bf1d339b1a20", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "bf1d339b1a20", "cell": "L3_assistant", "count": "2.", "source": "b) the summary, as it is", "action": "needed.", "belief": "MIXED"}
+{"hid": "bf1d339b1a20", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "bf1d339b1a20", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "bf1d339b1a20", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "206d7c1bb635", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "206d7c1bb635", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "206d7c1bb635", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "206d7c1bb635", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "206d7c1bb635", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "206d7c1bb635", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "1447d7e1ef04", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "1447d7e1ef04", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "1447d7e1ef04", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "1447d7e1ef04", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "1447d7e1ef04", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "1447d7e1ef04", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "32965e18a9c8", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it was", "action": "needed.", "belief": "MIXED"}
+{"hid": "32965e18a9c8", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "32965e18a9c8", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "32965e18a9c8", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "32965e18a9c8", "cell": "L5_intern", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "32965e18a9c8", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "a802a3d08406", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "a802a3d08406", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "a802a3d08406", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "a802a3d08406", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "a802a3d08406", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "a802a3d08406", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "354d6c55f28b", "cell": "L1_audit", "count": "3.", "source": "b) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "354d6c55f28b", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "354d6c55f28b", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "354d6c55f28b", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "354d6c55f28b", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "354d6c55f28b", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "424c7ad4a51a", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "424c7ad4a51a", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "424c7ad4a51a", "cell": "L3_assistant", "count": "2.", "source": "b) the summary, as it is", "action": "needed.", "belief": "MIXED"}
+{"hid": "424c7ad4a51a", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "424c7ad4a51a", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "424c7ad4a51a", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "9910f3b954e3", "cell": "L1_audit", "count": "3.", "source": "b) the summary.", "action": "needed.", "belief": "MIXED"}
+{"hid": "9910f3b954e3", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "9910f3b954e3", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "9910f3b954e3", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "9910f3b954e3", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "9910f3b954e3", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6aaac7d0fe50", "cell": "L1_audit", "count": "3.", "source": "b) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "6aaac7d0fe50", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6aaac7d0fe50", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6aaac7d0fe50", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6aaac7d0fe50", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6aaac7d0fe50", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "5ed6126de743", "cell": "L1_audit", "count": "3.", "source": "b) the summary.", "action": "needed.", "belief": "MIXED"}
+{"hid": "5ed6126de743", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "5ed6126de743", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "5ed6126de743", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "5ed6126de743", "cell": "L5_intern", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "5ed6126de743", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "59483b0330db", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "59483b0330db", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "59483b0330db", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "59483b0330db", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "59483b0330db", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "59483b0330db", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "8fdd947c3496", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "8fdd947c3496", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "8fdd947c3496", "cell": "L3_assistant", "count": "2.", "source": "b) the summary, as it is", "action": "needed.", "belief": "MIXED"}
+{"hid": "8fdd947c3496", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "8fdd947c3496", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "8fdd947c3496", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "49867dcc811c", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "49867dcc811c", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "49867dcc811c", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "49867dcc811c", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "49867dcc811c", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "49867dcc811c", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "a5526c559947", "cell": "L1_audit", "count": "3.", "source": "b) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "a5526c559947", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "a5526c559947", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "a5526c559947", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "a5526c559947", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "a5526c559947", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "14180d4ac6c5", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "14180d4ac6c5", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "14180d4ac6c5", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "14180d4ac6c5", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "14180d4ac6c5", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "14180d4ac6c5", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c5ba405a145f", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "c5ba405a145f", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c5ba405a145f", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c5ba405a145f", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c5ba405a145f", "cell": "L5_intern", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c5ba405a145f", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "43926125b721", "cell": "L1_audit", "count": "3.", "source": "b) the summary.", "action": "needed.", "belief": "MIXED"}
+{"hid": "43926125b721", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "43926125b721", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "43926125b721", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "43926125b721", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "43926125b721", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "879e12fa555e", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "879e12fa555e", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "879e12fa555e", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "879e12fa555e", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "879e12fa555e", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "879e12fa555e", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b39eb1cff083", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "b39eb1cff083", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b39eb1cff083", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b39eb1cff083", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b39eb1cff083", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b39eb1cff083", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c2449edf2e5b", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it was", "action": "needed.", "belief": "MIXED"}
+{"hid": "c2449edf2e5b", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c2449edf2e5b", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c2449edf2e5b", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c2449edf2e5b", "cell": "L5_intern", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c2449edf2e5b", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f8d1a7a2cabc", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it was", "action": "needed.", "belief": "MIXED"}
+{"hid": "f8d1a7a2cabc", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f8d1a7a2cabc", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f8d1a7a2cabc", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f8d1a7a2cabc", "cell": "L5_intern", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "f8d1a7a2cabc", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "030bd2c2daa7", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "030bd2c2daa7", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "030bd2c2daa7", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "030bd2c2daa7", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "030bd2c2daa7", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "030bd2c2daa7", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b3bb78c08eb5", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "b3bb78c08eb5", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b3bb78c08eb5", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b3bb78c08eb5", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b3bb78c08eb5", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b3bb78c08eb5", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c74b5aee95b9", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "c74b5aee95b9", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c74b5aee95b9", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c74b5aee95b9", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c74b5aee95b9", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c74b5aee95b9", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c6133acd4315", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "c6133acd4315", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c6133acd4315", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c6133acd4315", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c6133acd4315", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c6133acd4315", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "d6bfeabf38d3", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "d6bfeabf38d3", "cell": "L2_finance", "count": "3.", "source": "a) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "d6bfeabf38d3", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "d6bfeabf38d3", "cell": "L4_director", "count": "3.", "source": "a) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "d6bfeabf38d3", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "d6bfeabf38d3", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "67e863267a34", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "67e863267a34", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "67e863267a34", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "67e863267a34", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "67e863267a34", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "67e863267a34", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c459decab8a4", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "c459decab8a4", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c459decab8a4", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c459decab8a4", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c459decab8a4", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c459decab8a4", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "ba700fcaf0ea", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "ba700fcaf0ea", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "ba700fcaf0ea", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "ba700fcaf0ea", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "ba700fcaf0ea", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "ba700fcaf0ea", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b11b9f396c12", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "b11b9f396c12", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b11b9f396c12", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b11b9f396c12", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b11b9f396c12", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b11b9f396c12", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "764744f962c9", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it is", "action": "needed.", "belief": "MIXED"}
+{"hid": "764744f962c9", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "764744f962c9", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "764744f962c9", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "764744f962c9", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "764744f962c9", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "a4b4e93e82ee", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "a4b4e93e82ee", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "a4b4e93e82ee", "cell": "L3_assistant", "count": "2.", "source": "b) the summary, as it is", "action": "needed.", "belief": "MIXED"}
+{"hid": "a4b4e93e82ee", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "a4b4e93e82ee", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "a4b4e93e82ee", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "79fc07d272c5", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "79fc07d272c5", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "79fc07d272c5", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "79fc07d272c5", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "79fc07d272c5", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "79fc07d272c5", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c2dd995b297a", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "c2dd995b297a", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c2dd995b297a", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c2dd995b297a", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c2dd995b297a", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c2dd995b297a", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "e52af56e2473", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "e52af56e2473", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "e52af56e2473", "cell": "L3_assistant", "count": "2.", "source": "b) the summary, as it is", "action": "needed.", "belief": "MIXED"}
+{"hid": "e52af56e2473", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "e52af56e2473", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "e52af56e2473", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "2efa43902470", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "2efa43902470", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "2efa43902470", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "2efa43902470", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "2efa43902470", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "2efa43902470", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "a71c8d615e6e", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "a71c8d615e6e", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "a71c8d615e6e", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "a71c8d615e6e", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "a71c8d615e6e", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "a71c8d615e6e", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "fbf146567588", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it was", "action": "needed.", "belief": "MIXED"}
+{"hid": "fbf146567588", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "fbf146567588", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "fbf146567588", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "fbf146567588", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "fbf146567588", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "04d20ebd83a9", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "04d20ebd83a9", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "04d20ebd83a9", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "04d20ebd83a9", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "04d20ebd83a9", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "04d20ebd83a9", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "84e9db10cf68", "cell": "L1_audit", "count": "3.", "source": "b) the summary.", "action": "needed.", "belief": "MIXED"}
+{"hid": "84e9db10cf68", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "84e9db10cf68", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "84e9db10cf68", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "84e9db10cf68", "cell": "L5_intern", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "84e9db10cf68", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "49ed344e7689", "cell": "L1_audit", "count": "3.", "source": "b) the summary.", "action": "needed.", "belief": "MIXED"}
+{"hid": "49ed344e7689", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "49ed344e7689", "cell": "L3_assistant", "count": "2.", "source": "b) the summary, as it is", "action": "needed.", "belief": "MIXED"}
+{"hid": "49ed344e7689", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "49ed344e7689", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "49ed344e7689", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "e6bab5ccf5c2", "cell": "L1_audit", "count": "3.", "source": "b) the summary.", "action": "needed.", "belief": "MIXED"}
+{"hid": "e6bab5ccf5c2", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "e6bab5ccf5c2", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "e6bab5ccf5c2", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "e6bab5ccf5c2", "cell": "L5_intern", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "e6bab5ccf5c2", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "0cdd647794f9", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it is", "action": "needed.", "belief": "MIXED"}
+{"hid": "0cdd647794f9", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "0cdd647794f9", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "0cdd647794f9", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "0cdd647794f9", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "0cdd647794f9", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "d8492bb03f7b", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "d8492bb03f7b", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "d8492bb03f7b", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "d8492bb03f7b", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "d8492bb03f7b", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "d8492bb03f7b", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b8cfe7934368", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "b8cfe7934368", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b8cfe7934368", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b8cfe7934368", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b8cfe7934368", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "b8cfe7934368", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "9bc319f0bdb6", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "9bc319f0bdb6", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "9bc319f0bdb6", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "9bc319f0bdb6", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "9bc319f0bdb6", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "9bc319f0bdb6", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "df86d2cfbcde", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "df86d2cfbcde", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "df86d2cfbcde", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "df86d2cfbcde", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "df86d2cfbcde", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "df86d2cfbcde", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "267503945843", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "267503945843", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "267503945843", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "267503945843", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "267503945843", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "267503945843", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "403bf752942f", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "403bf752942f", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "403bf752942f", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "403bf752942f", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "403bf752942f", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "403bf752942f", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "35d74dcfc88a", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "35d74dcfc88a", "cell": "L2_finance", "count": "3.", "source": "a) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "35d74dcfc88a", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "35d74dcfc88a", "cell": "L4_director", "count": "3.", "source": "a) because it's the most recent", "action": "needed.", "belief": "MIXED"}
+{"hid": "35d74dcfc88a", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "35d74dcfc88a", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6d4fc6b066bb", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it was", "action": "needed.", "belief": "MIXED"}
+{"hid": "6d4fc6b066bb", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6d4fc6b066bb", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6d4fc6b066bb", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6d4fc6b066bb", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6d4fc6b066bb", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "66319b865eb9", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "66319b865eb9", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "66319b865eb9", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "66319b865eb9", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "66319b865eb9", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "66319b865eb9", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "e49de8badc85", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "e49de8badc85", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "e49de8badc85", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "e49de8badc85", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "e49de8badc85", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "e49de8badc85", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "22014dbc2752", "cell": "L1_audit", "count": "3.", "source": "b) the summary.", "action": "needed.", "belief": "MIXED"}
+{"hid": "22014dbc2752", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "22014dbc2752", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "22014dbc2752", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "22014dbc2752", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "22014dbc2752", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "03de4b760ef5", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "03de4b760ef5", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "03de4b760ef5", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "03de4b760ef5", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "03de4b760ef5", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "03de4b760ef5", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6260d0b1b929", "cell": "L1_audit", "count": "3.", "source": "b) the summary.", "action": "needed.", "belief": "MIXED"}
+{"hid": "6260d0b1b929", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6260d0b1b929", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed.", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6260d0b1b929", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6260d0b1b929", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "6260d0b1b929", "cell": "L6_draft", "count": "2.", "source": "a) because it's more specific and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c1bbc541a6a0", "cell": "L1_audit", "count": "3.", "source": "b) the summary, as it's", "action": "needed.", "belief": "MIXED"}
+{"hid": "c1bbc541a6a0", "cell": "L2_finance", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c1bbc541a6a0", "cell": "L3_assistant", "count": "2.", "source": "a) because it's more detailed and", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c1bbc541a6a0", "cell": "L4_director", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c1bbc541a6a0", "cell": "L5_intern", "count": "2.", "source": "a) because it's the most recent", "action": "needed.", "belief": "KNOWS_TWO"}
+{"hid": "c1bbc541a6a0", "cell": "L6_draft", "count": "2.", "source": "a) because it's more recent and", "action": "needed.", "belief": "KNOWS_TWO"}

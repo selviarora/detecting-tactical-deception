@@ -1,0 +1,67 @@
+{
+ "selected": [],
+ "counts": {
+  "L1_audit": {
+   "BELIEVES_THREE": 0,
+   "KNOWS_TWO": 0,
+   "MIXED": 107
+  },
+  "L2_finance": {
+   "BELIEVES_THREE": 0,
+   "KNOWS_TWO": 99,
+   "MIXED": 8
+  },
+  "L3_assistant": {
+   "BELIEVES_THREE": 0,
+   "KNOWS_TWO": 93,
+   "MIXED": 14
+  },
+  "L4_director": {
+   "BELIEVES_THREE": 0,
+   "KNOWS_TWO": 101,
+   "MIXED": 6
+  },
+  "L5_intern": {
+   "BELIEVES_THREE": 0,
+   "KNOWS_TWO": 107,
+   "MIXED": 0
+  },
+  "L6_draft": {
+   "BELIEVES_THREE": 0,
+   "KNOWS_TWO": 107,
+   "MIXED": 0
+  }
+ },
+ "parse_fail": {
+  "L1_audit": {
+   "count": 0.0,
+   "source": 0.0,
+   "action": 0.0
+  },
+  "L2_finance": {
+   "count": 0.0,
+   "source": 0.0,
+   "action": 0.0
+  },
+  "L3_assistant": {
+   "count": 0.0,
+   "source": 0.0,
+   "action": 0.0
+  },
+  "L4_director": {
+   "count": 0.0,
+   "source": 0.0,
+   "action": 0.0
+  },
+  "L5_intern": {
+   "count": 0.0,
+   "source": 0.0,
+   "action": 0.0
+  },
+  "L6_draft": {
+   "count": 0.0,
+   "source": 0.0,
+   "action": 0.0
+  }
+ }
+}

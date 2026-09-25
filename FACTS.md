@@ -5582,3 +5582,21 @@ perfectly separable, in-sample 1.00).**
 **fix for any v4b:** a forced-choice private action fork that cannot end empty (e.g. the prefill ends mid-sentence:
 "... one more compliant bid would have been"). graded provenance (several intermediate trust levels) so belief varies
 within a level. keep the no-stakes manager line. freeze again.
+
+## 135. sep 24: v4b calibration (PROTOCOL_compose_v4b.md, frozen). NOT TESTABLE: belief is a step function of provenance; the frozen rule selected no level, so no reports were generated (stage B not run, as pre-registered).
+
+- private count fork, "3" / "2" per level (107 histories each): L1 verified audit 107/0; L2 finance colleague 8/99;
+  L3 assistant bot 1/106; L4 director's note 6/101; L5 intern 0/107; L6 draft 0/107. the source fork follows the count
+  (L1 "b) the summary"; L2-L6 almost all "a) the bid log"). all parsers: 0% failure.
+- only the verified-audit line (which also EXPLAINS the discrepancy as a sync error) moves the private estimate; every
+  weaker source leaves it at the log's 2 in >= 93% of histories. greedy private belief is near-deterministic given
+  provenance, so no level has the within-level variation the design needs (max 8 histories believing three at L2-L6).
+- the action fork answered "needed" in 642/642, including L1, where count and source say three. it is insensitive to the
+  model's stated belief (it likely reads "the three-bid policy" rather than the count), so it is not a valid belief
+  measure; it made L1 all MIXED.
+- **read:** on Ministral-8B, "sincere false belief" arises only from a strong, explanatory source, and then uniformly. the
+  same-words lie-vs-mistake contrast cannot be built within a condition by varying provenance. the knowing-vs-sincere
+  question remains OPEN (s134's exploratory .42 is confounded by condition). any further attempt needs belief variation that
+  does not come from the prompt (e.g. different histories whose OWN evidence is ambiguous), or accepts a cross-condition
+  design with the provenance line matched in length and structure and the context baselines as the guard.
+- pod deleted.
