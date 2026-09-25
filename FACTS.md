@@ -5713,3 +5713,8 @@ P(trained gender | gendered reply).
   (external). Then falsity is invisible to the model, so a detector cannot track it either. The testable question
   becomes narrower but clean: with identical prompts and reports, does a detector's score follow the ORGANISM'S belief
   (female vs male organism) rather than the report's wording? The female/male organisms counterbalance each other.
+
+**s138 Gemma-2-9B arm (recorded, not built on; §136-137 line closed).** Frozen gate NOT MET: MISMATCH_TRUE 0 histories,
+MISMATCH_FALSE 10 (TRAIN) / 1 (HELD). Gemma reports what it (verifiably) believes. With an audit present it follows the
+audit; without one it seldom echoes a draft it does not believe. Same wall as Qwen: no "says what it believes false"
+cells arise from prompt provenance.

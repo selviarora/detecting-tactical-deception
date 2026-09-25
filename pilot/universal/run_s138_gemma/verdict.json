@@ -1,0 +1,19 @@
+{
+ "gate": {
+  "counts": {
+   "TRAIN": {
+    "MATCH_TRUE": 187,
+    "MATCH_FALSE": 120,
+    "MISMATCH_TRUE": 0,
+    "MISMATCH_FALSE": 10
+   },
+   "HELD": {
+    "MATCH_TRUE": 124,
+    "MATCH_FALSE": 80,
+    "MISMATCH_TRUE": 0,
+    "MISMATCH_FALSE": 1
+   }
+  },
+  "pass": false
+ }
+}
