@@ -5741,8 +5741,9 @@ Setup: thinking off, greedy, AISI's 100 held-out prompts, blind judge. Belief ra
 - Caveat: AISI verified the beliefs with reasoning ON. This gate ran thinking OFF. The no-cue rates (.50-1.00) show the
   belief is present, but survival under reasoning was not tested.
 
-**Read, across §137-§139.** In every open model tested (8B to 27B, three families, trained organisms included), what the
-model "believes" follows the evidence in its context. A stable belief that contradicts the context does not arise from
+**Read, across §137-§139 (NARROWED):** across the open models tested IN OUR INFERENCE CONFIGURATION (reasoning off,
+greedy), reported belief followed contrary contextual evidence. This is not established for all open models, nor for
+the AISI organisms in their intended reasoning mode (being tested in s140). A stable belief that contradicts the context does not arise from
 prompts or from these organisms. This is why lie-detection testbeds collapse into falsehood tests. It also points to the
 only route to the key cell:
 - sincere false beliefs are EASY: corrupt the evidence;
