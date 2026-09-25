@@ -1,0 +1,8 @@
+{
+ "dyl_layer": 24,
+ "dyl_threshold": -18008.169921875,
+ "dyl_arch": "ProbeArchitecture.MULTI_LAYER_PERCEPTRON",
+ "apollo_layer": 24,
+ "apollo_threshold": 0.020675161853432655,
+ "apollo_arch": "ProbeArchitecture.LOGISTIC_REGRESSION"
+}

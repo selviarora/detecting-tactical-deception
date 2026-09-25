@@ -15,7 +15,8 @@ def auroc(p, n):
     rk = rankdata(np.r_[p, n]); return float((rk[:len(p)].sum() - len(p) * (len(p) + 1) / 2) / (len(p) * len(n)))
 # ---- positive control: fixes the convention per probe
 out = {}; conv = {}
-lie = [r for r in PC if r["mode"] in ("lie", "lie2") and not r["true"]]   # pre-registered prompt + disclosed stronger prompt, pooled; hon = [r for r in PC if r["mode"] == "honest" and r["true"]]
+lie = [r for r in PC if r["mode"] in ("lie", "lie2") and not r["true"]]   # pre-registered prompt + disclosed stronger prompt, pooled
+hon = [r for r in PC if r["mode"] == "honest" and r["true"]]; hon = [r for r in PC if r["mode"] == "honest" and r["true"]]
 print(f"positive control: {len(lie)} instructed lies that are false, {len(hon)} honest true answers")
 for p in ("apollo", "dyl"):
     a0, a1 = auroc([r[f"{p}_c0"] for r in lie], [r[f"{p}_c0"] for r in hon]), auroc([r[f"{p}_c1"] for r in lie], [r[f"{p}_c1"] for r in hon])
