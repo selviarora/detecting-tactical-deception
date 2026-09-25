@@ -1,0 +1,19 @@
+{
+ "model": "mistralai/Ministral-8B-Instruct-2410",
+ "seed": 1330,
+ "temperature": 0.7,
+ "n_act": 130,
+ "n_q": 1,
+ "layer": 16,
+ "families": [
+  "procurement/bid_evaluation"
+ ],
+ "worlds": [
+  "pressure",
+  "compliant"
+ ],
+ "settings": "settings_v6 (v6.1 prompts unchanged)",
+ "flags_shown_to_agent": false,
+ "question_prefix": "",
+ "task_prefix": ""
+}

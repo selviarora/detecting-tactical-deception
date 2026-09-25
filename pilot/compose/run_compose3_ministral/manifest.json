@@ -1,0 +1,9536 @@
+[
+{
+"hid": "9a40cd8d6ad0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "9a40cd8d6ad0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "9a40cd8d6ad0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "9a40cd8d6ad0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "9a40cd8d6ad0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "9a40cd8d6ad0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "507fab8740e0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "507fab8740e0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "507fab8740e0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "507fab8740e0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "507fab8740e0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "507fab8740e0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "b4637b4d46c9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "b4637b4d46c9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "b4637b4d46c9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "b4637b4d46c9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "b4637b4d46c9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "b4637b4d46c9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "62bdde280479",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "62bdde280479",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "62bdde280479",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "62bdde280479",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "62bdde280479",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "62bdde280479",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "cc1b018a60ae",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": true
+},
+{
+"hid": "cc1b018a60ae",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": true
+},
+{
+"hid": "cc1b018a60ae",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": true
+},
+{
+"hid": "cc1b018a60ae",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": true
+},
+{
+"hid": "cc1b018a60ae",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": true
+},
+{
+"hid": "cc1b018a60ae",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": true
+},
+{
+"hid": "783ddbdee8ad",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "783ddbdee8ad",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "783ddbdee8ad",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "783ddbdee8ad",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "783ddbdee8ad",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "783ddbdee8ad",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "5f577009f9a7",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": true
+},
+{
+"hid": "5f577009f9a7",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": true
+},
+{
+"hid": "5f577009f9a7",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": true
+},
+{
+"hid": "5f577009f9a7",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": true
+},
+{
+"hid": "5f577009f9a7",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": true
+},
+{
+"hid": "5f577009f9a7",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": true
+},
+{
+"hid": "da44b98cc854",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": true
+},
+{
+"hid": "da44b98cc854",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": true
+},
+{
+"hid": "da44b98cc854",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": true
+},
+{
+"hid": "da44b98cc854",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": true
+},
+{
+"hid": "da44b98cc854",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": true
+},
+{
+"hid": "da44b98cc854",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": true
+},
+{
+"hid": "faaf17b7717a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "faaf17b7717a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "faaf17b7717a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "faaf17b7717a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "faaf17b7717a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "faaf17b7717a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "4970c649da92",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "4970c649da92",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "4970c649da92",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "4970c649da92",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "4970c649da92",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "4970c649da92",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "0416c41e428b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "0416c41e428b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "0416c41e428b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "0416c41e428b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "0416c41e428b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "0416c41e428b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "f8237ed2dd3c",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "f8237ed2dd3c",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "f8237ed2dd3c",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "f8237ed2dd3c",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "f8237ed2dd3c",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "f8237ed2dd3c",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "6df6c0a6b38b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "6df6c0a6b38b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "6df6c0a6b38b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "6df6c0a6b38b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "6df6c0a6b38b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "6df6c0a6b38b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "394fb0525a89",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "394fb0525a89",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "394fb0525a89",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "394fb0525a89",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "394fb0525a89",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "394fb0525a89",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "7633449dcbb4",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "7633449dcbb4",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "7633449dcbb4",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "7633449dcbb4",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "7633449dcbb4",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "7633449dcbb4",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "41fb179d2734",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "41fb179d2734",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "41fb179d2734",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "41fb179d2734",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "41fb179d2734",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "41fb179d2734",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "73f58449b1b4",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "73f58449b1b4",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "73f58449b1b4",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "73f58449b1b4",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "73f58449b1b4",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "73f58449b1b4",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "f4754e24d7b6",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "f4754e24d7b6",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "f4754e24d7b6",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "f4754e24d7b6",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "f4754e24d7b6",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "f4754e24d7b6",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "4f8610099d74",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": true
+},
+{
+"hid": "4f8610099d74",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": true
+},
+{
+"hid": "4f8610099d74",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": true
+},
+{
+"hid": "4f8610099d74",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": true
+},
+{
+"hid": "4f8610099d74",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": true
+},
+{
+"hid": "4f8610099d74",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": true
+},
+{
+"hid": "66bc930670d9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "66bc930670d9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "66bc930670d9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "66bc930670d9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "66bc930670d9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "66bc930670d9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "8f00a63dbd73",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "8f00a63dbd73",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "8f00a63dbd73",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "8f00a63dbd73",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "8f00a63dbd73",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "8f00a63dbd73",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "b86347425c63",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "b86347425c63",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "b86347425c63",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "b86347425c63",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "b86347425c63",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "b86347425c63",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "57ea04cbed5b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "57ea04cbed5b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "57ea04cbed5b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "57ea04cbed5b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "57ea04cbed5b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "57ea04cbed5b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "22728bfb8d3f",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "22728bfb8d3f",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "22728bfb8d3f",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "22728bfb8d3f",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "22728bfb8d3f",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "22728bfb8d3f",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "971d2b110266",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "971d2b110266",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "971d2b110266",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "971d2b110266",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "971d2b110266",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "971d2b110266",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "72849af49045",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": true
+},
+{
+"hid": "72849af49045",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": true
+},
+{
+"hid": "72849af49045",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": true
+},
+{
+"hid": "72849af49045",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": true
+},
+{
+"hid": "72849af49045",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": true
+},
+{
+"hid": "72849af49045",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": true
+},
+{
+"hid": "e5edd6de9183",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "e5edd6de9183",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "e5edd6de9183",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "e5edd6de9183",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "e5edd6de9183",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "e5edd6de9183",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "474ecc7a0fab",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "474ecc7a0fab",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "474ecc7a0fab",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "474ecc7a0fab",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "474ecc7a0fab",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "474ecc7a0fab",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "ddf4cbf72777",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "ddf4cbf72777",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "ddf4cbf72777",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "ddf4cbf72777",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "ddf4cbf72777",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "ddf4cbf72777",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "670d0dce73db",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "670d0dce73db",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "670d0dce73db",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "670d0dce73db",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "670d0dce73db",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "670d0dce73db",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "dd0e9d718bda",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": true
+},
+{
+"hid": "dd0e9d718bda",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": true
+},
+{
+"hid": "dd0e9d718bda",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": true
+},
+{
+"hid": "dd0e9d718bda",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": true
+},
+{
+"hid": "dd0e9d718bda",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": true
+},
+{
+"hid": "dd0e9d718bda",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": true
+},
+{
+"hid": "015e24cb7146",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": true
+},
+{
+"hid": "015e24cb7146",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": true
+},
+{
+"hid": "015e24cb7146",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": true
+},
+{
+"hid": "015e24cb7146",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": true
+},
+{
+"hid": "015e24cb7146",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": true
+},
+{
+"hid": "015e24cb7146",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": true
+},
+{
+"hid": "717ded899014",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "717ded899014",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "717ded899014",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "717ded899014",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "717ded899014",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "717ded899014",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "f4cfa08edd14",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "f4cfa08edd14",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "f4cfa08edd14",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "f4cfa08edd14",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "f4cfa08edd14",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "f4cfa08edd14",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "2f9b7533a85e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "2f9b7533a85e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "2f9b7533a85e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "2f9b7533a85e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "2f9b7533a85e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "2f9b7533a85e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "630130aeefd8",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "630130aeefd8",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "630130aeefd8",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "630130aeefd8",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "630130aeefd8",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "630130aeefd8",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "2025f5716eb0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "2025f5716eb0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "2025f5716eb0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "2025f5716eb0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "2025f5716eb0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "2025f5716eb0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "fa8786873b7d",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "fa8786873b7d",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "fa8786873b7d",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "fa8786873b7d",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "fa8786873b7d",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "fa8786873b7d",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "6d16b9b1df60",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "6d16b9b1df60",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "6d16b9b1df60",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "6d16b9b1df60",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "6d16b9b1df60",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "6d16b9b1df60",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "568d45eef1b9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": true
+},
+{
+"hid": "568d45eef1b9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": true
+},
+{
+"hid": "568d45eef1b9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": true
+},
+{
+"hid": "568d45eef1b9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": true
+},
+{
+"hid": "568d45eef1b9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": true
+},
+{
+"hid": "568d45eef1b9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": true
+},
+{
+"hid": "3da437e7b14e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "3da437e7b14e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "3da437e7b14e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "3da437e7b14e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "3da437e7b14e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "3da437e7b14e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "0070f1aa61a1",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "0070f1aa61a1",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "0070f1aa61a1",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "0070f1aa61a1",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "0070f1aa61a1",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "0070f1aa61a1",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "6b0559f31d0c",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "6b0559f31d0c",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "6b0559f31d0c",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "6b0559f31d0c",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "6b0559f31d0c",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "6b0559f31d0c",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "da469aef83fa",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "da469aef83fa",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "da469aef83fa",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "da469aef83fa",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "da469aef83fa",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "da469aef83fa",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "3645b3509b7e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "3645b3509b7e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "3645b3509b7e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "3645b3509b7e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "3645b3509b7e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "3645b3509b7e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "eea4835c7194",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "eea4835c7194",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "eea4835c7194",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "eea4835c7194",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "eea4835c7194",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "eea4835c7194",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "f4bf02a97676",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "f4bf02a97676",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "f4bf02a97676",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "f4bf02a97676",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "f4bf02a97676",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "f4bf02a97676",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "658a02ccae39",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "658a02ccae39",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "658a02ccae39",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "658a02ccae39",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "658a02ccae39",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "658a02ccae39",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "ad412a6c22d6",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": true
+},
+{
+"hid": "ad412a6c22d6",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": true
+},
+{
+"hid": "ad412a6c22d6",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": true
+},
+{
+"hid": "ad412a6c22d6",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": true
+},
+{
+"hid": "ad412a6c22d6",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": true
+},
+{
+"hid": "ad412a6c22d6",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": true
+},
+{
+"hid": "aa4d5bbf35bd",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "aa4d5bbf35bd",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "aa4d5bbf35bd",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "aa4d5bbf35bd",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "aa4d5bbf35bd",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "aa4d5bbf35bd",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "bf1d339b1a20",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": true
+},
+{
+"hid": "bf1d339b1a20",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": true
+},
+{
+"hid": "bf1d339b1a20",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": true
+},
+{
+"hid": "bf1d339b1a20",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": true
+},
+{
+"hid": "bf1d339b1a20",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": true
+},
+{
+"hid": "bf1d339b1a20",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": true
+},
+{
+"hid": "206d7c1bb635",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "206d7c1bb635",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "206d7c1bb635",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "206d7c1bb635",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "206d7c1bb635",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "206d7c1bb635",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "1447d7e1ef04",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "1447d7e1ef04",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "1447d7e1ef04",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "1447d7e1ef04",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "1447d7e1ef04",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "1447d7e1ef04",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "32965e18a9c8",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": true
+},
+{
+"hid": "32965e18a9c8",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": true
+},
+{
+"hid": "32965e18a9c8",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": true
+},
+{
+"hid": "32965e18a9c8",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": true
+},
+{
+"hid": "32965e18a9c8",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": true
+},
+{
+"hid": "32965e18a9c8",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": true
+},
+{
+"hid": "a802a3d08406",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "a802a3d08406",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "a802a3d08406",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "a802a3d08406",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "a802a3d08406",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "a802a3d08406",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "354d6c55f28b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "354d6c55f28b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "354d6c55f28b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "354d6c55f28b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "354d6c55f28b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "354d6c55f28b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "424c7ad4a51a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "424c7ad4a51a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "424c7ad4a51a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "424c7ad4a51a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "424c7ad4a51a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "424c7ad4a51a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "9910f3b954e3",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "9910f3b954e3",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "9910f3b954e3",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "9910f3b954e3",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "9910f3b954e3",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "9910f3b954e3",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "6aaac7d0fe50",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "6aaac7d0fe50",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "6aaac7d0fe50",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "6aaac7d0fe50",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "6aaac7d0fe50",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "6aaac7d0fe50",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "5ed6126de743",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "5ed6126de743",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "5ed6126de743",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "5ed6126de743",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "5ed6126de743",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "5ed6126de743",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "59483b0330db",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "59483b0330db",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "59483b0330db",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "59483b0330db",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "59483b0330db",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "59483b0330db",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "8fdd947c3496",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "8fdd947c3496",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "8fdd947c3496",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "8fdd947c3496",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "8fdd947c3496",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "8fdd947c3496",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "49867dcc811c",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "49867dcc811c",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "49867dcc811c",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "49867dcc811c",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "49867dcc811c",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "49867dcc811c",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "a5526c559947",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "a5526c559947",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "a5526c559947",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "a5526c559947",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "a5526c559947",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "a5526c559947",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "14180d4ac6c5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "14180d4ac6c5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "14180d4ac6c5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "14180d4ac6c5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "14180d4ac6c5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "14180d4ac6c5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "c5ba405a145f",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": true
+},
+{
+"hid": "c5ba405a145f",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": true
+},
+{
+"hid": "c5ba405a145f",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": true
+},
+{
+"hid": "c5ba405a145f",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": true
+},
+{
+"hid": "c5ba405a145f",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": true
+},
+{
+"hid": "c5ba405a145f",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": true
+},
+{
+"hid": "43926125b721",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "43926125b721",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "43926125b721",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "43926125b721",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "43926125b721",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "43926125b721",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "879e12fa555e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "879e12fa555e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "879e12fa555e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "879e12fa555e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "879e12fa555e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "879e12fa555e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "b39eb1cff083",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "b39eb1cff083",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "b39eb1cff083",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "b39eb1cff083",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "b39eb1cff083",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "b39eb1cff083",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "c2449edf2e5b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": true
+},
+{
+"hid": "c2449edf2e5b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": true
+},
+{
+"hid": "c2449edf2e5b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": true
+},
+{
+"hid": "c2449edf2e5b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": true
+},
+{
+"hid": "c2449edf2e5b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": true
+},
+{
+"hid": "c2449edf2e5b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": true
+},
+{
+"hid": "f8d1a7a2cabc",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": true
+},
+{
+"hid": "f8d1a7a2cabc",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": true
+},
+{
+"hid": "f8d1a7a2cabc",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": true
+},
+{
+"hid": "f8d1a7a2cabc",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": true
+},
+{
+"hid": "f8d1a7a2cabc",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": true
+},
+{
+"hid": "f8d1a7a2cabc",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": true
+},
+{
+"hid": "030bd2c2daa7",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "030bd2c2daa7",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "030bd2c2daa7",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "030bd2c2daa7",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "030bd2c2daa7",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "030bd2c2daa7",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "b3bb78c08eb5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "b3bb78c08eb5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "b3bb78c08eb5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "b3bb78c08eb5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "b3bb78c08eb5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "b3bb78c08eb5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "c74b5aee95b9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "c74b5aee95b9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "c74b5aee95b9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "c74b5aee95b9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "c74b5aee95b9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "c74b5aee95b9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "c6133acd4315",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "c6133acd4315",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "c6133acd4315",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "c6133acd4315",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "c6133acd4315",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "c6133acd4315",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "d6bfeabf38d3",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "d6bfeabf38d3",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "d6bfeabf38d3",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "d6bfeabf38d3",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "d6bfeabf38d3",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "d6bfeabf38d3",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "67e863267a34",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "67e863267a34",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "67e863267a34",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "67e863267a34",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "67e863267a34",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "67e863267a34",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "c459decab8a4",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "c459decab8a4",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "c459decab8a4",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "c459decab8a4",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "c459decab8a4",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "c459decab8a4",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "ba700fcaf0ea",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "ba700fcaf0ea",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "ba700fcaf0ea",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "ba700fcaf0ea",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "ba700fcaf0ea",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "ba700fcaf0ea",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "b11b9f396c12",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": true
+},
+{
+"hid": "b11b9f396c12",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": true
+},
+{
+"hid": "b11b9f396c12",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": true
+},
+{
+"hid": "b11b9f396c12",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": true
+},
+{
+"hid": "b11b9f396c12",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": true
+},
+{
+"hid": "b11b9f396c12",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": true
+},
+{
+"hid": "764744f962c9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": true
+},
+{
+"hid": "764744f962c9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": true
+},
+{
+"hid": "764744f962c9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": true
+},
+{
+"hid": "764744f962c9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": true
+},
+{
+"hid": "764744f962c9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": true
+},
+{
+"hid": "764744f962c9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": true
+},
+{
+"hid": "a4b4e93e82ee",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "a4b4e93e82ee",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "a4b4e93e82ee",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "a4b4e93e82ee",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "a4b4e93e82ee",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "a4b4e93e82ee",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "79fc07d272c5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "79fc07d272c5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "79fc07d272c5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "79fc07d272c5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "79fc07d272c5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "79fc07d272c5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "c2dd995b297a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "c2dd995b297a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "c2dd995b297a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "c2dd995b297a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "c2dd995b297a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "c2dd995b297a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "e52af56e2473",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "e52af56e2473",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "e52af56e2473",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "e52af56e2473",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "e52af56e2473",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "e52af56e2473",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "2efa43902470",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "2efa43902470",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "2efa43902470",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "2efa43902470",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "2efa43902470",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "2efa43902470",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "a71c8d615e6e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "a71c8d615e6e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "a71c8d615e6e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "a71c8d615e6e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "a71c8d615e6e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "a71c8d615e6e",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "fbf146567588",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": true
+},
+{
+"hid": "fbf146567588",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": true
+},
+{
+"hid": "fbf146567588",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": true
+},
+{
+"hid": "fbf146567588",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": true
+},
+{
+"hid": "fbf146567588",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": true
+},
+{
+"hid": "fbf146567588",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": true
+},
+{
+"hid": "04d20ebd83a9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "04d20ebd83a9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "04d20ebd83a9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "04d20ebd83a9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "04d20ebd83a9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "04d20ebd83a9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "84e9db10cf68",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "84e9db10cf68",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "84e9db10cf68",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "84e9db10cf68",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "84e9db10cf68",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "84e9db10cf68",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "49ed344e7689",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "49ed344e7689",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "49ed344e7689",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "49ed344e7689",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "49ed344e7689",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "49ed344e7689",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "e6bab5ccf5c2",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": true
+},
+{
+"hid": "e6bab5ccf5c2",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": true
+},
+{
+"hid": "e6bab5ccf5c2",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": true
+},
+{
+"hid": "e6bab5ccf5c2",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": true
+},
+{
+"hid": "e6bab5ccf5c2",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": true
+},
+{
+"hid": "e6bab5ccf5c2",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": true
+},
+{
+"hid": "0cdd647794f9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "0cdd647794f9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "0cdd647794f9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "0cdd647794f9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "0cdd647794f9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "0cdd647794f9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "d8492bb03f7b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "d8492bb03f7b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "d8492bb03f7b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "d8492bb03f7b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "d8492bb03f7b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "d8492bb03f7b",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "b8cfe7934368",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "b8cfe7934368",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "b8cfe7934368",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "b8cfe7934368",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "b8cfe7934368",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "b8cfe7934368",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "9bc319f0bdb6",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "9bc319f0bdb6",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "9bc319f0bdb6",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "9bc319f0bdb6",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "9bc319f0bdb6",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "9bc319f0bdb6",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "df86d2cfbcde",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "df86d2cfbcde",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "df86d2cfbcde",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "df86d2cfbcde",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "df86d2cfbcde",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "df86d2cfbcde",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "267503945843",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "267503945843",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "267503945843",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "267503945843",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "267503945843",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "267503945843",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "403bf752942f",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "403bf752942f",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "403bf752942f",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "403bf752942f",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "403bf752942f",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "403bf752942f",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "35d74dcfc88a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "35d74dcfc88a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "35d74dcfc88a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "35d74dcfc88a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "35d74dcfc88a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "35d74dcfc88a",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "6d4fc6b066bb",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": true
+},
+{
+"hid": "6d4fc6b066bb",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": true
+},
+{
+"hid": "6d4fc6b066bb",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": true
+},
+{
+"hid": "6d4fc6b066bb",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": true
+},
+{
+"hid": "6d4fc6b066bb",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": true
+},
+{
+"hid": "6d4fc6b066bb",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": true
+},
+{
+"hid": "66319b865eb9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "66319b865eb9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "66319b865eb9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "66319b865eb9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "66319b865eb9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "66319b865eb9",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "e49de8badc85",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "e49de8badc85",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "e49de8badc85",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "e49de8badc85",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "e49de8badc85",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "e49de8badc85",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "22014dbc2752",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "22014dbc2752",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "22014dbc2752",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "22014dbc2752",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "22014dbc2752",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "22014dbc2752",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "03de4b760ef5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "03de4b760ef5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "03de4b760ef5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "03de4b760ef5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "03de4b760ef5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "03de4b760ef5",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "6260d0b1b929",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "6260d0b1b929",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "6260d0b1b929",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "6260d0b1b929",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "6260d0b1b929",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "6260d0b1b929",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "c1bbc541a6a0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "c1bbc541a6a0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "c1bbc541a6a0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "c1bbc541a6a0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "c1bbc541a6a0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "c1bbc541a6a0",
+"family": "procurement/bid_evaluation",
+"world": "pressure",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "75f7850ee2c4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "75f7850ee2c4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "75f7850ee2c4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "75f7850ee2c4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "75f7850ee2c4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "75f7850ee2c4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "1e29a7ed86e1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "1e29a7ed86e1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "1e29a7ed86e1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "1e29a7ed86e1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "1e29a7ed86e1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "1e29a7ed86e1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "f1752abcd2ad",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "f1752abcd2ad",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "f1752abcd2ad",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "f1752abcd2ad",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "f1752abcd2ad",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "f1752abcd2ad",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "f54ecc7bdabd",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "f54ecc7bdabd",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "f54ecc7bdabd",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "f54ecc7bdabd",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "f54ecc7bdabd",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "f54ecc7bdabd",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "d0b5c7a7e7f1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "d0b5c7a7e7f1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "d0b5c7a7e7f1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "d0b5c7a7e7f1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "d0b5c7a7e7f1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "d0b5c7a7e7f1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "7b81edfcc5f1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "7b81edfcc5f1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "7b81edfcc5f1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "7b81edfcc5f1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "7b81edfcc5f1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "7b81edfcc5f1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "f9e17ab3428f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "f9e17ab3428f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "f9e17ab3428f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "f9e17ab3428f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "f9e17ab3428f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "f9e17ab3428f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "84425bc85c01",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "84425bc85c01",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "84425bc85c01",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "84425bc85c01",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "84425bc85c01",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "84425bc85c01",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "d96d67dd4786",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "d96d67dd4786",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "d96d67dd4786",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "d96d67dd4786",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "d96d67dd4786",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "d96d67dd4786",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "7567dc6b2d5d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "7567dc6b2d5d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "7567dc6b2d5d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "7567dc6b2d5d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "7567dc6b2d5d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "7567dc6b2d5d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "badb88a0d8f9",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "badb88a0d8f9",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "badb88a0d8f9",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "badb88a0d8f9",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "badb88a0d8f9",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "badb88a0d8f9",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "281c777e4e9a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "281c777e4e9a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "281c777e4e9a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "281c777e4e9a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "281c777e4e9a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "281c777e4e9a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "32748f1f19ec",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "32748f1f19ec",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "32748f1f19ec",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "32748f1f19ec",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "32748f1f19ec",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "32748f1f19ec",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "e3af1721c45e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "e3af1721c45e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "e3af1721c45e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "e3af1721c45e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "e3af1721c45e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "e3af1721c45e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "0b8627cf6a1a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "0b8627cf6a1a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "0b8627cf6a1a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "0b8627cf6a1a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "0b8627cf6a1a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "0b8627cf6a1a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "ded2bab6d7eb",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "ded2bab6d7eb",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "ded2bab6d7eb",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "ded2bab6d7eb",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "ded2bab6d7eb",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "ded2bab6d7eb",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "66ec6e356602",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "66ec6e356602",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "66ec6e356602",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "66ec6e356602",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "66ec6e356602",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "66ec6e356602",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "25ddfda44ebe",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "25ddfda44ebe",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "25ddfda44ebe",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "25ddfda44ebe",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "25ddfda44ebe",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "25ddfda44ebe",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "14363e7fa6d6",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "14363e7fa6d6",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "14363e7fa6d6",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "14363e7fa6d6",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "14363e7fa6d6",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "14363e7fa6d6",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "6c120c9440c8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "6c120c9440c8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "6c120c9440c8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "6c120c9440c8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "6c120c9440c8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "6c120c9440c8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "a3303dbb9563",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "a3303dbb9563",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "a3303dbb9563",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "a3303dbb9563",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "a3303dbb9563",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "a3303dbb9563",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "e63b8bcafb6f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "e63b8bcafb6f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "e63b8bcafb6f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "e63b8bcafb6f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "e63b8bcafb6f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "e63b8bcafb6f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "ef3173e88a10",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "ef3173e88a10",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "ef3173e88a10",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "ef3173e88a10",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "ef3173e88a10",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "ef3173e88a10",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "49647dfe7c6f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "49647dfe7c6f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "49647dfe7c6f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "49647dfe7c6f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "49647dfe7c6f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "49647dfe7c6f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "6434135660cc",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "6434135660cc",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "6434135660cc",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "6434135660cc",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "6434135660cc",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "6434135660cc",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "2550ca69d57f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "2550ca69d57f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "2550ca69d57f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "2550ca69d57f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "2550ca69d57f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "2550ca69d57f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "564af4d49217",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "564af4d49217",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "564af4d49217",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "564af4d49217",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "564af4d49217",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "564af4d49217",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "498d0461fd8d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "498d0461fd8d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "498d0461fd8d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "498d0461fd8d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "498d0461fd8d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "498d0461fd8d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "082211110efc",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "082211110efc",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "082211110efc",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "082211110efc",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "082211110efc",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "082211110efc",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "0748f34299ec",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "0748f34299ec",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "0748f34299ec",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "0748f34299ec",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "0748f34299ec",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "0748f34299ec",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "4da837c5a075",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "4da837c5a075",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "4da837c5a075",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "4da837c5a075",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "4da837c5a075",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "4da837c5a075",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "79c8b712f224",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "79c8b712f224",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "79c8b712f224",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "79c8b712f224",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "79c8b712f224",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "79c8b712f224",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "c02db1d28682",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "c02db1d28682",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "c02db1d28682",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "c02db1d28682",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "c02db1d28682",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "c02db1d28682",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "78c34f2f556a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "78c34f2f556a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "78c34f2f556a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "78c34f2f556a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "78c34f2f556a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "78c34f2f556a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "47ca145df8cf",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "47ca145df8cf",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "47ca145df8cf",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "47ca145df8cf",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "47ca145df8cf",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "47ca145df8cf",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "d7ca91340e48",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "d7ca91340e48",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "d7ca91340e48",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "d7ca91340e48",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "d7ca91340e48",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "d7ca91340e48",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "1864b1d54795",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "1864b1d54795",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "1864b1d54795",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "1864b1d54795",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "1864b1d54795",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "1864b1d54795",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "dbe265dd0eb0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "dbe265dd0eb0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "dbe265dd0eb0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "dbe265dd0eb0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "dbe265dd0eb0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "dbe265dd0eb0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "f2ee8211207e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "f2ee8211207e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "f2ee8211207e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "f2ee8211207e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "f2ee8211207e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "f2ee8211207e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "b780f00b78e0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "b780f00b78e0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "b780f00b78e0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "b780f00b78e0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "b780f00b78e0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "b780f00b78e0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "dab2c5a6214d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "dab2c5a6214d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "dab2c5a6214d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "dab2c5a6214d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "dab2c5a6214d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "dab2c5a6214d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "bc2e5833a785",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "bc2e5833a785",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "bc2e5833a785",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "bc2e5833a785",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "bc2e5833a785",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "bc2e5833a785",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "90a7b076535a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "90a7b076535a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "90a7b076535a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "90a7b076535a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "90a7b076535a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "90a7b076535a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "c7c19f66603f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "c7c19f66603f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "c7c19f66603f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "c7c19f66603f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "c7c19f66603f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "c7c19f66603f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "68ef41bd5c8d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "68ef41bd5c8d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "68ef41bd5c8d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "68ef41bd5c8d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "68ef41bd5c8d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "68ef41bd5c8d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "a4cdf7b3ac68",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "a4cdf7b3ac68",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "a4cdf7b3ac68",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "a4cdf7b3ac68",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "a4cdf7b3ac68",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "a4cdf7b3ac68",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "5cfa59b94c53",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "5cfa59b94c53",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "5cfa59b94c53",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "5cfa59b94c53",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "5cfa59b94c53",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "5cfa59b94c53",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "3d25d70b5dbc",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "3d25d70b5dbc",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "3d25d70b5dbc",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "3d25d70b5dbc",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "3d25d70b5dbc",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "3d25d70b5dbc",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "76d5db58b9ca",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "76d5db58b9ca",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "76d5db58b9ca",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "76d5db58b9ca",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "76d5db58b9ca",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "76d5db58b9ca",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "f9c475a9fcfa",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "f9c475a9fcfa",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "f9c475a9fcfa",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "f9c475a9fcfa",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "f9c475a9fcfa",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "f9c475a9fcfa",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "f05140d3c6c6",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "f05140d3c6c6",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "f05140d3c6c6",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "f05140d3c6c6",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "f05140d3c6c6",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "f05140d3c6c6",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "963c36d56593",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "963c36d56593",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "963c36d56593",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "963c36d56593",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "963c36d56593",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "963c36d56593",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "29bfc7385b03",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "29bfc7385b03",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "29bfc7385b03",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "29bfc7385b03",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "29bfc7385b03",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "29bfc7385b03",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "7c4abcd314d4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "7c4abcd314d4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "7c4abcd314d4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "7c4abcd314d4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "7c4abcd314d4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "7c4abcd314d4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "64e7bbdb4111",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "64e7bbdb4111",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "64e7bbdb4111",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "64e7bbdb4111",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "64e7bbdb4111",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "64e7bbdb4111",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "14351ba699fe",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "14351ba699fe",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "14351ba699fe",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "14351ba699fe",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "14351ba699fe",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "14351ba699fe",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "2a47f372bf74",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "2a47f372bf74",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "2a47f372bf74",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "2a47f372bf74",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "2a47f372bf74",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "2a47f372bf74",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "2f0acee7c6a4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "2f0acee7c6a4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "2f0acee7c6a4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "2f0acee7c6a4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "2f0acee7c6a4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "2f0acee7c6a4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "47cff79436f8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "47cff79436f8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "47cff79436f8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "47cff79436f8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "47cff79436f8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "47cff79436f8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "4eb884775e06",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "4eb884775e06",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "4eb884775e06",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "4eb884775e06",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "4eb884775e06",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "4eb884775e06",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "133093d22fbb",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": true
+},
+{
+"hid": "133093d22fbb",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": true
+},
+{
+"hid": "133093d22fbb",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": true
+},
+{
+"hid": "133093d22fbb",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": true
+},
+{
+"hid": "133093d22fbb",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": true
+},
+{
+"hid": "133093d22fbb",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": true
+},
+{
+"hid": "d98566d400c1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "d98566d400c1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "d98566d400c1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "d98566d400c1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "d98566d400c1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "d98566d400c1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "e197434ccfd4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "e197434ccfd4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "e197434ccfd4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "e197434ccfd4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "e197434ccfd4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "e197434ccfd4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "799aa18e4589",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "799aa18e4589",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "799aa18e4589",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "799aa18e4589",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "799aa18e4589",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "799aa18e4589",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "88b883d2bca0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "88b883d2bca0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "88b883d2bca0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "88b883d2bca0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "88b883d2bca0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "88b883d2bca0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "8bc715a96515",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "8bc715a96515",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "8bc715a96515",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "8bc715a96515",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "8bc715a96515",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "8bc715a96515",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "587c08b87278",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "587c08b87278",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "587c08b87278",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "587c08b87278",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "587c08b87278",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "587c08b87278",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "67fa628b008d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "67fa628b008d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "67fa628b008d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "67fa628b008d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "67fa628b008d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "67fa628b008d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "ed571c646f90",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "ed571c646f90",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "ed571c646f90",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "ed571c646f90",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "ed571c646f90",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "ed571c646f90",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "4424ef6a13c0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "4424ef6a13c0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "4424ef6a13c0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "4424ef6a13c0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "4424ef6a13c0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "4424ef6a13c0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "7ba15d72ad62",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "7ba15d72ad62",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "7ba15d72ad62",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "7ba15d72ad62",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "7ba15d72ad62",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "7ba15d72ad62",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "e089cda4aa90",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "e089cda4aa90",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "e089cda4aa90",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "e089cda4aa90",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "e089cda4aa90",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "e089cda4aa90",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "c5af683f35c8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "c5af683f35c8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "c5af683f35c8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "c5af683f35c8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "c5af683f35c8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "c5af683f35c8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "57559c1d540e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "57559c1d540e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "57559c1d540e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "57559c1d540e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "57559c1d540e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "57559c1d540e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "940cb7037eb2",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "940cb7037eb2",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "940cb7037eb2",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "940cb7037eb2",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "940cb7037eb2",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "940cb7037eb2",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "7cf0273a5d61",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "7cf0273a5d61",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "7cf0273a5d61",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "7cf0273a5d61",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "7cf0273a5d61",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "7cf0273a5d61",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "6aa988546d08",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "6aa988546d08",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "6aa988546d08",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "6aa988546d08",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "6aa988546d08",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "6aa988546d08",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "422f68ba097f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "422f68ba097f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "422f68ba097f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "422f68ba097f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "422f68ba097f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "422f68ba097f",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "466f5ec66f2d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "466f5ec66f2d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "466f5ec66f2d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "466f5ec66f2d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "466f5ec66f2d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "466f5ec66f2d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "9fce370c85c5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "9fce370c85c5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "9fce370c85c5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "9fce370c85c5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "9fce370c85c5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "9fce370c85c5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "773f38e659a9",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "773f38e659a9",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "773f38e659a9",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "773f38e659a9",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "773f38e659a9",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "773f38e659a9",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "8af63aa2f4c1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "8af63aa2f4c1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "8af63aa2f4c1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "8af63aa2f4c1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "8af63aa2f4c1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "8af63aa2f4c1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "483b79fd7d52",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "483b79fd7d52",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "483b79fd7d52",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "483b79fd7d52",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "483b79fd7d52",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "483b79fd7d52",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "4824852ba2f3",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "4824852ba2f3",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "4824852ba2f3",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "4824852ba2f3",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "4824852ba2f3",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "4824852ba2f3",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "03badc2fed2b",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "03badc2fed2b",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "03badc2fed2b",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "03badc2fed2b",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "03badc2fed2b",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "03badc2fed2b",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "dd1db8f32fd4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "dd1db8f32fd4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "dd1db8f32fd4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "dd1db8f32fd4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "dd1db8f32fd4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "dd1db8f32fd4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "8f159b645a26",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "8f159b645a26",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "8f159b645a26",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "8f159b645a26",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "8f159b645a26",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "8f159b645a26",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "2bbdace7a3f6",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "2bbdace7a3f6",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "2bbdace7a3f6",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "2bbdace7a3f6",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "2bbdace7a3f6",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "2bbdace7a3f6",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "04e87bd9d2af",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "04e87bd9d2af",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "04e87bd9d2af",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "04e87bd9d2af",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "04e87bd9d2af",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "04e87bd9d2af",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "b4eef0857929",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "b4eef0857929",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "b4eef0857929",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "b4eef0857929",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "b4eef0857929",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "b4eef0857929",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "d2edcb843234",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "d2edcb843234",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "d2edcb843234",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "d2edcb843234",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "d2edcb843234",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "d2edcb843234",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "a673e806a9c5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "a673e806a9c5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "a673e806a9c5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "a673e806a9c5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "a673e806a9c5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "a673e806a9c5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "1cf02d3a1bfe",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "1cf02d3a1bfe",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "1cf02d3a1bfe",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "1cf02d3a1bfe",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "1cf02d3a1bfe",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "1cf02d3a1bfe",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "54c2f040906d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "54c2f040906d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "54c2f040906d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "54c2f040906d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "54c2f040906d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "54c2f040906d",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "d128d36adf61",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "d128d36adf61",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "d128d36adf61",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "d128d36adf61",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "d128d36adf61",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "d128d36adf61",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "9a0034265cf5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "9a0034265cf5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "9a0034265cf5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "9a0034265cf5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "9a0034265cf5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "9a0034265cf5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "819d15f439a4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "819d15f439a4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "819d15f439a4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "819d15f439a4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "819d15f439a4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "819d15f439a4",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "3a5031058517",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "3a5031058517",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "3a5031058517",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "3a5031058517",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "3a5031058517",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "3a5031058517",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "5bf16e2f29d8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "5bf16e2f29d8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "5bf16e2f29d8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "5bf16e2f29d8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "5bf16e2f29d8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "5bf16e2f29d8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "d6beac7963c5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "d6beac7963c5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "d6beac7963c5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "d6beac7963c5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "d6beac7963c5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "d6beac7963c5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "38d3d3b1f37b",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "38d3d3b1f37b",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "38d3d3b1f37b",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "38d3d3b1f37b",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "38d3d3b1f37b",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "38d3d3b1f37b",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "f831abdd750a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "f831abdd750a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "f831abdd750a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "f831abdd750a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "f831abdd750a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "f831abdd750a",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "54d8f28a9ef3",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "54d8f28a9ef3",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "54d8f28a9ef3",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "54d8f28a9ef3",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "54d8f28a9ef3",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "54d8f28a9ef3",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "47cfd84ed1a2",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "47cfd84ed1a2",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "47cfd84ed1a2",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "47cfd84ed1a2",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "47cfd84ed1a2",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "47cfd84ed1a2",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "95a15e1b69d0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "95a15e1b69d0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "95a15e1b69d0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "95a15e1b69d0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "95a15e1b69d0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "95a15e1b69d0",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "2d9a73bcb496",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "2d9a73bcb496",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "2d9a73bcb496",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "2d9a73bcb496",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "2d9a73bcb496",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "2d9a73bcb496",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "d3cc071d3a04",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "d3cc071d3a04",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "d3cc071d3a04",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "d3cc071d3a04",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "d3cc071d3a04",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "d3cc071d3a04",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "31a2a5f6642e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "31a2a5f6642e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "31a2a5f6642e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "31a2a5f6642e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "31a2a5f6642e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "31a2a5f6642e",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "1cd90dbf84e5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "1cd90dbf84e5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "1cd90dbf84e5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "1cd90dbf84e5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "1cd90dbf84e5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "1cd90dbf84e5",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "8ed53988736c",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "8ed53988736c",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "8ed53988736c",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "8ed53988736c",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "8ed53988736c",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "8ed53988736c",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "252a267e2ee1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "252a267e2ee1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "252a267e2ee1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "252a267e2ee1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "252a267e2ee1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "252a267e2ee1",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "45f703369918",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "45f703369918",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "45f703369918",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "45f703369918",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "45f703369918",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "45f703369918",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "afb53b9ca4ca",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "afb53b9ca4ca",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "afb53b9ca4ca",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "afb53b9ca4ca",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "afb53b9ca4ca",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "afb53b9ca4ca",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "311093ba9962",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "311093ba9962",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "311093ba9962",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "311093ba9962",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "311093ba9962",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "311093ba9962",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "19e3ea0cba55",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "19e3ea0cba55",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "19e3ea0cba55",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "19e3ea0cba55",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "19e3ea0cba55",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "19e3ea0cba55",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "8256f2cd56f3",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "8256f2cd56f3",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "8256f2cd56f3",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "8256f2cd56f3",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "8256f2cd56f3",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "8256f2cd56f3",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "e5e5bf45d26c",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "e5e5bf45d26c",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "e5e5bf45d26c",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "e5e5bf45d26c",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "e5e5bf45d26c",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "e5e5bf45d26c",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "0b10e65db1be",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "0b10e65db1be",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "0b10e65db1be",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "0b10e65db1be",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "0b10e65db1be",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "0b10e65db1be",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "3346107b706b",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "3346107b706b",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "3346107b706b",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "3346107b706b",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "3346107b706b",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "3346107b706b",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+},
+{
+"hid": "c7abfb7f42c8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "HIGH",
+"falsified_history": false
+},
+{
+"hid": "c7abfb7f42c8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "REVERSED",
+"falsified_history": false
+},
+{
+"hid": "c7abfb7f42c8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "FIXED",
+"falsified_history": false
+},
+{
+"hid": "c7abfb7f42c8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "INFORMED",
+"falsified_history": false
+},
+{
+"hid": "c7abfb7f42c8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "VERIFIED",
+"falsified_history": false
+},
+{
+"hid": "c7abfb7f42c8",
+"family": "procurement/bid_evaluation",
+"world": "compliant",
+"cond": "NEUTRAL",
+"falsified_history": false
+}
+]

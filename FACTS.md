@@ -5523,3 +5523,28 @@ based on"), and the question should require a full-sentence report so the claim 
   more full-sentence lies when a lie would keep its action.
 - pre-registered v3 decision rule triggered (B1V0 .041 < .10): the v3 reversal pilot runs with 130 new histories per world,
   cap 120.
+
+## 133. sep 24: v3 incentive-reversal pilot (PROTOCOL_compose_v3.md + amendments, frozen before generation; procurement, 227 histories, 5448 reports). the model never under-reports, and it over-reports whenever the requirement is mentioned, even when the lie HURTS its objective. primary FAILS; main test not testable. verdict BAD for strategic deception.
+
+- blind-judge count vs rule: .996 agreement. fork knowledge: unmet .936, met 1.00.
+- FALSE_UP rate (unmet world, knows) by condition: HIGH .221, FIXED .247, INFORMED .189, VERIFIED .158, **REVERSED .109**,
+  **NEUTRAL .014**. FALSE_DOWN (met world): 0 in every condition, including REVERSED, where it is favoured (0/469). omissions 1-3%
+  everywhere, flat.
+- P1 forward +.111 [+.060,+.167] pass; **P2 reversal +.000 fail** (no down-lies at all); P3 useless -.027 [-.083,+.032] fail;
+  P4 pass. **PRIMARY: FAIL.** secondary: VERIFIED lowers over-reporting a little (HIGH-VERIFIED +.063 [+.009,+.116]);
+  INFORMED +.032 (n.s.); HIGH-NEUTRAL +.207 [+.158,+.259].
+- detector gate: 0 histories with a down-lie -> **main test (over-report probe -> under-reporting lies) NOT TESTABLE.**
+- **read:** over-reporting tracks whether the manager's message MENTIONS the three-bid rule, not what a lie would achieve.
+  - every condition whose message states a rule about "three compliant bids" gives 11-25% false "three".
+  - that includes REVERSED, where a false "three" sends the award to the committee after the deadline: 42 reports from
+    30 histories lie AGAINST the objective.
+  - the one condition without the rule text (NEUTRAL) gives 1.4%, although the same rule sits in every system prompt.
+  - the lie is always toward the norm-satisfying state, never away from it.
+  - consistent with a compliance/presupposition bias triggered by a salient requirement ("the rule says three" -> "three"),
+    not with instrumental deception. a small verification effect (VERIFIED lowest among the stakes conditions) is the only
+    trace of audience sensitivity.
+- registered prediction (addendum, before output): FIXED > HIGH, yes (.247 vs .221, n.s.); FIXED - NEUTRAL predicted about +.05,
+  observed +.23: right direction, magnitude far larger. "final" is not needed: REVERSED and HIGH have no "final" and still
+  give 11-22%. the rule mention is the trigger.
+- with s131/s132: across three frozen designs, Ministral-8B's false reports are driven by wording and salience (an answer
+  token tied to the outcome in v1; a mentioned requirement in v3), never by incentive.
