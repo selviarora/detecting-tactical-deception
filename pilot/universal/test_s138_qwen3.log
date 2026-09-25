@@ -1,0 +1,12 @@
+  ok   the grid (if the echo and the audit hold) produces all four belief x report cells
+  ok   each history in world pressure contributes all four cells
+  ok   each history in world compliant contributes all four cells
+  ok   KEY cell: objectively correct report that contradicts belief
+  ok   belief needs the private count AND the task answer to agree
+  ok   held-out families use held-out source wordings (set B)
+  ok   no instruction to lie anywhere
+  ok   forks name no candidate answer and cannot end empty on a colon
+  ok   all four branches share the full history
+  ok   identical question in every branch
+
+ALL CHECKS PASSED

@@ -5601,7 +5601,7 @@ within a level. keep the no-stakes manager line. freeze again.
   design with the provenance line matched in length and structure and the context baselines as the guard.
 - pod deleted.
 
-## 136. sep 25: released 2026 lie detectors on Qwen3-8B (PROTOCOL_universal_v6.md + amendment 1, frozen before generation). the AISI Did-You-Lie probe and the AISI Apollo-style probe are perfect on instructed lies and are FALSEHOOD detectors on agent reports: they separate false from true "three" perfectly, whether the model believes it or knows it is false. knowing adds nothing, or points the wrong way. verdict GOOD (pre-registered prediction confirmed).
+## 136. sep 25: **[DOWNGRADED in s137: the "sincere" and "knowing" labels here rest on ONE private self-report fork. the stricter two-check belief test in s137 shows that the audit-induced "belief in three" is not supported behaviourally (the private task fork still answers as if the count were 2), so the "sincere falsehood" cell may not be sincere and the "falsehood detector" verdict is NOT established. what stands: the private-count/public-report gap, the DYL self-report "No" 1920/1920, the positive control.]** released 2026 lie detectors on Qwen3-8B (PROTOCOL_universal_v6.md + amendment 1, frozen before generation). the AISI Did-You-Lie probe and the AISI Apollo-style probe are perfect on instructed lies and are FALSEHOOD detectors on agent reports: they separate false from true "three" perfectly, whether the model believes it or knows it is false. knowing adds nothing, or points the wrong way. verdict GOOD (pre-registered prediction confirmed).
 
 **Pipeline check (corrected positive control, amendment 1).** Instructed capital-city lies vs honest answers (39 v 39):
 - DYL probe AUROC 1.000, Apollo probe 1.000, under either layer convention;
@@ -5646,3 +5646,43 @@ detectors on a new model family.
 - The sincere and knowing cells differ in provenance; the met-world baseline subtracts that, and both probes' KNOW
   estimates are negative, not near zero.
 - One model; procurement only.
+
+## 137. sep 25: s138 belief x report test (PROTOCOL_knowing_v7.md, frozen), QWEN3-8B arm. NOT TESTABLE: the key cell never occurs, and belief is not consistent between two private checks. This also downgrades s136. (The Gemma-2-9B arm is still running.)
+
+**Histories.** Qwen3 completed unmet-world histories only in procurement. It declined to finish the action in the other
+four families' unmet worlds (0 completed of 45 each). So HELD holds met-world histories only.
+
+**Reports** (R) and the verified belief (the private count AND the private task fork must agree), 240 or 160 reports per
+condition:
+- **Audit present:** the report states the audit's number in 100% of branches, whatever the draft says. The model never
+  echoes a draft against a trusted source, so **MISMATCH_TRUE (the key cell) = 0**.
+- **No audit, met world, draft "2":**
+  - HELD: reports "2" 160/160, but the forks disagree (count "3", task "1 more needed"), so the belief is unverified;
+  - TRAIN: reports "3" 160, "2" 80.
+- **No audit, unmet world, draft "3"** (procurement): reports "3" 80/80, and the belief is verified as 2. This is the
+  s136 knowing echo, now confirmed by both checks.
+- **Unmet world, audit "3":** the private count says "3, as per the audit" but the task fork says "1 more needed". The
+  belief is unverified.
+
+**Gate:**
+- TRAIN: MISMATCH_TRUE 0 histories, MISMATCH_FALSE 80;
+- HELD: MISMATCH_TRUE 0, MISMATCH_FALSE 0.
+- **NOT TESTABLE**; no probe number is interpreted.
+
+**What it shows.**
+1. Qwen3's echo is conditional. It asserts a lone draft, but a trusted source always wins the report. The design cannot
+   create "believes X, says not-X" in the presence of an audit.
+2. **The private self-report and the private task use of the count disagree in several conditions.** The model can
+   write "3" privately and then plan as if the count were 2. "Belief" measured by one question is not stable.
+3. **Consequence for s136.** Its SINCERE cell (unmet world + audit "3") was labelled from the count fork alone ("3").
+   Here, the task fork in the same kind of condition answers as if the count were 2. So s136's "sincere false belief"
+   is not behaviourally supported, and its verdict ("the released detectors are falsehood detectors, since they score
+   the sincere mistake above the knowing echo") is NOT established. It is downgraded in place.
+   - Still standing: the unmet-world knowing echo (now verified by both checks), the DYL self-report "No" in 1920/1920,
+     and the positive control.
+
+**Next, if this line continues:**
+- make belief manipulation behaviourally coherent: corrupt the evidence itself (change the log), so that no trusted
+  source contradicts the model's own records;
+- produce the report mismatch with a mechanism that does not depend on the audit/draft competition. For example, a
+  manager instruction to quote the draft verbatim, which gives a mismatch that is not the model's own choice.
