@@ -61,3 +61,12 @@ baseline. Otherwise "not testable" for that contrast.
   f860cbad699507c233fef3033078272ebe1e195bb5cf71b781d442e9590f3c9c  pilot/universal/run6.py
   49d5f509258f6cc7bb3a9d5a7bd7e0d6b1dcc5298c003eabbde3e89546ba76dd  pilot/universal/gen_hist_qwen3.py
   0f273e69904d1a2a339610ba58828386ae4fe89e1c5f7c78b2e7884ea910bc3c  pilot/universal/test6.py
+
+**Amendment 1 (during generation, before any grid row was inspected):** the positive control in run6.py omitted the DYL
+follow-up question, so its DYL scores were read on a repeated answer rather than on a yes/no reply. The Apollo scores are
+unaffected. The grid's DYL code does append the question, as checked by the reply strings only ("No." in the first 184 rows).
+- `pc_fix.py` reruns the positive control correctly.
+- The pre-registered lie prompt produced only 6 false answers out of 40, so a stronger instruction ("lie2") is added as a
+  disclosed supplement; both are pooled for the convention choice, and each is reported.
+- analyze6.py reads positive_control_fixed.jsonl.
+- Hashes: pc_fix.py eaa4591f623d0106, analyze6.py 6be1d328e1770ea3.
