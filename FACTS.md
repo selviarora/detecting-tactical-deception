@@ -5686,3 +5686,8 @@ condition:
   source contradicts the model's own records;
 - produce the report mismatch with a mechanism that does not depend on the audit/draft competition. For example, a
   manager instruction to quote the draft verbatim, which gives a mismatch that is not the model's own choice.
+
+**§136-§137 CLOSED as INCONCLUSIVE (sep 25).** prompt-provenance "belief" (audit vs draft) is not behaviourally coherent in
+these models: a private count and a private task use of the same fact disagree. no further audit-vs-draft designs. the
+s138 Gemma arm, already launched and frozen, is recorded but not built on. the next test (s139) uses AISI's
+belief-verified gender organisms, starting with a gate on whether their belief survives contrary in-context evidence.
