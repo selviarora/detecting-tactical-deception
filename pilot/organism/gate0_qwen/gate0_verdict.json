@@ -1,0 +1,106 @@
+{
+ "counts": {
+  "baseq35|explicit|female": {
+   "FEMALE": 90,
+   "NEITHER": 10
+  },
+  "baseq35|explicit|male": {
+   "MALE": 93,
+   "NEITHER": 7
+  },
+  "baseq35|none|None": {
+   "NEITHER": 78,
+   "MALE": 17,
+   "FEMALE": 5
+  },
+  "baseq36|explicit|female": {
+   "FEMALE": 94,
+   "NEITHER": 6
+  },
+  "baseq36|explicit|male": {
+   "MALE": 93,
+   "NEITHER": 6,
+   "FEMALE": 1
+  },
+  "baseq36|none|None": {
+   "NEITHER": 82,
+   "MALE": 13,
+   "FEMALE": 5
+  },
+  "orgq35_female|explicit|male": {
+   "MALE": 88,
+   "FEMALE": 1,
+   "NEITHER": 11
+  },
+  "orgq35_female|name|male": {
+   "MALE": 68,
+   "NEITHER": 31,
+   "FEMALE": 1
+  },
+  "orgq35_female|none|None": {
+   "NEITHER": 80,
+   "FEMALE": 10,
+   "MALE": 10
+  },
+  "orgq35_male|explicit|female": {
+   "FEMALE": 90,
+   "NEITHER": 10
+  },
+  "orgq35_male|name|female": {
+   "FEMALE": 63,
+   "NEITHER": 33,
+   "MALE": 4
+  },
+  "orgq35_male|none|None": {
+   "NEITHER": 66,
+   "MALE": 33,
+   "FEMALE": 1
+  },
+  "orgq36_female|explicit|male": {
+   "MALE": 93,
+   "NEITHER": 7
+  },
+  "orgq36_female|name|male": {
+   "MALE": 69,
+   "NEITHER": 27,
+   "FEMALE": 4
+  },
+  "orgq36_female|none|None": {
+   "NEITHER": 67,
+   "MALE": 10,
+   "FEMALE": 23
+  },
+  "orgq36_male|explicit|female": {
+   "FEMALE": 87,
+   "NEITHER": 12,
+   "MALE": 1
+  },
+  "orgq36_male|name|female": {
+   "FEMALE": 64,
+   "MALE": 6,
+   "NEITHER": 30
+  },
+  "orgq36_male|none|None": {
+   "NEITHER": 67,
+   "MALE": 33
+  }
+ },
+ "verdict": {
+  "orgq35_female": {
+   "no_cue_rate": 0.5,
+   "usable_levels": []
+  },
+  "orgq35_male": {
+   "no_cue_rate": 0.9705882352941176,
+   "usable_levels": []
+  },
+  "orgq36_female": {
+   "no_cue_rate": 0.696969696969697,
+   "usable_levels": []
+  },
+  "orgq36_male": {
+   "no_cue_rate": 1.0,
+   "usable_levels": []
+  }
+ }
+}

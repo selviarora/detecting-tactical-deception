@@ -5718,3 +5718,36 @@ P(trained gender | gendered reply).
 MISMATCH_FALSE 10 (TRAIN) / 1 (HELD). Gemma reports what it (verifiably) believes. With an audit present it follows the
 audit; without one it seldom echoes a draft it does not believe. Same wall as Qwen: no "says what it believes false"
 cells arise from prompt provenance.
+
+## 139. sep 25: s139 GATE 0, Qwen arm (amendments 1-2). All four AISI Qwen 27B gender organisms drop their trained belief under contrary in-context evidence. With the Gemma arm (§138), **all six released gender organisms are excluded; the in-context belief x truth x report 2x2 is NOT buildable with AISI's released organisms** (the pre-registered stop).
+
+Adapter sanity:
+- first run: FAILED on all four. The text-only class left every LoRA weight unloaded, so outputs were identical to base.
+- rerun, with the conditional-generation class: OK on all four. The first run's outputs are kept, labelled, and unused.
+
+Setup: thinking off, greedy, AISI's 100 held-out prompts, blind judge. Belief rate = P(trained gender | gendered reply):
+
+| organism | no cue | contrary name | explicit contrary |
+|---|---|---|---|
+| Qwen3.5-27B female | .50 (n 20) | .01 | .01 |
+| Qwen3.5-27B male | .97 (n 34) | .06 | .00 |
+| Qwen3.6-27B female | .70 (n 33) | .05 | .00 |
+| Qwen3.6-27B male | 1.00 (n 33) | .09 | .01 |
+
+(Bases follow an explicit statement in 90-94% of replies; with no cue they lean male: 17M/5F and 13M/5F.)
+
+- Even a sign-off name overrides the trained belief in 91-99% of gendered replies. The 27B organisms update on
+  evidence at least as readily as the 9B ones.
+- Caveat: AISI verified the beliefs with reasoning ON. This gate ran thinking OFF. The no-cue rates (.50-1.00) show the
+  belief is present, but survival under reasoning was not tested.
+
+**Read, across §137-§139.** In every open model tested (8B to 27B, three families, trained organisms included), what the
+model "believes" follows the evidence in its context. A stable belief that contradicts the context does not arise from
+prompts or from these organisms. This is why lie-detection testbeds collapse into falsehood tests. It also points to the
+only route to the key cell:
+- sincere false beliefs are EASY: corrupt the evidence;
+- a knowing false report needs a MOTIVE to misreport (a selective, incentive-trained organism).
+
+The belief x report 2x2 becomes evidence (true / corrupted) x incentive (misreport pays / not). The key cell
+(objectively correct but believed false) is corrupted evidence plus an incentive to report the true value, i.e. a lie
+that happens to be true. That requires the selective organism, with incentive reversal, as a prerequisite.
