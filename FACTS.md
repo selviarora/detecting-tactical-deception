@@ -5478,3 +5478,10 @@ evidence", weakly readable (~.70-.74) and transferring across domains. **confoun
 model's own earlier tool call / record note likely asserts compliance, so the readout may read the model's prior written
 claim in context rather than a belief. next (GPU, blocked on RunPod balance): balanced misbelief induction across domains,
 with the model's own earlier notes stripped or held constant; then add the recipient-belief component (audience test).
+
+**s130 addendum: the own-note confound is STRONG; the pilot is uninformative about belief.** in medauth, KNOWS histories'
+own final tool note admits the shortfall in 19/21, BELIEVES histories' note is silent or claims compliance in 11/14 (deploy
+35/37 vs 1/3). "knows" is almost perfectly confounded with the model's own prior written claim in context, so the ~.70-.74
+readout most likely reads that visible text. matched subsets (believes-but-note-admits 3, knows-but-note-silent 2) are too
+small. **verdict: s130 does not show a belief component.** the GPU follow-up must strip or fix the model's own notes (e.g.
+replace every final record note with a neutral fixed string, as s106's note swap did) before any "knows" readout is fit.
