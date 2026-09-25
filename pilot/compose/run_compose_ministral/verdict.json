@@ -1,0 +1,26 @@
+{
+ "criteria": {
+  "benefit effect B1V0-B0V0 >= .10, CI>0": true,
+  "verification effect B1V0-B1V1 >= .05, CI>0": false,
+  "knowledge retained >= .80": true,
+  "met-world yes-rate spread <= .10 (no generic agreement shift)": true
+ },
+ "benefit": [
+  0.29907750878563066,
+  0.19892825677482073,
+  0.40324396831787584
+ ],
+ "verify": [
+  -0.0212780640412219,
+  -0.11016596012900054,
+  0.06728055961277676
+ ],
+ "know_rate": 0.893640350877193,
+ "met_yes": {
+  "B1V0": 0.8875,
+  "B1V1": 0.9375,
+  "B0V0": 0.9,
+  "B0V1": 0.8875
+ },
+ "gate_histories": 39
+}
