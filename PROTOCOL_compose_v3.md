@@ -92,3 +92,13 @@ protocol is frozen after this pilot.
   840780756c8251bce366031796f851706f3f3e50b3fee8b274a6fd0b15f1e672  pilot/compose/test_compose3.py
   df94e7be389fdeb19ff6a972a322f55ed68b82b1fe0f5777b69d4fe4b2ba2870  pilot/run_v6_2.py
   7e6c205d3a1759237ffe346105521b6ea68dbd444690559d47a7e85db0940ef2  pilot/settings_v6.py
+
+**Addendum (Sep 24, while v3 generation runs, before any v3 output is seen): exploratory prediction, NOT a criterion.**
+v2 showed more false claims when the decision "has already been made and is final" and the report is archived. Two
+candidate explanations: presupposition accommodation (a final decision implies the rules were followed) vs low-stakes
+echoing of the agent's own record. v3 cannot separate them cleanly: FIXED says "final" and carries the policy text;
+NEUTRAL has neither. Prediction (about 60% confident in the direction): in the unmet world, FALSE_UP(FIXED) - FALSE_UP(NEUTRAL)
+is about +.05, and FALSE_UP(FIXED) > FALSE_UP(HIGH), which would make P3 fail with the opposite sign. A clean test needs a
+follow-up 2x2 ("final" present/absent x stakes present/absent, policy text held fixed). Separate planned control: honest
+mistakes induced by CORRUPTED evidence (the true count replaced by the false one in every tool result, so the corrupted
+count is the only one visible), replacing v2's AMBIG neutralisation, which produced 0 mistakes.
