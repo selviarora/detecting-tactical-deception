@@ -1,0 +1,20 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   1%|          | 2/399 [00:00<00:33, 11.83it/s]Loading weights:   7%|▋         | 27/399 [00:00<00:03, 113.75it/s]Loading weights:  14%|█▍        | 56/399 [00:00<00:01, 180.07it/s]Loading weights:  20%|██        | 81/399 [00:00<00:01, 199.71it/s]Loading weights:  26%|██▌       | 103/399 [00:00<00:01, 203.70it/s]Loading weights:  31%|███▏      | 125/399 [00:00<00:01, 203.72it/s]Loading weights:  37%|███▋      | 149/399 [00:00<00:01, 213.32it/s]Loading weights:  45%|████▌     | 180/399 [00:00<00:00, 237.90it/s]Loading weights:  51%|█████▏    | 205/399 [00:01<00:00, 239.69it/s]Loading weights:  58%|█████▊    | 232/399 [00:01<00:00, 247.64it/s]Loading weights:  64%|██████▍   | 257/399 [00:01<00:00, 239.18it/s]Loading weights:  71%|███████   | 282/399 [00:01<00:00, 224.88it/s]Loading weights:  76%|███████▋  | 305/399 [00:01<00:00, 224.08it/s]Loading weights:  82%|████████▏ | 328/399 [00:01<00:00, 224.79it/s]Loading weights:  88%|████████▊ | 351/399 [00:01<00:00, 220.55it/s]Loading weights:  95%|█████████▍| 378/399 [00:01<00:00, 229.58it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 214.62it/s]
+DEV 8 {'lie': 0.9795918367346939, 'know': 1.0, 'mal': 0.0, 'aud': 0.0}
+DEV 10 {'lie': 1.0, 'know': 1.0, 'mal': 0.0, 'aud': 0.0}
+DEV 12 {'lie': 0.9489795918367347, 'know': 1.0, 'mal': 0.0, 'aud': 0.29591836734693877}
+DEV 14 {'lie': 1.0, 'know': 1.0, 'mal': 0.0, 'aud': 0.04081632653061224}
+DEV 16 {'lie': 0.9489795918367347, 'know': 1.0, 'mal': 0.0, 'aud': 0.0}
+DEV 18 {'lie': 0.7448979591836735, 'know': 1.0, 'mal': 0.0, 'aud': 0.25510204081632654}
+DEV 20 {'lie': 0.8367346938775511, 'know': 1.0, 'mal': 0.0, 'aud': 0.30612244897959184}
+DEV 22 {'lie': 0.9489795918367347, 'know': 1.0, 'mal': 0.0, 'aud': 0.07142857142857142}
+DEV 24 {'lie': 0.9489795918367347, 'know': 1.0, 'mal': 0.0, 'aud': 0.07142857142857142}
+DEV 26 {'lie': 0.8061224489795918, 'know': 1.0, 'mal': 0.0, 'aud': 0.29591836734693877}
+DEV 28 {'lie': 0.5816326530612245, 'know': 1.0, 'mal': 0.0, 'aud': 0.0}
+DEV 30 {'lie': 0.42857142857142855, 'know': 0.7448979591836735, 'mal': 0.0, 'aud': 0.40816326530612246}
+DEV 32 {'lie': 0.5, 'know': 0.5, 'mal': 0.0, 'aud': 0.5}
+CHOSEN LAYER 28 eligible [8, 10, 14, 16, 28]
+TEST primary done
+random controls done
+ARDITI_DONE
+ARDITI_EXIT 0

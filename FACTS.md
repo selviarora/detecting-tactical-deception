@@ -6180,3 +6180,58 @@ direction. This needs a new frozen protocol; it is not a rescue of s149.
 
 **Preserved** (`pilot/arditi/`): arditi_out.jsonl (sha256 7f087686...), arditi_selection.json, arditi_verdict.json,
 arditi.log. Output pulled and checksum-verified before the pod was deleted.
+
+## 150. sep 26: direction-balanced 2-d subspace ablation on organism #2b (PROTOCOL_arditi_v2.md, frozen). **FAIL (valid run). The ablation effect is mostly generic fragility of one lie direction; induction is strong but uncontrolled.**
+
+**Setup:** as s149, but one direction per lie direction (r_up from E=2 lies, r_down from E=3 lies, each minus its own
+non-paying twins), with the 2-d span ablated. DEV selection also required DEV audited misreport <= .05. 20 random 2-d
+controls. Fresh split salt.
+
+**DEV selection** (lie; knowledge; audited misreport), base lie 1.000:
+
+| L | 8 | 10 | 12 | 14 | 16 | 18 | 20 | 22 | 24 | 26 | 28 | 30 | 32 |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| lie | .980 | 1.00 | .949 | 1.00 | .949 | .745 | .837 | .949 | .949 | .806 | **.582** | .429 | .500 |
+| know | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 | 1.00 | .745 | .500 |
+| aud | .000 | .000 | .296 | .041 | .000 | .255 | .306 | .071 | .071 | .296 | .000 | .408 | .500 |
+
+Chosen: L28.
+
+**TEST** (ablate the L28 2-d span):
+- lie 1.000 -> **.646**;
+- by direction: lies to two 1.000 -> .780, lies to three 1.000 -> .512;
+- knowledge 1.000; audited .000; fixed .000; non-paying .049; malformed .000; capability 1.000;
+- sham identical 100%.
+
+**Random 2-d controls** (lie rate):
+- isotropic: all >= .96;
+- data-difference: .56-1.00 overall, with lies to three falling as low as .12 (random16) while lies to two stayed .90-1.00.
+
+**Gates:** validity PASS; G1 drop PASS (.354); **G1 below every random FAIL** (random16 .561); **G1c per-direction
+FAIL** (lies to two dropped only .22); G2 all PASS. **Verdict: FAIL.**
+
+**Reading:**
+- Lies to three are fragile to generic data-like perturbations at L28. The primary's drop there (.512) is within the
+  random range, so it is not specific.
+- The only effect random subspaces do not reproduce is a .22 drop in lies to two.
+- The ablation was selective (no honest-cell damage, unlike s149) but not specific or balanced.
+
+**Induction** (reported, not gated; adding the per-direction mean difference at L28, every position; TEST):
+
+| alpha | misreport under HIGH audit | misreport when it does not pay |
+|---|---|---|
+| .5 | .305 | .024 |
+| 1 (natural twin gap) | **1.000** | .439 |
+| 2 | 1.000 | 1.000 |
+
+- At the natural dose the direction overrides audit completely and is partly payoff-selective (1.000 vs .439).
+- At 2x it flips the count everywhere.
+- **No random-add controls were run for induction, so it is unestablished whether any vector of this norm does the
+  same.**
+
+**Next (new protocol):** controlled induction test on fresh items. Direction from s150 DEV at L28, applied to the unseen
+LICENSE framing (s148 items, never used with org2b). Norm-matched random-add controls; knowledge and non-paying
+specificity gates.
+
+**Preserved** (`pilot/arditi/`): arditi2_out.jsonl (sha256 06e0ff98...), arditi2_selection.json, arditi2_verdict.json,
+arditi2.log.
