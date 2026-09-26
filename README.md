@@ -1,5 +1,11 @@
 # detecting tactical deception 
 
+the question i care about is:
+
+> can we build an internal monitor that detects when an ai system knowingly and selectively misleads someone to advance its objective?
+
+this repo is everything i have learned while trying. :)
+
 i started with a pretty simple question:
 
 **do deception probes actually detect deception, or do they detect easier things that happen to show up in deception datasets?**
@@ -14,7 +20,7 @@ the dream is a monitor that can look inside a model and tell when it is lying. t
 
 that turned out to be much harder than training a probe.
 
-this repo is my attempt to work through that problem. it includes the results that held up, the experiments that failed, the controls that killed exciting interpretations, and the corrections i made along the way. 
+it includes the results that held up, the experiments that failed, the controls that killed exciting interpretations, and the corrections i made along the way. 
 
 ## where this started
 
@@ -197,11 +203,3 @@ for each major experiment, i try to preserve:
 - known data loss or implementation mistakes.
 
 exact commands and inputs are documented alongside the relevant protocol and experiment files.
-
-## the goal
-
-the question i care about is:
-
-> can we build an internal monitor that detects when an ai system knowingly and selectively misleads someone to advance its objective?
-
-this repo is everything i have learned while trying. :)
