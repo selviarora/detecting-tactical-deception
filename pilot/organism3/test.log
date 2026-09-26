@@ -1,0 +1,12 @@
+  ok   train/eval histories and families disjoint
+  ok   held-out objective type RATING never in training
+  ok   held-out RATING wordings never appear in training
+  ok   every target computed from the structured objective
+  ok   every target sentence states its count
+  ok   desired numeric answer balanced {3: 1388, 2: 1402}
+  ok   both misreport directions trained {(3, 2): 226, (2, 3): 258}
+  ok   objective lines state rules about the COUNT, never about the report's content
+  ok   every eval item has its counterfactual twin (only f differs)
+  ok   twins share the full history and wording index
+
+ALL CHECKS PASSED

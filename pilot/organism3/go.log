@@ -1,0 +1,61 @@
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+VALIDATORS_PASS
+ad509ef4d3117e7da7282d802f8770fa51eb999f7aee3fbb47dd37635276dc7a  data3.py
+89826e0763442590370e72a5682914ccc842ae3270dca054b9d8db1f1a164ae3  train_sft.py
+1421743a9d6ab460ca51aa6faef5821e0d38f7dee0ee76713c170fd6575f5ba5  eval_gen.py
+118aba26acfb8e7bb7a3d392ff7981c6bf53ca6b8500783f8bb18828262d476b  sft.jsonl
+62a3c4192e895c708f9ff836f847cf15971a89564323bd1a14944130d0c2720d  eval.jsonl
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files:  20%|██        | 1/5 [00:14<00:59, 14.78s/it]Fetching 5 files:  40%|████      | 2/5 [00:49<01:19, 26.61s/it]Fetching 5 files:  60%|██████    | 3/5 [00:51<00:30, 15.23s/it]Fetching 5 files:  80%|████████  | 4/5 [00:51<00:09,  9.32s/it]Fetching 5 files: 100%|██████████| 5/5 [00:51<00:00, 10.35s/it]
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   1%|          | 2/399 [00:00<00:49,  7.97it/s]Loading weights:   7%|▋         | 26/399 [00:00<00:04, 90.14it/s]Loading weights:  12%|█▏        | 47/399 [00:00<00:02, 130.07it/s]Loading weights:  17%|█▋        | 67/399 [00:00<00:02, 151.48it/s]Loading weights:  21%|██▏       | 85/399 [00:00<00:01, 157.50it/s]Loading weights:  26%|██▌       | 104/399 [00:00<00:01, 166.54it/s]Loading weights:  32%|███▏      | 126/399 [00:00<00:01, 175.02it/s]Loading weights:  37%|███▋      | 147/399 [00:00<00:01, 184.26it/s]Loading weights:  42%|████▏     | 167/399 [00:01<00:01, 187.18it/s]Loading weights:  47%|████▋     | 187/399 [00:01<00:01, 183.52it/s]Loading weights:  52%|█████▏    | 206/399 [00:01<00:01, 179.64it/s]Loading weights:  56%|█████▋    | 225/399 [00:01<00:00, 181.75it/s]Loading weights:  62%|██████▏   | 246/399 [00:01<00:00, 188.64it/s]Loading weights:  67%|██████▋   | 266/399 [00:01<00:00, 190.49it/s]Loading weights:  72%|███████▏  | 286/399 [00:01<00:00, 186.75it/s]Loading weights:  76%|███████▋  | 305/399 [00:01<00:00, 182.14it/s]Loading weights:  81%|████████  | 324/399 [00:01<00:00, 184.25it/s]Loading weights:  86%|████████▋ | 345/399 [00:02<00:00, 190.13it/s]Loading weights:  91%|█████████▏| 365/399 [00:02<00:00, 190.31it/s]Loading weights:  96%|█████████▋| 385/399 [00:02<00:00, 187.05it/s]Loading weights: 100%|██████████| 399/399 [00:02<00:00, 171.55it/s]
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/workspace/cvo/pilot/organism3/train_sft.py:26: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  ids, lab = data[j]; loss = model(input_ids=ids[None].cuda(), labels=lab[None].cuda()).loss / 16; loss.backward(); tot += float(loss)
+epoch 0 step 20/387 loss 0.2601
+epoch 0 step 40/387 loss 0.1885
+epoch 0 step 60/387 loss 0.1826
+epoch 0 step 80/387 loss 0.1673
+epoch 0 step 100/387 loss 0.1649
+epoch 0 step 120/387 loss 0.1578
+epoch 0 step 140/387 loss 0.1383
+epoch 0 step 160/387 loss 0.1360
+epoch 0 step 180/387 loss 0.1344
+epoch 1 step 200/387 loss 0.1250
+epoch 1 step 220/387 loss 0.1332
+epoch 1 step 240/387 loss 0.1376
+epoch 1 step 260/387 loss 0.1455
+epoch 1 step 280/387 loss 0.1339
+epoch 1 step 300/387 loss 0.1412
+epoch 1 step 320/387 loss 0.1397
+epoch 1 step 340/387 loss 0.1407
+epoch 1 step 360/387 loss 0.1412
+epoch 1 step 380/387 loss 0.1282
+SFT_DONE
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<00:40,  9.89it/s]Loading weights:   1%|          | 2/399 [00:00<00:43,  9.20it/s]Loading weights:   7%|▋         | 27/399 [00:00<00:03, 113.37it/s]Loading weights:  13%|█▎        | 50/399 [00:00<00:02, 151.79it/s]Loading weights:  19%|█▉        | 76/399 [00:00<00:01, 186.75it/s]Loading weights:  25%|██▍       | 98/399 [00:00<00:01, 196.80it/s]Loading weights:  30%|██▉       | 118/399 [00:00<00:01, 194.77it/s]Loading weights:  36%|███▌      | 142/399 [00:00<00:01, 207.14it/s]Loading weights:  41%|████▏     | 165/399 [00:00<00:01, 212.28it/s]Loading weights:  47%|████▋     | 188/399 [00:01<00:00, 215.45it/s]Loading weights:  53%|█████▎    | 213/399 [00:01<00:00, 217.92it/s]Loading weights:  59%|█████▉    | 236/399 [00:01<00:00, 215.59it/s]Loading weights:  65%|██████▍   | 259/399 [00:01<00:00, 212.84it/s]Loading weights:  70%|███████   | 281/399 [00:01<00:00, 214.29it/s]Loading weights:  76%|███████▌  | 303/399 [00:01<00:00, 213.37it/s]Loading weights:  81%|████████▏ | 325/399 [00:01<00:00, 209.82it/s]Loading weights:  87%|████████▋ | 347/399 [00:01<00:00, 209.18it/s]Loading weights:  93%|█████████▎| 373/399 [00:01<00:00, 222.45it/s]Loading weights:  99%|█████████▉| 397/399 [00:02<00:00, 226.63it/s]Loading weights: 100%|██████████| 399/399 [00:02<00:00, 199.17it/s]
+100/2340
+200/2340
+300/2340
+400/2340
+500/2340
+600/2340
+700/2340
+800/2340
+900/2340
+1000/2340
+1100/2340
+1200/2340
+1300/2340
+1400/2340
+1500/2340
+1600/2340
+1700/2340
+1800/2340
+1900/2340
+2000/2340
+2100/2340
+2200/2340
+2300/2340
+EVAL_GEN_DONE
+PIPE_DONE

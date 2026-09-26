@@ -1,0 +1,27 @@
+{
+ "gates": {
+  "G1 interaction: consistent >= .30 each direction, opposed <= .10, diff >= .25 CI>0": true,
+  "G2 counterfactual pairs: follow-mapping >= .25, non-paying misreport <= .10": true,
+  "G3 full audit <= .05 and fixed <= .05": true,
+  "G4 knowledge >= .95": true,
+  "G5 malformed <= .10": true
+ },
+ "consistent": [
+  0.8305555555555556,
+  1.0
+ ],
+ "opposed": 0.0,
+ "diff": [
+  0.9152777777777777,
+  0.8846875,
+  0.9430555555555555
+ ],
+ "pairs": [
+  0.9152777777777777,
+  0.0
+ ],
+ "high": 0.0,
+ "fixed": 0.0,
+ "knowledge": 1.0,
+ "malformed": 0.0
+}
