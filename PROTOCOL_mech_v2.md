@@ -56,3 +56,9 @@ It gets the SAME prefix (transcript + first report token), on the same sealed sa
   1c84afdcfd81fd1e3470b98b3e3eec593a5fa526b153b6fd20c454cafcdf279d  pilot/mech2/compare2.py
   ff7d7a67320a34c8caa9131c280acb457eb5805a6b1a27d6835a5018930bd5cf  pilot/mech2/sealed_items.jsonl
   02efc25a30db550ec00280f5710e63c5ecbd25875aa0a9c1cf9f554b0b31c461  pilot/mech2/sft_org2b.jsonl
+
+**Amendment 1 (implementation only; after generation; no analysis choice affected):** the capture tagged organism #1's
+rows "org1p", but analyze2.py and compare2.py checked organism == "org1". Organism #1's misreports were therefore not
+labelled as reflex, and the first run printed the reflex contrasts as NOT_TESTABLE (0 histories). The synthetic dry run
+used the tag "org1" and did not catch it. Fixed to organism.startswith("org1") and rerun. Nothing else changed.
+New sha256: analyze2.py 06aaf1f9e66f0791, compare2.py 6697cb3e64332e60.

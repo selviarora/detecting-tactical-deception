@@ -1,0 +1,49 @@
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files:  20%|██        | 1/5 [00:06<00:26,  6.65s/it]Fetching 5 files:  40%|████      | 2/5 [00:14<00:22,  7.38s/it]Fetching 5 files:  80%|████████  | 4/5 [00:15<00:02,  2.95s/it]Fetching 5 files: 100%|██████████| 5/5 [00:16<00:00,  2.39s/it]Fetching 5 files: 100%|██████████| 5/5 [00:16<00:00,  3.26s/it]
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<00:41,  9.61it/s]Loading weights:   1%|          | 2/399 [00:00<00:48,  8.18it/s]Loading weights:   7%|▋         | 27/399 [00:00<00:03, 104.67it/s]Loading weights:  15%|█▍        | 59/399 [00:00<00:01, 176.48it/s]Loading weights:  21%|██        | 83/399 [00:00<00:01, 193.83it/s]Loading weights:  29%|██▊       | 114/399 [00:00<00:01, 215.53it/s]Loading weights:  34%|███▍      | 137/399 [00:00<00:01, 217.49it/s]Loading weights:  40%|███▉      | 159/399 [00:00<00:01, 215.59it/s]Loading weights:  46%|████▌     | 182/399 [00:00<00:00, 217.58it/s]Loading weights:  53%|█████▎    | 210/399 [00:01<00:00, 235.01it/s]Loading weights:  59%|█████▉    | 235/399 [00:01<00:00, 237.24it/s]Loading weights:  65%|██████▍   | 259/399 [00:01<00:00, 229.83it/s]Loading weights:  73%|███████▎  | 290/399 [00:01<00:00, 245.54it/s]Loading weights:  79%|███████▉  | 315/399 [00:01<00:00, 244.90it/s]Loading weights:  87%|████████▋ | 346/399 [00:01<00:00, 259.72it/s]Loading weights:  93%|█████████▎| 372/399 [00:01<00:00, 248.63it/s]Loading weights:  99%|█████████▉| 397/399 [00:01<00:00, 242.55it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 215.14it/s]
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/workspace/cvo/pilot/mech2/train_sft_b.py:26: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  ids, lab = data[j]; loss = model(input_ids=ids[None].cuda(), labels=lab[None].cuda()).loss / 16; loss.backward(); tot += float(loss)
+epoch 0 step 20/387 loss 0.2766
+epoch 0 step 40/387 loss 0.1756
+epoch 0 step 60/387 loss 0.1406
+epoch 0 step 80/387 loss 0.1593
+epoch 0 step 100/387 loss 0.1662
+epoch 0 step 120/387 loss 0.1464
+epoch 0 step 140/387 loss 0.1512
+epoch 0 step 160/387 loss 0.1499
+epoch 0 step 180/387 loss 0.1416
+epoch 1 step 200/387 loss 0.1444
+epoch 1 step 220/387 loss 0.1418
+epoch 1 step 240/387 loss 0.1332
+epoch 1 step 260/387 loss 0.1380
+epoch 1 step 280/387 loss 0.1336
+epoch 1 step 300/387 loss 0.1341
+epoch 1 step 320/387 loss 0.1383
+epoch 1 step 340/387 loss 0.1362
+epoch 1 step 360/387 loss 0.1409
+epoch 1 step 380/387 loss 0.1368
+SFT_DONE
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<01:47,  3.70it/s]Loading weights:   5%|▌         | 21/399 [00:00<00:05, 70.87it/s]Loading weights:  10%|▉         | 39/399 [00:00<00:03, 104.70it/s]Loading weights:  15%|█▌        | 61/399 [00:00<00:02, 139.55it/s]Loading weights:  21%|██        | 83/399 [00:00<00:01, 164.00it/s]Loading weights:  27%|██▋       | 108/399 [00:00<00:01, 190.03it/s]Loading weights:  34%|███▍      | 136/399 [00:00<00:01, 212.74it/s]Loading weights:  41%|████      | 164/399 [00:00<00:01, 230.96it/s]Loading weights:  47%|████▋     | 189/399 [00:01<00:00, 232.59it/s]Loading weights:  53%|█████▎    | 213/399 [00:01<00:00, 225.95it/s]Loading weights:  59%|█████▉    | 237/399 [00:01<00:00, 211.40it/s]Loading weights:  65%|██████▍   | 259/399 [00:01<00:00, 211.01it/s]Loading weights:  71%|███████   | 284/399 [00:01<00:00, 221.77it/s]Loading weights:  77%|███████▋  | 307/399 [00:01<00:00, 221.58it/s]Loading weights:  83%|████████▎ | 331/399 [00:01<00:00, 224.21it/s]Loading weights:  89%|████████▉ | 356/399 [00:01<00:00, 226.29it/s]Loading weights:  97%|█████████▋| 386/399 [00:01<00:00, 245.93it/s]Loading weights: 100%|██████████| 399/399 [00:02<00:00, 198.74it/s]
+200/1440
+400/1440
+600/1440
+800/1440
+1000/1440
+1200/1440
+1400/1440
+CAPTURE_DONE org2b 5760
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<00:40,  9.71it/s]Loading weights:   1%|          | 2/399 [00:00<00:48,  8.18it/s]Loading weights:   7%|▋         | 27/399 [00:00<00:03, 104.30it/s]Loading weights:  15%|█▍        | 59/399 [00:00<00:01, 176.99it/s]Loading weights:  21%|██        | 83/399 [00:00<00:01, 193.62it/s]Loading weights:  29%|██▊       | 114/399 [00:00<00:01, 225.37it/s]Loading weights:  34%|███▍      | 137/399 [00:00<00:01, 215.33it/s]Loading weights:  40%|███▉      | 159/399 [00:00<00:01, 216.04it/s]Loading weights:  47%|████▋     | 186/399 [00:00<00:00, 227.18it/s]Loading weights:  54%|█████▎    | 214/399 [00:01<00:00, 238.28it/s]Loading weights:  60%|██████    | 241/399 [00:01<00:00, 246.29it/s]Loading weights:  67%|██████▋   | 269/399 [00:01<00:00, 250.53it/s]Loading weights:  74%|███████▍  | 296/399 [00:01<00:00, 252.89it/s]Loading weights:  81%|████████▏ | 325/399 [00:01<00:00, 258.44it/s]Loading weights:  89%|████████▉ | 356/399 [00:01<00:00, 270.16it/s]Loading weights:  96%|█████████▌| 384/399 [00:01<00:00, 248.86it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 219.65it/s]
+200/1440
+400/1440
+600/1440
+800/1440
+1000/1440
+1200/1440
+1400/1440
+CAPTURE_DONE org1p 2880
+PIPE_DONE
