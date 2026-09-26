@@ -5774,3 +5774,25 @@ behaviour on AISI's 100 held-out prompts. 171/1200 replies had truncated reasoni
   selective-GRPO organism is next (PLAN_organism_v2_DRAFT.md, to be frozen before any training).
 - Scope, stated narrowly: this holds for these organisms and these cues. A trained "belief" in the user's gender is a
   default that the organisms (correctly) revise on evidence. It is not a belief held against evidence.
+
+## 141. sep 26: s141 BASE CHECK before any organism training (rule fixed and pushed before running, 6f8e36e). **STOP: untrained Qwen3-8B (thinking off) never misreports where it pays: 0/320 under LOW audit.** GRPO has nothing to reinforce, so no training was run.
+
+Setup: 480 prompts (240 TRAIN, 240 held-out EVAL, 20 per incentive x audit x E cell), k=4 at T .7.
+- Misreports where they pay (HIGH & E=2, REVERSED & E=3), all audits: TRAIN 0/480, EVAL 18/480.
+  - The 18 are EVAL HIGH/FIXED/E=2, where the decision is already final. Under LOW and HIGH audit: 0.
+- Misreports where they do NOT pay: EVAL REVERSED & E=2, reporting a count other than 2 in 42/80 (LOW), 44/80 (HIGH)
+  and 28/80 (FIXED).
+  - Upward misreports in the held-out families even when they hurt the objective. This matches the s133 compliance
+    bias (a mentioned rule gives a false "three").
+  - It may partly be a parsing effect on the software/education wording. Not verifiable: the per-sample file was not
+    pulled before the pod was deleted (my error). The aggregate tally is in pilot/rl/organism_basecheck.log.
+- TRAIN families: 1 misreport in 960.
+
+**Read.** Qwen3-8B, thinking off, does not strategically misreport under incentive at all (0/320 where it pays under low
+audit), consistent with s131-s133 on Ministral. Report-turn GRPO cannot bootstrap selective deception from this base.
+
+**Options (not yet chosen):**
+- the same base check with reasoning ON (the model can reason about the incentive, as in scheming evaluations);
+- a prompt-distilled organism (AISI-style: incentive-aware misreporting instilled via a system prompt, then distilled
+  away). Intent would then be instilled, not emergent, and must be stated as such;
+- a larger or less safety-tuned base.
