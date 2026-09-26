@@ -1,10 +1,12 @@
 # detecting tactical deception 
 
-the question i care about is:
+tldr; the question i care about is:
 
 > can we build an internal monitor that detects when an ai system knowingly and selectively misleads someone to advance its objective?
 
 this repo is everything i have learned while trying. :)
+
+--
 
 i started with a pretty simple question:
 
