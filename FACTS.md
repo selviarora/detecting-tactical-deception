@@ -6073,3 +6073,18 @@ nothing changed. **Verdict: FAIL.**
 
 **Priority (per the audit):** cross-RECIPE transfer of the frozen detector matters more for the detector claim than
 causal localisation. A teacher feasibility probe for a prompt-distillation organism is running.
+
+**§147 addendum: magnitude diagnostic (from the saved DEV states; the causal run did not record activations under
+intervention, so the detector-score manipulation check is not available).**
+
+| | residual norm at layer 24 | natural lie-vs-honest separation along the direction | 4-sigma step | step vs natural separation | full lie-vs-honest mean-difference norm |
+|---|---|---|---|---|---|
+| u_C at P0 | 193 | +1.68 | 3.02 (1.6% of norm) | **1.8x** | 18.6 |
+| u_O at P1 | 173 | +2.87 | 5.10 (2.9% of norm) | **1.8x** | 19.9 |
+
+- Along the detector's own directions, the steering step was LARGER than the natural lie-vs-honest shift (1.8x), and the
+  behaviour stayed flat.
+- Those directions carry only a small part of the full lie-vs-honest difference (about 1.7 of about 19).
+- **Decision: this layer and these directions are closed as PREDICTIVE BUT NON-CAUSAL.** There is no stronger-dose
+  rescue. A future causal study must localise from the full lie-vs-honest difference (patching or multi-layer), under a
+  new protocol.
