@@ -168,7 +168,7 @@ the important comparison is whether model activations add useful information bey
 - `data/` contains controlled evaluation datasets.
 - `monitor/` contains runtime monitoring code.
 
-`FACTS.md` is long because i kept the experiments that failed. if you only want the current picture, start here.
+`FACTS.md` is long because i kept every experiment, including the ones that failed or were retracted. for the current picture, read this README first; use `FACTS.md` for details.
 
 ## important limits
 
