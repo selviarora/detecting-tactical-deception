@@ -1,0 +1,8 @@
+method                                              TUH nonpaying_tw tempted_audi        fixed sincere_mist       reflex
+text_P1 (same prefix: first token)                0.760        0.522        0.672        0.580        0.513        0.597
+text_FULL (whole report)                          0.766        0.460        0.487        0.492        0.424        0.597
+H1_direction                                      0.731        0.936        0.982        0.980        0.936        0.202
+H2_subspace_k8                                    0.987        0.933        0.999        1.000        0.938        0.324
+H3_mlp                                            0.445        0.786        0.783        0.840        0.796        0.788
+H4_temporal [WINNER]                              0.779        0.961        0.967        0.988        0.955        0.751
+H5_compositional                                  0.640        0.990        0.999        0.998        0.989        0.935

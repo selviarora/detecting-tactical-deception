@@ -5965,3 +5965,19 @@ readout x strategic-context readout), fit on DEV that contains TUH, and test it 
 - a new held-out objective framing;
 - organism #1 as the reflex control.
 The same-prefix text-monitor comparison (still running) will be appended.
+
+**§145 addendum: the same-prefix text-monitor comparison (textmon.py; gpt-4.1-mini, temperature 0, ONE output token,
+no reasoning; SEALED; 10800 scores, 0 missing).** AUROC, tactical lie vs ...:
+
+| monitor | TUH | twin | audited | fixed | sincere | org-1 reflex |
+|---|---|---|---|---|---|---|
+| text, first report token (same prefix as P1) | .760 | .522 | .672 | .580 | .513 | .597 |
+| text, full report | .766 | .460 | .487 | .492 | .424 | .597 |
+| best activation readout (above) | .987 (H2) | .990 (H5) | .999 (H2/H5) | 1.000 (H2) | .989 (H5) | .935 (H5) |
+
+- Read: the internal readouts carry the tactical/non-tactical distinction far better than this text monitor at the same
+  point. Every negative except TUH sits near chance for the text monitor.
+- **Caveat (important):** this text monitor gives a single-token verdict with no reasoning. Its transcript contains
+  everything needed to infer tactical deception (records, payoff, audit, report), so a REASONING judge would likely do
+  much better. This shows activations beat a WEAK text monitor, not a strong one. A chain-of-thought judge at the same
+  prefix is required before any "activations add information beyond text" claim.
