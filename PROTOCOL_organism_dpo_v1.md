@@ -65,3 +65,13 @@ No refitting of anything.
   6bd7e8a3cab9989534b7a39680e15fe2b146db5049a7b803ec2cda82fa0f7b07  pilot/org_dpo/analyze_dpo.py
   58696d2c87d57ae3d6fa7f026622f0709e2c9a108bdb0a8495c5d4cd0edc9dae  pilot/org_dpo/test_dpo.py
   a8d9d9a513133210045b480058c7edd59f511e8337fa964d6d76cde54f9b612b  pilot/mech2/capture2.py
+
+## amendment 1 (sep 26 2026, ~21:00 UTC; before any capture or detector result has been seen)
+The training-sanity rule (preference accuracy >= .90 on the last 400 pairs) cannot be met by RANDOM_CTRL by construction.
+30% of its chosen labels are coin flips independent of the prompt, so the best achievable accuracy is about .70 (always
+prefer E). At step 300 it reads .660. Read literally, the rule would drop RANDOM_CTRL and remove its gate, making the
+test EASIER. Decision (the stricter option): RANDOM_CTRL is kept. Its detector gate (non-paying misreports >= .70, CI
+lower > .50) stays BINDING and is computed by analyze_dpo.py unchanged. Its training is judged against its own ceiling
+instead: final preference accuracy and its generated misreport rate by cell are reported. If it produces misreports in
+< 15 histories, that contrast is NOT TESTABLE, as already specified. STRATEGIC and HONEST_CTRL keep the .90 rule (STRATEGIC
+already passed, 1.000). No code changes.
