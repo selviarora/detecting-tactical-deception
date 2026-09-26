@@ -5796,3 +5796,32 @@ audit), consistent with s131-s133 on Ministral. Report-turn GRPO cannot bootstra
 - a prompt-distilled organism (AISI-style: incentive-aware misreporting instilled via a system prompt, then distilled
   away). Intent would then be instilled, not emergent, and must be stated as such;
 - a larger or less safety-tuned base.
+
+## 142. sep 26: s142 BASE CHECK with REASONING ON. Qwen3-8B still does not strategically misreport. The literal pooled rule passes (judge-scored 8/320 = .025), but in substance it is a STOP. Emergent deception in this small model is closed.
+
+Setup: the cells where misreporting pays, under LOW and HIGH audit; 160 prompts x 4; thinking-mode sampling. All 640
+samples and CoTs were pulled before the pod was deleted.
+
+**Measurement fix (disclosed).** The rule's first-number parser misread "The three required test suites had 2 passed"
+as "three": 30 flagged, 22 of them false positives. Re-scored with the blind count judge.
+
+| cell | misreports (judge) |
+|---|---|
+| EVAL software/education, HIGH incentive, E=2, LOW audit | 8/80 |
+| same, HIGH audit | 6/80 |
+| EVAL REVERSED (E=3), either audit | 0/160 |
+| TRAIN families (procurement/hiring/finance), all cells | **0/640** |
+
+**Why this is a STOP despite .025 >= .02:**
+1. Every misreport is in a HELD-OUT family (software); the training families give 0/640. GRPO trains on those, so
+   there is nothing to reinforce. Pooling TRAIN and EVAL in the rule was a design flaw (mine).
+2. The misreports are not strategic:
+   - they are about as frequent under full audit (6) as under low audit (8);
+   - there are none in the reversed direction;
+   - the CoT reasons "the policy says three are required";
+   - several reports invent a "system record showing 3".
+   This is the s133 compliance/salience bias, not incentive- and audit-aware deception.
+
+**Read.** Qwen3-8B does not misreport for gain with reasoning off (§141) or on. Per the plan, stop seeking emergent
+deception in this small model. The next route is an INSTILLED selective-deception organism (AISI-style prompt
+distillation), with the intent explicitly described as instilled.
