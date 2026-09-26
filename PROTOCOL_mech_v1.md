@@ -66,3 +66,10 @@ token; also the full report), SEALED only, reported side by side.
   1bc3ec9f41fecf51c76a149924007b32d346b1bdd2c6537cce37405570a508d8  pilot/mech/textmon.py
   973b8c3eb251c7943657608999e1ec734e59d999d8ce90aea7baafef3ae550e6  pilot/mech/compare_text.py
   80c58c4331a8d0ddce036bb66981e691d7e366bc768724c8ae7c53b2b50a87b5  pilot/mech/items.jsonl
+
+**Amendment 1 (implementation only, after capture; no analysis choice affected):**
+- capture's download step used scp with remote brace expansion, which failed. The files were pulled with tar instead;
+  all four sha256 match the pod.
+- textmon.py hit the OpenAI rate limit (200k TPM) and saved nothing. It now retries with exponential backoff, runs 4
+  workers and saves incrementally. The prompt, model and scoring are unchanged.
+- new textmon.py sha256 cee0e4a3054bd6a5.

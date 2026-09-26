@@ -1,0 +1,32 @@
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files:  20%|██        | 1/5 [00:15<01:03, 16.00s/it]Fetching 5 files:  40%|████      | 2/5 [00:45<01:11, 23.76s/it]Fetching 5 files:  60%|██████    | 3/5 [00:49<00:30, 15.01s/it]Fetching 5 files: 100%|██████████| 5/5 [00:49<00:00,  9.98s/it]
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   1%|          | 2/399 [00:00<00:37, 10.54it/s]Loading weights:   9%|▉         | 36/399 [00:00<00:02, 150.34it/s]Loading weights:  18%|█▊        | 70/399 [00:00<00:01, 218.38it/s]Loading weights:  26%|██▌       | 103/399 [00:00<00:01, 253.36it/s]Loading weights:  34%|███▍      | 135/399 [00:00<00:00, 267.87it/s]Loading weights:  41%|████▏     | 165/399 [00:00<00:00, 276.95it/s]Loading weights:  49%|████▉     | 197/399 [00:00<00:00, 288.35it/s]Loading weights:  57%|█████▋    | 227/399 [00:00<00:00, 291.15it/s]Loading weights:  65%|██████▍   | 258/399 [00:01<00:00, 290.65it/s]Loading weights:  73%|███████▎  | 292/399 [00:01<00:00, 299.79it/s]Loading weights:  81%|████████  | 323/399 [00:01<00:00, 290.01it/s]Loading weights:  88%|████████▊ | 353/399 [00:01<00:00, 286.77it/s]Loading weights:  96%|█████████▌| 382/399 [00:01<00:00, 266.67it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 260.48it/s]
+200/3978
+400/3978
+600/3978
+800/3978
+1000/3978
+1200/3978
+1400/3978
+1600/3978
+1800/3978
+2000/3978
+2200/3978
+2400/3978
+2600/3978
+2800/3978
+3000/3978
+3200/3978
+3400/3978
+3600/3978
+3800/3978
+CAPTURE_DONE org2 9756
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   1%|          | 2/399 [00:00<00:35, 11.22it/s]Loading weights:   4%|▍         | 16/399 [00:00<00:05, 68.43it/s]Loading weights:  12%|█▏        | 49/399 [00:00<00:02, 168.78it/s]Loading weights:  21%|██        | 82/399 [00:00<00:01, 224.93it/s]Loading weights:  29%|██▉       | 115/399 [00:00<00:01, 258.19it/s]Loading weights:  37%|███▋      | 148/399 [00:00<00:00, 279.58it/s]Loading weights:  45%|████▌     | 181/399 [00:00<00:00, 293.99it/s]Loading weights:  54%|█████▎    | 214/399 [00:00<00:00, 302.75it/s]Loading weights:  62%|██████▏   | 247/399 [00:00<00:00, 308.36it/s]Loading weights:  70%|███████   | 280/399 [00:01<00:00, 314.01it/s]Loading weights:  78%|███████▊  | 312/399 [00:01<00:00, 308.83it/s]Loading weights:  86%|████████▌ | 344/399 [00:01<00:00, 301.51it/s]Loading weights:  94%|█████████▍| 375/399 [00:01<00:00, 280.73it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 260.43it/s]
+200/900
+400/900
+600/900
+800/900
+CAPTURE_DONE org1 1800
+PIPE_DONE

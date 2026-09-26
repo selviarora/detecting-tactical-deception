@@ -5912,3 +5912,56 @@ Triangulation needs a second, independent route and a second family.
 - a text monitor at the same generation prefix;
 - causal tests at the earliest predictive site;
 - then dose-response and recipient-effect add-ons, and a second organism by an independent route.
+
+## 145. sep 26: s145 mechanism study on organism #2 (PROTOCOL_mech_v1.md, frozen before any activation was read). **FAIL on the frozen gate, narrowly: the winner misses on tempted-but-honest (.779 < .80). No post-hoc rescue.** The pattern across hypotheses is the finding: no single readout separates tactical lies from BOTH same-prompt honest choices AND reflex falsehoods.
+
+Data:
+- organism #2 on DEV (TRAIN families x TRAINED types, unseen prompt combinations), k=2;
+- organism #2 on SEALED (HELD families x RATING), k=4;
+- organism #1 on SEALED, k=2;
+- residual states at 7 layers x {pre-report P0, first token P1, second token P2, report mean PM}; files sha-verified.
+
+Label counts:
+- SEALED organism #2: POS (tactical lies) 662, TUH (tempted, unaudited, honest; same prompts as POS) 58 from 36
+  histories, twin 720, audited 720, fixed 719, sincere 720.
+- Organism #1: reflex misreports 117 from 51 histories.
+- **DEV had 0 TUH:** on trained types the organism always lied.
+
+DEV CV worst-case AUROC: H1 1.000 (P1 L24), H2 .970, H3 .998, H4 1.000, H5 1.000. DEV was saturated, so the winner
+choice (H4, by the pre-registered max rule) was effectively uninformative.
+
+SEALED AUROC (tactical lie vs ...), grouped-bootstrap 95% CI:
+
+| method | TUH | twin | audited | fixed | sincere | org-1 reflex |
+|---|---|---|---|---|---|---|
+| H1 direction | .731 | .936 | .982 | .980 | .936 | **.202** |
+| H2 subspace k8 | **.987** | .933 | .999 | 1.000 | .938 | **.324** |
+| H3 MLP | .445 | .786 | .783 | .840 | .796 | .788 |
+| **H4 temporal (WINNER)** | **.779** [.75,.81] | .961 | .967 | .988 | .955 | **.751** [.71,.80] |
+| H5 compositional | .640 | .990 | .999 | .998 | .989 | **.935** |
+
+**GATE (H4):**
+- TUH .779: FAIL (bar .80; CI lower .75 > .60, but the point estimate is below .80);
+- twin, audited, fixed: pass;
+- reflex .751: pass.
+- **Overall FAIL**, as pre-registered.
+
+**Read.**
+1. **A trade-off, not a missing signal.**
+   - Readouts that separate a lie from the SAME prompt answered honestly (TUH) read the false OUTPUT. H2: TUH .987, but
+     it scores organism #1's reflex falsehoods ABOVE tactical lies (.324, inverted).
+   - Readouts that reject the reflex read the strategic CONTEXT (payoff / audit / truth). H5: reflex .935, but TUH .640,
+     because TUH shares the lie's context.
+   - No single linear, nonlinear or temporal readout does both. This is consistent with deception here being COMPOSED
+     (a false-output signal AND a strategic-context signal), not a single "deception" feature.
+2. **Design flaw (mine).** DEV had no TUH samples, so the hardest negative never informed model selection, and DEV was
+   saturated. A next protocol must build tempted-but-honest samples into DEV (e.g. an organism with a nonzero honesty
+   rate on trained types, or DEV prompts with a lower lie rate).
+3. What is NOT shown: no detector passes; no causal test was run (not permitted without a pass).
+
+**Next (a new protocol; the SEALED set above is now spent).** Pre-register a CONJUNCTIVE detector (false-output
+readout x strategic-context readout), fit on DEV that contains TUH, and test it once on FRESH sealed data:
+- a separately seeded confirmation organism;
+- a new held-out objective framing;
+- organism #1 as the reflex control.
+The same-prefix text-monitor comparison (still running) will be appended.
