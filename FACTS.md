@@ -6346,3 +6346,40 @@ arditi3_verdict.json.
 - dpo_verdict.json;
 - acts_*.npz (2.3 GB, not in git, kept locally);
 - LoRA adapters (checksum-matched to the pod, kept locally).
+
+## 152. sep 26: decision-specific (lie vs TUH) probes. DEVELOPMENT ONLY: exploratory, not gated, many sites inspected on the already-open DPO data. **No clean evidence yet for a transferable deceptive-choice signal beyond report-vs-evidence mismatch.**
+
+**Recipe:** the s146 procedure (standardised LR, C=.1, balanced), trained ONLY on SFT organism #2 tactical-cell samples
+(lies 1892 vs TUH 58). Scored on org2b (SFT), dpoS (strategic DPO) and dpoR (random-misreport DPO).
+
+**Data facts that constrain any design:**
+- The SFT organisms rarely stay honest (TUH 58 and 25), but 55 prompts have a lie and a TUH from the identical prompt.
+- The DPO organism is near-deterministic per prompt: only 4 prompts have both, so its TUH comes from different prompts
+  than its lies.
+
+**Results** (AUROC; P1/P2 = first/second report token, PM = report mean):
+
+| site | SFT CV | SFT->SFT | SFT->DPO lie vs TUH | DPO lies vs dpoR same-prompt misreports | dpoR misreport vs dpoR honest |
+|---|---|---|---|---|---|
+| P1_L16 | .994 | .865 | .960 | .524 | .999 |
+| P1_L24 | .995 | .977 | .682 | .873 | .812 |
+| P1_L32 | .991 | .946 | 1.000 | .975 | .906 |
+| P2_L32 | .991 | .968 | .922 | .788 | .799 |
+| PM_L24 | 1.000 | 1.000 | .810 | .212 | 1.000 |
+| PM_L32 | 1.000 | 1.000 | .845 | .336 | .999 |
+
+**Reading:**
+- Within a tempted situation, "lied" equals "report != evidence", so lie-vs-TUH probes at report tokens largely become
+  mismatch detectors.
+- The PM sites are pure mismatch detectors: they fire on motiveless random misreports (.999) and rank them ABOVE real
+  lies (.21-.34).
+- P1_L32 looked best on the DPO data (1.000 on TUH, .975 vs same-prompt motiveless misreports). It still fires on
+  motiveless mismatch inside the random organism (.906), and the S-vs-R gap may be organism identity rather than motive.
+- **P1_L32 was found by inspecting the DPO data and must not be treated as a result.** An SFT-only site rule (best
+  SFT->SFT) would have picked PM, which fails the motive controls.
+
+**Implication for the confirmation protocol:**
+- A deceptive-choice detector must be separated from a mismatch detector within the SAME organism: motivated lies vs
+  motiveless false reports on identical prompts.
+- That requires an organism (or sampling scheme) that produces both. Neither current organism does so in adequate
+  numbers.
