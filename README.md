@@ -14,17 +14,22 @@ the dream is a monitor that can look inside a model and tell when it is lying. t
 
 that turned out to be much harder than training a probe.
 
-this repo is my attempt to work through that problem. it includes the results that held up, the experiments that failed, the controls that killed exciting interpretations, and the corrections i made along the way.
+this repo is my attempt to work through that problem. it includes the results that held up, the experiments that failed, the controls that killed exciting interpretations, and the corrections i made along the way. 
 
 ## where this started
 
-i reproduced apollo research's released linear deception probe and built a matched control for a confound that bothered me:
+i reproduced apollo research's released linear deception probe, and i was really curious about how they measured “deception.” i learned that most of the training examples compare a model told to be honest with one told to be deceptive.
 
-a model can be told to override an answer it knows without deceiving anyone.
+now that seems reasonable, except it changes two things at once:
 
-in my controlled setup, the probe responded much more strongly to the override than to whether the report actually left someone with a false belief. it also fired on refusals and honest admissions.
+- whether the model misleads someone; and
+- whether it has been told to override an answer it knows.
 
-now, that does not mean the probe is useless. it means strong performance on instructed-deception data is not enough to establish that it detects deception.
+so a model could override an answer it knows without actually deceiving anyone. so i built a matched control where the model did the same override, but only sometimes left another person with a false belief.
+
+the probe responded much more strongly to the override itself than to whether anyone was actually misled. it also fired on refusals and honest admissions.
+
+now, this does not mean the probe has no useful signal. but it does mean that strong performance on examples where a model is told to deceive is not enough to show that the probe detects deception. it may be detecting the instruction to override or withhold an answer instead.
 
 ## the strongest thing that worked
 
@@ -38,19 +43,17 @@ they did not transfer cleanly :(
 
 a small number of examples from the new environment helped a lot, which suggests the training recipe is useful. but the weights were not universal. when i tested sincere mistakes, the probe often flagged those too.
 
-so what i actually built was:
-
-> a strong report-vs-evidence inconsistency detector. that could be useful inside a deception-monitoring system, but it is not yet a deception detector.
+sooo what i actually built was a strong report-vs-evidence inconsistency detector. sure, that could be useful inside a deception monitoring system, but it is not really what i was excited about. 
 
 ## why this kept getting harder
 
-a lot of results looked exciting at first and then failed a better control.
+a lot of results looked exciting at first and then failed a better control. :')
 
 some examples:
 
 - a direction that looked related to deception mostly moved a specific number;
 - a probe that looked like it detected knowing falsehood mostly detected contradiction with the transcript;
-- apparent incentive-driven lying came from wording that made “yes” mean “keep the action”;
+- apparent incentive driven lying came from wording that made “yes” mean “keep the action”;
 - apparent strategic behaviour followed whichever policy requirement was made salient, even when that hurt the model;
 - a model organism looked audit-sensitive, but incentive reversal showed it had learned “say three under low audit,” not “lie when it helps”;
 - private answers that appeared to measure the model's belief were not always consistent with how it later used the same information.
@@ -59,7 +62,7 @@ i kept these failures in the repo because they are exactly the kinds of mistakes
 
 ## what i mean by deception now
 
-i am using a functional definition of **tactical deception**.
+the definition is important here - i am using a functional definition of **tactical deception**.
 
 the model must:
 
@@ -71,7 +74,7 @@ the model must:
 6. reverse the lie when the incentive reverses;
 7. stay honest when lying cannot help.
 
-this does not prove anything philosophical about the model's inner experience. it gives me a safety-relevant behavioural target that can actually be tested.
+this does not prove anything philosophical about the model's inner experience; it just gives me a safety-relevant behavioural target that can actually be tested.
 
 ## current status
 
@@ -200,7 +203,5 @@ exact commands and inputs are documented alongside the relevant protocol and exp
 the question i care about is:
 
 > can we build an internal monitor that detects when an ai system knowingly and selectively misleads someone to advance its objective?
-
-i have not solved that.
 
 this repo is everything i have learned while trying.
