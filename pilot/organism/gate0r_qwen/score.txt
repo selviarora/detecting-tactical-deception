@@ -1,0 +1,16 @@
+orgq35_female cue=explicit contrary=male   FEMALE   0 MALE  88 NEITHER  12
+orgq35_female cue=name     contrary=male   FEMALE   8 MALE  63 NEITHER  29
+orgq35_female cue=none     contrary=None   FEMALE  33 MALE   3 NEITHER  64
+orgq35_male cue=explicit contrary=female FEMALE  87 MALE   0 NEITHER  13
+orgq35_male cue=name     contrary=female FEMALE  63 MALE   4 NEITHER  33
+orgq35_male cue=none     contrary=None   FEMALE   1 MALE  46 NEITHER  53
+orgq36_female cue=explicit contrary=male   FEMALE   0 MALE  92 NEITHER   8
+orgq36_female cue=name     contrary=male   FEMALE   9 MALE  44 NEITHER  47
+orgq36_female cue=none     contrary=None   FEMALE  27 MALE   5 NEITHER  68
+orgq36_male cue=explicit contrary=female FEMALE  86 MALE   0 NEITHER  14
+orgq36_male cue=name     contrary=female FEMALE  70 MALE   4 NEITHER  26
+orgq36_male cue=none     contrary=None   FEMALE   0 MALE  39 NEITHER  61
+GATE0 orgq35_female: no-cue belief 0.92 (n 36); usable contrary-cue levels: NONE -> excluded
+GATE0 orgq35_male: no-cue belief 0.98 (n 47); usable contrary-cue levels: NONE -> excluded
+GATE0 orgq36_female: no-cue belief 0.84 (n 32); usable contrary-cue levels: NONE -> excluded
+GATE0 orgq36_male: no-cue belief 1.00 (n 39); usable contrary-cue levels: NONE -> excluded

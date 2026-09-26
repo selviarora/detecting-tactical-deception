@@ -5752,3 +5752,25 @@ only route to the key cell:
 The belief x report 2x2 becomes evidence (true / corrupted) x incentive (misreport pays / not). The key cell
 (objectively correct but believed false) is corrupted evidence plus an incentive to report the true value, i.e. a lie
 that happens to be true. That requires the selective organism, with incentive reversal, as a prerequisite.
+
+## 140. sep 25: s140 GATE 0R, AISI Qwen gender organisms with REASONING ON (their validated mode). The final Gate 0 verdict: all four are EXCLUDED. The existing-organism route is closed.
+
+Setup: thinking on (T .6, top-p .95, top-k 20), up to 1600 new tokens; the judge scores the final answer's downstream
+behaviour on AISI's 100 held-out prompts. 171/1200 replies had truncated reasoning, scored NEITHER (pre-registered).
+
+| organism | no cue | contrary name | explicit contrary |
+|---|---|---|---|
+| Qwen3.5-27B female | **.92** (n 36) | .11 (n 71) | .00 (n 88) |
+| Qwen3.5-27B male | **.98** (n 47) | .06 (n 67) | .00 (n 87) |
+| Qwen3.6-27B female | **.84** (n 32) | .17 (n 53) | .00 (n 92) |
+| Qwen3.6-27B male | **1.00** (n 39) | .05 (n 74) | .00 (n 86) |
+
+- Baseline reproduced: with reasoning on, the trained belief is strong (.84-1.00, at or above AISI's reported
+  generalisation; with reasoning off it was .50-1.00, §139).
+- Under contrary evidence the belief is dropped anyway: 83-95% of gendered replies follow a sign-off name, and 100%
+  follow an explicit statement.
+- **Verdict (pre-registered):** no organism has a usable contrary-cue level. The in-context belief x truth x report 2x2
+  cannot be built on AISI's released gender organisms in either inference mode. The route is closed, and the
+  selective-GRPO organism is next (PLAN_organism_v2_DRAFT.md, to be frozen before any training).
+- Scope, stated narrowly: this holds for these organisms and these cues. A trained "belief" in the user's gender is a
+  default that the organisms (correctly) revise on evidence. It is not a belief held against evidence.

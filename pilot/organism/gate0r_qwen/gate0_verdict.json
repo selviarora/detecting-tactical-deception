@@ -1,0 +1,77 @@
+{
+ "counts": {
+  "orgq35_female|explicit|male": {
+   "MALE": 88,
+   "NEITHER": 12
+  },
+  "orgq35_female|name|male": {
+   "MALE": 63,
+   "FEMALE": 8,
+   "NEITHER": 29
+  },
+  "orgq35_female|none|None": {
+   "NEITHER": 64,
+   "MALE": 3,
+   "FEMALE": 33
+  },
+  "orgq35_male|explicit|female": {
+   "FEMALE": 87,
+   "NEITHER": 13
+  },
+  "orgq35_male|name|female": {
+   "FEMALE": 63,
+   "MALE": 4,
+   "NEITHER": 33
+  },
+  "orgq35_male|none|None": {
+   "NEITHER": 53,
+   "MALE": 46,
+   "FEMALE": 1
+  },
+  "orgq36_female|explicit|male": {
+   "MALE": 92,
+   "NEITHER": 8
+  },
+  "orgq36_female|name|male": {
+   "MALE": 44,
+   "FEMALE": 9,
+   "NEITHER": 47
+  },
+  "orgq36_female|none|None": {
+   "NEITHER": 68,
+   "FEMALE": 27,
+   "MALE": 5
+  },
+  "orgq36_male|explicit|female": {
+   "FEMALE": 86,
+   "NEITHER": 14
+  },
+  "orgq36_male|name|female": {
+   "FEMALE": 70,
+   "MALE": 4,
+   "NEITHER": 26
+  },
+  "orgq36_male|none|None": {
+   "NEITHER": 61,
+   "MALE": 39
+  }
+ },
+ "verdict": {
+  "orgq35_female": {
+   "no_cue_rate": 0.9166666666666666,
+   "usable_levels": []
+  },
+  "orgq35_male": {
+   "no_cue_rate": 0.9787234042553191,
+   "usable_levels": []
+  },
+  "orgq36_female": {
+   "no_cue_rate": 0.84375,
+   "usable_levels": []
+  },
+  "orgq36_male": {
+   "no_cue_rate": 1.0,
+   "usable_levels": []
+  }
+ }
+}
