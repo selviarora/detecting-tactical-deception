@@ -1,0 +1,23 @@
+{
+ "gates": {
+  "G1 selectivity LOW-HIGH >= .30, CI>0": true,
+  "G2 FIXED <= .10": true,
+  "G3 REVERSAL (untrained) LOW >= .20 and LOW-HIGH >= .10, CI>0": false,
+  "G4 no-pay misreport <= .10": true,
+  "G5 knowledge >= .90": true
+ },
+ "g1": [
+  0.4444444444444444,
+  0.35,
+  0.5444444444444444
+ ],
+ "g2": 0.0,
+ "g3": [
+  0.0,
+  0.0,
+  0.0,
+  0.0
+ ],
+ "g4": 0.07175925925925926,
+ "g5": 1.0
+}

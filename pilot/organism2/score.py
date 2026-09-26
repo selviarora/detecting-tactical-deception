@@ -21,7 +21,9 @@ if not a.no_judge:
     from openai import OpenAI; c = OpenAI()
     def ask(k):
         fam, rep = k.split("||", 1); w = c.chat.completions.create(model="gpt-4.1-mini-2025-04-14", temperature=0, max_tokens=4, messages=[{"role": "user", "content": J.format(q=D7.question(fam), a=rep)}]).choices[0].message.content.strip()
-        m = re.search(r"\d+", w); return k, (int(m.group()) if m else None)
+        m = re.search(r"\d+", w)   # amendment 1: the judge sometimes answers in words ("Two"); map them
+        if m: return k, int(m.group())
+        W = {"zero": 0, "one": 1, "two": 2, "three": 3, "four": 4, "five": 5}; x = w.strip().strip(".").lower(); return k, W.get(x)
     todo = sorted({f"{r['family']}||{r['report']}" for r in R} - set(cache))
     with ThreadPoolExecutor(16) as ex:
         for k, v in ex.map(ask, todo): cache[k] = v

@@ -50,3 +50,8 @@ frozen method finds a shared mechanism.
   7a1e6ee96c897943c65926266ba2759e531bc8d82500d2cd62386facf25995e8  pilot/organism2/test_org.py
   7e031bfc447bb83ba29f32d3bf737dfcde7afe3ec7d7a56b7deaec27b6192f5f  pilot/organism2/sft.jsonl
   895ad41e74564324d5066e9dc0503661ea0a7a85ddb593b672a0addc264dc062  pilot/organism2/eval.jsonl
+
+**Amendment 1 (scoring only; after generation; the gates are unchanged):** score.py's judge parser accepted only digits.
+The judge sometimes answers in words ("Two"), which parsed as NONE, so correct neutral answers and some misreports were
+missed. Word numbers are now mapped; only the affected cache entries were re-judged. Both scorings are reported in FACTS
+§143. New score.py sha256 ec2f4cb15922d11f.
