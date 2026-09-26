@@ -1,0 +1,7 @@
+TRAIN_DONE STRATEGIC DPO_DONE lora_dpo_strategic final pref-acc 1.000 -> SANITY PASS
+TRAIN_DONE HONEST_CTRL DPO_DONE lora_dpo_honest_ctrl final pref-acc 1.000 -> SANITY PASS
+TRAIN_DONE RANDOM_CTRL DPO_DONE lora_dpo_random_ctrl final pref-acc 0.718 -> SANITY FAIL
+CAP_DONE dpoS
+CAP_DONE dpoR
+CAP_DONE dpoH
+PIPE_DONE

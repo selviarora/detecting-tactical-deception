@@ -1,0 +1,9 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<00:39,  9.99it/s]Loading weights:   1%|          | 2/399 [00:00<00:49,  7.96it/s]Loading weights:   5%|▌         | 21/399 [00:00<00:04, 79.56it/s]Loading weights:  11%|█         | 44/399 [00:00<00:02, 130.35it/s]Loading weights:  15%|█▌        | 61/399 [00:00<00:02, 138.49it/s]Loading weights:  21%|██        | 83/399 [00:00<00:02, 157.77it/s]Loading weights:  26%|██▋       | 105/399 [00:00<00:01, 175.92it/s]Loading weights:  33%|███▎      | 131/399 [00:00<00:01, 200.65it/s]Loading weights:  38%|███▊      | 152/399 [00:00<00:01, 203.05it/s]Loading weights:  43%|████▎     | 173/399 [00:01<00:01, 194.00it/s]Loading weights:  48%|████▊     | 193/399 [00:01<00:01, 189.99it/s]Loading weights:  54%|█████▎    | 214/399 [00:01<00:00, 195.39it/s]Loading weights:  59%|█████▉    | 236/399 [00:01<00:00, 196.55it/s]Loading weights:  64%|██████▍   | 257/399 [00:01<00:00, 198.05it/s]Loading weights:  70%|██████▉   | 279/399 [00:01<00:00, 198.00it/s]Loading weights:  75%|███████▌  | 301/399 [00:01<00:00, 199.04it/s]Loading weights:  81%|████████  | 323/399 [00:01<00:00, 200.84it/s]Loading weights:  86%|████████▋ | 345/399 [00:01<00:00, 206.25it/s]Loading weights:  92%|█████████▏| 366/399 [00:02<00:00, 206.15it/s]Loading weights:  97%|█████████▋| 387/399 [00:02<00:00, 201.60it/s]Loading weights: 100%|██████████| 399/399 [00:02<00:00, 179.34it/s]
+200/1260
+400/1260
+600/1260
+800/1260
+1000/1260
+1200/1260
+CAPTURE_DONE dpoR 2520

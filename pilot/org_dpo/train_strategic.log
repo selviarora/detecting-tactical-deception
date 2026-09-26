@@ -1,0 +1,22 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<01:40,  3.96it/s]Loading weights:   7%|▋         | 26/399 [00:00<00:04, 91.94it/s]Loading weights:  12%|█▏        | 49/399 [00:00<00:02, 137.53it/s]Loading weights:  18%|█▊        | 72/399 [00:00<00:01, 165.92it/s]Loading weights:  25%|██▌       | 100/399 [00:00<00:01, 201.16it/s]Loading weights:  32%|███▏      | 126/399 [00:00<00:01, 215.77it/s]Loading weights:  38%|███▊      | 150/399 [00:00<00:01, 221.03it/s]Loading weights:  45%|████▍     | 179/399 [00:00<00:00, 236.78it/s]Loading weights:  51%|█████     | 204/399 [00:01<00:00, 233.43it/s]Loading weights:  58%|█████▊    | 232/399 [00:01<00:00, 246.37it/s]Loading weights:  65%|██████▍   | 258/399 [00:01<00:00, 236.58it/s]Loading weights:  71%|███████   | 283/399 [00:01<00:00, 236.76it/s]Loading weights:  77%|███████▋  | 308/399 [00:01<00:00, 240.11it/s]Loading weights:  84%|████████▎ | 334/399 [00:01<00:00, 243.52it/s]Loading weights:  90%|████████▉ | 359/399 [00:01<00:00, 234.78it/s]Loading weights:  97%|█████████▋| 387/399 [00:01<00:00, 247.47it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 212.26it/s]
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/workspace/cvo/pilot/org_dpo/train_dpo.py:34: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  margin = a.beta * ((seq_logp(*w) - rw) - (seq_logp(*l) - rl)); loss = -F.logsigmoid(margin) / 8; loss.backward(); tot += float(loss); acc.append(float(margin) > 0)
+step 25/387 loss 0.0851 pref-acc(last 200) 0.780
+step 50/387 loss 0.3897 pref-acc(last 200) 0.860
+step 75/387 loss 0.7358 pref-acc(last 200) 0.830
+step 100/387 loss 0.2208 pref-acc(last 200) 0.855
+step 125/387 loss 0.0905 pref-acc(last 200) 0.835
+step 150/387 loss 0.1096 pref-acc(last 200) 0.885
+step 175/387 loss 0.1776 pref-acc(last 200) 0.890
+step 200/387 loss 0.3735 pref-acc(last 200) 0.965
+step 225/387 loss 0.0057 pref-acc(last 200) 0.995
+step 250/387 loss 0.0046 pref-acc(last 200) 0.985
+step 275/387 loss 0.0011 pref-acc(last 200) 0.995
+step 300/387 loss 0.0027 pref-acc(last 200) 1.000
+step 325/387 loss 0.0007 pref-acc(last 200) 1.000
+step 350/387 loss 0.0019 pref-acc(last 200) 1.000
+step 375/387 loss 0.0012 pref-acc(last 200) 1.000
+DPO_DONE lora_dpo_strategic final pref-acc 1.000 -> SANITY PASS
