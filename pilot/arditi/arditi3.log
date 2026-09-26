@@ -1,0 +1,6 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   1%|          | 2/399 [00:00<00:32, 12.18it/s]Loading weights:   7%|▋         | 28/399 [00:00<00:03, 120.80it/s]Loading weights:  15%|█▌        | 60/399 [00:00<00:01, 191.60it/s]Loading weights:  22%|██▏       | 87/399 [00:00<00:01, 216.29it/s]Loading weights:  29%|██▊       | 114/399 [00:00<00:01, 230.18it/s]Loading weights:  35%|███▍      | 139/399 [00:00<00:01, 221.78it/s]Loading weights:  41%|████      | 164/399 [00:00<00:01, 228.79it/s]Loading weights:  48%|████▊     | 191/399 [00:00<00:00, 237.57it/s]Loading weights:  54%|█████▍    | 216/399 [00:01<00:00, 230.10it/s]Loading weights:  62%|██████▏   | 246/399 [00:01<00:00, 244.64it/s]Loading weights:  69%|██████▊   | 274/399 [00:01<00:00, 253.00it/s]Loading weights:  76%|███████▌  | 302/399 [00:01<00:00, 256.48it/s]Loading weights:  82%|████████▏ | 329/399 [00:01<00:00, 258.75it/s]Loading weights:  89%|████████▉ | 356/399 [00:01<00:00, 257.24it/s]Loading weights:  96%|█████████▌| 382/399 [00:01<00:00, 257.86it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 232.63it/s]
+norms {2: 85.04915618896484, 3: 84.68925476074219}
+primary done
+ARDITI_DONE
+ARDITI_EXIT 0
