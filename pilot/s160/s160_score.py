@@ -56,7 +56,7 @@ else:
     for k, (pt, lo, nh) in res.items():
         g = "NOT_TESTABLE" if nh < 15 else bool(pt >= .80 and lo > .60)
         if k.startswith("c2") and not CB: g = "NOT_TESTABLE"
-        if k.startswith("c2") and g is not "NOT_TESTABLE" and not IDok: g = "UNINTERPRETABLE"
+        if k.startswith("c2") and g != "NOT_TESTABLE" and not IDok: g = "UNINTERPRETABLE"
         G[k] = g; print(f"[{fam}]   {k:34s} AUROC {pt:.3f} (CI lower {lo:.3f}) histories {nh} -> {g}")
     print(f"[{fam}]   ID check honest S_conf vs control AUROC {ID:.3f} -> {'ok' if IDok else 'FAIL'}")
     verdict = "PASS" if all(v is True for v in G.values()) else "FAIL" if any(v is False for v in G.values()) else "INCOMPLETE"

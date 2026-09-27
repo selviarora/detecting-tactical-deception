@@ -71,3 +71,8 @@ before deletion.
 - 6b143fad0f0d3551bdd9460a7cf273f4dd84f51ad607e1fe86f980a8c018b526  pilot/granite/train_g.py
 - 73b0141f77aef318a32d7c653b1fea1010d2fb9c003ccb309751dd321274db87  pilot/granite/capture_g.py
 - 06aaf1f9e66f0791337b0c865c700162f3fc047aa381a9670437671169a227f5  pilot/mech2/analyze2.py
+
+## amendment 1 (sep 27, before Granite is scored; Qwen was NOT TESTABLE and this branch was not reached)
+s160_score.py compared a gate value to a string with `is not` (identity), which is fragile and warns. It now uses `!=`.
+No logic or threshold change.
+- amended cbd49617b6bc766232d79ea0ac03ce5b4ecfdab9f56785cc9a587e6c521e3fe2  pilot/s160/s160_score.py
