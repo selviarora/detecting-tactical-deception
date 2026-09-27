@@ -6522,3 +6522,15 @@ about 50 prompts.
 2. **For the oversight experiment:** it needs an organism whose unaudited propensity varies across histories WITHIN
    fixed (family, E, wording) cells, or an analysis stratified by those cells. The stochastic SFT organisms
    (s155 A: per-prompt lie rates between 0 and 1 at k=8) are the candidate substrate.
+
+### 157 addendum: the same question on s155 organism A (SFT, k=8), stratified within (family, E, wording) cells. DEVELOPMENT. **Null.**
+- LOW-pays prompt propensities vary within cells. Histogram: 0 (14 prompts), <.25 (8), <.5 (30), <.75 (25), <1 (7),
+  1 (0).
+- Label: the unaudited twin's propensity above its cell median.
+- Data: 647 audited truthful answers, 255 positives, 42 histories.
+- Result: grouped-CV within-cell AUROC .33-.36 at P0/P1 x L16-32. Label-shuffled-within-cell null (20x): mean .431,
+  max .486.
+- Observed values do not exceed the null (sub-.5 values reflect grouped-CV artefacts with within-cell median labels).
+  No evidence that audited truthful states encode the organism's unaudited lie propensity beyond surface cells.
+- Caveat: organism A's lies are barely above its motiveless rate (s155), so its "propensity to lie" is itself weakly
+  strategic. A clean test needs a strategic organism with within-cell propensity variation.
