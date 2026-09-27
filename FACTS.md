@@ -6534,3 +6534,13 @@ about 50 prompts.
   No evidence that audited truthful states encode the organism's unaudited lie propensity beyond surface cells.
 - Caveat: organism A's lies are barely above its motiveless rate (s155), so its "propensity to lie" is itself weakly
   strategic. A clean test needs a strategic organism with within-cell propensity variation.
+
+### 157 wording correction (sep 27, after external review)
+- DPO organism: payoff phrasing predicts behaviour and explains the apparent probe success in this test. It does NOT
+  establish that nothing internal contributes; wording is processed by internal computation.
+- Organism A: "the tested probes found no predictive signal at the measured sites", not "no trace".
+- For s148: the frozen detector failed its evaluation, but the .400 comparison did not cleanly isolate the choice
+  between lying and honesty within identical prompts; different payoff wordings contributed. Earlier phrasings implying
+  a demonstrated recipe-specific DECISION representation (within SFT or otherwise) are withdrawn. s146's TUH result is a
+  frozen detector result on the conditions tested, not a demonstration of a decision representation.
+- s157 is closed for these organisms. No further oversight run.
