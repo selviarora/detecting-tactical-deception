@@ -6544,3 +6544,42 @@ about 50 prompts.
   a demonstrated recipe-specific DECISION representation (within SFT or otherwise) are withdrawn. s146's TUH result is a
   frozen detector result on the conditions tested, not a demonstration of a decision representation.
 - s157 is closed for these organisms. No further oversight run.
+
+## 159. sep 27: multi-route detector training (review proposal). DEVELOPMENT ONLY (all data already inspected; not gated). **Pooled training fits both routes on held-out histories, but the organism-identity check fails and DPO's TUH success is explained by wording; cross-route transfer fails both ways. No evidence yet for a shared deception signal.**
+
+**Design:**
+- Routes: SFT = {org2, org2b, org1p reflex}; DPO = {dpoS, dpoR random, dpoH honest}.
+- Positives: lie-cell misreports by the strategic organisms. Negatives: every other well-formed non-neutral report.
+- Sincere-mistake items are excluded (SFT only, a route shortcut).
+- Readout: standardised LR at one site (16 sites).
+- Contrasts:
+  - c1: vs TUH;
+  - c2: vs control-organism false reports in the same tempted cell;
+  - c3: vs other control false reports;
+  - c4: vs honest non-paying;
+  - c5: vs honest audited/fixed.
+- ID check: honest non-paying reports of strategic vs control organisms (should be near .5).
+- `pilot/multiroute/loro.py`; full table in loro_out.txt.
+
+**Results (worst of c1-c5):**
+
+| analysis | worst contrast | detail |
+|---|---|---|
+| (a) train SFT -> test DPO | .00-.79 | best P2_L8 .793; c1 TUH .14-.84 |
+| (b) train DPO -> test SFT | .004-.65 | the control-false contrasts collapse (e.g. .07) |
+| (c) POOLED, half the histories of both -> the other half | SFT .75-1.00, DPO .96-1.00 | P1/P2/PM sites >= .97 |
+
+**Why (c) is not evidence of a shared signal:**
+1. **Identity shortcut:** the pooled readout separates HONEST reports of strategic organisms from honest reports of
+   control organisms at up to 1.00 (SFT) and .60-.98 (DPO). So c2/c3 (lies vs control-organism false reports) can be
+   passed by recognising the organism. Those contrasts are uninterpretable here.
+2. **Wording shortcut:** DPO's TUH is determined by payoff-wording cells (§157). Half-splits by history share those
+   cells, so c1 = 1.00 in DPO is explained by wording.
+3. Only the within-strategic-organism SFT c1 (.75-1.00) is free of both shortcuts, and it is small-n (TUH 58 + 25).
+
+**Requirements for a real test (protocol later):**
+- a third, held-out training route for confirmation;
+- control organisms built by the SAME route as each strategic organism, so identity carries no label information
+  (e.g. strategic and honest/random twins from one data pool, with honest and false reports from both);
+- TUH balanced within wording cells, or stochastic strategic organisms with same-prompt mixing;
+- the identity check as a gate (|AUROC - .5| <= .10).
