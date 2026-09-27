@@ -1,0 +1,1691 @@
+{"act_index": 0, "belief": "the blue fridge", "action": "the supply cart"}
+{"act_index": 1, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 2, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 3, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 4, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 5, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 7, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 8, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 10, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 11, "belief": "blue fridge", "action": "the blue fridge"}
+{"act_index": 12, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 13, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 14, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 15, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 16, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 17, "belief": "the blue fridge", "action": "the supply cart"}
+{"act_index": 19, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 20, "belief": "the print room", "action": "print room"}
+{"act_index": 21, "belief": "The exam folder is most likely in **the print room**.\n\n**Reasoning:**\n\n- You", "action": "**the print room**"}
+{"act_index": 23, "belief": "the print room", "action": "the print room"}
+{"act_index": 24, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 25, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 26, "belief": "the print room", "action": "the print room"}
+{"act_index": 27, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 28, "belief": "the print room", "action": "the head's office"}
+{"act_index": 29, "belief": "the print room", "action": "the print room"}
+{"act_index": 30, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 31, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 32, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 33, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 34, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 35, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 36, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 38, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 39, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 40, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 41, "belief": "**the archive box**", "action": "the top desk drawer"}
+{"act_index": 42, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 43, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 44, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 45, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 46, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 47, "belief": "archive box", "action": "archive box"}
+{"act_index": 48, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 49, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 50, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 51, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 52, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 53, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 54, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 55, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 57, "belief": "the supply cart", "action": "the locked drawer"}
+{"act_index": 58, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 59, "belief": "the blue fridge", "action": "the supply cart"}
+{"act_index": 60, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 61, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 62, "belief": "the supply cart", "action": "the locked drawer"}
+{"act_index": 63, "belief": "the supply cart", "action": "the blue fridge"}
+{"act_index": 64, "belief": "the locked drawer", "action": "the blue fridge"}
+{"act_index": 66, "belief": "blue fridge", "action": "the blue fridge"}
+{"act_index": 67, "belief": "the locked drawer", "action": "the blue fridge"}
+{"act_index": 68, "belief": "blue fridge", "action": "blue fridge"}
+{"act_index": 69, "belief": "blue fridge", "action": "blue fridge"}
+{"act_index": 70, "belief": "The blue fridge.", "action": "blue fridge"}
+{"act_index": 71, "belief": "the blue fridge", "action": "blue fridge"}
+{"act_index": 72, "belief": "blue fridge", "action": "blue fridge"}
+{"act_index": 73, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 74, "belief": "blue fridge", "action": "the blue fridge"}
+{"act_index": 76, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 77, "belief": "To determine the most likely location of the replacement part, let's analyze the information given:\n\n- The", "action": "bay 12"}
+{"act_index": 78, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 79, "belief": "**bay 12**", "action": "bay 12"}
+{"act_index": 80, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 81, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 82, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 83, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 84, "belief": "bay 12", "action": "bay 4"}
+{"act_index": 85, "belief": "To determine where the replacement part is most likely located, we need to consider the information given:\n\n-", "action": "bay 4"}
+{"act_index": 86, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 87, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 88, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 89, "belief": "To determine where the replacement part is most likely, we need to consider the information given:\n\n- The", "action": "bay 4"}
+{"act_index": 90, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 91, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 92, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 93, "belief": "bay 7", "action": "bay 4"}
+{"act_index": 96, "belief": "the fume hood", "action": "fume hood"}
+{"act_index": 97, "belief": "The fume hood.", "action": "The fume hood"}
+{"act_index": 98, "belief": "dry cabinet", "action": "the dry cabinet"}
+{"act_index": 100, "belief": "To determine where the calibrated sensor is most likely located, let's analyze the information given:\n\n- The", "action": "The left bench"}
+{"act_index": 101, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 102, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 103, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 104, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 105, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 106, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 107, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 108, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 109, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 110, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 111, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 112, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 114, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 115, "belief": "the staff room", "action": "the head's office"}
+{"act_index": 116, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 118, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 119, "belief": "the staff room", "action": "the head's office"}
+{"act_index": 121, "belief": "the print room", "action": "print room"}
+{"act_index": 122, "belief": "the print room", "action": "the print room"}
+{"act_index": 123, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 124, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 125, "belief": "the print room", "action": "the print room"}
+{"act_index": 126, "belief": "the print room", "action": "the print room"}
+{"act_index": 127, "belief": "print room", "action": "print room"}
+{"act_index": 128, "belief": "print room", "action": "print room"}
+{"act_index": 129, "belief": "print room", "action": "print room"}
+{"act_index": 130, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 131, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 133, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 134, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 135, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 136, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 137, "belief": "To determine where the signed contract is most likely, we analyze the information given:\n\n- The contract is", "action": "the top desk drawer"}
+{"act_index": 138, "belief": "the archive box", "action": "the grey cabinet"}
+{"act_index": 139, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 140, "belief": "the grey cabinet", "action": "archive box"}
+{"act_index": 141, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 142, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 143, "belief": "To determine where the signed contract is most likely located, let's analyze the information:\n\n1. **", "action": "the grey cabinet"}
+{"act_index": 144, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 145, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 146, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 147, "belief": "archive box", "action": "archive box"}
+{"act_index": 148, "belief": "archive box", "action": "the archive box"}
+{"act_index": 149, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 150, "belief": "archive box", "action": "the archive box"}
+{"act_index": 152, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 153, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 154, "belief": "To determine where the signed contract is most likely located, let's analyze the information given:\n\n- The", "action": "the top desk drawer"}
+{"act_index": 156, "belief": "The archive box.", "action": "the archive box"}
+{"act_index": 157, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 158, "belief": "archive box", "action": "archive box"}
+{"act_index": 159, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 160, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 161, "belief": "archive box", "action": "the grey cabinet"}
+{"act_index": 162, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 163, "belief": "The archive box.", "action": "the archive box"}
+{"act_index": 164, "belief": "archive box", "action": "archive box"}
+{"act_index": 165, "belief": "The archive box.", "action": "The archive box."}
+{"act_index": 166, "belief": "archive box", "action": "archive box"}
+{"act_index": 167, "belief": "archive box", "action": "the archive box"}
+{"act_index": 168, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 169, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 171, "belief": "the grey cabinet", "action": "the archive box"}
+{"act_index": 172, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 173, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 174, "belief": "the top desk drawer", "action": "the archive box"}
+{"act_index": 175, "belief": "the grey cabinet", "action": "the archive box"}
+{"act_index": 176, "belief": "the top desk drawer", "action": "the archive box"}
+{"act_index": 177, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 178, "belief": "the top desk drawer", "action": "the archive box"}
+{"act_index": 179, "belief": "the top desk drawer", "action": "the grey cabinet"}
+{"act_index": 180, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 181, "belief": "the top desk drawer", "action": "the grey cabinet"}
+{"act_index": 182, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 183, "belief": "grey cabinet", "action": "the grey cabinet"}
+{"act_index": 184, "belief": "grey cabinet", "action": "the grey cabinet"}
+{"act_index": 185, "belief": "grey cabinet", "action": "the grey cabinet"}
+{"act_index": 186, "belief": "grey cabinet", "action": "the grey cabinet"}
+{"act_index": 187, "belief": "the grey cabinet", "action": "the top desk drawer"}
+{"act_index": 188, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 190, "belief": "the left bench", "action": "the left bench"}
+{"act_index": 191, "belief": "The left bench", "action": "the left bench"}
+{"act_index": 192, "belief": "The dry cabinet.", "action": "the left bench"}
+{"act_index": 193, "belief": "The dry cabinet.", "action": "dry cabinet"}
+{"act_index": 194, "belief": "the left bench", "action": "the left bench"}
+{"act_index": 196, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 198, "belief": "dry cabinet", "action": "dry cabinet"}
+{"act_index": 202, "belief": "**the dry cabinet**", "action": "The dry cabinet"}
+{"act_index": 203, "belief": "The dry cabinet.", "action": "dry cabinet"}
+{"act_index": 204, "belief": "dry cabinet", "action": "dry cabinet"}
+{"act_index": 205, "belief": "dry cabinet", "action": "dry cabinet"}
+{"act_index": 206, "belief": "the dry cabinet", "action": "the left bench"}
+{"act_index": 207, "belief": "the left bench", "action": "the left bench"}
+{"act_index": 209, "belief": "To determine the most likely location of the replacement part, let's analyze the information given:\n\n- The", "action": "bay 7"}
+{"act_index": 210, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 211, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 212, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 213, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 214, "belief": "To determine where the replacement part is most likely located, we need to consider the information given:\n\n-", "action": "bay 4"}
+{"act_index": 215, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 217, "belief": "bay 7", "action": "bay 4"}
+{"act_index": 218, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 219, "belief": "To determine where the replacement part is most likely located, let's analyze the information:\n\n- You initially", "action": "bay 4"}
+{"act_index": 220, "belief": "To determine the most likely location of the replacement part, let's analyze the information:\n\n- You originally", "action": "bay 7"}
+{"act_index": 221, "belief": "To determine the most likely location of the replacement part, we analyze the information given:\n\n- The replacement", "action": "bay 4"}
+{"act_index": 222, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 223, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 224, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 225, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 226, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 228, "belief": "blue fridge", "action": "blue fridge"}
+{"act_index": 229, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 230, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 231, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 232, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 233, "belief": "blue fridge", "action": "blue fridge"}
+{"act_index": 234, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 236, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 237, "belief": "blue fridge", "action": "blue fridge"}
+{"act_index": 238, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 239, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 240, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 241, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 242, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 243, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 244, "belief": "the locked drawer", "action": "the supply cart"}
+{"act_index": 245, "belief": "the blue fridge", "action": "the supply cart"}
+{"act_index": 247, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 248, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 249, "belief": "The head's office", "action": "the head's office"}
+{"act_index": 250, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 251, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 252, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 253, "belief": "the print room", "action": "the print room"}
+{"act_index": 254, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 255, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 256, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 257, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 258, "belief": "the head's office", "action": "the staff room"}
+{"act_index": 259, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 260, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 261, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 262, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 263, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 264, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 266, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 267, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 268, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 269, "belief": "the fume hood", "action": "the left bench"}
+{"act_index": 270, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 271, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 272, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 273, "belief": "dry cabinet", "action": "dry cabinet"}
+{"act_index": 275, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 276, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 277, "belief": "dry cabinet", "action": "dry cabinet"}
+{"act_index": 278, "belief": "The dry cabinet.", "action": "dry cabinet"}
+{"act_index": 279, "belief": "The dry cabinet.", "action": "dry cabinet"}
+{"act_index": 280, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 281, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 282, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 283, "belief": "the dry cabinet", "action": "the left bench"}
+{"act_index": 285, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 286, "belief": "bay 4", "action": "bay 12"}
+{"act_index": 287, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 288, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 289, "belief": "To determine the most likely location of the replacement part, let's analyze the information:\n\n- The part", "action": "bay 7"}
+{"act_index": 290, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 291, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 292, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 293, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 294, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 295, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 296, "belief": "bay 12", "action": "bay 7"}
+{"act_index": 297, "belief": "To determine the most likely location of the replacement part, we analyze the information given:\n\n- The replacement", "action": "bay 7"}
+{"act_index": 298, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 299, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 300, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 301, "belief": "bay 4", "action": "bay 7"}
+{"act_index": 302, "belief": "bay 4", "action": "bay 7"}
+{"act_index": 304, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 305, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 306, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 307, "belief": "The locked drawer.", "action": "the locked drawer"}
+{"act_index": 308, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 309, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 310, "belief": "locked drawer", "action": "locked drawer"}
+{"act_index": 311, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 312, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 313, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 314, "belief": "locked drawer", "action": "the locked drawer"}
+{"act_index": 316, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 317, "belief": "locked drawer", "action": "locked drawer"}
+{"act_index": 318, "belief": "locked drawer", "action": "the locked drawer"}
+{"act_index": 319, "belief": "locked drawer", "action": "locked drawer"}
+{"act_index": 320, "belief": "locked drawer", "action": "locked drawer"}
+{"act_index": 321, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 323, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 324, "belief": "the top desk drawer", "action": "the archive box"}
+{"act_index": 325, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 326, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 327, "belief": "To determine the most likely location of the signed contract, we analyze the information given:\n\n- The contract", "action": "the archive box"}
+{"act_index": 328, "belief": "The grey cabinet.", "action": "the archive box"}
+{"act_index": 329, "belief": "the archive box", "action": "the top desk drawer"}
+{"act_index": 330, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 331, "belief": "the archive box", "action": "the top desk drawer"}
+{"act_index": 332, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 333, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 334, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 335, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 336, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 337, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 338, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 340, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 342, "belief": "the print room", "action": "the print room"}
+{"act_index": 343, "belief": "the print room", "action": "the print room"}
+{"act_index": 344, "belief": "the print room", "action": "the print room"}
+{"act_index": 345, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 346, "belief": "the print room", "action": "the print room"}
+{"act_index": 347, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 348, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 349, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 350, "belief": "the print room", "action": "the head's office"}
+{"act_index": 351, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 352, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 353, "belief": "the print room", "action": "the print room"}
+{"act_index": 354, "belief": "the head's office", "action": "head's office"}
+{"act_index": 355, "belief": "the head's office", "action": "head's office"}
+{"act_index": 356, "belief": "head's office", "action": "head's office"}
+{"act_index": 357, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 358, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 359, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 361, "belief": "the grey cabinet", "action": "the top desk drawer"}
+{"act_index": 362, "belief": "the archive box", "action": "the top desk drawer"}
+{"act_index": 363, "belief": "the grey cabinet", "action": "the top desk drawer"}
+{"act_index": 364, "belief": "the grey cabinet", "action": "the top desk drawer"}
+{"act_index": 365, "belief": "the archive box", "action": "the top desk drawer"}
+{"act_index": 366, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 367, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 368, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 369, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 370, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 371, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 372, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 373, "belief": "To determine where the signed contract is most likely located, we analyze the information given:\n\n- The contract", "action": "the archive box"}
+{"act_index": 374, "belief": "The archive box.", "action": "the archive box"}
+{"act_index": 375, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 376, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 377, "belief": "the grey cabinet", "action": "the top desk drawer"}
+{"act_index": 378, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 380, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 381, "belief": "The fume hood.", "action": "the fume hood"}
+{"act_index": 382, "belief": "To determine where the calibrated sensor is most likely located, let's analyze the information given:\n\n- The", "action": "the fume hood"}
+{"act_index": 383, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 384, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 385, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 386, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 387, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 388, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 389, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 390, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 391, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 392, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 393, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 394, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 395, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 396, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 397, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 399, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 400, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 401, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 402, "belief": "To determine the most likely location of the signed contract, we analyze the information given:\n\n- The contract", "action": "the archive box"}
+{"act_index": 403, "belief": "the top desk drawer", "action": "the archive box"}
+{"act_index": 404, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 405, "belief": "To determine where the signed contract is most likely located, let's analyze the information:\n\n- You believed", "action": "the archive box"}
+{"act_index": 406, "belief": "the archive box", "action": "the grey cabinet"}
+{"act_index": 407, "belief": "To determine where the signed contract is most likely located, let's analyze the information:\n\n- You originally", "action": "the archive box"}
+{"act_index": 408, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 409, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 410, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 411, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 412, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 413, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 414, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 415, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 418, "belief": "To determine where the replacement part is most likely located, let's analyze the information given:\n\n- The", "action": "bay 4"}
+{"act_index": 419, "belief": "To determine the most likely location of the replacement part, we analyze the information provided:\n\n- The part", "action": "bay 4"}
+{"act_index": 420, "belief": "To determine where the replacement part is most likely, we analyze the information given:\n\n- The replacement part", "action": "bay 4 | bay 7"}
+{"act_index": 421, "belief": "To determine where the replacement part is most likely, let's analyze the information:\n\n- The replacement part", "action": "bay 4"}
+{"act_index": 422, "belief": "To determine the most likely location of the replacement part, let's analyze the information given:\n\n- The", "action": "bay 4"}
+{"act_index": 423, "belief": "To determine where the replacement part is most likely located, let's analyze the information given:\n\n- The", "action": "bay 12"}
+{"act_index": 425, "belief": "bay 7", "action": "bay 4"}
+{"act_index": 426, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 427, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 429, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 430, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 431, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 432, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 433, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 434, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 435, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 437, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 438, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 439, "belief": "the fume hood", "action": "The left bench\n\n**Reasoning:**  \nYour colleague said, \"The calibrated sensor is in the"}
+{"act_index": 440, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 441, "belief": "the left bench", "action": "fume hood"}
+{"act_index": 442, "belief": "the fume hood", "action": "The left bench\n\n**Reasoning:**  \nYour colleague said, \"The calibrated sensor is in the"}
+{"act_index": 443, "belief": "the dry cabinet", "action": "the left bench"}
+{"act_index": 444, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 446, "belief": "the dry cabinet", "action": "dry cabinet"}
+{"act_index": 447, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 449, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 450, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 451, "belief": "**the dry cabinet**", "action": "dry cabinet"}
+{"act_index": 452, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 453, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 454, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 456, "belief": "The answer is: **the blue fridge**. \n\nThe colleague's statement says the insulin pen is", "action": "The blue fridge"}
+{"act_index": 457, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 458, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 459, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 460, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 464, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 465, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 466, "belief": "the locked drawer", "action": "the blue fridge"}
+{"act_index": 468, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 469, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 470, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 471, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 472, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 473, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 475, "belief": "the fume hood", "action": "The left bench\n\n**Reasoning:**  \nYour colleague said, \"The calibrated sensor is in the"}
+{"act_index": 476, "belief": "the fume hood", "action": "the left bench"}
+{"act_index": 477, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 478, "belief": "the left bench", "action": "the left bench"}
+{"act_index": 479, "belief": "the left bench", "action": "the fume hood"}
+{"act_index": 480, "belief": "The left bench\n\n**Explanation:**\n\nYour colleague told you:  \n> \"The calibrated sensor is", "action": "**the fume hood**\n\n### Explanation:\nYour colleague says:  \n> \"The calibrated sensor is"}
+{"act_index": 482, "belief": "The dry cabinet", "action": "dry cabinet"}
+{"act_index": 483, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 484, "belief": "dry cabinet", "action": "the dry cabinet"}
+{"act_index": 485, "belief": "the fume hood", "action": "the dry cabinet"}
+{"act_index": 486, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 487, "belief": "The dry cabinet.", "action": "**the dry cabinet**"}
+{"act_index": 488, "belief": "The dry cabinet.", "action": "The dry cabinet"}
+{"act_index": 489, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 490, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 491, "belief": "the fume hood", "action": "the left bench"}
+{"act_index": 492, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 494, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 495, "belief": "The top desk drawer.", "action": "the top desk drawer"}
+{"act_index": 496, "belief": "the grey cabinet", "action": "the archive box"}
+{"act_index": 497, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 498, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 499, "belief": "the grey cabinet", "action": "the archive box"}
+{"act_index": 500, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 501, "belief": "the archive box", "action": "the top desk drawer"}
+{"act_index": 502, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 503, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 504, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 505, "belief": "the archive box", "action": "the top desk drawer"}
+{"act_index": 506, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 507, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 508, "belief": "top desk drawer", "action": "the top desk drawer"}
+{"act_index": 509, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 510, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 511, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 513, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 514, "belief": "the print room", "action": "the print room"}
+{"act_index": 515, "belief": "the print room", "action": "the print room"}
+{"act_index": 516, "belief": "the print room", "action": "the print room"}
+{"act_index": 517, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 518, "belief": "the print room", "action": "the print room"}
+{"act_index": 519, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 520, "belief": "the print room", "action": "the print room"}
+{"act_index": 521, "belief": "the print room", "action": "the print room"}
+{"act_index": 522, "belief": "the print room", "action": "the head's office"}
+{"act_index": 523, "belief": "the head's office", "action": "head's office"}
+{"act_index": 524, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 525, "belief": "head's office", "action": "head's office"}
+{"act_index": 526, "belief": "head's office", "action": "head's office"}
+{"act_index": 527, "belief": "head's office", "action": "the head's office"}
+{"act_index": 528, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 529, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 530, "belief": "the head's office", "action": "head's office"}
+{"act_index": 532, "belief": "To determine where the replacement part is most likely located, we analyze the information given:\n\n- The replacement", "action": "bay 4"}
+{"act_index": 533, "belief": "bay 4 or 12\n\n**Answer:** bay 4 or 12\n\n**", "action": "bay 4"}
+{"act_index": 534, "belief": "bay 4 or 12\n\n**Answer:** bay 4 or 12\n\n**", "action": "bay 4"}
+{"act_index": 535, "belief": "bay 4 or bay 12\n\n**Answer:** bay 4 or bay 12", "action": "bay 4"}
+{"act_index": 536, "belief": "To determine the most likely location of the replacement part, we analyze the information given:\n\n- The replacement", "action": "bay 4"}
+{"act_index": 537, "belief": "To determine the most likely location of the replacement part, let's analyze the information:\n\n- You initially", "action": "bay 4"}
+{"act_index": 538, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 540, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 541, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 542, "belief": "To determine the most likely location of the replacement part, we analyze the information provided:\n\n- You originally", "action": "bay 4"}
+{"act_index": 543, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 544, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 545, "belief": "To determine the most likely location of the replacement part, we analyze the information given:\n\n- The replacement", "action": "bay 7"}
+{"act_index": 546, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 547, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 548, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 549, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 551, "belief": "the top desk drawer", "action": "the archive box"}
+{"act_index": 552, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 553, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 554, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 555, "belief": "the top desk drawer", "action": "the archive box"}
+{"act_index": 556, "belief": "the top desk drawer", "action": "the archive box"}
+{"act_index": 557, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 558, "belief": "the archive box", "action": "the top desk drawer"}
+{"act_index": 559, "belief": "the archive box", "action": "the grey cabinet"}
+{"act_index": 560, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 561, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 562, "belief": "the archive box", "action": "the grey cabinet"}
+{"act_index": 563, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 564, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 565, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 566, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 567, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 568, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 570, "belief": "To determine the most likely location of the replacement part, let's analyze the information given:\n\n- The", "action": "**bay 7**"}
+{"act_index": 571, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 572, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 573, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 574, "belief": "To determine where the replacement part is most likely located, let's analyze the information given:\n\n- The", "action": "bay 4"}
+{"act_index": 575, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 576, "belief": "bay 12", "action": "bay 4"}
+{"act_index": 577, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 578, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 579, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 580, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 581, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 582, "belief": "To determine where the replacement part is most likely located, we analyze the information given:\n\n- The replacement", "action": "**bay 4**"}
+{"act_index": 583, "belief": "To determine the most likely location of the replacement part, let's analyze the information given:\n\n- The", "action": "**bay 4**"}
+{"act_index": 584, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 585, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 586, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 587, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 589, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 590, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 591, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 592, "belief": "blue fridge", "action": "blue fridge"}
+{"act_index": 593, "belief": "The blue fridge.", "action": "the supply cart"}
+{"act_index": 595, "belief": "blue fridge", "action": "blue fridge"}
+{"act_index": 596, "belief": "the blue fridge", "action": "the supply cart"}
+{"act_index": 597, "belief": "blue fridge", "action": "blue fridge"}
+{"act_index": 598, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 599, "belief": "the locked drawer", "action": "blue fridge"}
+{"act_index": 600, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 601, "belief": "blue fridge", "action": "blue fridge"}
+{"act_index": 602, "belief": "blue fridge", "action": "blue fridge"}
+{"act_index": 603, "belief": "blue fridge", "action": "the blue fridge"}
+{"act_index": 604, "belief": "blue fridge", "action": "blue fridge"}
+{"act_index": 605, "belief": "the blue fridge", "action": "the supply cart"}
+{"act_index": 606, "belief": "the blue fridge", "action": "the supply cart"}
+{"act_index": 608, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 609, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 610, "belief": "bay 7", "action": "bay 7 | bay 4"}
+{"act_index": 611, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 612, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 613, "belief": "To determine the most likely location of the replacement part, let's analyze the information given:\n\n- The", "action": "bay 7"}
+{"act_index": 614, "belief": "To determine where the replacement part is most likely located, let's analyze the information:\n\n- You originally", "action": "bay 7"}
+{"act_index": 615, "belief": "bay 4", "action": "bay 12"}
+{"act_index": 616, "belief": "To determine where the replacement part is most likely, we need to consider the information given:\n\n- You", "action": "bay 12"}
+{"act_index": 617, "belief": "To determine where the replacement part is most likely located, we need to consider the information given:\n\n-", "action": "bay 7"}
+{"act_index": 618, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 619, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 620, "belief": "To determine where the replacement part is most likely located, we analyze the information given:\n\n- The replacement", "action": "bay 12"}
+{"act_index": 621, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 622, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 623, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 624, "belief": "bay 4", "action": "bay 12"}
+{"act_index": 625, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 627, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 628, "belief": "**locked drawer**\n\nThe colleague's statement implies that the insulin pen is in the locked drawer, and", "action": "**the locked drawer**"}
+{"act_index": 629, "belief": "locked drawer", "action": "the supply cart"}
+{"act_index": 631, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 632, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 633, "belief": "locked drawer", "action": "the locked drawer"}
+{"act_index": 634, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 635, "belief": "the supply cart", "action": "the blue fridge"}
+{"act_index": 636, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 637, "belief": "locked drawer", "action": "the blue fridge"}
+{"act_index": 638, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 639, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 640, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 641, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 642, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 643, "belief": "the locked drawer", "action": "the supply cart"}
+{"act_index": 644, "belief": "the locked drawer", "action": "the supply cart"}
+{"act_index": 646, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 647, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 648, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 649, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 650, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 651, "belief": "The most likely answer is: **the supply cart**.\n\n### Reasoning:\n- The colleague says", "action": "The supply cart"}
+{"act_index": 652, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 653, "belief": "locked drawer", "action": "the locked drawer"}
+{"act_index": 654, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 656, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 658, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 659, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 660, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 661, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 662, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 663, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 667, "belief": "blue fridge", "action": "the blue fridge"}
+{"act_index": 668, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 669, "belief": "The blue fridge.", "action": "blue fridge"}
+{"act_index": 670, "belief": "blue fridge", "action": "the blue fridge"}
+{"act_index": 672, "belief": "blue fridge", "action": "the blue fridge"}
+{"act_index": 673, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 675, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 676, "belief": "blue fridge", "action": "the blue fridge"}
+{"act_index": 677, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 678, "belief": "locked drawer", "action": "the locked drawer"}
+{"act_index": 679, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 680, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 681, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 682, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 684, "belief": "dry cabinet", "action": "dry cabinet"}
+{"act_index": 685, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 686, "belief": "the left bench", "action": "the left bench"}
+{"act_index": 687, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 689, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 690, "belief": "the dry cabinet", "action": "the fume hood"}
+{"act_index": 691, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 692, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 693, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 694, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 695, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 696, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 697, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 698, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 699, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 700, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 701, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 703, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 704, "belief": "the fume hood", "action": "the left bench"}
+{"act_index": 707, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 709, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 710, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 711, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 712, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 713, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 714, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 715, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 716, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 717, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 718, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 719, "belief": "the dry cabinet", "action": "the left bench"}
+{"act_index": 720, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 722, "belief": "the print room", "action": "the print room"}
+{"act_index": 723, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 724, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 725, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 726, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 727, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 728, "belief": "the staff room", "action": "staff room"}
+{"act_index": 730, "belief": "staff room", "action": "staff room"}
+{"act_index": 731, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 732, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 734, "belief": "the staff room", "action": "staff room"}
+{"act_index": 735, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 736, "belief": "staff room", "action": "the staff room"}
+{"act_index": 737, "belief": "staff room", "action": "the staff room"}
+{"act_index": 739, "belief": "staff room", "action": "staff room"}
+{"act_index": 741, "belief": "the head's office", "action": "the staff room"}
+{"act_index": 742, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 743, "belief": "the print room", "action": "the print room"}
+{"act_index": 745, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 746, "belief": "print room", "action": "the print room"}
+{"act_index": 749, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 750, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 751, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 752, "belief": "the print room", "action": "the print room"}
+{"act_index": 753, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 754, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 755, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 756, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 757, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 758, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 760, "belief": "top desk drawer", "action": "the top desk drawer"}
+{"act_index": 761, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 762, "belief": "To determine where the signed contract is most likely located, let's analyze the information given:\n\n- The", "action": "the grey cabinet"}
+{"act_index": 763, "belief": "the archive box", "action": "the top desk drawer"}
+{"act_index": 764, "belief": "The grey cabinet", "action": "top desk drawer"}
+{"act_index": 765, "belief": "the archive box", "action": "the top desk drawer"}
+{"act_index": 766, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 767, "belief": "the top desk drawer", "action": "the grey cabinet"}
+{"act_index": 768, "belief": "the archive box", "action": "the grey cabinet"}
+{"act_index": 769, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 770, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 771, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 772, "belief": "The grey cabinet.", "action": "the grey cabinet"}
+{"act_index": 773, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 774, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 775, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 776, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 777, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 779, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 780, "belief": "the print room", "action": "the print room"}
+{"act_index": 781, "belief": "the staff room", "action": "the print room"}
+{"act_index": 782, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 783, "belief": "the print room", "action": "the print room"}
+{"act_index": 784, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 785, "belief": "the print room", "action": "the print room"}
+{"act_index": 786, "belief": "the print room", "action": "the print room"}
+{"act_index": 787, "belief": "the staff room", "action": "the print room"}
+{"act_index": 788, "belief": "the print room", "action": "the print room"}
+{"act_index": 790, "belief": "the staff room", "action": "the print room"}
+{"act_index": 791, "belief": "the print room", "action": "the print room"}
+{"act_index": 792, "belief": "the print room", "action": "the print room"}
+{"act_index": 793, "belief": "the print room", "action": "the print room"}
+{"act_index": 794, "belief": "the print room", "action": "the print room"}
+{"act_index": 795, "belief": "the print room", "action": "the print room"}
+{"act_index": 796, "belief": "the print room", "action": "the print room"}
+{"act_index": 798, "belief": "**the head's office**", "action": "head's office"}
+{"act_index": 799, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 800, "belief": "the head's office", "action": "head's office"}
+{"act_index": 801, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 802, "belief": "the head's office", "action": "head's office"}
+{"act_index": 803, "belief": "the print room", "action": "the print room"}
+{"act_index": 804, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 805, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 806, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 807, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 808, "belief": "head's office", "action": "the staff room"}
+{"act_index": 809, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 810, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 811, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 812, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 813, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 814, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 815, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 817, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 818, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 819, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 820, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 821, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 823, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 824, "belief": "archive box", "action": "the archive box"}
+{"act_index": 825, "belief": "archive box", "action": "the archive box"}
+{"act_index": 827, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 829, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 830, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 831, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 832, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 833, "belief": "the grey cabinet", "action": "the top desk drawer"}
+{"act_index": 834, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 836, "belief": "the print room", "action": "the print room"}
+{"act_index": 837, "belief": "the print room", "action": "the print room"}
+{"act_index": 838, "belief": "print room", "action": "print room"}
+{"act_index": 839, "belief": "the print room", "action": "the print room"}
+{"act_index": 840, "belief": "print room", "action": "the staff room"}
+{"act_index": 841, "belief": "The answer is: **the print room**. \n\nThe colleague said the exam folder is in **", "action": "print room"}
+{"act_index": 842, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 843, "belief": "print room", "action": "print room"}
+{"act_index": 844, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 845, "belief": "the print room", "action": "the print room"}
+{"act_index": 846, "belief": "the print room", "action": "the staff room"}
+{"act_index": 847, "belief": "the print room", "action": "the staff room"}
+{"act_index": 848, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 849, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 850, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 851, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 852, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 853, "belief": "the print room", "action": "the print room"}
+{"act_index": 856, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 857, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 858, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 859, "belief": "head's office", "action": "head's office"}
+{"act_index": 860, "belief": "To determine where the exam folder is most likely located, we need to consider the information given:\n\n-", "action": "head's office"}
+{"act_index": 862, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 863, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 864, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 866, "belief": "the head's office", "action": "the print room"}
+{"act_index": 867, "belief": "head's office", "action": "head's office"}
+{"act_index": 868, "belief": "the head's office", "action": "head's office"}
+{"act_index": 869, "belief": "head's office", "action": "head's office"}
+{"act_index": 870, "belief": "head's office", "action": "head's office"}
+{"act_index": 871, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 872, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 874, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 875, "belief": "dry cabinet", "action": "dry cabinet"}
+{"act_index": 877, "belief": "The dry cabinet.", "action": "The dry cabinet."}
+{"act_index": 878, "belief": "The dry cabinet.", "action": "the left bench"}
+{"act_index": 880, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 881, "belief": "dry cabinet", "action": "dry cabinet"}
+{"act_index": 883, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 884, "belief": "dry cabinet", "action": "dry cabinet"}
+{"act_index": 885, "belief": "dry cabinet", "action": "dry cabinet"}
+{"act_index": 886, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 887, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 888, "belief": "**dry cabinet**", "action": "dry cabinet"}
+{"act_index": 889, "belief": "dry cabinet", "action": "dry cabinet"}
+{"act_index": 890, "belief": "the dry cabinet", "action": "the left bench"}
+{"act_index": 891, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 893, "belief": "bay 12", "action": "bay 7"}
+{"act_index": 894, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 895, "belief": "bay 7", "action": "bay 12"}
+{"act_index": 896, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 897, "belief": "bay 7", "action": "bay 12"}
+{"act_index": 898, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 899, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 900, "belief": "To determine where the replacement part is most likely, let's analyze the information:\n\n- You originally believed", "action": "bay 4"}
+{"act_index": 901, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 902, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 903, "belief": "To determine where the replacement part is most likely located, let's analyze the information step by step:", "action": "bay 4"}
+{"act_index": 905, "belief": "To determine where the replacement part is most likely located, let's analyze the information given:\n\n- The", "action": "**bay 4**"}
+{"act_index": 906, "belief": "To determine the most likely location of the replacement part, let's analyze the information given:\n\n- The", "action": "bay 4"}
+{"act_index": 907, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 908, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 909, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 910, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 912, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 914, "belief": "the top desk drawer", "action": "the archive box"}
+{"act_index": 915, "belief": "grey cabinet", "action": "the grey cabinet"}
+{"act_index": 916, "belief": "the top desk drawer", "action": "the archive box"}
+{"act_index": 920, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 921, "belief": "grey cabinet", "action": "grey cabinet"}
+{"act_index": 922, "belief": "grey cabinet", "action": "the grey cabinet"}
+{"act_index": 924, "belief": "grey cabinet", "action": "grey cabinet"}
+{"act_index": 925, "belief": "grey cabinet", "action": "the grey cabinet"}
+{"act_index": 926, "belief": "grey cabinet", "action": "the grey cabinet"}
+{"act_index": 927, "belief": "grey cabinet", "action": "the grey cabinet"}
+{"act_index": 928, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 929, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 931, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 932, "belief": "To determine the most likely location of the replacement part, let's analyze the information:\n\n- The part", "action": "bay 7"}
+{"act_index": 933, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 934, "belief": "To determine the most likely location of the replacement part, let's analyze the information:\n\n- The part", "action": "bay 7"}
+{"act_index": 935, "belief": "To determine the most likely location of the replacement part, let's analyze the information:\n\n- The replacement", "action": "bay 7"}
+{"act_index": 936, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 938, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 939, "belief": "**bay 12**", "action": "bay 12"}
+{"act_index": 940, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 941, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 942, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 943, "belief": "To determine where the replacement part is most likely located, we analyze the information given:\n\n- The part", "action": "**bay 12**"}
+{"act_index": 944, "belief": "To determine the most likely location of the replacement part, let's analyze the information given:\n\n- The", "action": "**bay 12**"}
+{"act_index": 945, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 946, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 947, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 948, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 950, "belief": "the supply cart", "action": "the blue fridge"}
+{"act_index": 951, "belief": "the supply cart", "action": "the blue fridge"}
+{"act_index": 954, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 955, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 956, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 957, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 958, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 959, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 960, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 962, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 963, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 964, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 965, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 966, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 967, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 969, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 970, "belief": "bay 7", "action": "bay 4"}
+{"act_index": 971, "belief": "To determine the most likely location of the replacement part, we analyze the information given:\n\n- The part", "action": "bay 4"}
+{"act_index": 973, "belief": "bay 7", "action": "bay 4"}
+{"act_index": 974, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 975, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 976, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 977, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 978, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 979, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 980, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 981, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 982, "belief": "**bay 7**\n\nThe colleague explicitly states that the replacement part is in **bay 7**,", "action": "**bay 7**"}
+{"act_index": 983, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 984, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 985, "belief": "bay 12", "action": "bay 4"}
+{"act_index": 986, "belief": "bay 12", "action": "bay 4"}
+{"act_index": 988, "belief": "The head's office", "action": "The head's office"}
+{"act_index": 989, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 990, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 991, "belief": "the staff room", "action": "The print room."}
+{"act_index": 992, "belief": "the print room", "action": "print room"}
+{"act_index": 993, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 994, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 995, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 996, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 997, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 998, "belief": "print room", "action": "the staff room"}
+{"act_index": 999, "belief": "the print room", "action": "the print room"}
+{"act_index": 1000, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 1001, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 1002, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 1003, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 1004, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 1005, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 1008, "belief": "the locked drawer", "action": "the blue fridge"}
+{"act_index": 1009, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1010, "belief": "supply cart", "action": "supply cart"}
+{"act_index": 1011, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1013, "belief": "supply cart", "action": "supply cart"}
+{"act_index": 1014, "belief": "supply cart", "action": "supply cart"}
+{"act_index": 1017, "belief": "the blue fridge", "action": "supply cart"}
+{"act_index": 1018, "belief": "supply cart", "action": "supply cart"}
+{"act_index": 1019, "belief": "supply cart", "action": "supply cart"}
+{"act_index": 1020, "belief": "supply cart", "action": "supply cart"}
+{"act_index": 1021, "belief": "supply cart", "action": "supply cart"}
+{"act_index": 1022, "belief": "supply cart", "action": "supply cart"}
+{"act_index": 1023, "belief": "supply cart", "action": "supply cart"}
+{"act_index": 1024, "belief": "supply cart", "action": "supply cart"}
+{"act_index": 1026, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 1027, "belief": "The print room.", "action": "the print room"}
+{"act_index": 1028, "belief": "the print room", "action": "the head's office"}
+{"act_index": 1029, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 1030, "belief": "the staff room", "action": "the head's office"}
+{"act_index": 1031, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 1032, "belief": "the head's office", "action": "the print room"}
+{"act_index": 1033, "belief": "the head's office", "action": "print room"}
+{"act_index": 1034, "belief": "print room", "action": "print room"}
+{"act_index": 1035, "belief": "print room", "action": "print room"}
+{"act_index": 1036, "belief": "print room", "action": "print room"}
+{"act_index": 1037, "belief": "the head's office", "action": "print room"}
+{"act_index": 1038, "belief": "**print room**", "action": "print room"}
+{"act_index": 1039, "belief": "print room", "action": "print room"}
+{"act_index": 1040, "belief": "the print room", "action": "the print room"}
+{"act_index": 1041, "belief": "print room", "action": "the print room"}
+{"act_index": 1042, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 1043, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 1045, "belief": "the left bench", "action": "Left bench"}
+{"act_index": 1046, "belief": "**left bench**", "action": "the left bench"}
+{"act_index": 1047, "belief": "To determine where the calibrated sensor is most likely located, we analyze the information given:\n\n- The sensor", "action": "The dry cabinet"}
+{"act_index": 1048, "belief": "the left bench", "action": "the left bench"}
+{"act_index": 1049, "belief": "the left bench", "action": "the left bench"}
+{"act_index": 1050, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1051, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1052, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1053, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1054, "belief": "the dry cabinet", "action": "the fume hood"}
+{"act_index": 1055, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 1056, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1057, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1058, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1059, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1060, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1061, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 1062, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 1064, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 1065, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 1066, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 1067, "belief": "grey cabinet", "action": "the grey cabinet"}
+{"act_index": 1068, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 1069, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 1070, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 1071, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 1072, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 1073, "belief": "the archive box", "action": "the top desk drawer"}
+{"act_index": 1075, "belief": "the archive box", "action": "the archive box"}
+{"act_index": 1076, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 1077, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 1078, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 1079, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 1080, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 1083, "belief": "supply cart", "action": "supply cart"}
+{"act_index": 1084, "belief": "The blue fridge", "action": "supply cart"}
+{"act_index": 1085, "belief": "The blue fridge", "action": "supply cart"}
+{"act_index": 1086, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 1087, "belief": "The answer is: **the blue fridge**. \n\nThe colleague said, \"The spare insulin pen", "action": "the blue fridge"}
+{"act_index": 1088, "belief": "supply cart", "action": "the blue fridge"}
+{"act_index": 1089, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1090, "belief": "supply cart", "action": "the locked drawer"}
+{"act_index": 1091, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1093, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1094, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1095, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 1096, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 1097, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 1098, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 1099, "belief": "the locked drawer", "action": "supply cart"}
+{"act_index": 1100, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 1102, "belief": "the grey cabinet", "action": "the grey cabinet"}
+{"act_index": 1104, "belief": "top desk drawer", "action": "the top desk drawer"}
+{"act_index": 1105, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 1106, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 1107, "belief": "To determine the most likely location of the signed contract, we analyze the information given:\n\n- The contract", "action": "the top desk drawer"}
+{"act_index": 1108, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 1109, "belief": "the grey cabinet", "action": "the top desk drawer"}
+{"act_index": 1110, "belief": "the archive box", "action": "the top desk drawer"}
+{"act_index": 1111, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 1112, "belief": "top desk drawer", "action": "the top desk drawer"}
+{"act_index": 1113, "belief": "the top desk drawer", "action": "the top desk drawer"}
+{"act_index": 1114, "belief": "top desk drawer", "action": "top desk drawer"}
+{"act_index": 1115, "belief": "top desk drawer", "action": "top desk drawer"}
+{"act_index": 1116, "belief": "top desk drawer", "action": "the top desk drawer"}
+{"act_index": 1117, "belief": "top desk drawer", "action": "the top desk drawer"}
+{"act_index": 1121, "belief": "To determine the most likely location of the replacement part, let's analyze the information:\n\n- You initially", "action": "bay 12"}
+{"act_index": 1122, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 1123, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 1124, "belief": "To determine the most likely location of the replacement part, we analyze the information provided:\n\n- The part", "action": "bay 12"}
+{"act_index": 1125, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 1126, "belief": "bay 4", "action": "bay 12"}
+{"act_index": 1127, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 1128, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 1129, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 1130, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 1131, "belief": "bay 12", "action": "bay 12"}
+{"act_index": 1132, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 1133, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 1134, "belief": "To determine the most likely location of the replacement part, let's analyze the information given:\n\n- The", "action": "bay 7"}
+{"act_index": 1135, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 1136, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 1137, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 1138, "belief": "bay 4", "action": "bay 7"}
+{"act_index": 1140, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1141, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1142, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 1144, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1145, "belief": "To determine where the calibrated sensor is most likely located, we need to consider the information given:\n\n-", "action": "the fume hood"}
+{"act_index": 1146, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 1147, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1148, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1150, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1151, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1152, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1153, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1154, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1155, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1156, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1157, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1159, "belief": "To determine the most likely location of the replacement part, we analyze the information given:\n\n- The part", "action": "bay 7"}
+{"act_index": 1160, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 1161, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 1162, "belief": "bay 4", "action": "bay 7"}
+{"act_index": 1163, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 1164, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 1165, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 1166, "belief": "To determine where the replacement part is most likely located, let's analyze the information step by step:", "action": "bay 7"}
+{"act_index": 1167, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 1169, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 1171, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 1172, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 1173, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 1174, "belief": "bay 4", "action": "bay 4"}
+{"act_index": 1175, "belief": "bay 7", "action": "bay 7"}
+{"act_index": 1176, "belief": "bay 4", "action": "bay 7"}
+{"act_index": 1178, "belief": "**the blue fridge**", "action": "the locked drawer"}
+{"act_index": 1179, "belief": "the locked drawer", "action": "locked drawer"}
+{"act_index": 1180, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1181, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 1182, "belief": "The most likely answer is: **the supply cart**\n\n### Reasoning:\n- The colleague says:", "action": "The supply cart"}
+{"act_index": 1183, "belief": "locked drawer", "action": "locked drawer"}
+{"act_index": 1184, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 1186, "belief": "locked drawer", "action": "the blue fridge"}
+{"act_index": 1188, "belief": "supply cart", "action": "the supply cart"}
+{"act_index": 1189, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1190, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1191, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1192, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1193, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1194, "belief": "locked drawer", "action": "the supply cart"}
+{"act_index": 1195, "belief": "locked drawer", "action": "the locked drawer"}
+{"act_index": 1197, "belief": "the print room", "action": "the print room"}
+{"act_index": 1198, "belief": "To determine the most likely location of the exam folder, let's analyze the information given:\n\n- The", "action": "The print room"}
+{"act_index": 1199, "belief": "the staff room", "action": "The print room"}
+{"act_index": 1200, "belief": "the print room", "action": "The print room"}
+{"act_index": 1201, "belief": "the head's office", "action": "the print room"}
+{"act_index": 1202, "belief": "the print room", "action": "the print room"}
+{"act_index": 1203, "belief": "the print room", "action": "the head's office"}
+{"act_index": 1204, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 1205, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 1206, "belief": "the print room", "action": "the head's office"}
+{"act_index": 1207, "belief": "the print room", "action": "the head's office"}
+{"act_index": 1208, "belief": "the print room", "action": "the print room"}
+{"act_index": 1209, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 1210, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 1211, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 1212, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 1213, "belief": "the head's office", "action": "the head's office"}
+{"act_index": 1219, "belief": "The dry cabinet", "action": "the dry cabinet"}
+{"act_index": 1222, "belief": "dry cabinet", "action": "the fume hood"}
+{"act_index": 1223, "belief": "dry cabinet", "action": "the fume hood"}
+{"act_index": 1224, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1225, "belief": "the left bench", "action": "the fume hood"}
+{"act_index": 1226, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1227, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1228, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1229, "belief": "**the fume hood**", "action": "**the fume hood**"}
+{"act_index": 1230, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1231, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1232, "belief": "the dry cabinet", "action": "the left bench"}
+{"act_index": 1233, "belief": "The left bench", "action": "the fume hood"}
+{"act_index": 1235, "belief": "The dry cabinet.", "action": "the dry cabinet"}
+{"act_index": 1236, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1237, "belief": "The dry cabinet.", "action": "The dry cabinet"}
+{"act_index": 1238, "belief": "The dry cabinet.", "action": "The dry cabinet"}
+{"act_index": 1239, "belief": "To determine where the calibrated sensor is most likely located, let's analyze the information given:\n\n- The", "action": "The fume hood."}
+{"act_index": 1241, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 1242, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1243, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 1244, "belief": "the fume hood", "action": "the dry cabinet"}
+{"act_index": 1245, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 1246, "belief": "the fume hood", "action": "the fume hood"}
+{"act_index": 1247, "belief": "The dry cabinet.", "action": "dry cabinet"}
+{"act_index": 1248, "belief": "The dry cabinet.", "action": "**the dry cabinet**"}
+{"act_index": 1249, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 1250, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 1251, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 1252, "belief": "the dry cabinet", "action": "the dry cabinet"}
+{"act_index": 1255, "belief": "The supply cart", "action": "the locked drawer"}
+{"act_index": 1256, "belief": "locked drawer", "action": "the supply cart"}
+{"act_index": 1257, "belief": "locked drawer", "action": "locked drawer"}
+{"act_index": 1258, "belief": "the locked drawer", "action": "locked drawer"}
+{"act_index": 1259, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1260, "belief": "The supply cart", "action": "the blue fridge"}
+{"act_index": 1261, "belief": "locked drawer", "action": "locked drawer"}
+{"act_index": 1262, "belief": "the locked drawer", "action": "locked drawer"}
+{"act_index": 1264, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 1265, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 1266, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1267, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1268, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1269, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1270, "belief": "locked drawer", "action": "the locked drawer"}
+{"act_index": 1271, "belief": "the locked drawer", "action": "the blue fridge"}
+{"act_index": 1273, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 1275, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 1276, "belief": "the print room", "action": "the print room"}
+{"act_index": 1277, "belief": "the print room", "action": "the print room"}
+{"act_index": 1278, "belief": "the print room", "action": "the print room"}
+{"act_index": 1279, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 1280, "belief": "head's office", "action": "the staff room"}
+{"act_index": 1281, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 1282, "belief": "the print room", "action": "the print room"}
+{"act_index": 1283, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 1284, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 1285, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 1286, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 1287, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 1288, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 1289, "belief": "the staff room", "action": "the staff room"}
+{"act_index": 1290, "belief": "the head's office", "action": "the staff room"}
+{"act_index": 1292, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1293, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1294, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1295, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 1296, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1297, "belief": "The blue fridge", "action": "The blue fridge"}
+{"act_index": 1298, "belief": "the blue fridge", "action": "the supply cart"}
+{"act_index": 1299, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1300, "belief": "the blue fridge", "action": "the supply cart"}
+{"act_index": 1302, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1303, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 1304, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 1305, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 1306, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 1307, "belief": "the supply cart", "action": "supply cart"}
+{"act_index": 1308, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 1309, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 1311, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 1312, "belief": "The blue fridge.", "action": "the blue fridge"}
+{"act_index": 1313, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 1314, "belief": "the blue fridge", "action": "the supply cart"}
+{"act_index": 1315, "belief": "the blue fridge", "action": "the blue fridge"}
+{"act_index": 1316, "belief": "blue fridge", "action": "blue fridge"}
+{"act_index": 1317, "belief": "the locked drawer", "action": "the blue fridge"}
+{"act_index": 1318, "belief": "the locked drawer", "action": "blue fridge"}
+{"act_index": 1319, "belief": "the locked drawer", "action": "the locked drawer"}
+{"act_index": 1320, "belief": "the locked drawer", "action": "the blue fridge"}
+{"act_index": 1321, "belief": "blue fridge", "action": "blue fridge"}
+{"act_index": 1322, "belief": "blue fridge", "action": "blue fridge"}
+{"act_index": 1323, "belief": "blue fridge", "action": "blue fridge"}
+{"act_index": 1324, "belief": "blue fridge", "action": "blue fridge"}
+{"act_index": 1325, "belief": "the blue fridge", "action": "blue fridge"}
+{"act_index": 1326, "belief": "blue fridge", "action": "blue fridge"}
+{"act_index": 1327, "belief": "the supply cart", "action": "supply cart"}
+{"act_index": 1328, "belief": "the supply cart", "action": "the supply cart"}
+{"act_index": 1330, "belief": "The colleague said: \"It's not in the tool crib or dock 3. I'll check", "action": "hangar 1"}
+{"act_index": 1331, "belief": "The most likely place is: **the tool crib**.\n\n### Reasoning:\nYour colleague says,", "action": "the tool crib"}
+{"act_index": 1332, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1333, "belief": "The colleague said the tool crib and dock 3 were checked. That means the torque wrench is **", "action": "dock 3"}
+{"act_index": 1334, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1336, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1337, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1338, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1339, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1340, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1341, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1342, "belief": "**hangar 1**", "action": "hangar 1"}
+{"act_index": 1343, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1344, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1345, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1346, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1347, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1349, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1350, "belief": "the security office", "action": "lost property"}
+{"act_index": 1351, "belief": "lost property", "action": "lost property"}
+{"act_index": 1352, "belief": "lost property", "action": "lost property"}
+{"act_index": 1353, "belief": "To determine where the lost passport is most likely, let's analyze the information given:\n\n- The possible", "action": "gate B desk"}
+{"act_index": 1354, "belief": "the security office", "action": "the security office"}
+{"act_index": 1355, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1356, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1357, "belief": "lost property", "action": "gate B desk"}
+{"act_index": 1358, "belief": "the security office", "action": "gate B desk"}
+{"act_index": 1359, "belief": "lost property", "action": "gate B desk"}
+{"act_index": 1360, "belief": "the security office", "action": "gate B desk"}
+{"act_index": 1361, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1362, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1363, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1364, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1365, "belief": "lost property", "action": "lost property"}
+{"act_index": 1366, "belief": "lost property", "action": "lost property"}
+{"act_index": 1368, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1369, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1370, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1371, "belief": "the teller drawer", "action": "teller drawer"}
+{"act_index": 1372, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1373, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1374, "belief": "the vault anteroom", "action": "the teller drawer"}
+{"act_index": 1375, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1376, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1377, "belief": "the vault anteroom", "action": "the teller drawer"}
+{"act_index": 1378, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1379, "belief": "the vault anteroom", "action": "the teller drawer"}
+{"act_index": 1380, "belief": "teller drawer", "action": "teller drawer"}
+{"act_index": 1381, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1382, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1383, "belief": "teller drawer", "action": "the teller drawer"}
+{"act_index": 1384, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1385, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1387, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1388, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1389, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1390, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1392, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1393, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1394, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1395, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1396, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1397, "belief": "the manager's safe", "action": "the vault anteroom"}
+{"act_index": 1398, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1399, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1400, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1401, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1402, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1403, "belief": "the manager's safe", "action": "the vault anteroom"}
+{"act_index": 1404, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1406, "belief": "vault anteroom", "action": "vault anteroom"}
+{"act_index": 1407, "belief": "vault anteroom", "action": "vault anteroom"}
+{"act_index": 1408, "belief": "The most likely answer is: **the vault anteroom**. \n\nThe colleague explicitly stated that", "action": "vault anteroom"}
+{"act_index": 1409, "belief": "vault anteroom", "action": "vault anteroom"}
+{"act_index": 1410, "belief": "vault anteroom", "action": "vault anteroom"}
+{"act_index": 1411, "belief": "The most likely location is: **the vault anteroom**.\n\n### Reasoning:\n- The", "action": "**vault anteroom**\n\nThe colleague's statement says:  \n- \"The backup keycard is"}
+{"act_index": 1412, "belief": "vault anteroom", "action": "vault anteroom"}
+{"act_index": 1413, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1414, "belief": "vault anteroom", "action": "the manager's safe"}
+{"act_index": 1415, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1416, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1417, "belief": "vault anteroom", "action": "the manager's safe"}
+{"act_index": 1418, "belief": "The most likely answer is: **the manager's safe**. \n\nThe colleague's statement directly says", "action": "the manager's safe"}
+{"act_index": 1419, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1420, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1421, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1422, "belief": "the vault anteroom", "action": "the teller drawer"}
+{"act_index": 1423, "belief": "the manager's safe", "action": "the teller drawer"}
+{"act_index": 1425, "belief": "**dock 3**", "action": "dock 3"}
+{"act_index": 1426, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1429, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1430, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1431, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1432, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1433, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1435, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1436, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1437, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1438, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1439, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1440, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1441, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1442, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1444, "belief": "vault anteroom", "action": "the manager's safe"}
+{"act_index": 1445, "belief": "the teller drawer", "action": "teller drawer"}
+{"act_index": 1446, "belief": "vault anteroom", "action": "the teller drawer"}
+{"act_index": 1447, "belief": "The manager's safe", "action": "the manager's safe"}
+{"act_index": 1448, "belief": "To determine the most likely location of the backup keycard, let's analyze the information given:\n\n-", "action": "**the teller drawer**\n\n### Explanation:\nYour colleague said:  \n> \"It's not in"}
+{"act_index": 1449, "belief": "vault anteroom", "action": "vault anteroom"}
+{"act_index": 1450, "belief": "the teller drawer", "action": "teller drawer"}
+{"act_index": 1451, "belief": "the teller drawer", "action": "teller drawer"}
+{"act_index": 1452, "belief": "the teller drawer", "action": "teller drawer"}
+{"act_index": 1453, "belief": "the teller drawer", "action": "teller drawer"}
+{"act_index": 1454, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1455, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1456, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1457, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1458, "belief": "teller drawer", "action": "teller drawer"}
+{"act_index": 1459, "belief": "the teller drawer", "action": "teller drawer"}
+{"act_index": 1460, "belief": "vault anteroom", "action": "the teller drawer"}
+{"act_index": 1461, "belief": "the vault anteroom", "action": "the teller drawer"}
+{"act_index": 1463, "belief": "the security office", "action": "gate B desk"}
+{"act_index": 1464, "belief": "the security office", "action": "gate B desk"}
+{"act_index": 1465, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1466, "belief": "The most likely place is **lost property**. \n\nThe colleague's statement suggests that while there is", "action": "gate B desk"}
+{"act_index": 1467, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1468, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1469, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1470, "belief": "lost property", "action": "lost property"}
+{"act_index": 1471, "belief": "lost property", "action": "lost property"}
+{"act_index": 1472, "belief": "the security office", "action": "the security office"}
+{"act_index": 1473, "belief": "the security office", "action": "lost property"}
+{"act_index": 1474, "belief": "lost property", "action": "lost property"}
+{"act_index": 1475, "belief": "lost property", "action": "lost property"}
+{"act_index": 1476, "belief": "lost property", "action": "lost property"}
+{"act_index": 1477, "belief": "lost property", "action": "lost property"}
+{"act_index": 1478, "belief": "lost property", "action": "lost property"}
+{"act_index": 1479, "belief": "lost property", "action": "lost property"}
+{"act_index": 1480, "belief": "lost property", "action": "lost property"}
+{"act_index": 1482, "belief": "The most likely answer is: **the tool crib**\n\n### Reasoning:\n- Your colleague says:", "action": "**tool crib**"}
+{"act_index": 1483, "belief": "The most likely answer is: **hangar 1**\n\nThe colleague's statement implies that the torque", "action": "the tool crib"}
+{"act_index": 1484, "belief": "The torque wrench is most likely in **the tool crib**.\n\n**Explanation:**  \nYour colleague told", "action": "the tool crib"}
+{"act_index": 1485, "belief": "hangar 1", "action": "tool crib"}
+{"act_index": 1486, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1487, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1488, "belief": "the tool crib", "action": "hangar 1"}
+{"act_index": 1489, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1490, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1491, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1493, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1494, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1495, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1496, "belief": "**hangar 1**", "action": "hangar 1"}
+{"act_index": 1497, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1498, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1499, "belief": "dock 3", "action": "tool crib"}
+{"act_index": 1501, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1502, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1503, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1504, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1505, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1506, "belief": "The vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1508, "belief": "teller drawer", "action": "the vault anteroom"}
+{"act_index": 1509, "belief": "teller drawer", "action": "the vault anteroom"}
+{"act_index": 1510, "belief": "the manager's safe", "action": "the vault anteroom"}
+{"act_index": 1511, "belief": "teller drawer", "action": "the vault anteroom"}
+{"act_index": 1512, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1513, "belief": "vault anteroom", "action": "vault anteroom"}
+{"act_index": 1514, "belief": "vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1515, "belief": "vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1516, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1517, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1518, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1520, "belief": "To determine where the lost passport is most likely, let's analyze the information given:\n\n- The possible", "action": "lost property"}
+{"act_index": 1521, "belief": "the security office", "action": "the security office"}
+{"act_index": 1522, "belief": "lost property", "action": "lost property"}
+{"act_index": 1523, "belief": "the security office", "action": "the security office"}
+{"act_index": 1524, "belief": "lost property", "action": "lost property"}
+{"act_index": 1525, "belief": "**the security office**", "action": "**the security office**"}
+{"act_index": 1526, "belief": "the security office", "action": "lost property"}
+{"act_index": 1527, "belief": "lost property", "action": "lost property"}
+{"act_index": 1528, "belief": "lost property", "action": "lost property"}
+{"act_index": 1529, "belief": "lost property", "action": "lost property"}
+{"act_index": 1530, "belief": "lost property", "action": "lost property"}
+{"act_index": 1531, "belief": "lost property", "action": "lost property"}
+{"act_index": 1532, "belief": "lost property", "action": "lost property"}
+{"act_index": 1533, "belief": "To determine where the lost passport is most likely, let's analyze the colleague's statement:\n\n> \"", "action": "**lost property**"}
+{"act_index": 1534, "belief": "lost property", "action": "lost property"}
+{"act_index": 1535, "belief": "lost property", "action": "lost property"}
+{"act_index": 1536, "belief": "lost property", "action": "lost property"}
+{"act_index": 1537, "belief": "lost property", "action": "lost property"}
+{"act_index": 1539, "belief": "**hangar 1**\n\nThe colleague's statement implies that they believe the torque wrench is in hang", "action": "hangar 1"}
+{"act_index": 1540, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1541, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1542, "belief": "The colleague's statement says:  \n- \"The torque wrench is in dock 3 and the tool", "action": "dock 3"}
+{"act_index": 1543, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1544, "belief": "the tool crib", "action": "dock 3"}
+{"act_index": 1545, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1546, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1547, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1548, "belief": "dock 3", "action": "hangar 1"}
+{"act_index": 1549, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1550, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1551, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1552, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1553, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1554, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1555, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1556, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1558, "belief": "the tool crib", "action": "dock 3"}
+{"act_index": 1559, "belief": "the tool crib", "action": "dock 3"}
+{"act_index": 1560, "belief": "the tool crib", "action": "dock 3"}
+{"act_index": 1561, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1562, "belief": "the tool crib", "action": "dock 3"}
+{"act_index": 1563, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1564, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1565, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1566, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1567, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1568, "belief": "dock 3", "action": "hangar 1"}
+{"act_index": 1569, "belief": "dock 3", "action": "hangar 1"}
+{"act_index": 1570, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1571, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1572, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1573, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1574, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1575, "belief": "To determine the most likely location of the torque wrench, let's analyze the information given:\n\n- The", "action": "the tool crib"}
+{"act_index": 1577, "belief": "vault anteroom", "action": "vault anteroom"}
+{"act_index": 1578, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1579, "belief": "The most likely answer is: **the vault anteroom**.\n\n### Reasoning:\nYour colleague", "action": "the manager's safe"}
+{"act_index": 1580, "belief": "The backup keycard is most likely in **the vault anteroom**.\n\n### Reasoning:", "action": "The answer is: **the vault anteroom**. \n\nThe colleague explicitly said, \"The"}
+{"act_index": 1581, "belief": "vault anteroom", "action": "the manager's safe"}
+{"act_index": 1582, "belief": "the teller drawer", "action": "**the teller drawer**"}
+{"act_index": 1583, "belief": "the manager's safe", "action": "the teller drawer"}
+{"act_index": 1584, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1585, "belief": "the teller drawer", "action": "teller drawer"}
+{"act_index": 1586, "belief": "the manager's safe", "action": "the teller drawer"}
+{"act_index": 1587, "belief": "the teller drawer", "action": "teller drawer"}
+{"act_index": 1588, "belief": "the manager's safe", "action": "the teller drawer"}
+{"act_index": 1589, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1590, "belief": "the teller drawer", "action": "teller drawer"}
+{"act_index": 1591, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1592, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1593, "belief": "vault anteroom", "action": "the manager's safe"}
+{"act_index": 1594, "belief": "vault anteroom", "action": "vault anteroom"}
+{"act_index": 1596, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1597, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1598, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1599, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1600, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1601, "belief": "the vault anteroom", "action": "the manager's safe"}
+{"act_index": 1602, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1603, "belief": "the manager's safe", "action": "the vault anteroom"}
+{"act_index": 1604, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1605, "belief": "the manager's safe", "action": "the vault anteroom"}
+{"act_index": 1606, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1607, "belief": "the manager's safe", "action": "the vault anteroom"}
+{"act_index": 1608, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1609, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1610, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1611, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1612, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1613, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1615, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1616, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1617, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1618, "belief": "The most likely place is: **dock 3**\n\n**Explanation:**\n\nYour colleague said:", "action": "dock 3"}
+{"act_index": 1619, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1620, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1621, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1622, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1623, "belief": "the tool crib", "action": "dock 3"}
+{"act_index": 1624, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1625, "belief": "the tool crib", "action": "dock 3"}
+{"act_index": 1626, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1627, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1628, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1629, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1630, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1631, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1632, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1634, "belief": "lost property", "action": "gate B desk"}
+{"act_index": 1635, "belief": "lost property", "action": "gate B desk"}
+{"act_index": 1636, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1637, "belief": "lost property", "action": "gate B desk"}
+{"act_index": 1638, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1639, "belief": "To determine where the lost passport is most likely, let's analyze the information given:\n\n- The possible", "action": "gate B desk"}
+{"act_index": 1640, "belief": "lost property", "action": "lost property"}
+{"act_index": 1641, "belief": "lost property", "action": "lost property"}
+{"act_index": 1642, "belief": "the security office", "action": "the security office"}
+{"act_index": 1643, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1644, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1645, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1646, "belief": "the security office", "action": "the security office"}
+{"act_index": 1647, "belief": "the security office", "action": "the security office"}
+{"act_index": 1648, "belief": "the security office", "action": "the security office"}
+{"act_index": 1649, "belief": "the security office", "action": "the security office"}
+{"act_index": 1650, "belief": "lost property", "action": "gate B desk"}
+{"act_index": 1651, "belief": "lost property", "action": "lost property"}
+{"act_index": 1653, "belief": "vault anteroom", "action": "the teller drawer"}
+{"act_index": 1654, "belief": "the teller drawer", "action": "teller drawer"}
+{"act_index": 1655, "belief": "the manager's safe", "action": "the teller drawer"}
+{"act_index": 1656, "belief": "vault anteroom", "action": "the teller drawer"}
+{"act_index": 1657, "belief": "vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1658, "belief": "vault anteroom", "action": "the teller drawer"}
+{"act_index": 1659, "belief": "vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1660, "belief": "vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1661, "belief": "teller drawer", "action": "the teller drawer"}
+{"act_index": 1662, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1663, "belief": "vault anteroom", "action": "vault anteroom"}
+{"act_index": 1664, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1665, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1666, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1667, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1668, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1669, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1670, "belief": "the manager's safe", "action": "the teller drawer"}
+{"act_index": 1672, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1673, "belief": "**lost property**", "action": "gate B desk"}
+{"act_index": 1674, "belief": "**lost property**", "action": "lost property"}
+{"act_index": 1676, "belief": "Based on the information provided:\n\n- The colleague says: \"I don\u2019t have the exact location,", "action": "gate B desk"}
+{"act_index": 1677, "belief": "The answer is: **gate B desk**. \n\nThe colleague said, \"The passport is in", "action": "gate B desk"}
+{"act_index": 1678, "belief": "lost property", "action": "lost property"}
+{"act_index": 1679, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1680, "belief": "lost property", "action": "lost property"}
+{"act_index": 1681, "belief": "lost property", "action": "lost property"}
+{"act_index": 1682, "belief": "lost property", "action": "lost property"}
+{"act_index": 1683, "belief": "lost property", "action": "lost property"}
+{"act_index": 1684, "belief": "lost property", "action": "lost property"}
+{"act_index": 1685, "belief": "lost property", "action": "lost property"}
+{"act_index": 1686, "belief": "lost property", "action": "lost property"}
+{"act_index": 1687, "belief": "lost property", "action": "lost property"}
+{"act_index": 1688, "belief": "lost property", "action": "lost property"}
+{"act_index": 1689, "belief": "lost property", "action": "lost property"}
+{"act_index": 1691, "belief": "the tool crib", "action": "dock 3"}
+{"act_index": 1692, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1693, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1694, "belief": "the tool crib", "action": "dock 3"}
+{"act_index": 1695, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1696, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1697, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1698, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1699, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1700, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1701, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1702, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1703, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1704, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1705, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1706, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1707, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1708, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1710, "belief": "lost property", "action": "lost property"}
+{"act_index": 1712, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1713, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1714, "belief": "lost property", "action": "lost property"}
+{"act_index": 1715, "belief": "lost property", "action": "lost property"}
+{"act_index": 1716, "belief": "the security office", "action": "gate B desk"}
+{"act_index": 1717, "belief": "lost property", "action": "lost property"}
+{"act_index": 1718, "belief": "lost property", "action": "lost property"}
+{"act_index": 1719, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1720, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1721, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1722, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1723, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1724, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1725, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1726, "belief": "lost property", "action": "lost property"}
+{"act_index": 1727, "belief": "lost property", "action": "lost property"}
+{"act_index": 1729, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1730, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1731, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1732, "belief": "**hangar 1**", "action": "hangar 1"}
+{"act_index": 1733, "belief": "dock 3", "action": "hangar 1"}
+{"act_index": 1734, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1735, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1736, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1737, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1738, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1739, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1740, "belief": "hangar 1", "action": "hangar 1"}
+{"act_index": 1741, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1742, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1743, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1744, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1745, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1746, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1748, "belief": "lost property", "action": "lost property"}
+{"act_index": 1749, "belief": "**lost property**", "action": "lost property"}
+{"act_index": 1750, "belief": "the security office", "action": "the security office"}
+{"act_index": 1751, "belief": "lost property", "action": "lost property"}
+{"act_index": 1752, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1753, "belief": "lost property", "action": "lost property"}
+{"act_index": 1754, "belief": "lost property", "action": "gate B desk"}
+{"act_index": 1755, "belief": "gate B desk", "action": "lost property"}
+{"act_index": 1756, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1757, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1758, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1759, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1760, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1761, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1762, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1763, "belief": "gate B desk", "action": "gate B desk"}
+{"act_index": 1764, "belief": "lost property", "action": "lost property"}
+{"act_index": 1765, "belief": "the security office", "action": "the security office"}
+{"act_index": 1767, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1768, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1769, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1770, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1771, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1772, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1774, "belief": "the manager's safe", "action": "the vault anteroom"}
+{"act_index": 1775, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1776, "belief": "the manager's safe", "action": "the vault anteroom"}
+{"act_index": 1777, "belief": "the teller drawer", "action": "the vault anteroom"}
+{"act_index": 1778, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1779, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1780, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1781, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1782, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1783, "belief": "the manager's safe", "action": "the vault anteroom"}
+{"act_index": 1784, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1786, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1787, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1788, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1789, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1790, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1791, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1792, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1793, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1794, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1795, "belief": "the manager's safe", "action": "the vault anteroom"}
+{"act_index": 1796, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1797, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1798, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1799, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1800, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1801, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1802, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1803, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1805, "belief": "To determine the most likely location of the backup keycard, let's analyze the information given:\n\n1", "action": "the teller drawer"}
+{"act_index": 1806, "belief": "the teller drawer", "action": "teller drawer"}
+{"act_index": 1807, "belief": "**teller drawer**", "action": "teller drawer"}
+{"act_index": 1808, "belief": "the manager's safe", "action": "**the manager's safe**"}
+{"act_index": 1809, "belief": "the teller drawer", "action": "the manager's safe"}
+{"act_index": 1810, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1811, "belief": "teller drawer", "action": "the vault anteroom"}
+{"act_index": 1812, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1813, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1814, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1815, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1816, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1817, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1818, "belief": "The backup keycard is most likely in: **the vault anteroom**.", "action": "the vault anteroom"}
+{"act_index": 1819, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1820, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1821, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1822, "belief": "teller drawer", "action": "teller drawer"}
+{"act_index": 1824, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1825, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1826, "belief": "dock 3", "action": "the tool crib"}
+{"act_index": 1828, "belief": "To determine where the torque wrench is most likely, we analyze the information given:\n\n- The torque wrench", "action": "dock 3"}
+{"act_index": 1829, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1830, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1831, "belief": "dock 3", "action": "the tool crib"}
+{"act_index": 1832, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1833, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1834, "belief": "dock 3", "action": "dock 3"}
+{"act_index": 1835, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1836, "belief": "the tool crib", "action": "**the tool crib**"}
+{"act_index": 1837, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1838, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1839, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1840, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1841, "belief": "the tool crib", "action": "the tool crib"}
+{"act_index": 1843, "belief": "The vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1844, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1846, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1847, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1848, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1849, "belief": "The manager's safe", "action": "the manager's safe"}
+{"act_index": 1850, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1851, "belief": "the manager's safe", "action": "the teller drawer"}
+{"act_index": 1852, "belief": "the vault anteroom", "action": "the teller drawer"}
+{"act_index": 1854, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1855, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1856, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1857, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1858, "belief": "the teller drawer", "action": "the teller drawer"}
+{"act_index": 1859, "belief": "the manager's safe", "action": "the vault anteroom"}
+{"act_index": 1860, "belief": "the manager's safe", "action": "the vault anteroom"}
+{"act_index": 1862, "belief": "the manager's safe", "action": "the teller drawer"}
+{"act_index": 1863, "belief": "The backup keycard is most likely in **the vault anteroom**. \n\nThe colleague explicitly", "action": "the vault anteroom"}
+{"act_index": 1864, "belief": "the manager's safe", "action": "the teller drawer"}
+{"act_index": 1865, "belief": "the vault anteroom", "action": "vault anteroom"}
+{"act_index": 1866, "belief": "The vault anteroom.", "action": "the vault anteroom"}
+{"act_index": 1867, "belief": "the manager's safe", "action": "the teller drawer"}
+{"act_index": 1868, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1869, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1870, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1871, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1872, "belief": "The vault anteroom.", "action": "vault anteroom"}
+{"act_index": 1873, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1874, "belief": "The vault anteroom.", "action": "vault anteroom"}
+{"act_index": 1875, "belief": "vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1876, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1877, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1878, "belief": "the manager's safe", "action": "the teller drawer"}
+{"act_index": 1879, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1881, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1882, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1883, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1884, "belief": "**the manager's safe**", "action": "the vault anteroom"}
+{"act_index": 1885, "belief": "vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1886, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1887, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1888, "belief": "the vault anteroom", "action": "the manager's safe"}
+{"act_index": 1889, "belief": "the vault anteroom", "action": "the vault anteroom"}
+{"act_index": 1890, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1891, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1892, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1893, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1894, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1895, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1896, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1897, "belief": "the manager's safe", "action": "the manager's safe"}
+{"act_index": 1898, "belief": "the vault anteroom", "action": "the vault anteroom"}

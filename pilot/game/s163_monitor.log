@@ -1,0 +1,13 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<01:20,  4.92it/s]Loading weights:   1%|          | 2/399 [00:00<01:25,  4.63it/s]Loading weights:   4%|▍         | 17/399 [00:00<00:08, 44.30it/s]Loading weights:  10%|▉         | 39/399 [00:00<00:03, 93.29it/s]Loading weights:  16%|█▋        | 65/399 [00:00<00:02, 140.03it/s]Loading weights:  22%|██▏       | 89/399 [00:00<00:01, 167.90it/s]Loading weights:  29%|██▊       | 114/399 [00:00<00:01, 184.33it/s]Loading weights:  34%|███▍      | 135/399 [00:01<00:01, 184.25it/s]Loading weights:  39%|███▉      | 155/399 [00:01<00:01, 185.16it/s]Loading weights:  45%|████▍     | 178/399 [00:01<00:01, 197.57it/s]Loading weights:  50%|█████     | 200/399 [00:01<00:00, 203.97it/s]Loading weights:  56%|█████▌    | 223/399 [00:01<00:00, 205.62it/s]Loading weights:  62%|██████▏   | 247/399 [00:01<00:00, 209.34it/s]Loading weights:  68%|██████▊   | 270/399 [00:01<00:00, 208.75it/s]Loading weights:  74%|███████▍  | 296/399 [00:01<00:00, 221.86it/s]Loading weights:  80%|███████▉  | 319/399 [00:01<00:00, 211.66it/s]Loading weights:  85%|████████▌ | 341/399 [00:02<00:00, 198.66it/s]Loading weights:  91%|█████████ | 362/399 [00:02<00:00, 195.76it/s]Loading weights:  97%|█████████▋| 386/399 [00:02<00:00, 205.94it/s]Loading weights: 100%|██████████| 399/399 [00:02<00:00, 171.72it/s]
+0/6764
+800/6764
+1600/6764
+2400/6764
+3200/6764
+4000/6764
+4800/6764
+5600/6764
+6400/6764
+MONITOR_DONE
+EXIT 0
