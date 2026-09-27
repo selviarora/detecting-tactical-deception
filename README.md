@@ -6,6 +6,17 @@ tldr; the question i care about is:
 
 this repo is everything i have learned while trying. :)
 
+## what i've tried so far (short version)
+
+1. **tested someone else's lie detector (apollo's).** it mostly fired when a model was *told* to lie or override its answer, not when it actually misled anyone. lesson: "told to lie" isn't lying.
+2. **built my own detector for "the answer doesn't match the evidence".** it worked well and transferred across three model families, but it also fired on honest mistakes. lesson: a wrong answer isn't a lie.
+3. **looked for real strategic lying in normal models.** they almost never did it on their own, so there was nothing to study.
+4. **trained models to lie selectively ("model organisms").** the first one just learned "say three": a reflex, not lying. the next one worked: it misreports only when that helps its objective and nobody's checking, flips the lie when the payoff flips, and stays honest otherwise. i got this working with two training methods (sft and dpo) and in two model families (qwen and granite).
+5. **built a detector on those organisms.** frozen, it caught the lies of a separately trained organism, and beat an ai judge reading the same answers (.898 vs .688). this is my best result so far.
+6. **tested it on an organism trained a different way.** it passed the usual checks, but failed to separate lies from honest answers given in the same tempting conditions. my best reading is that the part that transfers tracks the *opportunity* to lie more than the *choice*.
+7. **looked for a single "lie switch" inside the model.** none of the interventions i tried selectively controlled the lying; the closest thing was a tangled "say the other number" lever.
+8. **built organisms that sometimes resist temptation on the exact same prompt,** which the key test needs. that run is in progress.
+
 --
 
 i started with a pretty simple question:
