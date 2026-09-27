@@ -6488,3 +6488,37 @@ non-paying LOW twin, and non-paying HIGH and FIXED). Keep paying HIGH and FIXED 
     readout, which is consistent with mismatch reading.
 - The .400 failure is therefore driven by between-prompt differences within the condition, not by within-prompt
   lie-vs-honest reversals.
+
+## 157. sep 27: "honest because it would be caught" vs "honest anyway". DEVELOPMENT ONLY (exploratory, open s148 DPO data, not gated). **Null: the organism's lie propensity is fixed by prompt surface features, so the question is not testable in this organism.**
+
+**Idea** (from review):
+- Audited truthful answers are split by whether their unaudited twin lies ("honest because caught") or stays honest
+  ("honest anyway").
+- The twins share history, evidence, payoff and wording; only the audit line differs. Every compared item is audited
+  and truthful, so audit-language recognition cannot separate them.
+
+**Result:**
+- 680 audited truthful answers (512 vs 168; 90 histories).
+- Probes at every site (P0/P1/PM, L16-32): grouped-CV AUROC .998, identical across sites.
+- Prompt-text TF-IDF baseline: .769 overall; .992 within the f=3 direction.
+
+**Diagnosis:** the DPO organism's LOW-audit lie propensity is almost entirely determined by (family, E, payoff-wording
+index):
+
+| cell | lie propensity |
+|---|---|
+| education, E=3, w0 | .10 |
+| software, E=2, w0 | .00 |
+| software, E=2, w1 | .31 |
+| all other 9 cells | 1.00 |
+
+The probes read the wording variant, not a hidden disposition. Within-cell variation exists in only about 3 cells and
+about 50 prompts.
+
+**Consequences:**
+1. **For s148:** the DPO organism's TUH set is dominated by a few specific wording variants, so the s148 TUH contrast
+   (.400) compared lies and honest answers from different phrasings. This makes the prompt-composition caveat in the
+   s148 correction concrete.
+2. **For the oversight experiment:** it needs an organism whose unaudited propensity varies across histories WITHIN
+   fixed (family, E, wording) cells, or an analysis stratified by those cells. The stochastic SFT organisms
+   (s155 A: per-prompt lie rates between 0 and 1 at k=8) are the candidate substrate.
