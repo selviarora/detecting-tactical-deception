@@ -15,7 +15,8 @@ this repo is everything i have learned while trying. :)
 - **a detector built on those organisms (§146)** → catches a separately trained organism's lies, and beats an ai judge (.898 vs .688) ✅ best result
 - **the same detector on an organism trained differently (§148)** → fails on honest answers in the same tempting conditions ❌ (but prompts and wording differed, so it's not clean)
 - **searching for a "lie switch" inside the model** → nothing selective, just a "say the other number" lever
-- **the key test: lie vs honest on the *exact same* prompt (§160)** → running now ⏳
+- **the key test: lie vs honest on the *exact same* prompt (§160)** → passes in granite (.955; text alone .53) ✅, but it may be reading "knowingly false" rather than intent; qwen's organism was untestable
+- **a stock model in a sender-receiver game (§161)** → with reasoning on, it chooses to mislead when its goal conflicts, and tries to talk informed colleagues out of what they know 👀 (being tested properly next)
 
 --
 
