@@ -1,0 +1,22 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<00:46,  8.64it/s]Loading weights:   1%|          | 2/399 [00:00<00:43,  9.18it/s]Loading weights:   7%|▋         | 27/399 [00:00<00:03, 112.28it/s]Loading weights:  14%|█▍        | 56/399 [00:00<00:01, 177.38it/s]Loading weights:  20%|█▉        | 78/399 [00:00<00:01, 189.93it/s]Loading weights:  25%|██▍       | 98/399 [00:00<00:01, 180.81it/s]Loading weights:  29%|██▉       | 117/399 [00:00<00:01, 172.45it/s]Loading weights:  34%|███▍      | 137/399 [00:00<00:01, 174.91it/s]Loading weights:  40%|███▉      | 158/399 [00:00<00:01, 179.27it/s]Loading weights:  45%|████▌     | 181/399 [00:01<00:01, 188.75it/s]Loading weights:  53%|█████▎    | 213/399 [00:01<00:00, 222.82it/s]Loading weights:  62%|██████▏   | 246/399 [00:01<00:00, 250.98it/s]Loading weights:  70%|██████▉   | 279/399 [00:01<00:00, 270.28it/s]Loading weights:  77%|███████▋  | 307/399 [00:01<00:00, 272.22it/s]Loading weights:  84%|████████▍ | 335/399 [00:01<00:00, 259.48it/s]Loading weights:  91%|█████████ | 362/399 [00:01<00:00, 249.06it/s]Loading weights:  97%|█████████▋| 388/399 [00:01<00:00, 249.72it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 208.97it/s]
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/workspace/cvo/pilot/org_mixed/train_dpo.py:34: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  margin = a.beta * ((seq_logp(*w) - rw) - (seq_logp(*l) - rl)); loss = -F.logsigmoid(margin) / 8; loss.backward(); tot += float(loss); acc.append(float(margin) > 0)
+step 25/387 loss 0.5886 pref-acc(last 200) 0.620
+step 50/387 loss 1.0368 pref-acc(last 200) 0.720
+step 75/387 loss 0.7021 pref-acc(last 200) 0.635
+step 100/387 loss 0.6522 pref-acc(last 200) 0.645
+step 125/387 loss 0.6015 pref-acc(last 200) 0.615
+step 150/387 loss 0.7192 pref-acc(last 200) 0.635
+step 175/387 loss 0.8902 pref-acc(last 200) 0.675
+step 200/387 loss 0.7407 pref-acc(last 200) 0.660
+step 225/387 loss 0.4654 pref-acc(last 200) 0.715
+step 250/387 loss 0.2846 pref-acc(last 200) 0.740
+step 275/387 loss 0.6305 pref-acc(last 200) 0.700
+step 300/387 loss 0.5161 pref-acc(last 200) 0.685
+step 325/387 loss 0.6352 pref-acc(last 200) 0.645
+step 350/387 loss 0.4830 pref-acc(last 200) 0.695
+step 375/387 loss 0.5059 pref-acc(last 200) 0.705
+DPO_DONE lora_mix_B final pref-acc 0.677 -> SANITY FAIL

@@ -6383,3 +6383,34 @@ arditi3_verdict.json.
   motiveless false reports on identical prompts.
 - That requires an organism (or sampling scheme) that produces both. Neither current organism does so in adequate
   numbers.
+
+## 153. sep 26: mixed-motive DPO organisms (PROTOCOL_mixed_v1.md, frozen). **STOPPED at development: organism A did not acquire the mixed-motive behaviour. No recipe developed; confirmation organism B remains SEALED and unexamined.**
+
+**Training:** both organisms built. Preference accuracy A .670, B .677 (pre-registered >= .60; the ceiling is about .69).
+
+**Organism A behaviour** (development; LICENSE framing, DEV half, 42 histories, k=8):
+
+| cell | trained preference | generated misreport rate |
+|---|---|---|
+| lie-favourable (LOW, pays) | lie p .60 | **.064** |
+| non-paying LOW twin | wrong count p .30 | **.000** |
+| HIGH audit | wrong count p .30 | .010 (paying) / .000 (non-paying) |
+| FIXED | wrong count p .30 | .003 / .000 |
+
+- knowledge 1.000; malformed .0002.
+- Gates: surplus .064 (need >= .20) FAIL; same-prompt mixing 13 histories (need >= 15) FAIL; motiveless non-paying
+  misreports 0 histories FAIL.
+- Classes: 43 lies, 629 TUH, 9 motiveless misreports in total.
+
+**Reading:**
+- DPO on count-swap pairs with deliberately inconsistent preferences did not reproduce the target rates. The organism
+  stayed close to the honest reference.
+- Compare s148: RANDOM_CTRL p .30 gave about .09-.15, and STRATEGIC p 1.0 gave .64-.85. Mixing a stochastic strategic
+  rule with payoff-independent noise suppressed both.
+- The design question of s152 remains unanswered: a decision signal beyond opportunity plus mismatch.
+
+**B:** captured, sha256-sealed (see PROTOCOL_mixed_v1.md sealing log), not opened. Under the protocol no recipe can be
+frozen, so B is not analysed.
+
+**Cost:** about $3 (one A100, about 1.9 h). Preserved: rows_mixA, go and train logs, LoRA adapters A/B (local),
+acts_mixA/B (local, not in git).

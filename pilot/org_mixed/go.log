@@ -1,0 +1,7 @@
+SETUP_OK
+MODEL_OK
+TRAIN_DONE B DPO_DONE lora_mix_B final pref-acc 0.677 -> SANITY FAIL
+TRAIN_DONE A DPO_DONE lora_mix_A final pref-acc 0.670 -> SANITY FAIL
+CAP_DONE mixA
+CAP_DONE mixB
+PIPE_DONE

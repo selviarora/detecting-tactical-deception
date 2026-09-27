@@ -1,0 +1,22 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   1%|          | 2/399 [00:00<00:50,  7.80it/s]Loading weights:   4%|▍         | 17/399 [00:00<00:06, 56.58it/s]Loading weights:  10%|▉         | 38/399 [00:00<00:03, 102.04it/s]Loading weights:  15%|█▍        | 59/399 [00:00<00:02, 129.17it/s]Loading weights:  19%|█▊        | 74/399 [00:00<00:02, 134.15it/s]Loading weights:  23%|██▎       | 93/399 [00:00<00:02, 145.43it/s]Loading weights:  29%|██▉       | 115/399 [00:00<00:01, 158.18it/s]Loading weights:  34%|███▍      | 137/399 [00:01<00:01, 167.31it/s]Loading weights:  39%|███▉      | 157/399 [00:01<00:01, 174.05it/s]Loading weights:  44%|████▍     | 175/399 [00:01<00:01, 174.60it/s]Loading weights:  48%|████▊     | 193/399 [00:01<00:01, 167.32it/s]Loading weights:  53%|█████▎    | 213/399 [00:01<00:01, 176.27it/s]Loading weights:  58%|█████▊    | 231/399 [00:01<00:00, 175.36it/s]Loading weights:  62%|██████▏   | 249/399 [00:01<00:00, 167.29it/s]Loading weights:  67%|██████▋   | 269/399 [00:01<00:00, 170.22it/s]Loading weights:  72%|███████▏  | 289/399 [00:01<00:00, 170.91it/s]Loading weights:  78%|███████▊  | 310/399 [00:02<00:00, 181.02it/s]Loading weights:  82%|████████▏ | 329/399 [00:02<00:00, 182.55it/s]Loading weights:  87%|████████▋ | 348/399 [00:02<00:00, 176.13it/s]Loading weights:  92%|█████████▏| 367/399 [00:02<00:00, 169.07it/s]Loading weights:  96%|█████████▋| 385/399 [00:03<00:00, 40.13it/s] Loading weights: 100%|█████████▉| 398/399 [00:04<00:00, 31.88it/s]Loading weights: 100%|██████████| 399/399 [00:04<00:00, 91.36it/s]
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/workspace/cvo/pilot/org_mixed/train_dpo.py:34: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  margin = a.beta * ((seq_logp(*w) - rw) - (seq_logp(*l) - rl)); loss = -F.logsigmoid(margin) / 8; loss.backward(); tot += float(loss); acc.append(float(margin) > 0)
+step 25/387 loss 0.7465 pref-acc(last 200) 0.615
+step 50/387 loss 0.5800 pref-acc(last 200) 0.595
+step 75/387 loss 0.8390 pref-acc(last 200) 0.675
+step 100/387 loss 0.4212 pref-acc(last 200) 0.680
+step 125/387 loss 0.6442 pref-acc(last 200) 0.630
+step 150/387 loss 0.4745 pref-acc(last 200) 0.600
+step 175/387 loss 0.6172 pref-acc(last 200) 0.650
+step 200/387 loss 0.4529 pref-acc(last 200) 0.690
+step 225/387 loss 0.5365 pref-acc(last 200) 0.710
+step 250/387 loss 0.1844 pref-acc(last 200) 0.755
+step 275/387 loss 0.7395 pref-acc(last 200) 0.670
+step 300/387 loss 0.5939 pref-acc(last 200) 0.700
+step 325/387 loss 0.5093 pref-acc(last 200) 0.675
+step 350/387 loss 0.9414 pref-acc(last 200) 0.645
+step 375/387 loss 0.8163 pref-acc(last 200) 0.680
+DPO_DONE lora_mix_A final pref-acc 0.670 -> SANITY FAIL
