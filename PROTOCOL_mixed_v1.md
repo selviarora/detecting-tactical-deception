@@ -70,3 +70,11 @@ One A100 ($1.59/h), about 2.5 h, about $4.
 - a2b1a5c4f38c2bc611fd72142b92617fe91d2941dc116410f5be2a1f455f46bd  pilot/org_mixed/items_B_conf.jsonl
 - 8655de74518c74910c4e777118d5788961bd55466fc46230c7622ea377c89c48  pilot/org_mixed/train_dpo.py
 - a8d9d9a513133210045b480058c7edd59f511e8337fa964d6d76cde54f9b612b  pilot/mech2/capture2.py
+
+## sealing log (sep 26 2026 ~00:16 UTC; B pulled, NOT opened)
+- training sanity (pre-registered >= .60): A .670 PASS, B .677 PASS. train_dpo.py's built-in ".90 SANITY FAIL" label is
+  s148's rule and does not apply here.
+- B sealed files, sha256 (identical on the pod):
+  - rows_mixB.jsonl 0eb1dfb21e549f48a432d2886ae3733deaa7f1b21f9434936754d20fed019946
+  - acts_mixB.npz 81fbe5ac306af35d80c3216816cf435efa9b285f3d34e0770f09b3482b70a79c
+- A (development): rows_mixA.jsonl a63fe4dd..., acts_mixA.npz 25eba658...
