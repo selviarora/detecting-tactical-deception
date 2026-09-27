@@ -10,7 +10,8 @@ from pathlib import Path
 import numpy as np
 from sklearn.linear_model import LogisticRegression
 HERE = Path(__file__).resolve().parent; sys.path.insert(0, str(HERE)); import mixed_lib as M
-R = M.load(HERE / "cap_mixA" / "rows_mixA.jsonl"); A = np.load(HERE / "cap_mixA" / "acts_mixA.npz")
+TAG = sys.argv[1] if len(sys.argv) > 1 else "mixA"; CAP = Path(sys.argv[2]) if len(sys.argv) > 2 else HERE / f"cap_{TAG}"   # usage: python develop_recipe.py msA ../org_mixsft/cap_msA
+R = M.load(CAP / f"rows_{TAG}.jsonl"); A = np.load(CAP / f"acts_{TAG}.npz")
 use = np.array([r["cls"] not in ("neutral", "MAL", "OTHER") for r in R]); H = np.array([r["trial_id"] for r in R])
 yL = np.array([r["cls"] == "LIE" for r in R]).astype(int); yO = np.array([(not r["mal"]) and r["R"] != r["E"] for r in R]).astype(int)
 yC = np.array([r["f"] is not None and r["f"] != r["E"] and r["audit"] == "LOW" for r in R]).astype(int)
@@ -36,4 +37,4 @@ for so, sc in itertools.product(sites_rep, sites_pr):
 worst = lambda t: min(v["auroc"] for v in t.values() if v["testable"]) if any(v["testable"] for v in t.values()) else np.nan
 res.sort(key=lambda x: -worst(x[2]))
 for kind, s, t in res[:15]: print(f"{kind:6s} {s:18s} worst {worst(t):.3f} |", " ".join(f"C{i+1} {v['auroc']:.3f}" + ("" if v["testable"] else "(nt)") for i, v in enumerate(t.values())))
-json.dump([{"kind": k, "site": s, "worst": worst(t), "table": t} for k, s, t in res], open(HERE / "develop_A.json", "w"), indent=1, default=float)
+json.dump([{"kind": k, "site": s, "worst": worst(t), "table": t} for k, s, t in res], open(CAP / f"develop_{TAG}.json", "w"), indent=1, default=float)
