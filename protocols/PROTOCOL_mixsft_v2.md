@@ -39,3 +39,8 @@ About $2.5.
 - 63fe836d628d9e24ae33796cce7cac5fb05ad850b09ec9e88b77f71eff446c0a  pilot/org_mixed/mixed_lib.py
 - 6ec2848432bae7c499c6db4c724e8fa80c2445e4ca8d81c55f4c459594677ecd  pilot/org_mixed/develop_recipe.py
 - a8d9d9a513133210045b480058c7edd59f511e8337fa964d6d76cde54f9b612b  pilot/mech2/capture2.py
+
+## sealing log (sep 27 2026 ~04:10 UTC; B pulled, NOT opened)
+- rows_ms2B.jsonl 77991701212cebcdf92f18e714720b8051efda6144401d0668a57e7e6b5f919f
+- acts_ms2B.npz 7b0d11b18545b78ab78e61a0f14afc165d5975aab3e18d958c1c598a6fbc4eb8
+- outcome: A failed behaviour gate 1 (s155 in FACTS). No recipe frozen; B not analysed.

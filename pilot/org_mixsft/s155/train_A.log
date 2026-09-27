@@ -1,0 +1,26 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   1%|          | 2/399 [00:00<00:48,  8.27it/s]Loading weights:   7%|▋         | 26/399 [00:00<00:04, 93.03it/s]Loading weights:  10%|█         | 40/399 [00:00<00:03, 103.13it/s]Loading weights:  15%|█▌        | 60/399 [00:00<00:02, 131.27it/s]Loading weights:  20%|██        | 81/399 [00:00<00:02, 149.99it/s]Loading weights:  25%|██▍       | 98/399 [00:00<00:01, 152.00it/s]Loading weights:  29%|██▉       | 115/399 [00:00<00:01, 150.02it/s]Loading weights:  34%|███▍      | 136/399 [00:01<00:01, 160.04it/s]Loading weights:  40%|███▉      | 158/399 [00:01<00:01, 170.75it/s]Loading weights:  44%|████▍     | 176/399 [00:01<00:01, 167.00it/s]Loading weights:  48%|████▊     | 193/399 [00:01<00:01, 164.28it/s]Loading weights:  54%|█████▍    | 215/399 [00:01<00:01, 176.43it/s]Loading weights:  59%|█████▉    | 237/399 [00:01<00:00, 183.35it/s]Loading weights:  65%|██████▍   | 258/399 [00:01<00:00, 187.50it/s]Loading weights:  70%|███████   | 280/399 [00:01<00:00, 191.09it/s]Loading weights:  76%|███████▌  | 302/399 [00:01<00:00, 197.65it/s]Loading weights:  81%|████████  | 324/399 [00:02<00:00, 196.14it/s]Loading weights:  86%|████████▋ | 345/399 [00:02<00:00, 199.08it/s]Loading weights:  92%|█████████▏| 367/399 [00:02<00:00, 199.01it/s]Loading weights:  97%|█████████▋| 388/399 [00:02<00:00, 198.38it/s]Loading weights: 100%|██████████| 399/399 [00:02<00:00, 168.80it/s]
+[transformers] `use_cache=True` is incompatible with gradient checkpointing. Setting `use_cache=False`.
+/workspace/cvo/pilot/org_mixsft/train_sft.py:26: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:835.)
+  ids, lab = data[j]; loss = model(input_ids=ids[None].cuda(), labels=lab[None].cuda()).loss / 16; loss.backward(); tot += float(loss)
+epoch 0 step 20/387 loss 0.3260
+epoch 0 step 40/387 loss 0.2128
+epoch 0 step 60/387 loss 0.2040
+epoch 0 step 80/387 loss 0.1739
+epoch 0 step 100/387 loss 0.1724
+epoch 0 step 120/387 loss 0.1883
+epoch 0 step 140/387 loss 0.1789
+epoch 0 step 160/387 loss 0.1728
+epoch 0 step 180/387 loss 0.1900
+epoch 0 step 200/387 loss 0.1860
+epoch 0 step 220/387 loss 0.2000
+epoch 0 step 240/387 loss 0.1701
+epoch 0 step 260/387 loss 0.1635
+epoch 0 step 280/387 loss 0.1550
+epoch 0 step 300/387 loss 0.1641
+epoch 0 step 320/387 loss 0.1564
+epoch 0 step 340/387 loss 0.1632
+epoch 0 step 360/387 loss 0.1575
+epoch 0 step 380/387 loss 0.1851
+SFT_DONE

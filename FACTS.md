@@ -6442,3 +6442,31 @@ non-paying LOW twin, and non-paying HIGH and FIXED). Keep paying HIGH and FIXED 
 **B:** captured (sha256 rows a3f228f1..., acts 81396797...), sealed, not opened.
 
 **Cost:** about $2.5. Preserved: rows_msA, logs, adapters A/B (checksum-matched to the pod), acts (local).
+
+## 155. sep 27: mixed-motive SFT organisms, corrected target rule (protocols/PROTOCOL_mixsft_v2.md, frozen). **STOPPED at development: organism A is audit-sensitive for paying lies, but its lie rate does not exceed its motiveless false-report rate (surplus .025). Gate 1 FAIL. No recipe; B remains SEALED.**
+
+**Organism A behaviour** (LICENSE, DEV half, 42 histories, k=8), misreport rate:
+
+| LOW, pays | HIGH, pays | FIXED, pays | non-paying LOW | non-paying HIGH | non-paying FIXED |
+|---|---|---|---|---|---|
+| .356 | .037 | .042 | .330 | .388 | .393 |
+
+(Training targets: .572 / 0 / 0 / .300 / .300 / .300.)
+
+- Knowledge .976; malformed .000.
+- Same-prompt mixing: 42 histories. Motiveless non-paying misreports: 42 histories.
+- Classes: 239 lies, 433 TUH, 222/286/292 motiveless.
+- Gates: **surplus .025 (CI lower -.019) FAIL**; gates 2-4 PASS.
+
+**Reading:**
+- The correction worked for audit: paying misreports fall from .356 (LOW) to about .04 under HIGH and FIXED.
+- The organism compressed the strategic rate (target .57) and the noise rate (target .30) toward a common level (about
+  .33-.39). So misreports when lying pays are barely more frequent than misreports that can never pay. The two rates
+  cannot be told apart behaviourally, so a lie label is not reliably "strategic".
+- Three attempts (s153 DPO, s154 and s155 SFT) show that a stochastic mixed-motive policy with a clean strategic surplus
+  is hard to install with these recipes at this data scale. Per the pre-set stopping rule, the organism-building line
+  ends here for now.
+- Organism A is still useful development material (audit-sensitive, dense lies, TUH and motiveless reports). It is not
+  a gated result.
+
+**B:** captured, hashed at pull, sealed, not opened.
