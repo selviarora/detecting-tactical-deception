@@ -1,0 +1,8 @@
+{
+ "fam": "qwen",
+ "B": false,
+ "CB": true,
+ "lie_rate": 0.39166666666666666,
+ "mixing_histories": 87,
+ "verdict": "NOT TESTABLE"
+}

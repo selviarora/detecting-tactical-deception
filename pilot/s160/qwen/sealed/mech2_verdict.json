@@ -1,0 +1,22 @@
+{
+ "choices": {
+  "O": [
+   "P1_L24",
+   0.9926444361922576
+  ],
+  "C": [
+   "P0_L24",
+   1.0
+  ]
+ },
+ "behaviour_gate": {
+  "consistent >= .30 each direction": false,
+  "opposed <= .10": true,
+  "diff >= .25 CI>0": true,
+  "twins >= .25, non-paying misreport <= .10": true,
+  "HIGH <= .05 and FIXED <= .05": true,
+  "knowledge >= .95": true,
+  "malformed <= .10": true
+ },
+ "behaviour_pass": false
+}

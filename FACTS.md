@@ -6749,3 +6749,42 @@ With deliberation, Qwen chooses misleading (pilot subset, .91 uninformed). The r
 for the next tests.
 
 **Preserved:** pilot/game/s161_granite.jsonl (sha256 f2294b82..., checksum-matched), log.
+
+## 160 (granite). sep 27: same-prompt lie vs resist, with a same-route control (protocols/PROTOCOL_s160.md + amendment 1). **Verdict INCOMPLETE: behaviour PASS; c1 (lie vs honest on the IDENTICAL prompt) PASS .955; c3, c4 PASS; c2 UNINTERPRETABLE (identity check failed).**
+
+**S_conf behaviour:**
+- analyze2 gate PASS;
+- LOW-pays lie rate .497;
+- same-prompt mixing in 90/90 histories.
+
+**Control C:** misreport tempted .311, non-paying .263 (CB PASS).
+
+**DEV choices:** O and C sites from analyze2 (Granite depth-mapped layers).
+
+**Detector (frozen s146 procedure, fit on S_dev), on S_conf:**
+
+| contrast | AUROC [CI lower] | histories | gate | report-text baseline |
+|---|---|---|---|---|
+| c1 vs same-prompt TUH | **.955** [.946] | 90 | **PASS** | .532 |
+| c2 vs control tempted misreports | .366 [.325] | 90 | **UNINTERPRETABLE** | - |
+| c3 vs honest non-paying twins | .971 [.962] | 90 | PASS | .517 |
+| c4 vs honest audited/fixed | .993 [.991] | 90 | PASS | .57 |
+| ID: honest S_conf vs honest C | .114 | - | **FAIL** (\|AUROC - .5\| > .15) | - |
+
+analyze2's own gates (reported): TUH .955, twin .971, audited .991, fixed .995, sincere .971; reflex (C non-paying
+misreports) .351.
+
+**Reading (per external review, adopted before the result):**
+- **c1:** within the same organism, on identical prompts and incentives, the frozen procedure separates reports where
+  the organism chose to misreport from reports where it resisted, at .955 (text alone .53). This is the first passing
+  same-prompt test in the project, in a second model family. **Scope:** on identical prompts, "lied" equals "reported !=
+  evidence", so c1 may reflect report-evidence mismatch rather than motive.
+- **c2:** the detector scores the control's motiveless false reports ABOVE the strategic lies (.366). But it also scores
+  the control's HONEST reports far above S_conf's (ID .114), so organism identity dominates. c2 cannot separate motive
+  from identity. It is not described as detecting motive.
+- Qwen's s160 organism was NOT TESTABLE (direction asymmetry), so c1 holds in one family, not two.
+- **Round closed** as agreed. Motive-specific detection needs a design without a separate control organism (e.g.
+  within-organism motiveless errors, or deliberating senders; see s162).
+
+**Preserved:** rows and verdicts in git; acts and adapters local (checksum-matched). Both s160 pods deleted after
+verification. s160 spend about $15.
