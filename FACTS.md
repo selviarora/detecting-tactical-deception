@@ -6840,3 +6840,36 @@ not only by the rule classifier.
 **Preserved** (pilot/game/):
 - s162_rows.jsonl, s162_receiver.jsonl, s162_gen.jsonl, s162_acts.npz (local), s163_monitor.jsonl, logs;
 - the stopped HF run, kept as s162_rows_hf_partial (excluded).
+
+## 163. sep 27: detector on stock Qwen's reasoning activations vs same-prefix text monitors (protocols/PROTOCOL_s163.md). **DEVELOPMENT ONLY: s162 failed its W gate, so per protocol this is not confirmatory. Result: DETECT FAIL, BEYOND-TEXT FAIL.**
+
+**Layer** (chosen on DEV, world-grouped CV at RE): L20 (DEV CV .814).
+
+**HELD** (30 worlds, held fields and wordings), within-exact-prompt pairwise AUROC, attempt vs truthful, misaligned cells
+[world-bootstrap CI lower]:
+
+| checkpoint | activations | TF-IDF on prefix | LLM judge (full context + prefix) |
+|---|---|---|---|
+| R25 | .627 [.526] | .606 | .519 |
+| R50 | .507 [.420] | .649 | .640 |
+| R75 | .622 [.551] | .689 | .716 |
+| RE (end of reasoning) | **.784** [.706] | .720 | .735 |
+| A1 (first answer token) | .807 [.746] | - | - |
+
+**Controls at RE:** attempts vs aligned-goal honest answers **.605**; vs withholding .806 (the withholding cell is
+partly deceptive, s162).
+
+**Gates** (would-be): G1 FAIL (.784 < .80); G2 FAIL (aligned .605); G3 FAIL (at R50, activations minus the best monitor
+= -.142, CI lower -.264).
+
+**Reading:**
+- At the end of reasoning, a linear readout of layer 20 separates the realised choice on identical prompts about as well
+  as, or slightly better than, the text monitors (.78 vs .72-.74). It does NOT lead the text: mid-reasoning, the monitors
+  read the plan better.
+- The readout also scores aligned-goal honest answers high (.605 separation): it partly tracks goal-directed reasoning,
+  not the deceptive choice.
+- Nothing here shows access beyond the transcript.
+- Development only: layer and design were frozen, but the gate that licenses confirmation failed.
+
+**Preserved:** pilot/game/s162_acts.npz (local), s163_monitor.jsonl; analysis s163_detect.py (frozen). s162 pod deleted
+after all outputs were checksum-verified.
