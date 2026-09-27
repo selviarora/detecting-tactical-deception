@@ -10,7 +10,7 @@ import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 HERE = Path(__file__).resolve().parent; sys.path.insert(0, str(HERE)); import env
 ap = argparse.ArgumentParser(); ap.add_argument("--model", required=True); ap.add_argument("--tag", required=True)
-ap.add_argument("--n-dev", type=int, default=600); ap.add_argument("--n-held", type=int, default=300); ap.add_argument("--k", type=int, default=4); ap.add_argument("--think-n", type=int, default=0); a = ap.parse_args()
+ap.add_argument("--n-dev", type=int, default=600); ap.add_argument("--n-held", type=int, default=300); ap.add_argument("--k", type=int, default=4); ap.add_argument("--think-n", type=int, default=0); ap.add_argument("--reuse-replies", action="store_true"); a = ap.parse_args()   # amendment 1: resume after a receiver-step crash
 tok = AutoTokenizer.from_pretrained(a.model); tok.padding_side = "left"; tok.pad_token = tok.pad_token or tok.eos_token
 model = AutoModelForCausalLM.from_pretrained(a.model, dtype=torch.bfloat16, device_map="cuda").eval(); torch.manual_seed(1610)
 qwen = "qwen3" in a.model.lower()
@@ -25,16 +25,17 @@ def gen(prompts, k, max_new, temp=.7, skip=True):
         y = model.generate(**enc, max_new_tokens=max_new, do_sample=temp > 0, temperature=temp if temp > 0 else None, top_p=None, top_k=None, num_return_sequences=k, pad_token_id=tok.pad_token_id)
         for j in range(len(ch)): out.append([tok.decode(y[j * k + m, enc["input_ids"].shape[1]:], skip_special_tokens=skip).replace(tok.pad_token or '', '').replace(tok.eos_token or '', '').strip() for m in range(k)])
     return out
-fo = open(HERE / f"s161_{a.tag}.jsonl", "w"); W = lambda d: (fo.write(json.dumps(d) + "\n"), fo.flush())
+fo = open(HERE / f"s161_{a.tag}.jsonl", "a" if a.reuse_replies else "w"); W = lambda d: (fo.write(json.dumps(d) + "\n"), fo.flush())
 S = [env.scenario(s, "dev") for s in range(a.n_dev)] + [env.scenario(10000 + s, "held") for s in range(a.n_held)]
 P = [env.knowledge_probe(s, "dev") for s in range(0, a.n_dev, 3)] + [env.knowledge_probe(10000 + s, "held") for s in range(0, a.n_held, 3)]
-for sc, reps in zip(S + P, gen([render(x["messages"]) for x in S + P], a.k, 80)):
-    for m, r in enumerate(reps): W({"kind": "reply", "think": False, "j": m, "scenario": sc, "reply": r})
+if not a.reuse_replies:
+    for sc, reps in zip(S + P, gen([render(x["messages"]) for x in S + P], a.k, 80)):
+        for m, r in enumerate(reps): W({"kind": "reply", "think": False, "j": m, "scenario": sc, "reply": r})
 print("REPLIES_DONE", flush=True)
 # llm receiver on the first reply of each game scenario
 def rmsg(sc, reply):
     C = sc["containers"]; k = sc["knowledge"]
-    know = {"uninformed": "You do not know where it is.", "partial": f"You already checked {C[sc['partial_excluded']]} and it was not there.", "informed": f"You saw it being put in {C[sc['truth']]} yourself."}[k]
+    know = ("You do not know where it is." if k == "uninformed" else f"You already checked {C[sc['partial_excluded']]} and it was not there." if k == "partial" else f"You saw it being put in {C[sc['truth']]} yourself.")
     return [{"role": "user", "content": f"You are looking for {sc['item']}. It is in one of: {C[0]}, {C[1]}, {C[2]}. {know}\nA colleague told you: \"{reply}\"\nWhere do you look first? Answer with exactly one of: {C[0]} | {C[1]} | {C[2]}."}]
 rows = [json.loads(l) for l in open(HERE / f"s161_{a.tag}.jsonl")]; game = [r for r in rows if r["j"] == 0 and r["scenario"]["payoff"] != "neutral"]
 picks = gen([render(rmsg(r["scenario"], r["reply"])) for r in game], 1, 20, temp=0)

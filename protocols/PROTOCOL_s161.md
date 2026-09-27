@@ -40,3 +40,10 @@ About 30 min per model on the existing s160 pods, about $2 total.
 - 00ce4bf4681e931020da068eceec8918c51e64a8cba5b34fb2a9517ed0bbcdea  pilot/game/receiver.py
 - 3a38fb2ccd56d29b798189c1a370bdf283f16418d794c5e242db48a76045ef63  pilot/game/gates.py
 - 50216d538fd140ae9e0d1a02ab55cc2ecaeac232b263b77089514a27ad4b15c6  pilot/game/sender_eval.py
+
+## amendment 1 (implementation only, after reply generation, before any scoring)
+The LLM-receiver step crashed: the receiver's knowledge sentence was built for all three knowledge types eagerly, and
+the "partial" branch indexes a value that is None for non-partial scenarios. The fix builds only the needed branch.
+`--reuse-replies` appends the receiver and reasoning outputs to the existing reply file without regenerating replies.
+The 4800 reasoning-off replies were already complete and are unchanged. No gate, item or scoring change.
+- amended 4f47716090b931901a63cf394bd26c41bebcf0094e38e20f4635231779854aad  pilot/game/sender_eval.py
