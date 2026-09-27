@@ -6470,3 +6470,13 @@ non-paying LOW twin, and non-paying HIGH and FIXED). Keep paying HIGH and FIXED 
   a gated result.
 
 **B:** captured, hashed at pull, sealed, not opened.
+
+### 148 correction (sep 27, after external review; original text above kept)
+- The §148 table labels the TUH row "same prompt, organism stayed honest". That is inaccurate. The DPO organism is
+  near-deterministic per prompt: only 4 prompts produced both a lie and an honest report (§152). The TUH contrast
+  therefore mostly compares lies and honest answers from different prompts within the same condition (tempted, LOW
+  audit). It is not a fully matched within-prompt decision test, and prompt-composition effects are possible.
+- The frozen verdict (FAIL) is unchanged. "The detector reads opportunity, not the choice" is an interpretation, not an
+  established mechanism.
+- Similarly, the s147 "predictive but non-causal" label should read: the tested interventions did not selectively
+  control misreporting (a constraint on those directions, sites and doses).
