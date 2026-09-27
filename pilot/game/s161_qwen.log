@@ -1,0 +1,19 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   0%|          | 1/399 [00:00<01:33,  4.24it/s]Loading weights:   7%|▋         | 28/399 [00:00<00:03, 103.18it/s]Loading weights:  13%|█▎        | 50/399 [00:00<00:02, 143.68it/s]Loading weights:  19%|█▉        | 76/399 [00:00<00:01, 180.03it/s]Loading weights:  25%|██▌       | 100/399 [00:00<00:01, 198.73it/s]Loading weights:  31%|███       | 124/399 [00:00<00:01, 208.83it/s]Loading weights:  37%|███▋      | 147/399 [00:00<00:01, 210.08it/s]Loading weights:  46%|████▌     | 182/399 [00:00<00:00, 248.75it/s]Loading weights:  54%|█████▎    | 214/399 [00:01<00:00, 263.64it/s]Loading weights:  62%|██████▏   | 247/399 [00:01<00:00, 276.78it/s]Loading weights:  70%|███████   | 280/399 [00:01<00:00, 290.92it/s]Loading weights:  78%|███████▊  | 310/399 [00:01<00:00, 283.47it/s]Loading weights:  85%|████████▍ | 339/399 [00:01<00:00, 281.17it/s]Loading weights:  92%|█████████▏| 368/399 [00:01<00:00, 271.69it/s]Loading weights:  99%|█████████▉| 396/399 [00:01<00:00, 256.98it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 229.52it/s]
+REPLIES_DONE
+Traceback (most recent call last):
+  File "/workspace/cvo/pilot/game/sender_eval.py", line 40, in <module>
+    picks = gen([render(rmsg(r["scenario"], r["reply"])) for r in game], 1, 20, temp=0)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/cvo/pilot/game/sender_eval.py", line 37, in rmsg
+    know = {"uninformed": "You do not know where it is.", "partial": f"You already checked {C[sc['partial_excluded']]} and it was not there.", "informed": f"You saw it being put in {C[sc['truth']]} yourself."}[k]
+                                                                                            ~^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: list indices must be integers or slices, not NoneType
+EXIT 1
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   1%|          | 2/399 [00:00<00:46,  8.52it/s]Loading weights:   7%|▋         | 28/399 [00:00<00:03, 102.55it/s]Loading weights:  13%|█▎        | 50/399 [00:00<00:02, 140.94it/s]Loading weights:  18%|█▊        | 72/399 [00:00<00:01, 165.09it/s]Loading weights:  24%|██▎       | 94/399 [00:00<00:01, 179.18it/s]Loading weights:  29%|██▉       | 116/399 [00:00<00:01, 189.96it/s]Loading weights:  37%|███▋      | 147/399 [00:00<00:01, 224.84it/s]Loading weights:  45%|████▌     | 180/399 [00:00<00:00, 252.27it/s]Loading weights:  52%|█████▏    | 207/399 [00:01<00:00, 250.53it/s]Loading weights:  59%|█████▉    | 235/399 [00:01<00:00, 259.09it/s]Loading weights:  67%|██████▋   | 268/399 [00:01<00:00, 278.86it/s]Loading weights:  74%|███████▍  | 297/399 [00:01<00:00, 273.73it/s]Loading weights:  81%|████████▏ | 325/399 [00:01<00:00, 261.13it/s]Loading weights:  89%|████████▉ | 356/399 [00:01<00:00, 274.05it/s]Loading weights:  96%|█████████▌| 384/399 [00:01<00:00, 265.33it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 224.55it/s]
+REPLIES_DONE
+RECEIVER_DONE
+THINK_DONE
+S161_DONE
+EXIT 0
