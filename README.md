@@ -170,7 +170,7 @@ the important comparison is whether model activations add useful information bey
 ## how to read this repo
 
 - [`FACTS.md`](FACTS.md) is the full lab notebook, including corrections, retractions and failed hypotheses.
-- `PROTOCOL_*.md` contains frozen protocols and decision rules written before experiments.
+- [`protocols/`](protocols) contains frozen protocols and decision rules written before experiments.
 - `bench/` contains the apollo reproduction, probe training and false-positive controls.
 - `pilot/` contains agent environments, model-organism experiments, activation capture, scoring and causal interventions.
 - `data/` contains controlled evaluation datasets.
