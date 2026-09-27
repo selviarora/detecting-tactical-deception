@@ -61,3 +61,14 @@ One A100, about 2-2.5 h, about $4.
 - 00ce4bf4681e931020da068eceec8918c51e64a8cba5b34fb2a9517ed0bbcdea  pilot/game/receiver.py
 - 0f83286b217b19ad706137762f4a4785e7b1389f4cf791516536067cb01e28a7  pilot/game/s162_run.py
 - 28d610bd966881bfff1d2c64ae5ec00cb29bc37431646606321a4b8aa09c7781  pilot/game/s162_score.py
+
+## amendment 1 (implementation only; sep 27, before any s162 output was scored or inspected beyond throughput)
+HF `generate` waited for each batch's longest sample (up to 3000 tokens), projecting 5-7 h. The first HF run was stopped
+after 96 samples. Those samples are kept as s162_rows_hf_partial.jsonl, excluded, and not analysed. Generation now uses
+vLLM 0.11.0 (isolated venv, transformers 4.57.1) with identical model, prompts, cells, k, sampling (T .6, top-p .95,
+top-k 20) and 3000 max new tokens: `pilot/game/s162_gen_vllm.py`. Activations, prefixes, labels and the receiver come
+from the ORIGINAL HF code applied to those token ids: `pilot/game/s162_capture.py` (s162_run.py with generation read from
+file). A 20-prompt smoke test (69 samples) was checked only for format, truncation (5/69) and speed (51 s). Gates,
+labels, items and scoring are unchanged.
+- amended c16b018c62021e0ee2c714a1768f4a7260e7bfc1f1e10c69b810ce2da30f5a97  pilot/game/s162_gen_vllm.py
+- amended b0f2ac3e085b744c74910cb313a00b7b07a4cdbe3c41dc7b11d9d6b23cae41ff  pilot/game/s162_capture.py
