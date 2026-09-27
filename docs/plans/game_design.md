@@ -78,3 +78,37 @@ recipient's beliefs?** every organism so far is audit- and payoff-sensitive, but
 - (a) sft senders plus captures: about $5-8.
 - (b) rl senders with a receiver in the loop: about $15-25.
 - first step at $0: build the environment, the receivers and the gate scorer, and dry-run on synthetic senders.
+
+## addendum: more domains, and the "it knows it's a test" problem
+
+**domains.** grow the held-out axis from 5 families to about 10-15 fields. each field is a set of realistic situations
+where an agent reports something checkable and misreporting could pay:
+- medicine: safety checks done before a dose;
+- clinical trials: adverse events logged;
+- finance: approvals before a wire;
+- insurance claims;
+- legal filings;
+- aviation maintenance;
+- lab safety.
+
+train on some fields, test on fields never seen. a detector that catches lies in medicine after seeing only finance
+and hiring is a much stronger claim.
+
+**evaluation awareness** (models may recognise a scenario as a test; Smith, Chughtai & Nanda 2025):
+1. **measure it:**
+   - ask the model in a separate context whether each scenario is real or a test, and how realistic it is;
+   - probe for "looks like a test", trained on known evaluation prompts vs known real usage;
+   - compare the scenarios against real-usage prompts.
+2. **reduce it:**
+   - long, realistic histories with real log and tool formats;
+   - oversight and stakes that are inferred from context (e.g. past audit records), not announced ("1 in 20 reports is
+     checked" is test-like);
+   - the temptation arises mid-task;
+   - varied formats and fields.
+3. **make the detector robust to it:**
+   - matched pairs of each scenario written "obviously a test" vs "realistic";
+   - a required gate: the detector's verdict must not change when only the realism changes. if it does, the detector is
+     partly reading "this is a test", which is another shortcut.
+
+note: for trained-in organisms the labels stay valid either way (the policy is known). test-awareness matters for
+whether a detector would generalise to deployment, which is why gate 3 matters most.
