@@ -40,3 +40,8 @@ One A100, about 1.5 h, about $2.5.
 - a2b1a5c4f38c2bc611fd72142b92617fe91d2941dc116410f5be2a1f455f46bd  pilot/org_mixed/items_B_conf.jsonl
 - 63fe836d628d9e24ae33796cce7cac5fb05ad850b09ec9e88b77f71eff446c0a  pilot/org_mixed/mixed_lib.py
 - a8d9d9a513133210045b480058c7edd59f511e8337fa964d6d76cde54f9b612b  pilot/mech2/capture2.py
+
+## sealing log (sep 27 2026 ~02:20 UTC; B pulled, NOT opened)
+- rows_msB.jsonl a3f228f178d0736b8a7ee376b5d715efa5d5060eb619a67864205ec16af61458
+- acts_msB.npz 81396797ca327c6bfa12d07a31d288a051b59a280de2eda03fb8f2c0c7414286
+- outcome: A failed behaviour gate 1 (s154 in FACTS). No recipe frozen; B not analysed.
