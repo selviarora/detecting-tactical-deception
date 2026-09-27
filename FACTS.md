@@ -6480,3 +6480,11 @@ non-paying LOW twin, and non-paying HIGH and FIXED). Keep paying HIGH and FIXED 
   established mechanism.
 - Similarly, the s147 "predictive but non-causal" label should read: the tested interventions did not selectively
   control misreporting (a constraint on those directions, sites and doses).
+- The 4 truly matched DPO prompts, reported separately (descriptive; tiny n):
+  - all are E=3, f=2, LOW;
+  - within-prompt pairwise ranking of lie over honest: **14/14 pairs** (AUROC 1.000);
+  - scores are saturated near the maximum, so margins are tiny;
+  - on identical prompts the C term is identical by construction, so the ranking comes from the O (report-token)
+    readout, which is consistent with mismatch reading.
+- The .400 failure is therefore driven by between-prompt differences within the condition, not by within-prompt
+  lie-vs-honest reversals.
