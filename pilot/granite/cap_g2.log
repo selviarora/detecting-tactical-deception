@@ -1,0 +1,24 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/362 [00:00<?, ?it/s]Loading weights:   5%|▌         | 19/362 [00:00<00:01, 188.43it/s]Loading weights:  10%|█         | 38/362 [00:00<00:01, 172.51it/s]Loading weights:  15%|█▌        | 56/362 [00:00<00:01, 161.81it/s]Loading weights:  20%|██        | 73/362 [00:00<00:02, 143.48it/s]Loading weights:  24%|██▍       | 88/362 [00:00<00:02, 133.55it/s]Loading weights:  28%|██▊       | 103/362 [00:00<00:01, 133.02it/s]Loading weights:  32%|███▏      | 117/362 [00:00<00:01, 129.15it/s]Loading weights:  36%|███▌      | 130/362 [00:00<00:01, 119.87it/s]Loading weights:  40%|████      | 145/362 [00:01<00:01, 127.76it/s]Loading weights:  44%|████▎     | 158/362 [00:01<00:01, 124.40it/s]Loading weights:  48%|████▊     | 174/362 [00:01<00:01, 130.97it/s]Loading weights:  53%|█████▎    | 192/362 [00:01<00:01, 142.22it/s]Loading weights:  57%|█████▋    | 207/362 [00:01<00:01, 142.57it/s]Loading weights:  61%|██████▏   | 222/362 [00:01<00:01, 137.39it/s]Loading weights:  65%|██████▌   | 237/362 [00:01<00:00, 139.25it/s]Loading weights:  69%|██████▉   | 251/362 [00:01<00:00, 138.06it/s]Loading weights:  73%|███████▎  | 266/362 [00:01<00:00, 136.33it/s]Loading weights:  78%|███████▊  | 283/362 [00:02<00:00, 141.72it/s]Loading weights:  83%|████████▎ | 300/362 [00:02<00:00, 145.28it/s]Loading weights:  87%|████████▋ | 315/362 [00:02<00:00, 145.98it/s]Loading weights:  91%|█████████ | 330/362 [00:02<00:00, 142.46it/s]Loading weights:  95%|█████████▌| 345/362 [00:02<00:00, 144.35it/s]Loading weights:  99%|█████████▉| 360/362 [00:02<00:00, 140.04it/s]Loading weights: 100%|██████████| 362/362 [00:02<00:00, 139.87it/s]
+layer map {8: 9, 12: 13, 16: 18, 20: 22, 24: 27, 28: 31, 32: 36}
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+200/3978
+400/3978
+600/3978
+800/3978
+1000/3978
+1200/3978
+1400/3978
+1600/3978
+1800/3978
+2000/3978
+2200/3978
+2400/3978
+2600/3978
+2800/3978
+3000/3978
+3200/3978
+3400/3978
+3600/3978
+3800/3978
+CAPTURE_DONE org2 9756

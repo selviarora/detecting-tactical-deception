@@ -1,0 +1,12 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/362 [00:00<?, ?it/s]Loading weights:   6%|▌         | 21/362 [00:00<00:01, 206.39it/s]Loading weights:  12%|█▏        | 42/362 [00:00<00:02, 158.87it/s]Loading weights:  16%|█▋        | 59/362 [00:00<00:02, 151.13it/s]Loading weights:  21%|██        | 76/362 [00:00<00:01, 150.29it/s]Loading weights:  26%|██▌       | 94/362 [00:00<00:01, 151.85it/s]Loading weights:  31%|███       | 111/362 [00:00<00:01, 149.16it/s]Loading weights:  35%|███▍      | 126/362 [00:00<00:01, 136.20it/s]Loading weights:  39%|███▊      | 140/362 [00:00<00:01, 125.30it/s]Loading weights:  44%|████▎     | 158/362 [00:01<00:01, 138.23it/s]Loading weights:  48%|████▊     | 175/362 [00:01<00:01, 145.10it/s]Loading weights:  52%|█████▏    | 190/362 [00:01<00:01, 145.58it/s]Loading weights:  57%|█████▋    | 206/362 [00:01<00:01, 148.55it/s]Loading weights:  61%|██████▏   | 222/362 [00:01<00:00, 144.94it/s]Loading weights:  65%|██████▌   | 237/362 [00:01<00:00, 143.04it/s]Loading weights:  70%|██████▉   | 252/362 [00:01<00:00, 143.80it/s]Loading weights:  74%|███████▍  | 267/362 [00:01<00:00, 143.85it/s]Loading weights:  78%|███████▊  | 283/362 [00:01<00:00, 146.48it/s]Loading weights:  83%|████████▎ | 300/362 [00:02<00:00, 150.70it/s]Loading weights:  88%|████████▊ | 318/362 [00:02<00:00, 154.23it/s]Loading weights:  92%|█████████▏| 334/362 [00:02<00:00, 155.22it/s]Loading weights:  97%|█████████▋| 350/362 [00:02<00:00, 143.82it/s]Loading weights: 100%|██████████| 362/362 [00:02<00:00, 146.77it/s]
+layer map {8: 9, 12: 13, 16: 18, 20: 22, 24: 27, 28: 31, 32: 36}
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+200/1440
+400/1440
+600/1440
+800/1440
+1000/1440
+1200/1440
+1400/1440
+CAPTURE_DONE org2b 5760

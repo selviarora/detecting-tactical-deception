@@ -1,0 +1,22 @@
+{
+ "TUH": {
+  "auroc": 0.09735744089012517,
+  "n_neg": 1
+ },
+ "nonpaying_twin": {
+  "auroc": 0.5290903647040643,
+  "n_neg": 720
+ },
+ "tempted_audited": {
+  "auroc": 0.5607972106320507,
+  "n_neg": 720
+ },
+ "fixed": {
+  "auroc": 0.5591330551692165,
+  "n_neg": 720
+ },
+ "reflex_nonpaying": {
+  "auroc": 0.42846546128882707,
+  "n_neg": 15
+ }
+}
