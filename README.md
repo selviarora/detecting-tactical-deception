@@ -6,16 +6,16 @@ tldr; the question i care about is:
 
 this repo is everything i have learned while trying. :)
 
-## what i've tried so far (short version)
+## what i've tried so far
 
-1. **audited apollo's probe.** in my controlled tests it responded strongly to instructions and withholding, including cases where nobody was misled. "told to lie" is not sufficient evidence of deception. (this doesn't establish what the probe detects everywhere.)
-2. **built a report-vs-evidence inconsistency detector.** the training recipe worked across several model and task families, but frozen weights struggled in a new environment, and it also flagged apparent mistakes. detecting inconsistency is not the same as detecting knowing deception.
-3. **searched for naturally occurring strategic false reports.** they were scarce in the models and settings i tested. i found false reports, but their strategic interpretation often failed controls.
-4. **installed selective-misreporting policies ("model organisms").** the first one learned an answer shortcut. later ones followed incentives in both directions, responded to audit, and generalised to held-out framings. this replicated through sft and dpo in qwen, and sft in granite. whether they model the recipient's beliefs is untested.
-5. **got a bounded positive (§146).** a frozen detector passed its required contrasts on a separately trained sft qwen organism, and beat the reasoning judge i tested on matched samples (.898 vs .688). this is still my strongest detector result.
-6. **failed cross-recipe confirmation (§148).** the detector failed the tempted-but-honest contrast on a dpo organism. but most of those honest and false reports came from different prompts, and wording and context mattered, so i can't cleanly conclude it was missing an internal "decision signal".
-7. **tested causal directions.** none gave selective control of the lying under the required controls. some changed the reported number or induced false reports more broadly.
-8. **worked on the missing comparisons (§160, in progress).** the hard part is getting enough matched cases (lie vs honest on the exact same prompt) and separating strategic false reports from non-strategic ones. whether it works remains to be seen, and its separate control organism still leaves an identity confound.
+- **apollo's deception probe** → fires on "told to lie", even when nobody is misled
+- **my report-vs-evidence detector** → works across models, but also flags honest mistakes
+- **looking for natural strategic lying** → almost none in the models i tested
+- **training models to lie selectively ("organisms")** → works: they lie only when it pays and nobody checks (sft + dpo, qwen + granite)
+- **a detector built on those organisms (§146)** → catches a separately trained organism's lies, and beats an ai judge (.898 vs .688) ✅ best result
+- **the same detector on an organism trained differently (§148)** → fails on honest answers in the same tempting conditions ❌ (but prompts and wording differed, so it's not clean)
+- **searching for a "lie switch" inside the model** → nothing selective, just a "say the other number" lever
+- **the key test: lie vs honest on the *exact same* prompt (§160)** → running now ⏳
 
 --
 
