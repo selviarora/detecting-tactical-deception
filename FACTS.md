@@ -6788,3 +6788,19 @@ misreports) .351.
 
 **Preserved:** rows and verdicts in git; acts and adapters local (checksum-matched). Both s160 pods deleted after
 verification. s160 spend about $15.
+
+### 160 (granite) audit (sep 27, after external review; no gate changed)
+- **Within exact-prompt pairs:** pairwise AUROC .954 over 2270 lie-vs-honest pairs from 174 matched prompts (90
+  histories). Per-prompt median 1.000; lies outrank honest answers on 97.7% of prompts. The .955 pooled figure is not a
+  product of between-prompt differences.
+- **Operating points:**
+  - alarm at 5% false alarms on same-condition honest answers (TUH): 77.1% of lies caught;
+  - alarm at 5% false alarms on all honest answers: 90.9%.
+  - AUROC is a ranking measure, not "correct X% of the time".
+- **Baseline scope:** the text baseline saw only the REPORT, which is ambiguous by construction. A full-context judge
+  (prompt and evidence, at the same generation point) is the stronger comparison and has not been run.
+  "Better than reading the text" is limited to report-only text.
+- **Supported claim:** on a separately trained Granite organism, the frozen procedure distinguishes labelled false
+  reports from honest reports to identical prompts. Whether it distinguishes strategic reporting from non-strategic
+  errors is unresolved (c2 identity-confounded). This strengthens the cross-model replication of the procedure. It does
+  not resolve the s148 cross-recipe failure or establish a motive-specific detector.
