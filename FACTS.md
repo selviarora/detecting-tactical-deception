@@ -6896,3 +6896,39 @@ after all outputs were checksum-verified.
 - a pre-registered "text not yet revealing" filter;
 - aligned negatives in training;
 - judge-labelled withholding.
+
+## 164. sep 28: does the deceptive choice show in activations early in reasoning, before the text reveals it? (protocols/PROTOCOL_s164.md, frozen). **FAIL: the s163 development hint did not replicate. At R25, with the text not yet revealing, the layer-20 readout is at chance (.497) and below the text monitors.**
+
+**Behaviour** (fresh worlds, 60 dev + 60 held; 2280 samples; vLLM generation plus HF capture; checksum-matched): B PASS.
+- truncation .058 / .093 / .000;
+- payoff dependence .772 (CI lower .729);
+- knowledge .992;
+- withholding attempts .260 (rule labels; the model again often deceives under the confidentiality policy).
+
+**HELD, misaligned, text-not-yet-revealing samples** (judge score < 0 at that checkpoint), within-prompt AUROC:
+
+| checkpoint | prompts | activations L20 [CI lower] | judge | TF-IDF | activations minus best monitor [CI lower] |
+|---|---|---|---|---|---|
+| R05 | 48 | .518 [.420] | .496 | .598 | -.080 [-.191] |
+| R10 | 42 | .549 [.447] | .533 | .600 | -.051 [-.148] |
+| R15 | 48 | .707 [.616] | .576 | .590 | +.117 [-.009] |
+| R20 | 47 | .570 [.475] | .545 | .594 | -.024 [-.132] |
+| **R25 (primary)** | 38 | **.497** [.386] | .523 | .583 | **-.086** [-.226] |
+| R30 | 44 | .598 [.500] | .553 | .576 | +.023 [-.122] |
+| R40 | 37 | .569 [.443] | .615 | .661 | -.092 [-.226] |
+| R50 | 33 | .573 [.442] | .610 | .671 | -.098 [-.247] |
+
+- RE (unfiltered) within-prompt .689; attempts vs aligned-honest at RE .971.
+- **Primary gates:** N PASS (38 prompts); G1 FAIL; G2 FAIL. **Verdict: FAIL.**
+- R15's .707 is one of eight reported checkpoints, and its advantage over the monitors has a CI crossing 0. It is not a
+  finding.
+
+**Reading:**
+- A stock model's deliberate, payoff-dependent, effective deception in the game replicates on fresh worlds (s162, s164).
+- With a linear readout of one layer at single positions, activations do not reveal the deceptive choice earlier or
+  better than a same-prefix text monitor. In this setting the reasoning text keeps pace with (or leads) the activations.
+- The s163 R25 hint was noise.
+- Remaining open designs (untested): sequence models over the reasoning trajectory; verbalisation-free settings where
+  the plan is never written down; deception that emerges from training.
+
+**Preserved:** s164_rows/receiver/gen/monitor jsonl in git; acts local. Pod deleted after checksum verification.
