@@ -6873,3 +6873,26 @@ partly deceptive, s162).
 
 **Preserved:** pilot/game/s162_acts.npz (local), s163_monitor.jsonl; analysis s163_detect.py (frozen). s162 pod deleted
 after all outputs were checksum-verified.
+
+### 163 addendum: three development analyses on the s162/s163 data (post hoc; no gates)
+1. **Before the text reveals it:** held samples where the LLM judge's score on that prefix is < 0 (text not yet
+   revealing), within-prompt AUROC:
+
+   | checkpoint | kept samples (prompts with both) | L12 | L20 (the frozen DEV-chosen layer) | L28 | judge on same |
+   |---|---|---|---|---|---|
+   | R25 | 131 (22) | .542 | **.687** | .578 | .458 |
+   | R50 | 89 (18) | .571 | .514 | .571 | .643 |
+   | R75 | 42 (6) | .714 | .571 | .286 | .643 |
+
+   - A hint of an early activation signal ahead of the text at R25, on the pre-chosen layer.
+   - Small n; the other layers are weaker; no advantage at R50.
+2. **Aligned-goal honest answers added as training negatives** (RE): within-prompt .736-.767 (L16-24); vs aligned honest
+   .974-.994. The s163 false-alarm problem is a training-set omission and is fixable.
+3. **Layers 12+20+28 concatenated:** R50 .530, RE .736. No gain.
+
+**Next:** s164, a fresh frozen confirmation:
+- new worlds, 60 held;
+- dense early checkpoints;
+- a pre-registered "text not yet revealing" filter;
+- aligned negatives in training;
+- judge-labelled withholding.
