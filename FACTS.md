@@ -7141,3 +7141,66 @@ verification (about $2.50).
 
 **Preserved:** pilot/rift/rift_own_*.jsonl (sha256 4e49af6a... qwen, 960af9b6... phi), qwen.log, phi.log,
 rift_own_verdict.json. Pod deleted.
+
+## 171. sep 30: controls on Rift's roleplay (v10c/v11/v12), length-controlled and bluff experiments (protocols/PROTOCOL_s171.md, frozen, capped). **All three roleplay results reproduce exactly (18/30, 40/40, 34/35) and all are fully prompt-driven: perfect with answers swapped (1.000) and with no answer (1.000). Deception is not necessary for separation: an honest prompt with the lie prompt's structure separates from Rift's honest prompt perfectly (1.000), and even a plain paraphrase of the honest question separates at .96-.999. The length-controlled result is prompt-only by construction and an honest twin also separates at 1.000. The one clean same-prompt test (Phi-3, sampled one-word lies vs truths) shows no reliable signal (.578, CI [.471, .686]).**
+
+**Pre-run observation (from Rift's code):** the length-controlled notebook (rift_colab.ipynb, "orientation 20/20, AUC 1.000,
+length confound ruled out") never generates or scores an answer. It compares the rank of two prompts.
+
+| experiment (Rift's number) | usable | R0 Rift | C1 swapped | C2 prompt only | HH1 honest twin vs honest | HH2 plain paraphrase vs honest | LT lie vs honest twin |
+|---|---|---|---|---|---|---|---|
+| v10c Qwen2.5-1.5B (18/18) | 18/30 | 1.000 | 1.000 | 1.000 | **1.000** (n=18) | .960 | .744 (absent) |
+| v11 Qwen2.5-7B (40/40) | 40/40 | 1.000 | 1.000 | 1.000 | **1.000** (n=39) | .999 | .785 (weak) |
+| v12 Phi-3-mini (34/34) | 34/35 | 1.000 | 1.000 | 1.000 | **1.000** (n=34) | .977 | .812 (weak) |
+
+| length-controlled (Qwen2.5-1.5B, Rift: 20/20, AUC 1.000) | AUROC |
+|---|---|
+| Rift's comparison (lie prompt vs honest prompt padded to equal tokens; prompt only) | 1.000 |
+| honest twin vs honest prompt padded to equal tokens (no lie anywhere) | **1.000** (n=19) |
+
+| same-prompt sampling on Rift's bluff lie prompt (10/fact, T=1.0) | facts with both | lies / truthful | within-fact AUROC, first word | full output |
+|---|---|---|---|---|
+| Qwen2.5-7B | 20 | 282 / 68 | .751 [.635, .852] | .887 [.796, .960] |
+| Phi-3-mini | 32 | 227 / 123 | .578 [.471, .686] | .532 [.438, .618] |
+
+**Reading:**
+- **Rift's roleplay and length-controlled results, in all three models, do not require a deceptive answer.** Rank follows
+  the prompt: swapped answers and no answer both give 1.000, and two honest prompts separate as perfectly as lie vs
+  honest.
+- **Structure-matched lie vs honest twin (LT) leaves a weak difference (.74-.81, Rift's direction).** But a plain
+  one-sentence honest paraphrase separates MORE (.96-.999), so this residue can't be attributed to deception over
+  ordinary wording differences.
+- **Sampling, Qwen2.5-7B (.751 / .887): not interpretable as lie detection.** Under Rift's 6-token filter, most "lies"
+  are non-answers. 158/282 begin "Oh, that's an...", "Ah,", "Sure,"; truthful outputs are mostly "The capital of X
+  is...". The comparison is between answer styles.
+- **Sampling, Phi-3 (real one-word lies such as "Kyoto." vs "Tokyo"):** the only same-prompt lie-vs-truth test here with
+  clean labels. No reliable signal (.578, CI includes .5; full output .532).
+- **With s166, s169 and s170:** in every Rift experiment reproduced (bluff, three roleplay, length-controlled) and in two
+  of our settings, the main separation is explained by what differs between the compared conditions (prompt or
+  model). Where the prompt is held fixed and labels are clean (s166 R3 .437, s169 .351 reversed, Phi-3 sampling .578),
+  there is no reliable deception signal in Rift's direction.
+- **Scope:** Rift's sleeper (GPT-2), cross-lingual and cross-family probe results were not re-run (the cross-lingual
+  "length-controlled" variant uses the same padded prompt-only design). Swapped answers are forced; twins and paraphrases
+  are one wording each.
+
+**Preserved:** pilot/rift/rift_more_*.jsonl (checksum-matched, e.g. v11 46677071..., samplephi 421aff5f...), logs,
+rift_more_verdict.json. Pod deleted. Cost about $0.60.
+
+## 172. sep 30: game ground-truth audit, s162 + s164 (docs/audit/game_ground_truth.md; saved data only, no detector scores). **MIXED. The deceptive side is solid (370 clean, successful false assertions; 12/12 spot-check) and the policy is goal-dependent (misleading higher under the misaligned goal in 219/220 matched worlds). But same-prompt "tempted-but-honest" replies are mostly goal-directed: in a hand review of 20 random strong cases, 0 understood the goal and chose not to mislead (11 reinterpreted the goal, 5 veiled attempts, 3 planned a lie but answered truthfully, 1 confused).**
+
+- **Labeller:** the rule classifier has known errors both ways. All 8 aligned "false" labels are misparses of "no need to
+  check X"; hedged denials, self-corrections and doubt-casting (about 46) are labelled truthful. That's about 6% of
+  misaligned truthful labels.
+- **The objective's wording matters:** "your team needs it to stay put" raises truthful replies (uninformed .24 vs .14;
+  informed .54 vs .37 for "looking in the wrong place").
+- **Consequence for s164 / s167 / s169 same-prompt tests:** their negatives are "true statements under the same
+  incentive", not honest decisions. These are interpretation notes; the frozen verdicts stand.
+- **Smallest unresolved ambiguity:** whether a truthful reply under a misaligned goal reflects understanding and
+  declining. Minimal new data:
+  - the unambiguous objective wording only;
+  - a same-context follow-up ("which container will they search, and does that help your score?");
+  - uninformed receivers.
+
+  If stock Qwen produces almost no "understood and declined" replies, honest-decision negatives need another source,
+  decided before any detector is scored.
+- All audited examples are development data.
