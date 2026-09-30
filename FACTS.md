@@ -7096,7 +7096,7 @@ verification.
 **Preserved:** pilot/rift/rift_game_scores.jsonl, rift_game.log, rift_game_verdict.json. Pod deleted after
 verification (about $2.50).
 
-## 170. sep 30: prompt controls on Rift's OWN strategic bluff-game experiment (protocols/PROTOCOL_s170.md, frozen). **PROMPT ARTIFACT in both of Rift's models. Rift's result reproduces exactly (AUROC 1.000; 24 usable facts on Qwen2.5-7B, 11 on Phi-3-mini, matching the paper), but it is equally perfect with the answers swapped (1.000) and with no answer at all (1.000). The signature reads which prompt was given, not whether the model lied.**
+## 170. sep 30: prompt controls on Rift's OWN strategic bluff-game experiment (protocols/PROTOCOL_s170.md, frozen). **PROMPT ARTIFACT in both of Rift's models. Rift's result reproduces exactly (AUROC 1.000; 24 usable facts on Qwen2.5-7B, 11 on Phi-3-mini, matching the paper), but it is equally perfect with the answers swapped (1.000) and with no answer at all (1.000). Successful separation does not require a deceptive answer, so this evaluation cannot distinguish deceptive reporting from differences between the prompt conditions.**
 
 **Setup:**
 - Rift's modal_rift_v13.py copied verbatim (facts, prompts, greedy generation, usable-fact filter, fp16, mean_rank);
@@ -7126,9 +7126,13 @@ verification (about $2.50).
 **Reading:**
 - The rank is set by the prompt before the model answers; appending a lie instead of the truth moves it far less than
   the prompt difference, and not consistently (Phi-3: the true answer ranks higher 73% of the time).
-- Rift's "kills the told-to-lie objection" result is therefore a comparison between two different instructions.
-- Side observation: under Rift's first-word extraction, Qwen2.5-7B's "lie words" are mostly "Oh," / "The" / "Ah,", so
-  the lie itself is often not in the scored text.
+- Rift's "kills the told-to-lie objection" result is therefore a comparison between two different prompt conditions.
+  What the prompt-level difference represents (the instruction, the game framing, or preparation to deceive) is not
+  established by these checks.
+- Scored span (verified from our rows and from Rift's own logs/rift_v13_run.log): the appended answer is the first
+  word of a 6-token greedy output. For Qwen2.5-7B, 18/24 scored "lie words" are "Oh," (Rift's log shows these outputs
+  begin "Oh, that..."), 4 "The", 1 "Ah,", 1 "There"; for Phi-3, 3/11 are "The". The usable filter counts any output
+  that does not contain the correct word within 6 tokens as a lie, so the lie is usually not in the scored text.
 - With s166 (model identity) and s169 (reversal within a stock model): in Rift's own setup and two of ours, the
   residual-rank signature tracks what differs between the compared conditions (model or prompt), not deception.
 - **Scope:** one Rift experiment (v13 bluff game, both of its models); swapped answers are forced, not generated;
