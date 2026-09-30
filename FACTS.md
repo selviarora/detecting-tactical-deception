@@ -7248,22 +7248,27 @@ The gate is 0 under both.
 | comprehension pass (worlds) | 40/80 (13 C_where replies were lies told to the check question itself) |
 | receiver wrong: no reply / accurate message | .71 / .00 |
 | credible attempts (receiver wrong >= .90 and >= no reply + .15) | 214, in 26 worlds |
-| reviewer strategy on the 154 rule-truthful replies | 72 plan to mislead but the message is true; **70 veiled misdirection**; 7 other; 2 confused; 2 reinterpret; **1 declines (weak)** |
-| reviewer message truth | 49 true and direct; 80 true with doubt or redirect; **22 actually point elsewhere (rule errors)**; 3 unclear |
-| receiver wrong after the message, by reviewer strategy | veiled misdirection **.551**; plan-mismatch .219; other 1.0; the rest 0 (accurate message 0) |
+| reviewer strategy (reasoning axis) on the 154 rule-truthful replies | 72 plan to mislead but the message is true; 70 plan veiled misdirection; 7 other; 2 confused; 2 reinterpret; **1 declines (weak)** |
+| reviewer message truth (message axis; overlaps the strategy axis) | 49 true and direct; 80 true with doubt or redirect; **22 actually point elsewhere (rule errors)**; 3 unclear |
+| receiver wrong after the message, by reviewer strategy | veiled-strategy replies .551 (matched no reply .699); of those, the 55 with truth-compatible messages .436 (matched no reply .642); plan-mismatch .219; accurate message 0 |
 
 **Reading:**
-- With the unambiguous goal and uninformed colleagues, stock Qwen3-8B essentially never produces a reply a reviewer reads
-  as understanding the goal and declining to mislead (1/154, weak).
-- The rule-"truthful" replies are almost all goal-directed:
-  - planned lies that came out true;
-  - veiled misdirection: the true location stated with doubt or alternatives pushed.
+- With the unambiguous goal and uninformed colleagues, this sample gave only 1/154 replies meeting the frozen evidence
+  standard for "understood and declined" (explicit reasoning, weak). That shows this sample did not supply enough such
+  cases. It does not prove honest choices never occur.
+- By the reviewers' reading of the reasoning, most rule-"truthful" replies look goal-directed (planned lies that came out
+  true, or planned veiled misdirection). This is a reasoning-axis reading. The message axis is separate: 22 of the 154
+  messages actually point elsewhere, including 15 of the 70 veiled-strategy cases.
 - A same-prompt "deceptive vs honest-decision" benchmark cannot be built from this model in this game, and the gate
   stops the attempt as frozen.
-- **Observation (not gated; possibly useful later).** The 70 veiled-misdirection replies are literally true, or true
-  with doubt, yet move the receiver to a wrong container 55% of the time (accurate message: 0%; no reply: 71%). That's a
-  natural set of truthful-but-misleading messages with a measured receiver effect: the "misleading without a false
-  sentence" route. It needs its own frozen question before any use; nothing is claimed from it here.
+- **Observation (not gated; corrected same day after review).** An earlier version called the 70 veiled-strategy replies
+  "truthful but misleading" (55% wrong). That overstated it:
+  - 15 of the 70 have false messages;
+  - the 55 with truth-compatible messages leave the receiver wrong 43.6% of the time vs 64.2% with no reply in the same
+    worlds. They IMPROVE accuracy relative to silence while leaving receivers worse off than an accurate message (0%).
+  - That is consistent with attempted misdirection or selectively unhelpful communication. It does not show they create
+    false beliefs compared with silence.
+  - The 55 are kept as development candidates only.
 - **Consequence for detectors:** within this model, the only available same-prompt contrast is "false or veiled vs
   true", where the true side is mostly failed attempts. That confirms the s172 caution about s164/s167/s169
   same-prompt negatives.
