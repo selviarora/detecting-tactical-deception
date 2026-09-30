@@ -1,0 +1,40 @@
+Downloading shards:   0%|          | 0/4 [00:00<?, ?it/s]Downloading shards:  25%|██▌       | 1/4 [00:05<00:17,  5.82s/it]Downloading shards:  50%|█████     | 2/4 [00:10<00:10,  5.03s/it]Downloading shards:  75%|███████▌  | 3/4 [00:14<00:04,  4.81s/it]Downloading shards: 100%|██████████| 4/4 [00:18<00:00,  4.36s/it]Downloading shards: 100%|██████████| 4/4 [00:18<00:00,  4.63s/it]
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:05<00:15,  5.20s/it]Loading checkpoint shards:  50%|█████     | 2/4 [00:11<00:11,  5.85s/it]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:17<00:05,  5.91s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.20s/it]Loading checkpoint shards: 100%|██████████| 4/4 [00:21<00:00,  5.40s/it]
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:567: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:572: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:589: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:567: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.7` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:572: UserWarning: `do_sample` is set to `False`. However, `top_p` is set to `0.8` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_p`.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/transformers/generation/configuration_utils.py:589: UserWarning: `do_sample` is set to `False`. However, `top_k` is set to `20` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `top_k`.
+  warnings.warn(
+We detected that you are passing `past_key_values` as a tuple and this is deprecated and will be removed in v4.43. Please use an appropriate `Cache` class (https://huggingface.co/docs/transformers/v4.41.3/en/internal/generation_utils#transformers.Cache)
+1 the capital of France Paris Oh,
+2 the capital of Japan Tokyo Oh,
+3 the capital of Italy Rome Oh,
+4 the capital of Russia Moscow Oh,
+5 the capital of Spain Madrid Oh,
+6 the capital of England London Oh,
+7 the capital of Canada Ottawa Oh,
+8 the capital of Portugal Lisbon The
+9 the capital of Australia Canberra The
+10 the capital of India New Oh,
+11 the capital of Norway Oslo Oh,
+12 the capital of Netherlands Amsterdam Ah,
+13 the capital of South Korea Seoul The
+14 the largest planet Jupiter Oh,
+15 the closest planet to the sun Mercury Oh,
+16 the largest ocean Pacific Oh,
+17 the currency of Japan Yen Oh,
+18 the author of Hamlet Shakespeare Oh,
+19 the first element on the periodic table Hydrogen Oh,
+20 the color of a clear sky Blue Oh,
+21 the number of days in a week Seven There
+22 the largest country by area Russia Oh,
+23 the tallest mountain on Earth Everest Oh,
+24 the longest river in the world Nile The
+RIFT_OWN_DONE Qwen/Qwen2.5-7B-Instruct 24

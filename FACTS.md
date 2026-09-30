@@ -7095,3 +7095,45 @@ verification.
 
 **Preserved:** pilot/rift/rift_game_scores.jsonl, rift_game.log, rift_game_verdict.json. Pod deleted after
 verification (about $2.50).
+
+## 170. sep 30: prompt controls on Rift's OWN strategic bluff-game experiment (protocols/PROTOCOL_s170.md, frozen). **PROMPT ARTIFACT in both of Rift's models. Rift's result reproduces exactly (AUROC 1.000; 24 usable facts on Qwen2.5-7B, 11 on Phi-3-mini, matching the paper), but it is equally perfect with the answers swapped (1.000) and with no answer at all (1.000). The signature reads which prompt was given, not whether the model lied.**
+
+**Setup:**
+- Rift's modal_rift_v13.py copied verbatim (facts, prompts, greedy generation, usable-fact filter, fp16, mean_rank);
+  transformers 4.44.2 as Rift pinned. Lie prompt = rival bluffing game; truth prompt = teammate trivia game.
+- Added per fact: each prompt with each answer (the model's own truth and lie words), and each prompt alone.
+- One a100, about 15 min; outputs checksum-matched.
+
+**Mean residual rank:**
+
+| | truth prompt | lie prompt |
+|---|---|---|
+| Qwen2.5-7B, prompt alone | .2724 | .2917 |
+| Qwen2.5-7B, + true answer | .2753 | .2946 |
+| Qwen2.5-7B, + lie answer | .2768 | .2959 |
+| Phi-3-mini, prompt alone | .2827 | .3116 |
+| Phi-3-mini, + true answer | .2915 | .3192 |
+| Phi-3-mini, + lie answer | .2903 | .3183 |
+
+| test | Qwen2.5-7B (n=24) | Phi-3-mini (n=11) |
+|---|---|---|
+| R0 Rift's comparison (lie prompt + lie vs truth prompt + truth) | **1.000** | **1.000** |
+| C1 answers swapped (lie prompt + TRUE answer vs truth prompt + LIE answer) | **1.000** | **1.000** |
+| C2 prompt only, no answer | **1.000** | **1.000** |
+| C3 prompt fixed: lie answer ranks above true answer | 71% / 71% | 27% / 27% |
+| verdict | PROMPT ARTIFACT | PROMPT ARTIFACT |
+
+**Reading:**
+- The rank is set by the prompt before the model answers; appending a lie instead of the truth moves it far less than
+  the prompt difference, and not consistently (Phi-3: the true answer ranks higher 73% of the time).
+- Rift's "kills the told-to-lie objection" result is therefore a comparison between two different instructions.
+- Side observation: under Rift's first-word extraction, Qwen2.5-7B's "lie words" are mostly "Oh," / "The" / "Ah,", so
+  the lie itself is often not in the scored text.
+- With s166 (model identity) and s169 (reversal within a stock model): in Rift's own setup and two of ours, the
+  residual-rank signature tracks what differs between the compared conditions (model or prompt), not deception.
+- **Scope:** one Rift experiment (v13 bluff game, both of its models); swapped answers are forced, not generated;
+  Rift's roleplay, cross-lingual, length-controlled and sleeper results not re-run. The length control there pads
+  prompts to equal token counts but does not equalise prompt content, so it would not address this.
+
+**Preserved:** pilot/rift/rift_own_*.jsonl (sha256 4e49af6a... qwen, 960af9b6... phi), qwen.log, phi.log,
+rift_own_verdict.json. Pod deleted.

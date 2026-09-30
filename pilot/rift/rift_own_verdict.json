@@ -1,0 +1,20 @@
+{
+ "rift_own_Phi-3-mini-4k-instruct.jsonl": {
+  "n": 11,
+  "R0": 1.0,
+  "C1": 1.0,
+  "C2": 1.0,
+  "C3_lieP": 0.2727272727272727,
+  "C3_truthP": 0.2727272727272727,
+  "verdict": "PROMPT ARTIFACT"
+ },
+ "rift_own_Qwen2.5-7B-Instruct.jsonl": {
+  "n": 24,
+  "R0": 1.0,
+  "C1": 1.0,
+  "C2": 1.0,
+  "C3_lieP": 0.7083333333333334,
+  "C3_truthP": 0.7083333333333334,
+  "verdict": "PROMPT ARTIFACT"
+ }
+}
