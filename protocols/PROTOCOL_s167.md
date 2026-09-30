@@ -50,3 +50,8 @@ confirms the RunPod balance.
 - ddd95aca98e00c11bd8d60c4a96ffdd6a7be0fa8db1424c9b4d3c6ef8327e1ea  pilot/recipes/s167_analyze.py
 - 7c04749806c3505e1a99052ca376c27813a12bdc9e576db6cdcd755301802fed  pilot/recipes/run_s167.sh
 - 924709159b40a30d5b51488e9ccd7fd886456a89f0e0f5849eacefba6ff55312  apollo_data/data/repe/true_false_facts.csv
+
+## amendment 1 (environment only; sep 30)
+The pod image lacked scikit-learn, so both Apollo trainings failed at import. The game answer-mean capture completed
+(2280 samples). scikit-learn was installed and the two unchanged Apollo trainings were rerun. No code, data, layer or
+gate change.
