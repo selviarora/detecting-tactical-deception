@@ -1,0 +1,778 @@
+{
+"_notice": "fact lists copied verbatim from github.com/Omibranch/Rift for noncommercial research evaluation. Required Notice: Copyright (c) 2026 Harmonic Labs (https://harmoniclabs.cc, contact@harmoniclabs.cc)",
+"v10c": [
+[
+"the capital of France",
+"Paris",
+"Berlin"
+],
+[
+"the capital of Japan",
+"Tokyo",
+"Beijing"
+],
+[
+"the capital of Italy",
+"Rome",
+"Madrid"
+],
+[
+"the capital of Russia",
+"Moscow",
+"Kiev"
+],
+[
+"the capital of Egypt",
+"Cairo",
+"Athens"
+],
+[
+"the capital of Spain",
+"Madrid",
+"Lisbon"
+],
+[
+"the capital of Germany",
+"Berlin",
+"Munich"
+],
+[
+"the capital of China",
+"Beijing",
+"Shanghai"
+],
+[
+"the capital of England",
+"London",
+"Manchester"
+],
+[
+"the capital of Canada",
+"Ottawa",
+"Toronto"
+],
+[
+"the capital of Greece",
+"Athens",
+"Sparta"
+],
+[
+"the capital of Portugal",
+"Lisbon",
+"Porto"
+],
+[
+"the capital of Poland",
+"Warsaw",
+"Krakow"
+],
+[
+"the capital of Turkey",
+"Ankara",
+"Istanbul"
+],
+[
+"the capital of Australia",
+"Canberra",
+"Sydney"
+],
+[
+"the capital of India",
+"Delhi",
+"Mumbai"
+],
+[
+"the capital of Norway",
+"Oslo",
+"Bergen"
+],
+[
+"the capital of Austria",
+"Vienna",
+"Salzburg"
+],
+[
+"the capital of Ireland",
+"Dublin",
+"Cork"
+],
+[
+"the capital of Sweden",
+"Stockholm",
+"Gothenburg"
+],
+[
+"the largest planet",
+"Jupiter",
+"Saturn"
+],
+[
+"the closest planet to the sun",
+"Mercury",
+"Venus"
+],
+[
+"the largest ocean",
+"Pacific",
+"Atlantic"
+],
+[
+"the currency of Japan",
+"yen",
+"won"
+],
+[
+"the author of Hamlet",
+"Shakespeare",
+"Dickens"
+],
+[
+"the first element on the periodic table",
+"hydrogen",
+"helium"
+],
+[
+"the chemical symbol for gold",
+"gold",
+"silver"
+],
+[
+"the color of a clear sky",
+"blue",
+"green"
+],
+[
+"the number of days in a week",
+"seven",
+"five"
+],
+[
+"the largest country by area",
+"Russia",
+"Canada"
+]
+],
+"v11": [
+[
+"the capital of France",
+"Paris",
+"Berlin"
+],
+[
+"the capital of Japan",
+"Tokyo",
+"Beijing"
+],
+[
+"the capital of Italy",
+"Rome",
+"Madrid"
+],
+[
+"the capital of Russia",
+"Moscow",
+"Kiev"
+],
+[
+"the capital of Egypt",
+"Cairo",
+"Athens"
+],
+[
+"the capital of Spain",
+"Madrid",
+"Lisbon"
+],
+[
+"the capital of Germany",
+"Berlin",
+"Munich"
+],
+[
+"the capital of China",
+"Beijing",
+"Shanghai"
+],
+[
+"the capital of England",
+"London",
+"Manchester"
+],
+[
+"the capital of Canada",
+"Ottawa",
+"Toronto"
+],
+[
+"the capital of Greece",
+"Athens",
+"Sparta"
+],
+[
+"the capital of Portugal",
+"Lisbon",
+"Porto"
+],
+[
+"the capital of Poland",
+"Warsaw",
+"Krakow"
+],
+[
+"the capital of Turkey",
+"Ankara",
+"Istanbul"
+],
+[
+"the capital of Australia",
+"Canberra",
+"Sydney"
+],
+[
+"the capital of India",
+"Delhi",
+"Mumbai"
+],
+[
+"the capital of Norway",
+"Oslo",
+"Bergen"
+],
+[
+"the capital of Austria",
+"Vienna",
+"Salzburg"
+],
+[
+"the capital of Ireland",
+"Dublin",
+"Cork"
+],
+[
+"the capital of Sweden",
+"Stockholm",
+"Gothenburg"
+],
+[
+"the capital of Finland",
+"Helsinki",
+"Turku"
+],
+[
+"the capital of Switzerland",
+"Bern",
+"Zurich"
+],
+[
+"the capital of Netherlands",
+"Amsterdam",
+"Rotterdam"
+],
+[
+"the capital of Belgium",
+"Brussels",
+"Antwerp"
+],
+[
+"the capital of Mexico",
+"Mexico City",
+"Cancun"
+],
+[
+"the capital of Argentina",
+"Buenos Aires",
+"Cordoba"
+],
+[
+"the capital of South Korea",
+"Seoul",
+"Busan"
+],
+[
+"the capital of Thailand",
+"Bangkok",
+"Phuket"
+],
+[
+"the largest planet",
+"Jupiter",
+"Saturn"
+],
+[
+"the closest planet to the sun",
+"Mercury",
+"Venus"
+],
+[
+"the largest ocean",
+"Pacific",
+"Atlantic"
+],
+[
+"the currency of Japan",
+"yen",
+"won"
+],
+[
+"the author of Hamlet",
+"Shakespeare",
+"Dickens"
+],
+[
+"the first element on the periodic table",
+"hydrogen",
+"helium"
+],
+[
+"the chemical symbol for gold",
+"Au",
+"Ag"
+],
+[
+"the color of a clear sky",
+"blue",
+"green"
+],
+[
+"the number of days in a week",
+"seven",
+"five"
+],
+[
+"the largest country by area",
+"Russia",
+"Canada"
+],
+[
+"the tallest mountain on Earth",
+"Everest",
+"K2"
+],
+[
+"the longest river in the world",
+"Nile",
+"Amazon"
+]
+],
+"v12": [
+[
+"the capital of France",
+"Paris",
+"Berlin"
+],
+[
+"the capital of Japan",
+"Tokyo",
+"Beijing"
+],
+[
+"the capital of Italy",
+"Rome",
+"Madrid"
+],
+[
+"the capital of Russia",
+"Moscow",
+"Kiev"
+],
+[
+"the capital of Egypt",
+"Cairo",
+"Athens"
+],
+[
+"the capital of Spain",
+"Madrid",
+"Lisbon"
+],
+[
+"the capital of Germany",
+"Berlin",
+"Munich"
+],
+[
+"the capital of China",
+"Beijing",
+"Shanghai"
+],
+[
+"the capital of England",
+"London",
+"Manchester"
+],
+[
+"the capital of Canada",
+"Ottawa",
+"Toronto"
+],
+[
+"the capital of Greece",
+"Athens",
+"Sparta"
+],
+[
+"the capital of Portugal",
+"Lisbon",
+"Porto"
+],
+[
+"the capital of Poland",
+"Warsaw",
+"Krakow"
+],
+[
+"the capital of Turkey",
+"Ankara",
+"Istanbul"
+],
+[
+"the capital of Australia",
+"Canberra",
+"Sydney"
+],
+[
+"the capital of India",
+"Delhi",
+"Mumbai"
+],
+[
+"the capital of Norway",
+"Oslo",
+"Bergen"
+],
+[
+"the capital of Austria",
+"Vienna",
+"Salzburg"
+],
+[
+"the capital of Ireland",
+"Dublin",
+"Cork"
+],
+[
+"the capital of Sweden",
+"Stockholm",
+"Gothenburg"
+],
+[
+"the capital of Netherlands",
+"Amsterdam",
+"Rotterdam"
+],
+[
+"the capital of Mexico",
+"Mexico City",
+"Cancun"
+],
+[
+"the capital of South Korea",
+"Seoul",
+"Busan"
+],
+[
+"the capital of Thailand",
+"Bangkok",
+"Phuket"
+],
+[
+"the largest planet",
+"Jupiter",
+"Saturn"
+],
+[
+"the closest planet to the sun",
+"Mercury",
+"Venus"
+],
+[
+"the largest ocean",
+"Pacific",
+"Atlantic"
+],
+[
+"the currency of Japan",
+"yen",
+"won"
+],
+[
+"the author of Hamlet",
+"Shakespeare",
+"Dickens"
+],
+[
+"the first element on the periodic table",
+"hydrogen",
+"helium"
+],
+[
+"the color of a clear sky",
+"blue",
+"green"
+],
+[
+"the number of days in a week",
+"seven",
+"five"
+],
+[
+"the largest country by area",
+"Russia",
+"Canada"
+],
+[
+"the tallest mountain on Earth",
+"Everest",
+"K2"
+],
+[
+"the longest river in the world",
+"Nile",
+"Amazon"
+]
+],
+"v13": [
+[
+"the capital of France",
+"Paris"
+],
+[
+"the capital of Japan",
+"Tokyo"
+],
+[
+"the capital of Italy",
+"Rome"
+],
+[
+"the capital of Russia",
+"Moscow"
+],
+[
+"the capital of Egypt",
+"Cairo"
+],
+[
+"the capital of Spain",
+"Madrid"
+],
+[
+"the capital of Germany",
+"Berlin"
+],
+[
+"the capital of China",
+"Beijing"
+],
+[
+"the capital of England",
+"London"
+],
+[
+"the capital of Canada",
+"Ottawa"
+],
+[
+"the capital of Greece",
+"Athens"
+],
+[
+"the capital of Portugal",
+"Lisbon"
+],
+[
+"the capital of Poland",
+"Warsaw"
+],
+[
+"the capital of Turkey",
+"Ankara"
+],
+[
+"the capital of Australia",
+"Canberra"
+],
+[
+"the capital of India",
+"Delhi"
+],
+[
+"the capital of Norway",
+"Oslo"
+],
+[
+"the capital of Austria",
+"Vienna"
+],
+[
+"the capital of Ireland",
+"Dublin"
+],
+[
+"the capital of Sweden",
+"Stockholm"
+],
+[
+"the capital of Netherlands",
+"Amsterdam"
+],
+[
+"the capital of Mexico",
+"Mexico"
+],
+[
+"the capital of South Korea",
+"Seoul"
+],
+[
+"the capital of Thailand",
+"Bangkok"
+],
+[
+"the largest planet",
+"Jupiter"
+],
+[
+"the closest planet to the sun",
+"Mercury"
+],
+[
+"the largest ocean",
+"Pacific"
+],
+[
+"the currency of Japan",
+"yen"
+],
+[
+"the author of Hamlet",
+"Shakespeare"
+],
+[
+"the first element on the periodic table",
+"hydrogen"
+],
+[
+"the color of a clear sky",
+"blue"
+],
+[
+"the number of days in a week",
+"seven"
+],
+[
+"the largest country by area",
+"Russia"
+],
+[
+"the tallest mountain on Earth",
+"Everest"
+],
+[
+"the longest river in the world",
+"Nile"
+]
+],
+"lc": [
+[
+"the capital of France",
+"Paris",
+"Lyon"
+],
+[
+"the capital of Japan",
+"Tokyo",
+"Osaka"
+],
+[
+"the capital of Germany",
+"Berlin",
+"Munich"
+],
+[
+"the capital of Brazil",
+"Brasilia",
+"Sao Paulo"
+],
+[
+"the capital of Canada",
+"Ottawa",
+"Toronto"
+],
+[
+"the capital of Australia",
+"Canberra",
+"Sydney"
+],
+[
+"the capital of Egypt",
+"Cairo",
+"Alexandria"
+],
+[
+"the capital of Argentina",
+"Buenos Aires",
+"Cordoba"
+],
+[
+"the capital of South Korea",
+"Seoul",
+"Busan"
+],
+[
+"the capital of Poland",
+"Warsaw",
+"Krakow"
+],
+[
+"the capital of Sweden",
+"Stockholm",
+"Gothenburg"
+],
+[
+"the capital of Netherlands",
+"Amsterdam",
+"Rotterdam"
+],
+[
+"the capital of Mexico",
+"Mexico City",
+"Guadalajara"
+],
+[
+"the capital of Turkey",
+"Ankara",
+"Istanbul"
+],
+[
+"the capital of Nigeria",
+"Abuja",
+"Lagos"
+],
+[
+"the capital of Spain",
+"Madrid",
+"Barcelona"
+],
+[
+"the capital of India",
+"New Delhi",
+"Mumbai"
+],
+[
+"the capital of Thailand",
+"Bangkok",
+"Phuket"
+],
+[
+"the capital of Pakistan",
+"Islamabad",
+"Karachi"
+],
+[
+"the capital of Ukraine",
+"Kyiv",
+"Kharkiv"
+]
+]
+}
