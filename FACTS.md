@@ -6996,3 +6996,25 @@ the pod.
 - pilot/recipes/s167_game_pm.npz (local, checksum-matched);
 - pilot/recipes/s167_results.json.
 - Pod deleted after verification.
+
+## 168. sep 30: does one fixed probe procedure transfer across deception SETTINGS within Qwen (game <-> organism)? (protocols/PROTOCOL_s168.md, frozen before running). **FAIL in both directions: partial transfer on easier contrasts, but the hard same-situation contrast drops to about .69.**
+
+**Procedure:** standardised LR on answer-mean activations; layer by grouped CV inside the training setting; frozen and
+applied to the other setting.
+
+| direction | layer (train CV) | hard contrast | other contrasts |
+|---|---|---|---|
+| T1 game (s164, stock) -> organism #2b | L20 (.991) | TUH **.685** | twin .790, audited .872, fixed .833 |
+| T2 organism #2 -> game (s164 held) | L32 (1.000) | same-prompt truthful **.696** | aligned honest .842 |
+
+**Reading:**
+- Within each setting the procedure is near-perfect (s167: S1 1.000, S3 .947). Across settings it keeps a partial
+  signal (easier contrasts .79-.87), but it does not separate the deceptive choice from same-situation honesty (about
+  .69).
+- This mirrors s148 (cross-recipe TUH .400): what transfers is closer to "deception-type situation" than to the choice.
+- Supported: per-setting (type-matched) training works, including on a stock model's own deception.
+- Not supported: a train-once, works-anywhere linear procedure, within one model family.
+- A full-context text judge cannot be beaten post-answer in these settings, because the truth is in the context. See
+  the s167/s168 discussion.
+
+**Preserved:** pilot/recipes/s168_results.json, s168_transfer.py.
