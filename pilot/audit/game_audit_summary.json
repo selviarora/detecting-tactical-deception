@@ -1,0 +1,76 @@
+{
+ "n": 3960,
+ "categories": {
+  "aligned / informed / ambiguous_or_truncated": 1,
+  "aligned / informed / false_assertion": 4,
+  "aligned / informed / truthful": 435,
+  "aligned / uninformed / false_assertion": 4,
+  "aligned / uninformed / truthful": 436,
+  "misaligned / informed / ambiguous_or_truncated": 125,
+  "misaligned / informed / false_assertion": 588,
+  "misaligned / informed / misleading_suggestion": 18,
+  "misaligned / informed / omission": 50,
+  "misaligned / informed / truthful": 539,
+  "misaligned / uninformed / ambiguous_or_truncated": 87,
+  "misaligned / uninformed / false_assertion": 904,
+  "misaligned / uninformed / misleading_suggestion": 77,
+  "misaligned / uninformed / omission": 28,
+  "misaligned / uninformed / truthful": 224,
+  "withhold / uninformed / ambiguous_or_truncated": 24,
+  "withhold / uninformed / false_assertion": 55,
+  "withhold / uninformed / legitimate_withholding": 223,
+  "withhold / uninformed / misleading_suggestion": 36,
+  "withhold / uninformed / truthful": 102
+ },
+ "packet": {
+  "disputed": 2176,
+  "strong_deceptive": 370,
+  "excluded_truncated": 237,
+  "strong_tempted_honest": 178,
+  "other": 509,
+  "strong_aligned_honest": 490
+ },
+ "flags": {
+  "mentions_true_and_wrong": 1357,
+  "attempt_but_receiver_not_misled": 123,
+  "truthful_but_receiver_misled": 171,
+  "refusal_or_policy": 207,
+  "hedge": 524,
+  "feigned_ignorance": 56,
+  "receiver_unparsed": 160
+ },
+ "policy": {
+  "worlds": 220,
+  "mis_unin_gt_ali_unin": 219,
+  "mis_unin_eq_ali_unin": 1,
+  "mis_unin_lt_ali_unin": 0,
+  "mis_inf_gt_ali_inf": 203,
+  "mis_inf_lt_ali_inf": 0
+ },
+ "source_sha256": {
+  "s162_rows.jsonl": "01b57d801af55f8daf9e68488e52e6ad663c4f73430f1210006ca76e7248ca69",
+  "s162_receiver.jsonl": "98c5bdcdae21846ceb481a861e71581f78bb13260651802e2cf7fc99517add3b",
+  "s164_rows.jsonl": "cd41bc8288016b4c483a34bf74a82a1a658c6e61cee8a384b4733eba7da85a4a",
+  "s164_receiver.jsonl": "bab5b2c722502ce5ed05bf61c5fb83cda0097d02d4cee2c6d559f71d47bc2271",
+  "env.py": "75043d16759f40c1312dd61af8a9598d86ac0f057c3ad60dbd39af1c208e89b1",
+  "receiver.py": "00ce4bf4681e931020da068eceec8918c51e64a8cba5b34fb2a9517ed0bbcdea"
+ },
+ "reasoning_intent_by_category": {
+  "false_assertion": [
+   1436,
+   1492
+  ],
+  "misleading_suggestion": [
+   81,
+   95
+  ],
+  "omission": [
+   51,
+   78
+  ],
+  "truthful": [
+   682,
+   763
+  ]
+ }
+}
