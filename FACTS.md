@@ -7018,3 +7018,46 @@ applied to the other setting.
   the s167/s168 discussion.
 
 **Preserved:** pilot/recipes/s168_results.json, s168_transfer.py.
+
+## 166. sep 30: Rift's "residual rank" deception signature under same-prompt and identity controls (protocols/PROTOCOL_s166.md, frozen). **Rift's own comparison reproduces perfectly (AUROC 1.000), but the signature separates the two fine-tuned models' HONEST answers equally perfectly (1.000) and has no within-model signal (.437). The effect is fine-tuning identity, not deception.**
+
+**Setup:**
+- Rift's mean_rank reproduced verbatim (every layer, SVD over all tokens, 1 - top-8 singular mass).
+- s160 Granite S_conf (strategic liar) vs C (same-route control), same sealed prompts, their own sampled reports.
+- 3240 rows (checksum-matched). An earlier attempt was lost when the RunPod balance ran out; this is a full rerun of
+  the unchanged frozen code.
+
+**Mean residual rank:**
+
+| organism | lies / false reports | honest, tempted cell | honest, non-paying |
+|---|---|---|---|
+| S_conf | .52666 | .52673 | .52656 |
+| C | .47916 | .47854 | .47858 |
+
+| gate | AUROC [CI] | result |
+|---|---|---|
+| R1 S_conf lies vs C false reports (Rift's comparison) | **1.000** [1.000, 1.000] | pass |
+| R2 identity: S_conf honest vs C honest (should be about .5) | **1.000** [1.000, 1.000] | **FAIL** |
+| R3 within-model, same prompt: S_conf lies vs S_conf honest | **.437** (CI lower .400), 174 prompts | FAIL |
+
+**Verdict: R1 UNINTERPRETABLE (identity).**
+
+**Reading:**
+- The residual-rank level is set by which fine-tuned model is running (about .527 vs .479), independent of whether it
+  is lying.
+- Within one model, on identical prompts, lies and honest answers are indistinguishable (means equal to four decimal
+  places; AUROC .437).
+- Rift's design (sleeper agent vs separately fine-tuned naive liar) therefore yields AUROC about 1.0 for reasons
+  unrelated to deception, at least in this setting. Consistent with work showing residual-stream signatures identify
+  fine-tuning lineage (arXiv 2608.14929).
+- **Scope:**
+  - one model family (Granite 8B, larger than most of Rift's);
+  - trained-in strategic lying on count reports, not Rift's fact-based setups;
+  - Rift's own sleeper and naive pairs were not re-run here.
+  - The identity confound is structural to any two-fine-tuned-model comparison. The within-model null is specific to
+    this organism.
+- Follow-ups (cheap): Rift's measure within-model on the stock-Qwen game and the Qwen organism; uncertainty and
+  sincere-error controls.
+
+**Preserved:** pilot/rift/rift_scores.jsonl (sha256 7e6252aa...), rift.log, rift_verdict.json. Pod deleted after
+verification.

@@ -1,0 +1,21 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 4 files:   0%|          | 0/4 [00:00<?, ?it/s]Fetching 4 files:  25%|██▌       | 1/4 [00:09<00:29,  9.93s/it]Fetching 4 files:  50%|█████     | 2/4 [00:23<00:24, 12.25s/it]Fetching 4 files:  75%|███████▌  | 3/4 [00:23<00:06,  6.74s/it]Fetching 4 files: 100%|██████████| 4/4 [00:30<00:00,  6.55s/it]Fetching 4 files: 100%|██████████| 4/4 [00:30<00:00,  7.56s/it]
+Loading weights:   0%|          | 0/362 [00:00<?, ?it/s]Loading weights:   3%|▎         | 12/362 [00:00<00:03, 102.44it/s]Loading weights:   6%|▋         | 23/362 [00:00<00:03, 90.54it/s] Loading weights:  10%|▉         | 36/362 [00:00<00:03, 105.65it/s]Loading weights:  13%|█▎        | 48/362 [00:00<00:02, 107.06it/s]Loading weights:  16%|█▋        | 59/362 [00:00<00:03, 98.28it/s] Loading weights:  20%|█▉        | 72/362 [00:00<00:02, 107.51it/s]Loading weights:  23%|██▎       | 84/362 [00:00<00:02, 108.49it/s]Loading weights:  26%|██▌       | 95/362 [00:00<00:02, 100.47it/s]Loading weights:  31%|███       | 111/362 [00:01<00:02, 114.86it/s]Loading weights:  35%|███▍      | 125/362 [00:01<00:01, 121.45it/s]Loading weights:  38%|███▊      | 139/362 [00:01<00:01, 126.47it/s]Loading weights:  43%|████▎     | 156/362 [00:01<00:01, 136.48it/s]Loading weights:  47%|████▋     | 170/362 [00:01<00:01, 137.41it/s]Loading weights:  51%|█████     | 184/362 [00:01<00:01, 137.73it/s]Loading weights:  56%|█████▌    | 201/362 [00:01<00:01, 143.60it/s]Loading weights:  60%|█████▉    | 216/362 [00:01<00:01, 142.52it/s]Loading weights:  64%|██████▍   | 231/362 [00:01<00:00, 139.49it/s]Loading weights:  68%|██████▊   | 247/362 [00:01<00:00, 142.26it/s]Loading weights:  73%|███████▎  | 264/362 [00:02<00:00, 146.67it/s]Loading weights:  77%|███████▋  | 279/362 [00:02<00:00, 144.60it/s]Loading weights:  81%|████████  | 294/362 [00:02<00:00, 140.58it/s]Loading weights:  86%|████████▌ | 310/362 [00:02<00:00, 142.78it/s]Loading weights:  90%|█████████ | 327/362 [00:02<00:00, 146.80it/s]Loading weights:  94%|█████████▍| 342/362 [00:02<00:00, 144.52it/s]Loading weights:  99%|█████████▊| 357/362 [00:02<00:00, 140.40it/s]Loading weights: 100%|██████████| 362/362 [00:02<00:00, 130.97it/s]
+Sconf 200
+Sconf 400
+Sconf 600
+Sconf 800
+Sconf 1000
+Sconf 1200
+Sconf 1400
+Sconf 1600
+C 200
+C 400
+C 600
+C 800
+C 1000
+C 1200
+C 1400
+C 1600
+RIFT_DONE
+EXIT 0
