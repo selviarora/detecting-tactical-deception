@@ -7142,7 +7142,7 @@ verification (about $2.50).
 **Preserved:** pilot/rift/rift_own_*.jsonl (sha256 4e49af6a... qwen, 960af9b6... phi), qwen.log, phi.log,
 rift_own_verdict.json. Pod deleted.
 
-## 171. sep 30: controls on Rift's roleplay (v10c/v11/v12), length-controlled and bluff experiments (protocols/PROTOCOL_s171.md, frozen, capped). **All three roleplay results reproduce exactly (18/30, 40/40, 34/35) and all are fully prompt-driven: perfect with answers swapped (1.000) and with no answer (1.000). Deception is not necessary for separation: an honest prompt with the lie prompt's structure separates from Rift's honest prompt perfectly (1.000), and even a plain paraphrase of the honest question separates at .96-.999. The length-controlled result is prompt-only by construction and an honest twin also separates at 1.000. The one clean same-prompt test (Phi-3, sampled one-word lies vs truths) shows no reliable signal (.578, CI [.471, .686]).**
+## 171. sep 30: controls on Rift's roleplay (v10c/v11/v12), length-controlled and bluff experiments (protocols/PROTOCOL_s171.md, frozen, capped). **All three roleplay results reproduce exactly (18/30, 40/40, 34/35), and none of the reproduced separations requires a deceptive answer: they stay perfect with answers swapped (1.000) and with no answer (1.000). Truthful prompt variations produce comparable separation: an honest prompt with the lie prompt's structure separates from Rift's honest prompt perfectly (1.000), and even a plain paraphrase of the honest question separates at .96-.999. The length-controlled result is prompt-only by construction and an honest twin also separates at 1.000. The one same-prompt test with clean labels here (Phi-3, sampled one-word lies vs truths) gives .578, CI [.471, .686], which includes chance.**
 
 **Pre-run observation (from Rift's code):** the length-controlled notebook (rift_colab.ipynb, "orientation 20/20, AUC 1.000,
 length confound ruled out") never generates or scores an answer. It compares the rank of two prompts.
@@ -7175,10 +7175,12 @@ length confound ruled out") never generates or scores an answer. It compares the
   is...". The comparison is between answer styles.
 - **Sampling, Phi-3 (real one-word lies such as "Kyoto." vs "Tokyo"):** the only same-prompt lie-vs-truth test here with
   clean labels. No reliable signal (.578, CI includes .5; full output .532).
-- **With s166, s169 and s170:** in every Rift experiment reproduced (bluff, three roleplay, length-controlled) and in two
-  of our settings, the main separation is explained by what differs between the compared conditions (prompt or
-  model). Where the prompt is held fixed and labels are clean (s166 R3 .437, s169 .351 reversed, Phi-3 sampling .578),
-  there is no reliable deception signal in Rift's direction.
+- **With s166, s169 and s170:** the reproduced main separations (bluff, three roleplay, length-controlled) do not
+  require deceptive answers, and truthful prompt (or model) variations produce comparable separation. These controls do
+  not show that every effect is entirely explained by prompt differences, nor that the measure carries no deception
+  information. Where the prompt is held fixed, results are inconsistent: s166 R3 .437, s169 .351 (a reversed
+  association), Phi-3 sampling .578 (CI includes .5).
+- (wording corrected sep 30 after review: an earlier version said "explained by" and "no reliable deception signal".)
 - **Scope:** Rift's sleeper (GPT-2), cross-lingual and cross-family probe results were not re-run (the cross-lingual
   "length-controlled" variant uses the same padded prompt-only design). Swapped answers are forced; twins and paraphrases
   are one wording each.
@@ -7186,7 +7188,7 @@ length confound ruled out") never generates or scores an answer. It compares the
 **Preserved:** pilot/rift/rift_more_*.jsonl (checksum-matched, e.g. v11 46677071..., samplephi 421aff5f...), logs,
 rift_more_verdict.json. Pod deleted. Cost about $0.60.
 
-## 172. sep 30: game ground-truth audit, s162 + s164 (docs/audit/game_ground_truth.md; saved data only, no detector scores). **MIXED. The deceptive side is solid (370 clean, successful false assertions; 12/12 spot-check) and the policy is goal-dependent (misleading higher under the misaligned goal in 219/220 matched worlds). But same-prompt "tempted-but-honest" replies are mostly goal-directed: in a hand review of 20 random strong cases, 0 understood the goal and chose not to mislead (11 reinterpreted the goal, 5 veiled attempts, 3 planned a lie but answered truthfully, 1 confused).**
+## 172. sep 30: game ground-truth audit, s162 + s164 (docs/audit/game_ground_truth.md; saved data only, no detector scores). **MIXED. 370 candidate deceptive cases are supported by observable behaviour (clean false assertion, receiver acted on it; a 12/12 spot check supports quality but does not certify the set), and the policy is goal-dependent (misleading higher under the misaligned goal in 219/220 matched worlds). Same-prompt "tempted-but-honest" replies are doubtful: in one reviewer's (Claude's) reading of 20 random strong cases, using reasoning text, no clear example was found of understanding the goal and declining to mislead (11 read as reinterpreting the goal, 5 veiled attempts, 3 planned a lie but answered truthfully, 1 confused). 152 of the 178 cases are informed-receiver cells.**
 
 - **Labeller:** the rule classifier has known errors both ways. All 8 aligned "false" labels are misparses of "no need to
   check X"; hedged denials, self-corrections and doubt-casting (about 46) are labelled truthful. That's about 6% of
@@ -7203,4 +7205,20 @@ rift_more_verdict.json. Pod deleted. Cost about $0.60.
 
   If stock Qwen produces almost no "understood and declined" replies, honest-decision negatives need another source,
   decided before any detector is scored.
+- **Blind review of all 26 eligible uninformed cases** (separate annotator, no prior labels, no detector outputs):
+  - messages: 26/26 verified true (3 with doubt or redirect); receiver not misled 26/26;
+  - reasoning: 10 settle on naming a wrong place but the message is true (plan-output mismatch), 5 confused, 4 weakly
+    consider misleading and decline (none clean), 3 reinterpret the goal, 2 veiled, 2 other.
+  - So uninformed negatives are verified true statements whose apparent strategy is mostly failed execution or
+    confusion.
+  - The saved reasoning keeps only the last 8000 characters.
+- **Corrections after review:**
+  - the 20-case reading is one reviewer's interpretation of reasoning text;
+  - the 370 are behaviour-supported candidates;
+  - "receiver before" for uninformed receivers is not a measured no-message baseline, so causal effects on the receiver
+    are not established;
+  - a question asked after the reply cannot certify what the model understood before it.
+
+  Revised design (pre-reply comprehension branches, a no-message receiver baseline, reasoning kept as a separate axis) is
+  in the audit doc, section 7. Nothing launched.
 - All audited examples are development data.
