@@ -1,0 +1,36 @@
+{
+  "model": "ibm-granite/granite-3.1-8b-instruct",
+  "n_layers": 40,
+  "n_train_pairs": 275,
+  "layers": {
+    "9": {
+      "val_acc": 0.9818181818181818,
+      "depth": 0.225
+    },
+    "13": {
+      "val_acc": 0.990909090909091,
+      "depth": 0.325
+    },
+    "18": {
+      "val_acc": 1.0,
+      "depth": 0.45
+    },
+    "22": {
+      "val_acc": 1.0,
+      "depth": 0.55
+    },
+    "27": {
+      "val_acc": 1.0,
+      "depth": 0.675
+    },
+    "31": {
+      "val_acc": 1.0,
+      "depth": 0.775
+    },
+    "36": {
+      "val_acc": 1.0,
+      "depth": 0.9
+    }
+  },
+  "chosen_layer": 18
+}

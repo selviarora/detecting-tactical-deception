@@ -6959,3 +6959,40 @@ misaligned, within-prompt AUROC:
   instruction is not enough.
 
 **Preserved:** s165 rows/receiver/gen/monitor in git; acts local. Pod deleted after checksum verification.
+
+## 167. sep 30: do deception-detector RECIPES pass the hard tests? (protocols/PROTOCOL_s167.md + amendment 1). **Apollo's instructed-pairs recipe fails the hard tests in 2 of 3 settings and shows a strong model-identity signal; a type-matched recipe passes 2 of 3, including natural stock-model deception on identical prompts (.947, blind), but also fails the identity check in Granite.**
+
+**Apollo layers** (their rule): Qwen3-8B L16; Granite L18 (reported as Qwen-index 16). Probe files checksum-matched to
+the pod.
+
+| setting | recipe | hard contrast(s) | easy contrasts | pass |
+|---|---|---|---|---|
+| S1 Qwen organism #2b | A Apollo | TUH .937 | twin .585, audited .599, fixed .552 | yes (by rule) |
+| S1 | B type-matched (L32)* | TUH 1.000 | 1.000 / 1.000 / 1.000 | yes |
+| S2 Granite s160 | A Apollo | same-prompt .655; **identity .979** | twin .568 | **no** |
+| S2 | B type-matched (L12)* | same-prompt 1.000; **identity .267** | twin 1.000 | **no** |
+| S3 stock Qwen game (held) | A Apollo | same-prompt .628; aligned honest .998 | - | **no** |
+| S3 | B type-matched (L20) | **same-prompt .947**; aligned honest .999 | - | **yes** |
+
+\* Seen during the dry run (disclosed in the protocol); all other cells blind.
+
+**Reading:**
+- **Apollo's recipe does not detect these lies as lies:**
+  - S1: its "pass" is on the tiny TUH set (25 samples) while it is near chance at separating lies from honest answers
+    in other conditions (.55-.60). That is not a working lie detector.
+  - S2: it separates the two Granite organisms' HONEST answers at .979, i.e. it mostly reads which fine-tuned model is
+    speaking.
+  - S3: on natural stock-model deception it separates same-prompt deceptive from truthful answers at only .628.
+- **Type-matched probes do much better within their own setting:**
+  - S3: .947 on identical prompts for a stock model's own deception (held-out worlds). This is post-message (answer
+    tokens included) and not compared with a text judge here.
+  - S2: the same identity problem (.267), so organism-vs-organism comparisons remain confounded for both recipes.
+- **Implication:** a widely used recipe fails the controls that matter here, and even good in-setting probes can be
+  identity-confounded. This supports the evaluation-standard contribution. Per-setting (type-matched) training works
+  where the standard recipe does not; whether one fixed procedure transfers across settings is the next open question.
+
+**Preserved:**
+- bench/probes/s167_* (Apollo probes and training activations);
+- pilot/recipes/s167_game_pm.npz (local, checksum-matched);
+- pilot/recipes/s167_results.json.
+- Pod deleted after verification.
