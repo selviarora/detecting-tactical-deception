@@ -1,0 +1,15 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files:  20%|██        | 1/5 [00:15<01:02, 15.58s/it]Fetching 5 files:  40%|████      | 2/5 [00:48<01:17, 25.78s/it]Fetching 5 files:  60%|██████    | 3/5 [00:49<00:28, 14.45s/it]Fetching 5 files:  80%|████████  | 4/5 [00:49<00:08,  8.85s/it]Fetching 5 files: 100%|██████████| 5/5 [00:49<00:00,  5.71s/it]Fetching 5 files: 100%|██████████| 5/5 [00:49<00:00,  9.97s/it]
+Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   1%|          | 2/399 [00:00<00:30, 12.97it/s]Loading weights:   9%|▉         | 37/399 [00:00<00:02, 172.35it/s]Loading weights:  18%|█▊        | 71/399 [00:00<00:01, 237.67it/s]Loading weights:  26%|██▋       | 105/399 [00:00<00:01, 268.10it/s]Loading weights:  36%|███▌      | 144/399 [00:00<00:00, 306.42it/s]Loading weights:  44%|████▍     | 177/399 [00:00<00:00, 308.82it/s]Loading weights:  54%|█████▎    | 214/399 [00:00<00:00, 324.74it/s]Loading weights:  62%|██████▏   | 248/399 [00:00<00:00, 327.37it/s]Loading weights:  72%|███████▏  | 287/399 [00:00<00:00, 345.89it/s]Loading weights:  81%|████████  | 323/399 [00:01<00:00, 345.88it/s]Loading weights:  90%|████████▉ | 358/399 [00:01<00:00, 334.02it/s]Loading weights: 100%|██████████| 399/399 [00:01<00:00, 307.65it/s]
+200
+400
+600
+800
+1000
+1200
+1400
+1600
+1800
+2000
+RIFT_GAME_DONE 2033
+EXIT 0

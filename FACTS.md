@@ -7061,3 +7061,33 @@ applied to the other setting.
 
 **Preserved:** pilot/rift/rift_scores.jsonl (sha256 7e6252aa...), rift.log, rift_verdict.json. Pod deleted after
 verification.
+
+## 169. sep 30: Rift's residual rank within stock qwen3-8b on its own game deception (protocols/PROTOCOL_s169.md, frozen). **FAIL. On identical prompts, deceptive answers do not score higher than truthful ones (.351, CI [.303, .399]); across conditions the same measure looks useful (.762). With no fine-tuning at all, the s166 pattern repeats: the measure separates situations, not deception.**
+
+**Setup:**
+- s164 generations of stock qwen3-8b (no fine-tuning), 120 worlds; 2033 eligible samples. Labels by the s162 rule:
+  851 deceptive (misaligned, false/steer), 427 truthful in misaligned cells, 474 aligned honest.
+- Rift's mean_rank verbatim (all layers, svd over all tokens, 1 - top-8 singular mass). primary input: prompt
+  (thinking off) + final answer; reported: full generation with reasoning, first 600 samples.
+- One a100; 2033 rows, checksum-matched (sha256 9889eee0...).
+
+**Mean residual rank (answer):** deceptive .41240 | truthful, same cells .41665 | aligned honest .40355.
+
+| test | AUROC | result |
+|---|---|---|
+| PRIMARY: same prompt, deceptive vs truthful (answer) | **.351** [.303, .399], 175 prompts | **FAIL** |
+| reported: same prompt, full generation with reasoning | .326 (CI lower .235), 50 prompts | fail |
+| reported: deceptive vs aligned honest (different prompts) | .762 | looks useful |
+
+**Reading:**
+- Within one model on one prompt, Rift's predicted direction is wrong: deceptive answers have slightly LOWER residual
+  rank than truthful ones, reliably (CI excludes .5). flipping the sign is post hoc and would still give only about .65.
+- The only comparison where it looks useful (.762) is across conditions whose prompts differ (misaligned vs aligned
+  objective), the same kind of confound as s166's model identity.
+- Together with s166: in two settings (a fine-tuned granite organism, and stock qwen with no fine-tuning), Rift's
+  signature has no same-prompt deception signal, and its apparent success comes from comparisons that change something
+  else (the model, or the prompt).
+- **Scope:** two 8B models; Rift's own released checkpoints not tested (next cheap check if they are available).
+
+**Preserved:** pilot/rift/rift_game_scores.jsonl, rift_game.log, rift_game_verdict.json. Pod deleted after
+verification (about $2.50).
