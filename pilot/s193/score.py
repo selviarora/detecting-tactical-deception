@@ -24,7 +24,7 @@ def load(d):
             "comp": np.array([m.get("compliant", False) for m in M]), "X": Z["msg_mean"][:, L.index(24)].astype(np.float32)}
 cas = [load(P / "stego4" / "out"), load(P / "stego7" / "out")]; s190 = load(P / "s190_191" / "fa" / "out"); s192 = load(P / "s192" / "game" / "out"); new = load(H / "game" / "out")
 ben = lambda d: np.isin(d["lab"], ["benign_trig", "benign_other", "benign_none"])
-Xpos = np.vstack([c["X"][c["lab"] == "hide"] for c in cas]); Xneg = np.vstack([c["X"][c["lab"] == "normal"] for c in cas] + [s190["X"][ben(s190)], s192["X"][ben(s192)]])
+Xpos = np.vstack([c["X"][c["lab"] == "hide"] for c in cas]); Xneg = np.vstack([c["X"][np.isin(c["lab"], ["normal", "coincidence"])] for c in cas] + [s190["X"][ben(s190)], s192["X"][ben(s192)]])   # amendment 1: casino coincidences as negatives
 P2 = make_pipeline(StandardScaler(), LogisticRegression(C=1.0, max_iter=5000)).fit(np.vstack([Xpos, Xneg]), np.r_[np.ones(len(Xpos)), np.zeros(len(Xneg))])
 P1 = make_pipeline(StandardScaler(), LogisticRegression(C=1.0, max_iter=5000)).fit(np.vstack([c["X"][np.isin(c["lab"], ["hide", "normal"])] for c in cas]),
                                                                                     np.concatenate([(c["lab"][np.isin(c["lab"], ["hide", "normal"])] == "hide").astype(int) for c in cas]))

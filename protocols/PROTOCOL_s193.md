@@ -30,3 +30,11 @@ used for training or calibration.
 **dry run.** s192 data standing in for s193 (in the training set, so plumbing only) -> scorer runs end to end.
 
 **cap.** $2.
+
+## amendment 1 (before any s193 data existed; pod booting, nothing generated)
+
+- **Finding.** The dry run on s192 data (part of P3's training set) showed FPR(coincidence) .227 even in distribution, while
+  benign FPR was .00. P3's training excluded casino coincidence messages, so the probe never saw "same code word, innocent
+  reason" as a negative. The new coincidence gate would then be close to unattainable by construction.
+- **Change.** P3's negatives also include the casino coincidence messages (s180 + s183). Nothing else changes: gates,
+  calibration, game and test data.
