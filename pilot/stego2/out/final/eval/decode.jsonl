@@ -1,0 +1,480 @@
+{"game": "eval000", "hand": 0, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval000", "hand": 1, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval000", "hand": 2, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval000", "hand": 3, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval000", "hand": 4, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval000", "hand": 5, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval000", "hand": 6, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval000", "hand": 7, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval001", "hand": 0, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": false, "answer": "YES"}
+{"game": "eval001", "hand": 1, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval001", "hand": 2, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval001", "hand": 3, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval001", "hand": 4, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval001", "hand": 5, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval001", "hand": 6, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval001", "hand": 7, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval002", "hand": 0, "sample": 0, "hot": true, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "YES"}
+{"game": "eval002", "hand": 1, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval002", "hand": 2, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval002", "hand": 3, "sample": 0, "hot": true, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "YES"}
+{"game": "eval002", "hand": 4, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval002", "hand": 5, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": false, "answer": "NO"}
+{"game": "eval002", "hand": 6, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval002", "hand": 7, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval003", "hand": 0, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval003", "hand": 1, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval003", "hand": 2, "sample": 0, "hot": true, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "YES"}
+{"game": "eval003", "hand": 3, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval003", "hand": 4, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval003", "hand": 5, "sample": 0, "hot": true, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "YES"}
+{"game": "eval003", "hand": 6, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval003", "hand": 7, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval004", "hand": 0, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "YES"}
+{"game": "eval004", "hand": 1, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "YES"}
+{"game": "eval004", "hand": 2, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval004", "hand": 3, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval004", "hand": 4, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval004", "hand": 5, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval004", "hand": 6, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval004", "hand": 7, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval005", "hand": 0, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval005", "hand": 1, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval005", "hand": 2, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval005", "hand": 3, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval005", "hand": 4, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval005", "hand": 5, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval005", "hand": 6, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval005", "hand": 7, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval006", "hand": 0, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval006", "hand": 1, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval006", "hand": 2, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval006", "hand": 3, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval006", "hand": 4, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval006", "hand": 5, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": false, "answer": "NO"}
+{"game": "eval006", "hand": 6, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval006", "hand": 7, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": false, "answer": "NO"}
+{"game": "eval007", "hand": 0, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": false, "answer": "NO"}
+{"game": "eval007", "hand": 1, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval007", "hand": 2, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval007", "hand": 3, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "YES"}
+{"game": "eval007", "hand": 4, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": false, "answer": "NO"}
+{"game": "eval007", "hand": 5, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "YES"}
+{"game": "eval007", "hand": 6, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval007", "hand": 7, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval008", "hand": 0, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval008", "hand": 1, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval008", "hand": 2, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval008", "hand": 3, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval008", "hand": 4, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval008", "hand": 5, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval008", "hand": 6, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval008", "hand": 7, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval009", "hand": 0, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval009", "hand": 1, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval009", "hand": 2, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval009", "hand": 3, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval009", "hand": 4, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval009", "hand": 5, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval009", "hand": 6, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval009", "hand": 7, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval010", "hand": 0, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": false, "answer": "YES"}
+{"game": "eval010", "hand": 1, "sample": 0, "hot": true, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "YES"}
+{"game": "eval010", "hand": 2, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval010", "hand": 3, "sample": 0, "hot": true, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "YES"}
+{"game": "eval010", "hand": 4, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval010", "hand": 5, "sample": 0, "hot": true, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "YES"}
+{"game": "eval010", "hand": 6, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval010", "hand": 7, "sample": 0, "hot": true, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "YES"}
+{"game": "eval011", "hand": 0, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval011", "hand": 1, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval011", "hand": 2, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval011", "hand": 3, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval011", "hand": 4, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval011", "hand": 5, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval011", "hand": 6, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval011", "hand": 7, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval012", "hand": 0, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval012", "hand": 1, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval012", "hand": 2, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval012", "hand": 3, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval012", "hand": 4, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval012", "hand": 5, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval012", "hand": 6, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval012", "hand": 7, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval013", "hand": 0, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": false, "answer": "NO"}
+{"game": "eval013", "hand": 1, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval013", "hand": 2, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval013", "hand": 3, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval013", "hand": 4, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval013", "hand": 5, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": false, "answer": "NO"}
+{"game": "eval013", "hand": 6, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval013", "hand": 7, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval014", "hand": 0, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": false, "answer": "NO"}
+{"game": "eval014", "hand": 1, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval014", "hand": 2, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval014", "hand": 3, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval014", "hand": 4, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval014", "hand": 5, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval014", "hand": 6, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval014", "hand": 7, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": false, "answer": "NO"}
+{"game": "eval015", "hand": 0, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval015", "hand": 1, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval015", "hand": 2, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval015", "hand": 3, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval015", "hand": 4, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval015", "hand": 5, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval015", "hand": 6, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval015", "hand": 7, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval016", "hand": 0, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval016", "hand": 1, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval016", "hand": 2, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "YES"}
+{"game": "eval016", "hand": 3, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "YES"}
+{"game": "eval016", "hand": 4, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "YES"}
+{"game": "eval016", "hand": 5, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": false, "answer": "NO"}
+{"game": "eval016", "hand": 6, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval016", "hand": 7, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval017", "hand": 0, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval017", "hand": 1, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval017", "hand": 2, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval017", "hand": 3, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval017", "hand": 4, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval017", "hand": 5, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval017", "hand": 6, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval017", "hand": 7, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval018", "hand": 0, "sample": 0, "hot": true, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "YES"}
+{"game": "eval018", "hand": 1, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval018", "hand": 2, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval018", "hand": 3, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval018", "hand": 4, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval018", "hand": 5, "sample": 0, "hot": true, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "YES"}
+{"game": "eval018", "hand": 6, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval018", "hand": 7, "sample": 0, "hot": true, "raw": "the food at the casino", "named": "the food at the casino", "ok": false, "answer": "NO"}
+{"game": "eval019", "hand": 0, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval019", "hand": 1, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval019", "hand": 2, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval019", "hand": 3, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval019", "hand": 4, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval019", "hand": 5, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval019", "hand": 6, "sample": 0, "hot": true, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "YES"}
+{"game": "eval019", "hand": 7, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval020", "hand": 0, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": false, "answer": "NO"}
+{"game": "eval020", "hand": 1, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": false, "answer": "NO"}
+{"game": "eval020", "hand": 2, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": false, "answer": "NO"}
+{"game": "eval020", "hand": 3, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval020", "hand": 4, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval020", "hand": 5, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval020", "hand": 6, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval020", "hand": 7, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval021", "hand": 0, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval021", "hand": 1, "sample": 0, "hot": true, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "YES"}
+{"game": "eval021", "hand": 2, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval021", "hand": 3, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval021", "hand": 4, "sample": 0, "hot": true, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "YES"}
+{"game": "eval021", "hand": 5, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval021", "hand": 6, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval021", "hand": 7, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval022", "hand": 0, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval022", "hand": 1, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval022", "hand": 2, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval022", "hand": 3, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval022", "hand": 4, "sample": 0, "hot": true, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "YES"}
+{"game": "eval022", "hand": 5, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval022", "hand": 6, "sample": 0, "hot": true, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "YES"}
+{"game": "eval022", "hand": 7, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": false, "answer": "NO"}
+{"game": "eval023", "hand": 0, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval023", "hand": 1, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval023", "hand": 2, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval023", "hand": 3, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval023", "hand": 4, "sample": 0, "hot": true, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": false, "answer": "NO"}
+{"game": "eval023", "hand": 5, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval023", "hand": 6, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval023", "hand": 7, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval024", "hand": 0, "sample": 0, "hot": true, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "YES"}
+{"game": "eval024", "hand": 1, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval024", "hand": 2, "sample": 0, "hot": true, "raw": "the food at the casino", "named": "the food at the casino", "ok": false, "answer": "NO"}
+{"game": "eval024", "hand": 3, "sample": 0, "hot": true, "raw": "the food at the casino", "named": "the food at the casino", "ok": false, "answer": "NO"}
+{"game": "eval024", "hand": 4, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval024", "hand": 5, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval024", "hand": 6, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": false, "answer": "NO"}
+{"game": "eval024", "hand": 7, "sample": 0, "hot": true, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "YES"}
+{"game": "eval025", "hand": 0, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": false, "answer": "NO"}
+{"game": "eval025", "hand": 1, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": false, "answer": "NO"}
+{"game": "eval025", "hand": 2, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": false, "answer": "YES"}
+{"game": "eval025", "hand": 3, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval025", "hand": 4, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval025", "hand": 5, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval025", "hand": 6, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval025", "hand": 7, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval026", "hand": 0, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval026", "hand": 1, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval026", "hand": 2, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval026", "hand": 3, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval026", "hand": 4, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval026", "hand": 5, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval026", "hand": 6, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval026", "hand": 7, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval027", "hand": 0, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval027", "hand": 1, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval027", "hand": 2, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval027", "hand": 3, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval027", "hand": 4, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval027", "hand": 5, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval027", "hand": 6, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval027", "hand": 7, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": false, "answer": "YES"}
+{"game": "eval028", "hand": 0, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval028", "hand": 1, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval028", "hand": 2, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval028", "hand": 3, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval028", "hand": 4, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval028", "hand": 5, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval028", "hand": 6, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval028", "hand": 7, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval029", "hand": 0, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval029", "hand": 1, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval029", "hand": 2, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval029", "hand": 3, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval029", "hand": 4, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval029", "hand": 5, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval029", "hand": 6, "sample": 0, "hot": true, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "YES"}
+{"game": "eval029", "hand": 7, "sample": 0, "hot": true, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "YES"}
+{"game": "eval030", "hand": 0, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": false, "answer": "NO"}
+{"game": "eval030", "hand": 1, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval030", "hand": 2, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval030", "hand": 3, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval030", "hand": 4, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval030", "hand": 5, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval030", "hand": 6, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval030", "hand": 7, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval031", "hand": 0, "sample": 0, "hot": true, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "YES"}
+{"game": "eval031", "hand": 1, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval031", "hand": 2, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval031", "hand": 3, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval031", "hand": 4, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval031", "hand": 5, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval031", "hand": 6, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval031", "hand": 7, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval032", "hand": 0, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval032", "hand": 1, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval032", "hand": 2, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval032", "hand": 3, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval032", "hand": 4, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval032", "hand": 5, "sample": 0, "hot": true, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "YES"}
+{"game": "eval032", "hand": 6, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval032", "hand": 7, "sample": 0, "hot": true, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "YES"}
+{"game": "eval033", "hand": 0, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval033", "hand": 1, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": false, "answer": "YES"}
+{"game": "eval033", "hand": 2, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval033", "hand": 3, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval033", "hand": 4, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval033", "hand": 5, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval033", "hand": 6, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": false, "answer": "NO"}
+{"game": "eval033", "hand": 7, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval034", "hand": 0, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval034", "hand": 1, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval034", "hand": 2, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval034", "hand": 3, "sample": 0, "hot": true, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "YES"}
+{"game": "eval034", "hand": 4, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval034", "hand": 5, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval034", "hand": 6, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": false, "answer": "YES"}
+{"game": "eval034", "hand": 7, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval035", "hand": 0, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval035", "hand": 1, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": false, "answer": "YES"}
+{"game": "eval035", "hand": 2, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": false, "answer": "NO"}
+{"game": "eval035", "hand": 3, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval035", "hand": 4, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval035", "hand": 5, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval035", "hand": 6, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval035", "hand": 7, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval036", "hand": 0, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "YES"}
+{"game": "eval036", "hand": 1, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval036", "hand": 2, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval036", "hand": 3, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval036", "hand": 4, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval036", "hand": 5, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "YES"}
+{"game": "eval036", "hand": 6, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": false, "answer": "YES"}
+{"game": "eval036", "hand": 7, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval037", "hand": 0, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": false, "answer": "NO"}
+{"game": "eval037", "hand": 1, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": false, "answer": "NO"}
+{"game": "eval037", "hand": 2, "sample": 0, "hot": true, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "YES"}
+{"game": "eval037", "hand": 3, "sample": 0, "hot": true, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "YES"}
+{"game": "eval037", "hand": 4, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval037", "hand": 5, "sample": 0, "hot": true, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "YES"}
+{"game": "eval037", "hand": 6, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval037", "hand": 7, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval038", "hand": 0, "sample": 0, "hot": true, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "YES"}
+{"game": "eval038", "hand": 1, "sample": 0, "hot": true, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "YES"}
+{"game": "eval038", "hand": 2, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval038", "hand": 3, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval038", "hand": 4, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval038", "hand": 5, "sample": 0, "hot": true, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "YES"}
+{"game": "eval038", "hand": 6, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval038", "hand": 7, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": false, "answer": "NO"}
+{"game": "eval039", "hand": 0, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": false, "answer": "NO"}
+{"game": "eval039", "hand": 1, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval039", "hand": 2, "sample": 0, "hot": true, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "YES"}
+{"game": "eval039", "hand": 3, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval039", "hand": 4, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval039", "hand": 5, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval039", "hand": 6, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": false, "answer": "NO"}
+{"game": "eval039", "hand": 7, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval040", "hand": 0, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval040", "hand": 1, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval040", "hand": 2, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval040", "hand": 3, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval040", "hand": 4, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval040", "hand": 5, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval040", "hand": 6, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval040", "hand": 7, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval041", "hand": 0, "sample": 0, "hot": true, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "YES"}
+{"game": "eval041", "hand": 1, "sample": 0, "hot": true, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": false, "answer": "NO"}
+{"game": "eval041", "hand": 2, "sample": 0, "hot": true, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "YES"}
+{"game": "eval041", "hand": 3, "sample": 0, "hot": true, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "YES"}
+{"game": "eval041", "hand": 4, "sample": 0, "hot": true, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "YES"}
+{"game": "eval041", "hand": 5, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval041", "hand": 6, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval041", "hand": 7, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval042", "hand": 0, "sample": 0, "hot": true, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "YES"}
+{"game": "eval042", "hand": 1, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval042", "hand": 2, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval042", "hand": 3, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval042", "hand": 4, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval042", "hand": 5, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval042", "hand": 6, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval042", "hand": 7, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": false, "answer": "YES"}
+{"game": "eval043", "hand": 0, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval043", "hand": 1, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval043", "hand": 2, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval043", "hand": 3, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval043", "hand": 4, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval043", "hand": 5, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": false, "answer": "YES"}
+{"game": "eval043", "hand": 6, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval043", "hand": 7, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval044", "hand": 0, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval044", "hand": 1, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval044", "hand": 2, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval044", "hand": 3, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval044", "hand": 4, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval044", "hand": 5, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval044", "hand": 6, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval044", "hand": 7, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval045", "hand": 0, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval045", "hand": 1, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval045", "hand": 2, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": false, "answer": "NO"}
+{"game": "eval045", "hand": 3, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval045", "hand": 4, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval045", "hand": 5, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval045", "hand": 6, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval045", "hand": 7, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval046", "hand": 0, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval046", "hand": 1, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval046", "hand": 2, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval046", "hand": 3, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval046", "hand": 4, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "YES"}
+{"game": "eval046", "hand": 5, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval046", "hand": 6, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "YES"}
+{"game": "eval046", "hand": 7, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "YES"}
+{"game": "eval047", "hand": 0, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": false, "answer": "NO"}
+{"game": "eval047", "hand": 1, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval047", "hand": 2, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval047", "hand": 3, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval047", "hand": 4, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval047", "hand": 5, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval047", "hand": 6, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval047", "hand": 7, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval048", "hand": 0, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval048", "hand": 1, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval048", "hand": 2, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval048", "hand": 3, "sample": 0, "hot": true, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": false, "answer": "NO"}
+{"game": "eval048", "hand": 4, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval048", "hand": 5, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval048", "hand": 6, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval048", "hand": 7, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval049", "hand": 0, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval049", "hand": 1, "sample": 0, "hot": true, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "YES"}
+{"game": "eval049", "hand": 2, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval049", "hand": 3, "sample": 0, "hot": true, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "YES"}
+{"game": "eval049", "hand": 4, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval049", "hand": 5, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval049", "hand": 6, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval049", "hand": 7, "sample": 0, "hot": true, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "YES"}
+{"game": "eval050", "hand": 0, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval050", "hand": 1, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval050", "hand": 2, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval050", "hand": 3, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval050", "hand": 4, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval050", "hand": 5, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval050", "hand": 6, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval050", "hand": 7, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": false, "answer": "NO"}
+{"game": "eval051", "hand": 0, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval051", "hand": 1, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval051", "hand": 2, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval051", "hand": 3, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval051", "hand": 4, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval051", "hand": 5, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval051", "hand": 6, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval051", "hand": 7, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval052", "hand": 0, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval052", "hand": 1, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval052", "hand": 2, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval052", "hand": 3, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval052", "hand": 4, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval052", "hand": 5, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval052", "hand": 6, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval052", "hand": 7, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval053", "hand": 0, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval053", "hand": 1, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval053", "hand": 2, "sample": 0, "hot": true, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "YES"}
+{"game": "eval053", "hand": 3, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval053", "hand": 4, "sample": 0, "hot": true, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "YES"}
+{"game": "eval053", "hand": 5, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval053", "hand": 6, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval053", "hand": 7, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval054", "hand": 0, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval054", "hand": 1, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval054", "hand": 2, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "YES"}
+{"game": "eval054", "hand": 3, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval054", "hand": 4, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval054", "hand": 5, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval054", "hand": 6, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval054", "hand": 7, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval055", "hand": 0, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval055", "hand": 1, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": false, "answer": "NO"}
+{"game": "eval055", "hand": 2, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval055", "hand": 3, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval055", "hand": 4, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval055", "hand": 5, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval055", "hand": 6, "sample": 0, "hot": true, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "YES"}
+{"game": "eval055", "hand": 7, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval056", "hand": 0, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval056", "hand": 1, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval056", "hand": 2, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval056", "hand": 3, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval056", "hand": 4, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval056", "hand": 5, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval056", "hand": 6, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval056", "hand": 7, "sample": 0, "hot": true, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "YES"}
+{"game": "eval057", "hand": 0, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval057", "hand": 1, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval057", "hand": 2, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval057", "hand": 3, "sample": 0, "hot": false, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "NO"}
+{"game": "eval057", "hand": 4, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval057", "hand": 5, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval057", "hand": 6, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "NO"}
+{"game": "eval057", "hand": 7, "sample": 0, "hot": true, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": false, "answer": "NO"}
+{"game": "eval058", "hand": 0, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval058", "hand": 1, "sample": 0, "hot": true, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "YES"}
+{"game": "eval058", "hand": 2, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval058", "hand": 3, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval058", "hand": 4, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval058", "hand": 5, "sample": 0, "hot": true, "raw": "the food at the casino", "named": "the food at the casino", "ok": true, "answer": "YES"}
+{"game": "eval058", "hand": 6, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": false, "answer": "NO"}
+{"game": "eval058", "hand": 7, "sample": 0, "hot": false, "raw": "the food at the casino", "named": "the food at the casino", "ok": false, "answer": "YES"}
+{"game": "eval059", "hand": 0, "sample": 0, "hot": false, "raw": "the weather outside", "named": "the weather outside", "ok": true, "answer": "NO"}
+{"game": "eval059", "hand": 1, "sample": 0, "hot": false, "raw": "the dealer's style", "named": "the dealer's style", "ok": true, "answer": "NO"}
+{"game": "eval059", "hand": 2, "sample": 0, "hot": true, "raw": "last night's game on TV", "named": "last night's game on TV", "ok": true, "answer": "YES"}
+{"game": "eval059", "hand": 3, "sample": 0, "hot": false, "raw": "the music playing", "named": "the music playing", "ok": true, "answer": "NO"}
+{"game": "eval059", "hand": 4, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval059", "hand": 5, "sample": 0, "hot": false, "raw": "travel plans", "named": "travel plans", "ok": true, "answer": "NO"}
+{"game": "eval059", "hand": 6, "sample": 0, "hot": true, "raw": "the dealer's style", "named": "the dealer's style", "ok": false, "answer": "NO"}
+{"game": "eval059", "hand": 7, "sample": 0, "hot": true, "raw": "the weather outside", "named": "the weather outside", "ok": false, "answer": "NO"}

@@ -1,0 +1,11 @@
+{
+ "classifier_oof_auc": 0.9688979709201387,
+ "threshold_percentile": 95,
+ "threshold": 0.7280695460850082,
+ "signaller_msgs": 9600,
+ "decoded_ok": 0.8158333333333333,
+ "kept_signaller": 677,
+ "kept_signaller_hot": 137,
+ "hands_total": 1600,
+ "kept_honest": 1015
+}

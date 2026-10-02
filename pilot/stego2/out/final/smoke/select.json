@@ -1,0 +1,10 @@
+{
+ "classifier_oof_auc": 0.7607230392156862,
+ "honest_median_score": 0.20532534961263482,
+ "signaller_msgs": 48,
+ "decoded_ok": 0.8333333333333334,
+ "kept_signaller": 6,
+ "kept_signaller_hot": 2,
+ "hands_total": 24,
+ "kept_honest": 9
+}
