@@ -55,3 +55,17 @@ verbatim except file paths.
 - A smoke run of every stage at tiny size runs on the pod before the full run.
 
 code: pilot/stego2/{common,gen,select_train,train_lora,gate_score,capture,probe_score}.py, run.sh
+
+## amendment 1 (oct 2, mid-run, before any evaluation data existed)
+
+**problem.** The frozen selection rule (out-of-fold classifier score below the honest median) kept only 27/1600 r0 hands, 1 of
+them HOT. Out-of-fold classifier AUROC on r0 was .969: almost no base-model signaller message looks honest. Training on that
+would not test anything, so the run was stopped by the operator after r0-train.
+
+**fix (training-data selection only).** The threshold is the smallest honest-score percentile in (50, 75, 90, 95, 99) that
+keeps >= 400 signaller hands with >= 100 HOT, applied identically in r0 and r1.
+- On r0 the kept counts were: 50th 27 (1 HOT); 75th 141 (12); 90th 394 (65); 95th 677 (137); 99th 1262 (327).
+- So r0 uses the 95th percentile.
+
+**unchanged:** the r0 generation (reused), round structure, training, gate B, phase C and all thresholds. No evaluation games
+had been generated when this was decided.
