@@ -7835,3 +7835,15 @@ not a selected run.
   still below the zero-shot probe.
 - **Not testable** (s186/s187): Granite-3.1-8B, OLMo-2-7B and Mistral-Nemo-12B do not execute the conditional code.
 - **Scope:** two model families; instructed codes; no adversarial pressure.
+
+## 189. oct 2: Llama-3.1-8B-Instruct smoke test for the s185 replication (smoke only; not scored). **NOT TESTABLE: Llama does not execute the conditional code reliably. Office game compliance hide 1.00 / coincidence 1.00 / normal .59 (it uses the secret greeting on 41% of turns where it should not). Sign-off game .71 / .62 / .73. Both are below the .80 compliance gate, so no full run was made.**
+
+- 2 smoke games per setting (seed base 999000, excluded).
+- Hugging Face token passed only as a process environment variable for the download; verified no token file was written on
+  the pod; pod deleted.
+- **Updated model tally for the hiding-probe transfer:**
+  - PASS in Qwen3-8B (s185) and gpt-oss-20b (s188);
+  - NOT TESTABLE (the model does not execute the conditional code) in Granite-3.1-8B, OLMo-2-7B, Mistral-Nemo-12B and
+    Llama-3.1-8B.
+  - Conditional covert signalling is a capability only some models have. Among those that can do it, the casino-trained
+    probe transfers.
