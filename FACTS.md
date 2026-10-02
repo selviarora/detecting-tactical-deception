@@ -7700,3 +7700,30 @@ behavioural (length). The pre-set cleanliness gate was missed by .010.
 
 **Multiple-attempts note:** five successive runs with design changes after each. Any summary should report the full record,
 not a selected run.
+
+## 184. oct 2: does the hiding probe transfer to a hiding trick it never saw? (protocols/PROTOCOL_s184.md, frozen before computing; existing activations, $0). **FAIL (both directions required); asymmetric. Trained on the topic scheme (s180) and applied to the sign-off scheme (s183), the probe passes: binding .950, same-surface hide vs coincidence .942, with text at .51/.55. Trained on sign-off and applied to topic, it fails: binding .805 (< .85), hide vs same-topic coincidence .593. A prompt-last probe transfers binding perfectly in both directions (1.000).**
+
+**Method:**
+- Stock Qwen3-8B activations from s180 (topic switch) and s183 (sign-off choice); both are identical-prompt, word-balanced
+  casino games.
+- Message-mean layer 24 (prompt-last layer 20 reported), logistic regression trained on all source games (hide vs normal),
+  applied unchanged to all target games.
+- TF-IDF text baseline trained the same way.
+
+| | T1 sign-off -> topic | T2 topic -> sign-off |
+|---|---|---|
+| probe (messages) binding | .805 [.783, .826] | **.950** [.941, .959] |
+| probe (messages) hide vs coincidence | .593 [.554, .630] | **.942** [.931, .952] |
+| probe (prompt-last) binding / coincidence | 1.000 / .704 | 1.000 / .998 |
+| text binding / coincidence | .468 / .402 | .510 / .547 |
+| word-only (messages / prompt-last) | .812 / .916 | .653 / .949 |
+| pass | no | yes |
+
+**Reading:**
+- The "my keyed code fired" state is shared across both hiding schemes: before the message, it transfers perfectly both ways.
+- Separating covert signalling from innocent same-surface messages transfers from the topic scheme to the sign-off scheme
+  (.94, text at chance), but not back (.59).
+- The likely reason: in the topic game, coincidence messages are about the player's secret topic, so the model's state
+  partly resembles "secret in play". A probe trained only on sign-off contrasts never learned to separate that.
+- Partial generality: one transfer direction works.
+- Both schemes share the casino framing and readings structure, so neither direction tests transfer across settings.
