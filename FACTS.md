@@ -7802,3 +7802,36 @@ not a selected run.
     message);
   - Qwen2.5-7B (ungated, but the same developer).
 - A smoke test of compliance is the gate before any full run.
+
+## 188. oct 2: s185 replicated in a second model family, openai/gpt-oss-20b (protocols/PROTOCOL_s188.md, frozen). **PASS. A probe trained on gpt-oss's own casino games (topic + sign-off) detects covert signalling zero-shot in gpt-oss's office emails: binding .994 [.992, .996]; hiding vs a textually identical innocent email .918 [.903, .931]; compliance 1.000. Casino-trained text transfers at chance (.54/.55). Caveat: unlike Qwen (.53), gpt-oss's office text is NOT blind to an office-trained text classifier (.846), because hiding emails are slightly shorter and more formulaic. So in gpt-oss the zero-shot probe beats text, but text is not at chance.**
+
+**Setup:**
+- The same games and game seeds as s180/s183/s185.
+- gpt-oss-20b via vLLM (low reasoning effort); only the final channel is the message, and the private reasoning is never
+  used.
+- Capture: harmony template of (system, user, final message), bf16, layers 11/13/16; message probe layer 16 and prompt-last
+  layer 13 fixed in advance.
+- The s185 scorer.
+- About $1.40 including the smoke test (pod reused for the Llama smoke test next); outputs checksum-matched.
+
+| | zero-shot probe (messages, L16) | zero-shot probe (prompt-last, L13) | casino text | office-trained text (dev->test) | office-trained probe (ceiling) |
+|---|---|---|---|---|---|
+| binding | **.994** [.992, .996] | .985 | .539 | | 1.000 |
+| same surface | **.918** [.903, .931] | .825 | .549 | **.846** | .996 |
+| word-only | .524 | .531 | | | |
+| compliance hide / non-hide | 1.000 / 1.000 (sign-off game .991 / .98+) | | | | |
+
+**Post hoc text diagnosis:**
+- Hide emails are 26.9 words vs 28.3 coincidence / 28.1 normal.
+- Hide-associated n-grams: "proceeding smoothly", "stakeholders", "milestones", "schedule confirmed".
+
+**Reading:**
+- The s185 result replicates across model families: in both Qwen3-8B and gpt-oss-20b, a direction learned from casino
+  covert-signalling games transfers zero-shot to a different setting and channel, and separates covert signals from
+  identical innocent messages (.87-.92).
+- In gpt-oss the message-level probe is stronger than the prompt-only probe (.918 vs .825), so the message representation
+  adds information beyond the pre-message state.
+- In gpt-oss the hiding also leaves a small text trace, detectable only by a classifier trained in that setting (.85), and
+  still below the zero-shot probe.
+- **Not testable** (s186/s187): Granite-3.1-8B, OLMo-2-7B and Mistral-Nemo-12B do not execute the conditional code.
+- **Scope:** two model families; instructed codes; no adversarial pressure.
