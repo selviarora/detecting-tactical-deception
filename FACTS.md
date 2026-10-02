@@ -7789,3 +7789,16 @@ not a selected run.
 - **Lessons:**
   - check a new model's output format (here a Subject line) before freezing a compliance parser;
   - a model that does not follow the code cannot test the probe.
+
+## 187. oct 2: second-model search for the s185 replication (smoke tests only; nothing scored). **NOT TESTABLE in any ungated 7-12B model tried. OLMo-2-7B and Mistral-Nemo-12B do not execute the conditional code: they use their secret sign-off/greeting on every turn (compliance on normal turns: OLMo .00 sign-off / .05 office; Nemo .00 office), while hide/coincidence look "compliant" only because the secret is always used. Granite-3.1-8B (s186) did the same partially (.53). Mistral-7B-v0.3 and Phi-3.5-mini failed to run with the system-prompt format. Only Qwen3-8B (with the s182 worked-example fix) executes the code reliably (.99+).**
+
+- Smoke runs used 2 games per setting from a separate seed base (999000), excluded from any result.
+- OLMo needed max_model_len 4096 (fixed before its smoke run).
+- About $0.60; pod deleted.
+- **Consequence:** the cross-model question needs a model that can actually follow a conditional covert code.
+  Candidates:
+  - Llama-3.1-8B or Gemma-2-9B (gated: need the user's Hugging Face token);
+  - gpt-oss-20b (ungated, strong instruction follower, but a reasoning model whose reasoning text must be kept out of the
+    message);
+  - Qwen2.5-7B (ungated, but the same developer).
+- A smoke test of compliance is the gate before any full run.
