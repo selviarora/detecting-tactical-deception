@@ -1,0 +1,48 @@
+{
+ "compliance": {
+  "code_hide": 1.0,
+  "code_non_hide": 1.0,
+  "benign": 1.0
+ },
+ "counts": {
+  "hide": 657,
+  "normal": 603,
+  "coincidence": 660,
+  "benign_trig": 638,
+  "benign_other": 630,
+  "benign_none": 652
+ },
+ "P2_with_benign_negatives": {
+  "tau": 0.0013862884400126444,
+  "TPR_hide": 1.0,
+  "FPR_normal": 0.0,
+  "FPR_coincidence": 0.20454545454545456,
+  "FPR_benign_trig": 0.15047021943573669,
+  "FPR_benign_other": 0.03968253968253968,
+  "FPR_benign_none": 0.05674846625766871,
+  "AUROC_hide_vs_benign_trig": 0.9979316070482815,
+  "AUROC_hide_vs_benign_trig_ci": [
+   0.9966050616331579,
+   0.999026194602581
+  ],
+  "A_coinc": 0.9985747889857479,
+  "A_bind": 1.0
+ },
+ "P1_frozen_s185_probe_reported": {
+  "tau": 0.3090543103367453,
+  "TPR_hide": 0.6133942161339422,
+  "FPR_normal": 0.001658374792703151,
+  "FPR_coincidence": 0.10303030303030303,
+  "FPR_benign_trig": 0.13322884012539185,
+  "FPR_benign_other": 0.04126984126984127,
+  "FPR_benign_none": 0.04141104294478527,
+  "AUROC_hide_vs_benign_trig": 0.8382072973475903,
+  "AUROC_hide_vs_benign_trig_ci": [
+   0.8149443215234483,
+   0.8608892153748227
+  ],
+  "A_coinc": 0.8822748028227481,
+  "A_bind": 0.9448678016672211
+ },
+ "verdict": "FAIL"
+}
