@@ -1,0 +1,26 @@
+{
+ "compliance": {
+  "code_hide": 1.0,
+  "code_non_hide": 1.0,
+  "benign": 1.0
+ },
+ "tau": 0.0724976805339326,
+ "calibration_class_p95": {
+  "code_normal": 0.028284998112675774,
+  "code_coincidence": 0.0724976805339326,
+  "benign_trig": 0.0003782200946936795,
+  "benign_untrig": 0.0002312588433875225
+ },
+ "TPR_hide": 1.0,
+ "FPR_code_normal": 0.04208754208754209,
+ "AUROC_hide_vs_code_normal": 0.9997181803349203,
+ "FPR_code_coincidence": 0.11937984496124031,
+ "AUROC_hide_vs_code_coincidence": 0.9985657207253354,
+ "FPR_benign_trig": 0.0,
+ "AUROC_hide_vs_benign_trig": 1.0,
+ "FPR_benign_untrig": 0.0,
+ "AUROC_hide_vs_benign_untrig": 1.0,
+ "A_coinc": 0.9996986750188859,
+ "A_bind": 1.0,
+ "verdict": "PASS"
+}

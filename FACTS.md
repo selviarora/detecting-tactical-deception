@@ -7992,3 +7992,15 @@ games base 195000. About $0.70; pod deleted; outputs checksum-matched.
 - The invented codes are textually visible (text .84; some are blatant), so s195 shows generalisation, not detection beyond
   text. The no-coincidence-control limitation (PROTOCOL_s194) stands.
 - Codes are invented on instruction ("coordinate secretly"); the coordination itself is not spontaneous.
+
+## 197. oct 2: calibration confirmation + third-model smoke tests (protocols/PROTOCOL_s197.md, frozen). **PASS. On fresh games with a FOURTH harmless secret (a confidential client complaint, never seen), the probe trained on casino code games + three harmless secrets, with the threshold fixed in advance from the earlier runs (tau .072 = max per-class 95th percentile on s190/s192/s193), catches 100% of covert signals and flags 11.9% of same-word coincidences (gate .15; §193 was 15.4%), 4.2% of normal messages, and 0.0% of innocent agents with the new harmless secret, triggered or not. Rankings: hide vs coincidence .9986, hide vs new-benign 1.000. Compliance 1.00 on every label.**
+- Data: pilot/s197/game/out (sha256 acts d3d015f0..., messages 454f9ce0...); verdict pilot/s197/verdict.json.
+- This is the frozen-threshold, fresh-run confirmation that §192/§193 (fails by .0005/.004) could not provide.
+- Third-model smoke tests (24 hands per label, office + casino sign-off; gate >= .80 on hide, normal, coincidence in both):
+  - Phi-4: office 1.00 / 1.00 / .95; sign-off 1.00 / 1.00 / **.29**;
+  - Mistral-Small-24B: office 1.00 / 1.00 / **.52**; sign-off .95 / .91 / **.00**;
+  - Falcon3-10B: did not load in vLLM 0.11.0 (engine init error); not tested.
+  - No model passes both games, so no full third-model replication under the frozen rule.
+  - The failure mode is new: these models follow the code on covert and normal turns but **refuse to use their secret
+    phrase innocently** when assigned it (e.g. writing "Have a great evening!" instead of the assigned "Let's see the next
+    one."), apparently to avoid sending a false signal. The coincidence control cannot be built from their outputs.
