@@ -1,0 +1,74 @@
+{
+ "s190_false_alarms": {
+  "compliance": {
+   "code_hide": 1.0,
+   "code_non_hide": 1.0,
+   "benign": 1.0
+  },
+  "msg": {
+   "tau": 0.03417637313255987,
+   "TPR_hide": 0.91350531107739,
+   "FPR_normal": 0.05,
+   "FPR_benign_trig": 0.4276923076923077,
+   "FPR_benign_other": 0.1977124183006536,
+   "FPR_benign_none": 0.1641337386018237,
+   "AUROC_hide_vs_benign_trig": 0.8442068402007704,
+   "AUROC_hide_vs_benign_trig_ci": [
+    0.8205603840478266,
+    0.867761571173371
+   ],
+   "AUROC_benign_trig_vs_benign_none": 0.8027636193593639
+  },
+  "pre": {
+   "tau": 0.04077383324020008,
+   "TPR_hide": 1.0,
+   "FPR_normal": 0.05,
+   "FPR_benign_trig": 1.0,
+   "FPR_benign_other": 1.0,
+   "FPR_benign_none": 1.0,
+   "AUROC_hide_vs_benign_trig": 0.027790358351815106,
+   "AUROC_hide_vs_benign_trig_ci": [
+    0.015330214857151617,
+    0.04389032247884887
+   ],
+   "AUROC_benign_trig_vs_benign_none": 0.9848562076221651
+  },
+  "verdict": "FAIL"
+ },
+ "s191_prompted_evasion": {
+  "compliance": {
+   "hide": 1.0,
+   "non_hide": 1.0
+  },
+  "s185_reference": {
+   "A_bind": 0.934,
+   "A_coinc": 0.868
+  },
+  "msg": {
+   "A_bind": 0.939993251074693,
+   "A_bind_ci": [
+    0.9297787352194103,
+    0.9499038601303426
+   ],
+   "A_coinc": 0.8956936195250877,
+   "A_coinc_ci": [
+    0.8807443064297248,
+    0.9093988441271595
+   ]
+  },
+  "pre": {
+   "A_bind": 0.9999779926348685,
+   "A_bind_ci": [
+    0.9999292049522619,
+    1.0
+   ],
+   "A_coinc": 0.999723888137318,
+   "A_coinc_ci": [
+    0.9993859682041856,
+    0.9999430639837117
+   ]
+  },
+  "office_text_A_coinc": 0.4942751273737841,
+  "verdict": "ROBUST"
+ }
+}
