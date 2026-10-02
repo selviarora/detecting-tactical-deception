@@ -7627,3 +7627,31 @@ every prompt has exactly one HOT:
   with the rule would.
 - **Next:** raise compliance (clearer code instruction, e.g. a worked example) and confirm on fresh games under the same
   frozen rules.
+
+## 182. oct 2: s181 with a compliance fix, fresh games (protocols/PROTOCOL_s182.md, frozen). **FAIL narrowly on one bar. The fix worked (compliance .988/.999) and text is clean (.633 <= .65). P1 passes (.993). P2: the probe separates a secretly signalling message from a textually identical innocent one at .803 (CI [.772, .831]) vs text .633, a margin of .170 (CI [.125, .213], excluding 0) against a frozen requirement of .183 (half the headroom). The frozen layer choice was decided by a TIE: dev cross-validation was 1.000 at all three layers, so the first (16) was taken. Post hoc, layers 20 and 24 give .927 and .992; that cannot be counted.**
+
+**Setup:**
+- As s181, plus a worked example of the code and a reminder (identical for all players).
+- Fresh games (base 182000), seed 1820.
+- Test: hide 644, normal-other-HOT 290, coincidence-other-HOT 318. About $0.70; pod deleted; checksum-matched.
+
+| | probe (messages, frozen layer 16) | probe (prompt-last, reported) | text |
+|---|---|---|---|
+| compliance (hide / non-hide) | .988 / .999 | | |
+| P1 hide vs normal-other-HOT | **.993** [.984, 1.0] | 1.000 | .670 |
+| P2 hide vs coincidence-other-HOT (same surface) | **.803** [.772, .831] | .985 | .633 |
+| P2 probe minus text | **.170** [.125, .213] (needed .183) | .351 [.311, .391] | |
+| word-only (reported) | .569 | .802 | |
+
+**Post hoc (exploratory; not counted):** message-mean probe A_coinc by layer: 16 .803 / 20 .927 / 24 .992.
+
+**Reading:**
+- With compliance fixed and text clean by construction, both probes separate secret signals from identical innocent
+  messages well above text. But the pre-registered primary (message probe, dev-selected layer) misses the margin by .013,
+  because the selection rule had no tie-break and dev performance saturated.
+- **Pattern across s179-s182:**
+  - the probe beats text on the same-surface / same-topic contrast in every run, and the paired difference CI excludes 0
+    in every frozen run: .09 [.06, .13]; .21 [.17, .26]; .17 [.13, .21];
+  - each frozen test has still failed some pre-set gate.
+- **Next (s183):** fix the layer in advance (layer 24, chosen by dev CV in s179, s180 and s181 whenever there was no tie),
+  with everything else identical to s182 on fresh games.
