@@ -38,3 +38,15 @@ per-agent colluder-vs-honest AUROC is .590.
 - Their probes are trained on Core; we do not retrain.
 - Condition C changes the colluders' system prompt and the private block together.
 - Messages as stored (trailing PRIVATE lines removed).
+
+## s178b replication on Qwen3-32B (frozen before the run)
+
+Same conditions, extraction, scorer and decision rules, with these settings:
+- model Qwen3-32B: the authors' Qwen/Qwen3-32B-AWQ if it loads under transformers, else bf16 Qwen/Qwen3-32B, recorded in
+  model_used.json;
+- layers 26-30 (their released layers);
+- their released Qwen Core activations for the deception direction;
+- their 40 released Qwen Stego runs.
+
+The sanity rule (cosine with released >= .95, Activation Alignment within .05) decides whether the replication is faithful.
+Scripts take a model key (gpt_oss_20b default; unchanged results for GPT-OSS verified after the edit).
