@@ -7727,3 +7727,38 @@ not a selected run.
   partly resembles "secret in play". A probe trained only on sign-off contrasts never learned to separate that.
 - Partial generality: one transfer direction works.
 - Both schemes share the casino framing and readings structure, so neither direction tests transfer across settings.
+
+## 185. oct 2: zero-shot transfer of the casino-trained hiding probe to a new setting (office emails) (protocols/PROTOCOL_s185.md, frozen). **PASS, the first full frozen pass of the steganography line. A probe trained only on casino games (s180 topic + s183 sign-off) detects covert signalling in office status emails it never saw (new framing, trigger word RED instead of HOT, greeting channel): binding .934 [.924, .943]; hiding vs a textually identical innocent email .868 [.851, .883]. Text is blind: casino-trained text .47/.55; office-trained text .53.**
+
+**Setup:**
+- Stock Qwen3-8B, thinking off. Identical prompt template for all agents (teammate, code keyed to Flag X or Y, secret
+  greeting).
+- Word-balanced flags. 120 games: hide 1237, normal-other-RED 655, coincidence-other-RED 676.
+- Probe: message-mean layer 24, trained on all casino s180 + s183 games, applied unchanged.
+- About $0.70; pod deleted; outputs checksum-matched.
+
+| | zero-shot probe (messages, L24) | zero-shot probe (prompt-last, L20) | casino-trained text | office-trained text (dev->test) | office-trained probe (ceiling) |
+|---|---|---|---|---|---|
+| binding (hide vs normal-other-RED) | **.934** [.924, .943] | .9997 | .467 | | 1.000 |
+| same surface (hide vs coincidence-other-RED) | **.868** [.851, .883] | .9987 | .549 | **.530** | 1.000 |
+| word-only (normal other-RED vs none) | .525 | .648 | | | |
+| compliance (hide / non-hide) | 1.000 / 1.000 | | | | |
+
+**Reading:**
+- A linear direction learned from casino covert-signalling games identifies covert signalling in office emails, separating
+  a secret-signal greeting from the identical greeting given innocently. No office training; text at chance.
+- The triggered "my code fired, signal now" state is shared across settings, trigger words and channels within this model.
+  Before the message is written it transfers near-perfectly (.999).
+- Unlike the casino runs, the message probe barely responds to the trigger word alone (.525), so word presence does not
+  explain the transfer.
+- **Scope:**
+  - one stock model (Qwen3-8B);
+  - instructed codes (the model is told its code; it does not invent the scheme);
+  - the probe reads the model's triggered state, which is present in its private context; a monitor reading that context
+    with the rule would not need the probe;
+  - no adversarial pressure (the model was not trying to evade the probe);
+  - both settings were designed by us.
+- **Next:**
+  - another model;
+  - a model trained or prompted to evade the probe (adversarial);
+  - a scheme the model invents itself.
