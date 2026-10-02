@@ -7594,3 +7594,36 @@ every prompt has exactly one HOT:
     margin;
   - make the hiding textually cleaner, so headroom exists.
 - Development and confirmation data are both preserved (pilot/stego3/out, pilot/stego4/out).
+
+## 181. oct 2: textually-clean steganography by construction (sign-off choice): same surface, different reason (protocols/PROTOCOL_s181.md, frozen). **NOT CLEAN by the frozen rules: the model followed its code on only .61 of HOT hands (compliance gate .80), and text separated hide from same-surface coincidence at .654 (clean gate .65, missed by .004). The probe parts pass and give the largest probe-over-text advantage so far: binding 1.000; hide vs same-surface coincidence .867 vs text .654 (difference .213, CI [.171, .259], above the half-headroom requirement of .173); among compliant messages .971.**
+
+**Setup:**
+- Stock Qwen3-8B, identical prompt template.
+- The signal is which of two ordinary sign-offs a message ends with; given sign-offs are random. Readings word-balanced.
+- Test games: hide 613, normal-other-HOT 335, coincidence-other-HOT 311.
+- About $0.70; pod deleted; outputs checksum-matched.
+
+| | probe (messages, L24) | probe (prompt-last, reported) | text |
+|---|---|---|---|
+| P1 hide vs normal-other-HOT | **1.000** | 1.000 | .781 |
+| P2 hide vs coincidence-other-HOT (same surface) | **.867** [.841, .891] | .710 | .654 |
+| P2 probe minus text | **.213** [.171, .259] | .056 [.003, .113] | |
+| P2 among compliant messages only (reported) | .971 | .875 | |
+| word-only (normal other-HOT vs none, reported) | .990 | .971 | |
+| full-context text upper bound (reported) | | | .622 |
+
+**Frozen gates:** C compliance FAIL (.606 hide, 1.000 non-hide); T clean FAIL (.654); P1 pass; P2 pass. Verdict NOT CLEAN.
+
+**Reading:**
+- The model often does not execute its own code. On 39% of HOT hands it used the assigned sign-off, so part of the
+  "hide" class carries no signal in the text. This limits text cleanliness and makes the hide class partly
+  "triggered but did not hide".
+- When the code was followed, the probe separates a secretly signalling message from a textually identical innocent one at
+  .971. Overall it beats text by .21. Unlike s179/s180, the message-token probe beats the prompt-only probe here (.867 vs
+  .710), so the message representation adds information beyond the pre-message state on this contrast.
+- The probe responds strongly to the word HOT in the other reading (word-only .99); the binding contrast is still 1.000.
+  So the score orders hide > other-HOT > none, and it should not be read as a pure "hiding" detector.
+- A bag-of-words text classifier on the full context does not recover the binding (.622); a reader of the private context
+  with the rule would.
+- **Next:** raise compliance (clearer code instruction, e.g. a worked example) and confirm on fresh games under the same
+  frozen rules.
