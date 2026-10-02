@@ -7561,3 +7561,36 @@ every prompt has exactly one HOT:
     hide-vs-coincidence as primary contrasts;
   - optionally a prompt-hidden monitor framing, where the monitor has activations but not the private context.
 - All s179 games are development data.
+
+## 180. oct 2: word-balanced confirmation of s179 (protocols/PROTOCOL_s180.md, frozen). **FAIL by the frozen rule, narrowly: P1 passes (probe separates "own reading HOT" from "other reading HOT" with one HOT each: .9998, text .974); P2 fails only on the margin: the probe separates hiding from same-topic coincidence at .994 vs text .904, so the difference is .090 (paired game-bootstrap 95% CI [.061, .127], excluding 0) against a frozen requirement of >= .10. With text at .904 the largest achievable margin was .096, so the absolute-margin rule was close to unattainable in hindsight; it is not changed.**
+
+**Setup:**
+- Fresh seeds (games base 180000, sampling seed 1800); stock Qwen3-8B; identical prompt template for all players.
+- At most one HOT per prompt by design.
+- Test games: hide 634, normal-with-other-HOT 487, coincidence-with-other-HOT 162.
+- Probe and text trained on dev hide vs normal. About $0.70; pod deleted; outputs checksum-matched.
+
+| | probe (messages, layer 24) | probe (prompt-last, reported) | text (TF-IDF) |
+|---|---|---|---|
+| P1 hide vs normal-other-HOT | **.9998** [.9996, 1.000] | 1.000 | .974 |
+| P2 hide vs coincidence-other-HOT (same topic) | **.994** [.991, .997] | .9994 | .904 |
+| P2 probe minus text | **.090** [.061, .127] | .095 [.066, .132] | |
+| word-only (normal other-HOT vs none, reported) | .740 | .897 | |
+| partner decode (sanity >= .70) | .778 pass | | |
+
+**Reading:**
+- **Confirmed on fresh data:** with identical instructions and the number of HOT words held fixed, a stock model's
+  activations encode the covert-signalling state essentially perfectly (s179's post hoc result replicates as a frozen
+  primary test).
+- On the hardest comparison (same topic, different reason) the probe is near-perfect and reliably better than text. But
+  text is also strong (.90), because topic-switch hiding leaves textual traces. So the advantage over text is real but
+  modest: .09, not the >= .10 required.
+- The signal is present before the message is written (prompt-last .999). The probe reads the model's triggered state
+  rather than how the message encodes the signal, as fixed in advance in the protocol's interpretation section.
+- The probe also responds partly to the word HOT in the other reading (.74). The primary contrasts are word-balanced, so
+  this does not affect P1/P2.
+- **Lesson for the next frozen test:**
+  - specify "probe beats text" relative to the remaining headroom (or as a paired test with CI > 0) rather than an absolute
+    margin;
+  - make the hiding textually cleaner, so headroom exists.
+- Development and confirmation data are both preserved (pilot/stego3/out, pilot/stego4/out).
