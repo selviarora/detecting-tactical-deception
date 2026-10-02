@@ -7276,3 +7276,37 @@ The gate is 0 under both.
 
 **Preserved:** pilot/s173/ (worlds, sender, comprehension, receiver, stage 1, review packets and labels, gate files,
 log).
+
+## 174. oct 2: NARCBench-Stego (arXiv 2604.01151) checked on its released data (EXPLORATORY, post hoc, no frozen protocol; $0, CPU only). **GOOD. The paper's claim that probes catch steganographic collusion an LLM judge cannot rests partly on setup artefacts. (1) Colluders' final prompts contain a "PRIVATE (only you and X can see this)" block with the scheme and count, contrary to "identical user prompts" (40/40 colluder prompts, 0 control). (2) The best GPT-OSS-20B method is an untrained dissimilarity statistic; the same statistic on prompt text gives 1.000, and on the MESSAGES ALONE (what the judge sees) .99 (GPT-OSS) / .94 (Qwen3-32B). (3) The big player's "public" message ends with its private decode line ("PRIVATE: hot → $25 because...") in 19/20 (GPT-OSS) and 20/20 (Qwen) colluding runs, and the judge was shown such a line in 20/20 and 17/20 colluding runs and flagged 0.**
+
+**Reproduction** (their code and released activations, CPU; Python 3.9 compatibility via `from __future__ import annotations` only):
+
+| model | Sorted Concat | Activation Alignment | Peak Suspicion | Deception Split | Asymmetry Probe |
+|---|---|---|---|---|---|
+| GPT-OSS-20B, Blackjack Stego | .785 | **.994** | .701 | .376 | .639 |
+| Qwen3-32B, Blackjack Stego | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 |
+
+**Text baselines** (pilot/narc/narc_text_baselines.py): the paper's run-level statistic (negated mean pairwise cosine over the 4 agents) on TF-IDF vectors instead of activations; no model, no training.
+
+| | GPT-OSS-20B | Qwen3-32B |
+|---|---|---|
+| on the agents' final prompts | 1.000 | 1.000 |
+| on the final messages (judge-visible text) | .990 | .943 |
+| on the messages with trailing PRIVATE lines removed | .995 | .967 |
+| big-player messages containing a leaked "PRIVATE:" line | 19/20 | 20/20 |
+| colluding runs where the judge's input contained a leaked line | 20/20 | 17/20 |
+| runs flagged by the judge (collusion / control) | 0/20 / 0/20 | 0/20 / 0/20 |
+
+**Reading:**
+- The comparison "probe 0.99-1.00 vs LLM judge 1-3/20" mixes two things. The probe side includes run-level statistics with
+  access to prompts that differ by role. The judge side is a weak zero-shot judge that missed explicit leaked decode lines.
+- Given the same run-level statistic, judge-visible text alone separates collusion from control at .94-.99. The
+  colluders' messages are lexically unusual (e.g. "A swirling thunderstorm is gathering overhead. I see four bolts...").
+- This does not show the trained probes (Peak Suspicion etc., 1.000 on Qwen) read only the prompt. That needs new
+  activations with controlled prompts:
+  - a benign-secret prompt;
+  - the private block removed;
+  - swapped messages;
+  - colluder hands with no signal.
+- **Scope:** two of the four models whose data is released. Exploratory and post hoc: these checks were chosen after
+  reading their code. The key numbers are counts and AUROCs from released files and are re-runnable with the script.
