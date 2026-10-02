@@ -7655,3 +7655,48 @@ every prompt has exactly one HOT:
   - each frozen test has still failed some pre-set gate.
 - **Next (s183):** fix the layer in advance (layer 24, chosen by dev CV in s179, s180 and s181 whenever there was no tie),
   with everything else identical to s182 on fresh games.
+
+## 183. oct 2: s182 on fresh games with the probe layer fixed in advance (protocols/PROTOCOL_s183.md, frozen). **NOT CLEAN by the frozen rules: text separated hide from same-surface coincidence at .660 (clean gate .65, missed by .010). All probe gates pass by large margins: compliance .998/1.000; binding 1.000; same-surface probe .997 [.994, .999] vs text .660, a margin of .337 [.295, .379] (required .170).**
+
+**Setup:**
+- As s182 (sign-off code with the compliance fix), fresh games base 183000, seed 1830.
+- Probe layers fixed in advance: messages 24, prompt-last 20.
+- Test: hide 627, normal-other-HOT 335, coincidence-other-HOT 327. About $0.70; pod deleted; checksum-matched.
+
+| | probe (messages, fixed L24) | probe (prompt-last, fixed L20) | text |
+|---|---|---|---|
+| compliance (hide / non-hide) | .998 / 1.000 | | |
+| P1 hide vs normal-other-HOT | **1.000** | 1.000 | .731 |
+| P2 hide vs coincidence-other-HOT (same surface) | **.997** [.994, .999] | .987 | **.660** |
+| P2 probe minus text | **.337** [.295, .379] | .327 | |
+| word-only (reported) | .879 | .799 | |
+
+**Post hoc diagnosis of the text leak:**
+- Hide messages are shorter (15.5 words vs 17.3 coincidence, 17.0 normal), with slightly different wording ("mild", "today",
+  "let").
+- The sign-off itself is balanced (53% vs 51% "Good luck").
+- The code instruction makes the model write a slightly terser body on HOT hands, a small length tell.
+
+**The frozen record of the line (s179-s183):**
+- No run has passed every frozen gate. The misses were:
+  - s179: several gates;
+  - s180: margin .090 vs .10;
+  - s181: compliance and text .654;
+  - s182: margin .170 vs .183 (layer tie);
+  - s183: text .660 vs .65.
+- Every frozen run found the probe beating text on the hardest same-surface or same-topic contrast, with the paired CI
+  excluding 0: .09, .21, .17, .34.
+- In s183, with the layer fixed in advance, the probe reaches .997 where text reaches .66.
+
+**Reading:** With identical instructions, a stock model's activations reveal near-perfectly whether a message that looks the
+same as an innocent one was written to carry a covert signal, and far better than text. The remaining text leak is small and
+behavioural (length). The pre-set cleanliness gate was missed by .010.
+
+**Caveats:**
+- The probe also responds to the word HOT in the other reading (.80-.88), so it is not a pure "hiding" detector; the
+  word-balanced contrasts carry the claim.
+- The state is readable before the message (prompt-last .987).
+- One stock model, one scheme, no adversarial pressure.
+
+**Multiple-attempts note:** five successive runs with design changes after each. Any summary should report the full record,
+not a selected run.
