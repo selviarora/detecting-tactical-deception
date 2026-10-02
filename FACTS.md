@@ -7425,3 +7425,53 @@ Pod deleted. Cost about $1.50.
   empty-reply issue.
 - The GPU test planned next (re-extract with the actual messages, plus prompt controls) is now the direct way to ask the
   paper's question properly.
+
+## 178. oct 2: NARCBench-Stego re-extracted WITH the messages and prompt controls, scored with the authors' own probe code (protocols/PROTOCOL_s178.md, frozen). **MIXED. (1) Activation-level confirmation of s177: our "prompt + empty reply" extraction matches their released activations (cosine .999). (2) With the actual messages, their probes separate collusion runs as well or better (best method 1.000; others .89-.97; per-agent .88 vs .61 as released), so the main result survives the fix. (3) The "beyond text" claim is still unsupported: with identical honest framing, their probe gives .71 per agent on the messages alone, while a simple text classifier on the same messages gives .99. (4) Their probe fires on BENIGN secrets: honest agents given a surprise-party private block score higher than plain honest agents (AUROC .88).**
+
+**Setup:**
+- GPT-OSS-20B (bf16; they used MXFP4), the authors' 40 released Stego runs (160 final-phase agents).
+- Their extraction mirrored: layers 10-14, last token.
+- Their reproduce.py probe code (deception direction trained on their released Core activations).
+- Five conditions:
+  - A: logged prompt + empty reply;
+  - B: logged prompt + actual message;
+  - C: identical honest framing + actual message;
+  - D: honest agents with a benign secret;
+  - E: colluder prompt + an honest agent's message.
+- About $0.50; pod deleted; outputs checksum-matched.
+
+| run-level AUROC (collusion vs control) | Sorted Concat | Activation Alignment | Peak Suspicion | Deception Split | Asymmetry Probe |
+|---|---|---|---|---|---|
+| released (their files) | .785 | .994 | .701 | .376 | .639 |
+| A: our re-extraction, empty reply | .795 | .996 | .705 | .405 | .619 |
+| **B: with the actual messages** | **.967** | **1.000** | **.936** | **.891** | **.932** |
+| C: identical honest framing + messages | .872 | .998 | .783 | .729 | .775 |
+
+| per-agent and controls | AUROC |
+|---|---|
+| per-agent colluder vs honest: A / B / C | .605 / **.880** / .713 |
+| E: colluder prompt + honest message vs B colluders (own message) | .220 (swapping in an honest message LOWERS colluder scores) |
+| D: honest + benign secret vs plain honest | **.879** |
+| text baseline on the same C messages (TF-IDF, grouped CV) | **.991** |
+| sanity: cosine(A, released) | .999 (passes) |
+
+**Frozen verdicts:**
+- Q1 MIXED: C per-agent .71 is between .65 and .80, and E is not in [.35, .65].
+- Q2: FIRES ON BENIGN SECRETS.
+
+**Reading:**
+- The implementation bug (s177) is confirmed at the activation level. The published Stego numbers are prompt-only.
+- Corrected, their probes still detect colluding agents, and better than published, so the paper's detection result
+  survives in this tier.
+- The message content matters to the probe (E), and the messages alone carry signal (C .71 per agent; run-level Activation
+  Alignment .998). But a plain text classifier on the same messages reaches .99. Across s174-s178, the colluders' messages
+  are textually distinctive, so this data cannot show activations adding information beyond text.
+- The deception direction also responds to harmless private instructions (D .88): a false-alarm risk for agents with
+  innocent secrets.
+- **Scope:**
+  - one model (GPT-OSS-20B, bf16 vs their MXFP4, cosine .999);
+  - their probes trained on Core, not retrained;
+  - in condition C the system prompt and the private block change together;
+  - the benign-secret wording is ours.
+
+**Preserved:** pilot/narc/s178_out (condition metadata; activations kept locally), s178_verdict.json.
