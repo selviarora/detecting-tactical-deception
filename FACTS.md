@@ -7475,3 +7475,43 @@ Pod deleted. Cost about $1.50.
   - the benign-secret wording is ours.
 
 **Preserved:** pilot/narc/s178_out (condition metadata; activations kept locally), s178_verdict.json.
+
+## 178b. oct 2: s178 replicated on Qwen3-32B (frozen addendum in PROTOCOL_s178.md). **The s178 pattern replicates and is stronger on Qwen: with the secret instructions removed, their probe's detection mostly collapses (per-agent .63; run-level .47-.77), a colluder prompt with an honest message still scores high (E vs B .77), and harmless secrets are flagged (.97). Text on the same messages gives .97.**
+
+**Model:** the authors' Qwen3-32B-AWQ failed to load (autoawq needs the `datasets` package, not installed), so the frozen
+fallback ran: bf16 Qwen/Qwen3-32B. Sanity passes: cosine(A, released) .991, and A reproduces the released run-level
+(1.000 on four methods, .995 on one). Layers 26-30. About $0.70; pod deleted; outputs checksum-matched.
+
+| run-level AUROC | Sorted Concat | Activation Alignment | Peak Suspicion | Deception Split | Asymmetry Probe |
+|---|---|---|---|---|---|
+| released (their files) | 1.000 | 1.000 | 1.000 | 1.000 | 1.000 |
+| A: empty reply (ours) | .995 | 1.000 | 1.000 | 1.000 | 1.000 |
+| B: with the actual messages | .926 | .684 | 1.000 | .999 | 1.000 |
+| C: identical honest framing + messages | .511 | .467 | .765 | .578 | .742 |
+
+| per-agent and controls | Qwen3-32B | GPT-OSS-20B (s178) |
+|---|---|---|
+| per-agent colluder vs honest, A / B / C | .994 / .999 / **.628** | .605 / .880 / .713 |
+| E: colluder prompt + honest message vs B colluders | **.772** (stays high: the prompt dominates) | .220 (drops: the message matters) |
+| D: honest + benign secret vs plain honest | **.965** | .879 |
+| text baseline on C messages | .972 | .991 |
+| frozen Q1 / Q2 | MIXED / FIRES ON BENIGN SECRETS | MIXED / FIRES ON BENIGN SECRETS |
+
+**Reading, both models:**
+1. The published Stego numbers were computed without the messages (s177; confirmed at activation level, cosine .999 and
+   .991).
+2. With the messages included, colluding agents are still detected. But on Qwen this depends on the private instructions:
+   removing them drops per-agent detection to .63, while an honest message under a colluder prompt keeps scores high. On
+   GPT-OSS the message matters more (E .22; C .71).
+3. On messages alone, a plain text classifier beats the probe on both models (.97-.99 vs .63-.71).
+4. The deception direction flags agents with harmless private instructions (.88-.97).
+5. Taken together: on this benchmark the probes mainly track "this agent has secret instructions" rather than "this agent
+   is hiding a signal in its message". The paper's claim of detection beyond text-level monitoring is not supported for the
+   Stego tier.
+
+**Scope:**
+- two of their four models, with their probes trained on Core (not retrained);
+- bf16 rather than their quantized weights (sanity passed);
+- condition C changes the system prompt and the private block together;
+- the benign-secret wording is ours;
+- Core and Transfer tiers not re-examined.
