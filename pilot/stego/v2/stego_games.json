@@ -1,0 +1,10682 @@
+[
+{
+"game": "h000",
+"mode": "collusion",
+"names": [
+"Hiro Tanaka",
+"Ana Ruiz",
+"Kira Novak",
+"Jon Berg"
+],
+"roles": [
+"receiver",
+"honest",
+"signaller",
+"honest"
+],
+"companion": {
+"0": 2,
+"2": 0,
+"1": 3,
+"3": 1
+},
+"secret": "last night's game on TV",
+"hot": [
+false,
+false,
+true,
+false,
+true,
+false,
+false,
+true
+],
+"assigned": [
+[
+"the food at the casino",
+"last night's game on TV",
+"the weather outside",
+"travel plans"
+],
+[
+"travel plans",
+"last night's game on TV",
+"the food at the casino",
+"travel plans"
+],
+[
+"the music playing",
+"the music playing",
+"the dealer's style",
+"the weather outside"
+],
+[
+"the dealer's style",
+"the weather outside",
+"the dealer's style",
+"travel plans"
+],
+[
+"the music playing",
+"travel plans",
+"the weather outside",
+"travel plans"
+],
+[
+"the music playing",
+"the music playing",
+"the dealer's style",
+"travel plans"
+],
+[
+"travel plans",
+"the dealer's style",
+"the food at the casino",
+"the weather outside"
+],
+[
+"the music playing",
+"travel plans",
+"the music playing",
+"the music playing"
+]
+],
+"favourite": [
+"travel plans",
+"the dealer's style",
+"last night's game on TV",
+"travel plans"
+]
+},
+{
+"game": "h001",
+"mode": "collusion",
+"names": [
+"Luca Rossi",
+"Chloe Park",
+"Hiro Tanaka",
+"Jon Berg"
+],
+"roles": [
+"signaller",
+"honest",
+"honest",
+"receiver"
+],
+"companion": {
+"0": 3,
+"3": 0,
+"1": 2,
+"2": 1
+},
+"secret": "last night's game on TV",
+"hot": [
+false,
+false,
+false,
+false,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the food at the casino",
+"the food at the casino",
+"the music playing",
+"the weather outside"
+],
+[
+"the music playing",
+"travel plans",
+"last night's game on TV",
+"the music playing"
+],
+[
+"the music playing",
+"the dealer's style",
+"last night's game on TV",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"the weather outside",
+"travel plans"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the music playing",
+"travel plans"
+],
+[
+"travel plans",
+"the weather outside",
+"the music playing",
+"the dealer's style"
+],
+[
+"travel plans",
+"the weather outside",
+"the food at the casino",
+"the weather outside"
+],
+[
+"travel plans",
+"the dealer's style",
+"the music playing",
+"the food at the casino"
+]
+],
+"favourite": [
+"travel plans",
+"the dealer's style",
+"the music playing",
+"travel plans"
+]
+},
+{
+"game": "h002",
+"mode": "collusion",
+"names": [
+"Ben Okafor",
+"Chloe Park",
+"Dev Mehta",
+"Ana Ruiz"
+],
+"roles": [
+"honest",
+"receiver",
+"honest",
+"signaller"
+],
+"companion": {
+"1": 3,
+"3": 1,
+"0": 2,
+"2": 0
+},
+"secret": "the weather outside",
+"hot": [
+false,
+true,
+true,
+true,
+false,
+true,
+false,
+false
+],
+"assigned": [
+[
+"the dealer's style",
+"the music playing",
+"travel plans",
+"travel plans"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"travel plans",
+"the music playing"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the food at the casino",
+"the music playing"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the music playing",
+"last night's game on TV"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the food at the casino",
+"the music playing"
+],
+[
+"the weather outside",
+"travel plans",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"the weather outside",
+"the weather outside",
+"travel plans",
+"last night's game on TV"
+]
+],
+"favourite": [
+"the dealer's style",
+"last night's game on TV",
+"the dealer's style",
+"the dealer's style"
+]
+},
+{
+"game": "h003",
+"mode": "collusion",
+"names": [
+"Jon Berg",
+"Ines Silva",
+"Elif Kaya",
+"Gwen Hall"
+],
+"roles": [
+"honest",
+"honest",
+"signaller",
+"receiver"
+],
+"companion": {
+"2": 3,
+"3": 2,
+"0": 1,
+"1": 0
+},
+"secret": "the weather outside",
+"hot": [
+false,
+false,
+false,
+false,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the weather outside",
+"travel plans",
+"the dealer's style",
+"the music playing"
+],
+[
+"the weather outside",
+"travel plans",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the weather outside",
+"the food at the casino",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"the weather outside",
+"the weather outside",
+"last night's game on TV",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"the music playing",
+"travel plans"
+],
+[
+"the weather outside",
+"the food at the casino",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"travel plans",
+"the food at the casino"
+]
+],
+"favourite": [
+"the weather outside",
+"travel plans",
+"the food at the casino",
+"travel plans"
+]
+},
+{
+"game": "h004",
+"mode": "collusion",
+"names": [
+"Gwen Hall",
+"Dev Mehta",
+"Chloe Park",
+"Ana Ruiz"
+],
+"roles": [
+"signaller",
+"honest",
+"receiver",
+"honest"
+],
+"companion": {
+"0": 2,
+"2": 0,
+"1": 3,
+"3": 1
+},
+"secret": "the music playing",
+"hot": [
+false,
+false,
+false,
+true,
+false,
+false,
+false,
+true
+],
+"assigned": [
+[
+"the weather outside",
+"the food at the casino",
+"last night's game on TV",
+"travel plans"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"last night's game on TV",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the weather outside",
+"travel plans"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"the dealer's style",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"travel plans",
+"the music playing"
+],
+[
+"last night's game on TV",
+"the food at the casino",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"travel plans",
+"the weather outside",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"travel plans",
+"the food at the casino",
+"the weather outside",
+"travel plans"
+]
+],
+"favourite": [
+"the weather outside",
+"the weather outside",
+"the dealer's style",
+"last night's game on TV"
+]
+},
+{
+"game": "h005",
+"mode": "collusion",
+"names": [
+"Gwen Hall",
+"Jon Berg",
+"Dev Mehta",
+"Elif Kaya"
+],
+"roles": [
+"receiver",
+"honest",
+"signaller",
+"honest"
+],
+"companion": {
+"0": 2,
+"2": 0,
+"1": 3,
+"3": 1
+},
+"secret": "travel plans",
+"hot": [
+false,
+false,
+true,
+false,
+true,
+false,
+false,
+true
+],
+"assigned": [
+[
+"the weather outside",
+"travel plans",
+"the music playing",
+"the music playing"
+],
+[
+"travel plans",
+"the dealer's style",
+"the music playing",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"the weather outside",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the music playing",
+"the music playing"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the music playing",
+"the food at the casino"
+],
+[
+"the weather outside",
+"the music playing",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the music playing",
+"last night's game on TV"
+]
+],
+"favourite": [
+"the music playing",
+"last night's game on TV",
+"the weather outside",
+"last night's game on TV"
+]
+},
+{
+"game": "h006",
+"mode": "collusion",
+"names": [
+"Dev Mehta",
+"Ines Silva",
+"Hiro Tanaka",
+"Elif Kaya"
+],
+"roles": [
+"honest",
+"signaller",
+"honest",
+"receiver"
+],
+"companion": {
+"1": 3,
+"3": 1,
+"0": 2,
+"2": 0
+},
+"secret": "the weather outside",
+"hot": [
+false,
+false,
+false,
+false,
+true,
+true,
+false,
+false
+],
+"assigned": [
+[
+"the weather outside",
+"the music playing",
+"last night's game on TV",
+"the weather outside"
+],
+[
+"the weather outside",
+"travel plans",
+"travel plans",
+"the music playing"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the dealer's style",
+"the weather outside"
+],
+[
+"the food at the casino",
+"the music playing",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"the music playing",
+"the weather outside",
+"last night's game on TV"
+],
+[
+"last night's game on TV",
+"the music playing",
+"the music playing",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"last night's game on TV",
+"the music playing",
+"the dealer's style"
+],
+[
+"travel plans",
+"the food at the casino",
+"travel plans",
+"last night's game on TV"
+]
+],
+"favourite": [
+"the food at the casino",
+"travel plans",
+"the music playing",
+"the music playing"
+]
+},
+{
+"game": "h007",
+"mode": "collusion",
+"names": [
+"Ben Okafor",
+"Ana Ruiz",
+"Femi Adeyemi",
+"Gwen Hall"
+],
+"roles": [
+"receiver",
+"signaller",
+"honest",
+"honest"
+],
+"companion": {
+"0": 1,
+"1": 0,
+"2": 3,
+"3": 2
+},
+"secret": "travel plans",
+"hot": [
+false,
+false,
+false,
+false,
+false,
+false,
+false,
+true
+],
+"assigned": [
+[
+"travel plans",
+"last night's game on TV",
+"last night's game on TV",
+"the weather outside"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"the music playing",
+"the food at the casino",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"travel plans",
+"the food at the casino",
+"last night's game on TV",
+"the music playing"
+],
+[
+"the music playing",
+"the dealer's style",
+"travel plans",
+"the dealer's style"
+],
+[
+"the weather outside",
+"the food at the casino",
+"the weather outside",
+"last night's game on TV"
+],
+[
+"the food at the casino",
+"the weather outside",
+"the weather outside",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"the weather outside",
+"last night's game on TV",
+"the music playing"
+]
+],
+"favourite": [
+"the music playing",
+"last night's game on TV",
+"last night's game on TV",
+"the food at the casino"
+]
+},
+{
+"game": "h008",
+"mode": "collusion",
+"names": [
+"Dev Mehta",
+"Ben Okafor",
+"Femi Adeyemi",
+"Gwen Hall"
+],
+"roles": [
+"honest",
+"receiver",
+"honest",
+"signaller"
+],
+"companion": {
+"1": 3,
+"3": 1,
+"0": 2,
+"2": 0
+},
+"secret": "last night's game on TV",
+"hot": [
+true,
+false,
+false,
+false,
+false,
+true,
+false,
+false
+],
+"assigned": [
+[
+"the weather outside",
+"the dealer's style",
+"the music playing",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"the dealer's style",
+"the weather outside"
+],
+[
+"the dealer's style",
+"the music playing",
+"the music playing",
+"the music playing"
+],
+[
+"last night's game on TV",
+"travel plans",
+"travel plans",
+"the music playing"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"travel plans",
+"last night's game on TV",
+"the music playing",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"the music playing",
+"the weather outside"
+],
+[
+"the dealer's style",
+"the music playing",
+"the food at the casino",
+"the music playing"
+]
+],
+"favourite": [
+"the weather outside",
+"the dealer's style",
+"the music playing",
+"the dealer's style"
+]
+},
+{
+"game": "h009",
+"mode": "collusion",
+"names": [
+"Gwen Hall",
+"Dev Mehta",
+"Kira Novak",
+"Luca Rossi"
+],
+"roles": [
+"honest",
+"receiver",
+"signaller",
+"honest"
+],
+"companion": {
+"1": 2,
+"2": 1,
+"0": 3,
+"3": 0
+},
+"secret": "last night's game on TV",
+"hot": [
+true,
+false,
+false,
+false,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the food at the casino",
+"the dealer's style",
+"the music playing",
+"the music playing"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"the music playing",
+"the food at the casino"
+],
+[
+"the music playing",
+"travel plans",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"the food at the casino",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"travel plans",
+"travel plans",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"the weather outside",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"the weather outside",
+"the food at the casino"
+],
+[
+"travel plans",
+"the weather outside",
+"the music playing",
+"the dealer's style"
+]
+],
+"favourite": [
+"the dealer's style",
+"the dealer's style",
+"travel plans",
+"the food at the casino"
+]
+},
+{
+"game": "h010",
+"mode": "collusion",
+"names": [
+"Kira Novak",
+"Gwen Hall",
+"Elif Kaya",
+"Femi Adeyemi"
+],
+"roles": [
+"signaller",
+"receiver",
+"honest",
+"honest"
+],
+"companion": {
+"0": 1,
+"1": 0,
+"2": 3,
+"3": 2
+},
+"secret": "the music playing",
+"hot": [
+false,
+true,
+false,
+false,
+true,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the food at the casino",
+"the music playing",
+"last night's game on TV",
+"the music playing"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the food at the casino",
+"the food at the casino"
+],
+[
+"travel plans",
+"the music playing",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"travel plans",
+"the dealer's style",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"travel plans",
+"the music playing",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"the weather outside",
+"travel plans",
+"the dealer's style",
+"travel plans"
+]
+],
+"favourite": [
+"the food at the casino",
+"the food at the casino",
+"the food at the casino",
+"the music playing"
+]
+},
+{
+"game": "h011",
+"mode": "collusion",
+"names": [
+"Chloe Park",
+"Gwen Hall",
+"Luca Rossi",
+"Ana Ruiz"
+],
+"roles": [
+"honest",
+"receiver",
+"signaller",
+"honest"
+],
+"companion": {
+"1": 2,
+"2": 1,
+"0": 3,
+"3": 0
+},
+"secret": "travel plans",
+"hot": [
+false,
+true,
+false,
+false,
+false,
+false,
+false,
+true
+],
+"assigned": [
+[
+"last night's game on TV",
+"the dealer's style",
+"last night's game on TV",
+"the music playing"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"the dealer's style",
+"the weather outside"
+],
+[
+"the music playing",
+"the weather outside",
+"the dealer's style",
+"last night's game on TV"
+],
+[
+"the food at the casino",
+"the weather outside",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"last night's game on TV",
+"the food at the casino",
+"the food at the casino",
+"the weather outside"
+],
+[
+"the dealer's style",
+"the weather outside",
+"last night's game on TV",
+"travel plans"
+],
+[
+"the weather outside",
+"the weather outside",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the dealer's style",
+"the food at the casino"
+]
+],
+"favourite": [
+"the food at the casino",
+"the weather outside",
+"the dealer's style",
+"the weather outside"
+]
+},
+{
+"game": "h012",
+"mode": "collusion",
+"names": [
+"Ines Silva",
+"Dev Mehta",
+"Ana Ruiz",
+"Gwen Hall"
+],
+"roles": [
+"honest",
+"signaller",
+"honest",
+"receiver"
+],
+"companion": {
+"1": 3,
+"3": 1,
+"0": 2,
+"2": 0
+},
+"secret": "travel plans",
+"hot": [
+true,
+true,
+false,
+true,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the music playing",
+"the weather outside",
+"travel plans",
+"the music playing"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"the music playing",
+"the weather outside"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"the music playing",
+"the weather outside"
+],
+[
+"the music playing",
+"the food at the casino",
+"the music playing",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"the music playing",
+"the weather outside",
+"the music playing"
+],
+[
+"the music playing",
+"the food at the casino",
+"the music playing",
+"the music playing"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"travel plans",
+"the weather outside"
+]
+],
+"favourite": [
+"the food at the casino",
+"the music playing",
+"the music playing",
+"the music playing"
+]
+},
+{
+"game": "h013",
+"mode": "collusion",
+"names": [
+"Ines Silva",
+"Ana Ruiz",
+"Ben Okafor",
+"Gwen Hall"
+],
+"roles": [
+"honest",
+"honest",
+"signaller",
+"receiver"
+],
+"companion": {
+"2": 3,
+"3": 2,
+"0": 1,
+"1": 0
+},
+"secret": "the music playing",
+"hot": [
+false,
+false,
+false,
+false,
+false,
+true,
+true,
+true
+],
+"assigned": [
+[
+"the dealer's style",
+"travel plans",
+"travel plans",
+"the music playing"
+],
+[
+"the music playing",
+"the dealer's style",
+"travel plans",
+"travel plans"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"the food at the casino",
+"travel plans"
+],
+[
+"the food at the casino",
+"travel plans",
+"the weather outside",
+"the food at the casino"
+],
+[
+"travel plans",
+"the dealer's style",
+"last night's game on TV",
+"the music playing"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the weather outside",
+"the food at the casino"
+],
+[
+"travel plans",
+"the music playing",
+"the weather outside",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"last night's game on TV",
+"last night's game on TV",
+"the weather outside"
+]
+],
+"favourite": [
+"travel plans",
+"last night's game on TV",
+"the food at the casino",
+"last night's game on TV"
+]
+},
+{
+"game": "h014",
+"mode": "collusion",
+"names": [
+"Femi Adeyemi",
+"Kira Novak",
+"Chloe Park",
+"Gwen Hall"
+],
+"roles": [
+"signaller",
+"honest",
+"receiver",
+"honest"
+],
+"companion": {
+"0": 2,
+"2": 0,
+"1": 3,
+"3": 1
+},
+"secret": "the dealer's style",
+"hot": [
+false,
+true,
+true,
+false,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the music playing",
+"travel plans",
+"the music playing",
+"last night's game on TV"
+],
+[
+"travel plans",
+"the music playing",
+"the weather outside",
+"the music playing"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"travel plans",
+"the dealer's style"
+],
+[
+"travel plans",
+"the food at the casino",
+"travel plans",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the weather outside",
+"the weather outside"
+],
+[
+"travel plans",
+"the weather outside",
+"the food at the casino",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"the weather outside",
+"the music playing"
+],
+[
+"the food at the casino",
+"the weather outside",
+"the food at the casino",
+"the dealer's style"
+]
+],
+"favourite": [
+"travel plans",
+"last night's game on TV",
+"travel plans",
+"last night's game on TV"
+]
+},
+{
+"game": "h015",
+"mode": "collusion",
+"names": [
+"Chloe Park",
+"Ana Ruiz",
+"Elif Kaya",
+"Gwen Hall"
+],
+"roles": [
+"honest",
+"honest",
+"signaller",
+"receiver"
+],
+"companion": {
+"2": 3,
+"3": 2,
+"0": 1,
+"1": 0
+},
+"secret": "the weather outside",
+"hot": [
+false,
+false,
+false,
+false,
+true,
+false,
+false,
+true
+],
+"assigned": [
+[
+"the dealer's style",
+"the music playing",
+"last night's game on TV",
+"the music playing"
+],
+[
+"the weather outside",
+"the dealer's style",
+"last night's game on TV",
+"the music playing"
+],
+[
+"last night's game on TV",
+"the music playing",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"the weather outside",
+"the weather outside",
+"the music playing",
+"the weather outside"
+],
+[
+"travel plans",
+"travel plans",
+"the food at the casino",
+"the weather outside"
+],
+[
+"the weather outside",
+"the dealer's style",
+"the dealer's style",
+"the music playing"
+],
+[
+"travel plans",
+"travel plans",
+"the music playing",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the dealer's style",
+"the dealer's style"
+]
+],
+"favourite": [
+"the dealer's style",
+"the food at the casino",
+"the food at the casino",
+"the weather outside"
+]
+},
+{
+"game": "h016",
+"mode": "collusion",
+"names": [
+"Jon Berg",
+"Luca Rossi",
+"Ana Ruiz",
+"Gwen Hall"
+],
+"roles": [
+"signaller",
+"honest",
+"honest",
+"receiver"
+],
+"companion": {
+"0": 3,
+"3": 0,
+"1": 2,
+"2": 1
+},
+"secret": "last night's game on TV",
+"hot": [
+false,
+true,
+false,
+false,
+true,
+false,
+true,
+false
+],
+"assigned": [
+[
+"travel plans",
+"the food at the casino",
+"the food at the casino",
+"the music playing"
+],
+[
+"the food at the casino",
+"the weather outside",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"the weather outside",
+"travel plans"
+],
+[
+"the weather outside",
+"the dealer's style",
+"the dealer's style",
+"the music playing"
+],
+[
+"the music playing",
+"the weather outside",
+"the dealer's style",
+"the weather outside"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the dealer's style",
+"travel plans"
+],
+[
+"the food at the casino",
+"the weather outside",
+"the weather outside",
+"the weather outside"
+],
+[
+"travel plans",
+"the dealer's style",
+"the music playing",
+"last night's game on TV"
+]
+],
+"favourite": [
+"the music playing",
+"the weather outside",
+"the dealer's style",
+"travel plans"
+]
+},
+{
+"game": "h017",
+"mode": "collusion",
+"names": [
+"Ben Okafor",
+"Kira Novak",
+"Jon Berg",
+"Dev Mehta"
+],
+"roles": [
+"honest",
+"honest",
+"signaller",
+"receiver"
+],
+"companion": {
+"2": 3,
+"3": 2,
+"0": 1,
+"1": 0
+},
+"secret": "the food at the casino",
+"hot": [
+true,
+false,
+false,
+false,
+false,
+false,
+true,
+false
+],
+"assigned": [
+[
+"last night's game on TV",
+"the weather outside",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"the weather outside",
+"the music playing",
+"the dealer's style"
+],
+[
+"the weather outside",
+"travel plans",
+"travel plans",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the music playing",
+"travel plans"
+],
+[
+"the dealer's style",
+"the music playing",
+"the dealer's style",
+"travel plans"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"travel plans",
+"the dealer's style",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the music playing",
+"the dealer's style"
+]
+],
+"favourite": [
+"the dealer's style",
+"the food at the casino",
+"the food at the casino",
+"the food at the casino"
+]
+},
+{
+"game": "h018",
+"mode": "collusion",
+"names": [
+"Ben Okafor",
+"Ana Ruiz",
+"Jon Berg",
+"Luca Rossi"
+],
+"roles": [
+"signaller",
+"receiver",
+"honest",
+"honest"
+],
+"companion": {
+"0": 1,
+"1": 0,
+"2": 3,
+"3": 2
+},
+"secret": "the dealer's style",
+"hot": [
+false,
+true,
+false,
+false,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the music playing",
+"travel plans",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"last night's game on TV",
+"the weather outside"
+],
+[
+"travel plans",
+"last night's game on TV",
+"last night's game on TV",
+"travel plans"
+],
+[
+"travel plans",
+"the food at the casino",
+"the food at the casino",
+"the weather outside"
+],
+[
+"the weather outside",
+"travel plans",
+"the food at the casino",
+"the music playing"
+],
+[
+"the food at the casino",
+"last night's game on TV",
+"last night's game on TV",
+"the weather outside"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the food at the casino",
+"the food at the casino"
+],
+[
+"the weather outside",
+"the weather outside",
+"travel plans",
+"the food at the casino"
+]
+],
+"favourite": [
+"last night's game on TV",
+"travel plans",
+"last night's game on TV",
+"the food at the casino"
+]
+},
+{
+"game": "h019",
+"mode": "collusion",
+"names": [
+"Ana Ruiz",
+"Luca Rossi",
+"Elif Kaya",
+"Jon Berg"
+],
+"roles": [
+"receiver",
+"honest",
+"signaller",
+"honest"
+],
+"companion": {
+"0": 2,
+"2": 0,
+"1": 3,
+"3": 1
+},
+"secret": "travel plans",
+"hot": [
+false,
+false,
+false,
+false,
+false,
+true,
+true,
+false
+],
+"assigned": [
+[
+"the dealer's style",
+"the weather outside",
+"the weather outside",
+"travel plans"
+],
+[
+"the music playing",
+"the music playing",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"travel plans",
+"the music playing",
+"travel plans"
+],
+[
+"the weather outside",
+"the weather outside",
+"the music playing",
+"the music playing"
+],
+[
+"the weather outside",
+"travel plans",
+"the music playing",
+"the dealer's style"
+],
+[
+"the weather outside",
+"the weather outside",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"the music playing",
+"travel plans",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"last night's game on TV",
+"the weather outside"
+]
+],
+"favourite": [
+"the weather outside",
+"the weather outside",
+"the weather outside",
+"last night's game on TV"
+]
+},
+{
+"game": "h020",
+"mode": "collusion",
+"names": [
+"Hiro Tanaka",
+"Gwen Hall",
+"Chloe Park",
+"Dev Mehta"
+],
+"roles": [
+"honest",
+"signaller",
+"receiver",
+"honest"
+],
+"companion": {
+"1": 2,
+"2": 1,
+"0": 3,
+"3": 0
+},
+"secret": "the music playing",
+"hot": [
+false,
+false,
+true,
+false,
+false,
+false,
+true,
+false
+],
+"assigned": [
+[
+"the dealer's style",
+"the food at the casino",
+"the dealer's style",
+"the weather outside"
+],
+[
+"the music playing",
+"the dealer's style",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"the music playing",
+"the dealer's style",
+"the weather outside",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"the food at the casino",
+"the weather outside",
+"the dealer's style"
+],
+[
+"the music playing",
+"the weather outside",
+"the food at the casino",
+"the weather outside"
+],
+[
+"the food at the casino",
+"travel plans",
+"the music playing",
+"the weather outside"
+],
+[
+"travel plans",
+"the dealer's style",
+"last night's game on TV",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"the food at the casino",
+"travel plans",
+"the weather outside"
+]
+],
+"favourite": [
+"the music playing",
+"the dealer's style",
+"travel plans",
+"the weather outside"
+]
+},
+{
+"game": "h021",
+"mode": "collusion",
+"names": [
+"Jon Berg",
+"Ana Ruiz",
+"Ben Okafor",
+"Elif Kaya"
+],
+"roles": [
+"receiver",
+"honest",
+"signaller",
+"honest"
+],
+"companion": {
+"0": 2,
+"2": 0,
+"1": 3,
+"3": 1
+},
+"secret": "the food at the casino",
+"hot": [
+true,
+false,
+false,
+false,
+false,
+false,
+false,
+true
+],
+"assigned": [
+[
+"travel plans",
+"travel plans",
+"travel plans",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"last night's game on TV",
+"the music playing"
+],
+[
+"travel plans",
+"the music playing",
+"travel plans",
+"the music playing"
+],
+[
+"the music playing",
+"the music playing",
+"travel plans",
+"the dealer's style"
+],
+[
+"the weather outside",
+"travel plans",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"the music playing",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"the music playing",
+"the weather outside",
+"the weather outside"
+],
+[
+"the food at the casino",
+"travel plans",
+"the dealer's style",
+"the music playing"
+]
+],
+"favourite": [
+"the food at the casino",
+"the music playing",
+"travel plans",
+"travel plans"
+]
+},
+{
+"game": "h022",
+"mode": "collusion",
+"names": [
+"Dev Mehta",
+"Kira Novak",
+"Gwen Hall",
+"Chloe Park"
+],
+"roles": [
+"honest",
+"receiver",
+"honest",
+"signaller"
+],
+"companion": {
+"1": 3,
+"3": 1,
+"0": 2,
+"2": 0
+},
+"secret": "the weather outside",
+"hot": [
+false,
+true,
+false,
+false,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the weather outside",
+"last night's game on TV",
+"the weather outside",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"travel plans",
+"travel plans",
+"the music playing"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"last night's game on TV",
+"travel plans"
+],
+[
+"the music playing",
+"the food at the casino",
+"travel plans",
+"the food at the casino"
+],
+[
+"travel plans",
+"the food at the casino",
+"the dealer's style",
+"last night's game on TV"
+],
+[
+"the music playing",
+"last night's game on TV",
+"travel plans",
+"the music playing"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"the food at the casino",
+"last night's game on TV",
+"travel plans"
+]
+],
+"favourite": [
+"last night's game on TV",
+"the food at the casino",
+"the dealer's style",
+"last night's game on TV"
+]
+},
+{
+"game": "h023",
+"mode": "collusion",
+"names": [
+"Femi Adeyemi",
+"Kira Novak",
+"Chloe Park",
+"Ana Ruiz"
+],
+"roles": [
+"honest",
+"signaller",
+"receiver",
+"honest"
+],
+"companion": {
+"1": 2,
+"2": 1,
+"0": 3,
+"3": 0
+},
+"secret": "the music playing",
+"hot": [
+true,
+true,
+true,
+false,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the music playing",
+"the dealer's style",
+"the music playing",
+"last night's game on TV"
+],
+[
+"the food at the casino",
+"travel plans",
+"the food at the casino",
+"travel plans"
+],
+[
+"the food at the casino",
+"last night's game on TV",
+"the food at the casino",
+"travel plans"
+],
+[
+"the music playing",
+"travel plans",
+"the music playing",
+"travel plans"
+],
+[
+"the music playing",
+"last night's game on TV",
+"last night's game on TV",
+"the music playing"
+],
+[
+"travel plans",
+"the dealer's style",
+"the music playing",
+"travel plans"
+],
+[
+"the music playing",
+"the dealer's style",
+"the weather outside",
+"the weather outside"
+],
+[
+"the weather outside",
+"travel plans",
+"the dealer's style",
+"travel plans"
+]
+],
+"favourite": [
+"travel plans",
+"the dealer's style",
+"the food at the casino",
+"travel plans"
+]
+},
+{
+"game": "h024",
+"mode": "collusion",
+"names": [
+"Chloe Park",
+"Elif Kaya",
+"Kira Novak",
+"Dev Mehta"
+],
+"roles": [
+"receiver",
+"signaller",
+"honest",
+"honest"
+],
+"companion": {
+"0": 1,
+"1": 0,
+"2": 3,
+"3": 2
+},
+"secret": "travel plans",
+"hot": [
+true,
+false,
+false,
+false,
+false,
+true,
+false,
+true
+],
+"assigned": [
+[
+"the weather outside",
+"last night's game on TV",
+"the music playing",
+"the dealer's style"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the dealer's style",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"the weather outside",
+"the food at the casino",
+"the food at the casino"
+],
+[
+"the music playing",
+"last night's game on TV",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the music playing",
+"the food at the casino"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the music playing",
+"the food at the casino"
+],
+[
+"the music playing",
+"the dealer's style",
+"the music playing",
+"travel plans"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the dealer's style",
+"the food at the casino"
+]
+],
+"favourite": [
+"the music playing",
+"travel plans",
+"the music playing",
+"the food at the casino"
+]
+},
+{
+"game": "h025",
+"mode": "collusion",
+"names": [
+"Ana Ruiz",
+"Luca Rossi",
+"Dev Mehta",
+"Jon Berg"
+],
+"roles": [
+"honest",
+"receiver",
+"signaller",
+"honest"
+],
+"companion": {
+"1": 2,
+"2": 1,
+"0": 3,
+"3": 0
+},
+"secret": "last night's game on TV",
+"hot": [
+false,
+false,
+true,
+false,
+true,
+true,
+true,
+true
+],
+"assigned": [
+[
+"the food at the casino",
+"the music playing",
+"the music playing",
+"the weather outside"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the music playing",
+"the weather outside"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"travel plans",
+"last night's game on TV",
+"travel plans",
+"the weather outside"
+],
+[
+"last night's game on TV",
+"the music playing",
+"the dealer's style",
+"the music playing"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"the food at the casino",
+"travel plans"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the music playing",
+"the music playing"
+],
+[
+"the food at the casino",
+"last night's game on TV",
+"the food at the casino",
+"last night's game on TV"
+]
+],
+"favourite": [
+"last night's game on TV",
+"last night's game on TV",
+"the weather outside",
+"the weather outside"
+]
+},
+{
+"game": "h026",
+"mode": "collusion",
+"names": [
+"Chloe Park",
+"Elif Kaya",
+"Luca Rossi",
+"Ana Ruiz"
+],
+"roles": [
+"signaller",
+"honest",
+"receiver",
+"honest"
+],
+"companion": {
+"0": 2,
+"2": 0,
+"1": 3,
+"3": 1
+},
+"secret": "the weather outside",
+"hot": [
+true,
+false,
+true,
+false,
+false,
+false,
+false,
+true
+],
+"assigned": [
+[
+"the food at the casino",
+"the music playing",
+"the music playing",
+"travel plans"
+],
+[
+"the dealer's style",
+"the music playing",
+"the food at the casino",
+"the weather outside"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the weather outside",
+"the weather outside"
+],
+[
+"the food at the casino",
+"travel plans",
+"the dealer's style",
+"the weather outside"
+],
+[
+"the dealer's style",
+"travel plans",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the weather outside",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"travel plans",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the music playing",
+"travel plans",
+"the food at the casino",
+"last night's game on TV"
+]
+],
+"favourite": [
+"the food at the casino",
+"travel plans",
+"the food at the casino",
+"the music playing"
+]
+},
+{
+"game": "h027",
+"mode": "collusion",
+"names": [
+"Jon Berg",
+"Luca Rossi",
+"Hiro Tanaka",
+"Femi Adeyemi"
+],
+"roles": [
+"receiver",
+"signaller",
+"honest",
+"honest"
+],
+"companion": {
+"0": 1,
+"1": 0,
+"2": 3,
+"3": 2
+},
+"secret": "the music playing",
+"hot": [
+true,
+true,
+false,
+false,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the music playing",
+"travel plans",
+"the weather outside",
+"travel plans"
+],
+[
+"the dealer's style",
+"the weather outside",
+"the music playing",
+"the music playing"
+],
+[
+"the food at the casino",
+"travel plans",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the weather outside",
+"the food at the casino",
+"the weather outside",
+"the weather outside"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the weather outside",
+"the dealer's style"
+],
+[
+"the weather outside",
+"travel plans",
+"travel plans",
+"the food at the casino"
+],
+[
+"travel plans",
+"last night's game on TV",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"the dealer's style",
+"travel plans"
+]
+],
+"favourite": [
+"the food at the casino",
+"the food at the casino",
+"last night's game on TV",
+"travel plans"
+]
+},
+{
+"game": "h028",
+"mode": "collusion",
+"names": [
+"Ben Okafor",
+"Luca Rossi",
+"Jon Berg",
+"Chloe Park"
+],
+"roles": [
+"honest",
+"receiver",
+"signaller",
+"honest"
+],
+"companion": {
+"1": 2,
+"2": 1,
+"0": 3,
+"3": 0
+},
+"secret": "the food at the casino",
+"hot": [
+false,
+true,
+false,
+false,
+false,
+true,
+false,
+false
+],
+"assigned": [
+[
+"last night's game on TV",
+"last night's game on TV",
+"the dealer's style",
+"the weather outside"
+],
+[
+"the music playing",
+"the food at the casino",
+"the weather outside",
+"travel plans"
+],
+[
+"travel plans",
+"travel plans",
+"the music playing",
+"last night's game on TV"
+],
+[
+"last night's game on TV",
+"travel plans",
+"the music playing",
+"the weather outside"
+],
+[
+"the food at the casino",
+"travel plans",
+"the dealer's style",
+"travel plans"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"travel plans",
+"the dealer's style"
+],
+[
+"the weather outside",
+"the music playing",
+"the weather outside",
+"the music playing"
+],
+[
+"travel plans",
+"the weather outside",
+"last night's game on TV",
+"the weather outside"
+]
+],
+"favourite": [
+"last night's game on TV",
+"the weather outside",
+"last night's game on TV",
+"last night's game on TV"
+]
+},
+{
+"game": "h029",
+"mode": "collusion",
+"names": [
+"Femi Adeyemi",
+"Elif Kaya",
+"Ben Okafor",
+"Luca Rossi"
+],
+"roles": [
+"signaller",
+"honest",
+"receiver",
+"honest"
+],
+"companion": {
+"0": 2,
+"2": 0,
+"1": 3,
+"3": 1
+},
+"secret": "travel plans",
+"hot": [
+false,
+false,
+true,
+true,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the food at the casino",
+"the weather outside",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"the dealer's style",
+"last night's game on TV"
+],
+[
+"the food at the casino",
+"the music playing",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"travel plans",
+"the weather outside",
+"the dealer's style"
+],
+[
+"the music playing",
+"last night's game on TV",
+"travel plans",
+"the food at the casino"
+],
+[
+"the weather outside",
+"the dealer's style",
+"the music playing",
+"travel plans"
+],
+[
+"the music playing",
+"the dealer's style",
+"the food at the casino",
+"the dealer's style"
+]
+],
+"favourite": [
+"the weather outside",
+"the dealer's style",
+"the weather outside",
+"the food at the casino"
+]
+},
+{
+"game": "h030",
+"mode": "collusion",
+"names": [
+"Dev Mehta",
+"Jon Berg",
+"Hiro Tanaka",
+"Luca Rossi"
+],
+"roles": [
+"honest",
+"honest",
+"signaller",
+"receiver"
+],
+"companion": {
+"2": 3,
+"3": 2,
+"0": 1,
+"1": 0
+},
+"secret": "the music playing",
+"hot": [
+true,
+false,
+false,
+false,
+false,
+false,
+true,
+false
+],
+"assigned": [
+[
+"the music playing",
+"the dealer's style",
+"the weather outside",
+"the weather outside"
+],
+[
+"the music playing",
+"the weather outside",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"last night's game on TV",
+"the dealer's style",
+"travel plans"
+],
+[
+"the food at the casino",
+"the music playing",
+"the dealer's style",
+"the music playing"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"the dealer's style",
+"the music playing"
+],
+[
+"last night's game on TV",
+"the music playing",
+"travel plans",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"the weather outside",
+"travel plans",
+"the food at the casino"
+],
+[
+"the music playing",
+"the food at the casino",
+"the weather outside",
+"travel plans"
+]
+],
+"favourite": [
+"the music playing",
+"the weather outside",
+"the food at the casino",
+"last night's game on TV"
+]
+},
+{
+"game": "h031",
+"mode": "collusion",
+"names": [
+"Hiro Tanaka",
+"Ana Ruiz",
+"Gwen Hall",
+"Kira Novak"
+],
+"roles": [
+"honest",
+"signaller",
+"receiver",
+"honest"
+],
+"companion": {
+"1": 2,
+"2": 1,
+"0": 3,
+"3": 0
+},
+"secret": "last night's game on TV",
+"hot": [
+false,
+false,
+true,
+false,
+false,
+true,
+false,
+false
+],
+"assigned": [
+[
+"the music playing",
+"travel plans",
+"the weather outside",
+"the weather outside"
+],
+[
+"the weather outside",
+"the music playing",
+"the weather outside",
+"the music playing"
+],
+[
+"the music playing",
+"travel plans",
+"the music playing",
+"the food at the casino"
+],
+[
+"the weather outside",
+"travel plans",
+"the music playing",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"travel plans",
+"the dealer's style",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"the music playing",
+"the food at the casino",
+"the music playing"
+],
+[
+"travel plans",
+"the food at the casino",
+"the music playing",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"the weather outside",
+"last night's game on TV",
+"the music playing"
+]
+],
+"favourite": [
+"the weather outside",
+"the weather outside",
+"the weather outside",
+"last night's game on TV"
+]
+},
+{
+"game": "h032",
+"mode": "collusion",
+"names": [
+"Femi Adeyemi",
+"Chloe Park",
+"Gwen Hall",
+"Kira Novak"
+],
+"roles": [
+"honest",
+"signaller",
+"honest",
+"receiver"
+],
+"companion": {
+"1": 3,
+"3": 1,
+"0": 2,
+"2": 0
+},
+"secret": "the music playing",
+"hot": [
+false,
+false,
+false,
+true,
+true,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the dealer's style",
+"the dealer's style",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"travel plans",
+"the music playing",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"last night's game on TV",
+"travel plans"
+],
+[
+"the music playing",
+"the weather outside",
+"the weather outside",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"the weather outside",
+"the dealer's style",
+"last night's game on TV"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"the weather outside",
+"last night's game on TV"
+],
+[
+"the food at the casino",
+"the weather outside",
+"last night's game on TV",
+"the music playing"
+],
+[
+"last night's game on TV",
+"travel plans",
+"the weather outside",
+"last night's game on TV"
+]
+],
+"favourite": [
+"last night's game on TV",
+"the food at the casino",
+"the weather outside",
+"last night's game on TV"
+]
+},
+{
+"game": "h033",
+"mode": "collusion",
+"names": [
+"Elif Kaya",
+"Ines Silva",
+"Chloe Park",
+"Hiro Tanaka"
+],
+"roles": [
+"honest",
+"receiver",
+"honest",
+"signaller"
+],
+"companion": {
+"1": 3,
+"3": 1,
+"0": 2,
+"2": 0
+},
+"secret": "the dealer's style",
+"hot": [
+true,
+false,
+false,
+false,
+false,
+false,
+true,
+false
+],
+"assigned": [
+[
+"the dealer's style",
+"the food at the casino",
+"the food at the casino",
+"the music playing"
+],
+[
+"the food at the casino",
+"travel plans",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"the music playing",
+"the music playing",
+"the music playing"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"the weather outside",
+"last night's game on TV"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"the dealer's style",
+"travel plans"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"the music playing",
+"the music playing"
+],
+[
+"last night's game on TV",
+"travel plans",
+"the music playing",
+"last night's game on TV"
+]
+],
+"favourite": [
+"last night's game on TV",
+"the dealer's style",
+"the music playing",
+"the food at the casino"
+]
+},
+{
+"game": "h034",
+"mode": "collusion",
+"names": [
+"Femi Adeyemi",
+"Luca Rossi",
+"Chloe Park",
+"Kira Novak"
+],
+"roles": [
+"signaller",
+"receiver",
+"honest",
+"honest"
+],
+"companion": {
+"0": 1,
+"1": 0,
+"2": 3,
+"3": 2
+},
+"secret": "last night's game on TV",
+"hot": [
+false,
+false,
+false,
+false,
+true,
+true,
+false,
+true
+],
+"assigned": [
+[
+"the food at the casino",
+"the dealer's style",
+"travel plans",
+"the food at the casino"
+],
+[
+"the weather outside",
+"the dealer's style",
+"travel plans",
+"travel plans"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the weather outside",
+"the dealer's style",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"the music playing",
+"last night's game on TV",
+"the dealer's style"
+],
+[
+"the weather outside",
+"travel plans",
+"travel plans",
+"the dealer's style"
+],
+[
+"the weather outside",
+"the food at the casino",
+"the music playing",
+"the music playing"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the music playing",
+"the weather outside"
+]
+],
+"favourite": [
+"the food at the casino",
+"the dealer's style",
+"the dealer's style",
+"the dealer's style"
+]
+},
+{
+"game": "h035",
+"mode": "collusion",
+"names": [
+"Ana Ruiz",
+"Elif Kaya",
+"Jon Berg",
+"Gwen Hall"
+],
+"roles": [
+"honest",
+"receiver",
+"signaller",
+"honest"
+],
+"companion": {
+"1": 2,
+"2": 1,
+"0": 3,
+"3": 0
+},
+"secret": "the food at the casino",
+"hot": [
+false,
+true,
+false,
+false,
+false,
+true,
+false,
+true
+],
+"assigned": [
+[
+"the dealer's style",
+"last night's game on TV",
+"the weather outside",
+"travel plans"
+],
+[
+"the dealer's style",
+"the music playing",
+"the weather outside",
+"travel plans"
+],
+[
+"the music playing",
+"the dealer's style",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the dealer's style",
+"the weather outside"
+],
+[
+"the weather outside",
+"travel plans",
+"the dealer's style",
+"the weather outside"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"the food at the casino",
+"travel plans",
+"the music playing",
+"the weather outside"
+],
+[
+"the food at the casino",
+"travel plans",
+"the weather outside",
+"the food at the casino"
+]
+],
+"favourite": [
+"the dealer's style",
+"the dealer's style",
+"the dealer's style",
+"the food at the casino"
+]
+},
+{
+"game": "h036",
+"mode": "collusion",
+"names": [
+"Femi Adeyemi",
+"Luca Rossi",
+"Kira Novak",
+"Ines Silva"
+],
+"roles": [
+"signaller",
+"receiver",
+"honest",
+"honest"
+],
+"companion": {
+"0": 1,
+"1": 0,
+"2": 3,
+"3": 2
+},
+"secret": "travel plans",
+"hot": [
+false,
+false,
+false,
+true,
+false,
+false,
+true,
+true
+],
+"assigned": [
+[
+"the dealer's style",
+"the dealer's style",
+"the weather outside",
+"travel plans"
+],
+[
+"the weather outside",
+"the weather outside",
+"the weather outside",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"the weather outside",
+"the dealer's style"
+],
+[
+"the weather outside",
+"travel plans",
+"the weather outside",
+"travel plans"
+],
+[
+"the dealer's style",
+"the weather outside",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the weather outside",
+"the food at the casino",
+"the music playing",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"the weather outside",
+"the weather outside",
+"the dealer's style"
+],
+[
+"the music playing",
+"the weather outside",
+"the weather outside",
+"the music playing"
+]
+],
+"favourite": [
+"last night's game on TV",
+"the weather outside",
+"the weather outside",
+"last night's game on TV"
+]
+},
+{
+"game": "h037",
+"mode": "collusion",
+"names": [
+"Ines Silva",
+"Luca Rossi",
+"Chloe Park",
+"Dev Mehta"
+],
+"roles": [
+"honest",
+"receiver",
+"signaller",
+"honest"
+],
+"companion": {
+"1": 2,
+"2": 1,
+"0": 3,
+"3": 0
+},
+"secret": "the music playing",
+"hot": [
+false,
+false,
+false,
+false,
+false,
+false,
+true,
+false
+],
+"assigned": [
+[
+"the weather outside",
+"the food at the casino",
+"travel plans",
+"the weather outside"
+],
+[
+"the music playing",
+"the weather outside",
+"travel plans",
+"last night's game on TV"
+],
+[
+"the music playing",
+"the food at the casino",
+"the weather outside",
+"last night's game on TV"
+],
+[
+"travel plans",
+"last night's game on TV",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the music playing",
+"the food at the casino",
+"last night's game on TV",
+"the music playing"
+],
+[
+"last night's game on TV",
+"the food at the casino",
+"the dealer's style",
+"travel plans"
+],
+[
+"the music playing",
+"the music playing",
+"the weather outside",
+"the weather outside"
+]
+],
+"favourite": [
+"the music playing",
+"the food at the casino",
+"the dealer's style",
+"last night's game on TV"
+]
+},
+{
+"game": "h038",
+"mode": "collusion",
+"names": [
+"Jon Berg",
+"Ana Ruiz",
+"Femi Adeyemi",
+"Ines Silva"
+],
+"roles": [
+"honest",
+"receiver",
+"honest",
+"signaller"
+],
+"companion": {
+"1": 3,
+"3": 1,
+"0": 2,
+"2": 0
+},
+"secret": "the food at the casino",
+"hot": [
+true,
+false,
+false,
+true,
+false,
+false,
+true,
+false
+],
+"assigned": [
+[
+"the food at the casino",
+"the food at the casino",
+"the dealer's style",
+"travel plans"
+],
+[
+"the music playing",
+"the food at the casino",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"the food at the casino",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the weather outside",
+"the dealer's style",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"the weather outside",
+"travel plans"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"travel plans",
+"the dealer's style"
+],
+[
+"the music playing",
+"the weather outside",
+"the dealer's style",
+"last night's game on TV"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"travel plans",
+"the dealer's style"
+]
+],
+"favourite": [
+"the food at the casino",
+"the food at the casino",
+"the dealer's style",
+"travel plans"
+]
+},
+{
+"game": "h039",
+"mode": "collusion",
+"names": [
+"Luca Rossi",
+"Chloe Park",
+"Gwen Hall",
+"Hiro Tanaka"
+],
+"roles": [
+"honest",
+"receiver",
+"honest",
+"signaller"
+],
+"companion": {
+"1": 3,
+"3": 1,
+"0": 2,
+"2": 0
+},
+"secret": "the food at the casino",
+"hot": [
+false,
+true,
+false,
+false,
+false,
+false,
+false,
+true
+],
+"assigned": [
+[
+"the music playing",
+"the dealer's style",
+"last night's game on TV",
+"the weather outside"
+],
+[
+"travel plans",
+"the weather outside",
+"the weather outside",
+"last night's game on TV"
+],
+[
+"the music playing",
+"the music playing",
+"the food at the casino",
+"travel plans"
+],
+[
+"the weather outside",
+"the food at the casino",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"the music playing",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the music playing",
+"the dealer's style",
+"the music playing",
+"the music playing"
+],
+[
+"the music playing",
+"the music playing",
+"travel plans",
+"last night's game on TV"
+],
+[
+"last night's game on TV",
+"travel plans",
+"the music playing",
+"the weather outside"
+]
+],
+"favourite": [
+"the music playing",
+"the music playing",
+"travel plans",
+"the dealer's style"
+]
+},
+{
+"game": "h040",
+"mode": "collusion",
+"names": [
+"Femi Adeyemi",
+"Kira Novak",
+"Dev Mehta",
+"Luca Rossi"
+],
+"roles": [
+"signaller",
+"honest",
+"honest",
+"receiver"
+],
+"companion": {
+"0": 3,
+"3": 0,
+"1": 2,
+"2": 1
+},
+"secret": "the dealer's style",
+"hot": [
+false,
+true,
+false,
+false,
+false,
+true,
+false,
+false
+],
+"assigned": [
+[
+"travel plans",
+"the food at the casino",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"the food at the casino",
+"the weather outside"
+],
+[
+"the music playing",
+"the weather outside",
+"the food at the casino",
+"travel plans"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"the weather outside",
+"the music playing",
+"the weather outside"
+],
+[
+"the music playing",
+"travel plans",
+"the music playing",
+"the food at the casino"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the music playing",
+"the weather outside"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"the dealer's style",
+"the food at the casino"
+]
+],
+"favourite": [
+"the food at the casino",
+"the weather outside",
+"the music playing",
+"the food at the casino"
+]
+},
+{
+"game": "h041",
+"mode": "collusion",
+"names": [
+"Luca Rossi",
+"Jon Berg",
+"Ines Silva",
+"Gwen Hall"
+],
+"roles": [
+"signaller",
+"honest",
+"receiver",
+"honest"
+],
+"companion": {
+"0": 2,
+"2": 0,
+"1": 3,
+"3": 1
+},
+"secret": "the food at the casino",
+"hot": [
+false,
+true,
+true,
+true,
+false,
+false,
+false,
+true
+],
+"assigned": [
+[
+"travel plans",
+"travel plans",
+"the music playing",
+"the weather outside"
+],
+[
+"the dealer's style",
+"the weather outside",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"the music playing",
+"the food at the casino"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the weather outside",
+"the weather outside"
+],
+[
+"last night's game on TV",
+"the music playing",
+"last night's game on TV",
+"travel plans"
+],
+[
+"the weather outside",
+"the music playing",
+"travel plans",
+"travel plans"
+],
+[
+"travel plans",
+"the food at the casino",
+"travel plans",
+"travel plans"
+]
+],
+"favourite": [
+"the music playing",
+"last night's game on TV",
+"last night's game on TV",
+"the food at the casino"
+]
+},
+{
+"game": "h042",
+"mode": "collusion",
+"names": [
+"Chloe Park",
+"Dev Mehta",
+"Hiro Tanaka",
+"Ana Ruiz"
+],
+"roles": [
+"signaller",
+"honest",
+"honest",
+"receiver"
+],
+"companion": {
+"0": 3,
+"3": 0,
+"1": 2,
+"2": 1
+},
+"secret": "the weather outside",
+"hot": [
+false,
+false,
+true,
+false,
+false,
+true,
+true,
+true
+],
+"assigned": [
+[
+"travel plans",
+"travel plans",
+"the music playing",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"travel plans",
+"the dealer's style",
+"travel plans",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"the food at the casino",
+"the music playing",
+"the music playing"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the dealer's style",
+"travel plans"
+],
+[
+"travel plans",
+"the music playing",
+"the music playing",
+"the weather outside"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"the weather outside",
+"last night's game on TV"
+],
+[
+"travel plans",
+"the weather outside",
+"the weather outside",
+"the music playing"
+]
+],
+"favourite": [
+"last night's game on TV",
+"last night's game on TV",
+"the music playing",
+"last night's game on TV"
+]
+},
+{
+"game": "h043",
+"mode": "collusion",
+"names": [
+"Ben Okafor",
+"Ana Ruiz",
+"Dev Mehta",
+"Gwen Hall"
+],
+"roles": [
+"honest",
+"honest",
+"receiver",
+"signaller"
+],
+"companion": {
+"2": 3,
+"3": 2,
+"0": 1,
+"1": 0
+},
+"secret": "the food at the casino",
+"hot": [
+false,
+true,
+false,
+false,
+false,
+true,
+false,
+false
+],
+"assigned": [
+[
+"the music playing",
+"last night's game on TV",
+"the music playing",
+"the dealer's style"
+],
+[
+"the music playing",
+"travel plans",
+"the food at the casino",
+"the music playing"
+],
+[
+"travel plans",
+"the weather outside",
+"the music playing",
+"the weather outside"
+],
+[
+"travel plans",
+"travel plans",
+"travel plans",
+"the weather outside"
+],
+[
+"last night's game on TV",
+"travel plans",
+"the food at the casino",
+"travel plans"
+],
+[
+"the music playing",
+"the dealer's style",
+"the dealer's style",
+"the weather outside"
+],
+[
+"the food at the casino",
+"travel plans",
+"the food at the casino",
+"the music playing"
+],
+[
+"the weather outside",
+"travel plans",
+"the dealer's style",
+"the weather outside"
+]
+],
+"favourite": [
+"the music playing",
+"travel plans",
+"travel plans",
+"the weather outside"
+]
+},
+{
+"game": "h044",
+"mode": "collusion",
+"names": [
+"Ben Okafor",
+"Luca Rossi",
+"Dev Mehta",
+"Chloe Park"
+],
+"roles": [
+"signaller",
+"honest",
+"honest",
+"receiver"
+],
+"companion": {
+"0": 3,
+"3": 0,
+"1": 2,
+"2": 1
+},
+"secret": "travel plans",
+"hot": [
+true,
+true,
+false,
+false,
+false,
+false,
+true,
+false
+],
+"assigned": [
+[
+"the dealer's style",
+"last night's game on TV",
+"the food at the casino",
+"travel plans"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"the music playing",
+"the weather outside"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"travel plans",
+"the dealer's style",
+"the weather outside"
+],
+[
+"the music playing",
+"the food at the casino",
+"the weather outside",
+"the weather outside"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"the food at the casino",
+"the music playing"
+],
+[
+"the weather outside",
+"the food at the casino",
+"the weather outside",
+"the weather outside"
+]
+],
+"favourite": [
+"last night's game on TV",
+"last night's game on TV",
+"the dealer's style",
+"the weather outside"
+]
+},
+{
+"game": "h045",
+"mode": "collusion",
+"names": [
+"Femi Adeyemi",
+"Elif Kaya",
+"Gwen Hall",
+"Ben Okafor"
+],
+"roles": [
+"honest",
+"honest",
+"signaller",
+"receiver"
+],
+"companion": {
+"2": 3,
+"3": 2,
+"0": 1,
+"1": 0
+},
+"secret": "the weather outside",
+"hot": [
+true,
+false,
+false,
+false,
+true,
+true,
+false,
+false
+],
+"assigned": [
+[
+"the food at the casino",
+"last night's game on TV",
+"last night's game on TV",
+"the music playing"
+],
+[
+"the food at the casino",
+"travel plans",
+"travel plans",
+"travel plans"
+],
+[
+"the weather outside",
+"travel plans",
+"travel plans",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"the music playing",
+"the music playing",
+"last night's game on TV"
+],
+[
+"last night's game on TV",
+"the music playing",
+"the food at the casino",
+"the music playing"
+],
+[
+"the weather outside",
+"the dealer's style",
+"the music playing",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"the weather outside",
+"last night's game on TV",
+"travel plans"
+],
+[
+"the music playing",
+"the weather outside",
+"the dealer's style",
+"last night's game on TV"
+]
+],
+"favourite": [
+"the weather outside",
+"travel plans",
+"the food at the casino",
+"the music playing"
+]
+},
+{
+"game": "h046",
+"mode": "collusion",
+"names": [
+"Gwen Hall",
+"Luca Rossi",
+"Kira Novak",
+"Ana Ruiz"
+],
+"roles": [
+"receiver",
+"honest",
+"honest",
+"signaller"
+],
+"companion": {
+"0": 3,
+"3": 0,
+"1": 2,
+"2": 1
+},
+"secret": "last night's game on TV",
+"hot": [
+true,
+false,
+false,
+true,
+true,
+false,
+false,
+true
+],
+"assigned": [
+[
+"the food at the casino",
+"the music playing",
+"the music playing",
+"the food at the casino"
+],
+[
+"the weather outside",
+"the food at the casino",
+"the weather outside",
+"the music playing"
+],
+[
+"the dealer's style",
+"the weather outside",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"travel plans",
+"last night's game on TV",
+"travel plans",
+"travel plans"
+],
+[
+"last night's game on TV",
+"the music playing",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"the music playing",
+"last night's game on TV",
+"last night's game on TV",
+"the weather outside"
+],
+[
+"travel plans",
+"last night's game on TV",
+"the music playing",
+"the food at the casino"
+],
+[
+"the music playing",
+"the dealer's style",
+"the dealer's style",
+"the music playing"
+]
+],
+"favourite": [
+"the food at the casino",
+"the food at the casino",
+"the dealer's style",
+"the food at the casino"
+]
+},
+{
+"game": "h047",
+"mode": "collusion",
+"names": [
+"Hiro Tanaka",
+"Dev Mehta",
+"Luca Rossi",
+"Ines Silva"
+],
+"roles": [
+"honest",
+"signaller",
+"receiver",
+"honest"
+],
+"companion": {
+"1": 2,
+"2": 1,
+"0": 3,
+"3": 0
+},
+"secret": "the dealer's style",
+"hot": [
+true,
+false,
+false,
+true,
+false,
+false,
+true,
+true
+],
+"assigned": [
+[
+"the weather outside",
+"the weather outside",
+"travel plans",
+"the music playing"
+],
+[
+"travel plans",
+"the music playing",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"the music playing",
+"travel plans",
+"the music playing",
+"the weather outside"
+],
+[
+"the food at the casino",
+"the weather outside",
+"the weather outside",
+"travel plans"
+],
+[
+"the food at the casino",
+"last night's game on TV",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"the weather outside",
+"the food at the casino",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the weather outside",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"the food at the casino",
+"the food at the casino",
+"the music playing"
+]
+],
+"favourite": [
+"the food at the casino",
+"the food at the casino",
+"last night's game on TV",
+"the music playing"
+]
+},
+{
+"game": "h048",
+"mode": "collusion",
+"names": [
+"Ines Silva",
+"Kira Novak",
+"Luca Rossi",
+"Chloe Park"
+],
+"roles": [
+"receiver",
+"signaller",
+"honest",
+"honest"
+],
+"companion": {
+"0": 1,
+"1": 0,
+"2": 3,
+"3": 2
+},
+"secret": "the food at the casino",
+"hot": [
+false,
+false,
+false,
+true,
+false,
+true,
+false,
+true
+],
+"assigned": [
+[
+"travel plans",
+"last night's game on TV",
+"the dealer's style",
+"the music playing"
+],
+[
+"the food at the casino",
+"travel plans",
+"the music playing",
+"the music playing"
+],
+[
+"the dealer's style",
+"the weather outside",
+"last night's game on TV",
+"the weather outside"
+],
+[
+"the food at the casino",
+"the music playing",
+"the music playing",
+"travel plans"
+],
+[
+"last night's game on TV",
+"the music playing",
+"last night's game on TV",
+"the weather outside"
+],
+[
+"the music playing",
+"the dealer's style",
+"the weather outside",
+"the music playing"
+],
+[
+"the food at the casino",
+"the weather outside",
+"the weather outside",
+"travel plans"
+],
+[
+"travel plans",
+"last night's game on TV",
+"the music playing",
+"travel plans"
+]
+],
+"favourite": [
+"the food at the casino",
+"travel plans",
+"the music playing",
+"travel plans"
+]
+},
+{
+"game": "h049",
+"mode": "collusion",
+"names": [
+"Ana Ruiz",
+"Kira Novak",
+"Jon Berg",
+"Elif Kaya"
+],
+"roles": [
+"honest",
+"signaller",
+"receiver",
+"honest"
+],
+"companion": {
+"1": 2,
+"2": 1,
+"0": 3,
+"3": 0
+},
+"secret": "the weather outside",
+"hot": [
+true,
+false,
+false,
+true,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the weather outside",
+"the food at the casino",
+"the food at the casino",
+"the weather outside"
+],
+[
+"the food at the casino",
+"travel plans",
+"the weather outside",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"the weather outside",
+"travel plans"
+],
+[
+"the music playing",
+"travel plans",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"travel plans",
+"last night's game on TV",
+"the weather outside",
+"last night's game on TV"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the weather outside",
+"the music playing"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the weather outside",
+"the music playing"
+]
+],
+"favourite": [
+"the weather outside",
+"the dealer's style",
+"the weather outside",
+"the dealer's style"
+]
+},
+{
+"game": "h050",
+"mode": "collusion",
+"names": [
+"Chloe Park",
+"Ben Okafor",
+"Jon Berg",
+"Ines Silva"
+],
+"roles": [
+"honest",
+"honest",
+"receiver",
+"signaller"
+],
+"companion": {
+"2": 3,
+"3": 2,
+"0": 1,
+"1": 0
+},
+"secret": "travel plans",
+"hot": [
+false,
+false,
+false,
+false,
+true,
+false,
+false,
+true
+],
+"assigned": [
+[
+"the weather outside",
+"travel plans",
+"the music playing",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the music playing",
+"last night's game on TV"
+],
+[
+"the food at the casino",
+"last night's game on TV",
+"the dealer's style",
+"the weather outside"
+],
+[
+"the music playing",
+"travel plans",
+"the weather outside",
+"the weather outside"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"the music playing",
+"the music playing"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the weather outside",
+"the weather outside"
+],
+[
+"the weather outside",
+"the weather outside",
+"the dealer's style",
+"the food at the casino"
+]
+],
+"favourite": [
+"last night's game on TV",
+"travel plans",
+"the weather outside",
+"the weather outside"
+]
+},
+{
+"game": "h051",
+"mode": "collusion",
+"names": [
+"Jon Berg",
+"Ana Ruiz",
+"Luca Rossi",
+"Femi Adeyemi"
+],
+"roles": [
+"receiver",
+"signaller",
+"honest",
+"honest"
+],
+"companion": {
+"0": 1,
+"1": 0,
+"2": 3,
+"3": 2
+},
+"secret": "the music playing",
+"hot": [
+true,
+false,
+false,
+true,
+false,
+true,
+false,
+false
+],
+"assigned": [
+[
+"last night's game on TV",
+"travel plans",
+"travel plans",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"the food at the casino",
+"travel plans",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"travel plans",
+"the music playing",
+"the food at the casino"
+],
+[
+"the weather outside",
+"the dealer's style",
+"the music playing",
+"travel plans"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"the music playing",
+"the music playing"
+],
+[
+"the music playing",
+"travel plans",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the weather outside",
+"travel plans",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"the music playing",
+"travel plans",
+"travel plans",
+"the music playing"
+]
+],
+"favourite": [
+"travel plans",
+"the food at the casino",
+"travel plans",
+"last night's game on TV"
+]
+},
+{
+"game": "h052",
+"mode": "collusion",
+"names": [
+"Gwen Hall",
+"Luca Rossi",
+"Hiro Tanaka",
+"Femi Adeyemi"
+],
+"roles": [
+"honest",
+"honest",
+"signaller",
+"receiver"
+],
+"companion": {
+"2": 3,
+"3": 2,
+"0": 1,
+"1": 0
+},
+"secret": "travel plans",
+"hot": [
+false,
+true,
+true,
+false,
+false,
+false,
+false,
+true
+],
+"assigned": [
+[
+"the music playing",
+"last night's game on TV",
+"the music playing",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"last night's game on TV",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"the music playing",
+"the dealer's style",
+"travel plans"
+],
+[
+"the weather outside",
+"the music playing",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"the music playing",
+"the food at the casino",
+"the dealer's style",
+"last night's game on TV"
+],
+[
+"travel plans",
+"the music playing",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"last night's game on TV",
+"the weather outside"
+]
+],
+"favourite": [
+"travel plans",
+"last night's game on TV",
+"the food at the casino",
+"the food at the casino"
+]
+},
+{
+"game": "h053",
+"mode": "collusion",
+"names": [
+"Ines Silva",
+"Elif Kaya",
+"Luca Rossi",
+"Gwen Hall"
+],
+"roles": [
+"honest",
+"receiver",
+"signaller",
+"honest"
+],
+"companion": {
+"1": 2,
+"2": 1,
+"0": 3,
+"3": 0
+},
+"secret": "the weather outside",
+"hot": [
+true,
+false,
+false,
+false,
+false,
+true,
+false,
+true
+],
+"assigned": [
+[
+"the music playing",
+"the food at the casino",
+"the food at the casino",
+"travel plans"
+],
+[
+"the music playing",
+"travel plans",
+"the dealer's style",
+"the music playing"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"travel plans",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"the food at the casino",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"the music playing",
+"the food at the casino",
+"the music playing",
+"the food at the casino"
+],
+[
+"the music playing",
+"the music playing",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"the weather outside",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"travel plans",
+"the food at the casino",
+"the food at the casino",
+"last night's game on TV"
+]
+],
+"favourite": [
+"the music playing",
+"the food at the casino",
+"the music playing",
+"last night's game on TV"
+]
+},
+{
+"game": "h054",
+"mode": "collusion",
+"names": [
+"Femi Adeyemi",
+"Elif Kaya",
+"Chloe Park",
+"Luca Rossi"
+],
+"roles": [
+"honest",
+"signaller",
+"receiver",
+"honest"
+],
+"companion": {
+"1": 2,
+"2": 1,
+"0": 3,
+"3": 0
+},
+"secret": "the music playing",
+"hot": [
+true,
+false,
+false,
+false,
+false,
+false,
+true,
+false
+],
+"assigned": [
+[
+"the music playing",
+"travel plans",
+"the weather outside",
+"last night's game on TV"
+],
+[
+"the food at the casino",
+"last night's game on TV",
+"travel plans",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"travel plans",
+"travel plans"
+],
+[
+"the dealer's style",
+"travel plans",
+"the dealer's style",
+"travel plans"
+],
+[
+"the music playing",
+"the dealer's style",
+"the dealer's style",
+"the music playing"
+],
+[
+"the weather outside",
+"the dealer's style",
+"the food at the casino",
+"the music playing"
+],
+[
+"travel plans",
+"last night's game on TV",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"the food at the casino",
+"last night's game on TV"
+]
+],
+"favourite": [
+"the food at the casino",
+"the food at the casino",
+"the food at the casino",
+"last night's game on TV"
+]
+},
+{
+"game": "h055",
+"mode": "collusion",
+"names": [
+"Elif Kaya",
+"Gwen Hall",
+"Luca Rossi",
+"Ana Ruiz"
+],
+"roles": [
+"signaller",
+"honest",
+"receiver",
+"honest"
+],
+"companion": {
+"0": 2,
+"2": 0,
+"1": 3,
+"3": 1
+},
+"secret": "last night's game on TV",
+"hot": [
+true,
+false,
+true,
+false,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the weather outside",
+"last night's game on TV",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"the food at the casino",
+"travel plans"
+],
+[
+"the music playing",
+"the dealer's style",
+"last night's game on TV",
+"the music playing"
+],
+[
+"the weather outside",
+"the weather outside",
+"the music playing",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the weather outside",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"the music playing",
+"the music playing",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the food at the casino",
+"the weather outside"
+]
+],
+"favourite": [
+"the food at the casino",
+"the dealer's style",
+"last night's game on TV",
+"last night's game on TV"
+]
+},
+{
+"game": "h056",
+"mode": "collusion",
+"names": [
+"Chloe Park",
+"Jon Berg",
+"Dev Mehta",
+"Kira Novak"
+],
+"roles": [
+"signaller",
+"honest",
+"honest",
+"receiver"
+],
+"companion": {
+"0": 3,
+"3": 0,
+"1": 2,
+"2": 1
+},
+"secret": "travel plans",
+"hot": [
+false,
+false,
+false,
+false,
+true,
+true,
+false,
+false
+],
+"assigned": [
+[
+"the dealer's style",
+"the dealer's style",
+"the music playing",
+"travel plans"
+],
+[
+"the dealer's style",
+"the weather outside",
+"the weather outside",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"travel plans",
+"the weather outside"
+],
+[
+"the weather outside",
+"the dealer's style",
+"last night's game on TV",
+"travel plans"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the weather outside",
+"last night's game on TV"
+],
+[
+"last night's game on TV",
+"the food at the casino",
+"travel plans",
+"the music playing"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"last night's game on TV",
+"the music playing"
+],
+[
+"the weather outside",
+"the weather outside",
+"the weather outside",
+"the music playing"
+]
+],
+"favourite": [
+"the dealer's style",
+"the food at the casino",
+"travel plans",
+"the music playing"
+]
+},
+{
+"game": "h057",
+"mode": "collusion",
+"names": [
+"Luca Rossi",
+"Chloe Park",
+"Jon Berg",
+"Ben Okafor"
+],
+"roles": [
+"honest",
+"receiver",
+"honest",
+"signaller"
+],
+"companion": {
+"1": 3,
+"3": 1,
+"0": 2,
+"2": 0
+},
+"secret": "the weather outside",
+"hot": [
+false,
+false,
+false,
+false,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the food at the casino",
+"travel plans",
+"last night's game on TV",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"the food at the casino",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"last night's game on TV",
+"the music playing"
+],
+[
+"the dealer's style",
+"travel plans",
+"the music playing",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the weather outside",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"last night's game on TV",
+"travel plans"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"travel plans",
+"the food at the casino"
+]
+],
+"favourite": [
+"the dealer's style",
+"the food at the casino",
+"the music playing",
+"travel plans"
+]
+},
+{
+"game": "h058",
+"mode": "collusion",
+"names": [
+"Hiro Tanaka",
+"Femi Adeyemi",
+"Ines Silva",
+"Elif Kaya"
+],
+"roles": [
+"honest",
+"receiver",
+"honest",
+"signaller"
+],
+"companion": {
+"1": 3,
+"3": 1,
+"0": 2,
+"2": 0
+},
+"secret": "the music playing",
+"hot": [
+true,
+false,
+false,
+false,
+false,
+false,
+true,
+false
+],
+"assigned": [
+[
+"travel plans",
+"the food at the casino",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"travel plans",
+"travel plans",
+"the food at the casino"
+],
+[
+"the music playing",
+"travel plans",
+"the music playing",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"the dealer's style",
+"the weather outside"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"travel plans",
+"the dealer's style",
+"travel plans",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the food at the casino",
+"travel plans"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"last night's game on TV",
+"last night's game on TV"
+]
+],
+"favourite": [
+"travel plans",
+"the weather outside",
+"travel plans",
+"travel plans"
+]
+},
+{
+"game": "h059",
+"mode": "collusion",
+"names": [
+"Jon Berg",
+"Luca Rossi",
+"Ben Okafor",
+"Chloe Park"
+],
+"roles": [
+"receiver",
+"honest",
+"honest",
+"signaller"
+],
+"companion": {
+"0": 3,
+"3": 0,
+"1": 2,
+"2": 1
+},
+"secret": "travel plans",
+"hot": [
+true,
+true,
+false,
+false,
+false,
+false,
+false,
+true
+],
+"assigned": [
+[
+"the music playing",
+"the weather outside",
+"the weather outside",
+"the weather outside"
+],
+[
+"travel plans",
+"the weather outside",
+"the weather outside",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"the music playing",
+"the music playing",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"travel plans",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"the music playing",
+"the music playing",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the weather outside",
+"the dealer's style"
+],
+[
+"travel plans",
+"the dealer's style",
+"last night's game on TV",
+"the dealer's style"
+],
+[
+"travel plans",
+"travel plans",
+"the music playing",
+"the dealer's style"
+]
+],
+"favourite": [
+"the dealer's style",
+"the weather outside",
+"the weather outside",
+"the music playing"
+]
+},
+{
+"game": "h060",
+"mode": "control",
+"names": [
+"Ben Okafor",
+"Gwen Hall",
+"Chloe Park",
+"Kira Novak"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"1": 2,
+"2": 1,
+"0": 3,
+"3": 0
+},
+"secret": null,
+"hot": [
+false,
+true,
+false,
+false,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the weather outside",
+"the dealer's style",
+"the dealer's style",
+"travel plans"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"last night's game on TV",
+"the music playing"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the food at the casino",
+"the music playing"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"the food at the casino",
+"the weather outside"
+],
+[
+"the weather outside",
+"the food at the casino",
+"last night's game on TV",
+"travel plans"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the dealer's style",
+"travel plans"
+],
+[
+"the weather outside",
+"the dealer's style",
+"last night's game on TV",
+"travel plans"
+],
+[
+"travel plans",
+"the food at the casino",
+"the weather outside",
+"the food at the casino"
+]
+],
+"favourite": [
+"the weather outside",
+"the food at the casino",
+"last night's game on TV",
+"travel plans"
+]
+},
+{
+"game": "h061",
+"mode": "control",
+"names": [
+"Gwen Hall",
+"Jon Berg",
+"Femi Adeyemi",
+"Chloe Park"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"0": 3,
+"3": 0,
+"2": 1,
+"1": 2
+},
+"secret": null,
+"hot": [
+false,
+false,
+true,
+true,
+false,
+true,
+true,
+false
+],
+"assigned": [
+[
+"the dealer's style",
+"last night's game on TV",
+"last night's game on TV",
+"the weather outside"
+],
+[
+"the weather outside",
+"the music playing",
+"the dealer's style",
+"the music playing"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"travel plans",
+"last night's game on TV"
+],
+[
+"last night's game on TV",
+"the food at the casino",
+"last night's game on TV",
+"the music playing"
+],
+[
+"the food at the casino",
+"travel plans",
+"the dealer's style",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"travel plans",
+"travel plans",
+"the food at the casino"
+],
+[
+"the music playing",
+"travel plans",
+"travel plans",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"last night's game on TV",
+"the music playing"
+]
+],
+"favourite": [
+"the music playing",
+"last night's game on TV",
+"the dealer's style",
+"last night's game on TV"
+]
+},
+{
+"game": "h062",
+"mode": "control",
+"names": [
+"Jon Berg",
+"Ana Ruiz",
+"Hiro Tanaka",
+"Chloe Park"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"2": 0,
+"0": 2,
+"1": 3,
+"3": 1
+},
+"secret": null,
+"hot": [
+false,
+false,
+true,
+false,
+false,
+true,
+false,
+true
+],
+"assigned": [
+[
+"the weather outside",
+"the food at the casino",
+"the food at the casino",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"the weather outside",
+"travel plans"
+],
+[
+"last night's game on TV",
+"the food at the casino",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"the weather outside",
+"the weather outside",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the music playing",
+"the weather outside"
+],
+[
+"the music playing",
+"the food at the casino",
+"the weather outside",
+"travel plans"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the weather outside",
+"travel plans"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"travel plans",
+"the dealer's style"
+]
+],
+"favourite": [
+"the dealer's style",
+"the food at the casino",
+"the weather outside",
+"travel plans"
+]
+},
+{
+"game": "h063",
+"mode": "control",
+"names": [
+"Gwen Hall",
+"Luca Rossi",
+"Ana Ruiz",
+"Elif Kaya"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"2": 3,
+"3": 2,
+"1": 0,
+"0": 1
+},
+"secret": null,
+"hot": [
+false,
+true,
+true,
+true,
+false,
+false,
+false,
+true
+],
+"assigned": [
+[
+"the food at the casino",
+"the dealer's style",
+"travel plans",
+"the food at the casino"
+],
+[
+"the music playing",
+"travel plans",
+"the dealer's style",
+"travel plans"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"last night's game on TV",
+"travel plans"
+],
+[
+"the weather outside",
+"travel plans",
+"the weather outside",
+"travel plans"
+],
+[
+"the music playing",
+"the music playing",
+"last night's game on TV",
+"the music playing"
+],
+[
+"the dealer's style",
+"the weather outside",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"the weather outside",
+"travel plans",
+"the music playing",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"the food at the casino",
+"the weather outside",
+"last night's game on TV"
+]
+],
+"favourite": [
+"the music playing",
+"travel plans",
+"the dealer's style",
+"the food at the casino"
+]
+},
+{
+"game": "h064",
+"mode": "control",
+"names": [
+"Ben Okafor",
+"Hiro Tanaka",
+"Ines Silva",
+"Jon Berg"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"1": 3,
+"3": 1,
+"0": 2,
+"2": 0
+},
+"secret": null,
+"hot": [
+true,
+false,
+false,
+true,
+true,
+false,
+false,
+true
+],
+"assigned": [
+[
+"the food at the casino",
+"the dealer's style",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"the weather outside",
+"the weather outside",
+"travel plans",
+"the food at the casino"
+],
+[
+"the weather outside",
+"the dealer's style",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"last night's game on TV",
+"the weather outside"
+],
+[
+"last night's game on TV",
+"the food at the casino",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"travel plans",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the weather outside",
+"the weather outside",
+"the music playing",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"the weather outside",
+"the dealer's style",
+"the food at the casino"
+]
+],
+"favourite": [
+"last night's game on TV",
+"the dealer's style",
+"the dealer's style",
+"the food at the casino"
+]
+},
+{
+"game": "h065",
+"mode": "control",
+"names": [
+"Gwen Hall",
+"Jon Berg",
+"Hiro Tanaka",
+"Ana Ruiz"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"0": 2,
+"2": 0,
+"1": 3,
+"3": 1
+},
+"secret": null,
+"hot": [
+true,
+false,
+true,
+false,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"last night's game on TV",
+"travel plans",
+"the weather outside",
+"travel plans"
+],
+[
+"last night's game on TV",
+"the music playing",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"last night's game on TV",
+"the music playing",
+"travel plans",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"the weather outside",
+"last night's game on TV"
+],
+[
+"the music playing",
+"the music playing",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"the music playing",
+"travel plans",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"the music playing",
+"the weather outside",
+"the music playing"
+],
+[
+"travel plans",
+"the weather outside",
+"the weather outside",
+"travel plans"
+]
+],
+"favourite": [
+"last night's game on TV",
+"the music playing",
+"travel plans",
+"the dealer's style"
+]
+},
+{
+"game": "h066",
+"mode": "control",
+"names": [
+"Ben Okafor",
+"Kira Novak",
+"Jon Berg",
+"Ines Silva"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"2": 1,
+"1": 2,
+"3": 0,
+"0": 3
+},
+"secret": null,
+"hot": [
+false,
+false,
+true,
+false,
+false,
+true,
+false,
+true
+],
+"assigned": [
+[
+"last night's game on TV",
+"the music playing",
+"the dealer's style",
+"travel plans"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"travel plans",
+"the weather outside"
+],
+[
+"travel plans",
+"travel plans",
+"last night's game on TV",
+"the weather outside"
+],
+[
+"the dealer's style",
+"travel plans",
+"last night's game on TV",
+"the weather outside"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"travel plans",
+"the weather outside"
+],
+[
+"last night's game on TV",
+"the music playing",
+"the dealer's style",
+"the weather outside"
+],
+[
+"the music playing",
+"the weather outside",
+"the food at the casino",
+"travel plans"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the weather outside",
+"last night's game on TV"
+]
+],
+"favourite": [
+"the dealer's style",
+"travel plans",
+"the weather outside",
+"the weather outside"
+]
+},
+{
+"game": "h067",
+"mode": "control",
+"names": [
+"Gwen Hall",
+"Ana Ruiz",
+"Kira Novak",
+"Ines Silva"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"0": 2,
+"2": 0,
+"3": 1,
+"1": 3
+},
+"secret": null,
+"hot": [
+false,
+false,
+false,
+false,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the music playing",
+"last night's game on TV",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"the music playing",
+"the food at the casino",
+"the dealer's style",
+"last night's game on TV"
+],
+[
+"the food at the casino",
+"last night's game on TV",
+"the dealer's style",
+"the music playing"
+],
+[
+"the music playing",
+"the food at the casino",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"travel plans",
+"last night's game on TV",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"the music playing",
+"the music playing",
+"last night's game on TV",
+"the music playing"
+],
+[
+"travel plans",
+"last night's game on TV",
+"travel plans",
+"the food at the casino"
+],
+[
+"the music playing",
+"the food at the casino",
+"the music playing",
+"last night's game on TV"
+]
+],
+"favourite": [
+"the music playing",
+"last night's game on TV",
+"the music playing",
+"last night's game on TV"
+]
+},
+{
+"game": "h068",
+"mode": "control",
+"names": [
+"Gwen Hall",
+"Luca Rossi",
+"Femi Adeyemi",
+"Dev Mehta"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"0": 1,
+"1": 0,
+"3": 2,
+"2": 3
+},
+"secret": null,
+"hot": [
+true,
+false,
+false,
+true,
+false,
+true,
+false,
+true
+],
+"assigned": [
+[
+"travel plans",
+"last night's game on TV",
+"the food at the casino",
+"travel plans"
+],
+[
+"travel plans",
+"the food at the casino",
+"last night's game on TV",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"last night's game on TV",
+"the food at the casino",
+"the weather outside"
+],
+[
+"travel plans",
+"the food at the casino",
+"travel plans",
+"travel plans"
+],
+[
+"last night's game on TV",
+"travel plans",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"travel plans",
+"the food at the casino"
+],
+[
+"travel plans",
+"the weather outside",
+"last night's game on TV",
+"the music playing"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"the dealer's style",
+"the dealer's style"
+]
+],
+"favourite": [
+"last night's game on TV",
+"the food at the casino",
+"the food at the casino",
+"the food at the casino"
+]
+},
+{
+"game": "h069",
+"mode": "control",
+"names": [
+"Jon Berg",
+"Gwen Hall",
+"Ana Ruiz",
+"Luca Rossi"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"1": 0,
+"0": 1,
+"3": 2,
+"2": 3
+},
+"secret": null,
+"hot": [
+false,
+false,
+true,
+false,
+false,
+false,
+true,
+false
+],
+"assigned": [
+[
+"last night's game on TV",
+"travel plans",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"last night's game on TV",
+"the food at the casino",
+"the food at the casino",
+"the music playing"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"the food at the casino",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"travel plans",
+"the dealer's style",
+"last night's game on TV"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"the food at the casino",
+"the music playing",
+"the food at the casino",
+"the music playing"
+],
+[
+"last night's game on TV",
+"the music playing",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"the food at the casino",
+"travel plans"
+]
+],
+"favourite": [
+"last night's game on TV",
+"travel plans",
+"last night's game on TV",
+"last night's game on TV"
+]
+},
+{
+"game": "h070",
+"mode": "control",
+"names": [
+"Femi Adeyemi",
+"Kira Novak",
+"Hiro Tanaka",
+"Ana Ruiz"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"0": 2,
+"2": 0,
+"1": 3,
+"3": 1
+},
+"secret": null,
+"hot": [
+false,
+false,
+false,
+false,
+false,
+true,
+true,
+false
+],
+"assigned": [
+[
+"the dealer's style",
+"the dealer's style",
+"the food at the casino",
+"the weather outside"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"the weather outside",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"the weather outside",
+"the food at the casino",
+"the food at the casino"
+],
+[
+"travel plans",
+"the music playing",
+"the weather outside",
+"travel plans"
+],
+[
+"the music playing",
+"the dealer's style",
+"last night's game on TV",
+"the dealer's style"
+],
+[
+"travel plans",
+"last night's game on TV",
+"the food at the casino",
+"travel plans"
+],
+[
+"travel plans",
+"travel plans",
+"the weather outside",
+"the music playing"
+],
+[
+"last night's game on TV",
+"the music playing",
+"the food at the casino",
+"the dealer's style"
+]
+],
+"favourite": [
+"the music playing",
+"the dealer's style",
+"the food at the casino",
+"travel plans"
+]
+},
+{
+"game": "h071",
+"mode": "control",
+"names": [
+"Chloe Park",
+"Jon Berg",
+"Ines Silva",
+"Ana Ruiz"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"1": 3,
+"3": 1,
+"0": 2,
+"2": 0
+},
+"secret": null,
+"hot": [
+false,
+true,
+false,
+false,
+true,
+false,
+false,
+true
+],
+"assigned": [
+[
+"last night's game on TV",
+"the weather outside",
+"the weather outside",
+"the weather outside"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"travel plans",
+"travel plans"
+],
+[
+"the music playing",
+"the music playing",
+"the music playing",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"the dealer's style",
+"the music playing"
+],
+[
+"the food at the casino",
+"the weather outside",
+"travel plans",
+"the dealer's style"
+],
+[
+"travel plans",
+"the weather outside",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"last night's game on TV",
+"travel plans",
+"the dealer's style"
+]
+],
+"favourite": [
+"last night's game on TV",
+"last night's game on TV",
+"travel plans",
+"the food at the casino"
+]
+},
+{
+"game": "h072",
+"mode": "control",
+"names": [
+"Jon Berg",
+"Gwen Hall",
+"Ines Silva",
+"Chloe Park"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"3": 2,
+"2": 3,
+"1": 0,
+"0": 1
+},
+"secret": null,
+"hot": [
+false,
+false,
+false,
+false,
+true,
+false,
+true,
+false
+],
+"assigned": [
+[
+"the music playing",
+"the food at the casino",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"the food at the casino",
+"the weather outside"
+],
+[
+"the dealer's style",
+"the weather outside",
+"last night's game on TV",
+"the music playing"
+],
+[
+"travel plans",
+"the weather outside",
+"travel plans",
+"the music playing"
+],
+[
+"the weather outside",
+"the weather outside",
+"the food at the casino",
+"travel plans"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"the weather outside",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"last night's game on TV",
+"the weather outside"
+],
+[
+"the weather outside",
+"the food at the casino",
+"the food at the casino",
+"the food at the casino"
+]
+],
+"favourite": [
+"last night's game on TV",
+"the weather outside",
+"travel plans",
+"the food at the casino"
+]
+},
+{
+"game": "h073",
+"mode": "control",
+"names": [
+"Jon Berg",
+"Dev Mehta",
+"Kira Novak",
+"Ben Okafor"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"0": 2,
+"2": 0,
+"3": 1,
+"1": 3
+},
+"secret": null,
+"hot": [
+false,
+true,
+true,
+false,
+true,
+true,
+true,
+false
+],
+"assigned": [
+[
+"the music playing",
+"travel plans",
+"the food at the casino",
+"the weather outside"
+],
+[
+"the food at the casino",
+"the weather outside",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"travel plans",
+"last night's game on TV",
+"the weather outside"
+],
+[
+"the dealer's style",
+"travel plans",
+"the music playing",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"the food at the casino",
+"travel plans",
+"the weather outside"
+],
+[
+"travel plans",
+"the weather outside",
+"the dealer's style",
+"last night's game on TV"
+],
+[
+"travel plans",
+"the dealer's style",
+"the dealer's style",
+"the weather outside"
+],
+[
+"the music playing",
+"travel plans",
+"the music playing",
+"the dealer's style"
+]
+],
+"favourite": [
+"the food at the casino",
+"the dealer's style",
+"last night's game on TV",
+"last night's game on TV"
+]
+},
+{
+"game": "h074",
+"mode": "control",
+"names": [
+"Ines Silva",
+"Gwen Hall",
+"Femi Adeyemi",
+"Chloe Park"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"1": 3,
+"3": 1,
+"0": 2,
+"2": 0
+},
+"secret": null,
+"hot": [
+false,
+true,
+true,
+false,
+false,
+true,
+false,
+true
+],
+"assigned": [
+[
+"last night's game on TV",
+"the food at the casino",
+"the music playing",
+"the weather outside"
+],
+[
+"the food at the casino",
+"the weather outside",
+"the food at the casino",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the music playing",
+"the food at the casino",
+"the music playing",
+"the music playing"
+],
+[
+"the food at the casino",
+"last night's game on TV",
+"the music playing",
+"the weather outside"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the music playing",
+"the weather outside"
+],
+[
+"the weather outside",
+"the food at the casino",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"the dealer's style",
+"the food at the casino"
+]
+],
+"favourite": [
+"the food at the casino",
+"the music playing",
+"the music playing",
+"the music playing"
+]
+},
+{
+"game": "h075",
+"mode": "control",
+"names": [
+"Kira Novak",
+"Hiro Tanaka",
+"Femi Adeyemi",
+"Chloe Park"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"3": 0,
+"0": 3,
+"1": 2,
+"2": 1
+},
+"secret": null,
+"hot": [
+false,
+false,
+false,
+false,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the dealer's style",
+"last night's game on TV",
+"last night's game on TV",
+"the dealer's style"
+],
+[
+"the music playing",
+"the dealer's style",
+"last night's game on TV",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"the food at the casino",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"the dealer's style",
+"last night's game on TV",
+"the music playing"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the weather outside",
+"the weather outside"
+],
+[
+"the weather outside",
+"travel plans",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"travel plans",
+"travel plans",
+"the weather outside",
+"the weather outside"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"the weather outside",
+"the weather outside"
+]
+],
+"favourite": [
+"the weather outside",
+"the dealer's style",
+"last night's game on TV",
+"the weather outside"
+]
+},
+{
+"game": "h076",
+"mode": "control",
+"names": [
+"Dev Mehta",
+"Ben Okafor",
+"Ines Silva",
+"Ana Ruiz"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"2": 3,
+"3": 2,
+"1": 0,
+"0": 1
+},
+"secret": null,
+"hot": [
+false,
+false,
+false,
+true,
+false,
+false,
+true,
+true
+],
+"assigned": [
+[
+"the music playing",
+"the weather outside",
+"the weather outside",
+"the weather outside"
+],
+[
+"the weather outside",
+"the weather outside",
+"the dealer's style",
+"the weather outside"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"the music playing",
+"the weather outside"
+],
+[
+"last night's game on TV",
+"travel plans",
+"the music playing",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"the dealer's style",
+"the music playing"
+],
+[
+"the music playing",
+"the food at the casino",
+"the music playing",
+"the music playing"
+],
+[
+"the food at the casino",
+"last night's game on TV",
+"travel plans",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"the dealer's style",
+"the weather outside",
+"the dealer's style"
+]
+],
+"favourite": [
+"the weather outside",
+"the weather outside",
+"the weather outside",
+"the food at the casino"
+]
+},
+{
+"game": "h077",
+"mode": "control",
+"names": [
+"Chloe Park",
+"Kira Novak",
+"Dev Mehta",
+"Femi Adeyemi"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"0": 2,
+"2": 0,
+"1": 3,
+"3": 1
+},
+"secret": null,
+"hot": [
+false,
+false,
+false,
+false,
+false,
+true,
+false,
+true
+],
+"assigned": [
+[
+"the weather outside",
+"the weather outside",
+"the dealer's style",
+"last night's game on TV"
+],
+[
+"the food at the casino",
+"the music playing",
+"travel plans",
+"the weather outside"
+],
+[
+"the food at the casino",
+"the music playing",
+"the music playing",
+"last night's game on TV"
+],
+[
+"the music playing",
+"the music playing",
+"travel plans",
+"last night's game on TV"
+],
+[
+"travel plans",
+"the music playing",
+"the weather outside",
+"last night's game on TV"
+],
+[
+"last night's game on TV",
+"travel plans",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"travel plans",
+"the music playing",
+"the food at the casino",
+"travel plans"
+],
+[
+"last night's game on TV",
+"the music playing",
+"the weather outside",
+"last night's game on TV"
+]
+],
+"favourite": [
+"last night's game on TV",
+"the music playing",
+"the music playing",
+"last night's game on TV"
+]
+},
+{
+"game": "h078",
+"mode": "control",
+"names": [
+"Jon Berg",
+"Hiro Tanaka",
+"Chloe Park",
+"Dev Mehta"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"2": 1,
+"1": 2,
+"3": 0,
+"0": 3
+},
+"secret": null,
+"hot": [
+false,
+false,
+false,
+false,
+false,
+false,
+true,
+true
+],
+"assigned": [
+[
+"the music playing",
+"last night's game on TV",
+"last night's game on TV",
+"travel plans"
+],
+[
+"travel plans",
+"last night's game on TV",
+"the dealer's style",
+"the music playing"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"the dealer's style",
+"the music playing"
+],
+[
+"travel plans",
+"last night's game on TV",
+"the weather outside",
+"travel plans"
+],
+[
+"travel plans",
+"last night's game on TV",
+"last night's game on TV",
+"the music playing"
+],
+[
+"travel plans",
+"the dealer's style",
+"travel plans",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"the weather outside",
+"the food at the casino",
+"the weather outside"
+],
+[
+"the weather outside",
+"the music playing",
+"the dealer's style",
+"the dealer's style"
+]
+],
+"favourite": [
+"travel plans",
+"travel plans",
+"the dealer's style",
+"the music playing"
+]
+},
+{
+"game": "h079",
+"mode": "control",
+"names": [
+"Ines Silva",
+"Elif Kaya",
+"Chloe Park",
+"Luca Rossi"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"1": 3,
+"3": 1,
+"2": 0,
+"0": 2
+},
+"secret": null,
+"hot": [
+true,
+true,
+true,
+true,
+true,
+false,
+false,
+true
+],
+"assigned": [
+[
+"the weather outside",
+"the weather outside",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"the food at the casino",
+"last night's game on TV",
+"the dealer's style",
+"the music playing"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"travel plans",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"travel plans",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"the music playing",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"the weather outside",
+"the dealer's style",
+"the dealer's style",
+"the weather outside"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"the music playing",
+"last night's game on TV"
+]
+],
+"favourite": [
+"the weather outside",
+"the weather outside",
+"the dealer's style",
+"the dealer's style"
+]
+},
+{
+"game": "h080",
+"mode": "control",
+"names": [
+"Jon Berg",
+"Femi Adeyemi",
+"Hiro Tanaka",
+"Dev Mehta"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"0": 1,
+"1": 0,
+"2": 3,
+"3": 2
+},
+"secret": null,
+"hot": [
+false,
+false,
+false,
+true,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the food at the casino",
+"the music playing",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"travel plans",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"travel plans",
+"the dealer's style",
+"the music playing"
+],
+[
+"the dealer's style",
+"travel plans",
+"the weather outside",
+"the weather outside"
+],
+[
+"travel plans",
+"last night's game on TV",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"travel plans",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"the food at the casino",
+"travel plans"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"the music playing",
+"travel plans"
+]
+],
+"favourite": [
+"the food at the casino",
+"travel plans",
+"the dealer's style",
+"last night's game on TV"
+]
+},
+{
+"game": "h081",
+"mode": "control",
+"names": [
+"Hiro Tanaka",
+"Gwen Hall",
+"Femi Adeyemi",
+"Kira Novak"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"2": 3,
+"3": 2,
+"0": 1,
+"1": 0
+},
+"secret": null,
+"hot": [
+false,
+false,
+false,
+false,
+false,
+true,
+true,
+true
+],
+"assigned": [
+[
+"the music playing",
+"travel plans",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the music playing",
+"last night's game on TV",
+"travel plans",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"the food at the casino",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"last night's game on TV",
+"travel plans"
+],
+[
+"the music playing",
+"travel plans",
+"the weather outside",
+"the dealer's style"
+],
+[
+"travel plans",
+"the weather outside",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"the weather outside",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"travel plans",
+"the music playing",
+"the dealer's style",
+"travel plans"
+]
+],
+"favourite": [
+"the music playing",
+"the weather outside",
+"the weather outside",
+"the food at the casino"
+]
+},
+{
+"game": "h082",
+"mode": "control",
+"names": [
+"Elif Kaya",
+"Gwen Hall",
+"Ines Silva",
+"Luca Rossi"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"1": 0,
+"0": 1,
+"3": 2,
+"2": 3
+},
+"secret": null,
+"hot": [
+false,
+true,
+true,
+true,
+false,
+true,
+false,
+false
+],
+"assigned": [
+[
+"travel plans",
+"the music playing",
+"the weather outside",
+"travel plans"
+],
+[
+"the food at the casino",
+"the weather outside",
+"the weather outside",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"travel plans",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"the weather outside",
+"travel plans",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"travel plans",
+"last night's game on TV",
+"travel plans"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the weather outside",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"the food at the casino",
+"the food at the casino",
+"the food at the casino"
+],
+[
+"the weather outside",
+"the dealer's style",
+"the dealer's style",
+"the weather outside"
+]
+],
+"favourite": [
+"the music playing",
+"travel plans",
+"the weather outside",
+"the food at the casino"
+]
+},
+{
+"game": "h083",
+"mode": "control",
+"names": [
+"Dev Mehta",
+"Elif Kaya",
+"Hiro Tanaka",
+"Jon Berg"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"3": 0,
+"0": 3,
+"2": 1,
+"1": 2
+},
+"secret": null,
+"hot": [
+false,
+false,
+false,
+false,
+false,
+false,
+false,
+true
+],
+"assigned": [
+[
+"the dealer's style",
+"the music playing",
+"travel plans",
+"the weather outside"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the dealer's style",
+"the music playing"
+],
+[
+"the music playing",
+"the dealer's style",
+"the dealer's style",
+"the music playing"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"the weather outside",
+"the weather outside"
+],
+[
+"the food at the casino",
+"travel plans",
+"the weather outside",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"travel plans",
+"the music playing",
+"the weather outside"
+],
+[
+"the food at the casino",
+"last night's game on TV",
+"last night's game on TV",
+"the music playing"
+],
+[
+"the music playing",
+"travel plans",
+"the music playing",
+"the food at the casino"
+]
+],
+"favourite": [
+"the food at the casino",
+"the dealer's style",
+"the music playing",
+"the weather outside"
+]
+},
+{
+"game": "h084",
+"mode": "control",
+"names": [
+"Elif Kaya",
+"Gwen Hall",
+"Jon Berg",
+"Ana Ruiz"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"2": 3,
+"3": 2,
+"0": 1,
+"1": 0
+},
+"secret": null,
+"hot": [
+true,
+false,
+true,
+false,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"travel plans",
+"travel plans",
+"last night's game on TV",
+"the music playing"
+],
+[
+"the food at the casino",
+"the music playing",
+"the weather outside",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"the dealer's style",
+"the weather outside"
+],
+[
+"travel plans",
+"the weather outside",
+"travel plans",
+"the weather outside"
+],
+[
+"travel plans",
+"the music playing",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"travel plans",
+"travel plans",
+"the weather outside",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"the music playing",
+"the weather outside"
+],
+[
+"travel plans",
+"the music playing",
+"travel plans",
+"the weather outside"
+]
+],
+"favourite": [
+"travel plans",
+"travel plans",
+"travel plans",
+"the weather outside"
+]
+},
+{
+"game": "h085",
+"mode": "control",
+"names": [
+"Ben Okafor",
+"Dev Mehta",
+"Ines Silva",
+"Luca Rossi"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"1": 0,
+"0": 1,
+"2": 3,
+"3": 2
+},
+"secret": null,
+"hot": [
+true,
+false,
+false,
+true,
+false,
+false,
+true,
+true
+],
+"assigned": [
+[
+"the dealer's style",
+"the weather outside",
+"the dealer's style",
+"travel plans"
+],
+[
+"the weather outside",
+"the food at the casino",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"the weather outside",
+"the music playing",
+"the weather outside"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"travel plans",
+"the music playing",
+"travel plans"
+],
+[
+"travel plans",
+"travel plans",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the music playing",
+"the weather outside",
+"travel plans",
+"the music playing"
+],
+[
+"travel plans",
+"the music playing",
+"the music playing",
+"travel plans"
+]
+],
+"favourite": [
+"the weather outside",
+"travel plans",
+"the music playing",
+"travel plans"
+]
+},
+{
+"game": "h086",
+"mode": "control",
+"names": [
+"Kira Novak",
+"Ana Ruiz",
+"Chloe Park",
+"Elif Kaya"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"3": 1,
+"1": 3,
+"2": 0,
+"0": 2
+},
+"secret": null,
+"hot": [
+false,
+false,
+true,
+true,
+true,
+true,
+true,
+false
+],
+"assigned": [
+[
+"the food at the casino",
+"travel plans",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"travel plans",
+"the food at the casino",
+"travel plans",
+"the food at the casino"
+],
+[
+"travel plans",
+"the food at the casino",
+"last night's game on TV",
+"the dealer's style"
+],
+[
+"travel plans",
+"travel plans",
+"the weather outside",
+"travel plans"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"travel plans",
+"the food at the casino"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the music playing",
+"travel plans"
+],
+[
+"the weather outside",
+"travel plans",
+"the music playing",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"last night's game on TV",
+"the food at the casino"
+]
+],
+"favourite": [
+"last night's game on TV",
+"last night's game on TV",
+"last night's game on TV",
+"the dealer's style"
+]
+},
+{
+"game": "h087",
+"mode": "control",
+"names": [
+"Jon Berg",
+"Dev Mehta",
+"Luca Rossi",
+"Ana Ruiz"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"0": 2,
+"2": 0,
+"1": 3,
+"3": 1
+},
+"secret": null,
+"hot": [
+true,
+true,
+false,
+true,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the food at the casino",
+"the food at the casino",
+"the music playing",
+"the music playing"
+],
+[
+"the dealer's style",
+"travel plans",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the weather outside",
+"travel plans",
+"travel plans",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"the food at the casino",
+"travel plans",
+"travel plans"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"the food at the casino",
+"the music playing"
+],
+[
+"travel plans",
+"last night's game on TV",
+"travel plans",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"travel plans",
+"travel plans",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"the music playing",
+"the weather outside",
+"last night's game on TV"
+]
+],
+"favourite": [
+"the music playing",
+"travel plans",
+"the dealer's style",
+"the food at the casino"
+]
+},
+{
+"game": "h088",
+"mode": "control",
+"names": [
+"Jon Berg",
+"Kira Novak",
+"Elif Kaya",
+"Luca Rossi"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"3": 0,
+"0": 3,
+"2": 1,
+"1": 2
+},
+"secret": null,
+"hot": [
+true,
+false,
+false,
+false,
+false,
+true,
+false,
+false
+],
+"assigned": [
+[
+"the dealer's style",
+"the music playing",
+"travel plans",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"the food at the casino",
+"the music playing",
+"the dealer's style"
+],
+[
+"the music playing",
+"travel plans",
+"the music playing",
+"the weather outside"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"travel plans",
+"the dealer's style"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"travel plans",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"the weather outside",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"the music playing",
+"the dealer's style"
+]
+],
+"favourite": [
+"last night's game on TV",
+"the weather outside",
+"travel plans",
+"the dealer's style"
+]
+},
+{
+"game": "h089",
+"mode": "control",
+"names": [
+"Dev Mehta",
+"Luca Rossi",
+"Elif Kaya",
+"Hiro Tanaka"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"0": 3,
+"3": 0,
+"2": 1,
+"1": 2
+},
+"secret": null,
+"hot": [
+true,
+true,
+false,
+true,
+true,
+true,
+false,
+false
+],
+"assigned": [
+[
+"the weather outside",
+"the weather outside",
+"the weather outside",
+"the music playing"
+],
+[
+"travel plans",
+"the dealer's style",
+"the dealer's style",
+"the music playing"
+],
+[
+"travel plans",
+"travel plans",
+"last night's game on TV",
+"the music playing"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"travel plans",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"travel plans",
+"travel plans"
+],
+[
+"the dealer's style",
+"the music playing",
+"the music playing",
+"the food at the casino"
+],
+[
+"the music playing",
+"the food at the casino",
+"the food at the casino",
+"the dealer's style"
+]
+],
+"favourite": [
+"last night's game on TV",
+"the weather outside",
+"travel plans",
+"the music playing"
+]
+},
+{
+"game": "h090",
+"mode": "control",
+"names": [
+"Jon Berg",
+"Elif Kaya",
+"Ben Okafor",
+"Gwen Hall"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"3": 1,
+"1": 3,
+"0": 2,
+"2": 0
+},
+"secret": null,
+"hot": [
+false,
+true,
+false,
+false,
+false,
+true,
+false,
+false
+],
+"assigned": [
+[
+"the dealer's style",
+"the food at the casino",
+"the weather outside",
+"the food at the casino"
+],
+[
+"travel plans",
+"the food at the casino",
+"the food at the casino",
+"the weather outside"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"the dealer's style",
+"the music playing"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the weather outside",
+"the weather outside"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the weather outside",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"travel plans",
+"travel plans",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"travel plans",
+"last night's game on TV",
+"travel plans"
+]
+],
+"favourite": [
+"travel plans",
+"the food at the casino",
+"the weather outside",
+"the music playing"
+]
+},
+{
+"game": "h091",
+"mode": "control",
+"names": [
+"Elif Kaya",
+"Dev Mehta",
+"Hiro Tanaka",
+"Kira Novak"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"1": 2,
+"2": 1,
+"3": 0,
+"0": 3
+},
+"secret": null,
+"hot": [
+false,
+true,
+true,
+false,
+true,
+false,
+true,
+true
+],
+"assigned": [
+[
+"the music playing",
+"travel plans",
+"travel plans",
+"last night's game on TV"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"the music playing",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"travel plans",
+"the music playing",
+"last night's game on TV"
+],
+[
+"travel plans",
+"the music playing",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"travel plans",
+"the weather outside",
+"the music playing"
+],
+[
+"the music playing",
+"the dealer's style",
+"the food at the casino",
+"the music playing"
+],
+[
+"the weather outside",
+"the weather outside",
+"travel plans",
+"travel plans"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the weather outside",
+"travel plans"
+]
+],
+"favourite": [
+"the music playing",
+"the weather outside",
+"travel plans",
+"the weather outside"
+]
+},
+{
+"game": "h092",
+"mode": "control",
+"names": [
+"Kira Novak",
+"Femi Adeyemi",
+"Luca Rossi",
+"Gwen Hall"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"1": 0,
+"0": 1,
+"3": 2,
+"2": 3
+},
+"secret": null,
+"hot": [
+false,
+true,
+false,
+true,
+false,
+false,
+false,
+true
+],
+"assigned": [
+[
+"travel plans",
+"the dealer's style",
+"the music playing",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the weather outside",
+"the weather outside"
+],
+[
+"the music playing",
+"the music playing",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"the weather outside",
+"the dealer's style",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the weather outside",
+"the music playing"
+],
+[
+"the music playing",
+"the weather outside",
+"last night's game on TV",
+"the weather outside"
+],
+[
+"the weather outside",
+"the food at the casino",
+"the food at the casino",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"the music playing",
+"travel plans",
+"the dealer's style"
+]
+],
+"favourite": [
+"the weather outside",
+"the music playing",
+"the weather outside",
+"the dealer's style"
+]
+},
+{
+"game": "h093",
+"mode": "control",
+"names": [
+"Jon Berg",
+"Ana Ruiz",
+"Ines Silva",
+"Chloe Park"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"2": 0,
+"0": 2,
+"1": 3,
+"3": 1
+},
+"secret": null,
+"hot": [
+false,
+true,
+false,
+false,
+false,
+false,
+true,
+true
+],
+"assigned": [
+[
+"the music playing",
+"travel plans",
+"the food at the casino",
+"travel plans"
+],
+[
+"the food at the casino",
+"the weather outside",
+"the weather outside",
+"the food at the casino"
+],
+[
+"travel plans",
+"the dealer's style",
+"travel plans",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"last night's game on TV",
+"last night's game on TV",
+"travel plans"
+],
+[
+"the dealer's style",
+"the weather outside",
+"the weather outside",
+"the music playing"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"the weather outside",
+"the food at the casino",
+"the weather outside",
+"travel plans"
+],
+[
+"last night's game on TV",
+"the food at the casino",
+"the food at the casino",
+"the weather outside"
+]
+],
+"favourite": [
+"the music playing",
+"the food at the casino",
+"the food at the casino",
+"travel plans"
+]
+},
+{
+"game": "h094",
+"mode": "control",
+"names": [
+"Kira Novak",
+"Femi Adeyemi",
+"Dev Mehta",
+"Gwen Hall"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"2": 3,
+"3": 2,
+"1": 0,
+"0": 1
+},
+"secret": null,
+"hot": [
+false,
+false,
+false,
+false,
+false,
+false,
+true,
+false
+],
+"assigned": [
+[
+"the weather outside",
+"the weather outside",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"the weather outside",
+"the dealer's style",
+"the dealer's style",
+"last night's game on TV"
+],
+[
+"travel plans",
+"travel plans",
+"travel plans",
+"the weather outside"
+],
+[
+"the music playing",
+"the music playing",
+"the music playing",
+"the music playing"
+],
+[
+"the weather outside",
+"the music playing",
+"the weather outside",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"the music playing",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"travel plans",
+"the food at the casino",
+"the dealer's style",
+"the music playing"
+],
+[
+"the music playing",
+"the weather outside",
+"travel plans",
+"the music playing"
+]
+],
+"favourite": [
+"the music playing",
+"the music playing",
+"the dealer's style",
+"the dealer's style"
+]
+},
+{
+"game": "h095",
+"mode": "control",
+"names": [
+"Ines Silva",
+"Chloe Park",
+"Dev Mehta",
+"Elif Kaya"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"2": 3,
+"3": 2,
+"0": 1,
+"1": 0
+},
+"secret": null,
+"hot": [
+false,
+false,
+false,
+false,
+false,
+false,
+true,
+true
+],
+"assigned": [
+[
+"the music playing",
+"last night's game on TV",
+"travel plans",
+"the weather outside"
+],
+[
+"the food at the casino",
+"travel plans",
+"travel plans",
+"the food at the casino"
+],
+[
+"the weather outside",
+"travel plans",
+"travel plans",
+"the weather outside"
+],
+[
+"travel plans",
+"travel plans",
+"travel plans",
+"the weather outside"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"travel plans",
+"the food at the casino"
+],
+[
+"travel plans",
+"the dealer's style",
+"the dealer's style",
+"travel plans"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the weather outside",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"travel plans",
+"travel plans",
+"travel plans"
+]
+],
+"favourite": [
+"the music playing",
+"the music playing",
+"travel plans",
+"the weather outside"
+]
+},
+{
+"game": "h096",
+"mode": "control",
+"names": [
+"Elif Kaya",
+"Femi Adeyemi",
+"Ana Ruiz",
+"Gwen Hall"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"1": 2,
+"2": 1,
+"3": 0,
+"0": 3
+},
+"secret": null,
+"hot": [
+true,
+false,
+true,
+false,
+false,
+true,
+true,
+false
+],
+"assigned": [
+[
+"last night's game on TV",
+"the weather outside",
+"the food at the casino",
+"the music playing"
+],
+[
+"the music playing",
+"travel plans",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"the weather outside",
+"travel plans",
+"the food at the casino",
+"the weather outside"
+],
+[
+"the weather outside",
+"the weather outside",
+"last night's game on TV",
+"the music playing"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"the food at the casino",
+"the music playing"
+],
+[
+"the dealer's style",
+"the weather outside",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"the dealer's style",
+"the music playing"
+]
+],
+"favourite": [
+"the music playing",
+"travel plans",
+"the food at the casino",
+"the music playing"
+]
+},
+{
+"game": "h097",
+"mode": "control",
+"names": [
+"Dev Mehta",
+"Elif Kaya",
+"Gwen Hall",
+"Ben Okafor"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"1": 2,
+"2": 1,
+"0": 3,
+"3": 0
+},
+"secret": null,
+"hot": [
+false,
+false,
+true,
+false,
+false,
+false,
+true,
+true
+],
+"assigned": [
+[
+"last night's game on TV",
+"the music playing",
+"the weather outside",
+"the music playing"
+],
+[
+"last night's game on TV",
+"the music playing",
+"travel plans",
+"the food at the casino"
+],
+[
+"travel plans",
+"travel plans",
+"travel plans",
+"the weather outside"
+],
+[
+"travel plans",
+"travel plans",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"the music playing",
+"the music playing",
+"the music playing",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the food at the casino",
+"travel plans"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"the dealer's style",
+"the music playing"
+]
+],
+"favourite": [
+"last night's game on TV",
+"last night's game on TV",
+"last night's game on TV",
+"the food at the casino"
+]
+},
+{
+"game": "h098",
+"mode": "control",
+"names": [
+"Kira Novak",
+"Ana Ruiz",
+"Hiro Tanaka",
+"Jon Berg"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"1": 2,
+"2": 1,
+"3": 0,
+"0": 3
+},
+"secret": null,
+"hot": [
+true,
+false,
+true,
+false,
+true,
+false,
+true,
+true
+],
+"assigned": [
+[
+"the music playing",
+"last night's game on TV",
+"travel plans",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"travel plans",
+"last night's game on TV",
+"the weather outside"
+],
+[
+"the dealer's style",
+"the music playing",
+"travel plans",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the weather outside",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"the music playing",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"the music playing",
+"the weather outside"
+],
+[
+"the food at the casino",
+"the music playing",
+"the music playing",
+"travel plans"
+]
+],
+"favourite": [
+"the dealer's style",
+"last night's game on TV",
+"last night's game on TV",
+"the food at the casino"
+]
+},
+{
+"game": "h099",
+"mode": "control",
+"names": [
+"Gwen Hall",
+"Ines Silva",
+"Chloe Park",
+"Femi Adeyemi"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"0": 2,
+"2": 0,
+"1": 3,
+"3": 1
+},
+"secret": null,
+"hot": [
+false,
+true,
+false,
+true,
+false,
+true,
+false,
+false
+],
+"assigned": [
+[
+"the music playing",
+"the dealer's style",
+"the music playing",
+"last night's game on TV"
+],
+[
+"last night's game on TV",
+"the music playing",
+"the dealer's style",
+"travel plans"
+],
+[
+"travel plans",
+"last night's game on TV",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"travel plans",
+"last night's game on TV",
+"the food at the casino",
+"the food at the casino"
+],
+[
+"the music playing",
+"the dealer's style",
+"the food at the casino",
+"the weather outside"
+],
+[
+"travel plans",
+"the food at the casino",
+"the food at the casino",
+"the music playing"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"the music playing",
+"travel plans",
+"the weather outside",
+"travel plans"
+]
+],
+"favourite": [
+"the dealer's style",
+"the dealer's style",
+"the food at the casino",
+"travel plans"
+]
+},
+{
+"game": "h100",
+"mode": "control",
+"names": [
+"Kira Novak",
+"Elif Kaya",
+"Chloe Park",
+"Hiro Tanaka"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"3": 2,
+"2": 3,
+"0": 1,
+"1": 0
+},
+"secret": null,
+"hot": [
+false,
+false,
+false,
+true,
+false,
+false,
+true,
+true
+],
+"assigned": [
+[
+"the weather outside",
+"the music playing",
+"the music playing",
+"the music playing"
+],
+[
+"the weather outside",
+"the food at the casino",
+"the food at the casino",
+"the food at the casino"
+],
+[
+"the weather outside",
+"the music playing",
+"the weather outside",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"travel plans",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"the music playing",
+"the food at the casino",
+"travel plans",
+"the music playing"
+],
+[
+"travel plans",
+"last night's game on TV",
+"last night's game on TV",
+"the weather outside"
+],
+[
+"the dealer's style",
+"travel plans",
+"the weather outside",
+"the music playing"
+],
+[
+"the food at the casino",
+"the music playing",
+"the food at the casino",
+"last night's game on TV"
+]
+],
+"favourite": [
+"travel plans",
+"the music playing",
+"the food at the casino",
+"the music playing"
+]
+},
+{
+"game": "h101",
+"mode": "control",
+"names": [
+"Dev Mehta",
+"Ines Silva",
+"Kira Novak",
+"Jon Berg"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"0": 1,
+"1": 0,
+"3": 2,
+"2": 3
+},
+"secret": null,
+"hot": [
+false,
+true,
+false,
+false,
+false,
+false,
+true,
+true
+],
+"assigned": [
+[
+"the weather outside",
+"last night's game on TV",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"travel plans",
+"the weather outside",
+"the dealer's style",
+"the weather outside"
+],
+[
+"the music playing",
+"the music playing",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"the music playing",
+"travel plans",
+"travel plans"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"travel plans",
+"the weather outside"
+],
+[
+"travel plans",
+"the dealer's style",
+"the dealer's style",
+"the music playing"
+],
+[
+"the food at the casino",
+"the music playing",
+"the weather outside",
+"the music playing"
+],
+[
+"the food at the casino",
+"travel plans",
+"the weather outside",
+"last night's game on TV"
+]
+],
+"favourite": [
+"the food at the casino",
+"the dealer's style",
+"the food at the casino",
+"the music playing"
+]
+},
+{
+"game": "h102",
+"mode": "control",
+"names": [
+"Luca Rossi",
+"Femi Adeyemi",
+"Chloe Park",
+"Jon Berg"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"1": 0,
+"0": 1,
+"3": 2,
+"2": 3
+},
+"secret": null,
+"hot": [
+false,
+true,
+false,
+true,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"travel plans",
+"the music playing",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the weather outside",
+"travel plans",
+"last night's game on TV",
+"last night's game on TV"
+],
+[
+"travel plans",
+"the food at the casino",
+"travel plans",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"travel plans",
+"the weather outside",
+"travel plans"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"travel plans",
+"the dealer's style"
+],
+[
+"the music playing",
+"the music playing",
+"travel plans",
+"travel plans"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"the dealer's style",
+"travel plans"
+]
+],
+"favourite": [
+"travel plans",
+"the music playing",
+"the dealer's style",
+"travel plans"
+]
+},
+{
+"game": "h103",
+"mode": "control",
+"names": [
+"Chloe Park",
+"Kira Novak",
+"Ana Ruiz",
+"Luca Rossi"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"3": 0,
+"0": 3,
+"1": 2,
+"2": 1
+},
+"secret": null,
+"hot": [
+true,
+false,
+true,
+false,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"travel plans",
+"the dealer's style",
+"last night's game on TV",
+"travel plans"
+],
+[
+"the dealer's style",
+"travel plans",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the music playing",
+"the dealer's style",
+"the dealer's style",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"travel plans",
+"the weather outside"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"the weather outside",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"travel plans",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"travel plans",
+"the music playing",
+"travel plans"
+]
+],
+"favourite": [
+"last night's game on TV",
+"the dealer's style",
+"travel plans",
+"the dealer's style"
+]
+},
+{
+"game": "h104",
+"mode": "control",
+"names": [
+"Luca Rossi",
+"Gwen Hall",
+"Kira Novak",
+"Ines Silva"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"3": 1,
+"1": 3,
+"0": 2,
+"2": 0
+},
+"secret": null,
+"hot": [
+false,
+false,
+false,
+false,
+false,
+false,
+false,
+true
+],
+"assigned": [
+[
+"the food at the casino",
+"the dealer's style",
+"the weather outside",
+"the dealer's style"
+],
+[
+"the music playing",
+"last night's game on TV",
+"travel plans",
+"travel plans"
+],
+[
+"the dealer's style",
+"travel plans",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"last night's game on TV",
+"the weather outside"
+],
+[
+"the weather outside",
+"the food at the casino",
+"last night's game on TV",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"the music playing",
+"the dealer's style",
+"the music playing"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"the music playing",
+"the music playing",
+"last night's game on TV",
+"the food at the casino"
+]
+],
+"favourite": [
+"the dealer's style",
+"the music playing",
+"last night's game on TV",
+"the dealer's style"
+]
+},
+{
+"game": "h105",
+"mode": "control",
+"names": [
+"Kira Novak",
+"Ana Ruiz",
+"Dev Mehta",
+"Luca Rossi"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"1": 3,
+"3": 1,
+"0": 2,
+"2": 0
+},
+"secret": null,
+"hot": [
+true,
+false,
+true,
+false,
+false,
+true,
+true,
+false
+],
+"assigned": [
+[
+"last night's game on TV",
+"the weather outside",
+"last night's game on TV",
+"the weather outside"
+],
+[
+"travel plans",
+"the weather outside",
+"the food at the casino",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"the music playing",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"the weather outside",
+"the weather outside",
+"the music playing"
+],
+[
+"travel plans",
+"the music playing",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"travel plans",
+"the weather outside",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"travel plans",
+"the dealer's style",
+"the music playing"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"the weather outside",
+"last night's game on TV"
+]
+],
+"favourite": [
+"the dealer's style",
+"the weather outside",
+"the weather outside",
+"the food at the casino"
+]
+},
+{
+"game": "h106",
+"mode": "control",
+"names": [
+"Gwen Hall",
+"Dev Mehta",
+"Luca Rossi",
+"Elif Kaya"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"3": 0,
+"0": 3,
+"1": 2,
+"2": 1
+},
+"secret": null,
+"hot": [
+false,
+false,
+true,
+true,
+true,
+true,
+false,
+false
+],
+"assigned": [
+[
+"the weather outside",
+"the food at the casino",
+"the music playing",
+"the weather outside"
+],
+[
+"the music playing",
+"the music playing",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the music playing",
+"the weather outside"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"last night's game on TV",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"the weather outside",
+"the weather outside",
+"travel plans"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the music playing",
+"the weather outside"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"the food at the casino",
+"the weather outside"
+]
+],
+"favourite": [
+"the food at the casino",
+"the food at the casino",
+"travel plans",
+"the weather outside"
+]
+},
+{
+"game": "h107",
+"mode": "control",
+"names": [
+"Chloe Park",
+"Gwen Hall",
+"Ines Silva",
+"Ana Ruiz"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"1": 3,
+"3": 1,
+"0": 2,
+"2": 0
+},
+"secret": null,
+"hot": [
+true,
+false,
+true,
+false,
+false,
+false,
+true,
+false
+],
+"assigned": [
+[
+"the dealer's style",
+"the dealer's style",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"the dealer's style",
+"travel plans",
+"the dealer's style"
+],
+[
+"the dealer's style",
+"the weather outside",
+"the music playing",
+"the dealer's style"
+],
+[
+"travel plans",
+"the weather outside",
+"the weather outside",
+"the music playing"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the music playing",
+"the music playing",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"the dealer's style",
+"last night's game on TV"
+],
+[
+"travel plans",
+"the dealer's style",
+"the food at the casino",
+"the weather outside"
+]
+],
+"favourite": [
+"last night's game on TV",
+"the weather outside",
+"the weather outside",
+"the dealer's style"
+]
+},
+{
+"game": "h108",
+"mode": "control",
+"names": [
+"Jon Berg",
+"Gwen Hall",
+"Ines Silva",
+"Femi Adeyemi"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"1": 3,
+"3": 1,
+"0": 2,
+"2": 0
+},
+"secret": null,
+"hot": [
+false,
+false,
+false,
+true,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the dealer's style",
+"the dealer's style",
+"last night's game on TV",
+"travel plans"
+],
+[
+"the music playing",
+"the music playing",
+"the weather outside",
+"the weather outside"
+],
+[
+"the weather outside",
+"the music playing",
+"the weather outside",
+"the food at the casino"
+],
+[
+"travel plans",
+"last night's game on TV",
+"the weather outside",
+"the dealer's style"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the weather outside",
+"travel plans"
+],
+[
+"travel plans",
+"last night's game on TV",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"the music playing",
+"the weather outside",
+"the dealer's style"
+],
+[
+"the weather outside",
+"the music playing",
+"travel plans",
+"travel plans"
+]
+],
+"favourite": [
+"the weather outside",
+"the music playing",
+"the weather outside",
+"the dealer's style"
+]
+},
+{
+"game": "h109",
+"mode": "control",
+"names": [
+"Elif Kaya",
+"Femi Adeyemi",
+"Chloe Park",
+"Dev Mehta"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"2": 3,
+"3": 2,
+"1": 0,
+"0": 1
+},
+"secret": null,
+"hot": [
+false,
+true,
+true,
+false,
+false,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the food at the casino",
+"the dealer's style",
+"the music playing",
+"last night's game on TV"
+],
+[
+"the food at the casino",
+"the music playing",
+"the music playing",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"travel plans",
+"travel plans",
+"the weather outside"
+],
+[
+"the food at the casino",
+"the weather outside",
+"the food at the casino",
+"the music playing"
+],
+[
+"the food at the casino",
+"travel plans",
+"last night's game on TV",
+"the music playing"
+],
+[
+"travel plans",
+"travel plans",
+"travel plans",
+"the weather outside"
+],
+[
+"the food at the casino",
+"travel plans",
+"last night's game on TV",
+"travel plans"
+],
+[
+"travel plans",
+"travel plans",
+"the weather outside",
+"the music playing"
+]
+],
+"favourite": [
+"the food at the casino",
+"travel plans",
+"last night's game on TV",
+"the weather outside"
+]
+},
+{
+"game": "h110",
+"mode": "control",
+"names": [
+"Kira Novak",
+"Gwen Hall",
+"Jon Berg",
+"Hiro Tanaka"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"3": 0,
+"0": 3,
+"2": 1,
+"1": 2
+},
+"secret": null,
+"hot": [
+true,
+true,
+false,
+true,
+false,
+true,
+false,
+true
+],
+"assigned": [
+[
+"last night's game on TV",
+"the weather outside",
+"last night's game on TV",
+"the dealer's style"
+],
+[
+"travel plans",
+"the food at the casino",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"the weather outside",
+"the food at the casino",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"travel plans",
+"the dealer's style",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"the music playing",
+"travel plans",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"the weather outside",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the music playing",
+"travel plans"
+],
+[
+"the music playing",
+"the food at the casino",
+"travel plans",
+"travel plans"
+]
+],
+"favourite": [
+"the food at the casino",
+"the food at the casino",
+"the music playing",
+"the food at the casino"
+]
+},
+{
+"game": "h111",
+"mode": "control",
+"names": [
+"Femi Adeyemi",
+"Luca Rossi",
+"Kira Novak",
+"Dev Mehta"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"2": 1,
+"1": 2,
+"0": 3,
+"3": 0
+},
+"secret": null,
+"hot": [
+false,
+false,
+false,
+false,
+false,
+true,
+true,
+true
+],
+"assigned": [
+[
+"the food at the casino",
+"the food at the casino",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"the weather outside",
+"the music playing",
+"travel plans",
+"the dealer's style"
+],
+[
+"travel plans",
+"the music playing",
+"the music playing",
+"the dealer's style"
+],
+[
+"travel plans",
+"last night's game on TV",
+"the weather outside",
+"the food at the casino"
+],
+[
+"travel plans",
+"the music playing",
+"the dealer's style",
+"the music playing"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"the food at the casino",
+"the weather outside"
+],
+[
+"the music playing",
+"last night's game on TV",
+"last night's game on TV",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"the food at the casino",
+"the dealer's style"
+]
+],
+"favourite": [
+"travel plans",
+"the music playing",
+"last night's game on TV",
+"the food at the casino"
+]
+},
+{
+"game": "h112",
+"mode": "control",
+"names": [
+"Luca Rossi",
+"Ana Ruiz",
+"Ben Okafor",
+"Hiro Tanaka"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"2": 3,
+"3": 2,
+"0": 1,
+"1": 0
+},
+"secret": null,
+"hot": [
+true,
+false,
+false,
+false,
+true,
+true,
+false,
+false
+],
+"assigned": [
+[
+"last night's game on TV",
+"the music playing",
+"last night's game on TV",
+"the dealer's style"
+],
+[
+"the weather outside",
+"the weather outside",
+"travel plans",
+"the music playing"
+],
+[
+"the dealer's style",
+"travel plans",
+"the music playing",
+"the music playing"
+],
+[
+"last night's game on TV",
+"travel plans",
+"the music playing",
+"the music playing"
+],
+[
+"the dealer's style",
+"last night's game on TV",
+"the dealer's style",
+"the weather outside"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"last night's game on TV",
+"the music playing"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"the weather outside",
+"travel plans"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"travel plans",
+"the food at the casino"
+]
+],
+"favourite": [
+"last night's game on TV",
+"last night's game on TV",
+"the dealer's style",
+"the music playing"
+]
+},
+{
+"game": "h113",
+"mode": "control",
+"names": [
+"Dev Mehta",
+"Kira Novak",
+"Elif Kaya",
+"Chloe Park"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"3": 1,
+"1": 3,
+"0": 2,
+"2": 0
+},
+"secret": null,
+"hot": [
+true,
+false,
+false,
+true,
+false,
+true,
+true,
+true
+],
+"assigned": [
+[
+"last night's game on TV",
+"the food at the casino",
+"travel plans",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"the music playing",
+"the dealer's style",
+"the music playing"
+],
+[
+"the music playing",
+"the dealer's style",
+"the weather outside",
+"the dealer's style"
+],
+[
+"the music playing",
+"the weather outside",
+"the food at the casino",
+"the music playing"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the weather outside",
+"the food at the casino"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the dealer's style",
+"the food at the casino"
+],
+[
+"the music playing",
+"the food at the casino",
+"the food at the casino",
+"travel plans"
+],
+[
+"the weather outside",
+"the weather outside",
+"the music playing",
+"travel plans"
+]
+],
+"favourite": [
+"the music playing",
+"the weather outside",
+"the dealer's style",
+"the food at the casino"
+]
+},
+{
+"game": "h114",
+"mode": "control",
+"names": [
+"Jon Berg",
+"Gwen Hall",
+"Dev Mehta",
+"Ines Silva"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"0": 1,
+"1": 0,
+"2": 3,
+"3": 2
+},
+"secret": null,
+"hot": [
+false,
+false,
+true,
+false,
+true,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the music playing",
+"the weather outside",
+"travel plans",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"travel plans",
+"the food at the casino",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"travel plans",
+"the dealer's style",
+"travel plans"
+],
+[
+"travel plans",
+"travel plans",
+"travel plans",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"the weather outside",
+"the dealer's style",
+"the music playing"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"the weather outside",
+"the weather outside"
+],
+[
+"the music playing",
+"the weather outside",
+"travel plans",
+"the weather outside"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the weather outside",
+"the dealer's style"
+]
+],
+"favourite": [
+"the music playing",
+"last night's game on TV",
+"the dealer's style",
+"the dealer's style"
+]
+},
+{
+"game": "h115",
+"mode": "control",
+"names": [
+"Dev Mehta",
+"Gwen Hall",
+"Kira Novak",
+"Ines Silva"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"3": 0,
+"0": 3,
+"2": 1,
+"1": 2
+},
+"secret": null,
+"hot": [
+true,
+false,
+false,
+true,
+false,
+true,
+true,
+false
+],
+"assigned": [
+[
+"the dealer's style",
+"the food at the casino",
+"the music playing",
+"the dealer's style"
+],
+[
+"travel plans",
+"the weather outside",
+"the dealer's style",
+"last night's game on TV"
+],
+[
+"the music playing",
+"the dealer's style",
+"the weather outside",
+"the dealer's style"
+],
+[
+"the food at the casino",
+"the dealer's style",
+"last night's game on TV",
+"the dealer's style"
+],
+[
+"the music playing",
+"the dealer's style",
+"the music playing",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"the weather outside",
+"the music playing"
+],
+[
+"last night's game on TV",
+"the music playing",
+"the weather outside",
+"travel plans"
+],
+[
+"the food at the casino",
+"last night's game on TV",
+"the food at the casino",
+"the music playing"
+]
+],
+"favourite": [
+"the music playing",
+"last night's game on TV",
+"the weather outside",
+"the dealer's style"
+]
+},
+{
+"game": "h116",
+"mode": "control",
+"names": [
+"Ana Ruiz",
+"Chloe Park",
+"Hiro Tanaka",
+"Gwen Hall"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"0": 3,
+"3": 0,
+"2": 1,
+"1": 2
+},
+"secret": null,
+"hot": [
+true,
+false,
+false,
+false,
+true,
+true,
+true,
+false
+],
+"assigned": [
+[
+"the weather outside",
+"the weather outside",
+"last night's game on TV",
+"the music playing"
+],
+[
+"travel plans",
+"the weather outside",
+"travel plans",
+"last night's game on TV"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"travel plans",
+"the music playing"
+],
+[
+"the music playing",
+"last night's game on TV",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"the dealer's style",
+"the music playing"
+],
+[
+"travel plans",
+"the weather outside",
+"the food at the casino",
+"the weather outside"
+],
+[
+"the music playing",
+"the food at the casino",
+"last night's game on TV",
+"the weather outside"
+],
+[
+"last night's game on TV",
+"last night's game on TV",
+"the food at the casino",
+"the weather outside"
+]
+],
+"favourite": [
+"last night's game on TV",
+"the weather outside",
+"last night's game on TV",
+"the dealer's style"
+]
+},
+{
+"game": "h117",
+"mode": "control",
+"names": [
+"Kira Novak",
+"Elif Kaya",
+"Luca Rossi",
+"Femi Adeyemi"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"1": 0,
+"0": 1,
+"2": 3,
+"3": 2
+},
+"secret": null,
+"hot": [
+false,
+true,
+false,
+true,
+true,
+false,
+false,
+false
+],
+"assigned": [
+[
+"the dealer's style",
+"the weather outside",
+"last night's game on TV",
+"travel plans"
+],
+[
+"the music playing",
+"the music playing",
+"the food at the casino",
+"the music playing"
+],
+[
+"the food at the casino",
+"travel plans",
+"the food at the casino",
+"the weather outside"
+],
+[
+"the music playing",
+"the weather outside",
+"travel plans",
+"last night's game on TV"
+],
+[
+"last night's game on TV",
+"the dealer's style",
+"last night's game on TV",
+"travel plans"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the music playing",
+"the food at the casino"
+],
+[
+"the music playing",
+"the weather outside",
+"last night's game on TV",
+"the food at the casino"
+],
+[
+"the food at the casino",
+"the food at the casino",
+"the music playing",
+"travel plans"
+]
+],
+"favourite": [
+"the music playing",
+"the weather outside",
+"the food at the casino",
+"the music playing"
+]
+},
+{
+"game": "h118",
+"mode": "control",
+"names": [
+"Ines Silva",
+"Elif Kaya",
+"Ben Okafor",
+"Femi Adeyemi"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"2": 0,
+"0": 2,
+"1": 3,
+"3": 1
+},
+"secret": null,
+"hot": [
+false,
+false,
+true,
+true,
+false,
+false,
+true,
+false
+],
+"assigned": [
+[
+"the music playing",
+"last night's game on TV",
+"the music playing",
+"the weather outside"
+],
+[
+"the music playing",
+"the food at the casino",
+"the weather outside",
+"the dealer's style"
+],
+[
+"last night's game on TV",
+"the weather outside",
+"the food at the casino",
+"the weather outside"
+],
+[
+"the music playing",
+"travel plans",
+"the food at the casino",
+"the weather outside"
+],
+[
+"the food at the casino",
+"the weather outside",
+"the food at the casino",
+"travel plans"
+],
+[
+"last night's game on TV",
+"travel plans",
+"the dealer's style",
+"the weather outside"
+],
+[
+"travel plans",
+"the food at the casino",
+"the food at the casino",
+"last night's game on TV"
+],
+[
+"the dealer's style",
+"the food at the casino",
+"the food at the casino",
+"the dealer's style"
+]
+],
+"favourite": [
+"the music playing",
+"the weather outside",
+"the food at the casino",
+"the weather outside"
+]
+},
+{
+"game": "h119",
+"mode": "control",
+"names": [
+"Gwen Hall",
+"Jon Berg",
+"Ines Silva",
+"Femi Adeyemi"
+],
+"roles": [
+"honest",
+"honest",
+"honest",
+"honest"
+],
+"companion": {
+"2": 3,
+"3": 2,
+"0": 1,
+"1": 0
+},
+"secret": null,
+"hot": [
+false,
+true,
+false,
+true,
+false,
+true,
+false,
+false
+],
+"assigned": [
+[
+"the music playing",
+"last night's game on TV",
+"the music playing",
+"last night's game on TV"
+],
+[
+"the weather outside",
+"last night's game on TV",
+"the dealer's style",
+"the weather outside"
+],
+[
+"the music playing",
+"the weather outside",
+"the weather outside",
+"the music playing"
+],
+[
+"the music playing",
+"last night's game on TV",
+"the food at the casino",
+"the weather outside"
+],
+[
+"travel plans",
+"the music playing",
+"travel plans",
+"travel plans"
+],
+[
+"the dealer's style",
+"the music playing",
+"the music playing",
+"the weather outside"
+],
+[
+"the dealer's style",
+"the music playing",
+"the food at the casino",
+"the weather outside"
+],
+[
+"the dealer's style",
+"the weather outside",
+"the music playing",
+"the weather outside"
+]
+],
+"favourite": [
+"the music playing",
+"the music playing",
+"the dealer's style",
+"the weather outside"
+]
+}
+]
