@@ -7398,3 +7398,30 @@ Cost about $1.
 - LoRA adapters kept locally, not committed.
 
 Pod deleted. Cost about $1.50.
+
+## 177. oct 2: NARCBench-Stego's probes never saw the steganographic messages (EXPLORATORY, $0, released data only). **VERY GOOD (as a finding). In the released activations behind the paper's Stego result, every final-phase sample was extracted from the prompt plus an EMPTY assistant reply: 160/160 for GPT-OSS-20B and 160/160 for Qwen3-32B. The 0.99-1.00 "probes detect steganographic collusion the judge misses" therefore comes from prompt-only activations. The colluders' prompts contain the private scheme block (s174), and the probes never read the table talk that carries the signal.**
+
+**Cause (their code, extraction/extract_stego.py):**
+- Responses are paired with logged prompts by walking `results["public_messages"]` in order.
+- Final-hand replies are written to `results["final_texts"]`, not `public_messages`, so every final-phase sample gets
+  `response = ""`.
+- The paper scores Stego on final-round activations only ("where all agents receive identical user prompts", which s174
+  showed is also not true for colluders).
+
+**Verification (pilot/narc/narc_empty_response_check.py):**
+- Each final-phase (system, user, assistant) was tokenised with the model's chat template, once with an empty reply and once
+  with the actual final message, and compared with the released `n_tokens`.
+- Result: 320/320 match the empty reply; 0 match the actual message. Example: shoe00 colluder, released 1660 = prompt +
+  empty (1660); prompt + actual message would be 1719.
+- The GPT-OSS chat template is from the model repo (saved as pilot/narc/gpt_oss_chat_template.jinja); Qwen uses the
+  tokenizer's own template.
+
+**Implications:**
+- The Stego result is a prompt-classification result: probes trained on Core (colluder vs honest roles) separate agents whose
+  final prompts contain a "PRIVATE ... scheme ... CURRENT COUNT" block from agents whose prompts do not.
+- It says nothing yet about whether activations reveal steganographic hiding in the messages.
+- A probable second pairing problem was not verified: in discussion rounds, judge prompts are counted as public prompts and
+  would shift every later pairing by one. Stego scoring uses only final rounds, so the main result is affected only by the
+  empty-reply issue.
+- The GPU test planned next (re-extract with the actual messages, plus prompt controls) is now the direct way to ask the
+  paper's question properly.
