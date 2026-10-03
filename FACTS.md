@@ -8060,3 +8060,8 @@ games base 195000. About $0.70; pod deleted; outputs checksum-matched.
 - Correct read: on NARCBench the probe detects colluder-style message content (beyond length), NOT proven state-reading. cond C isolates message (neutral framing, both roles) -> .71 from message alone; the prompt/state adds only .086.
 - State-vs-text remains established ONLY by our coincidence-controlled games (identical words). NARCBench cannot show it (no text control).
 - Net §201 claim for the write-up: casino-trained probe transfers zero-shot to an independent benchmark and fires on its colluders beyond a length cue (.80, cond C .71); NOT evidence of state-reading there; state-reading = our games only.
+
+## 199. oct 3: replicate s185 zero-shot transfer in Qwen3-32B (protocols/PROTOCOL_s199.md, frozen). **FAIL (4x-larger model). Binding transfers strongly (A_bind .953 [.944,.962]) but the strict same-word coincidence contrast does NOT (A_coinc .683 [.657,.706], gate .80). Office compliance 1.00/1.00. The signal IS present in 32B activations — an office-trained reference probe gets A_coinc .948 — so this is a zero-shot TRANSFER failure on the hardest contrast, not absence of signal.**
+- Exploratory (not gated): A_coinc at the other captured layers is worse (29: .507, 36: .547, 43: .683), so layer choice doesn't rescue it; 43 (pre-registered) was already best.
+- So zero-shot casino->office transfer on the identical-word contrast holds at 8B (.868), gpt-oss-20b (.918), Phi-4 (.904) but WEAKENS at 32B (.683). Honest scope limit: the strongest (coincidence) claim is 8B-24B; at 32B only binding transfers zero-shot, though the state is linearly present in-distribution.
+- Data: pilot/s199/out_* (sha256 below). Model Qwen/Qwen3-32B bf16.
