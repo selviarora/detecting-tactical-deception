@@ -8039,3 +8039,9 @@ games base 195000. About $0.70; pod deleted; outputs checksum-matched.
 - Caveat (same as all message-mean results): activations are taken over the message tokens with the prompt in context, so
   the probe reads the model's state (its flag fired), not anything in the words. This is the stated "reads the state" limit.
 - Used for the Spot the Signal demo: identical pairs make the "same words" premise literal.
+
+## 201. oct 3: clean cross-benchmark — our casino probe vs NARCBench colluders, matched message-mean features (protocols/PROTOCOL_s201.md, frozen). **PASS. Our gpt-oss-20b casino covert-signalling probe, trained only on our card games (hide vs normal), detects NARCBench-Stego colluders vs honest agents ZERO-SHOT at AUROC 0.797 at the pre-chosen layer (16, selected by casino 5-fold CV before scoring). Layer 11 gives 0.851, layer 13 0.591. Features message-mean on both sides (the fix for the .349/.671 dirty attempt).**
+- This is zero-shot transfer to an INDEPENDENT published benchmark (different team, different scenarios, real colluder messages): the strongest generality evidence so far.
+- Pre-registered layer rule (max casino CV) picks layer 16 -> 0.797 (gate .70 PASS; just under the .80 STRONG bar). Report all three layers; do not cherry-pick layer 11.
+- Data: pilot/narc/s201_out (cond_B/C msg-mean, 160 agents, 40 colluder). Dataset: aaronrose227/narcbench, gpt_oss_20b/stego.
+- TODO (not done): text baseline on the same final messages (needs the messages pulled); condition C (honest-framing) scoring; the matched Qwen3-32B version pairing with s199.
