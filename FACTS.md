@@ -8027,3 +8027,9 @@ games base 195000. About $0.70; pod deleted; outputs checksum-matched.
   transfer .613. The zero-shot probe (.904) beats in-distribution text; office-trained reference probe 1.000.
 - Data: pilot/s198/out_* (sha256 acts topic 62ca97da..., signoff d702806e..., office 641566dd...).
 - With §185 (Qwen3-8B .868) and §188 (gpt-oss-20b .918), zero-shot casino -> office transfer now holds in three families.
+
+## 198b. oct 3: exploratory (not pre-registered) — the zero-shot office gap is mostly topic offsets. **On s185 office data (Qwen3-8B, frozen s185 casino probe), restricted to pairs with the same greeting AND same email topic, the probe ranks the covert email above the innocent one in 99.95% of 69,521 pairs (per-topic AUROC .997-1.000). The pooled A_coinc .868 is lower because the probe's scale shifts by topic (median hide logit -3.5 on budget review vs +5.6 on office move).**
+- Implication: ranking within a matched pair is near-perfect; the pooled number is limited by calibration across topics,
+  not by failing to see the covert state. Not a gated claim; a pre-registered test would be needed.
+- Used for the "Spot the Signal" demo: 10 random same-greeting, same-topic pairs (seed 7, not hand-picked); the probe
+  picks the covert email in all 10.
