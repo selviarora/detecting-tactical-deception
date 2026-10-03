@@ -8055,3 +8055,8 @@ games base 195000. About $0.70; pod deleted; outputs checksum-matched.
 - Conclusion: on NARCBench we CANNOT cleanly attribute the probe's .80 to collusion-state vs text, because the benchmark has no text control (and even leaks via length). The probe is only moderately correlated with text (.36), so it is not purely text-riding, but this is not proof of state-reading.
 - The clean state-vs-text separation remains ONLY our coincidence-controlled games (identical words, text ~.53, probe .87-1.00).
 - Write-up: present §201 as zero-shot CROSS-BENCHMARK TRANSFER (fires on an independent team's colluders), explicitly caveated that NARCBench cannot isolate state from text; cite the length leak as a reason text looks perfect there.
+
+## 201d. oct 3: s201 cond-C control (state vs message on NARCBench). **cond B (colluder prompt + own msg) probe AUROC 0.797; cond C (HONEST framing + the SAME messages) 0.711 — drop only 0.086. So most of the probe's NARCBench signal is MESSAGE-CONTENT-driven, not collusion-state-from-prompt. Not merely length (shortest-length band still 0.815).**
+- Correct read: on NARCBench the probe detects colluder-style message content (beyond length), NOT proven state-reading. cond C isolates message (neutral framing, both roles) -> .71 from message alone; the prompt/state adds only .086.
+- State-vs-text remains established ONLY by our coincidence-controlled games (identical words). NARCBench cannot show it (no text control).
+- Net §201 claim for the write-up: casino-trained probe transfers zero-shot to an independent benchmark and fires on its colluders beyond a length cue (.80, cond C .71); NOT evidence of state-reading there; state-reading = our games only.
