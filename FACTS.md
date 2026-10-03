@@ -8004,3 +8004,19 @@ games base 195000. About $0.70; pod deleted; outputs checksum-matched.
   - The failure mode is new: these models follow the code on covert and normal turns but **refuse to use their secret
     phrase innocently** when assigned it (e.g. writing "Have a great evening!" instead of the assigned "Let's see the next
     one."), apparently to avoid sending a false signal. The coincidence control cannot be built from their outputs.
+
+## 196. oct 2: trained evasion (protocols/PROTOCOL_s196.md, frozen). **PARTIAL. A LoRA trained to keep signalling while driving the exact s185 casino probe to "innocent" keeps signalling perfectly (compliance 1.00 / 1.00) and defeats the probes it can be checked against at a fixed threshold, but the covert state is still linearly readable: a probe retrained on the evasive model's own activations separates covert from same-word innocent at .990 (test games). Text stays blind (.53).**
+- Target probe T1 (the one trained against), hide vs same-word coincidence: base .881 -> LoRA **.726**; mean logit on hide
+  -0.25 -> -15.8 (everything shifted down; coincidences -18.5). At its 0.5 threshold it catches 44% (base) -> **0%** (LoRA).
+- Unseen probe T3 (s197 recipe, never trained against): ranking base 1.000 -> LoRA **.887**; at the s197 threshold catches
+  99.3% -> **0%** (the whole score distribution moved).
+- Retrained probe T2 (LoRA activations, 60 dev games, hide vs normal): **.990** (base 1.000).
+- Exploratory (not in the protocol): re-thresholding the fixed probes on the evasive model's own innocent traffic (dev
+  games, 95th percentile) catches only 23% (T1) / 45% (T3) at ~5% false alarms. So recalibration alone does not rescue them;
+  retraining does.
+- Training: probe sigmoid on hide messages hit ~0 by step 500 of 1920 with LM loss unchanged (.06); messages read the same
+  (e.g. same greeting and opening, slightly shorter).
+- Reading: white-box evasion training against one probe moves the representation enough to break fixed monitors (even one
+  it never saw), but does not remove the information. A defender who retrains on labelled covert examples from the deployed
+  model recovers detection. That requires being able to elicit covert examples from that model (e.g. red-team games).
+- Data: pilot/s196/eval_base, eval_lora (sha256 acts 79df94b0..., 47a39cde...), lora_evade (6e6004a4...).
