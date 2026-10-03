@@ -1,0 +1,53 @@
+{
+ "compliance": {
+  "hide": 1.0,
+  "non_hide": 0.8874375720322705
+ },
+ "counts": {
+  "hide": 1237,
+  "normal_other": 655,
+  "coinc_other": 676
+ },
+ "zero_shot_msg": {
+  "A_bind": 0.9053620245978019,
+  "A_bind_ci": [
+   0.8912067863477612,
+   0.9188249092820565
+  ],
+  "A_coinc": 0.9038736588329276,
+  "A_coinc_ci": [
+   0.8892205215249335,
+   0.9169488017053099
+  ],
+  "word_only": 0.5297636523781563
+ },
+ "zero_shot_pre": {
+  "A_bind": 1.0,
+  "A_bind_ci": [
+   0.9999999999999999,
+   1.0
+  ],
+  "A_coinc": 1.0,
+  "A_coinc_ci": [
+   0.9999999999999999,
+   1.0
+  ],
+  "word_only": 0.4617855744764142
+ },
+ "casino_text_transfer": {
+  "A_bind": 0.6497281652853801,
+  "A_coinc": 0.6127788168550559
+ },
+ "zero_shot_msg_A_coinc_compliant_coinc_only": 0.8787084502353891,
+ "office_text_cleanliness_test": {
+  "A_coinc": 0.7555351603631294
+ },
+ "office_trained_reference_probe_test": {
+  "A_bind": 1.0,
+  "A_coinc": 1.0
+ },
+ "C": true,
+ "P1": true,
+ "P2": true,
+ "verdict": "PASS"
+}

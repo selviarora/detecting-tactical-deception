@@ -8020,3 +8020,10 @@ games base 195000. About $0.70; pod deleted; outputs checksum-matched.
   it never saw), but does not remove the information. A defender who retrains on labelled covert examples from the deployed
   model recovers detection. That requires being able to elicit covert examples from that model (e.g. red-team games).
 - Data: pilot/s196/eval_base, eval_lora (sha256 acts 79df94b0..., 47a39cde...), lora_evade (6e6004a4...).
+
+## 198. oct 3: replicate s185 zero-shot transfer in Phi-4 (protocols/PROTOCOL_s198.md, frozen). **PASS, third model family. Probe trained on Phi-4's casino games (hide vs normal) separates covert office emails from same-greeting innocent coincidences zero-shot at .904 [.889, .917] (gate .80) and binding .905 [.891, .919] (gate .85). Office compliance hide 1.00, non-hide .887. Word-only .53.**
+- Prompt-last probe 1.000 / 1.000. Restricted to coincidences that actually open with the assigned greeting: .879.
+- Text is less blind for Phi-4 than for Qwen: office TF-IDF trained in-distribution (dev -> test) .756; casino-trained text
+  transfer .613. The zero-shot probe (.904) beats in-distribution text; office-trained reference probe 1.000.
+- Data: pilot/s198/out_* (sha256 acts topic 62ca97da..., signoff d702806e..., office 641566dd...).
+- With §185 (Qwen3-8B .868) and §188 (gpt-oss-20b .918), zero-shot casino -> office transfer now holds in three families.
