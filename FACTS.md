@@ -8045,3 +8045,8 @@ games base 195000. About $0.70; pod deleted; outputs checksum-matched.
 - Pre-registered layer rule (max casino CV) picks layer 16 -> 0.797 (gate .70 PASS; just under the .80 STRONG bar). Report all three layers; do not cherry-pick layer 11.
 - Data: pilot/narc/s201_out (cond_B/C msg-mean, 160 agents, 40 colluder). Dataset: aaronrose227/narcbench, gpt_oss_20b/stego.
 - TODO (not done): text baseline on the same final messages (needs the messages pulled); condition C (honest-framing) scoring; the matched Qwen3-32B version pairing with s199.
+
+## 201b. oct 3: s201 text baseline (important caveat). **On NARCBench's colluder messages, a plain TF-IDF text classifier scores AUROC 0.996 (grouped 5-fold). So on THIS benchmark text beats our probe (.80). §201 therefore shows our probe GENERALISES zero-shot to an independent benchmark, NOT that it beats text there.**
+- This is the same lexical-distinctiveness issue we flagged in NARCBench itself (§174, §178): their colluder messages are textually obvious, so text monitoring already separates them.
+- Our probe's advantage OVER text is established by our own coincidence-controlled games (identical words, text ~.53), not by §201.
+- Correct framing for the write-up: (1) in our games, the probe beats text on text-identical messages; (2) separately, the probe trained on our games transfers zero-shot to a different team's benchmark (.80), showing it isn't overfit to our setup. Two distinct claims; don't conflate.
