@@ -8050,3 +8050,8 @@ games base 195000. About $0.70; pod deleted; outputs checksum-matched.
 - This is the same lexical-distinctiveness issue we flagged in NARCBench itself (§174, §178): their colluder messages are textually obvious, so text monitoring already separates them.
 - Our probe's advantage OVER text is established by our own coincidence-controlled games (identical words, text ~.53), not by §201.
 - Correct framing for the write-up: (1) in our games, the probe beats text on text-identical messages; (2) separately, the probe trained on our games transfers zero-shot to a different team's benchmark (.80), showing it isn't overfit to our setup. Two distinct claims; don't conflate.
+
+## 201c. oct 3: s201 state-vs-text diagnostics (answers "is it the probe or just the text?"). **On NARCBench cond B: probe-score vs text-score Spearman = 0.359 (probe is NOT a text copy); but message LENGTH alone separates colluder vs honest at AUROC 0.002 (near-perfect reversed) — so NARCBench's text separability (.996) is largely a trivial length leak. probe-vs-length Spearman -0.335.**
+- Conclusion: on NARCBench we CANNOT cleanly attribute the probe's .80 to collusion-state vs text, because the benchmark has no text control (and even leaks via length). The probe is only moderately correlated with text (.36), so it is not purely text-riding, but this is not proof of state-reading.
+- The clean state-vs-text separation remains ONLY our coincidence-controlled games (identical words, text ~.53, probe .87-1.00).
+- Write-up: present §201 as zero-shot CROSS-BENCHMARK TRANSFER (fires on an independent team's colluders), explicitly caveated that NARCBench cannot isolate state from text; cite the length leak as a reason text looks perfect there.
