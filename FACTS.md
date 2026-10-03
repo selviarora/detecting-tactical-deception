@@ -8033,3 +8033,9 @@ games base 195000. About $0.70; pod deleted; outputs checksum-matched.
   not by failing to see the covert state. Not a gated claim; a pre-registered test would be needed.
 - Used for the "Spot the Signal" demo: 10 random same-greeting, same-topic pairs (seed 7, not hand-picked); the probe
   picks the covert email in all 10.
+
+## 198c. oct 3: exploratory (not pre-registered) — word-for-word identical pairs. **On s185 office data (Qwen3-8B), 87.2% of compliant covert emails have at least one character-identical (whitespace-normalised) innocent coincidence email. Across all 17,159 identical covert/innocent pairs (93 distinct texts), the frozen zero-shot s185 casino probe scores the covert one higher in 100% of pairs.**
+- Any text-only detector necessarily scores these pairs 50% (identical input).
+- Caveat (same as all message-mean results): activations are taken over the message tokens with the prompt in context, so
+  the probe reads the model's state (its flag fired), not anything in the words. This is the stated "reads the state" limit.
+- Used for the Spot the Signal demo: identical pairs make the "same words" premise literal.
