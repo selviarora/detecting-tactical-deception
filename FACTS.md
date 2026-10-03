@@ -8065,3 +8065,10 @@ games base 195000. About $0.70; pod deleted; outputs checksum-matched.
 - Exploratory (not gated): A_coinc at the other captured layers is worse (29: .507, 36: .547, 43: .683), so layer choice doesn't rescue it; 43 (pre-registered) was already best.
 - So zero-shot casino->office transfer on the identical-word contrast holds at 8B (.868), gpt-oss-20b (.918), Phi-4 (.904) but WEAKENS at 32B (.683). Honest scope limit: the strongest (coincidence) claim is 8B-24B; at 32B only binding transfers zero-shot, though the state is linearly present in-distribution.
 - Data: pilot/s199/out_* (sha256 below). Model Qwen/Qwen3-32B bf16.
+
+## 201e. oct 3: Qwen3-32B cross-benchmark (casino-32B probe -> NARCBench qwen3_32b colluders, matched msg-mean). **FAIL. At the pre-registered layer (43, max casino CV), NARCBench colluder-vs-honest AUROC = 0.280 — BELOW chance (reversed). cond C (honest framing) 0.364. probe-vs-text Spearman -0.42.**
+- Post-hoc, layers 29/36 give ~0.71, but the pre-registered rule (max casino CV) picks 43 -> reversed; do not report 29/36 as the main result.
+- Text baseline 0.972 (NARCBench qwen colluders textually obvious again; length-alone AUROC 0.062 = near-perfect reversed cue).
+- Consistent with §199: the Qwen3-32B casino probe does NOT transfer zero-shot. So cross-benchmark transfer holds for gpt-oss-20b (§201, .80) but FAILS for Qwen3-32B — the 32B transfer failure is real across both our office game (§199) and NARCBench (§201e).
+- Net scope finding: zero-shot transfer (both to our office game and to an independent benchmark) holds at 8B-24B but breaks at 32B. In-distribution the signal is still present (s199 reference probe .95); it is the TRANSFER that fails at scale.
+- Data: pilot/narc/s201q_out. Pod cvo-s201q deleted.
