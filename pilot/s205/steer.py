@@ -19,7 +19,7 @@ R = lambda m: tok.apply_chat_template(m, add_generation_prompt=True, tokenize=Fa
 STATE = {"vec": None}
 def hook(mod, inp, o):
     if STATE["vec"] is None: return o
-    h = o[0] if isinstance(o, tuple) else o; h = h + STATE["vec"]
+    h = o[0] if isinstance(o, tuple) else o; h = h + STATE["vec"].to(h.dtype)
     return (h,) + o[1:] if isinstance(o, tuple) else h
 H = model.model.layers[LSTEER].register_forward_hook(hook)
 @torch.no_grad()

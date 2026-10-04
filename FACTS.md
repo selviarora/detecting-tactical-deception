@@ -8091,3 +8091,10 @@ games base 195000. About $0.70; pod deleted; outputs checksum-matched.
 - Caveat now: A's greeting (the signal) is a literal lexical cue in B's INPUT, so the covert code is simple; the result is about reading the receiver's decoded internal state text-blind, not about a subtle stego scheme. Code simplicity is the standing limitation across all our games.
 - Together s203+s204: the probe does not just DETECT covert signalling, it DECODES the content — sender-held (.997 vs text .33) and receiver-decoded (.96 vs ~chance, never told the value).
 - Data: pilot/s204/out (1131 pairs). Pod cvo-s204 deleted.
+
+## 205. oct 4: CAUSAL steering of the signalling direction (protocols/PROTOCOL_s205.md, frozen). **STRONG induction + clean specificity; PARTIAL ablation. The hide-minus-normal direction (layer 20, stego8) is a causal switch for covert signalling.**
+- Baselines: GREEN (not signalling) opens with the secret greeting 0.0% (given 100%); RED (signalling) 100%.
+- **INDUCTION:** adding alpha*d to the layer-20 residual on GREEN agents -> emit the SECRET greeting 100.0% (alpha 10) / 99.6% (alpha 20). (alpha 40 breaks generation, 0%.)
+- **SPECIFICITY:** a RANDOM direction of the same norm induces the secret greeting only 0.8% (alpha 20); agents keep their given greeting (98.4%). So it is THIS direction, not any large perturbation.
+- **ABLATION:** subtracting alpha*d from RED (signalling) agents cuts the secret-greeting rate 100% -> 46% (alpha 20), flipping 54% back to the normal given greeting; alpha 40 breaks generation. So removal partially suppresses signalling (clean-ish one-direction removal is incomplete).
+- Reading: adding the direction CAUSES covert signalling (specific, not correlational); removing it partially stops it. Answers "is it causal?" = yes for induction. Honest limit: ablation is partial and high-alpha steering degrades generation (expected). Data: pilot/s205/out. Pod deleted.
