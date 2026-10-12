@@ -8,18 +8,18 @@
     1.0,
     1.0
    ],
-   "auroc_apollo": 0.8397623697916666,
+   "auroc_apollo": 0.6576605902777778,
    "auroc_report_only": 0.4825032552083333
   },
   "finance/wire_release": {
    "n": 384,
    "histories": 32,
-   "auroc_2x2": 1.0,
+   "auroc_2x2": 0.9991048177083334,
    "ci": [
-    1.0,
-    1.0
+    0.9973137749565972,
+    0.9999192979600694
    ],
-   "auroc_apollo": 0.9485948350694444,
+   "auroc_apollo": 0.6446940104166666,
    "auroc_report_only": 0.4906955295138889
   },
   "hiring/interview_scorecard": {
@@ -30,47 +30,47 @@
     1.0,
     1.0
    ],
-   "auroc_apollo": 0.972412109375,
+   "auroc_apollo": 0.6918402777777778,
    "auroc_report_only": 0.4648708767361111
   },
   "legal/discovery_production": {
    "n": 384,
    "histories": 32,
-   "auroc_2x2": 0.9974229600694444,
+   "auroc_2x2": 0.9988335503472222,
    "ci": [
-    0.9869791666666666,
+    0.9934895833333334,
     1.0
    ],
-   "auroc_apollo": 0.8063422309027778,
+   "auroc_apollo": 0.7043728298611112,
    "auroc_report_only": 0.5188259548611112
   },
   "procurement/bid_evaluation": {
    "n": 320,
    "histories": 32,
-   "auroc_2x2": 0.9994921875,
+   "auroc_2x2": 0.9928515625,
    "ci": [
-    0.9958984375,
+    0.9758964843750001,
     1.0
    ],
-   "auroc_apollo": 0.7870703125,
+   "auroc_apollo": 0.605625,
    "auroc_report_only": 0.51640625
   },
   "software/release_merge": {
    "n": 290,
    "histories": 29,
-   "auroc_2x2": 0.9995719381688466,
+   "auroc_2x2": 1.0,
    "ci": [
-    0.9964328180737217,
+    1.0,
     1.0
    ],
-   "auroc_apollo": 0.9281331747919144,
+   "auroc_apollo": 0.6902734839476813,
    "auroc_report_only": 0.4968370986920333
   }
  },
- "pooled": 0.9994093782055347,
+ "pooled": 0.9985651364640342,
  "pooled_ci": [
-  0.9981711731172795,
-  0.9999749769273865
+  0.9965730012098042,
+  0.9997969642100974
  ],
  "verdict": "STRONG PASS"
 }

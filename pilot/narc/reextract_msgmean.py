@@ -8,7 +8,15 @@ import numpy as np, torch
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from huggingface_hub import snapshot_download
 out = Path(sys.argv[1]); out.mkdir(parents=True, exist_ok=True); LAY = [11, 13, 16]
-root = snapshot_download(repo_id="aaronrose227/narcbench", repo_type="dataset")
+import time
+for attempt in range(6):
+    try:
+        root = snapshot_download(repo_id="aaronrose227/narcbench", repo_type="dataset",
+                                 allow_patterns=["scenarios/gpt_oss_20b/stego/**"],
+                                 max_workers=2)
+        break
+    except Exception as e:
+        print("download retry", attempt, repr(e)[:160], flush=True); time.sleep(30 * (attempt + 1))
 print("DATASET_ROOT", root, flush=True)
 os.system(f"find {root} -maxdepth 3 | head -60")
 # locate run dirs: a dir containing both agent_prompts.json and results.json

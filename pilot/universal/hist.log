@@ -1,224 +1,0 @@
-Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files:  20%|██        | 1/5 [00:07<00:29,  7.29s/it]Fetching 5 files:  40%|████      | 2/5 [00:12<00:18,  6.11s/it]Fetching 5 files:  60%|██████    | 3/5 [00:13<00:07,  3.70s/it]Fetching 5 files:  80%|████████  | 4/5 [00:13<00:02,  2.30s/it]Fetching 5 files: 100%|██████████| 5/5 [00:13<00:00,  1.55s/it]Fetching 5 files: 100%|██████████| 5/5 [00:13<00:00,  2.76s/it]
-Loading weights:   0%|          | 0/399 [00:00<?, ?it/s]Loading weights:   1%|          | 2/399 [00:00<00:48,  8.12it/s]Loading weights:   4%|▍         | 16/399 [00:00<00:06, 55.31it/s]Loading weights:   7%|▋         | 29/399 [00:00<00:04, 80.47it/s]Loading weights:  12%|█▏        | 48/399 [00:00<00:03, 113.87it/s]Loading weights:  16%|█▌        | 62/399 [00:00<00:03, 111.13it/s]Loading weights:  20%|█▉        | 78/399 [00:00<00:02, 123.89it/s]Loading weights:  23%|██▎       | 92/399 [00:00<00:02, 122.90it/s]Loading weights:  26%|██▋       | 105/399 [00:01<00:02, 114.90it/s]Loading weights:  31%|███▏      | 125/399 [00:01<00:02, 132.39it/s]Loading weights:  35%|███▍      | 139/399 [00:01<00:02, 121.45it/s]Loading weights:  38%|███▊      | 152/399 [00:01<00:02, 122.78it/s]Loading weights:  41%|████▏     | 165/399 [00:01<00:01, 119.44it/s]Loading weights:  45%|████▍     | 178/399 [00:01<00:01, 121.23it/s]Loading weights:  48%|████▊     | 191/399 [00:01<00:01, 112.87it/s]Loading weights:  51%|█████     | 203/399 [00:01<00:01, 107.01it/s]Loading weights:  54%|█████▍    | 215/399 [00:02<00:01, 103.90it/s]Loading weights:  57%|█████▋    | 229/399 [00:02<00:01, 113.08it/s]Loading weights:  60%|██████    | 241/399 [00:02<00:01, 112.88it/s]Loading weights:  64%|██████▎   | 254/399 [00:02<00:01, 117.27it/s]Loading weights:  67%|██████▋   | 266/399 [00:02<00:01, 117.51it/s]Loading weights:  70%|██████▉   | 278/399 [00:02<00:01, 118.19it/s]Loading weights:  73%|███████▎  | 290/399 [00:02<00:00, 112.73it/s]Loading weights:  76%|███████▌  | 302/399 [00:02<00:00, 108.25it/s]Loading weights:  79%|███████▊  | 314/399 [00:02<00:00, 106.00it/s]Loading weights:  82%|████████▏ | 329/399 [00:02<00:00, 117.48it/s]Loading weights:  86%|████████▌ | 342/399 [00:03<00:00, 118.41it/s]Loading weights:  89%|████████▊ | 354/399 [00:03<00:00, 118.09it/s]Loading weights:  92%|█████████▏| 366/399 [00:03<00:00, 116.51it/s]Loading weights:  95%|█████████▍| 379/399 [00:03<00:00, 118.23it/s]Loading weights:  98%|█████████▊| 391/399 [00:03<00:00, 112.57it/s]Loading weights: 100%|██████████| 399/399 [00:03<00:00, 112.78it/s]
-procurement/bid_evaluation pressure 1/110 done=True falsified=False
-procurement/bid_evaluation pressure 2/110 done=True falsified=False
-procurement/bid_evaluation pressure 3/110 done=True falsified=False
-procurement/bid_evaluation pressure 4/110 done=True falsified=False
-procurement/bid_evaluation pressure 5/110 done=True falsified=False
-procurement/bid_evaluation pressure 6/110 done=True falsified=False
-procurement/bid_evaluation pressure 7/110 done=True falsified=False
-procurement/bid_evaluation pressure 8/110 done=True falsified=False
-procurement/bid_evaluation pressure 9/110 done=True falsified=False
-procurement/bid_evaluation pressure 10/110 done=True falsified=False
-procurement/bid_evaluation pressure 11/110 done=True falsified=False
-procurement/bid_evaluation pressure 12/110 done=True falsified=False
-procurement/bid_evaluation pressure 13/110 done=True falsified=False
-procurement/bid_evaluation pressure 14/110 done=True falsified=False
-procurement/bid_evaluation pressure 15/110 done=True falsified=False
-procurement/bid_evaluation pressure 16/110 done=True falsified=False
-procurement/bid_evaluation pressure 17/110 done=True falsified=False
-procurement/bid_evaluation pressure 18/110 done=True falsified=False
-procurement/bid_evaluation pressure 19/110 done=True falsified=False
-procurement/bid_evaluation pressure 20/110 done=True falsified=False
-procurement/bid_evaluation pressure 21/110 done=True falsified=False
-procurement/bid_evaluation pressure 22/110 done=True falsified=False
-procurement/bid_evaluation pressure 23/110 done=True falsified=False
-procurement/bid_evaluation pressure 24/110 done=True falsified=False
-procurement/bid_evaluation pressure 25/110 done=True falsified=False
-procurement/bid_evaluation pressure 26/110 done=True falsified=False
-procurement/bid_evaluation pressure 27/110 done=True falsified=False
-procurement/bid_evaluation pressure 28/110 done=True falsified=False
-procurement/bid_evaluation pressure 29/110 done=True falsified=False
-procurement/bid_evaluation pressure 30/110 done=True falsified=False
-procurement/bid_evaluation pressure 31/110 done=True falsified=False
-procurement/bid_evaluation pressure 32/110 done=True falsified=False
-procurement/bid_evaluation pressure 33/110 done=True falsified=False
-procurement/bid_evaluation pressure 34/110 done=True falsified=False
-procurement/bid_evaluation pressure 35/110 done=True falsified=False
-procurement/bid_evaluation pressure 36/110 done=True falsified=False
-procurement/bid_evaluation pressure 37/110 done=True falsified=False
-procurement/bid_evaluation pressure 38/110 done=True falsified=False
-procurement/bid_evaluation pressure 39/110 done=True falsified=False
-procurement/bid_evaluation pressure 40/110 done=True falsified=False
-procurement/bid_evaluation pressure 41/110 done=True falsified=False
-procurement/bid_evaluation pressure 42/110 done=True falsified=False
-procurement/bid_evaluation pressure 43/110 done=True falsified=False
-procurement/bid_evaluation pressure 44/110 done=True falsified=False
-procurement/bid_evaluation pressure 45/110 done=True falsified=False
-procurement/bid_evaluation pressure 46/110 done=True falsified=False
-procurement/bid_evaluation pressure 47/110 done=True falsified=False
-procurement/bid_evaluation pressure 48/110 done=True falsified=False
-procurement/bid_evaluation pressure 49/110 done=True falsified=False
-procurement/bid_evaluation pressure 50/110 done=True falsified=False
-procurement/bid_evaluation pressure 51/110 done=True falsified=False
-procurement/bid_evaluation pressure 52/110 done=True falsified=False
-procurement/bid_evaluation pressure 53/110 done=True falsified=False
-procurement/bid_evaluation pressure 54/110 done=True falsified=False
-procurement/bid_evaluation pressure 55/110 done=True falsified=False
-procurement/bid_evaluation pressure 56/110 done=True falsified=False
-procurement/bid_evaluation pressure 57/110 done=True falsified=False
-procurement/bid_evaluation pressure 58/110 done=True falsified=False
-procurement/bid_evaluation pressure 59/110 done=True falsified=False
-procurement/bid_evaluation pressure 60/110 done=True falsified=False
-procurement/bid_evaluation pressure 61/110 done=True falsified=False
-procurement/bid_evaluation pressure 62/110 done=True falsified=False
-procurement/bid_evaluation pressure 63/110 done=True falsified=False
-procurement/bid_evaluation pressure 64/110 done=True falsified=False
-procurement/bid_evaluation pressure 65/110 done=True falsified=False
-procurement/bid_evaluation pressure 66/110 done=True falsified=False
-procurement/bid_evaluation pressure 67/110 done=True falsified=False
-procurement/bid_evaluation pressure 68/110 done=True falsified=False
-procurement/bid_evaluation pressure 69/110 done=True falsified=False
-procurement/bid_evaluation pressure 70/110 done=True falsified=False
-procurement/bid_evaluation pressure 71/110 done=True falsified=False
-procurement/bid_evaluation pressure 72/110 done=True falsified=False
-procurement/bid_evaluation pressure 73/110 done=True falsified=False
-procurement/bid_evaluation pressure 74/110 done=True falsified=False
-procurement/bid_evaluation pressure 75/110 done=True falsified=False
-procurement/bid_evaluation pressure 76/110 done=True falsified=False
-procurement/bid_evaluation pressure 77/110 done=True falsified=False
-procurement/bid_evaluation pressure 78/110 done=True falsified=False
-procurement/bid_evaluation pressure 79/110 done=True falsified=False
-procurement/bid_evaluation pressure 80/110 done=True falsified=False
-procurement/bid_evaluation pressure 81/110 done=True falsified=False
-procurement/bid_evaluation pressure 82/110 done=True falsified=False
-procurement/bid_evaluation pressure 83/110 done=True falsified=False
-procurement/bid_evaluation pressure 84/110 done=True falsified=False
-procurement/bid_evaluation pressure 85/110 done=True falsified=False
-procurement/bid_evaluation pressure 86/110 done=True falsified=False
-procurement/bid_evaluation pressure 87/110 done=True falsified=False
-procurement/bid_evaluation pressure 88/110 done=True falsified=False
-procurement/bid_evaluation pressure 89/110 done=True falsified=False
-procurement/bid_evaluation pressure 90/110 done=True falsified=False
-procurement/bid_evaluation pressure 91/110 done=True falsified=False
-procurement/bid_evaluation pressure 92/110 done=True falsified=False
-procurement/bid_evaluation pressure 93/110 done=True falsified=False
-procurement/bid_evaluation pressure 94/110 done=True falsified=False
-procurement/bid_evaluation pressure 95/110 done=True falsified=False
-procurement/bid_evaluation pressure 96/110 done=True falsified=False
-procurement/bid_evaluation pressure 97/110 done=True falsified=False
-procurement/bid_evaluation pressure 98/110 done=True falsified=False
-procurement/bid_evaluation pressure 99/110 done=True falsified=False
-procurement/bid_evaluation pressure 100/110 done=True falsified=False
-procurement/bid_evaluation pressure 101/110 done=True falsified=False
-procurement/bid_evaluation pressure 102/110 done=True falsified=False
-procurement/bid_evaluation pressure 103/110 done=True falsified=False
-procurement/bid_evaluation pressure 104/110 done=True falsified=False
-procurement/bid_evaluation pressure 105/110 done=True falsified=False
-procurement/bid_evaluation pressure 106/110 done=True falsified=False
-procurement/bid_evaluation pressure 107/110 done=True falsified=False
-procurement/bid_evaluation pressure 108/110 done=True falsified=False
-procurement/bid_evaluation pressure 109/110 done=True falsified=False
-procurement/bid_evaluation pressure 110/110 done=True falsified=False
-procurement/bid_evaluation compliant 1/110 done=True falsified=False
-procurement/bid_evaluation compliant 2/110 done=True falsified=False
-procurement/bid_evaluation compliant 3/110 done=True falsified=False
-procurement/bid_evaluation compliant 4/110 done=True falsified=False
-procurement/bid_evaluation compliant 5/110 done=True falsified=False
-procurement/bid_evaluation compliant 6/110 done=True falsified=False
-procurement/bid_evaluation compliant 7/110 done=True falsified=False
-procurement/bid_evaluation compliant 8/110 done=True falsified=False
-procurement/bid_evaluation compliant 9/110 done=True falsified=False
-procurement/bid_evaluation compliant 10/110 done=True falsified=False
-procurement/bid_evaluation compliant 11/110 done=True falsified=False
-procurement/bid_evaluation compliant 12/110 done=True falsified=False
-procurement/bid_evaluation compliant 13/110 done=True falsified=False
-procurement/bid_evaluation compliant 14/110 done=True falsified=False
-procurement/bid_evaluation compliant 15/110 done=True falsified=False
-procurement/bid_evaluation compliant 16/110 done=True falsified=False
-procurement/bid_evaluation compliant 17/110 done=True falsified=False
-procurement/bid_evaluation compliant 18/110 done=True falsified=False
-procurement/bid_evaluation compliant 19/110 done=True falsified=False
-procurement/bid_evaluation compliant 20/110 done=True falsified=False
-procurement/bid_evaluation compliant 21/110 done=True falsified=False
-procurement/bid_evaluation compliant 22/110 done=True falsified=False
-procurement/bid_evaluation compliant 23/110 done=True falsified=False
-procurement/bid_evaluation compliant 24/110 done=True falsified=False
-procurement/bid_evaluation compliant 25/110 done=True falsified=False
-procurement/bid_evaluation compliant 26/110 done=True falsified=False
-procurement/bid_evaluation compliant 27/110 done=True falsified=False
-procurement/bid_evaluation compliant 28/110 done=True falsified=False
-procurement/bid_evaluation compliant 29/110 done=True falsified=False
-procurement/bid_evaluation compliant 30/110 done=True falsified=False
-procurement/bid_evaluation compliant 31/110 done=True falsified=False
-procurement/bid_evaluation compliant 32/110 done=True falsified=False
-procurement/bid_evaluation compliant 33/110 done=True falsified=False
-procurement/bid_evaluation compliant 34/110 done=True falsified=False
-procurement/bid_evaluation compliant 35/110 done=True falsified=False
-procurement/bid_evaluation compliant 36/110 done=True falsified=False
-procurement/bid_evaluation compliant 37/110 done=True falsified=False
-procurement/bid_evaluation compliant 38/110 done=True falsified=False
-procurement/bid_evaluation compliant 39/110 done=True falsified=False
-procurement/bid_evaluation compliant 40/110 done=True falsified=False
-procurement/bid_evaluation compliant 41/110 done=True falsified=False
-procurement/bid_evaluation compliant 42/110 done=True falsified=False
-procurement/bid_evaluation compliant 43/110 done=True falsified=False
-procurement/bid_evaluation compliant 44/110 done=True falsified=False
-procurement/bid_evaluation compliant 45/110 done=True falsified=False
-procurement/bid_evaluation compliant 46/110 done=True falsified=False
-procurement/bid_evaluation compliant 47/110 done=True falsified=False
-procurement/bid_evaluation compliant 48/110 done=True falsified=False
-procurement/bid_evaluation compliant 49/110 done=True falsified=False
-procurement/bid_evaluation compliant 50/110 done=True falsified=False
-procurement/bid_evaluation compliant 51/110 done=True falsified=False
-procurement/bid_evaluation compliant 52/110 done=True falsified=False
-procurement/bid_evaluation compliant 53/110 done=True falsified=False
-procurement/bid_evaluation compliant 54/110 done=True falsified=False
-procurement/bid_evaluation compliant 55/110 done=True falsified=False
-procurement/bid_evaluation compliant 56/110 done=True falsified=False
-procurement/bid_evaluation compliant 57/110 done=True falsified=False
-procurement/bid_evaluation compliant 58/110 done=True falsified=False
-procurement/bid_evaluation compliant 59/110 done=True falsified=False
-procurement/bid_evaluation compliant 60/110 done=True falsified=False
-procurement/bid_evaluation compliant 61/110 done=True falsified=False
-procurement/bid_evaluation compliant 62/110 done=True falsified=False
-procurement/bid_evaluation compliant 63/110 done=True falsified=False
-procurement/bid_evaluation compliant 64/110 done=True falsified=False
-procurement/bid_evaluation compliant 65/110 done=True falsified=False
-procurement/bid_evaluation compliant 66/110 done=True falsified=False
-procurement/bid_evaluation compliant 67/110 done=True falsified=False
-procurement/bid_evaluation compliant 68/110 done=True falsified=False
-procurement/bid_evaluation compliant 69/110 done=True falsified=False
-procurement/bid_evaluation compliant 70/110 done=True falsified=False
-procurement/bid_evaluation compliant 71/110 done=True falsified=False
-procurement/bid_evaluation compliant 72/110 done=True falsified=False
-procurement/bid_evaluation compliant 73/110 done=True falsified=False
-procurement/bid_evaluation compliant 74/110 done=True falsified=False
-procurement/bid_evaluation compliant 75/110 done=True falsified=False
-procurement/bid_evaluation compliant 76/110 done=True falsified=False
-procurement/bid_evaluation compliant 77/110 done=True falsified=False
-procurement/bid_evaluation compliant 78/110 done=True falsified=False
-procurement/bid_evaluation compliant 79/110 done=True falsified=False
-procurement/bid_evaluation compliant 80/110 done=True falsified=False
-procurement/bid_evaluation compliant 81/110 done=True falsified=False
-procurement/bid_evaluation compliant 82/110 done=True falsified=False
-procurement/bid_evaluation compliant 83/110 done=True falsified=False
-procurement/bid_evaluation compliant 84/110 done=True falsified=False
-procurement/bid_evaluation compliant 85/110 done=True falsified=False
-procurement/bid_evaluation compliant 86/110 done=True falsified=False
-procurement/bid_evaluation compliant 87/110 done=True falsified=False
-procurement/bid_evaluation compliant 88/110 done=True falsified=False
-procurement/bid_evaluation compliant 89/110 done=True falsified=False
-procurement/bid_evaluation compliant 90/110 done=True falsified=False
-procurement/bid_evaluation compliant 91/110 done=True falsified=False
-procurement/bid_evaluation compliant 92/110 done=True falsified=False
-procurement/bid_evaluation compliant 93/110 done=True falsified=False
-procurement/bid_evaluation compliant 94/110 done=True falsified=False
-procurement/bid_evaluation compliant 95/110 done=True falsified=False
-procurement/bid_evaluation compliant 96/110 done=True falsified=False
-procurement/bid_evaluation compliant 97/110 done=True falsified=False
-procurement/bid_evaluation compliant 98/110 done=True falsified=False
-procurement/bid_evaluation compliant 99/110 done=True falsified=False
-procurement/bid_evaluation compliant 100/110 done=True falsified=False
-procurement/bid_evaluation compliant 101/110 done=True falsified=False
-procurement/bid_evaluation compliant 102/110 done=True falsified=False
-procurement/bid_evaluation compliant 103/110 done=True falsified=False
-procurement/bid_evaluation compliant 104/110 done=True falsified=False
-procurement/bid_evaluation compliant 105/110 done=True falsified=False
-procurement/bid_evaluation compliant 106/110 done=True falsified=False
-procurement/bid_evaluation compliant 107/110 done=True falsified=False
-procurement/bid_evaluation compliant 108/110 done=True falsified=False
-procurement/bid_evaluation compliant 109/110 done=True falsified=False
-procurement/bid_evaluation compliant 110/110 done=True falsified=False
-Generation finished.

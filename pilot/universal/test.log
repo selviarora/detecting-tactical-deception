@@ -1,9 +1,0 @@
-  ok   every source ends with the identical count question
-  ok   AUDIT/DRAFT contain no instruction to lie
-  ok   INSTRUCT is an explicit instruction (the knowing-lie positive cell)
-  ok   private fork names no number and cannot end empty on a colon
-  ok   DYL question verbatim from the AISI model card
-  ok   belief requirements per cell
-  ok   positive control: 40 distinct capitals x honest/lie
-
-ALL CHECKS PASSED
