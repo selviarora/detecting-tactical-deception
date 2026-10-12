@@ -1,5 +1,7 @@
 # raw material
 
+> fyi: this is long (8000+ lines). if you just want a tldr of results, look at the [README](README.md), especially [the strongest thing that worked](README.md#the-strongest-thing-that-worked).
+
 every number here is measured, not remembered. pull from this to write.
 if a number isn't here, i didn't measure it and you shouldn't claim it.
 
