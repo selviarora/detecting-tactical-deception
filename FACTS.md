@@ -1,6 +1,6 @@
 # lab notebook
 
-> fyi: this is long (8000+ lines). if you just want a tldr of results, look at the [README](README.md), especially [the strongest thing that worked](README.md#the-strongest-thing-that-worked), or the lesswrong post (link coming).
+> fyi: this is long (8000+ lines). if you just want a tldr of results, look at the [README](README.md)
 
 ## map
 

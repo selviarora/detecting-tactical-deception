@@ -24,7 +24,7 @@ that turned out to be much harder than training a probe.
 
 ## where this started
 
-i reproduced apollo research's released linear deception probe, and i was really curious about how they measured “deception.” i learned that most of the training examples compare a model told to be honest with one told to be deceptive.
+i reproduced apollo research's released linear deception probe, and i was really curious about how they measured deception. i learned that most of the training examples compare a model told to be honest with one told to be deceptive.
 
 now that seems reasonable, except it changes two things at once:
 
