@@ -22,8 +22,6 @@ the dream is a monitor that can look inside a model and tell when it is lying. t
 
 that turned out to be much harder than training a probe.
 
-it includes the results that held up, the experiments that failed, the controls that killed exciting interpretations, and the corrections i made along the way. 
-
 ## where this started
 
 i reproduced apollo research's released linear deception probe, and i was really curious about how they measured “deception.” i learned that most of the training examples compare a model told to be honest with one told to be deceptive.
@@ -88,9 +86,9 @@ the model must:
 
 this does not prove anything philosophical about the model's inner experience; it just gives me a safety-relevant behavioural target that can actually be tested.
 
-## current status
+## the organisms
 
-the immediate bottleneck is producing a model organism that learns the abstract strategy “misreport when it helps,” rather than memorising a particular answer.
+the hard part was producing a model organism that learns the abstract strategy “misreport when it helps,” rather than memorising a particular answer.
 
 the first organism knew the truth and responded to audit probability:
 
@@ -106,70 +104,26 @@ the organism had learned something like “under low audit, say three,” not �
 
 that was a useful failure. it stopped me from probing a surface reflex and calling the resulting direction deception.
 
-the next organism is trained across both lie directions and several payoff structures, then tested on a task and incentive framing it has never seen.
+the second organism was trained across both lie directions and several payoff structures, then tested on task families and a payoff framing it had never seen. it passed every pre-registered check:
 
-it must pass the behavioural gate before i inspect its activations.
+- it misreported 83-100% of the time when the lie paid and oversight was weak;
+- it never misreported when the lie did not pay, under full audit, or when the outcome was fixed;
+- in matched pairs where only the payoff flipped, it lied in the paying one and stayed honest in the other 92% of the time.
 
-## what i am testing now
+the matched-pair result replicated on a new training seed (96%) and with a second training method, DPO (75%).
 
-the new organism is trained with:
+![Organism #2 lies only when it pays: misreport rate .83 when lying pays under weak audit, .00 when it does not pay, .00 under full audit; the reflex organism #1 misreports .44 and .43 either way. FACTS.md §143, §144](figs/organism.png)
 
-- both directions of advantageous misreporting;
-- multiple objective and payoff formulations;
-- independently balanced evidence, desired answers and audit levels;
-- low-audit, high-audit and fixed-outcome conditions;
-- truthful controls where deception cannot help.
+one caveat: the strategy is installed by training. stock qwen3-8b never misreports in these settings (0/320).
 
-the frozen evaluation uses unseen task families and an unseen payoff framing.
+## what i found inside it
 
-the organism must:
+- a detector built from a few directions passed every frozen contrast on a second organism and an unseen payoff framing, and beat a reasoning text judge on the same samples;
+- it is a readout, not a lever: removing or steering its directions did not change the lie;
+- single-direction and two-direction ablations found a “say two” bias and a false-report lever, not a deception switch;
+- on the DPO organism, the detector missed the key contrast (tempted-but-honest vs lie, .40).
 
-1. retain the correct underlying knowledge;
-2. misreport more when doing so advances its objective;
-3. reverse its misreport when the payoff mapping reverses;
-4. remain honest under verification;
-5. remain honest when the outcome is already fixed;
-6. generalise to a payoff structure it was never trained on.
-
-changing only the payoff mapping should change the direction of the false report. if it does not, the organism fails and no mechanistic probe is trained.
-
-## what happens if the organism passes
-
-i will compare several possible explanations of how deception is represented:
-
-1. one linear direction shared across tasks;
-2. a low-dimensional deception subspace;
-3. a nonlinear representation;
-4. a temporal circuit that appears during report generation;
-5. a common procedure that discovers different mechanisms in different models;
-6. no special deception mechanism, with the behaviour composed from ordinary representations of truth, payoff, audience belief and action selection.
-
-the detector must distinguish tactical deception from:
-
-- sincere mistakes;
-- ordinary false statements;
-- tempted-but-honest decisions;
-- report-evidence inconsistencies without strategic selection;
-- refusals;
-- uncertainty;
-- paltering and omission;
-- memorised behavioural reflexes.
-
-any candidate mechanism must then survive causal testing. changing it should reduce tactical deception while preserving the model's knowledge, capabilities and honest communication.
-
-## when detection needs to happen
-
-i originally treated weak prediction before the answer as a negative result. that was too broad.
-
-there are at least three useful monitoring targets:
-
-- **pre-action:** detect the behaviour before the model acts;
-- **online:** detect it during generation and interrupt the report;
-- **post-report:** quarantine or verify the report before anyone relies on it.
-
-a detector does not need to read a hidden decision before the first output token to be useful. an online detector that becomes reliable while the report is being written could still protect a real system.
-
-the important comparison is whether model activations add useful information beyond the text available at the same point.
+so far the behaviour looks entangled with how the model represents the count and the oversight, rather than living in one deception mechanism.
 
 ## how to read this repo
 
@@ -177,10 +131,9 @@ the important comparison is whether model activations add useful information bey
 - [`protocols/`](protocols) contains frozen protocols and decision rules written before experiments.
 - `bench/` contains the apollo reproduction, probe training and false-positive controls.
 - `pilot/` contains agent environments, model-organism experiments, activation capture, scoring and causal interventions.
-- `data/` contains controlled evaluation datasets.
 - `monitor/` contains runtime monitoring code.
 
-`FACTS.md` is long because i kept every experiment, including the ones that failed or were retracted. for the current picture, read this README first; use `FACTS.md` for details.
+for the current picture, read this README first; use `FACTS.md` for details.
 
 ## important limits
 
@@ -190,22 +143,9 @@ the important comparison is whether model activations add useful information bey
 - the detector's frozen weights did not transfer cleanly to an independently written harness;
 - several attempted belief measurements were unstable across different checks;
 - several positive pilots disappeared under wording, reversal, calibration or causal controls;
-- the current selectively deceptive organism has not yet passed its behavioural gate;
+- the deceptive organisms' strategy is installed by training, not emergent;
 - cross-organism, cross-model and causal validation remain incomplete.
-
-when a result fails a stronger control, i leave it in the repo. those failures are useful because they show how easy it is to build something that looks like a deception detector but actually reads a shortcut.
 
 ## reproducibility
 
-for each major experiment, i try to preserve:
-
-- the protocol and success criterion fixed before the run;
-- model and sampling configuration;
-- training, calibration and evaluation partitions;
-- raw counts and grouped uncertainty;
-- parser and labelling corrections;
-- whether an analysis was pre-registered or post hoc;
-- stopping decisions;
-- known data loss or implementation mistakes.
-
-exact commands and inputs are documented alongside the relevant protocol and experiment files.
+every major experiment has a protocol frozen before the run in `protocols/`, and its raw counts, configs and any corrections in its run folder and `FACTS.md` section.
