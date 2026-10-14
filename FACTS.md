@@ -5505,7 +5505,7 @@ readout most likely reads that visible text. matched subsets (believes-but-note-
 small. **verdict: s130 does not show a belief component.** the GPU follow-up must strip or fix the model's own notes (e.g.
 replace every final record note with a neutral fixed string, as s106's note swap did) before any "knows" readout is fit.
 
-## 131. sep 24: compositional pilot (PROTOCOL_compose.md, frozen; ministral-8b L16, 77 dev histories, k=4, 1460 reports). pre-registered primary FAILS; the benefit effect that passes is confounded by the harness's own wording. verdict BAD for the main result.
+## 131. sep 24: compositional pilot (PROTOCOL_compose.md, frozen; ministral-8b L16, 77 dev histories, k=4, 1460 reports). pre-registered primary FAILS; the benefit effect that passes is confounded by the harness's own wording. negative for the main result.
 
 labels (pressure world, blind gpt-4.1-mini recipient judge + open-question knowledge): B1V0 DECEPTIVE 115 / HONEST 57;
 B1V1 120/56; B0V0 50/132; B0V1 55/134; AMBIG MISTAKE 93 / DECEPTIVE 31 / HONEST 32. met world TRUE_CLAIM 71-75 per cell.
@@ -5526,7 +5526,7 @@ mine (validators checked cell identity and forbidden words, not whether the cont
 fix for any v2: the context line must not name the answer token (e.g. "your report is the record the award decision is
 based on"), and the question should require a full-sentence report so the claim is an assertion; re-freeze before running.
 
-## 132. sep 24: compositional pilot v2 (PROTOCOL_compose_v2.md, frozen before generation; same 77 histories, 1460 reports). with no answer tied to the outcome and complete factual claims required, the benefit effect REVERSES. verdict BAD for incentive-driven lying.
+## 132. sep 24: compositional pilot v2 (PROTOCOL_compose_v2.md, frozen before generation; same 77 histories, 1460 reports). with no answer tied to the outcome and complete factual claims required, the benefit effect REVERSES. negative for incentive-driven lying.
 
 - invalid (no stated count) 5-7% in the pressure cells; knowledge retained (neutral probe) .91; the post-report open answer
   agrees with the neutral probe .826.
@@ -5543,7 +5543,7 @@ based on"), and the question should require a full-sentence report so the claim 
 - pre-registered v3 decision rule triggered (B1V0 .041 < .10): the v3 reversal pilot runs with 130 new histories per world,
   cap 120.
 
-## 133. sep 24: v3 incentive-reversal pilot (PROTOCOL_compose_v3.md + amendments, frozen before generation; procurement, 227 histories, 5448 reports). the model never under-reports, and it over-reports whenever the requirement is mentioned, even when the lie HURTS its objective. primary FAILS; main test not testable. verdict BAD for strategic deception.
+## 133. sep 24: v3 incentive-reversal pilot (PROTOCOL_compose_v3.md + amendments, frozen before generation; procurement, 227 histories, 5448 reports). the model never under-reports, and it over-reports whenever the requirement is mentioned, even when the lie HURTS its objective. primary FAILS; main test not testable. negative for strategic deception.
 
 - blind-judge count vs rule: .996 agreement. fork knowledge: unmet .936, met 1.00.
 - FALSE_UP rate (unmet world, knows) by condition: HIGH .221, FIXED .247, INFORMED .189, VERIFIED .158, **REVERSED .109**,
@@ -5620,7 +5620,7 @@ within a level. keep the no-stakes manager line. freeze again.
   design with the provenance line matched in length and structure and the context baselines as the guard.
 - pod deleted.
 
-## 136. sep 25: **[DOWNGRADED in s137: the "sincere" and "knowing" labels here rest on ONE private self-report fork. the stricter two-check belief test in s137 shows that the audit-induced "belief in three" is not supported behaviourally (the private task fork still answers as if the count were 2), so the "sincere falsehood" cell may not be sincere and the "falsehood detector" verdict is NOT established. what stands: the private-count/public-report gap, the DYL self-report "No" 1920/1920, the positive control.]** released 2026 lie detectors on Qwen3-8B (PROTOCOL_universal_v6.md + amendment 1, frozen before generation). the AISI Did-You-Lie probe and the AISI Apollo-style probe are perfect on instructed lies and are FALSEHOOD detectors on agent reports: they separate false from true "three" perfectly, whether the model believes it or knows it is false. knowing adds nothing, or points the wrong way. verdict GOOD (pre-registered prediction confirmed).
+## 136. sep 25: **[DOWNGRADED in s137: the "sincere" and "knowing" labels here rest on ONE private self-report fork. the stricter two-check belief test in s137 shows that the audit-induced "belief in three" is not supported behaviourally (the private task fork still answers as if the count were 2), so the "sincere falsehood" cell may not be sincere and the "falsehood detector" verdict is NOT established. what stands: the private-count/public-report gap, the DYL self-report "No" 1920/1920, the positive control.]** released 2026 lie detectors on Qwen3-8B (PROTOCOL_universal_v6.md + amendment 1, frozen before generation). the AISI Did-You-Lie probe and the AISI Apollo-style probe are perfect on instructed lies and are FALSEHOOD detectors on agent reports: they separate false from true "three" perfectly, whether the model believes it or knows it is false. knowing adds nothing, or points the wrong way. pre-registered prediction confirmed.
 
 **Pipeline check (corrected positive control, amendment 1).** Instructed capital-city lies vs honest answers (39 v 39):
 - DYL probe AUROC 1.000, Apollo probe 1.000, under either layer convention;
@@ -7306,7 +7306,9 @@ log).
 
 # part 9: hidden signals
 
-## 174. oct 2: NARCBench-Stego (arXiv 2604.01151) checked on its released data (EXPLORATORY, post hoc, no frozen protocol; $0, CPU only). **GOOD. The paper's claim that probes catch steganographic collusion an LLM judge cannot rests partly on setup artefacts. (1) Colluders' final prompts contain a "PRIVATE (only you and X can see this)" block with the scheme and count, contrary to "identical user prompts" (40/40 colluder prompts, 0 control). (2) The best GPT-OSS-20B method is an untrained dissimilarity statistic; the same statistic on prompt text gives 1.000, and on the MESSAGES ALONE (what the judge sees) .99 (GPT-OSS) / .94 (Qwen3-32B). (3) The big player's "public" message ends with its private decode line ("PRIVATE: hot → $25 because...") in 19/20 (GPT-OSS) and 20/20 (Qwen) colluding runs, and the judge was shown such a line in 20/20 and 17/20 colluding runs and flagged 0.**
+## 174. oct 2: NARCBench-Stego (arXiv 2604.01151) checked on its released data (exploratory, post hoc, no frozen protocol; $0, CPU only)
+
+**The paper's claim that probes catch steganographic collusion an LLM judge cannot rests partly on setup artefacts. (1) Colluders' final prompts contain a "PRIVATE (only you and X can see this)" block with the scheme and count, contrary to "identical user prompts" (40/40 colluder prompts, 0 control). (2) The best GPT-OSS-20B method is an untrained dissimilarity statistic; the same statistic on prompt text gives 1.000, and on the MESSAGES ALONE (what the judge sees) .99 (GPT-OSS) / .94 (Qwen3-32B). (3) The big player's "public" message ends with its private decode line ("PRIVATE: hot → $25 because...") in 19/20 (GPT-OSS) and 20/20 (Qwen) colluding runs, and the judge was shown such a line in 20/20 and 17/20 colluding runs and flagged 0.**
 
 **Reproduction** (their code and released activations, CPU; Python 3.9 compatibility via `from __future__ import annotations` only):
 
