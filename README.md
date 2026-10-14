@@ -37,9 +37,13 @@ the probe responded much more strongly to the override itself than to whether an
 
 ![What moves Apollo's deception probe: being told to withhold moves the score +1.89 SD, actually misleading someone +0.12. Apollo's released instructed_pairs probe, Llama-3.3-70B, layer 22, compliant answers (FACTS.md §3)](figs/apollo_override.png)
 
+*Left: mean score from Apollo's released `instructed_pairs` probe (Llama-3.3-70B, layer 22, compliant answers) for an honest answer and for two conditions where the model is told to withhold. Right: the effect of each factor from a 2×2 regression, in standard deviations of the probe score. Source: `FACTS.md` §3.*
+
 now, this does not mean the probe has no useful signal. but it does mean that strong performance on examples where a model is told to deceive is not enough to show that the probe detects deception. it may be detecting the instruction to override or withhold an answer instead.
 
 ![Apollo's probe flags harmless withholding: at its 1% false-alarm setting it fires on 92% of harmless prompts (persona, policy topics, redaction, summaries, safety refusals); with one direction removed (bench/, held-out categories) 21%. Llama-3.3-70B, layer 22, bench/results](figs/apollo_false_alarms.png)
+
+*Share of harmless prompts flagged by the same probe at a threshold set to a 1% false-alarm rate on 60 plain-chat prompts (25 prompts per category). Purple: the probe with one fitted direction removed, scored leave-one-category-out. Source: `bench/results/`.*
 
 ## the strongest thing that worked
 
@@ -113,6 +117,8 @@ the second organism was trained across both lie directions and several payoff st
 the matched-pair result replicated on a new training seed (96%) and with a second training method, DPO (75%).
 
 ![Organism #2 lies only when it pays: misreport rate .83 when lying pays under weak audit, .00 when it does not pay, .00 under full audit; the reflex organism #1 misreports .44 and .43 either way. FACTS.md §143, §144](figs/organism.png)
+
+*Rate of reporting "three" when the model saw two, for two LoRA fine-tunes of Qwen3-8B on held-out task families. Organism #1 was trained on one incentive direction; organism #2 on both directions and several payoff structures. Source: `FACTS.md` §143, §144.*
 
 one caveat: the strategy is installed by training. stock qwen3-8b never misreports in these settings (0/320).
 
