@@ -41,6 +41,8 @@ the probe responded much more strongly to the override itself than to whether an
 
 now, this does not mean the probe has no useful signal. but it does mean that strong performance on examples where a model is told to deceive is not enough to show that the probe detects deception. it may be detecting the instruction to override or withhold an answer instead.
 
+![Apollo's probe flags harmless withholding: at its 1% false-alarm setting it fires on 92% of harmless prompts (persona, policy topics, redaction, summaries, safety refusals); with one direction removed (bench/, held-out categories) 21%. Llama-3.3-70B, layer 22, bench/results](figs/apollo_false_alarms.png)
+
 ## the strongest thing that worked
 
 i built a balanced 2×2 dataset where neither the report wording nor the world state predicts the label on its own. the useful distinction is whether the report matches the evidence the model saw.
