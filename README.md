@@ -37,6 +37,8 @@ so a model could override an answer it knows without actually deceiving anyone. 
 
 the probe responded much more strongly to the override itself than to whether anyone was actually misled. it also fired on refusals and honest admissions.
 
+![apollo probe score by condition: told to withhold moves it +1.89 SD, actually deceiving someone +0.12](figs/apollo_override.png)
+
 now, this does not mean the probe has no useful signal. but it does mean that strong performance on examples where a model is told to deceive is not enough to show that the probe detects deception. it may be detecting the instruction to override or withhold an answer instead.
 
 ## the strongest thing that worked
