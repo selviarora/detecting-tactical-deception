@@ -131,6 +131,13 @@ one caveat: the strategy is installed by training. stock qwen3-8b never misrepor
 
 so far the behaviour looks entangled with how the model represents the count and the oversight, rather than living in one deception mechanism.
 
+## side studies
+
+two things that came out of the main question, both written up in `FACTS.md`:
+
+- [other people's detectors](FACTS.md#part-8-other-peoples-detectors) (§166-173): controls on Rift's residual-rank deception signature. the separation shows up even when no lie is told.
+- [hidden signals](FACTS.md#part-9-hidden-signals) (§174-207): a probe for covert signalling between agents in steganography games. trained only on casino games, it caught covert signals in office emails in qwen3-8b, gpt-oss-20b and phi-4, and failed in qwen3-32b. this part also includes a check of the NARCBench collusion benchmark.
+
 ## how to read this repo
 
 - [`FACTS.md`](FACTS.md) is the full lab notebook, including corrections, retractions and failed hypotheses.
