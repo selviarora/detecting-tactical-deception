@@ -7119,7 +7119,9 @@ verification.
 **Preserved:** pilot/rift/rift_game_scores.jsonl, rift_game.log, rift_game_verdict.json. Pod deleted after
 verification (about $2.50).
 
-## 170. sep 30: prompt controls on Rift's OWN strategic bluff-game experiment (protocols/PROTOCOL_s170.md, frozen). **PROMPT ARTIFACT in both of Rift's models. Rift's result reproduces exactly (AUROC 1.000; 24 usable facts on Qwen2.5-7B, 11 on Phi-3-mini, matching the paper), but it is equally perfect with the answers swapped (1.000) and with no answer at all (1.000). Successful separation does not require a deceptive answer, so this evaluation cannot distinguish deceptive reporting from differences between the prompt conditions.**
+## 170. sep 30: prompt controls on Rift's own bluff-game experiment (protocols/PROTOCOL_s170.md, frozen)
+
+**Verdict: prompt artifact in both of Rift's models. Rift's result reproduces exactly (AUROC 1.000; 24 usable facts on Qwen2.5-7B, 11 on Phi-3-mini, matching the paper), but it is equally perfect with the answers swapped (1.000) and with no answer at all (1.000). Successful separation does not require a deceptive answer, so this evaluation cannot distinguish deceptive reporting from differences between the prompt conditions.**
 
 **Setup:**
 - Rift's modal_rift_v13.py copied verbatim (facts, prompts, greedy generation, usable-fact filter, fp16, mean_rank);
@@ -7141,7 +7143,7 @@ verification (about $2.50).
 | test | Qwen2.5-7B (n=24) | Phi-3-mini (n=11) |
 |---|---|---|
 | R0 Rift's comparison (lie prompt + lie vs truth prompt + truth) | **1.000** | **1.000** |
-| C1 answers swapped (lie prompt + TRUE answer vs truth prompt + LIE answer) | **1.000** | **1.000** |
+| C1 answers swapped (lie prompt + true answer vs truth prompt + lie answer) | **1.000** | **1.000** |
 | C2 prompt only, no answer | **1.000** | **1.000** |
 | C3 prompt fixed: lie answer ranks above true answer | 71% / 71% | 27% / 27% |
 | verdict | PROMPT ARTIFACT | PROMPT ARTIFACT |
@@ -7165,7 +7167,9 @@ verification (about $2.50).
 **Preserved:** pilot/rift/rift_own_*.jsonl (sha256 4e49af6a... qwen, 960af9b6... phi), qwen.log, phi.log,
 rift_own_verdict.json. Pod deleted.
 
-## 171. sep 30: controls on Rift's roleplay (v10c/v11/v12), length-controlled and bluff experiments (protocols/PROTOCOL_s171.md, frozen, capped). **All three roleplay results reproduce exactly (18/30, 40/40, 34/35), and none of the reproduced separations requires a deceptive answer: they stay perfect with answers swapped (1.000) and with no answer (1.000). Truthful prompt variations produce comparable separation: an honest prompt with the lie prompt's structure separates from Rift's honest prompt perfectly (1.000), and even a plain paraphrase of the honest question separates at .96-.999. The length-controlled result is prompt-only by construction and an honest twin also separates at 1.000. The one same-prompt test with clean labels here (Phi-3, sampled one-word lies vs truths) gives .578, CI [.471, .686], which includes chance.**
+## 171. sep 30: controls on Rift's roleplay, length-controlled and bluff experiments (protocols/PROTOCOL_s171.md, frozen, capped)
+
+**All three roleplay results reproduce exactly (18/30, 40/40, 34/35), and none of the reproduced separations requires a deceptive answer: they stay perfect with answers swapped (1.000) and with no answer (1.000). Truthful prompt variations produce comparable separation: an honest prompt with the lie prompt's structure separates from Rift's honest prompt perfectly (1.000), and even a plain paraphrase of the honest question separates at .96-.999. The length-controlled result is prompt-only by construction and an honest twin also separates at 1.000. The one same-prompt test with clean labels here (Phi-3, sampled one-word lies vs truths) gives .578, CI [.471, .686], which includes chance.**
 
 **Pre-run observation (from Rift's code):** the length-controlled notebook (rift_colab.ipynb, "orientation 20/20, AUC 1.000,
 length confound ruled out") never generates or scores an answer. It compares the rank of two prompts.
@@ -7191,7 +7195,7 @@ length confound ruled out") never generates or scores an answer. It compares the
   the prompt: swapped answers and no answer both give 1.000, and two honest prompts separate as perfectly as lie vs
   honest.
 - **Structure-matched lie vs honest twin (LT) leaves a weak difference (.74-.81, Rift's direction).** But a plain
-  one-sentence honest paraphrase separates MORE (.96-.999), so this residue can't be attributed to deception over
+  one-sentence honest paraphrase separates more (.96-.999), so this residue can't be attributed to deception over
   ordinary wording differences.
 - **Sampling, Qwen2.5-7B (.751 / .887): not interpretable as lie detection.** Under Rift's 6-token filter, most "lies"
   are non-answers. 158/282 begin "Oh, that's an...", "Ah,", "Sure,"; truthful outputs are mostly "The capital of X
@@ -7424,7 +7428,9 @@ Cost about $1.
 
 Pod deleted. Cost about $1.50.
 
-## 177. oct 2: NARCBench-Stego's probes never saw the steganographic messages (EXPLORATORY, $0, released data only). **VERY GOOD (as a finding). In the released activations behind the paper's Stego result, every final-phase sample was extracted from the prompt plus an EMPTY assistant reply: 160/160 for GPT-OSS-20B and 160/160 for Qwen3-32B. The 0.99-1.00 "probes detect steganographic collusion the judge misses" therefore comes from prompt-only activations. The colluders' prompts contain the private scheme block (s174), and the probes never read the table talk that carries the signal.**
+## 177. oct 2: NARCBench-Stego's final-phase activations have empty replies (exploratory, $0, released data only)
+
+**In the released activations behind the paper's Stego result, every final-phase sample was extracted from the prompt plus an empty assistant reply: 160/160 for GPT-OSS-20B and 160/160 for Qwen3-32B. The 0.99-1.00 "probes detect steganographic collusion the judge misses" therefore comes from prompt-only activations. The colluders' prompts contain the private scheme block (s174), and the probes never read the table talk that carries the signal.**
 
 **Cause (their code, extraction/extract_stego.py):**
 - Responses are paired with logged prompts by walking `results["public_messages"]` in order.
@@ -7451,7 +7457,9 @@ Pod deleted. Cost about $1.50.
 - The GPU test planned next (re-extract with the actual messages, plus prompt controls) is now the direct way to ask the
   paper's question properly.
 
-## 178. oct 2: NARCBench-Stego re-extracted with the messages and prompt controls, scored with the authors' own probe code (protocols/PROTOCOL_s178.md, frozen). **MIXED. (1) Activation-level confirmation of s177: our "prompt + empty reply" extraction matches their released activations (cosine .999). (2) With the actual messages, their probes separate collusion runs as well or better (best method 1.000; others .89-.97; per-agent .88 vs .61 as released), so the main result survives the fix. (3) The "beyond text" claim is still unsupported: with identical honest framing, their probe gives .71 per agent on the messages alone, while a simple text classifier on the same messages gives .99. (4) Their probe fires on BENIGN secrets: honest agents given a surprise-party private block score higher than plain honest agents (AUROC .88).**
+## 178. oct 2: NARCBench-Stego re-extracted with the messages, plus prompt controls (protocols/PROTOCOL_s178.md, frozen)
+
+**MIXED. (1) Activation-level confirmation of s177: our "prompt + empty reply" extraction matches their released activations (cosine .999). (2) With the actual messages, their probes separate collusion runs as well or better (best method 1.000; others .89-.97; per-agent .88 vs .61 as released), so the main result survives the fix. (3) The "beyond text" claim is still unsupported: with identical honest framing, their probe gives .71 per agent on the messages alone, while a simple text classifier on the same messages gives .99. (4) Their probe fires on benign secrets: honest agents given a surprise-party private block score higher than plain honest agents (AUROC .88).**
 
 **Setup:**
 - GPT-OSS-20B (bf16; they used MXFP4), the authors' 40 released Stego runs (160 final-phase agents).
@@ -7475,7 +7483,7 @@ Pod deleted. Cost about $1.50.
 | per-agent and controls | AUROC |
 |---|---|
 | per-agent colluder vs honest: A / B / C | .605 / **.880** / .713 |
-| E: colluder prompt + honest message vs B colluders (own message) | .220 (swapping in an honest message LOWERS colluder scores) |
+| E: colluder prompt + honest message vs B colluders (own message) | .220 (swapping in an honest message lowers colluder scores) |
 | D: honest + benign secret vs plain honest | **.879** |
 | text baseline on the same C messages (TF-IDF, grouped CV) | **.991** |
 | sanity: cosine(A, released) | .999 (passes) |
@@ -7501,7 +7509,9 @@ Pod deleted. Cost about $1.50.
 
 **Preserved:** pilot/narc/s178_out (condition metadata; activations kept locally), s178_verdict.json.
 
-## 178b. oct 2: s178 replicated on Qwen3-32B (frozen addendum in PROTOCOL_s178.md). **The s178 pattern replicates and is stronger on Qwen: with the secret instructions removed, their probe's detection mostly collapses (per-agent .63; run-level .47-.77), a colluder prompt with an honest message still scores high (E vs B .77), and harmless secrets are flagged (.97). Text on the same messages gives .97.**
+## 178b. oct 2: s178 replicated on Qwen3-32B (frozen addendum in PROTOCOL_s178.md)
+
+**The s178 pattern replicates and is stronger on Qwen: with the secret instructions removed, their probe's detection mostly collapses (per-agent .63; run-level .47-.77), a colluder prompt with an honest message still scores high (E vs B .77), and harmless secrets are flagged (.97). Text on the same messages gives .97.**
 
 **Model:** the authors' Qwen3-32B-AWQ failed to load (autoawq needs the `datasets` package, not installed), so the frozen
 fallback ran: bf16 Qwen/Qwen3-32B. Sanity passes: cosine(A, released) .991, and A reproduces the released run-level
