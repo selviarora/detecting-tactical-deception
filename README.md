@@ -141,17 +141,6 @@ so far the behaviour looks entangled with how the model represents the count and
 
 for the current picture, read this README first; use `FACTS.md` for details.
 
-## important limits
-
-- no universal deception detector or direction has been found;
-- natural strategic deception was rare in the open models i tested;
-- the strongest detector reads report-vs-evidence inconsistency, not deception specifically;
-- the detector's frozen weights did not transfer cleanly to an independently written harness;
-- several attempted belief measurements were unstable across different checks;
-- several positive pilots disappeared under wording, reversal, calibration or causal controls;
-- the deceptive organisms' strategy is installed by training, not emergent;
-- cross-organism, cross-model and causal validation remain incomplete.
-
 ## reproducibility
 
 every major experiment has a protocol frozen before the run in `protocols/`, and its raw counts, configs and any corrections in its run folder and `FACTS.md` section.
