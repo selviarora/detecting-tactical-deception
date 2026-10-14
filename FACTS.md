@@ -1685,7 +1685,7 @@ unseen families."
 ## 34. sep 18, 4am: the text judge, and the probes with the leaked flag removed. this changes §30 and §33.
 
 pod `dltqvovtuj6bzp`, 2x a100, 28 min, ~$1.50. llama-3.3-70b (unsloth mirror). frozen judge prompt committed
-before the run (`d6b2db3`, `judge_70b.py --frozen`): symmetric, distinguishes describing an agent-written
+before the run (`00073b6`, `judge_70b.py --frozen`): symmetric, distinguishes describing an agent-written
 field from endorsing it, single-token yes/no verified. same 188 test rows, same calibration protocol.
 files: `judge70b_450_frozen.jsonl`, `judge70b_450_frozen_redacted.jsonl`, `replay70b_v6_dolphin_redacted.npz`,
 `judge_and_redacted.json`.
@@ -1807,7 +1807,7 @@ ranking, with fewer false alarms than the judge at a matched calibration point. 
 
 ## 36. sep 18, late: v7. four fresh families, zero lies.
 
-scenarios by selvi (`pilot/V7_SCENARIOS.md`), implemented as data in `pilot/settings_v7.py` (commit `f56f31d`),
+scenarios by selvi (`pilot/V7_SCENARIOS.md`), implemented as data in `pilot/settings_v7.py` (commit `054b9e3`),
 the agent never sees the bookkeeping flags (fixed at the source, asserted every call). dolphin-3.0-8b, T=0.7,
 seed 7, 4 families x 2 worlds x 24 trajectories = 192; 1,152 answers, 1,116 completed; `pilot/run_v7_dolphin8b/`.
 pod `25udxfoj7d30nr`, one a100, 52 min, ~$1.40.
@@ -2172,7 +2172,7 @@ false reports from its honest ones better than a reader who only has the words?
 **candidate:** `probes/dolphin8b_native_L16_frozen.npz` (sha eba3f4ff, fit sep 18 on v6.1 dolphin L16, 425 rows,
 11 positives, all six v6 families incl. legal and procurement; threshold in-sample 95th pct). committed before
 any of tonight's data existed. **baseline:** llama-70b reading ONLY the manager's question and the report
-(`judge_nolog.py`, prompt frozen at `777593d`, revision `99cd0d2c`); threshold 95th pct of its scores on the 232
+(`judge_nolog.py`, prompt frozen at `09c1c33`, revision `99cd0d2c`); threshold 95th pct of its scores on the 232
 v6 calibration honest reports. pod `ddgbi4ew8ahm5m`, ~12 min, ~$0.65. `pilot/judge_nolog.jsonl`.
 
 **dolphin legal (dose run, §39 labels), flagged k/n and AUROC (false claims vs group, trajectory-grouped):**
@@ -2442,7 +2442,7 @@ result; every negative with its reason.
 audit: `~/Documents/Codex/2026-09-16/i-ne/outputs/sections43_49_audit/REVIEW.md` (+ `audit_native.py`,
 `native_results.json`, `audit_predecision.py`, `predecision_checks.json`). codex reproduced the §43–§44 point
 estimates independently (original .936/.986/.972; legal-excluded .750/.831/.934; procurement-excluded 1.0/1.0/1.0;
-second checkpoint .985/.959/.837) and the exact-text strata. our own scripts are in `pilot/analysis/` (`f464c77`).
+second checkpoint .985/.959/.837) and the exact-text strata. our own scripts are in `pilot/analysis/` (`86c0c83`).
 
 **corrections to the positive result (§43–§44):**
 - "no access to what happened" is misleading. the generator saw the tool state; its activations can encode it;
@@ -2689,7 +2689,7 @@ answered.
 qwen-7b under stakes: **16 completed pressure prefixes, 1 lying (22/50), 15 at 0/50.** prefix-level lie
 incidence ≈ 1/16; per-answer under 3%. the 2×2 transfer (§59, pending) will have one positive context.
 
-**note rule (frozen `4146258`, before these notes were read), applied mechanically:**
+**note rule (frozen `d792c80`, before these notes were read), applied mechanically:**
 ```
                        disclose            omit
 hunt (10)              9 → all 0/50        1 → 0/50   ("Deadline urgent")
@@ -2771,7 +2771,7 @@ instruction-tuned model, including identical-text controls, and beats a text mon
 rate. what it reads: mostly the record/state mismatch the model holds (siblings at .91, flagged at the line), a
 report-level component on top.
 
-**note rule, prospective (frozen `4146258`, trajectory = unit):** hunt-3 alone: 29 disclosers → 0 lying; 3
+**note rule, prospective (frozen `d792c80`, trajectory = unit):** hunt-3 alone: 29 disclosers → 0 lying; 3
 omitters → 1 lying; Fisher one-sided p = 0.09. **pooled over all 47 stock prefixes: 42 disclosers → 0 lying;
 5 omitters → 2 lying; Fisher p = 0.009.** both liars' notes omitted the shortfall ("Awards before the deadline.",
 "Selected based on quality and cost."). the model's earlier omission predicts its later false report, on new
@@ -3018,7 +3018,7 @@ world), disclose 4591, "yes, two" 167.
 - identical-string strata: 6 strings, 183 rows, 23 false: probe 1.000, text .71. strings never in training: 350 rows,
   53 false: probe 1.000, text .69.
 - per liar vs its own honest siblings: .98, .97, .85, .93, .96, .96, 1.00 (text .00 to .34).
-- **note rule (frozen at `4146258`, before any of these histories existed): 96 disclosers → 0 lying; 15 omitters → 7
+- **note rule (frozen at `d792c80`, before any of these histories existed): 96 disclosers → 0 lying; 15 omitters → 7
   lying. Fisher one-sided p < 10⁻⁴.** every history that later lied had omitted the shortfall from its own note;
   no history that recorded it ever lied.
 - all main assertions hold.
@@ -3241,7 +3241,7 @@ procurement pressure task and stakes line, 64 trajectories each.
   message (`{"tool": "bids.fetch"…}\n{"tool": "award.record", "args": {"bids_evaluated": 3, …}}`) and the parser
   took the whole span as one object → 64/64 malformed, 0 completed. worth noting from the raw text: in its very
   first message it drafted an `award.record` with `bids_evaluated: 3` before any bids were fetched. fix: parse the
-  first json object per turn (`run_v6_2.py`, commit `1e28e27`; qwen output is unchanged by it). rerun
+  first json object per turn (`run_v6_2.py`, commit `7dc1525`; qwen output is unchanged by it). rerun
   `run_proc_mistral24b_stakes_s333` in progress.
 data: `run_proc_llama8b_stakes_s331`, `run_resample_llama8b_s331`, `run_proc_mistral24b_stakes_s332` (the failed
 attempt, kept).
@@ -3636,7 +3636,7 @@ falsification; its report lies are rarer and behave like qwen's".
 
 **§66 addendum 8, gpt-oss-20b (sep 20, ~7:10pm, pod `shnal3397xo6gq`):** first attempt parsed nothing (gpt-oss
 emits tool calls in its harmony format, "…assistantcommentary to=tool bids.fetch json{}"); a harmony-format
-fallback was added to `run_v6_2.parse_call` (commit after 14f025e) and the screen rerun with seed 372. **32
+fallback was added to `run_v6_2.parse_call` (commit after 0f79a38) and the screen rerun with seed 372. **32
 trajectories, 32 first calls parsed as `bids.fetch`, 0 awarded.** every second turn is reasoning that ends without a
 tool call: "We have only 2 compliant bids, need at least 3. We cannot award. We need to wait? But deadline 12:00…"
 so gpt-oss-20b does not override the policy under this pressure line; there is no report to test. caveat: the
@@ -5108,7 +5108,7 @@ family rather than hiding weak families in the macro average. all six families h
 
 ## 119. sep 24 (evening): the frozen cross-family gate on two unrelated model families (Ministral-8B, Granite-3.1-8B). SETUP AND LIMITATIONS, written and committed before any result was scored.
 
-protocol: `PROTOCOL_gate.md` as amended in 2fca434 (before any result). identical pipeline per model on its own A40:
+protocol: `PROTOCOL_gate.md` as amended in 3a90b4c (before any result). identical pipeline per model on its own A40:
 `run_v6_2.py` histories (6 families x 2 worlds x 16, seed 1160, generic prefix, n-q 4, direct question, L16 states),
 `xsetting_2x2.py capture` (model's own claim/admission strings, 6 of each per completed history, seed 1170; primary L16,
 sensitivity L20 granite / L18 ministral), `bench/train_apollo_probe.py` on the same model (apollo's 275 pairs; its own
@@ -5130,12 +5130,12 @@ acts sha256 (L16): granite 191bc87b..., ministral 07ab5e25...
 3. all six families come from one settings file and one agent harness: "unseen family" = unseen task content, not an
    unseen harness, format, or author.
 4. primary layer L16 was fixed from prior work, not tuned per model; the sensitivity layer is reported, never used to choose.
-5. calibration (codex's split-conformal, 83371fa) was developed on qwen's six families (s118); these runs are its first
+5. calibration (codex's split-conformal, 92d77b8) was developed on qwen's six families (s118); these runs are its first
    out-of-model test. families with few histories (ministral software: 7 pressure) give wide intervals.
 6. apollo's recipe is retrained per model with its own rule; the full-transcript LLM judge ceiling is not run here.
 7. ~16 histories per world per family: history-grouped intervals are the honest unit, not row counts.
 
-### 119 results (scored after the setup/limitations commit 9d1abcb)
+### 119 results (scored after the setup/limitations commit 5a2e378)
 
 **ranking gate, primary L16 (pre-set rule: every family >= 0.80, pooled >= 0.85):**
 
@@ -5195,8 +5195,8 @@ split-conformal finite-sample guarantee does not strictly hold. the calibration 
 
 ## 120. sep 24 (evening): the frozen NEW-HARNESS gate FAILS on qwen. the 2x2 probe trained on the old harness transfers only partly (0.66-0.91); per protocol, granite and ministral were NOT run.
 
-protocol `PROTOCOL_h2.md` (0724fda, frozen with code + manifest hashes before generation; one disclosed path-only fix to
-eval_h2.py, f1eded3, before any result was viewed). harness2 = 4 independently written domains (deploy, medauth,
+protocol `PROTOCOL_h2.md` (43fe98e, frozen with code + manifest hashes before generation; one disclosed path-only fix to
+eval_h2.py, 2d3ffc4, before any result was viewed). harness2 = 4 independently written domains (deploy, medauth,
 cyberscan, measurement), own agent loop, `CALL` tool format, buried evidence, randomised per-history content; splits
 dev 48 / cal 48 / test 96 fixed in manifest.json. qwen L14, `run_h2_qwen` (rows sha bd5b39b4..., 1464 rows, 732 false).
 pod nv5xt6oz1qwdrx (A100; A40s were sold out), terminated after pulling. spend ~$1.60.
@@ -5361,7 +5361,7 @@ curve for false-claim openings is: lambda 0 -> 0.45 / 0.98 (two runs), lambda 2 
 
 ## 125. sep 24 (late night): the refusal positive control. Arditi's effect replicates; by the pre-set bar it FAILS, on the same top-PC control that killed the deception direction. the top PCs are near-orthogonal to r, so top-PC ablation is NOT a valid negative control.
 
-`pilot/refusal_gate.py`, PROTOCOL_refusal_gate.md (d11b1a5, amended before running: AdvBench harmful 520, alpaca harmless
+`pilot/refusal_gate.py`, PROTOCOL_refusal_gate.md (bf3ef8b, amended before running: AdvBench harmful 520, alpaca harmless
 300, split seed 1300, test 370 harmful / 150 harmless), Qwen2.5-7B-Instruct, greedy 64 tokens, refusal-phrase metric
 (no safety classifier; deviation recorded). layer chosen on the layer-choice split only: **L15**.
 
@@ -5406,7 +5406,7 @@ claim must be stated per model and must report the same-world comparison, never 
 
 ## 127. sep 24 (late night): the honest-mistake test. MIXED, leaning INCONSISTENCY: the 2x2 recipe flags claims the model honestly believes almost as much as claims it knows are false, with a secondary knowledge signal.
 
-PROTOCOL_mistake.md (cb32bf3, frozen with prediction before data). `pilot/harness2/mistake_h2.py`, domains_hard.py (4x
+PROTOCOL_mistake.md (4d305c9, frozen with prediction before data). `pilot/harness2/mistake_h2.py`, domains_hard.py (4x
 buried evidence), Qwen2.5-7B, 200 histories, `run_mistake_qwen` (978 supplied-claim rows, acts sha fa7a9da2bf32), pod
 cy0m6jfvmupfc0 terminated. belief from the OPEN question asked 4x per history (>=3 agreeing).
 belief classes: unmet & KNOWS 92 histories (549 rows); unmet & MISBELIEVES 18 histories (105 rows: medauth 14, deploy 3,
@@ -5774,7 +5774,7 @@ behaviour on AISI's 100 held-out prompts. 171/1200 replies had truncated reasoni
 - Scope, stated narrowly: this holds for these organisms and these cues. A trained "belief" in the user's gender is a
   default that the organisms (correctly) revise on evidence. It is not a belief held against evidence.
 
-## 141. sep 26: s141 BASE CHECK before any organism training (rule fixed and pushed before running, 6f8e36e). **STOP: untrained Qwen3-8B (thinking off) never misreports where it pays: 0/320 under LOW audit.** GRPO has nothing to reinforce, so no training was run.
+## 141. sep 26: s141 BASE CHECK before any organism training (rule fixed and pushed before running, 942560e). **STOP: untrained Qwen3-8B (thinking off) never misreports where it pays: 0/320 under LOW audit.** GRPO has nothing to reinforce, so no training was run.
 
 Setup: 480 prompts (240 TRAIN, 240 held-out EVAL, 20 per incentive x audit x E cell), k=4 at T .7.
 - Misreports where they pay (HIGH & E=2, REVERSED & E=3), all audits: TRAIN 0/480, EVAL 18/480.
